@@ -13,32 +13,29 @@ import sys
 sys.path.append('.') # for rtd 
 import jupman_tools as jmt
 
-
 on_rtd = os.environ.get('READTHEDOCS') == 'True'
 
 ###################   TODO EDIT AS NEEDED !!  ####################
 
 jm = jmt.Jupman()
 
-# TODO CHANGE
-jm.subtitle = "A template manager for online books made with Jupyter notebooks and NBSphinx doc generator""" 
-jm.course = "Applied Pythonics" # TODO CHANGE
-jm.degree = "Nuclear Templates Engineering" # TODO CHANGE
-author = 'People That Write a Lot' # TODO CHANGE
-# TODO FIRST YEAR
-copyright = '# 2020 - %s, %s' % (datetime.datetime.now().year, author)
+jm.subtitle = "Introductive guide to data cleaning and analysis with Python 3"
+jm.course = "SoftPython" 
+jm.degree = "DISI @ Università di Trento"
+author = 'David Leoni, Alessio Zamboni, Marco Caresia' 
+copyright = '# CC-BY 2017 - %s, %s' % (datetime.datetime.now().year, author)
 
 #####    'jm_filename' IS *VERY* IMPORTANT !!!!
 #####     IT IS PREPENDED IN MANY GENERATED FILES
 #####     AND IT SHOULD ALSO BE THE SAME NAME ON READTHEDOCS 
 #####     (like i.e. jupman.readthedocs.org)
 
-jm.filename = 'jupman'   # The filename without the extension
+jm.filename = 'softpython-en'   # The filename without the extension
 
 # common files for exercise and exams as paths. Paths are intended relative to the project root. Globs like /**/* are allowed.
 
-jm.chapter_files = ['jupman.py', 'my_lib.py', '_static/img/cc-by.png', 
-                    
+jm.chapter_files = ['jupman.py', 'img/cc-by.png', 
+                         
                     '_static/js/jupman.js',  # these files are injected when you call jupman.init()
                     '_static/css/jupman.css', 
                     '_static/js/toc.js',
@@ -46,7 +43,7 @@ jm.chapter_files = ['jupman.py', 'my_lib.py', '_static/img/cc-by.png',
                     '_static/js/pytutor-embed.bundle.min.js',]
 
 jm.chapter_patterns =  ['*/']
-jm.chapter_exclude_patterns =  ['[^_]*/','exams/', 'project/']
+jm.chapter_exclude_patterns =  ['[^_]*/','^exams/', '^project/', '^challenges/']
 
 # words used in ipynb files - you might want to translate these in your language. Use plural.
 jm.ipynb_solutions = "SOLUTIONS"
@@ -78,7 +75,7 @@ jm.build = "_build"
 
 jm.manuals = {
     "student": {
-        "name" : "Jupman",  # TODO put manual name, like "Scientific Programming"
+        "name" : "SoftPython",  # TODO put manual name, like "Scientific Programming"
         "audience" : "studenti",
         "args" : "",
         "output" : ""
@@ -113,11 +110,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.ifconfig',
-    'recommonmark',
-     # July 2020: does not work, see https://github.com/DavidLeoni/jupman/issues/48
-     #'sphinxcontrib.googleanalytics'
-     # note: might be needed also for github actions, see https://github.com/DavidLeoni/jupman/issues/46
-    #'readthedocs_ext.readthedocs'
+    'recommonmark'
     #, 'rst2pdf.pdfbuilder'
 ]
 
@@ -127,11 +120,11 @@ exclude_patterns = [jm.build,
                     "_templates/exam-server",
                      "_private",
                      "_test",                     
-                     'README.md', 
-                     'readme.md']
+                     'README.md',
+                     'readme.md',
+                     'gui/esempi-bqplot']  # was giving weird notebook version 2 errors on RTD
 
 exclude_patterns.extend(jm.zip_ignored)
-
 
 # Default language for syntax highlighting in reST and Markdown cells
 highlight_language = 'none'
@@ -185,7 +178,7 @@ version  = jmt.get_version(release)
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -193,7 +186,7 @@ language = None
 html_title = project # + ' version ' + release
 # canonical url for documentation
 # since sphinx 1.8
-html_baseurl = 'https://jupman.softpython.org/en/latest/'
+html_baseurl = 'https://en.softpython.org'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
@@ -214,7 +207,7 @@ html_theme_options = {
 html_theme = 'sphinx_rtd_theme'    
 if not on_rtd:
     import sphinx_rtd_theme
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]    
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]  
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -223,15 +216,17 @@ if not on_rtd:
 html_static_path = ['_static/'] 
 #html_extra_path = [] 
 
+
 html_js_files = [
-    'js/jupman.js',   # shared among jupyter and ReadTheDocs
-    'js/pytutor-embed.bundle.min.js',  
+    'js/jupman.js',  # shared among jupyter and ReadTheDocs
+    'js/pytutor-embed.bundle.min.js',
 ]
 
 html_css_files = [
     'css/jupman.css',      # shared among jupyter and ReadTheDocs
     'css/jupman-rtd.css',  # only for ReadTheDocs
 ]
+
 
 # -- Options for HTMLHelp output ------------------------------------------
 
@@ -259,6 +254,7 @@ templates_path = ['_templates']
 
 #'sphinxcontrib.googleanalytics'
 googleanalytics_id = os.environ.get('GOOGLE_ANALYTICS')
+
 
 latex_engine='xelatex'
 
@@ -373,7 +369,7 @@ pdf_style_path = ['.', '_styles']
 # A colon-separated list of folders to search for fonts. Example:
 # pdf_font_path = ['/usr/share/fonts', '/usr/share/texmf-dist/fonts/']
 # Language to be used for hyphenation support
-#pdf_language = "en_US"
+pdf_language = "en_US"
 # Mode for literal blocks wider than the frame. Can be
 # overflow, shrink or truncate
 #pdf_fit_mode = "shrink"
@@ -418,13 +414,15 @@ pdf_use_numbered_links = False
 # Background images fitting mode
 pdf_fit_background_mode = 'scale'
 
-def setup(app):
+def setup(app):    
+    
     if 'googleanalytics_id' in globals() and globals()['googleanalytics_id']:
         print("Found googleanalytics_id")
         import googleanalytics
         googleanalytics.setup(app)
     else:
         print('No valid googleanalytics_id was found, skipping it')
+    
 
     app.add_config_value(   'recommonmark_config', {
                                 'auto_toc_tree_section': 'Contents',
@@ -435,7 +433,9 @@ def setup(app):
         jm.zip_folder(folder)
     jm.zip_folders('exams/*/solutions', 
                     lambda x:  '%s-%s-exam' % (jm.filename, x.split('/')[-2]))
-    # Build Project
+    jm.zip_folders('challenges/*/', renamer = lambda x: '%s-challenge' % x.split('/')[1])
+    jm.zip_paths(['project'], '_static/generated/project-template')
+
     def sub(x):
         if x == 'requirements.txt':
             return 'NAME-SURNAME-ID/requirements.txt'
@@ -447,10 +447,13 @@ def setup(app):
     jm.zip_paths(['project', 'requirements.txt'], 
                     '_static/generated/project-template',
                     patterns = sub)
-    
+
+        
+
 
 source_suffix = {
     '.rst': 'restructuredtext',
     '.txt': 'markdown',
-    '.md': 'markdown'
+    '.md': 'markdown',
+    
 }
