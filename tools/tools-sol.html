@@ -1,0 +1,1595 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tools and scripts &mdash; SoftPython</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/jupman.js"></script>
+        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/jupman-web.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/softpython-theme.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../toc-page.html" class="icon icon-home"> SoftPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Intended-audience">Intended audience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Contents">Contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#A---Foundations">A - Foundations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Authors">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#License">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Acknowledgments">Acknowledgments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Chapters">Chapters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Why-Python?">Why Python?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#References">References</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#Part-A-Resources">Part A Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#Think-Python,-by-Allen-Downey">Think Python, by Allen Downey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#Dive-into-Python-3,-by-Mark-Pilgrim">Dive into Python 3, by Mark Pilgrim</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Approach-and-goals">Approach and goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Doesn't-work,-what-should-I-do?">Doesn’t work, what should I do?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#How-to-ask-questions">How to ask questions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Installation-and-tools">Installation and tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Let's-start-!">Let’s start !</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Installing-Python">Installing Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Windows-installation">Windows installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Installation-Mac">Installation Mac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Linux-installation">Linux installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Installing-packages">Installing packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Jupyter-Notebook">Jupyter Notebook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Run-Jupyter-notebook">Run Jupyter notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Saving-Jupyter-notebooks">Saving Jupyter notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Turning-off-Jupyter-server">Turning off Jupyter server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Navigating-notebooks">Navigating notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Installing-Jupyter-notebook---all-operating-systems">Installing Jupyter notebook - all operating systems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Projects-with-virtual-environments">Projects with virtual environments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Creating-virtual-environments">Creating virtual environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Activate-a-virtual-environment">Activate a virtual environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Executing-environments-inside-Jupyter">Executing environments inside Jupyter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../installation.html#With-Anaconda">With Anaconda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../installation.html#Without-Anaconda">Without Anaconda</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Further-readings">Further readings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html">A - Foundations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../commandments.html">Commandments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#I-COMANDAMENT">I COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#II-COMANDAMENT">II COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#III-COMANDAMENT">III COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#IV-COMANDAMENT">IV COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#V-COMMANDMENT">V COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#VI-COMMANDMENT">VI COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#VII-COMMANDMENT">VII COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#VIII-COMANDAMENT">VIII COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#IX-COMMANDMENT">IX COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#X-COMMANDMENT">X COMMANDMENT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#space"> </a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#index">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../toc-page.html">SoftPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+    <div id='jupman-langs'></div>
+
+    
+    <script>
+    if (window.location.hostname.includes('softpython.org')){
+        JUPMAN_LANG = window.location.hostname.slice(0,window.location.hostname.indexOf('.'));
+    } else {
+        JUPMAN_LANG = 'en';        
+    }
+    console.log('JUPMAN_LANG=',JUPMAN_LANG);
+    </script>
+    
+    
+     <!-- <li> <h2 style="background-color:red; color:yellow">WARNING! THIS VERSION IS OLD !  <br/>
+    <a style=" text-decoration: underline;" href="https://jupman.softpython.org/en/latest">GOT TO LATEST VERSION</a></li>
+ </h2></li>-->
+    <!-- Commented because doesn't work with sections,
+         see https://github.com/DavidLeoni/jupman/issues/39
+    <li><a href="../toc-page.html">Docs</a> &raquo;</li>
+    
+    <li>Tools and scripts</li>
+    -->
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Tools-and-scripts">
+<h1>Tools and scripts<a class="headerlink" href="#Tools-and-scripts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/tools.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/tools">Browse files online</a></p>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><strong>REQUISITES:</strong></p>
+<ul class="simple">
+<li><p><strong>Having Python 3 and Jupyter installed:</strong> if you haven’t already, see <a class="reference external" href="https://en.softpython.org/installation.html">Installation</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="Python-interpreter">
+<h2>Python interpreter<a class="headerlink" href="#Python-interpreter" title="Permalink to this headline">¶</a></h2>
+<p>In these tutorials we will use extensively the notebook editor Jupyter, because it allows to comfortably execute Python code, display charts and take notes. But if we want only make calculations it is not mandatory at all!</p>
+<p>The most immediate way (even if not very practical) to execute Python cose is by using the <em>command line</em> interpreter in the so-called <em>interactive mode</em>, that is, having Python to wait commands which will be manually inserted one by one. This usage <em>does not</em> requires Jupyter, you only need to have installed Python. Note that in Mac OS X and many linux systems like Ubuntu, Python is already installed by default, although sometimes it might not be version 3. Let’s try to understand which version
+we have on our system.</p>
+<div class="section" id="Let's-open-system-console">
+<h3>Let’s open system console<a class="headerlink" href="#Let's-open-system-console" title="Permalink to this headline">¶</a></h3>
+<p>Open a console (in Windows: system menu -&gt; Anaconda Prompt, in Mac OS X: run the Terminal)</p>
+<p>In the console you find the so-called <em>prompt</em> of commands. In this <em>prompt</em> you can directly insert commands for the operating system.</p>
+<div class="admonition warning">
+<p><strong>WARNING</strong>: the commands you give in the prompt are commands in the language of the operating system you are using, <strong>NOT</strong> Python language !!!!!</p>
+</div>
+<p>In Windows you should see something like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David&gt;
+</pre></div>
+</div>
+<p>In Mac / Linux it could be something like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>david@my-computer:~$
+</pre></div>
+</div>
+</div>
+<div class="section" id="Listing-files-and-folders">
+<h3>Listing files and folders<a class="headerlink" href="#Listing-files-and-folders" title="Permalink to this headline">¶</a></h3>
+<p>In system console, try for example to</p>
+<p><strong>Windows</strong>: type the command <code class="docutils literal notranslate"><span class="pre">dir</span></code> and press Enter</p>
+<p><strong>Mac or Linux</strong>: type the command <code class="docutils literal notranslate"><span class="pre">ls</span></code> and press Enter.</p>
+<p>A listing with all the files in the current folder should appear. In my case appears a list like this:</p>
+<div class="admonition warning">
+<p><strong>LET ME REPEAT</strong>: in this context <code class="docutils literal notranslate"><span class="pre">dir</span></code> and <code class="docutils literal notranslate"><span class="pre">ls</span></code> are commands of <em>the operating system,</em> <strong>NOT</strong> of Python !!</p>
+</div>
+<p>Windows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David&gt; dir
+Arduino                    gotysc                           program.wav
+a.txt                      index.html                       Public
+CART                       java0.log                        RegDocente.pdf
+backupsys                  java1.log
+BaseXData                  java_error_in_IDEA_14362.log
+</pre></div>
+</div>
+<p>Mac / Linux:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>david@david-computer:~$ ls
+Arduino                           gotysc                         program.wav
+a.txt                             index.html                     Public
+CART                              java0.log                      RegistroDocenteStandard(1).pdf
+backupsys                         java1.log                      RegistroDocenteStandard.pdf
+BaseXData                         java_error_in_IDEA_14362.log
+</pre></div>
+</div>
+</div>
+<div class="section" id="Let's-launch-the-Python-interpreter">
+<h3>Let’s launch the Python interpreter<a class="headerlink" href="#Let's-launch-the-Python-interpreter" title="Permalink to this headline">¶</a></h3>
+<p>In the opened system console, simply type the command <code class="docutils literal notranslate"><span class="pre">python</span></code>:</p>
+<div class="admonition warning">
+<p><strong>WARNING</strong>: If Python does not run, try typing <code class="docutils literal notranslate"><span class="pre">python3</span></code> with the <code class="docutils literal notranslate"><span class="pre">3</span></code> at the end of <code class="docutils literal notranslate"><span class="pre">python</span></code></p>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David&gt; python
+</pre></div>
+</div>
+<p>You should see appearing something like this (most probably won’t be exactly the same). Note that Python version is contained in the first row. If it begins with <code class="docutils literal notranslate"><span class="pre">2.</span></code>, then you are not using the right one for this book - in that case try exiting the interpreter (<a class="reference external" href="#Exiting-the-interpreter">see how to exit</a>) and then type <code class="docutils literal notranslate"><span class="pre">python3</span></code></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Python 3.5.2 (default, Nov 23 2017, 16:37:01)
+[GCC 5.4.0 20160609] on windows
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><strong>CAREFUL</strong> about the triple greater-than <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> at the beginning!</p>
+<p>The triple greater-than <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> at the start tells us that differently from before now the console is expecting commands <em>in Pyhton language.</em> So, the system commands we used before (<code class="docutils literal notranslate"><span class="pre">cd</span></code>, <code class="docutils literal notranslate"><span class="pre">dir</span></code>, …) will NOT work anymore, or will give different results!</p>
+</div>
+<p>Now the console is expecting Python commands, so try inserting <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">+</span> <span class="pre">5</span></code> and press Enter:</p>
+<div class="admonition warning">
+<p><strong>WARNING</strong> DO NOT type <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code>, only type the command which appears afterwards!</p>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; 3 + 5
+</pre></div>
+</div>
+<p>The writing <code class="docutils literal notranslate"><span class="pre">8</span></code> should appear:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+<p>Beyond calculations, we might tell PYthon to print something with the function <code class="docutils literal notranslate"><span class="pre">print(&quot;ciao&quot;)</span></code></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; print(&quot;ciao&quot;)
+ciao
+</pre></div>
+</div>
+</div>
+<div class="section" id="Exiting-the-interpreter">
+<h3>Exiting the interpreter<a class="headerlink" href="#Exiting-the-interpreter" title="Permalink to this headline">¶</a></h3>
+<p>To get out from the Python interpreter and go back to system prompt (that is, the one which accepts <code class="docutils literal notranslate"><span class="pre">cd</span></code> and <code class="docutils literal notranslate"><span class="pre">dir</span></code>/<code class="docutils literal notranslate"><span class="pre">ls</span></code> commands), type the Python comand <code class="docutils literal notranslate"><span class="pre">exit()</span></code></p>
+<p>After you actually exited the Python interpreter, the triple <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code> should be gone (you should see it at the start of the line)</p>
+<p>In Windows, you should see something similar:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; exit()
+C:\Users\David&gt;
+</pre></div>
+</div>
+<p>in Mac / Linux it could be like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; exit()
+david@my-computer:~$
+</pre></div>
+</div>
+<p>Now you might go back to execute commands for the operating system like <code class="docutils literal notranslate"><span class="pre">dir</span></code> and <code class="docutils literal notranslate"><span class="pre">cd</span></code>:</p>
+<p><strong>Windows</strong>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David&gt; dir
+Arduino                    gotysc                           program.wav
+a.txt                      index.html                       Public
+CART                       java0.log                        RegDocente.pdf
+backupsys                  java1.log
+BaseXData                  java_error_in_IDEA_14362.log
+</pre></div>
+</div>
+<p><strong>Mac / Linux</strong>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>david@david-computer:~$ ls
+Arduino                           gotysc                         program.wav
+a.txt                             index.html                     Public
+CART                              java0.log                      RegistroDocenteStandard(1).pdf
+backupsys                         java1.log                      RegistroDocenteStandard.pdf
+BaseXData                         java_error_in_IDEA_14362.log
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Modules">
+<h2>Modules<a class="headerlink" href="#Modules" title="Permalink to this headline">¶</a></h2>
+<p>Python Modules are simply text files which have the extension <strong>.py</strong> (for example <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code>). When you write code in an editor, as a matter of fact you are implementing the corresponding module.</p>
+<p>In Jupyter we use notebook files with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>, but to edit them you necessarily need Jupyter.</p>
+<p>With <code class="docutils literal notranslate"><span class="pre">.py</span></code> files (alse said <em>script</em> ) we can instead use any text editor, and we can then tell the interpreter to execute that file. Let’s see how to do it.</p>
+<div class="section" id="Simple-text-editor">
+<h3>Simple text editor<a class="headerlink" href="#Simple-text-editor" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><p>With a text editor (<em>Notepad</em> in Windows, or <em>TextEdit</em> in Mac Os X) creates a text file, and put inside this code</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Let’s try to save it - it seems easy, but it is often definitely not, so read carefully!</p></li>
+</ol>
+<div class="admonition warning">
+<p><strong>WARNING</strong>: when you are saving the file, <strong>make sure the file have the extension</strong> <code class="docutils literal notranslate"><span class="pre">.py</span></code> <strong>!!</strong></p>
+</div>
+<p>Let’s suppose to create the file <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code> inside a folder called <code class="docutils literal notranslate"><span class="pre">CART</span></code>:</p>
+<ul class="simple">
+<li><p><strong>WINDOWS</strong>: if you use <em>Notepad</em>, in the save window you have to to set <em>Save as</em> to <em>All files</em> (otherwise the file will be wrongly saved like <code class="docutils literal notranslate"><span class="pre">my_script.py.txt</span></code> !)</p></li>
+<li><p><strong>MAC</strong>: if you use <em>TextEdit</em>, before saving click <em>Format</em> and then <em>Convert to format Only text</em>: <strong>if you forget this passage, TextEdit in the save window will not allow you to save in the right format and you will probably end up with a file .rtf which we are not interested in</strong></p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>Open a console (in Windows: system menu -&gt; Anaconda Prompt, in Mac OS X: run the Terminal)</p></li>
+</ol>
+<p>the console opens the so-called <em>commands prompt</em>. In this <em>prompt</em> you can directly enter commands for the operating system (see <a class="reference external" href="#Python-interpreter">previous paragraph</a></p>
+<div class="admonition warning">
+<p><strong>WARNING</strong>: the commands you give in the prompt are commands in the language of the operating system you are using, <strong>NOT</strong> Python language !!!!!</p>
+</div>
+<p>In Windows you should see something like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David&gt;
+</pre></div>
+</div>
+<p>In Mac / Linux it could be something like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>david@my-computer:~$
+</pre></div>
+</div>
+<p>Try for example to type the command <code class="docutils literal notranslate"><span class="pre">dir</span></code> (or <code class="docutils literal notranslate"><span class="pre">ls</span></code> for Mac / Linux) which shows all the files in the current folder. In my case a list like this appears:</p>
+<div class="admonition warning">
+<p><strong>LET ME REPEAT</strong>: in this context <code class="docutils literal notranslate"><span class="pre">dir</span></code> / <code class="docutils literal notranslate"><span class="pre">ls</span></code> are commands of the <em>operating system,</em> <strong>NOT</strong> Python.</p>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David&gt; dir
+Arduino                    gotysc                           program.wav
+a.txt                      index.html                       Public
+MYFOLDER                   java0.log                        RegDocente.pdf
+backupsys                  java1.log
+BaseXData                  java_error_in_IDEA_14362.log
+</pre></div>
+</div>
+<p>If you notice, in the list there is the name MYFOLDER, where I put <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code>. To <em>enter</em> the folder in the <em>prompt,</em> you must first use the operating system command <code class="docutils literal notranslate"><span class="pre">cd</span></code> like this:</p>
+<ol class="arabic simple" start="4">
+<li><p>To enter a folder called MYFOLDER, type <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">MYFOLDER</span></code>:</p></li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David&gt; cd MYFOLDER
+C:\Users\David\MYFOLDER&gt;
+</pre></div>
+</div>
+<p><strong>What if I get into the wrong folder?</strong></p>
+<p>If by chance you enter the wrong folder, like <code class="docutils literal notranslate"><span class="pre">DUMBTHINGS</span></code>, to go back of one folder, type <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code> (NOTE: <code class="docutils literal notranslate"><span class="pre">cd</span></code> is followed by one space and TWO dots <code class="docutils literal notranslate"><span class="pre">..</span></code> <em>one after the other</em> )</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David\DUMBTHINGS&gt; cd ..
+C:\Users\David\&gt;
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Mae sure to be in the folder which contains <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code>. If you aren’t there, use commands <code class="docutils literal notranslate"><span class="pre">cd</span></code> and <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code> like above to navigate the folders.</p></li>
+</ol>
+<p>Let’s see what present in MYFOLDER with the system command <code class="docutils literal notranslate"><span class="pre">dir</span></code> (or <code class="docutils literal notranslate"><span class="pre">ls</span></code> if in Mac/Linux):</p>
+<div class="admonition warning">
+<p><strong>LET ME REPEAT</strong>: inthis context <code class="docutils literal notranslate"><span class="pre">dir</span></code> (or <code class="docutils literal notranslate"><span class="pre">ls</span></code> is a command of the <em>operating system,</em> <strong>NOT</strong> Python.</p>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David\MYFOLDER&gt; dir
+
+my_script.py
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">dir</span></code> is telling us that inside <code class="docutils literal notranslate"><span class="pre">CART</span></code> there is our file <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code></p>
+<ol class="arabic simple" start="6">
+<li><p>From within <code class="docutils literal notranslate"><span class="pre">MYFOLDER</span></code>, type <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">my_script.py</span></code></p></li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David\CART&gt;python my_script.py
+</pre></div>
+</div>
+<div class="admonition warning">
+<p><strong>WARNING</strong>: if Python does not run, try typing <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">my_script.py</span></code> with <code class="docutils literal notranslate"><span class="pre">3</span></code> at the end of <code class="docutils literal notranslate"><span class="pre">python</span></code></p>
+</div>
+<p>If everything went fine, you should see</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>8
+C:\Users\David\MYFOLDER&gt;
+</pre></div>
+</div>
+<div class="admonition warning">
+<p><strong>WARNING</strong>: After executing a script this way, the console is awaiting new <em>system</em> commands, <strong>NOT</strong> Python commands (so, there shouldn’t be any triple greater-than <code class="docutils literal notranslate"><span class="pre">&gt;&gt;&gt;</span></code>)</p>
+</div>
+</div>
+<div class="section" id="IDE">
+<h3>IDE<a class="headerlink" href="#IDE" title="Permalink to this headline">¶</a></h3>
+<p>in these tutorial we work on Jupyter notebooks with extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>, but to edit long <code class="docutils literal notranslate"><span class="pre">.py</span></code> files it’s more convenient to use more traditional editors, also called IDE <em>(Integrated Development Environment).</em> For Python we can use <a class="reference external" href="https://www.spyder-ide.org/">Spyder</a>, <a class="reference external" href="https://code.visualstudio.com/Download">Visual Studio Code</a> or <a class="reference external" href="https://www.jetbrains.com/pycharm/download/">PyCharme Community Edition</a>.</p>
+<p>Differently from Jupyter, these editors allow more easily code <em>debuggin</em> and <em>testing.</em></p>
+<p>Let’s try Spyder, which is the easiest - if you have Anaconda, you find it available inside Anaconda Navigator.</p>
+<div class="admonition note">
+<p><strong>INFO</strong>: Whenever you run Spyder, it might ask you to perform an upgrade, in these cases you can just click No.</p>
+</div>
+<p>In the upper-left corner of the editor there is the code of the file <code class="docutils literal notranslate"><span class="pre">.py</span></code> you are editing. Such files are also said <em>script.</em> In the lower-right corner there is the console with the IPython interpreter (which is the same at the heart of Jupyter, here in textual form). When you execute the script, it’s like inserting commands in that interpreter.</p>
+<ul class="simple">
+<li><p>To execute the whole script: press <code class="docutils literal notranslate"><span class="pre">F5</span></code></p></li>
+<li><p>To execute only the current line or the selection: press <code class="docutils literal notranslate"><span class="pre">F9</span></code></p></li>
+<li><p>To clear memory: after many executions the variables in the memory of the interpreter might get values you don’t expect. To clear the memory, click on the gear to the right of the console, and select <em>Restart kernel</em></p></li>
+</ul>
+<p><strong>EXERCISE</strong>: do some test, taking the file <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code> we created before:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>once the code is in the script, hit <code class="docutils literal notranslate"><span class="pre">F5</span></code></p></li>
+<li><p>select only <code class="docutils literal notranslate"><span class="pre">print(x+y)</span></code> and hit F9</p></li>
+<li><p>select only <code class="docutils literal notranslate"><span class="pre">x=3</span></code> and hit F9</p></li>
+<li><p>click on th gear the right of the console panel, and select <em>Restart kernel,</em> then select only <code class="docutils literal notranslate"><span class="pre">print(x+y)</span></code> and hit F9. What happens?</p></li>
+</ul>
+<p>Remember that if the memory of the interpreter has been cleared with <em>Restart kernel</em>, and then you try executing a code row with variables defined in lines which were not exectued before, Python will not know which variables you are referring to and will show a <code class="docutils literal notranslate"><span class="pre">NameError</span></code>.</p>
+<p><img alt="Spyder ide 3823" src="../_images/spyder-ide.png" /></p>
+</div>
+</div>
+<div class="section" id="Jupyter">
+<h2>Jupyter<a class="headerlink" href="#Jupyter" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter is an editor that allows to work on so called <em>notebooks,</em> which are files ending with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>. They are documents divided in cells where in each cell you can insert commands and immediately see the respective output. Let’s try opening this.</p>
+<ol class="arabic simple">
+<li><p>Unzip <a class="reference external" href="../_static/generated/tools.zip">exercises zip</a> in a folder, you should obtain something like this:</p></li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>tools
+    tools-sol.ipynb
+    tools.ipynb
+    jupman.py
+</pre></div>
+</div>
+<div class="admonition warning">
+<p><strong>WARNING</strong>: To correctly visualize the notebook, it MUST be in the unzipped folder.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>open Jupyter Notebook in that folder. Two things should appear, first a console and then a browser. The browser should show a list with two files: borwser the list and open the notebook <code class="docutils literal notranslate"><span class="pre">tools.ipynb</span></code></p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: open the one WITHOUT the</strong> <code class="docutils literal notranslate"><span class="pre">-sol</span></code> <strong>at the end!</strong></p>
+<p>Seeing now the solutions is too easy ;-)</p>
+</div>
+<div class="admonition warning">
+<p><strong>WARNING: if you don’t find Jupyter / something doesn’t work, have a look</strong> at <a class="reference external" href="https://it.softpython.org/installation.html#Jupyter-Notebook">installation</a></p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Go on reading the exercises file, sometimes you will find paragraphs marked <strong>Exercises</strong> which will ask to write Python commands in the following cells.Exercises are graded by difficulty, from one star ✪ to four ✪✪✪✪</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><strong>WARNING</strong>: In this book we use <strong>ONLY PYTHON 3</strong></p>
+<p>If by chance you obtain weird behaviours, check you are using PYthon 3 and not 2. If by chance by typing <code class="docutils literal notranslate"><span class="pre">python</span></code> your operating system runs python 2, try executing the third by typing the command <code class="docutils literal notranslate"><span class="pre">python3</span></code></p>
+</div>
+<p>Useful shortcuts:</p>
+<ul class="simple">
+<li><p>to execute Python code inside a Jupyter cell, press <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
+<li><p>to execute Python code inside a Jupyter cell AND select next cell, press <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
+<li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
+<li><p>when something seem wrong in computations, try to clean memory by running <code class="docutils literal notranslate"><span class="pre">Kernel-&gt;Restart</span> <span class="pre">and</span> <span class="pre">Run</span> <span class="pre">all</span></code></p></li>
+</ul>
+<p><strong>EXERCISE</strong>: Let’s try inserting a PYthon command: type in the cell below here <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">+</span> <span class="pre">5</span></code>, then while in that cell press special keys <code class="docutils literal notranslate"><span class="pre">Control+Enter</span></code>. As a result, the number <code class="docutils literal notranslate"><span class="pre">8</span></code> should appear</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+<p><strong>EXERCISE</strong>: with Python we can write comments by starting a row with a sharp <code class="docutils literal notranslate"><span class="pre">#</span></code>. Like before, type in the next cell <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">+</span> <span class="pre">5</span></code> but this time type it in the row under the writing <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">write</span> <span class="pre">here</span></code>:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+<p><strong>EXERCISE</strong>: In every cell Jupyter only shows the result of last executed row. Try inserting this code in the cell below and execute by pressing <code class="docutils literal notranslate"><span class="pre">Control+Enter</span></code>. Which result do you see?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<p><strong>EXERCISE</strong>: Let’s try now to create a new cell.</p>
+<ul class="simple">
+<li><p>While you are with curson the cell, press <code class="docutils literal notranslate"><span class="pre">Alt+Enter</span></code>. A new cell should be created after the current one.</p></li>
+<li><p>In the cell just created, insert <code class="docutils literal notranslate"><span class="pre">2+3</span></code> and press <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>. What happens to the cursor? Try the difference swith <code class="docutils literal notranslate"><span class="pre">Control+Enter</span></code>. If you don’t understand the difference, try pressing many times <code class="docutils literal notranslate"><span class="pre">Shit+Enter</span></code> and see what happens.</p></li>
+</ul>
+<div class="section" id="Printing-an-expression">
+<h3>Printing an expression<a class="headerlink" href="#Printing-an-expression" title="Permalink to this headline">¶</a></h3>
+<p>Let’s try to assign an expression to a variable:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">coins</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<p>Note the assignment by itself does not produce any output in the Jupyter cell. We can ask Jupyter the value of the variable by simply typing again the name in a cell:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">coins</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+5
+</pre></div></div>
+</div>
+<p>The effect is (almost always) the same we would obtain by explictly calling the function <code class="docutils literal notranslate"><span class="pre">print</span></code>:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">coins</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+5
+</pre></div></div>
+</div>
+<p>What’s the difference? For our convenience Jupyter will directly show the result of the last executed expression in the cell, but only the last one:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">coins</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span>
+<span class="n">coins</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+4
+</pre></div></div>
+</div>
+<p>If we want to be sure to print both, we need to use the function <code class="docutils literal notranslate"><span class="pre">print</span></code>:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">coins</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">coins</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+7
+4
+</pre></div></div>
+</div>
+<p>Furthermore, the result of last expression is shown only in Jupyter notebooks, if you are writig a normal <code class="docutils literal notranslate"><span class="pre">.py</span></code> script and you want to see results you must in any case use <code class="docutils literal notranslate"><span class="pre">print</span></code>.</p>
+<p>If we want to print more expressions in one row, we can pass them as different parameters to <code class="docutils literal notranslate"><span class="pre">print</span></code> by separating them with a comma:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">coins</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">5</span><span class="p">,</span><span class="n">coins</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+7 4
+</pre></div></div>
+</div>
+<p>To <code class="docutils literal notranslate"><span class="pre">print</span></code> we can pass as many expressions as we want:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">coins</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="p">,</span> <span class="n">coins</span><span class="p">,</span> <span class="n">coins</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+7 4 12
+</pre></div></div>
+</div>
+<p>If we also want to show some text, we can write it by creating so-called <em>strings</em> between double quotes (we will see strings much more in detail in next chapters):</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">coins</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have&quot;</span><span class="p">,</span> <span class="n">coins</span><span class="p">,</span> <span class="s2">&quot;golden coins, but we would like to have double:&quot;</span><span class="p">,</span> <span class="n">coins</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+We have 4 golden coins, but we would like to have double: 8
+</pre></div></div>
+</div>
+<p><strong>QUESTION</strong>: Have a look at following expressions, and for each one of them try to guess the result it produces. Try cerifying your guesses both in Jupyter and another editor of files <code class="docutils literal notranslate"><span class="pre">.py</span></code> like Spyder:</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">x</span>
+<span class="n">x</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">x</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">zam</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">zam</span><span class="p">)</span>
+<span class="n">zam</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">zam</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">carpets</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">length</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;If I have&quot;</span><span class="p">,</span> <span class="n">carpets</span><span class="p">,</span> <span class="s2">&quot;carpets in sequence I walk for&quot;</span><span class="p">,</span> <span class="n">carpets</span> <span class="o">*</span> <span class="n">length</span><span class="p">,</span> <span class="s2">&quot;meters.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">carpets</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">length</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;If&quot;</span><span class="p">,</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span><span class="s2">&quot;have&quot;</span><span class="p">,</span> <span class="n">carpets</span><span class="p">,</span> <span class="s2">&quot;carpets&quot;</span><span class="p">,</span><span class="s2">&quot;in&quot;</span><span class="p">,</span> <span class="s2">&quot;sequence&quot;</span><span class="p">,</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;walk&quot;</span><span class="p">,</span> <span class="s2">&quot;for&quot;</span><span class="p">,</span> <span class="n">carpets</span> <span class="o">*</span> <span class="n">length</span><span class="p">,</span> <span class="s2">&quot;meters.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="Exercise---Castles-in-the-air">
+<h3>Exercise - Castles in the air<a class="headerlink" href="#Exercise---Castles-in-the-air" title="Permalink to this headline">¶</a></h3>
+<p>Given two variables</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">castles</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">dirigibles</span> <span class="o">=</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<p>write some code to print:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>I&#39;ve built 7 castles in the air
+I have 4 steam dirigibles
+I want a dirigible parked at each castle
+So I will buy other 3 at the Steam Market
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>DO NOT</strong> put numerical constants in your code like <code class="docutils literal notranslate"><span class="pre">7</span></code>, <code class="docutils literal notranslate"><span class="pre">4</span></code> or <code class="docutils literal notranslate"><span class="pre">3</span></code>! Write generic code which only uses the provided variables.</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">castles</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">dirigibles</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="c1"># write here</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;ve built&quot;</span><span class="p">,</span><span class="n">castelli</span><span class="p">,</span> <span class="s2">&quot;castles in the air&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I have&quot;</span><span class="p">,</span> <span class="n">dirigibles</span><span class="p">,</span> <span class="s2">&quot;steam dirigibles&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I want a dirigible parked at each castle&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;So I will buy other&quot;</span><span class="p">,</span> <span class="n">castles</span> <span class="o">-</span> <span class="n">dirigibles</span><span class="p">,</span> <span class="s2">&quot;at the Steam Market&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-12-2ca858e84f0a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> dirigibles <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">4</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-red-fg"># write here</span>
+<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;I&#39;ve built&#34;</span><span class="ansi-blue-fg">,</span>castelli<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;castles in the air&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;I have&#34;</span><span class="ansi-blue-fg">,</span> dirigibles<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;steam dirigibles&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;I want a dirigible parked at each castle&#34;</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;castelli&#39; is not defined
+</pre></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="Visualizing-the-execution-with-Python-Tutor">
+<h2>Visualizing the execution with Python Tutor<a class="headerlink" href="#Visualizing-the-execution-with-Python-Tutor" title="Permalink to this headline">¶</a></h2>
+<p>We have seen some of the main data types. Before going further, it’s good to see the right tools to understand at best what happens when we execute the code.</p>
+<p><a class="reference external" href="http://pythontutor.com/">Python tutor</a> is a very good website to visualize online Python code execution, allowing to step forth and <em>back</em> in code flow. Exploit it as much as you can, it should work with many of the examples we shall see in the book. Let’s try an example</p>
+<p><strong>Python tutor 1/4</strong></p>
+<p>Go to <a class="reference external" href="http://pythontutor.com/">pythontutor.com</a> and select <em>Python 3</em></p>
+<p><img alt="pytut-1-8e1" src="../_images/pytut-1.jpg" /></p>
+<p><strong>Python tutor 2/4</strong></p>
+<p><img alt="pytut-2-49823273" src="../_images/pytut-2.jpg" /></p>
+<p><strong>Python tutor 3/4</strong></p>
+<p><img alt="pytut-3-891232342" src="../_images/pytut-3.jpg" /></p>
+<p><strong>Python tutor 4/4</strong></p>
+<p><img alt="pytut-4-27854" src="../_images/pytut-4.jpg" /></p>
+<div class="section" id="Debugging-code-in-Jupyter">
+<h3>Debugging code in Jupyter<a class="headerlink" href="#Debugging-code-in-Jupyter" title="Permalink to this headline">¶</a></h3>
+<p>Python Tutor is fantastic, but when you execute code in Jupyter and it doesn’t work, what can you do? To inspect the execution, the editor usually make available a tool called <em>debugger,</em> which allows to execute instructions one by one. At present (August 2018), the Jupyter debugger is called <a class="reference external" href="https://davidhamann.de/2017/04/22/debugging-jupyter-notebooks/">pdb</a> and it is extremely limited. To overcome limitations, in this book we invented a custom solution which exploits Python Tutor.</p>
+<p>If you insert Python code in a cell, and then <strong>at the cell end</strong> you write the instruction <code class="docutils literal notranslate"><span class="pre">jupman.pytut()</span></code>, the preceding code will be visualized inside Jupyter notebook with Python Tutor, as if by magic.</p>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><strong>WARNING</strong>: <code class="docutils literal notranslate"><span class="pre">jupman</span></code> is a collection of support functions we invented just for this book.</p>
+<p>Whenever you see commands which start with <code class="docutils literal notranslate"><span class="pre">jupman</span></code>, to make them work you need first to execute the cell at the beginning of the document. For convenience we report here that cell. If you already didn’t, execute it now.</p>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Remember to execute this cell with Control+Enter</span>
+<span class="c1"># These commands tell Python where to find the file jupman.py</span>
+<span class="kn">import</span> <span class="nn">sys</span><span class="p">;</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../&#39;</span><span class="p">);</span>
+<span class="kn">import</span> <span class="nn">jupman</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<p>Now we are ready yo try Python Tutor with the magic function <code class="docutils literal notranslate"><span class="pre">jupman.pytut()</span></code>:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jm63bf098f-fc31-4be8-be38-0edeb5cfee68" type="application/json" >
+    {"trace": [{"event": "step_line", "heap": {}, "globals": {}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": [], "line": 2}, {"event": "step_line", "heap": {}, "globals": {"x": 5}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": ["x"], "line": 3}, {"event": "step_line", "heap": {}, "globals": {"x": 5, "y": 7}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": ["x", "y"], "line": 4}, {"event": "return", "heap": {}, "globals": {"x": 5, "y": 7, "z": 12}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": ["x", "y", "z"], "line": 4}], "code": " \nx = 5\ny = 7\nz = x + y"}
+</script>
+<div id="jm63bf098f-fc31-4be8-be38-0edeb5cfee68" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jm63bf098f-fc31-4be8-be38-0edeb5cfee68').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jm63bf098f-fc31-4be8-be38-0edeb5cfee68',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+<div class="section" id="Python-Tutor-:-Limitation-1">
+<h4>Python Tutor : Limitation 1<a class="headerlink" href="#Python-Tutor-:-Limitation-1" title="Permalink to this headline">¶</a></h4>
+<p>Python Tutor is handy, but there are important limitations:</p>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><strong>ATTENTION</strong>: Python Tutor only looks inside one cell!</p>
+<p>Whenever you use Python Tutor inside Jupyter, the only code Python tutors considers is the one inside the cell where the command <code class="docutils literal notranslate"><span class="pre">jupman.pytut()</span></code> is.</p>
+</div>
+<p>So for example in the two following cells, only <code class="docutils literal notranslate"><span class="pre">print(w)</span></code> will appear inside Python tutor without the <code class="docutils literal notranslate"><span class="pre">w</span> <span class="pre">=</span> <span class="pre">3</span></code>. If you try clicking <em>Forward</em> in Python tutor, you will we warned that <code class="docutils literal notranslate"><span class="pre">w</span></code> was not defined.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">w</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+3
+</pre></div></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area stderr docutils container">
+<div class="highlight"><pre>
+Traceback (most recent call last):
+  File &#34;../jupman.py&#34;, line 2305, in _runscript
+    self.run(script_str, user_globals, user_globals)
+  File &#34;/usr/lib/python3.5/bdb.py&#34;, line 431, in run
+    exec(cmd, globals, locals)
+  File &#34;&lt;string&gt;&#34;, line 2, in &lt;module&gt;
+NameError: name &#39;w&#39; is not defined
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jmaecbb90a-d0a0-4796-b4d7-e6901e8c232f" type="application/json" >
+    {"trace": [{"event": "step_line", "heap": {}, "globals": {}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": [], "line": 2}, {"event": "exception", "heap": {}, "globals": {}, "func_name": "<module>", "exception_msg": "NameError: name 'w' is not defined", "stdout": "", "stack_to_render": [], "ordered_globals": [], "line": 2}], "code": " \nprint(w)"}
+</script>
+<div id="jmaecbb90a-d0a0-4796-b4d7-e6901e8c232f" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jmaecbb90a-d0a0-4796-b4d7-e6901e8c232f').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jmaecbb90a-d0a0-4796-b4d7-e6901e8c232f',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+<p>To have it work in Python Tutor you must put ALL the code in the SAME cell:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">w</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+3
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jm17399ee8-c3a4-4890-8ee3-0bf9fafbe7b6" type="application/json" >
+    {"trace": [{"event": "step_line", "heap": {}, "globals": {}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": [], "line": 2}, {"event": "step_line", "heap": {}, "globals": {"w": 3}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": ["w"], "line": 3}, {"event": "return", "heap": {}, "globals": {"w": 3}, "func_name": "<module>", "stdout": "3\n", "stack_to_render": [], "ordered_globals": ["w"], "line": 3}], "code": " \nw = 3\nprint(w)"}
+</script>
+<div id="jm17399ee8-c3a4-4890-8ee3-0bf9fafbe7b6" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jm17399ee8-c3a4-4890-8ee3-0bf9fafbe7b6').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jm17399ee8-c3a4-4890-8ee3-0bf9fafbe7b6',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+</div>
+<div class="section" id="Python-Tutor-:-Limitation-2">
+<h4>Python Tutor : Limitation 2<a class="headerlink" href="#Python-Tutor-:-Limitation-2" title="Permalink to this headline">¶</a></h4>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><strong>ATTENZIONE: Python Tutor only uses functions from standrd PYthon distribution</strong></p>
+<p>PYthon Tutor is good to inspect simple algorithms with basic Python functions, if you use libraries from third parties it will not work.</p>
+</div>
+<p>If you use some library like <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, you can try <strong>only online</strong> to select <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.6</span> <span class="pre">with</span> <span class="pre">anaconda</span></code></p>
+<p><img alt="pytut-5-781302" src="../_images/pytut-5.jpg" /></p>
+</div>
+</div>
+<div class="section" id="Exercise---tavern">
+<h3>Exercise - tavern<a class="headerlink" href="#Exercise---tavern" title="Permalink to this headline">¶</a></h3>
+<p>Given the variables</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pirates</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">each_wants</span> <span class="o">=</span> <span class="mi">5</span>      <span class="c1"># mugs of grog</span>
+<span class="n">kegs</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">keg_capacity</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># mugs of grog</span>
+</pre></div>
+</div>
+<p>Try writing some code which prints:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Nella taverna ci sono 10 pirati, ognuno vuole 5 boccali di grog
+Abbiamo 4 barili di grog pieni
+Da ogni barile possiamo prendere 20 boccali
+Stasera i pirati berranno 50 boccali, ne avanzano 30 per domani
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>DO NOT</strong> use numerical constant in your code, instead try using proposed variables</p></li>
+<li><p>To keep track of remaining kegs, make a variable <code class="docutils literal notranslate"><span class="pre">remaining_mugs</span></code></p></li>
+<li><p>if you are using Jupyter, try using <code class="docutils literal notranslate"><span class="pre">jupman.pytut()</span></code> at the cell end to visualize the execution</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">pirates</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">each_wants</span> <span class="o">=</span> <span class="mi">5</span>      <span class="c1"># mugs of grog</span>
+<span class="n">kegs</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">keg_capacity</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># mugs of grog</span>
+
+
+<span class="c1"># write here</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In the tavern there are&quot;</span><span class="p">,</span> <span class="n">pirates</span><span class="p">,</span> <span class="s2">&quot;pirates, each wants&quot;</span><span class="p">,</span> <span class="n">ognuno_vuole</span><span class="p">,</span> <span class="s2">&quot;mugs of grog&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have&quot;</span><span class="p">,</span> <span class="n">kegs</span><span class="p">,</span> <span class="s2">&quot;kegs full of grog&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;From each keg we can take&quot;</span><span class="p">,</span> <span class="n">keg_capacity</span><span class="p">,</span><span class="s2">&quot;mugs&quot;</span><span class="p">)</span>
+<span class="n">remaining_mugs</span> <span class="o">=</span> <span class="n">kegs</span><span class="o">*</span><span class="n">keg_capacity</span> <span class="o">-</span> <span class="n">pirates</span><span class="o">*</span><span class="n">each_wants</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tonight the pirates will drink&quot;</span><span class="p">,</span> <span class="n">pirates</span> <span class="o">*</span> <span class="n">each_wants</span><span class="p">,</span> <span class="s2">&quot;mugs, and&quot;</span><span class="p">,</span> <span class="n">remaining_mugs</span><span class="p">,</span> <span class="s2">&quot;will remain for tomorrow&quot;</span><span class="p">)</span>
+
+<span class="c1">#jupman.pytut()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-18-d756b41627b4&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span>
+<span class="ansi-green-intense-fg ansi-bold">      7</span> <span class="ansi-red-fg"># write here</span>
+<span class="ansi-green-fg">----&gt; 8</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;In the tavern there are&#34;</span><span class="ansi-blue-fg">,</span> pirates<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;pirates, each wants&#34;</span><span class="ansi-blue-fg">,</span> ognuno_vuole<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;mugs of grog&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;We have&#34;</span><span class="ansi-blue-fg">,</span> kegs<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;kegs full of grog&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     10</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;From each keg we can take&#34;</span><span class="ansi-blue-fg">,</span> keg_capacity<span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#34;mugs&#34;</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;ognuno_vuole&#39; is not defined
+</pre></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="Python-Architecture">
+<h2>Python Architecture<a class="headerlink" href="#Python-Architecture" title="Permalink to this headline">¶</a></h2>
+<p>The following part is not strictly fundamental to understand the book, it’s useful to understand what happens under the hood when you execute commands.</p>
+<p>Let’s go back to Jupyter: the notebook editor Jupyter is a very powerful tool and flexible, allows to execute Python code, not only that, also code written in other programming languages (R, Bash, etc) and formatting languages (HTML, Markdown, Latex, etc).</p>
+<p>Se must keep in mind that the Python code we insert in cells of Jupyter notebooks (the files with extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) is not certainly magically understood by your computer. Under the hood, a lot of transformations are performed so to allow you computer processor to understaned the instructions to be executed. We report here the main transformations which happen, from Jupyter to the processor (CPU):</p>
+<div class="section" id="Python-is-a-high-level-language">
+<h3>Python is a high level language<a class="headerlink" href="#Python-is-a-high-level-language" title="Permalink to this headline">¶</a></h3>
+<p>Let’s try to understand well what happens when you execute a cell:</p>
+<ol class="arabic simple">
+<li><p><strong>source code</strong>: First Jupyter checks if you wrote some Python <em>source code</em> in the cell (it could also be other programming languages like R, Bash, or formatting like Markdown …). By default Jupyter assumes your code is Python. Let’s suppose there is the following code:</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>EXERCISE</strong>: Without going into code details, try copy/pasting it into the cell below. Making sure to have the cursor in the cell, execute it with <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">+</span> <span class="pre">Enter</span></code>. When you execute it an <code class="docutils literal notranslate"><span class="pre">8</span></code> should appear as calculation result. The <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">write</span> <span class="pre">down</span> <span class="pre">here</span></code> as all rows beginning with a sharp <code class="docutils literal notranslate"><span class="pre">#</span></code> is only a comment which will be ignored by Python</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write down here</span>
+
+
+</pre></div>
+</div>
+</div>
+<p>If you managed to execute the code, you can congratulate Python! It allowed you to execute a program written in a quite comprehensible language <em>independently</em> from your operating system (Windows, Mac Os X, Linux …) and from the processor of your computer (x86, ARM, …)! Not only that, the notebook editor Jupyter also placed the result in your browser.</p>
+<p>In detail, what happened? Let’s see:</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>bytecode</strong>: When requesting the execution, Jupyter took the text written in the cell, and sent it to the so-called <em>Python compiler</em> which transformed it into <em>bytecode</em>. The <em>bytecode</em> is a longer sequence of instructions which is less intelligeble for us humans (<strong>this is only an example, there is no need to understand it !!</strong>):</p></li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2           0 LOAD_CONST               1 (3)
+            3 STORE_FAST               0 (x)
+
+3           6 LOAD_CONST               2 (5)
+            9 STORE_FAST               1 (y)
+
+4          12 LOAD_GLOBAL              0 (print)
+           15 LOAD_FAST                0 (x)
+           18 LOAD_FAST                1 (y)
+           21 BINARY_ADD
+           22 CALL_FUNCTION            1 (1 positional, 0 keyword pair)
+           25 POP_TOP
+           26 LOAD_CONST               0 (None)
+           29 RETURN_VALUE
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>machine code</strong>: The <em>Python interpreter</em> took the <em>bytecode</em> above one instruction per time, and converted it into <em>machine code</em> which can actually be understood by the processor (CPU) of your computer. To us the <em>machine code</em> may look even longer and uglier of <em>bytecode</em> but the processor is happy and by reading it produces the program results. Example of <em>machine code</em> (<strong>it is just an example, you do not need to understand it !!</strong>):</p></li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mult:
+    push rbp
+    mov rbp, rsp
+    mov eax, 0
+mult_loop:
+    cmp edi, 0
+    je mult_end
+    add eax, esi
+    sub edi, 1
+    jmp mult_loop
+mult_end:
+    pop rbp
+    ret
+</pre></div>
+</div>
+<p>We report in a table what we said above. In the table we explicitly write the file extension ni which we can write the various code formats</p>
+<ul class="simple">
+<li><p>The ones interesting for us are Jupyter notebooks <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code> and Python source code files <code class="docutils literal notranslate"><span class="pre">.py</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.pyc</span></code> file smay be generated by the compiler when reading <code class="docutils literal notranslate"><span class="pre">.py</span></code> files, but they are not interesting to us, we will never need to edit the,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.asm</span></code> machine code also doesn’t matter for us</p></li>
+</ul>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 37%" />
+<col style="width: 31%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tool</p></th>
+<th class="head"><p>Language</p></th>
+<th class="head"><p>File</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Jupyter Notebook</p></td>
+<td><p>Python</p></td>
+<td><p>.ipynb</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Python Compiler</p></td>
+<td><p>Python source code</p></td>
+<td><p>.py</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">3</span></code> <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">5</span></code><code class="docutils literal notranslate"><span class="pre">print(x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Python Interpreter</p></td>
+<td><p>Python bytecode</p></td>
+<td><p>.pyc</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">LOAD_CONST</span>&#160; <span class="pre">1</span> <span class="pre">(3)</span></code><code class="docutils literal notranslate"><span class="pre">3</span>&#160; <span class="pre">STORE_FAST</span> <span class="pre">0</span> <span class="pre">(x)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Processor (CPU)</p></td>
+<td><p>Machine code</p></td>
+<td><p>.asm</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">cmp</span> <span class="pre">edi,</span> <span class="pre">0</span></code><code class="docutils literal notranslate"><span class="pre">je</span> <span class="pre">mult</span>
+<span class="pre">_end</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>No that we now have an idea of what happens, we can maybe understand better the statement <em>Python is a high level language,</em> that is, it’s positioned high in the above table: when we write Python code, we are not interested in the generated <em>bytecode</em> or <em>machine code,</em> we can <strong>just focus on the program logic</strong>. Besides, the Python code we write is <strong>independent from the pc architecture</strong>: if we have a Python interpreter installed on a computer, it will take care of converting the high-level
+code into the machine code of that particular architecture, which includes the operating system (Windows / Mac Os X / Linux) and processor (x86, ARM, PowerPC, etc).</p>
+</div>
+<div class="section" id="Performance">
+<h3>Performance<a class="headerlink" href="#Performance" title="Permalink to this headline">¶</a></h3>
+<p>Everything has a price. If we want to write programs focusing only on the <em>high level logic</em> without entering into the details of how it gets interpreted by the processor, we tyipcally need to give up on <em>performance.</em> Since Python is an <em>interpreted</em> language has the downside of being slow. What if we really need efficiency? Luckily, Python can be extended with code written in <em>C language</em> which typically is much more performant. Actually, even if you won’t notice it, many functions of Python
+under the hood are directly written in the fast C language. If you really need performance (not in this book!) it might be worth writing first a prototype in Python and, once established it works, compile it into <em>C language</em> by using <a class="reference external" href="http://cython.org/">Cython compiler</a> and manually optimize the generated code.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright # CC-BY 2017 - 2020, David Leoni, Alessio Zamboni, Marco Caresia
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
