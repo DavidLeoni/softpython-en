@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Overview &mdash; SoftPython</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/js/jupman.js"></script>
+        <script type="text/javascript" src="_static/js/pytutor-embed.bundle.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/jupman.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/jupman-web.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/softpython-theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="SoftPython" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="toc-page.html" class="icon icon-home"> SoftPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#News">News</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#Intended-audience">Intended audience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#Contents">Contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="index.html#A---Foundations">A - Foundations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#Authors">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#License">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#Acknowledgments">Acknowledgments</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Chapters">Chapters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Why-Python?">Why Python?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#References">References</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Part-A-Resources">Part A Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Think-Python,-by-Allen-Downey">Think Python, by Allen Downey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Dive-into-Python-3,-by-Mark-Pilgrim">Dive into Python 3, by Mark Pilgrim</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Approach-and-goals">Approach and goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Doesn't-work,-what-should-I-do?">Doesn’t work, what should I do?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#How-to-ask-questions">How to ask questions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Installation-and-tools">Installation and tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Let's-start-!">Let’s start !</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#Installing-Python">Installing Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Windows-installation">Windows installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Installation-Mac">Installation Mac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Linux-installation">Linux installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#Installing-packages">Installing packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#Jupyter-Notebook">Jupyter Notebook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Run-Jupyter-notebook">Run Jupyter notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Saving-Jupyter-notebooks">Saving Jupyter notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Turning-off-Jupyter-server">Turning off Jupyter server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Navigating-notebooks">Navigating notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Installing-Jupyter-notebook---all-operating-systems">Installing Jupyter notebook - all operating systems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#Projects-with-virtual-environments">Projects with virtual environments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Creating-virtual-environments">Creating virtual environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Activate-a-virtual-environment">Activate a virtual environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#Executing-environments-inside-Jupyter">Executing environments inside Jupyter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#With-Anaconda">With Anaconda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#Without-Anaconda">Without Anaconda</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#Further-readings">Further readings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="toc.html">A - Foundations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commandments.html">Commandments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#I-COMANDAMENT">I COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#II-COMANDAMENT">II COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#III-COMANDAMENT">III COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#IV-COMANDAMENT">IV COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#V-COMMANDMENT">V COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#VI-COMMANDMENT">VI COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#VII-COMMANDMENT">VII COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#VIII-COMANDAMENT">VIII COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#IX-COMMANDMENT">IX COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="commandments.html#X-COMMANDMENT">X COMMANDMENT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="toc.html#space"> </a></li>
+<li class="toctree-l1"><a class="reference internal" href="toc.html#index">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="toc-page.html">SoftPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+    <div id='jupman-langs'></div>
+
+    
+    <script>
+    if (window.location.hostname.includes('softpython.org')){
+        JUPMAN_LANG = window.location.hostname.slice(0,window.location.hostname.indexOf('.'));
+    } else {
+        JUPMAN_LANG = 'en';        
+    }
+    console.log('JUPMAN_LANG=',JUPMAN_LANG);
+    </script>
+    
+    
+     <!-- <li> <h2 style="background-color:red; color:yellow">WARNING! THIS VERSION IS OLD !  <br/>
+    <a style=" text-decoration: underline;" href="https://jupman.softpython.org/en/latest">GOT TO LATEST VERSION</a></li>
+ </h2></li>-->
+    <!-- Commented because doesn't work with sections,
+         see https://github.com/DavidLeoni/jupman/issues/39
+    <li><a href="toc-page.html">Docs</a> &raquo;</li>
+    
+        <li><a href="toc.html">A - Foundations</a> &raquo;</li>
+    
+    <li>Overview</li>
+    -->
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Overview">
+<h1>Overview<a class="headerlink" href="#Overview" title="Permalink to this headline">¶</a></h1>
+<p>To start with we will spend a couple of words on the approach and the goals of the book, then we will deep dive into the code.</p>
+<p><img alt="overview-38871" src="_images/overview.png" /></p>
+<div class="section" id="Chapters">
+<h2>Chapters<a class="headerlink" href="#Chapters" title="Permalink to this headline">¶</a></h2>
+<p>The tutorial mostly deal with fundamentals of PYthon 3, data analysis (intended more like raw data processing than statistics) and some applications (dashboard, database, ..)</p>
+<p><strong>What are *not* about:</strong></p>
+<ul class="simple">
+<li><p>object oriented programming theory</p></li>
+<li><p>algorithms, computational complexity</p></li>
+<li><p>performance</p>
+<ul>
+<li><p>no terabytes of data …</p></li>
+</ul>
+</li>
+<li><p>advanced debugging (pdb)</p></li>
+<li><p>testing is only mentioned</p></li>
+<li><p>machine learning</p></li>
+<li><p>web development is only mentioned</p></li>
+</ul>
+</div>
+<div class="section" id="Why-Python?">
+<h2>Why Python?<a class="headerlink" href="#Why-Python?" title="Permalink to this headline">¶</a></h2>
+<p><img alt="python-logo-1823" src="_images/python-logo.png" /></p>
+<ul class="simple">
+<li><p><strong>Easy</strong> enough to start with</p></li>
+<li><p><strong>Versatile</strong>, very much used for</p>
+<ul>
+<li><p>scientific calculus</p></li>
+<li><p>web applications</p></li>
+<li><p>scripting</p></li>
+</ul>
+</li>
+<li><p><strong>widespread</strong> both in the industry and research environments</p>
+<ul>
+<li><p><a class="reference external" href="https://www.tiobe.com/tiobe-index/">Tiobe</a> Index</p></li>
+<li><p><a class="reference external" href="https://madnight.github.io/githut/#/pull_requests/2020/1">popularity on Github</a></p></li>
+</ul>
+</li>
+<li><p><strong>Licence</strong> <a class="reference external" href="https://docs.python.org/3/license.html">open source &amp; business friendly</a></p>
+<ul>
+<li><p>translated: you can sell commercial products based on Python without paying royalties to its authors</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="References">
+<h2>References<a class="headerlink" href="#References" title="Permalink to this headline">¶</a></h2>
+<p><strong>Altro materiale</strong>: Citiamo i seguenti due libri, entrambi dall’approccio discorsivo e gratuiti disponibili sia online che in pdf.</p>
+<div class="section" id="Part-A-Resources">
+<h3>Part A Resources<a class="headerlink" href="#Part-A-Resources" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="Think-Python,-by-Allen-Downey">
+<h3>Think Python, by Allen Downey<a class="headerlink" href="#Think-Python,-by-Allen-Downey" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Talks a lot, step by step, good for beginners</p></li>
+<li><p><a class="reference external" href="http://www.greenteapress.com/thinkpython/html/">online</a></p></li>
+<li><p><a class="reference external" href="https://www.amazon.it/Think-Python-Like-Computer-Scientist/dp/1491939362/ref=sr_1_1?ie=UTF8&amp;qid=1537163819&amp;sr=8-1&amp;keywords=think+python">printed</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/thinkpython2.pdf">PDF</a></p></li>
+<li><p><a class="reference external" href="https://runestone.academy/runestone/static/thinkcspy/index.html">Interactive edition</a></p></li>
+</ul>
+<p>License: <a class="reference external" href="http://creativecommons.org/licenses/by-nc/3.0/deed.it">Creative Commons CC BY Non Commercial 3.0</a> as reported in the <a class="reference external" href="http://greenteapress.com/wp/think-python-2e/">original page</a></p>
+</div>
+<div class="section" id="Dive-into-Python-3,-by-Mark-Pilgrim">
+<h3>Dive into Python 3, by Mark Pilgrim<a class="headerlink" href="#Dive-into-Python-3,-by-Mark-Pilgrim" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>More practical, contains more focused tutorials (i.e. manage XML files)</p></li>
+<li><p><a class="reference external" href="http://www.diveintopython3.net/">online version</a></p></li>
+<li><p><a class="reference external" href="http://www.amazon.com/gp/product/1430224150?ie=UTF8&amp;tag=diveintomark-20&amp;creativeASIN=1430224150">printed</a></p></li>
+<li><p><a class="reference external" href="https://github.com/diveintomark/diveintopython3/zipball/master">zip offline</a></p></li>
+<li><p><a class="reference external" href="https://github.com/downloads/diveintomark/diveintopython3/dive-into-python3.pdf">PDF</a></p></li>
+</ul>
+<p>Licence: <a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons By Share-alike 3.0</a> as reported at the bottom <a class="reference external" href="http://www.diveintopython3.net/">of book website</a></p>
+</div>
+</div>
+<div class="section" id="Approach-and-goals">
+<h2>Approach and goals<a class="headerlink" href="#Approach-and-goals" title="Permalink to this headline">¶</a></h2>
+<p><strong>If you have troubles with programming basics:</strong></p>
+<ul class="simple">
+<li><p><strong>Exercise difficulty</strong>: ✪ , ✪✪</p></li>
+<li><p>Read <a class="reference external" href="https://en.softpython.org/index.html#A---Foundations">SoftPython - Parte A - Foundations</a></p></li>
+<li><p>Other useful stuff can be found in the book ‘Think Python’</p></li>
+</ul>
+<p><strong>If you already know how to program:</strong></p>
+<ul class="simple">
+<li><p><strong>Exercise difficulty</strong>: ✪✪✪, ✪✪✪✪</p></li>
+<li><p>Read <a class="reference external" href="https://en.softpython.org/quick-intro/quick-intro-sol.html">Python Quick Intro</a> and then go directly to Part B - Data Analysis</p></li>
+<li><p>other useful things can be found in the book <strong>Dive into Python 3</strong></p></li>
+</ul>
+</div>
+<div class="section" id="Doesn't-work,-what-should-I-do?">
+<h2>Doesn’t work, what should I do?<a class="headerlink" href="#Doesn't-work,-what-should-I-do?" title="Permalink to this headline">¶</a></h2>
+<p>While programming you will surely encounter problems, and you will stare at mystierious error messages on the screen. The purpose of this book is not to give a series of recipes to learn by heart and that always work, as much as guide you moving first steps in Python world with some ease. So, if something goes wrong, do not panic and try following this list of steps that might help you. Try following the proposed order:</p>
+<ol class="arabic simple">
+<li><p>If in class, ask professor (if not in class, see last two points).</p></li>
+<li><p>If in class, ask the classmate who knows more</p></li>
+<li><p>Try finding the error message on Google</p>
+<ul class="simple">
+<li><p>remove names or parts too specific of your program, like line numbers, file names, variable names</p></li>
+<li><p><a class="reference external" href="https://stackoverflow.com">Stack overflow</a> is your best friend</p></li>
+</ul>
+</li>
+<li><p>Look at <a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html">Appendix A - Debug from the book Think Python</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#235">Syntax errors</a></p>
+<ul>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec236">I keep making changes and it makes no difference.</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec237">Runtime errors</a></p>
+<ul>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec238">My program does absolutely nothing.</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec239">My program hangs.</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec240">Infinite Loop</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec2241">Infinite Recursion</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec242">Flow of Execution</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec243">When I run the program I get an exception</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec244">I added so many print statements I get inundated with output</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec245">Semantic errors</a></p>
+<ul>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec246">My program doesn’t work</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec247">ve got a big hairy expression and it doesn’t do what I expect.</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec248">ve got a function that doesn’t return what I expect.</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec249">I’m really, really stuck and I need help.</a></p></li>
+<li><p><a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2021.html#sec250">No, I really need help.</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Gather some courage and ask on a public forum, like Stack overflow or python-forum.io - see <a class="reference external" href="#How-to-ask-questions">how to ask questions</a>.</p></li>
+</ol>
+<div class="section" id="How-to-ask-questions">
+<h3>How to ask questions<a class="headerlink" href="#How-to-ask-questions" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle"><strong>IMPORTANT</strong></p>
+<p>If you want to ask written questions on public chat/forums (i.e. like <a class="reference external" href="https://python-forum.io/index.php">python-forum.io</a> DO FIRST READ the forum rules (see for example <a class="reference external" href="https://python-forum.io/misc.php?action=help&amp;hid=19">How to ask Smart Questions</a></p>
+</div>
+<p>In substance, you are always asked to clearly express the problem circumstances, putting an explicative title to the post /mail and showing you spent some time (at least 10 min) trying a solution on your own. If you followed the above rules, and by misfortune you still find programmers who use harsh tones, just ignore them.</p>
+</div>
+</div>
+<div class="section" id="Installation-and-tools">
+<h2>Installation and tools<a class="headerlink" href="#Installation-and-tools" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>If you still haven’t installed Python3 and Jupyter, have a look at <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="Let's-start-!">
+<h2>Let’s start !<a class="headerlink" href="#Let's-start-!" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>If you already have some programming skill</strong>: you can look <a class="reference external" href="quick-intro/quick-intro-sol.ipynb">Python quick start</a></p></li>
+<li><p><strong>If you don’t have programming skills</strong>: got to <a class="reference external" href="https://en.softpython.org/tools/tools-sol.html">Tools and scripts</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="SoftPython" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright # CC-BY 2017 - 2020, David Leoni, Alessio Zamboni, Marco Caresia
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
