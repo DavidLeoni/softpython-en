@@ -13,6 +13,7 @@ A - Foundations
     :maxdepth: 2
     :glob:
 
+    Tools and scripts tools/tools-sol.ipynb
     commandments.ipynb
         
 
