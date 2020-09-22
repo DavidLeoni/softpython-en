@@ -47,6 +47,9 @@ def help():
 
 sphinxcmd = "sphinx-build"
 
+# use this for python2:
+# sphinxcmd = "sphinx-build"
+
 
 
 def print_generated_banner(manual, fmt):
@@ -112,7 +115,7 @@ def run_sphinx(manuals, formats):
             # sphinx-build -b  html doc _build/student/html 
 
             try:
-                cmd = (sphinxcmd + " -T -j 4 -b " + fmt + " . " + relout + " " + tinfo['args'] )
+                cmd = (sphinxcmd + " -j 4 -b " + fmt + " . " + relout + " " + tinfo['args'] )
                 res = run(cmd)
                     
 

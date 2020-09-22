@@ -2,8 +2,10 @@
     :maxdepth: 2
     :glob:
 
-    Home <index.ipynb>        
-    
+    Home <index.ipynb>
+    Overview <overview.ipynb>
+    Installation <installation.ipynb>
+
 A - Foundations
 =======================
 
@@ -13,21 +15,6 @@ A - Foundations
 
     commandments.ipynb
         
-
-B - Data Analysis
-=======================
-
-.. toctree::
-    :maxdepth: 2
-    :glob:
-    
-    
-C - Applications
-========================
-
-.. toctree::
-    :maxdepth: 2
-    :glob:
 
         
 |space|
