@@ -122,6 +122,8 @@ exclude_patterns = [jm.build,
                      "_test",                     
                      'README.md',
                      'readme.md',
+                     'requirements.txt',
+                     'requirements-build.txt',
                      'gui/esempi-bqplot']  # was giving weird notebook version 2 errors on RTD
 
 exclude_patterns.extend(jm.zip_ignored)
