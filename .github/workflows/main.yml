@@ -40,8 +40,8 @@ jobs:
         
         mkdir -p en.softpython.org/${{ env.WEB_PATH }}
         cp -r $GITHUB_WORKSPACE/html/* en.softpython.org/${{ env.WEB_PATH }}
-        cp -r $GITHUB_WORKSPACE/epub/*.epub en.softpython.org/${{ env.WEB_PATH }}
-        cp -r $GITHUB_WORKSPACE/latex/*.pdf en.softpython.org/${{ env.WEB_PATH }}
+        #cp -r $GITHUB_WORKSPACE/epub/*.epub en.softpython.org/${{ env.WEB_PATH }}
+        #cp -r $GITHUB_WORKSPACE/latex/*.pdf en.softpython.org/${{ env.WEB_PATH }}
         # note: html zip is already provided by Github
         cd en.softpython.org        
         git config --local user.email "action@github.com"
