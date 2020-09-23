@@ -21,4 +21,4 @@ The making of this website and related courses was funded mainly by [Department 
 
 All the material in this website is distributed with license CC-BY 4.0 International Attribution [https://creativecommons.org/licenses/by/4.0/deed.en](https://creativecommons.org/licenses/by/4.0/deed.en) 
 
-Basically, you can freely redistribute and modify the content, just remember to cite University of Trento and [the authors](https://it.softpython.org/index.html#Autori) 
+Basically, you can freely redistribute and modify the content, just remember to cite University of Trento and [the authors](https://en.softpython.org/index.html#Autori) 
