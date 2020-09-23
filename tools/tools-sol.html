@@ -1163,7 +1163,7 @@ So I will buy other 3 at the Steam Market
 <span></span><span class="n">castles</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">dirigibles</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="c1"># write here</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;ve built&quot;</span><span class="p">,</span><span class="n">castelli</span><span class="p">,</span> <span class="s2">&quot;castles in the air&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;ve built&quot;</span><span class="p">,</span><span class="n">castles</span><span class="p">,</span> <span class="s2">&quot;castles in the air&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I have&quot;</span><span class="p">,</span> <span class="n">dirigibles</span><span class="p">,</span> <span class="s2">&quot;steam dirigibles&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I want a dirigible parked at each castle&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;So I will buy other&quot;</span><span class="p">,</span> <span class="n">castles</span> <span class="o">-</span> <span class="n">dirigibles</span><span class="p">,</span> <span class="s2">&quot;at the Steam Market&quot;</span><span class="p">)</span>
@@ -1175,16 +1175,10 @@ So I will buy other 3 at the Steam Market
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-12-2ca858e84f0a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> dirigibles <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">4</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-red-fg"># write here</span>
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;I&#39;ve built&#34;</span><span class="ansi-blue-fg">,</span>castelli<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;castles in the air&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;I have&#34;</span><span class="ansi-blue-fg">,</span> dirigibles<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;steam dirigibles&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;I want a dirigible parked at each castle&#34;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;castelli&#39; is not defined
+I&#39;ve built 7 castles in the air
+I have 4 steam dirigibles
+I want a dirigible parked at each castle
+So I will buy other 3 at the Steam Market
 </pre></div></div>
 </div>
 </div>
@@ -1244,10 +1238,10 @@ So I will buy other 3 at the Steam Market
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm63bf098f-fc31-4be8-be38-0edeb5cfee68" type="application/json" >
-    {"trace": [{"event": "step_line", "heap": {}, "globals": {}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": [], "line": 2}, {"event": "step_line", "heap": {}, "globals": {"x": 5}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": ["x"], "line": 3}, {"event": "step_line", "heap": {}, "globals": {"x": 5, "y": 7}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": ["x", "y"], "line": 4}, {"event": "return", "heap": {}, "globals": {"x": 5, "y": 7, "z": 12}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": ["x", "y", "z"], "line": 4}], "code": " \nx = 5\ny = 7\nz = x + y"}
+<script id="json-jma3037c20-279b-458e-82ff-14897ed314f3" type="application/json" >
+    {"trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": [], "stack_to_render": [], "globals": {}, "heap": {}}, {"line": 3, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": ["x"], "stack_to_render": [], "globals": {"x": 5}, "heap": {}}, {"line": 4, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": ["x", "y"], "stack_to_render": [], "globals": {"y": 7, "x": 5}, "heap": {}}, {"line": 4, "event": "return", "func_name": "<module>", "stdout": "", "ordered_globals": ["x", "y", "z"], "stack_to_render": [], "globals": {"z": 12, "y": 7, "x": 5}, "heap": {}}], "code": " \nx = 5\ny = 7\nz = x + y"}
 </script>
-<div id="jm63bf098f-fc31-4be8-be38-0edeb5cfee68" class="pytutorVisualizer"> </div>
+<div id="jma3037c20-279b-458e-82ff-14897ed314f3" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1267,12 +1261,12 @@ So I will buy other 3 at the Steam Market
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm63bf098f-fc31-4be8-be38-0edeb5cfee68').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jma3037c20-279b-458e-82ff-14897ed314f3').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm63bf098f-fc31-4be8-be38-0edeb5cfee68',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jma3037c20-279b-458e-82ff-14897ed314f3',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -1345,10 +1339,10 @@ NameError: name &#39;w&#39; is not defined
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmaecbb90a-d0a0-4796-b4d7-e6901e8c232f" type="application/json" >
-    {"trace": [{"event": "step_line", "heap": {}, "globals": {}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": [], "line": 2}, {"event": "exception", "heap": {}, "globals": {}, "func_name": "<module>", "exception_msg": "NameError: name 'w' is not defined", "stdout": "", "stack_to_render": [], "ordered_globals": [], "line": 2}], "code": " \nprint(w)"}
+<script id="json-jm22896bcb-b0db-47b7-b733-367f311f4198" type="application/json" >
+    {"trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": [], "stack_to_render": [], "globals": {}, "heap": {}}, {"line": 2, "event": "exception", "exception_msg": "NameError: name 'w' is not defined", "func_name": "<module>", "stdout": "", "ordered_globals": [], "stack_to_render": [], "globals": {}, "heap": {}}], "code": " \nprint(w)"}
 </script>
-<div id="jmaecbb90a-d0a0-4796-b4d7-e6901e8c232f" class="pytutorVisualizer"> </div>
+<div id="jm22896bcb-b0db-47b7-b733-367f311f4198" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1368,12 +1362,12 @@ NameError: name &#39;w&#39; is not defined
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmaecbb90a-d0a0-4796-b4d7-e6901e8c232f').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm22896bcb-b0db-47b7-b733-367f311f4198').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmaecbb90a-d0a0-4796-b4d7-e6901e8c232f',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm22896bcb-b0db-47b7-b733-367f311f4198',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -1417,10 +1411,10 @@ NameError: name &#39;w&#39; is not defined
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm17399ee8-c3a4-4890-8ee3-0bf9fafbe7b6" type="application/json" >
-    {"trace": [{"event": "step_line", "heap": {}, "globals": {}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": [], "line": 2}, {"event": "step_line", "heap": {}, "globals": {"w": 3}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "ordered_globals": ["w"], "line": 3}, {"event": "return", "heap": {}, "globals": {"w": 3}, "func_name": "<module>", "stdout": "3\n", "stack_to_render": [], "ordered_globals": ["w"], "line": 3}], "code": " \nw = 3\nprint(w)"}
+<script id="json-jmbcb75911-01ee-41bb-9aff-a50ed82ff04f" type="application/json" >
+    {"trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": [], "stack_to_render": [], "globals": {}, "heap": {}}, {"line": 3, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": ["w"], "stack_to_render": [], "globals": {"w": 3}, "heap": {}}, {"line": 3, "event": "return", "func_name": "<module>", "stdout": "3\n", "ordered_globals": ["w"], "stack_to_render": [], "globals": {"w": 3}, "heap": {}}], "code": " \nw = 3\nprint(w)"}
 </script>
-<div id="jm17399ee8-c3a4-4890-8ee3-0bf9fafbe7b6" class="pytutorVisualizer"> </div>
+<div id="jmbcb75911-01ee-41bb-9aff-a50ed82ff04f" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1440,12 +1434,12 @@ NameError: name &#39;w&#39; is not defined
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm17399ee8-c3a4-4890-8ee3-0bf9fafbe7b6').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmbcb75911-01ee-41bb-9aff-a50ed82ff04f').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm17399ee8-c3a4-4890-8ee3-0bf9fafbe7b6',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmbcb75911-01ee-41bb-9aff-a50ed82ff04f',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -1505,7 +1499,7 @@ Stasera i pirati berranno 50 boccali, ne avanzano 30 per domani
 
 
 <span class="c1"># write here</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In the tavern there are&quot;</span><span class="p">,</span> <span class="n">pirates</span><span class="p">,</span> <span class="s2">&quot;pirates, each wants&quot;</span><span class="p">,</span> <span class="n">ognuno_vuole</span><span class="p">,</span> <span class="s2">&quot;mugs of grog&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In the tavern there are&quot;</span><span class="p">,</span> <span class="n">pirates</span><span class="p">,</span> <span class="s2">&quot;pirates, each wants&quot;</span><span class="p">,</span> <span class="n">each_wants</span><span class="p">,</span> <span class="s2">&quot;mugs of grog&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have&quot;</span><span class="p">,</span> <span class="n">kegs</span><span class="p">,</span> <span class="s2">&quot;kegs full of grog&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;From each keg we can take&quot;</span><span class="p">,</span> <span class="n">keg_capacity</span><span class="p">,</span><span class="s2">&quot;mugs&quot;</span><span class="p">)</span>
 <span class="n">remaining_mugs</span> <span class="o">=</span> <span class="n">kegs</span><span class="o">*</span><span class="n">keg_capacity</span> <span class="o">-</span> <span class="n">pirates</span><span class="o">*</span><span class="n">each_wants</span>
@@ -1520,16 +1514,10 @@ Stasera i pirati berranno 50 boccali, ne avanzano 30 per domani
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-18-d756b41627b4&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span> <span class="ansi-red-fg"># write here</span>
-<span class="ansi-green-fg">----&gt; 8</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;In the tavern there are&#34;</span><span class="ansi-blue-fg">,</span> pirates<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;pirates, each wants&#34;</span><span class="ansi-blue-fg">,</span> ognuno_vuole<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;mugs of grog&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;We have&#34;</span><span class="ansi-blue-fg">,</span> kegs<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#34;kegs full of grog&#34;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     10</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;From each keg we can take&#34;</span><span class="ansi-blue-fg">,</span> keg_capacity<span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#34;mugs&#34;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;ognuno_vuole&#39; is not defined
+In the tavern there are 10 pirates, each wants 5 mugs of grog
+We have 4 kegs full of grog
+From each keg we can take 20 mugs
+Tonight the pirates will drink 50 mugs, and 30 will remain for tomorrow
 </pre></div></div>
 </div>
 </div>
