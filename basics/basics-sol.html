@@ -202,10 +202,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#Variables">Variables</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Detect-the-type-of-a-variable">Detect the type of a variable</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Reassign-a-variable">Reassign a variable</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Riusing-a-variable">Riusing a variable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Reusing-a-variable">Reusing a variable</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Assignments---questions">Assignments - questions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---exchange">Exercise - exchange</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Da-fare---ciclare">Da fare - ciclare</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Exercise---cycling">Exercise - cycling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Changing-type-during-execution">Changing type during execution</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Multiple-commands-on-the-same-line">Multiple commands on the same line</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Multiple-initializations">Multiple initializations</a></li>
@@ -607,14 +607,14 @@ div.rendered_html tbody tr:hover {
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>PREREQUISITES:</strong></p>
 <ul class="simple">
-<li><p><strong>Having installed Python 3 and Jupyter:</strong> if you haven’t already, look <a class="reference external" href="https://en.softpython.org/installation.html">Installazion</a></p></li>
+<li><p><strong>Having installed Python 3 and Jupyter:</strong> if you haven’t already, look <a class="reference external" href="https://en.softpython.org/installation.html">Installation</a></p></li>
 <li><p><strong>Having read</strong> <a class="reference external" href="https://en.softpython.org/tools/tools-sol.html">Tools and scripts</a></p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="Jupyter">
 <h2>Jupyter<a class="headerlink" href="#Jupyter" title="Permalink to this headline">¶</a></h2>
-<p>Jupyter is an editor taht allows to work on so called <em>notebooks</em>, which are files ending with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>. They are documents divided in cells where for each cell you can insert commands and immediately see the respective output. Let’s try to open this.</p>
+<p>Jupyter is an editor taht allows to work on so called <em>notebooks,</em> which are files ending with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>. They are documents divided in cells where for each cell you can insert commands and immediately see the respective output. Let’s try to open this.</p>
 <ol class="arabic simple">
 <li><p>Unzip <a class="reference external" href="../_static/generated/basics.zip">exercises zip</a> in a folder, you should obtain something like this:</p></li>
 </ol>
@@ -625,24 +625,28 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <div class="admonition warning">
-<p><strong>WARNING</strong>: to correctly visualize the notebook, it MUST be in an unzipped folder !</p>
+<p><strong>WARNING: to correctly visualize the notebook, it MUST be in an unzipped folder !</strong></p>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>open Jupyter Notebook from that folder. Two things should open, first a console and then browser. The browser should show a file list: navigate the list and open the notebook <code class="docutils literal notranslate"><span class="pre">basics.ipynb</span></code></p></li>
+<li><p>open Jupyter Notebook. Two things should appear, first a console and then a browser. In the browser navigate the files to reach the unzipped folder, and open the notebook <code class="docutils literal notranslate"><span class="pre">basics.ipynb</span></code></p></li>
 </ol>
 <div class="admonition warning">
-<p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: open the one WITHOUT the</strong> <code class="docutils literal notranslate"><span class="pre">-sol</span></code> <strong>at the end!</strong></p>
-<p>Seeing now the solutions is way too easy ;-)</p>
+<p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: DO NOT click Upload button in Jupyer</strong></p>
+<p>Just navigate until you reach the file.</p>
 </div>
 <div class="admonition warning">
-<p><strong>WARNING: If you don’t find Jupyter / something doesn’t work, read</strong> <a class="reference external" href="https://en.softpython.org/installation.html#Notebook-Jupyter">the installation guide</a></p>
+<p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: open the notebook WITHOUT the</strong> <code class="docutils literal notranslate"><span class="pre">-sol</span></code> <strong>at the end!</strong></p>
+<p>Seeing now the solutions is too easy ;-)</p>
 </div>
 <ol class="arabic simple" start="3">
-<li><p>Go on reading the exercises file, sometimes you will find inside exercises which ask you to write Python commands in the following cells. Exercises are graded by difficulty, from one star ✪ to four ✪✪✪✪.</p></li>
+<li><p>Go on reading the exercises file, sometimes you will find paragraphs marked <strong>Exercises</strong> which will ask to write Python commands in the following cells.Exercises are graded by difficulty, from one star ✪ to four ✪✪✪✪</p></li>
 </ol>
 <div class="admonition warning">
-<p class="admonition-title fa fa-exclamation-circle"><strong>WARNING</strong>: In this book we use <strong>ONLY PYTHON 3</strong></p>
-<p>If you obtain weird results, check you are using Python 3 and not 2. If by chance your operating system when you write <code class="docutils literal notranslate"><span class="pre">python</span></code> runs version 2, you can try executing the third with the command: <code class="docutils literal notranslate"><span class="pre">python3</span></code></p>
+<p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: In this book we use ONLY PYTHON 3</strong></p>
+<p>If by chance you obtain weird behaviours, check you are using Python 3 and not 2. If by chance by typing <code class="docutils literal notranslate"><span class="pre">python</span></code> your operating system runs python 2, try executing the third by typing the command <code class="docutils literal notranslate"><span class="pre">python3</span></code></p>
+</div>
+<div class="admonition note">
+<p><strong>If you don’t find Jupyter / something doesn’t work:</strong> have a look at <a class="reference external" href="https://en.softpython.org/installation.html#Jupyter-Notebook">installation</a></p>
 </div>
 <p>Shortcut keys:</p>
 <ul class="simple">
@@ -863,8 +867,8 @@ str
 </div>
 <p>The value of <code class="docutils literal notranslate"><span class="pre">diamonds</span></code> variable has been changed from 4 to 5, but as reported in the previous table, the <code class="docutils literal notranslate"><span class="pre">int</span></code> type is <strong>immutable</strong>. Luckily, this didn’t prevent us from changing the value <code class="docutils literal notranslate"><span class="pre">diamonds</span></code> from 4 to 5. What happend behind the scenes? When we executed the instructions <code class="docutils literal notranslate"><span class="pre">diamonds</span> <span class="pre">=</span> <span class="pre">5</span></code>, a new object of type <code class="docutils literal notranslate"><span class="pre">int</span></code> was created (the integer <code class="docutils literal notranslate"><span class="pre">5</span></code>) and made available with the same name <code class="docutils literal notranslate"><span class="pre">diamonds</span></code></p>
 </div>
-<div class="section" id="Riusing-a-variable">
-<h3>Riusing a variable<a class="headerlink" href="#Riusing-a-variable" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="Reusing-a-variable">
+<h3>Reusing a variable<a class="headerlink" href="#Reusing-a-variable" title="Permalink to this headline">¶</a></h3>
 <p>When you reassign a variable to another value, to calculate the new value you can freely reuse the old value of the variable you want to change. For example, suppose to have the variable</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -945,10 +949,10 @@ str
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmd4c5fbf0-a820-4ea8-9801-f5cd6000593b" type="application/json" >
-    {"trace": [{"stdout": "", "line": 2, "func_name": "<module>", "heap": {}, "stack_to_render": [], "event": "step_line", "globals": {}, "ordered_globals": []}, {"stdout": "", "line": 4, "func_name": "<module>", "heap": {}, "stack_to_render": [], "event": "step_line", "globals": {"flowers": 4}, "ordered_globals": ["flowers"]}, {"stdout": "", "line": 6, "func_name": "<module>", "heap": {}, "stack_to_render": [], "event": "step_line", "globals": {"x": 5, "flowers": 4}, "ordered_globals": ["flowers", "x"]}, {"stdout": "", "line": 6, "func_name": "<module>", "heap": {}, "stack_to_render": [], "event": "return", "globals": {"x": 5, "flowers": 5}, "ordered_globals": ["flowers", "x"]}], "code": " \nflowers = 4   \n\nx = flowers + 1\n\nflowers = x"}
+<script id="json-jmf422c644-ae78-44f9-b594-063027727857" type="application/json" >
+    {"code": " \nflowers = 4   \n\nx = flowers + 1\n\nflowers = x", "trace": [{"stdout": "", "func_name": "<module>", "line": 2, "ordered_globals": [], "event": "step_line", "stack_to_render": [], "heap": {}, "globals": {}}, {"stdout": "", "func_name": "<module>", "line": 4, "ordered_globals": ["flowers"], "event": "step_line", "stack_to_render": [], "heap": {}, "globals": {"flowers": 4}}, {"stdout": "", "func_name": "<module>", "line": 6, "ordered_globals": ["flowers", "x"], "event": "step_line", "stack_to_render": [], "heap": {}, "globals": {"x": 5, "flowers": 4}}, {"stdout": "", "func_name": "<module>", "line": 6, "ordered_globals": ["flowers", "x"], "event": "return", "stack_to_render": [], "heap": {}, "globals": {"x": 5, "flowers": 5}}]}
 </script>
-<div id="jmd4c5fbf0-a820-4ea8-9801-f5cd6000593b" class="pytutorVisualizer"> </div>
+<div id="jmf422c644-ae78-44f9-b594-063027727857" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -968,12 +972,12 @@ str
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmd4c5fbf0-a820-4ea8-9801-f5cd6000593b').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmf422c644-ae78-44f9-b594-063027727857').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmd4c5fbf0-a820-4ea8-9801-f5cd6000593b',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmf422c644-ae78-44f9-b594-063027727857',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -1194,8 +1198,8 @@ str
 </div>
 </div>
 </div>
-<div class="section" id="Da-fare---ciclare">
-<h3>Da fare - ciclare<a class="headerlink" href="#Da-fare---ciclare" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="Exercise---cycling">
+<h3>Exercise - cycling<a class="headerlink" href="#Exercise---cycling" title="Permalink to this headline">¶</a></h3>
 <p>✪ Write a program that given three variables with numebers <code class="docutils literal notranslate"><span class="pre">a</span></code>,<code class="docutils literal notranslate"><span class="pre">b</span></code>,<code class="docutils literal notranslate"><span class="pre">c</span></code>, cycles the values, that is, puts the value of <code class="docutils literal notranslate"><span class="pre">a</span></code> in <code class="docutils literal notranslate"><span class="pre">b</span></code>, the value of <code class="docutils literal notranslate"><span class="pre">b</span></code> in <code class="docutils literal notranslate"><span class="pre">c</span></code>, and the value of <code class="docutils literal notranslate"><span class="pre">c</span></code> in <code class="docutils literal notranslate"><span class="pre">a</span></code> .</p>
 <p>So if you begin like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
@@ -1430,7 +1434,7 @@ So many!
 </div>
 <div class="section" id="Exercise---exchange-like-a-ninja">
 <h3>Exercise - exchange like a ninja<a class="headerlink" href="#Exercise---exchange-like-a-ninja" title="Permalink to this headline">¶</a></h3>
-<p>Try now to exchange the value of the two variables <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> in one row with multiple initialization</p>
+<p>✪ Try now to exchange the value of the two variables <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> in one row with multiple initialization</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
 </pre></div>
 </div>
@@ -1463,10 +1467,6 @@ So many!
 <p>You can chose the name that you like for your variables (we advise to pick something reminding their meaning), but you need to adhere to some simple rules:</p>
 </div>
 <ol class="arabic simple">
-<li><p>I nome possono solo contenere caratteri in maiuscolo/minuscolo (<code class="docutils literal notranslate"><span class="pre">A-Z</span></code>, <code class="docutils literal notranslate"><span class="pre">a-z</span></code>), numeri (<code class="docutils literal notranslate"><span class="pre">0-9</span></code>) o <em>underscore</em> <code class="docutils literal notranslate"><span class="pre">_</span></code></p></li>
-<li><p>I nomi non possono iniziare con un numero</p></li>
-<li><p>i nomi di variabile dovrebbero iniziare con lettera minuscola</p></li>
-<li><p>I nomi non possono essere uguali a parole riservate</p></li>
 <li><p>Names can only contain upper/lower case digits (<code class="docutils literal notranslate"><span class="pre">A-Z</span></code>, <code class="docutils literal notranslate"><span class="pre">a-z</span></code>), numbers (<code class="docutils literal notranslate"><span class="pre">0-9</span></code>) or underscores <code class="docutils literal notranslate"><span class="pre">_</span></code>;</p></li>
 <li><p>Names cannot start with a number;</p></li>
 <li><p>Variable names should start with a lowercase letter</p></li>
@@ -2071,7 +2071,7 @@ There are left:
 </div>
 <div class="section" id="Exercise---transportation">
 <h3>Exercise - transportation<a class="headerlink" href="#Exercise---transportation" title="Permalink to this headline">¶</a></h3>
-<p>✪ A company has a truck that every day delivers products to its best client. The truck can at most transport 10 tons of material. Unfortunately, the roads it can drive through have bridges that limit the maximum weight a vehicle can have to pass. These limits are provided in 5 variables:</p>
+<p>✪✪ A company has a truck that every day delivers products to its best client. The truck can at most transport 10 tons of material. Unfortunately, the roads it can drive through have bridges that limit the maximum weight a vehicle can have to pass. These limits are provided in 5 variables:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span>
 </pre></div>
 </div>
@@ -2121,7 +2121,7 @@ In a single journey we can transport at most 4 tons
 </div>
 <div class="section" id="Exercise---armchairs">
 <h3>Exercise - armchairs<a class="headerlink" href="#Exercise---armchairs" title="Permalink to this headline">¶</a></h3>
-<p>✪ The tycoon De Industrionis owns to factories of armchairs, one in Belluno city and one in Rovigo. To make an armchair three main components are needed: a mattress, a seatback and a cover. Each factory produces all required components, taking a certain time to produce each component:</p>
+<p>✪✪ The tycoon De Industrionis owns to factories of armchairs, one in Belluno city and one in Rovigo. To make an armchair three main components are needed: a mattress, a seatback and a cover. Each factory produces all required components, taking a certain time to produce each component:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
@@ -3477,7 +3477,7 @@ float
 </div>
 <div class="section" id="Exercise---circle">
 <h3>Exercise - circle<a class="headerlink" href="#Exercise---circle" title="Permalink to this headline">¶</a></h3>
-<p>Calculate the area of a circle at the center of a soccer ball (radius = 9.1m), remember that <span class="math notranslate nohighlight">\(area= pi*r^2\)</span></p>
+<p>✪ Calculate the area of a circle at the center of a soccer ball (radius = 9.1m), remember that <span class="math notranslate nohighlight">\(area= pi*r^2\)</span></p>
 <p>Your code should print as result <code class="docutils literal notranslate"><span class="pre">263.02199094102605</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
@@ -3540,7 +3540,7 @@ float
 </div>
 <div class="section" id="Exercise---fractioning">
 <h3>Exercise - fractioning<a class="headerlink" href="#Exercise---fractioning" title="Permalink to this headline">¶</a></h3>
-<p>Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">0.000003</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">2.753278226511882</span></code></p>
+<p>✪ Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">0.000003</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">2.753278226511882</span></code></p>
 <div class="math notranslate nohighlight">
 \[-\frac{\sqrt{x+3}}{\frac{(x + 2)^3}{\log{x}}}\]</div>
 <div class="nbinput docutils container">
@@ -3712,7 +3712,7 @@ float
 </div>
 <div class="section" id="Exercise---Invigorate">
 <h3>Exercise - Invigorate<a class="headerlink" href="#Exercise---Invigorate" title="Permalink to this headline">¶</a></h3>
-<p>Excessive studies lead you search on internet recipes of energetic drinks. Luckily, a guru of nutrition just posted on her Instagram channel &#64;DrinkSoYouGetHealthy this recipe of a miracle drink:</p>
+<p>✪ Excessive studies lead you search on internet recipes of energetic drinks. Luckily, a guru of nutrition just posted on her Instagram channel &#64;DrinkSoYouGetHealthy this recipe of a miracle drink:</p>
 <blockquote>
 <div><p>Pour in a mixer 2 decilitres of kiwi juice, 4 decilitres of soy sauce, and 3 decilitres of shampoo of karitè bio. Mix vigorously and then pour half drink into a glass. Fill the glass until the superior deciliter. Swallow in one shot.</p>
 </div></blockquote>
@@ -3788,7 +3788,7 @@ I fill the glass until superior deciliter, now it contains: 0 dl
 </div>
 <div class="section" id="Exercise---roundminder">
 <h3>Exercise - roundminder<a class="headerlink" href="#Exercise---roundminder" title="Permalink to this headline">¶</a></h3>
-<p>Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">-5.50</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">41</span></code></p>
+<p>✪ Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">-5.50</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">41</span></code></p>
 <div class="math notranslate nohighlight">
 \[\lvert{\lceil{x}\rceil}\rvert + \lfloor{x}\rceil^2\]</div>
 <div class="nbinput docutils container">
@@ -3979,7 +3979,7 @@ True
 </div>
 <div class="section" id="Exercise---quadratic">
 <h3>Exercise - quadratic<a class="headerlink" href="#Exercise---quadratic" title="Permalink to this headline">¶</a></h3>
-<p>Write some code to calculate the zeroes of the equation <span class="math notranslate nohighlight">\(ax^2-b = 0\)</span></p>
+<p>✪ Write some code to calculate the zeroes of the equation <span class="math notranslate nohighlight">\(ax^2-b = 0\)</span></p>
 <ul class="simple">
 <li><p>Show numbers with <strong>20 digits</strong> of precision</p></li>
 <li><p>At the end check that by substituting the value obtained <code class="docutils literal notranslate"><span class="pre">x</span></code> into the equation you actually obtain zero.</p></li>
@@ -4034,7 +4034,7 @@ True
 </div>
 <div class="section" id="Exercise---trendy">
 <h3>Exercise - trendy<a class="headerlink" href="#Exercise---trendy" title="Permalink to this headline">¶</a></h3>
-<p>You are already thinking about next vacations, but there is a big problem: where do you go, if you don’t have a selfie-stick. You cannot leave with this serious anxiety: to uniform yourself to this mass phenomena you must buy the stick most similar to others. You then conduct a rigourous statistical survey among turists obssessed by selfie sticks with the goal to find the most frequent brands of selfie sticks, in other words, the <em>mode</em> of the frequencies. You obtain these results:</p>
+<p>✪✪ You are already thinking about next vacations, but there is a big problem: where do you go, if you don’t have a <em>selfie-stick.</em> You cannot leave with this serious anxiety: to uniform yourself to this mass phenomena you must buy the stick which is most similar to others. You then conduct a rigourous statistical survey among turists obssessed by selfie sticks with the goal to find the most frequent brands of sticks, in other words, the <em>mode</em> of the frequencies. You obtain these results:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[113]:
 </pre></div>
@@ -4046,11 +4046,11 @@ True
 </div>
 </div>
 <p>We deduce that masses love selfie-sticks of the brand <code class="docutils literal notranslate"><span class="pre">'Boombasticks'</span></code> and <code class="docutils literal notranslate"><span class="pre">TrashTrend</span></code>, both in a tie with 30% turists each. Write some code which prints this result:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TooManyLike is the most frequent? False ( 25.0 % )
-ErMejo United è il più frequente? True ( 30.0 % )
-Perditempo Inc è il più frequente? False ( 10.0 % )
-Vanità 3.0 è il più frequente? False ( 5.0 % )
-TronistiPerCaso è il più frequente? True ( 30.0 % )
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>TooManyLikes is the most frequent? False ( 25.0 % )
+Boombasticks is the most frequent? True ( 30.0 % )
+Timewasters Inc is the most frequent? False ( 10.0 % )
+Vanity 3.0 is the most frequent? False ( 5.0 % )
+TrashTrend is the most frequent? True ( 30.0 % )
 </pre></div>
 </div>
 <ul class="simple">
@@ -4231,7 +4231,7 @@ Decimal(&#39;1.999999999999999999999999999&#39;)
 <p>Try to execute them both in Jupyter and a text editor such as Spyder or Visual Studio Code to get familiar with both environments.</p>
 <div class="section" id="Challenge---which-booleans-1?">
 <h3>Challenge - which booleans 1?<a class="headerlink" href="#Challenge---which-booleans-1?" title="Permalink to this headline">¶</a></h3>
-<p>Find the row with values such that the final print prints <code class="docutils literal notranslate"><span class="pre">True</span></code>. Is there only one combination or many?</p>
+<p>✪ Find the row with values such that the final print prints <code class="docutils literal notranslate"><span class="pre">True</span></code>. Is there only one combination or many?</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[122]:
 </pre></div>
@@ -4258,7 +4258,7 @@ False
 </div>
 <div class="section" id="Challenge---which-booleans-2?">
 <h3>Challenge - which booleans 2?<a class="headerlink" href="#Challenge---which-booleans-2?" title="Permalink to this headline">¶</a></h3>
-<p>Find the row in which by assigning values to <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> it prints <code class="docutils literal notranslate"><span class="pre">True</span></code>. Is there only one combinatin or many?</p>
+<p>✪ Find the row in which by assigning values to <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> it prints <code class="docutils literal notranslate"><span class="pre">True</span></code>. Is there only one combinatin or many?</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[123]:
 </pre></div>
@@ -4288,7 +4288,7 @@ False
 </div>
 <div class="section" id="Challenge---Triangle-area">
 <h3>Challenge - Triangle area<a class="headerlink" href="#Challenge---Triangle-area" title="Permalink to this headline">¶</a></h3>
-<p>Compute the area of a triangle having base 120 units (<code class="docutils literal notranslate"><span class="pre">b</span></code>) and height 33 (<code class="docutils literal notranslate"><span class="pre">h</span></code>). Assign the result to a variable named <code class="docutils literal notranslate"><span class="pre">area</span></code> and print it. Your code should show <code class="docutils literal notranslate"><span class="pre">Triangle</span> <span class="pre">area</span> <span class="pre">is:</span> <span class="pre">120.0</span></code></p>
+<p>✪ Compute the area of a triangle having base 120 units (<code class="docutils literal notranslate"><span class="pre">b</span></code>) and height 33 (<code class="docutils literal notranslate"><span class="pre">h</span></code>). Assign the result to a variable named <code class="docutils literal notranslate"><span class="pre">area</span></code> and print it. Your code should show <code class="docutils literal notranslate"><span class="pre">Triangle</span> <span class="pre">area</span> <span class="pre">is:</span> <span class="pre">120.0</span></code></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[124]:
 </pre></div>
@@ -4302,7 +4302,7 @@ False
 </div>
 <div class="section" id="Challenge---square-area">
 <h3>Challenge - square area<a class="headerlink" href="#Challenge---square-area" title="Permalink to this headline">¶</a></h3>
-<p>Compute the area of a square having side (<code class="docutils literal notranslate"><span class="pre">s</span></code>) equal to 145 units. Assign the result to a variable named <code class="docutils literal notranslate"><span class="pre">area</span></code> and print it, it should show <code class="docutils literal notranslate"><span class="pre">Square</span> <span class="pre">area</span> <span class="pre">is:</span> <span class="pre">21025</span></code></p>
+<p>✪ Compute the area of a square having side (<code class="docutils literal notranslate"><span class="pre">s</span></code>) equal to 145 units. Assign the result to a variable named <code class="docutils literal notranslate"><span class="pre">area</span></code> and print it, it should show <code class="docutils literal notranslate"><span class="pre">Square</span> <span class="pre">area</span> <span class="pre">is:</span> <span class="pre">21025</span></code></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[125]:
 </pre></div>
@@ -4316,7 +4316,7 @@ False
 </div>
 <div class="section" id="Challange---area-from-input">
 <h3>Challange - area from input<a class="headerlink" href="#Challange---area-from-input" title="Permalink to this headline">¶</a></h3>
-<p>Modify the program at previous point. to acquire the side <code class="docutils literal notranslate"><span class="pre">s</span></code> from the user at runtime.</p>
+<p>✪ Modify the program at previous point. to acquire the side <code class="docutils literal notranslate"><span class="pre">s</span></code> from the user at runtime.</p>
 <p><strong>Hint</strong>: use the <a class="reference external" href="https://www.geeksforgeeks.org/taking-input-in-python/">input</a> function and remember to convert the acquired value into an <code class="docutils literal notranslate"><span class="pre">int</span></code>). NOTE: from our experimentations, <code class="docutils literal notranslate"><span class="pre">input</span></code> tends to have problems in Jupyter so you’d better try in some other editor.</p>
 <p>Try also to put the two previous scripts in two separate files (e.g. <code class="docutils literal notranslate"><span class="pre">triangle_area.py</span></code> and <code class="docutils literal notranslate"><span class="pre">square_area.py</span></code> and execute them from the terminal)</p>
 <div class="nbinput nblast docutils container">
@@ -4332,7 +4332,7 @@ False
 </div>
 <div class="section" id="Challenge---trapezoid">
 <h3>Challenge - trapezoid<a class="headerlink" href="#Challenge---trapezoid" title="Permalink to this headline">¶</a></h3>
-<p>Write a small script (<code class="docutils literal notranslate"><span class="pre">trapezoid.py</span></code>) that computes the area of a trapezoid having major base (<code class="docutils literal notranslate"><span class="pre">mj</span></code>) equal to 30 units, minor base (mn) equal to 12 and height (<code class="docutils literal notranslate"><span class="pre">h</span></code>) equal to 17. Print the resulting area. Try executing the script from a text editor like Spyder or Visual Studio Code and from the terminal.</p>
+<p>✪ Write a small script (<code class="docutils literal notranslate"><span class="pre">trapezoid.py</span></code>) that computes the area of a trapezoid having major base (<code class="docutils literal notranslate"><span class="pre">mj</span></code>) equal to 30 units, minor base (mn) equal to 12 and height (<code class="docutils literal notranslate"><span class="pre">h</span></code>) equal to 17. Print the resulting area. Try executing the script from a text editor like Spyder or Visual Studio Code and from the terminal.</p>
 <p>It should print <code class="docutils literal notranslate"><span class="pre">Trapezoid</span> <span class="pre">area</span> <span class="pre">is:</span>&#160; <span class="pre">357.0</span></code></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[127]:
@@ -4347,10 +4347,10 @@ False
 </div>
 <div class="section" id="Challenge---first-n-numbers">
 <h3>Challenge - first n numbers<a class="headerlink" href="#Challenge---first-n-numbers" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>Rewrite the example of the sum of the first 1200 integers by using the following equation: <span class="math notranslate nohighlight">\(\sum\limits_{i=1}^n i = \frac{n (n+1)}{2}\)</span>.</p></li>
-<li><p>Then modify the program to make it acquire the number of integers to sum N from the user at runtime</p></li>
-</ul>
+<p>✪ Rewrite the example of the sum of the first 1200 integers by using the following equation:</p>
+<div class="math notranslate nohighlight">
+\[\sum\limits_{i=1}^n i = \frac{n (n+1)}{2}\]</div>
+<p>Then modify the program to make it acquire the number of integers to sum N from the user at runtime</p>
 <p>It should show <code class="docutils literal notranslate"><span class="pre">Sum</span> <span class="pre">of</span> <span class="pre">first</span> <span class="pre">1200</span> <span class="pre">integers:</span>&#160; <span class="pre">720600.0</span></code></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[128]:
@@ -4380,7 +4380,7 @@ False
 </div>
 <div class="section" id="Challenge---which-integers-1?">
 <h3>Challenge - which integers 1?<a class="headerlink" href="#Challenge---which-integers-1?" title="Permalink to this headline">¶</a></h3>
-<p>Assign numerical values to <code class="docutils literal notranslate"><span class="pre">x</span></code> <code class="docutils literal notranslate"><span class="pre">y</span></code> e <code class="docutils literal notranslate"><span class="pre">z</span></code> to have the expression print <code class="docutils literal notranslate"><span class="pre">True</span></code></p>
+<p>✪ Assign numerical values to <code class="docutils literal notranslate"><span class="pre">x</span></code> <code class="docutils literal notranslate"><span class="pre">y</span></code> e <code class="docutils literal notranslate"><span class="pre">z</span></code> to have the expression print <code class="docutils literal notranslate"><span class="pre">True</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[130]:
 </pre></div>
@@ -4403,7 +4403,7 @@ False
 </div>
 <div class="section" id="Challenge---which-integers-2?">
 <h3>Challenge - which integers 2?<a class="headerlink" href="#Challenge---which-integers-2?" title="Permalink to this headline">¶</a></h3>
-<p>Assign to <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> values such that <code class="docutils literal notranslate"><span class="pre">True</span></code> is printed</p>
+<p>✪ Assign to <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> values such that <code class="docutils literal notranslate"><span class="pre">True</span></code> is printed</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[131]:
 </pre></div>
@@ -4427,7 +4427,7 @@ False
 </div>
 <div class="section" id="Challenge---which-integers-3?">
 <h3>Challenge - which integers 3?<a class="headerlink" href="#Challenge---which-integers-3?" title="Permalink to this headline">¶</a></h3>
-<p>Assign to <code class="docutils literal notranslate"><span class="pre">z</span></code> and <code class="docutils literal notranslate"><span class="pre">w</span></code> values such that <code class="docutils literal notranslate"><span class="pre">True</span></code> is printed.</p>
+<p>✪ Assign to <code class="docutils literal notranslate"><span class="pre">z</span></code> and <code class="docutils literal notranslate"><span class="pre">w</span></code> values such that <code class="docutils literal notranslate"><span class="pre">True</span></code> is printed.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[132]:
 </pre></div>
@@ -4451,11 +4451,11 @@ False
 </div>
 <div class="section" id="Challenge---airport">
 <h3>Challenge - airport<a class="headerlink" href="#Challenge---airport" title="Permalink to this headline">¶</a></h3>
-<p>You finally decide to take a vacation and you go to the airport, but you already know you will need to go through various queues. Luckily, you only have carry-on bag, so you directly go to security checks, where you can choose among three rows of people <code class="docutils literal notranslate"><span class="pre">sec1</span></code>, <code class="docutils literal notranslate"><span class="pre">sec2</span></code>, <code class="docutils literal notranslate"><span class="pre">sec3</span></code>. Each person an average takes 4 minutes to be examinated, you included, and obviously you choose the shortest queue. Afterwards you go to the gate, where you find two queues of <code class="docutils literal notranslate"><span class="pre">ga1</span></code> and <code class="docutils literal notranslate"><span class="pre">ga2</span></code> people, and you know
-that each person you included an average takes 20 seconds to pass: again you choose the shortes queue. Luckily the aircraft is next to the gate so you can directly choose whether to board at the queue at the head of the aircraft with <code class="docutils literal notranslate"><span class="pre">bo1</span></code> people or at the queue at the tail of the plane with <code class="docutils literal notranslate"><span class="pre">bo2</span></code> people. Each passenger you included takes an average 30 seconds, and you choose the shortest queue.</p>
+<p>✪✪ You finally decide to take a vacation and go to the airport, expecting to spend some time in several queues. Luckily, you only have carry-on bag, so you directly go to security checks, where you can choose among three rows of people <code class="docutils literal notranslate"><span class="pre">sec1</span></code>, <code class="docutils literal notranslate"><span class="pre">sec2</span></code>, <code class="docutils literal notranslate"><span class="pre">sec3</span></code>. Each person an average takes <code class="docutils literal notranslate"><span class="pre">4</span></code> <em>minutes</em> to be examinated, you included, and obviously you choose the shortest queue. Afterwards you go to the gate, where you find two queues of <code class="docutils literal notranslate"><span class="pre">ga1</span></code> and <code class="docutils literal notranslate"><span class="pre">ga2</span></code> people, and you know that each
+person you included an average takes <code class="docutils literal notranslate"><span class="pre">20</span></code> <em>seconds</em> to pass: again you choose the shortes queue. Luckily the aircraft is next to the gate so you can directly choose whether to board at the queue at the head of the aircraft with <code class="docutils literal notranslate"><span class="pre">bo1</span></code> people or at the queue at the tail of the plane with <code class="docutils literal notranslate"><span class="pre">bo2</span></code> people. Each passenger you included takes an average <code class="docutils literal notranslate"><span class="pre">30</span></code> <em>seconds,</em> and you choose the shortest queue.</p>
 <p>Write some code to calculate how much time you take in total to enter the plane, showing it in minutes and seconds.</p>
 <p>Example - given:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sec1</span><span class="p">,</span><span class="n">sec2</span><span class="p">,</span><span class="n">sec3</span><span class="p">,</span><span class="n">ga1</span><span class="p">,</span><span class="n">ga2</span><span class="p">,</span><span class="n">bo1</span><span class="p">,</span><span class="n">bo2</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sec1</span><span class="p">,</span><span class="n">sec2</span><span class="p">,</span><span class="n">sec3</span><span class="p">,</span> <span class="n">ga1</span><span class="p">,</span><span class="n">ga2</span><span class="p">,</span> <span class="n">bo1</span><span class="p">,</span><span class="n">bo2</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span><span class="mi">6</span>
 </pre></div>
 </div>
 <p>your code must print:</p>
@@ -4467,8 +4467,8 @@ that each person you included an average takes 20 seconds to pass: again you cho
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sec1</span><span class="p">,</span><span class="n">sec2</span><span class="p">,</span><span class="n">sec3</span><span class="p">,</span><span class="n">ga1</span><span class="p">,</span><span class="n">ga2</span><span class="p">,</span><span class="n">bo1</span><span class="p">,</span><span class="n">bo2</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span>   <span class="c1"># 24 minutes e 30 seconds</span>
-<span class="c1">#sec1,sec2,sec3,ga1,ga2,bo1,bo2 = 9,7,1,3,5,2,9  # 10 minutes e 50 seconds</span>
+<span></span><span class="n">sec1</span><span class="p">,</span><span class="n">sec2</span><span class="p">,</span><span class="n">sec3</span><span class="p">,</span> <span class="n">ga1</span><span class="p">,</span><span class="n">ga2</span><span class="p">,</span> <span class="n">bo1</span><span class="p">,</span><span class="n">bo2</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span><span class="mi">6</span>   <span class="c1"># 24 minutes e 30 seconds</span>
+<span class="c1">#sec1,sec2,sec3, ga1,ga2, bo1,bo2 = 9,7,1, 3,5, 2,9  # 10 minutes e 50 seconds</span>
 
 <span class="c1"># write here</span>
 
@@ -4478,7 +4478,7 @@ that each person you included an average takes 20 seconds to pass: again you cho
 </div>
 <div class="section" id="Challenge---Holiday-trip">
 <h3>Challenge - Holiday trip<a class="headerlink" href="#Challenge---Holiday-trip" title="Permalink to this headline">¶</a></h3>
-<p>While an holiday you are traveling by car, and in a particular day you want to visit one among 4 destinations. Each location requires to go through two roads <code class="docutils literal notranslate"><span class="pre">r1</span></code> and <code class="docutils literal notranslate"><span class="pre">r2</span></code>. Roads are numbered with two digits numbers, for example to reach destination <code class="docutils literal notranslate"><span class="pre">1</span></code> you need to go to road <code class="docutils literal notranslate"><span class="pre">58</span></code> and road <code class="docutils literal notranslate"><span class="pre">17</span></code>.</p>
+<p>✪✪ While an holiday you are traveling by car, and in a particular day you want to visit one among 4 destinations. Each location requires to go through two roads <code class="docutils literal notranslate"><span class="pre">r1</span></code> and <code class="docutils literal notranslate"><span class="pre">r2</span></code>. Roads are numbered with two digits numbers, for example to reach destination <code class="docutils literal notranslate"><span class="pre">1</span></code> you need to go to road <code class="docutils literal notranslate"><span class="pre">58</span></code> and road <code class="docutils literal notranslate"><span class="pre">17</span></code>.</p>
 <p>Write some code that given <code class="docutils literal notranslate"><span class="pre">r1</span></code> and <code class="docutils literal notranslate"><span class="pre">r2</span></code> roads shows the number of the destination.</p>
 <ul class="simple">
 <li><p>If the car goes to a road it shouldn’t (i.e. road 666), put <code class="docutils literal notranslate"><span class="pre">False</span></code> in <code class="docutils literal notranslate"><span class="pre">destination</span></code></p></li>
