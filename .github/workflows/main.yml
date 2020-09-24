@@ -71,6 +71,6 @@ jobs:
     - name: deploy to custom server
       run: |
         # Custom deploy, you don't need this
-        if [ -z ${{DAVAPI_URL}+x} ]; then 
+        if [ ! -z "${{ secrets.DAVAPI_URL }}" ]; then 
             curl --silent --digest --user ${{ secrets.DAVAPI_CREDENTIALS}} ${{ secrets.DAVAPI_URL }}    
         fi
