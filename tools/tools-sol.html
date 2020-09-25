@@ -645,7 +645,7 @@ version we have on our system.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David&gt; dir
 Arduino                    gotysc                           program.wav
 a.txt                      index.html                       Public
-CART                       java0.log                        RegDocente.pdf
+MYFOLDER                   java0.log                        RegDocente.pdf
 backupsys                  java1.log
 BaseXData                  java_error_in_IDEA_14362.log
 </pre></div>
@@ -654,7 +654,7 @@ BaseXData                  java_error_in_IDEA_14362.log
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>david@david-computer:~$ ls
 Arduino                           gotysc                         program.wav
 a.txt                             index.html                     Public
-CART                              java0.log                      RegistroDocenteStandard(1).pdf
+MYFOLDER                          java0.log                      RegistroDocenteStandard(1).pdf
 backupsys                         java1.log                      RegistroDocenteStandard.pdf
 BaseXData                         java_error_in_IDEA_14362.log
 </pre></div>
@@ -716,7 +716,7 @@ david@my-computer:~$
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David&gt; dir
 Arduino                    gotysc                           program.wav
 a.txt                      index.html                       Public
-CART                       java0.log                        RegDocente.pdf
+MYFOLDER                   java0.log                        RegDocente.pdf
 backupsys                  java1.log
 BaseXData                  java_error_in_IDEA_14362.log
 </pre></div>
@@ -725,7 +725,7 @@ BaseXData                  java_error_in_IDEA_14362.log
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>david@david-computer:~$ ls
 Arduino                           gotysc                         program.wav
 a.txt                             index.html                     Public
-CART                              java0.log                      RegistroDocenteStandard(1).pdf
+MYFOLDER                          java0.log                      RegistroDocenteStandard(1).pdf
 backupsys                         java1.log                      RegistroDocenteStandard.pdf
 BaseXData                         java_error_in_IDEA_14362.log
 </pre></div>
@@ -753,7 +753,7 @@ BaseXData                         java_error_in_IDEA_14362.log
 <div class="admonition warning">
 <p><strong>WARNING</strong>: when you are saving the file, <strong>make sure the file have the extension</strong> <code class="docutils literal notranslate"><span class="pre">.py</span></code> <strong>!!</strong></p>
 </div>
-<p>Let’s suppose to create the file <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code> inside a folder called <code class="docutils literal notranslate"><span class="pre">CART</span></code>:</p>
+<p>Let’s suppose to create the file <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code> inside a folder called <code class="docutils literal notranslate"><span class="pre">MYFOLDER</span></code>:</p>
 <ul class="simple">
 <li><p><strong>WINDOWS</strong>: if you use <em>Notepad</em>, in the save window you have to to set <em>Save as</em> to <em>All files</em> (otherwise the file will be wrongly saved like <code class="docutils literal notranslate"><span class="pre">my_script.py.txt</span></code> !)</p></li>
 <li><p><strong>MAC</strong>: if you use <em>TextEdit,</em> before saving click <em>Format</em> and then <em>Convert to format Only text:</em> <strong>if you forget this passage, TextEdit in the save window will not allow you to save in the right format and you will probably end up with a file .rtf which we are not interested in</strong></p></li>
@@ -811,11 +811,11 @@ C:\Users\David\&gt;
 my_script.py
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">dir</span></code> is telling us that inside <code class="docutils literal notranslate"><span class="pre">CART</span></code> there is our file <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">dir</span></code> is telling us that inside <code class="docutils literal notranslate"><span class="pre">MYFOLDER</span></code> there is our file <code class="docutils literal notranslate"><span class="pre">my_script.py</span></code></p>
 <ol class="arabic simple" start="6">
 <li><p>From within <code class="docutils literal notranslate"><span class="pre">MYFOLDER</span></code>, type <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">my_script.py</span></code></p></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David\CART&gt;python my_script.py
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\Users\David\MYFOLDER&gt;python my_script.py
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -856,7 +856,7 @@ C:\Users\David\MYFOLDER&gt;
 <li><p>select only <code class="docutils literal notranslate"><span class="pre">x=3</span></code> and hit F9</p></li>
 <li><p>click on th gear the right of the console panel, and select <em>Restart kernel,</em> then select only <code class="docutils literal notranslate"><span class="pre">print(x+y)</span></code> and hit F9. What happens?</p></li>
 </ul>
-<p>Remember that if the memory of the interpreter has been cleared with <em>Restart kernel</em>, and then you try executing a code row with variables defined in lines which were not exectued before, Python will not know which variables you are referring to and will show a <code class="docutils literal notranslate"><span class="pre">NameError</span></code>.</p>
+<p>Remember that if the memory of the interpreter has been cleared with <em>Restart kernel,</em> and then you try executing a code row with variables defined in lines which were not exectued before, Python will not know which variables you are referring to and will show a <code class="docutils literal notranslate"><span class="pre">NameError</span></code>.</p>
 <p><img alt="Spyder ide 3823" src="../_images/spyder-ide.png" /></p>
 </div>
 </div>
@@ -1044,7 +1044,7 @@ C:\Users\David\MYFOLDER&gt;
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">coins</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">5</span><span class="p">,</span><span class="n">coins</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">5</span><span class="p">,</span> <span class="n">coins</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1253,10 +1253,10 @@ So I will buy other 3 at the Steam Market
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jma3037c20-279b-458e-82ff-14897ed314f3" type="application/json" >
-    {"trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": [], "stack_to_render": [], "globals": {}, "heap": {}}, {"line": 3, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": ["x"], "stack_to_render": [], "globals": {"x": 5}, "heap": {}}, {"line": 4, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": ["x", "y"], "stack_to_render": [], "globals": {"y": 7, "x": 5}, "heap": {}}, {"line": 4, "event": "return", "func_name": "<module>", "stdout": "", "ordered_globals": ["x", "y", "z"], "stack_to_render": [], "globals": {"z": 12, "y": 7, "x": 5}, "heap": {}}], "code": " \nx = 5\ny = 7\nz = x + y"}
+<script id="json-jm452ce87c-ed35-4e62-ab61-b25f5b7cddd3" type="application/json" >
+    {"code": " \nx = 5\ny = 7\nz = x + y", "trace": [{"stack_to_render": [], "line": 2, "stdout": "", "globals": {}, "func_name": "<module>", "event": "step_line", "ordered_globals": [], "heap": {}}, {"stack_to_render": [], "line": 3, "stdout": "", "globals": {"x": 5}, "func_name": "<module>", "event": "step_line", "ordered_globals": ["x"], "heap": {}}, {"stack_to_render": [], "line": 4, "stdout": "", "globals": {"x": 5, "y": 7}, "func_name": "<module>", "event": "step_line", "ordered_globals": ["x", "y"], "heap": {}}, {"stack_to_render": [], "line": 4, "stdout": "", "globals": {"x": 5, "y": 7, "z": 12}, "func_name": "<module>", "event": "return", "ordered_globals": ["x", "y", "z"], "heap": {}}]}
 </script>
-<div id="jma3037c20-279b-458e-82ff-14897ed314f3" class="pytutorVisualizer"> </div>
+<div id="jm452ce87c-ed35-4e62-ab61-b25f5b7cddd3" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1276,12 +1276,12 @@ So I will buy other 3 at the Steam Market
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jma3037c20-279b-458e-82ff-14897ed314f3').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm452ce87c-ed35-4e62-ab61-b25f5b7cddd3').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jma3037c20-279b-458e-82ff-14897ed314f3',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm452ce87c-ed35-4e62-ab61-b25f5b7cddd3',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -1354,10 +1354,10 @@ NameError: name &#39;w&#39; is not defined
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm22896bcb-b0db-47b7-b733-367f311f4198" type="application/json" >
-    {"trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": [], "stack_to_render": [], "globals": {}, "heap": {}}, {"line": 2, "event": "exception", "exception_msg": "NameError: name 'w' is not defined", "func_name": "<module>", "stdout": "", "ordered_globals": [], "stack_to_render": [], "globals": {}, "heap": {}}], "code": " \nprint(w)"}
+<script id="json-jma7e02fe7-c3ef-4eb9-8daf-73d742e5548a" type="application/json" >
+    {"code": " \nprint(w)", "trace": [{"stack_to_render": [], "line": 2, "stdout": "", "globals": {}, "func_name": "<module>", "event": "step_line", "ordered_globals": [], "heap": {}}, {"stack_to_render": [], "exception_msg": "NameError: name 'w' is not defined", "line": 2, "stdout": "", "globals": {}, "func_name": "<module>", "event": "exception", "ordered_globals": [], "heap": {}}]}
 </script>
-<div id="jm22896bcb-b0db-47b7-b733-367f311f4198" class="pytutorVisualizer"> </div>
+<div id="jma7e02fe7-c3ef-4eb9-8daf-73d742e5548a" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1377,12 +1377,12 @@ NameError: name &#39;w&#39; is not defined
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm22896bcb-b0db-47b7-b733-367f311f4198').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jma7e02fe7-c3ef-4eb9-8daf-73d742e5548a').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm22896bcb-b0db-47b7-b733-367f311f4198',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jma7e02fe7-c3ef-4eb9-8daf-73d742e5548a',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -1426,10 +1426,10 @@ NameError: name &#39;w&#39; is not defined
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmbcb75911-01ee-41bb-9aff-a50ed82ff04f" type="application/json" >
-    {"trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": [], "stack_to_render": [], "globals": {}, "heap": {}}, {"line": 3, "event": "step_line", "func_name": "<module>", "stdout": "", "ordered_globals": ["w"], "stack_to_render": [], "globals": {"w": 3}, "heap": {}}, {"line": 3, "event": "return", "func_name": "<module>", "stdout": "3\n", "ordered_globals": ["w"], "stack_to_render": [], "globals": {"w": 3}, "heap": {}}], "code": " \nw = 3\nprint(w)"}
+<script id="json-jm8a8e7729-dd75-4b1f-87c0-2d6fcdead378" type="application/json" >
+    {"code": " \nw = 3\nprint(w)", "trace": [{"stack_to_render": [], "line": 2, "stdout": "", "globals": {}, "func_name": "<module>", "event": "step_line", "ordered_globals": [], "heap": {}}, {"stack_to_render": [], "line": 3, "stdout": "", "globals": {"w": 3}, "func_name": "<module>", "event": "step_line", "ordered_globals": ["w"], "heap": {}}, {"stack_to_render": [], "line": 3, "stdout": "3\n", "globals": {"w": 3}, "func_name": "<module>", "event": "return", "ordered_globals": ["w"], "heap": {}}]}
 </script>
-<div id="jmbcb75911-01ee-41bb-9aff-a50ed82ff04f" class="pytutorVisualizer"> </div>
+<div id="jm8a8e7729-dd75-4b1f-87c0-2d6fcdead378" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1449,12 +1449,12 @@ NameError: name &#39;w&#39; is not defined
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmbcb75911-01ee-41bb-9aff-a50ed82ff04f').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm8a8e7729-dd75-4b1f-87c0-2d6fcdead378').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmbcb75911-01ee-41bb-9aff-a50ed82ff04f',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm8a8e7729-dd75-4b1f-87c0-2d6fcdead378',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
