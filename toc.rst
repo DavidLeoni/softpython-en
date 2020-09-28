@@ -15,6 +15,10 @@ A - Foundations
 
     Tools and scripts <tools/tools-sol.ipynb>
     Basics <basics/basics-sol.ipynb>
+    Strings 1: Introduction <strings/strings1-sol.ipynb>
+    Strings 2: Operators <strings/strings2-sol.ipynb>
+    Strings 3: Methods <strings/strings3-sol.ipynb>
+    Errors and testing <errors-and-testing/errors-and-testing-sol.ipynb>
     commandments.ipynb
         
 
