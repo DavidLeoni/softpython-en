@@ -18,6 +18,11 @@ A - Foundations
     Strings 1: Introduction <strings/strings1-sol.ipynb>
     Strings 2: Operators <strings/strings2-sol.ipynb>
     Strings 3: Methods <strings/strings3-sol.ipynb>
+    Lists 1: Introduction <lists/lists1-sol.ipynb>
+    Lists 2: Operators <lists/lists2-sol.ipynb>
+    Lists 3: Methods <lists/lists3-sol.ipynb>
+
+
     Errors and testing <errors-and-testing/errors-and-testing-sol.ipynb>
     commandments.ipynb
         
