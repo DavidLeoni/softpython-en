@@ -502,6 +502,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---precious-things">Exercise - precious things</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---powers">Exercise - powers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#sort-method"><code class="docutils literal notranslate"><span class="pre">sort</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Custom-sorting">Custom sorting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---manylines">Exercise - manylines</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---numlist">Exercise - numlist</a></li>
 </ul>
@@ -2151,7 +2152,7 @@ STARThatespaceEND
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2160,12 +2161,31 @@ STARThatespaceEND
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&#39;On the bench&#39;
+&#39;by Jove&#39;
+</pre></div></div>
+</div>
+<p>If you give an optional third argument <code class="docutils literal notranslate"><span class="pre">count</span></code>, only the first <code class="docutils literal notranslate"><span class="pre">count</span></code> occurrences will be replaced:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="s2">&quot;TALKING AND JOKING AND LAUGHING&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ING&#39;</span><span class="p">,</span> <span class="s1">&#39;ED&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># replaces only first 2 occurrences</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;TALKED AND JOKED AND LAUGHING&#39;
 </pre></div></div>
 </div>
 <p><strong>QUESTION</strong>: for each of the following expressions, try to guess which result it produces (or if it gives an error)</p>

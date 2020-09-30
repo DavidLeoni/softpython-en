@@ -502,6 +502,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#Exercise---precious-things">Exercise - precious things</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Exercise---powers">Exercise - powers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sort-method"><code class="docutils literal notranslate"><span class="pre">sort</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Custom-sorting">Custom sorting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---manylines">Exercise - manylines</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---numlist">Exercise - numlist</a></li>
 </ul>
@@ -3069,7 +3070,7 @@ lb= [&#39;m&#39;, &#39;a&#39;, &#39;n&#39;, &#39;n&#39;, &#39;e&#39;, &#39;r&#39
 </div>
 <p>A list with non-comparable elements it’s not sortable, and Python will complain:</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3086,6 +3087,39 @@ lb= [&#39;m&#39;, &#39;a&#39;, &#39;n&#39;, &#39;n&#39;, &#39;e&#39;, &#39;r&#39
 
 <span class="go">TypeError: &#39;&lt;&#39; not supported between instances of &#39;str&#39; and &#39;int&#39;</span>
 </pre></div>
+</div>
+<p>Optionally, for reverse order you can pass the parameter <code class="docutils literal notranslate"><span class="pre">reverse=True</span></code> :</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[98]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">la</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">la</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[5, 4, 3, 2]
+</pre></div></div>
+</div>
+<div class="section" id="Custom-sorting">
+<h3>Custom sorting<a class="headerlink" href="#Custom-sorting" title="Permalink to this headline">¶</a></h3>
+<p>If you have custom needs like for example a lists of strings in the format <code class="docutils literal notranslate"><span class="pre">'name</span> <span class="pre">surname'</span></code> that you want to sort according to the surname, you should use optional parameter <code class="docutils literal notranslate"><span class="pre">key</span></code> with <code class="docutils literal notranslate"><span class="pre">lambda</span></code> functions, see <a class="reference external" href="https://docs.python.org/3/howto/sorting.html#key-functions">Python docs</a></p>
 </div>
 <div class="section" id="Exercise---manylines">
 <h3>Exercise - manylines<a class="headerlink" href="#Exercise---manylines" title="Permalink to this headline">¶</a></h3>
@@ -3116,7 +3150,7 @@ Last word: which
 </pre></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
