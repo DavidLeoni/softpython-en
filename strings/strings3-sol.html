@@ -390,9 +390,9 @@
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---bananas">Exercise - bananas</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#rfind-method">rfind method</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#isalpha-method">isalpha method</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#isdigit-method">isdigit method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rfind-method"><code class="docutils literal notranslate"><span class="pre">rfind</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#isalpha-method"><code class="docutils literal notranslate"><span class="pre">isalpha</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#isdigit-method"><code class="docutils literal notranslate"><span class="pre">isdigit</span></code> method</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Other-exercises">Other exercises</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#Continue">Continue</a></li>
 </ul>
@@ -474,13 +474,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---Zebarerun">Exercise - Zebarerun</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#join---build-strings-from-lists">join - build strings from lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#join---build-strings-from-lists"><code class="docutils literal notranslate"><span class="pre">join</span></code> - build strings from lists</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---dub-dab-dib-dob">Exercise - dub dab dib dob</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---ghirigori">Exercise - ghirigori</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---welldone">Exercise - welldone</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#insert-method">insert method</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#insert-method"><code class="docutils literal notranslate"><span class="pre">insert</span></code> method</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---insertando">Exercise - insertando</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---barzoletta">Exercise - barzoletta</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---insappend">Exercise - insappend</a></li>
@@ -1114,10 +1114,10 @@ HELLO
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm5063ca41-5f85-4f11-ab75-60925d59a7df" type="application/json" >
-    {"trace": [{"event": "step_line", "heap": {}, "ordered_globals": [], "stdout": "", "globals": {}, "func_name": "<module>", "line": 2, "stack_to_render": []}, {"event": "step_line", "heap": {}, "ordered_globals": ["x"], "stdout": "", "globals": {"x": "hello"}, "func_name": "<module>", "line": 3, "stack_to_render": []}, {"event": "step_line", "heap": {}, "ordered_globals": ["x", "y"], "stdout": "", "globals": {"x": "hello", "y": "HELLO"}, "func_name": "<module>", "line": 4, "stack_to_render": []}, {"event": "step_line", "heap": {}, "ordered_globals": ["x", "y"], "stdout": "hello\n", "globals": {"x": "hello", "y": "HELLO"}, "func_name": "<module>", "line": 5, "stack_to_render": []}, {"event": "return", "heap": {}, "ordered_globals": ["x", "y"], "stdout": "hello\nHELLO\n", "globals": {"x": "hello", "y": "HELLO"}, "func_name": "<module>", "line": 5, "stack_to_render": []}], "code": " \nx = \"hello\"\ny = x.upper()\nprint(x)\nprint(y)"}
+<script id="json-jm10c5b673-6b2a-460b-8de6-9437e68b3656" type="application/json" >
+    {"code": " \nx = \"hello\"\ny = x.upper()\nprint(x)\nprint(y)", "trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "line": 2, "heap": {}, "event": "step_line"}, {"ordered_globals": ["x"], "globals": {"x": "hello"}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "line": 3, "heap": {}, "event": "step_line"}, {"ordered_globals": ["x", "y"], "globals": {"y": "HELLO", "x": "hello"}, "func_name": "<module>", "stdout": "", "stack_to_render": [], "line": 4, "heap": {}, "event": "step_line"}, {"ordered_globals": ["x", "y"], "globals": {"y": "HELLO", "x": "hello"}, "func_name": "<module>", "stdout": "hello\n", "stack_to_render": [], "line": 5, "heap": {}, "event": "step_line"}, {"ordered_globals": ["x", "y"], "globals": {"y": "HELLO", "x": "hello"}, "func_name": "<module>", "stdout": "hello\nHELLO\n", "stack_to_render": [], "line": 5, "heap": {}, "event": "return"}]}
 </script>
-<div id="jm5063ca41-5f85-4f11-ab75-60925d59a7df" class="pytutorVisualizer"> </div>
+<div id="jm10c5b673-6b2a-460b-8de6-9437e68b3656" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1137,12 +1137,12 @@ HELLO
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm5063ca41-5f85-4f11-ab75-60925d59a7df').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm10c5b673-6b2a-460b-8de6-9437e68b3656').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm5063ca41-5f85-4f11-ab75-60925d59a7df',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm10c5b673-6b2a-460b-8de6-9437e68b3656',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -2152,7 +2152,7 @@ STARThatespaceEND
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2161,17 +2161,17 @@ STARThatespaceEND
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&#39;by Jove&#39;
+&#39;On the bench&#39;
 </pre></div></div>
 </div>
 <p>If you give an optional third argument <code class="docutils literal notranslate"><span class="pre">count</span></code>, only the first <code class="docutils literal notranslate"><span class="pre">count</span></code> occurrences will be replaced:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2180,7 +2180,7 @@ STARThatespaceEND
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2211,7 +2211,7 @@ STARThatespaceEND
 </pre></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2236,7 +2236,7 @@ kljsfsddadaòkkrdadaej
 <h2><code class="docutils literal notranslate"><span class="pre">startswith</span></code> method<a class="headerlink" href="#startswith-method" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">str.startswith</span></code> takes as parameter a string and returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the string before the dot begins with the string passed as parameter. Example:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2245,7 +2245,7 @@ kljsfsddadaòkkrdadaej
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2254,7 +2254,7 @@ True
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2263,7 +2263,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2272,7 +2272,7 @@ False
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2281,7 +2281,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2290,7 +2290,7 @@ False
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2299,7 +2299,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2320,7 +2320,7 @@ True
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
-<p>Example 2 - give:</p>
+<p>Example 2 - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;by Jove&#39;</span>
 <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;by Zeus&#39;</span>
 <span class="n">z</span> <span class="o">=</span> <span class="s1">&#39;from&#39;</span>
@@ -2341,7 +2341,7 @@ True
 </pre></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2369,7 +2369,7 @@ True
 <h2><code class="docutils literal notranslate"><span class="pre">endswith</span></code> method<a class="headerlink" href="#endswith-method" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">str.endswith</span></code> takes as parameter a string and returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if the string before the dot ends with the string passed as parameter. Example:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2378,7 +2378,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2387,7 +2387,7 @@ True
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2396,7 +2396,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2405,7 +2405,7 @@ False
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2414,7 +2414,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2423,7 +2423,7 @@ False
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2432,7 +2432,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2448,7 +2448,7 @@ True
 <li><p>your code must work for any couple <code class="docutils literal notranslate"><span class="pre">husband</span></code> and <code class="docutils literal notranslate"><span class="pre">wife</span></code></p></li>
 </ul>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2476,7 +2476,7 @@ True
 <h2><code class="docutils literal notranslate"><span class="pre">count</span></code> method<a class="headerlink" href="#count-method" title="Permalink to this headline">¶</a></h2>
 <p>The method <code class="docutils literal notranslate"><span class="pre">count</span></code> takes a substring and counts how many occurrences are there in the string before the dot.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2485,7 +2485,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2494,7 +2494,7 @@ True
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2503,7 +2503,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2512,7 +2512,7 @@ True
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2521,7 +2521,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2531,7 +2531,7 @@ True
 </div>
 <p>Optionally, you can pass a two other parameters to indicate an index to start counting from (included) and where to end (excluded):</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2541,7 +2541,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2550,7 +2550,7 @@ True
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2560,7 +2560,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2570,7 +2570,7 @@ True
 </div>
 <div class="section" id="Exercise---astro-money">
 <h3>Exercise - astro money<a class="headerlink" href="#Exercise---astro-money" title="Permalink to this headline">¶</a></h3>
-<p>During 2020 lockdown while looking at the stars above you started feeling… waves. After some thinking, you decided <em>THEY</em> want to communicate with you so you you set up a dish antenna on your roof to receive messages from aliens. After months of apparent irrelevant noise, one day you finally receive a message you think you can translate. Aliens are <em>obviously</em> trying to tell you the winning numbers of lottery!</p>
+<p>During 2020 lockdown while looking at the stars above you started feeling… waves. After some thinking, you decided <em>THEY</em> wanted to communicate with you so you you set up a dish antenna on your roof to receive messages from aliens. After months of apparent irrelevant noise, one day you finally receive a message you think you can translate. Aliens are <em>obviously</em> trying to tell you the winning numbers of lottery!</p>
 <p>A message is a sequence of exactly 3 <em>different</em> character repetitions, the number of characters in each repetition is a number you will try at the lottery. You frantically start developing the translator to show these lucky numbers on the terminal.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;$$$$€€€€€!!&#39;</span>
@@ -2587,7 +2587,7 @@ True
 <li><p>for simplicity assume each character sequence has at most 9 repetitions</p></li>
 </ul>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2626,7 +2626,7 @@ $ € !
 <h2><code class="docutils literal notranslate"><span class="pre">find</span></code> method<a class="headerlink" href="#find-method" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">find</span></code> returns the index of the <em>first</em> occurrence of some given substring:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2636,7 +2636,7 @@ $ € !
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2646,7 +2646,7 @@ $ € !
 </div>
 <p>If no occurrence is found, it returns <code class="docutils literal notranslate"><span class="pre">-1</span></code>:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2656,7 +2656,7 @@ $ € !
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2665,7 +2665,7 @@ $ € !
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2675,7 +2675,7 @@ $ € !
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2685,7 +2685,7 @@ $ € !
 </div>
 <p>Optionally, you can specify an index from where to start searching (included):</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2695,7 +2695,7 @@ $ € !
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2705,7 +2705,7 @@ $ € !
 </div>
 <p>And also where to end (excluded):</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2715,7 +2715,7 @@ $ € !
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2746,7 +2746,7 @@ int
 <li><p>the monkeys have no concept of zero</p></li>
 </ul>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2772,14 +2772,14 @@ int
 </div>
 </div>
 <div class="section" id="rfind-method">
-<h2>rfind method<a class="headerlink" href="#rfind-method" title="Permalink to this headline">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">rfind</span></code> method<a class="headerlink" href="#rfind-method" title="Permalink to this headline">¶</a></h2>
 <p>Like <a class="reference external" href="#find-method">find method</a>, but search starts from the right.</p>
 </div>
 <div class="section" id="isalpha-method">
-<h2>isalpha method<a class="headerlink" href="#isalpha-method" title="Permalink to this headline">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">isalpha</span></code> method<a class="headerlink" href="#isalpha-method" title="Permalink to this headline">¶</a></h2>
 <p>The method <code class="docutils literal notranslate"><span class="pre">isalpha</span></code> returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if all characters in the string are alphabetic:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2788,7 +2788,7 @@ int
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2798,7 +2798,7 @@ True
 </div>
 <p>Numbers are not considered alphabetic:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2807,7 +2807,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2817,7 +2817,7 @@ False
 </div>
 <p>Also, blanks are <em>not</em> alphabetic:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2826,7 +2826,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2836,7 +2836,7 @@ False
 </div>
 <p>… nor punctuation:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2845,7 +2845,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2855,7 +2855,7 @@ False
 </div>
 <p>… nor weird Unicode stuff:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2864,7 +2864,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2873,7 +2873,7 @@ False
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2882,7 +2882,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2892,10 +2892,10 @@ False
 </div>
 </div>
 <div class="section" id="isdigit-method">
-<h2>isdigit method<a class="headerlink" href="#isdigit-method" title="Permalink to this headline">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">isdigit</span></code> method<a class="headerlink" href="#isdigit-method" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">isdigit</span></code> method returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if a string is only composed of digits:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2904,7 +2904,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2913,7 +2913,7 @@ True
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2922,7 +2922,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2932,7 +2932,7 @@ False
 </div>
 <p>Floating point and scientific notations are not recognized:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2941,7 +2941,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2950,7 +2950,7 @@ False
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2959,7 +2959,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2970,7 +2970,7 @@ False
 </div>
 <div class="section" id="Other-exercises">
 <h2>Other exercises<a class="headerlink" href="#Other-exercises" title="Permalink to this headline">¶</a></h2>
-<p><strong>QUESTION</strong>: For each following expression, try to find the result.</p>
+<p><strong>QUESTION</strong>: For each following expression, try to find the result</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;gUrP&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;GuRp&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
 </pre></div>
