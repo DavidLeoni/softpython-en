@@ -4,7 +4,8 @@
 
     Home <index.ipynb>
     Overview <overview.ipynb>
-    Installation <installation.ipynb>
+    References <references.ipynb>
+    Installation <installation.ipynb>    
 
 A - Foundations
 =======================
