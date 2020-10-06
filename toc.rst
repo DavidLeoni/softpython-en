@@ -22,6 +22,11 @@ A - Foundations
     Lists 1: Introduction <lists/lists1-sol.ipynb>
     Lists 2: Operators <lists/lists2-sol.ipynb>
     Lists 3: Methods <lists/lists3-sol.ipynb>
+    Tuples <tuples/tuples-sol.ipynb> 
+    Sets <sets/sets-sol.ipynb> 
+    Dictionaries 1: Introduction <dictionaries/dictionaries1-sol.ipynb>
+    Dictionaries 2: Operators <dictionaries/dictionaries2-sol.ipynb>
+    Dictionaries 3: Methods <dictionaries/dictionaries3-sol.ipynb>
 
 
     Errors and testing <errors-and-testing/errors-and-testing-sol.ipynb>
