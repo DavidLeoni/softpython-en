@@ -1,0 +1,2777 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-125857337-4']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Dizionaries 1 - Introduction &mdash; SoftPython</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/jupman.js"></script>
+        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/jupman-web.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/softpython-theme.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dictionaries 2 - operators" href="dictionaries2-sol.html" />
+    <link rel="prev" title="Sets" href="../sets/sets-sol.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../toc-page.html" class="icon icon-home"> SoftPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Intended-audience">Intended audience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Contents">Contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#A---Foundations">A - Foundations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Authors">Authors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#License">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Acknowledgments">Acknowledgments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Chapters">Chapters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Why-Python?">Why Python?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Approach-and-goals">Approach and goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Doesn't-work,-what-should-I-do?">Doesn’t work, what should I do?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#How-to-ask-questions">How to ask questions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Installation-and-tools">Installation and tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Let's-start-!">Let’s start !</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">References</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#Allen-Downey---Think-Python">Allen Downey - Think Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#W3Resources-website">W3Resources website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#Software-Carpentry">Software Carpentry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#LeetCode">LeetCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#HackerRank">HackerRank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#Geeks-for-Geeks">Geeks for Geeks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#Dive-into-Python-3">Dive into Python 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#Introduction-to-Scientific-Programming-with-Python">Introduction to Scientific Programming with Python</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Installing-Python">Installing Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Windows-installation">Windows installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Mac-installation">Mac installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Linux-installation">Linux installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Installing-packages">Installing packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Jupyter-Notebook">Jupyter Notebook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Run-Jupyter-notebook">Run Jupyter notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Saving-Jupyter-notebooks">Saving Jupyter notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Turning-off-Jupyter-server">Turning off Jupyter server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Navigating-notebooks">Navigating notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Installing-Jupyter-notebook---all-operating-systems">Installing Jupyter notebook - all operating systems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Projects-with-virtual-environments">Projects with virtual environments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Creating-virtual-environments">Creating virtual environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Activate-a-virtual-environment">Activate a virtual environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Executing-environments-inside-Jupyter">Executing environments inside Jupyter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../installation.html#With-Anaconda">With Anaconda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../installation.html#Without-Anaconda">Without Anaconda</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Further-readings">Further readings</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../toc.html">A - Foundations</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../tools/tools-sol.html">Tools and scripts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Python-interpreter">Python interpreter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Let's-open-system-console">Let’s open system console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Listing-files-and-folders">Listing files and folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Let's-launch-the-Python-interpreter">Let’s launch the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Exiting-the-interpreter">Exiting the interpreter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Modules">Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Simple-text-editor">Simple text editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#IDE">IDE</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Jupyter">Jupyter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Printing-an-expression">Printing an expression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Exercise---Castles-in-the-air">Exercise - Castles in the air</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Visualizing-the-execution-with-Python-Tutor">Visualizing the execution with Python Tutor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Debugging-code-in-Jupyter">Debugging code in Jupyter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Exercise---tavern">Exercise - tavern</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Python-Architecture">Python Architecture</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Python-is-a-high-level-language">Python is a high level language</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Performance">Performance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../basics/basics-sol.html">Basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Jupyter">Jupyter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Objects">Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Detect-the-type-of-a-variable">Detect the type of a variable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Reassign-a-variable">Reassign a variable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Reusing-a-variable">Reusing a variable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Assignments---questions">Assignments - questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---exchange">Exercise - exchange</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---cycling">Exercise - cycling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Changing-type-during-execution">Changing type during execution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Multiple-commands-on-the-same-line">Multiple commands on the same line</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Multiple-initializations">Multiple initializations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---exchange-like-a-ninja">Exercise - exchange like a ninja</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Names-of-variables">Names of variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Names-of-variables---questions">Names of variables - questions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Numerical-types">Numerical types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Integer-numbers">Integer numbers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---deadline-1">Exercise - deadline 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Modulo-operator">Modulo operator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---deadline-2">Exercise - deadline 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#min-and-max">min and max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---transportation">Exercise - transportation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---armchairs">Exercise - armchairs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Booleans">Booleans</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Boolean-operators">Boolean operators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Booleans---Questions-with-costants">Booleans - Questions with costants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Booleans---Questions-with-variables">Booleans - Questions with variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Booleans---De-Morgan">Booleans - De Morgan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Booleans---Conversion">Booleans - Conversion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Booleans---Questions---what-is-a-boolean?">Booleans - Questions - what is a boolean?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Booleans---Evaluation-order">Booleans - Evaluation order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Booleans---evaluation-errors">Booleans - evaluation errors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Comparison-operators">Comparison operators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Booleans---References">Booleans - References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Real-numbers">Real numbers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Scientifical-notation">Scientifical notation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Too-big-or-too-small-numbers">Too big or too small numbers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---circle">Exercise - circle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---fractioning">Exercise - fractioning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---summation">Exercise - summation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Reals---conversion">Reals - conversion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---Invigorate">Exercise - Invigorate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---roundminder">Exercise - roundminder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Reals---equality">Reals - equality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---quadratic">Exercise - quadratic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Exercise---trendy">Exercise - trendy</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Decimal-numbers">Decimal numbers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#Challenges">Challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---which-booleans-1?">Challenge - which booleans 1?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---which-booleans-2?">Challenge - which booleans 2?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---Triangle-area">Challenge - Triangle area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---square-area">Challenge - square area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challange---area-from-input">Challange - area from input</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---trapezoid">Challenge - trapezoid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---first-n-numbers">Challenge - first n numbers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#challenge---hypotenuse">challenge - hypotenuse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---which-integers-1?">Challenge - which integers 1?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---which-integers-2?">Challenge - which integers 2?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---which-integers-3?">Challenge - which integers 3?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---airport">Challenge - airport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics-sol.html#Challenge---Holiday-trip">Challenge - Holiday trip</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics-sol.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../strings/strings1-sol.html">Strings 1: Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Creating-strings">Creating strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Printing---the-cells">Printing - the cells</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#The-empty-string">The empty string</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Printing-many-strings">Printing many strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Length-of-a-string">Length of a string</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Printing---escape-sequences">Printing - escape sequences</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Esempio---line-feed">Esempio - line feed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Example---tabulation">Example - tabulation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Encodings">Encodings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#ASCII-characters">ASCII characters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Unicode-characters">Unicode characters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Strings-are-immutable">Strings are immutable</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Reassign-variables">Reassign variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Reassign-a-variable-to-itself">Reassign a variable to itself</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Strings-and-numbers">Strings and numbers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Conversions---from-string-to-number">Conversions - from string to number</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Conversions---from-number-to-string">Conversions - from number to string</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-strings">Formatting strings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-%">Formatting with <code class="docutils literal notranslate"><span class="pre">%</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Exercise---supercars">Exercise - supercars</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#References">References</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../strings/strings2-sol.html">Strings 2: Operators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html#Reading-characters">Reading characters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---alternate">Exercise - alternate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Negative-indexes">Negative indexes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html#Substitute-characters">Substitute characters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html#Slices">Slices</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---garalampog">Exercise - garalampog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---ifEweEfav-lkSD-lkWe">Exercise - ifEweEfav lkSD lkWe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Slices---limits">Slices - limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Slice---Omitting-limits">Slice - Omitting limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---ysterymyster">Exercise - ysterymyster</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Slice---negative-limits">Slice - negative limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---javarnanda">Exercise - javarnanda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Slice---modifying">Slice - modifying</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---the-run">Exercise - the run</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-1">Exercise - contained 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-2">Exercise - contained 2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html#Comparisons">Comparisons</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Equality-operators">Equality operators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---statist">Exercise - statist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Comparing-characters">Comparing characters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Comparing-different-lengths">Comparing different lengths</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---Character-intervals">Exercise - Character intervals</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html#Replication-operator">Replication operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---za-za-za">Exercise - za za za</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../strings/strings3-sol.html">Strings 3: Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#Example---upper">Example - <code class="docutils literal notranslate"><span class="pre">upper</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---walking">Exercise - walking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#lower-method"><code class="docutils literal notranslate"><span class="pre">lower</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---lowermid">Exercise - lowermid</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#capitalize-method"><code class="docutils literal notranslate"><span class="pre">capitalize</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---Your-Excellence">Exercise - Your Excellence</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#strip-method"><code class="docutils literal notranslate"><span class="pre">strip</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Specificying-character-to-strip">Specificying character to strip</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#lstrip-method"><code class="docutils literal notranslate"><span class="pre">lstrip</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#rstrip-method"><code class="docutils literal notranslate"><span class="pre">rstrip</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---hatespace">Exercise - hatespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---Bad-to-the-bone">Exercise - Bad to the bone</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#replace-method"><code class="docutils literal notranslate"><span class="pre">replace</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---substitute">Exercise - substitute</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#startswith-method"><code class="docutils literal notranslate"><span class="pre">startswith</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---by-Jove">Exercise - by Jove</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#endswith-method"><code class="docutils literal notranslate"><span class="pre">endswith</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---Snobbonis">Exercise - Snobbonis</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#count-method"><code class="docutils literal notranslate"><span class="pre">count</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---astro-money">Exercise - astro money</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#find-method"><code class="docutils literal notranslate"><span class="pre">find</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---bananas">Exercise - bananas</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#rfind-method"><code class="docutils literal notranslate"><span class="pre">rfind</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#isalpha-method"><code class="docutils literal notranslate"><span class="pre">isalpha</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#isdigit-method"><code class="docutils literal notranslate"><span class="pre">isdigit</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#isupper-and-islower-methods"><code class="docutils literal notranslate"><span class="pre">isupper</span></code> and <code class="docutils literal notranslate"><span class="pre">islower</span></code> methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#Other-exercises">Other exercises</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../lists/lists1-sol.html">Lists 1: Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists1-sol.html#Creating-lists">Creating lists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Empty-list">Empty list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---create-lists-1">Exercise - create lists 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---create-lists-2">Exercise - create lists 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---create-lists-3">Exercise - create lists 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---create-lists-4">Exercise - create lists 4</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists1-sol.html#Convert-sequences-into-lists">Convert sequences into lists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---gulp">Exercise - gulp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---garaga">Exercise - garaga</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists1-sol.html#References">References</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../lists/lists2-sol.html">Lists 2: Operators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#Length-of-a-list">Length of a list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#Reading-an-element">Reading an element</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#Writing-an-element">Writing an element</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#Mutating-shared-lists">Mutating shared lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#Slices">Slices</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Slice---limits">Slice - limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Slices---omitting-limits">Slices - omitting limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Slices---negative-limits">Slices - negative limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Slices---modifying">Slices - modifying</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#List-of-strings">List of strings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---province-codes">Exercise - province codes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---games">Exercise - games</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#List-of-lists">List of lists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---couples">Exercise - couples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---nonunif">Exercise - nonunif</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#not-in">not in</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---vegetables">Exercise - vegetables</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#List-concatenation-with-+">List concatenation with +</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---concatenation">Exercise - concatenation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#min-and-max">min and max</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#sum">sum</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---balance">Exercise - balance</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#Multiplying-lists">Multiplying lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#Equality">Equality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../lists/lists3-sol.html">Lists 3: Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#append-method"><code class="docutils literal notranslate"><span class="pre">append</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---augmenting-a-list-1">Exercise - augmenting a list 1</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#extend-method"><code class="docutils literal notranslate"><span class="pre">extend</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Extending-with-sequences">Extending with sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise:-augmenting-a-list-2">Exercise: augmenting a list 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---zslice">Exercise - zslice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---Zebarerun">Exercise - Zebarerun</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#join---build-strings-from-lists"><code class="docutils literal notranslate"><span class="pre">join</span></code> - build strings from lists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---dub-dab-dib-dob">Exercise - dub dab dib dob</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---ghirigori">Exercise - ghirigori</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---welldone">Exercise - welldone</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#insert-method"><code class="docutils literal notranslate"><span class="pre">insert</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---insertando">Exercise - insertando</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---barzoletta">Exercise - barzoletta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---insappend">Exercise - insappend</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#remove-method"><code class="docutils literal notranslate"><span class="pre">remove</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---nob">Exercise - nob</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#pop-method"><code class="docutils literal notranslate"><span class="pre">pop</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---popcorn">Exercise - popcorn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---zonzo">Exercise - zonzo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#reverse-method"><code class="docutils literal notranslate"><span class="pre">reverse</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---good-manners">Exercise - good manners</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---precious-things">Exercise - precious things</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---powers">Exercise - powers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#sort-method"><code class="docutils literal notranslate"><span class="pre">sort</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Custom-sorting">Custom sorting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---manylines">Exercise - manylines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---numlist">Exercise - numlist</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#index-method"><code class="docutils literal notranslate"><span class="pre">index</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#count-method"><code class="docutils literal notranslate"><span class="pre">count</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../tuples/tuples-sol.html">Tuples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples-sol.html#Download-exercise-zip">Download exercise zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples-sol.html#Creating-tuples">Creating tuples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Empty-tuple">Empty tuple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Tuples-without-brackets">Tuples without brackets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Heterogenous-elements">Heterogenous elements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Creating-tuples-from-sequences">Creating tuples from sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Creating-sequences-from-tuples">Creating sequences from tuples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples-sol.html#Operators">Operators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#len">len</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Reading-an-element">Reading an element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Exercise---animals">Exercise - animals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Slices">Slices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Concatenation">Concatenation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Membership">Membership</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Multiplication">Multiplication</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Exercise---welcome">Exercise - welcome</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples-sol.html#Write-an-element">Write an element</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Exercise---badmod">Exercise - badmod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Exercise---abde">Exercise - abde</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Exercise---charismatic">Exercise - charismatic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Exercise---sorting">Exercise - sorting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples-sol.html#Methods">Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#index-method"><code class="docutils literal notranslate"><span class="pre">index</span></code> method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#count-method"><code class="docutils literal notranslate"><span class="pre">count</span></code> method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Exercise---fruits">Exercise - fruits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples-sol.html#Exercises-with-functions">Exercises with functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Exercise---touples">Exercise - touples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#Exercise---joined">Exercise - joined</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples-sol.html#Verify-comprehension">Verify comprehension</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#doubles">doubles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples-sol.html#nasty">nasty</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples-sol.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sets/sets-sol.html">Sets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#Create-a-set">Create a set</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Converting-sequences-to-sets">Converting sequences to sets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Mutable-elements-and-hashes">Mutable elements and hashes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Empty-set">Empty set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Exercise---dedup">Exercise - dedup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Frozenset">Frozenset</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#Operators">Operators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#len">len</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Exercise---distincts">Exercise - distincts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Union">Union</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Exercise---everythingbut-1">Exercise - everythingbut 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Intersection">Intersection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Difference">Difference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Symmetric-difference">Symmetric difference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Membership">Membership</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#Equality">Equality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#Methods-like-operators">Methods like operators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#union">union</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#update">update</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Exercise---everythingbut-2">Exercise - everythingbut 2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#Other-methods">Other methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#add-method"><code class="docutils literal notranslate"><span class="pre">add</span></code> method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#remove-method"><code class="docutils literal notranslate"><span class="pre">remove</span></code> method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Exercise---bababiba">Exercise - bababiba</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#discard-method"><code class="docutils literal notranslate"><span class="pre">discard</span></code> method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Exercise---trash">Exercise - trash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#issubset-method"><code class="docutils literal notranslate"><span class="pre">issubset</span></code> method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#issuperset-method"><code class="docutils literal notranslate"><span class="pre">issuperset</span></code> method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#isdisjoint-method"><code class="docutils literal notranslate"><span class="pre">isdisjoint</span></code> method</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#Exercise---matrioska">Exercise - matrioska</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#Exercise-with-functions">Exercise with functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Exercise---syllabs">Exercise - syllabs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Exercise---distinguish">Exercise - distinguish</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#Verifify-comprehension">Verifify comprehension</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets-sol.html#Exercise---intersectron">Exercise - intersectron</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets-sol.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dictionaries 1: Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Creating-a-dictionary">Creating a dictionary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#The-keys">The keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#The-values">The values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Empty-dictionary">Empty dictionary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Keys-and-heterogenous-values">Keys and heterogenous values</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#Dictionary-from-a-sequence-of-couples">Dictionary from a sequence of couples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Dictionary-from-keyword-arguments">Dictionary from keyword arguments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Copying-a-dictionary">Copying a dictionary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Shallow-copy">Shallow copy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Deep-copy">Deep copy</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dictionaries2-sol.html">Dictionaries 2: Operators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#Download-exercise-zip">Download exercise zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#len">len</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#Reading-a-value">Reading a value</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Fast-disorder">Fast disorder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Exercise---z7">Exercise - z7</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#Writing-in-the-dictionary">Writing in the dictionary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Writing---adding-key/value">Writing - adding key/value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Writing---reassociate-a-key">Writing - reassociate a key</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Exercise---workshop">Exercise - workshop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Writing---deleting">Writing - deleting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Exercise---desktop">Exercise - desktop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Exercise---garden">Exercise - garden</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Exercise---translations">Exercise - translations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#Membership-with-in">Membership with <code class="docutils literal notranslate"><span class="pre">in</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#not-in">not in</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#Dictionaries-of-sequences">Dictionaries of sequences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#Exercise---loans">Exercise - loans</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#Equality">Equality</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Equality-and-order">Equality and order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries2-sol.html#Equality-and-copies">Equality and copies</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#Exercise---ZOOM-DOOM">Exercise - ZOOM DOOM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries2-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dictionaries3-sol.html">Dictionaries 3: Methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#Download-exercise-zip">Download exercise zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#keys-method"><code class="docutils literal notranslate"><span class="pre">keys</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries3-sol.html#Exercise---messy-keys">Exercise - messy keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries3-sol.html#Exercise---sorted-keys">Exercise - sorted keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries3-sol.html#Exercise---keyring">Exercise - keyring</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#values-method"><code class="docutils literal notranslate"><span class="pre">values</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#Exercise---one-by-one">Exercise - one by one</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#Exercise---bag">Exercise - bag</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries3-sol.html#Exercise---common-values">Exercise - common values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries3-sol.html#Exercise---small-big">Exercise - small big</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#items-method"><code class="docutils literal notranslate"><span class="pre">items</span></code> method</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries3-sol.html#Exercise---union-without-update">Exercise - union without update</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#update-method"><code class="docutils literal notranslate"><span class="pre">update</span></code> method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#Exercise---axby">Exercise - axby</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#Classes---OrderedDict">Classes - OrderedDict</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dictionaries3-sol.html#Exercise---phonebook">Exercise - phonebook</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#Exercise---OrderedDict-copy">Exercise - OrderedDict copy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#Classes---Counter">Classes - Counter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#Exercise---saddened">Exercise - saddened</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dictionaries3-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html">Errors and testing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Introduction">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Unforeseen-situations">Unforeseen situations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#make_problematic_pie">make_problematic_pie</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Check-with-the-return">Check with the return</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Exceptions">Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Manage-exceptions">Manage exceptions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Particular-exceptions">Particular exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#assert">assert</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#When-to-use-assert?">When to use assert?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Testing">Testing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Where-Is-Your-Software?">Where Is Your Software?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Testing-with-asserts">Testing with asserts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Exercise-structure">Exercise structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#even_numbers-example">even_numbers example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../errors-and-testing/errors-and-testing-sol.html#Error-kinds">Error kinds</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../commandments.html">Commandments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#I-COMANDAMENT">I COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#II-COMANDAMENT">II COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#III-COMANDAMENT">III COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#IV-COMANDAMENT">IV COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#V-COMMANDMENT">V COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#VI-COMMANDMENT">VI COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#VII-COMMANDMENT">VII COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#VIII-COMANDAMENT">VIII COMANDAMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#IX-COMMANDMENT">IX COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#X-COMMANDMENT">X COMMANDMENT</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#space"> </a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#index">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../toc-page.html">SoftPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+    <div id='jupman-langs'></div>
+
+    
+    <script>
+    if (window.location.hostname.includes('softpython.org')){
+        JUPMAN_LANG = window.location.hostname.slice(0,window.location.hostname.indexOf('.'));
+    } else {
+        JUPMAN_LANG = 'en';        
+    }
+    console.log('JUPMAN_LANG=',JUPMAN_LANG);
+    </script>
+    
+    
+     <!-- <li> <h2 style="background-color:red; color:yellow">WARNING! THIS VERSION IS OLD !  <br/>
+    <a style=" text-decoration: underline;" href="https://jupman.softpython.org/en/latest">GOT TO LATEST VERSION</a></li>
+ </h2></li>-->
+    <!-- Commented because doesn't work with sections,
+         see https://github.com/DavidLeoni/jupman/issues/39
+    <li><a href="../toc-page.html">Docs</a> &raquo;</li>
+    
+        <li><a href="../toc.html">A - Foundations</a> &raquo;</li>
+    
+    <li>Dizionaries 1 - Introduction</li>
+    -->
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Dizionaries-1---Introduction">
+<h1>Dizionaries 1 - Introduction<a class="headerlink" href="#Dizionaries-1---Introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/dictionaries.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/DavidLeoni/softpython-it/tree/master/dictionaries">Browse files online</a></p>
+<p>Dictionaries are mutable containers which allow us to rapidly associate elements called <em>keys</em> to some <em>values</em></p>
+<ul class="simple">
+<li><p><em>Keys</em> are immutable, don’t have order and there cannot be duplicates</p></li>
+<li><p><em>Values</em> can be duplicated</p></li>
+</ul>
+<p>Given a key, we can find the corresponding value very fast.</p>
+</div>
+<div class="section" id="What-to-do">
+<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Unzip <a class="reference external" href="../_static/generated/dictionaries.zip">exercises zip</a> in a folder, you should obtain something like this:</p></li>
+</ol>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sets
+    dictionaries1.ipynb
+    dictionaries1-sol.ipynb
+    dictionaries2.ipynb
+    dictionaries2-sol.ipynb
+    dictionaries3.ipynb
+    dictionaries3-sol.ipynb
+    dictionaries4.ipynb
+    dictionaries4-sol.ipynb
+    dictionaries5.ipynb
+    dictionaries5-sol.ipynb
+    jupman.py
+</pre></div>
+</div>
+<div class="admonition warning">
+<p><strong>WARNING: to correctly visualize the notebook, it MUST be in an unzipped folder !</strong></p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>open Jupyter Notebook from that folder. Two things should open, first a console and then a browser. The browser should show a file list: navigate the list and open the notebook <code class="docutils literal notranslate"><span class="pre">dictionaries1.ipynb</span></code></p></li>
+<li><p>Go on reading the exercises file, sometimes you will find paragraphs marked <strong>Exercises</strong> graded from ✪ to ✪✪✪✪ which will ask to write Python commands in the following cells.</p></li>
+</ol>
+<p>Shortcut keys:</p>
+<ul class="simple">
+<li><p>to execute Python code inside a Jupyter cell, press <code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
+<li><p>to execute Python code inside a Jupyter cell AND select next cell, press <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
+<li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
+<li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="Creating-a-dictionary">
+<h2>Creating a dictionary<a class="headerlink" href="#Creating-a-dictionary" title="Permalink to this headline">¶</a></h2>
+<p>In everyday life, when thinking about a dictionary we typically refer to a book which given an item (for example <code class="docutils literal notranslate"><span class="pre">'chair'</span></code>), allows us to <strong>rapidly</strong> find the related description (i.e. <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">piece</span> <span class="pre">of</span> <span class="pre">furniture</span> <span class="pre">to</span> <span class="pre">sit</span> <span class="pre">on</span></code>).</p>
+<p>In Python we have a data structure called <code class="docutils literal notranslate"><span class="pre">dict</span></code> which provides an easy way to represent dictionaries.</p>
+<p>Following the previous example, we might create a <code class="docutils literal notranslate"><span class="pre">dict</span></code> with different items like this:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span><span class="s1">&#39;chair&#39;</span><span class="p">:</span><span class="s1">&#39;a piece of furniture to sit on&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;cupboard&#39;</span><span class="p">:</span><span class="s1">&#39;a cabinet for storage&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;lamp&#39;</span><span class="p">:</span> <span class="s1">&#39;a device to provide illumination&#39;</span>
+<span class="p">}</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;chair&#39;: &#39;a piece of furniture to sit on&#39;,
+ &#39;cupboard&#39;: &#39;a cabinet for storage&#39;,
+ &#39;lamp&#39;: &#39;a device to provide illumination&#39;}
+</pre></div></div>
+</div>
+<p>Let’s be clear about the naming:</p>
+<blockquote>
+<div><p>Dictionaries are mutable containers which allow us to rapidly associate elements called <strong>keys</strong> to some <strong>values</strong>.</p>
+</div></blockquote>
+<p>The definition says we have <em>keys</em> (in the example <code class="docutils literal notranslate"><span class="pre">'chair'</span></code>, <code class="docutils literal notranslate"><span class="pre">'cupboard'</span></code>, etc), while the descriptions from the example (<code class="docutils literal notranslate"><span class="pre">'a</span> <span class="pre">piece</span> <span class="pre">of</span> <span class="pre">furniture</span> <span class="pre">to</span> <span class="pre">sit</span> <span class="pre">on'</span></code>) in Python are going to be called <em>values.</em></p>
+<p>When we create a dictionary, we first write a curly bracket <code class="docutils literal notranslate"><span class="pre">{</span></code>, then we follow it with a series of key <code class="docutils literal notranslate"><span class="pre">:</span></code> value couples, each followed by a comma <code class="docutils literal notranslate"><span class="pre">,</span></code> (except the last one, in which the comma is optional). At the end we close with a a curly bracket <code class="docutils literal notranslate"><span class="pre">}</span></code></p>
+<p>Placing spaces or newlines inside <strong>is optional</strong>. So we can also write like this:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span><span class="s1">&#39;chair&#39;</span>    <span class="p">:</span> <span class="s1">&#39;a piece of furniture to sit on&#39;</span><span class="p">,</span>
+
+ <span class="s1">&#39;cupboard&#39;</span> <span class="p">:</span>     <span class="s1">&#39;a cabinet for storage&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;lamp&#39;</span>     <span class="p">:</span> <span class="s1">&#39;a device to provide illumination&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;chair&#39;: &#39;a piece of furniture to sit on&#39;,
+ &#39;cupboard&#39;: &#39;a cabinet for storage&#39;,
+ &#39;lamp&#39;: &#39;a device to provide illumination&#39;}
+</pre></div></div>
+</div>
+<p>Or also everything on a row:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span><span class="s1">&#39;chair&#39;</span><span class="p">:</span><span class="s1">&#39;a piece of furniture to sit on&#39;</span><span class="p">,</span><span class="s1">&#39;cupboard&#39;</span><span class="p">:</span><span class="s1">&#39;a cabinet for storage&#39;</span><span class="p">,</span><span class="s1">&#39;lamp&#39;</span><span class="p">:</span><span class="s1">&#39;a device to provide illumination&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;chair&#39;: &#39;a piece of furniture to sit on&#39;,
+ &#39;cupboard&#39;: &#39;a cabinet for storage&#39;,
+ &#39;lamp&#39;: &#39;a device to provide illumination&#39;}
+</pre></div></div>
+</div>
+<p>Note if we use short words Python will probably print the dictionary in single a row anyway:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span><span class="s1">&#39;barca&#39;</span><span class="p">:</span> <span class="s1">&#39;remo&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;auto&#39;</span><span class="p">:</span> <span class="s1">&#39;ruota&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;aereo&#39;</span><span class="p">:</span> <span class="s1">&#39;ala&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;aereo&#39;: &#39;ala&#39;, &#39;auto&#39;: &#39;ruota&#39;, &#39;barca&#39;: &#39;remo&#39;}
+</pre></div></div>
+</div>
+<p>Putting a comma after the last couple does not give errors:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span>
+ <span class="s1">&#39;ship&#39;</span><span class="p">:</span> <span class="s1">&#39;paddle&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;car&#39;</span><span class="p">:</span> <span class="s1">&#39;wheel&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;airplane&#39;</span><span class="p">:</span> <span class="s1">&#39;wing&#39;</span><span class="p">,</span>  <span class="c1"># note &#39;extra&#39; comma</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;airplane&#39;: &#39;wing&#39;, &#39;car&#39;: &#39;wheel&#39;, &#39;ship&#39;: &#39;paddle&#39;}
+</pre></div></div>
+</div>
+<p>Let’s see how a dictionary is represented in Python Tutor - to ease the job, we will assign the variable <code class="docutils literal notranslate"><span class="pre">furniture</span></code> to it</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># WARNING: FOR PYTHON TUTOR TO WORK, REMEMBER TO EXECUTE THIS CELL with Shift+Enter</span>
+<span class="c1">#          (it&#39;s sufficient to execute it only once)</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">jupman</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">furniture</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;chair&#39;</span>    <span class="p">:</span> <span class="s1">&#39;a piece of furniture to sit on&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;cupboard&#39;</span> <span class="p">:</span> <span class="s1">&#39;a cabinet for storage&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;lamp&#39;</span>     <span class="p">:</span> <span class="s1">&#39;a device to provide illumination&#39;</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">furniture</span><span class="p">)</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;chair&#39;: &#39;a piece of furniture to sit on&#39;, &#39;cupboard&#39;: &#39;a cabinet for storage&#39;, &#39;lamp&#39;: &#39;a device to provide illumination&#39;}
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jmc83850fc-df7d-4cd4-a89d-487918dcc6e9" type="application/json" >
+    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["furniture"], "globals": {"furniture": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 7, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["furniture"], "globals": {"furniture": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 7, "stack_to_render": [], "event": "return", "stdout": "{'chair': 'a piece of furniture to sit on', 'cupboard': 'a cabinet for storage', 'lamp': 'a device to provide illumination'}\n"}], "code": " \nfurniture = {\n    'chair'    : 'a piece of furniture to sit on',\n    'cupboard' : 'a cabinet for storage',\n    'lamp'     : 'a device to provide illumination'\n}\nprint(furniture)"}
+</script>
+<div id="jmc83850fc-df7d-4cd4-a89d-487918dcc6e9" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jmc83850fc-df7d-4cd4-a89d-487918dcc6e9').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jmc83850fc-df7d-4cd4-a89d-487918dcc6e9',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+<p>We note that once executed, an arrow appears pointing from <code class="docutils literal notranslate"><span class="pre">furniture</span></code> to an orange/yellow memory region. The keys have orange background, while the corresponding values have yellow background. Looking at arrows and colors, we can guess that whenever we’re assigning variables, dictionaries behave like other data structures, like lists and sets.</p>
+<p><strong>QUESTION</strong>: Look at the following code, and try guessing what happens during execution - at the end, how will memory be organized? What will be printed? Where will arrows go?</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">da</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;chair&#39;</span>    <span class="p">:</span> <span class="s1">&#39;a piece of furniture to sit on&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;cupboard&#39;</span> <span class="p">:</span> <span class="s1">&#39;a cabinet for storage&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;lamp&#39;</span>    <span class="p">:</span> <span class="s1">&#39;a device to provide illumination&#39;</span>
+<span class="p">}</span>
+
+<span class="n">db</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="s1">&#39;ship&#39;</span><span class="p">:</span> <span class="s1">&#39;paddle&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;car&#39;</span><span class="p">:</span> <span class="s1">&#39;wheel&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;airplane&#39;</span><span class="p">:</span> <span class="s1">&#39;wing&#39;</span>
+<span class="p">}</span>
+<span class="n">dc</span> <span class="o">=</span> <span class="n">db</span>
+<span class="n">db</span> <span class="o">=</span> <span class="n">da</span>
+<span class="n">da</span> <span class="o">=</span> <span class="n">dc</span>
+<span class="n">dc</span> <span class="o">=</span> <span class="n">db</span>
+<span class="c1">#print(da)</span>
+<span class="c1">#print(db)</span>
+<span class="c1">#print(dc)</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jm0bc36413-7df9-4543-85b5-eee96b6d7487" type="application/json" >
+    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 9, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 10, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 11, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 2], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 13, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db", "dc"], "globals": {"db": ["REF", 2], "da": ["REF", 1], "dc": ["REF", 2]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 14, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db", "dc"], "globals": {"db": ["REF", 1], "da": ["REF", 1], "dc": ["REF", 2]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 15, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db", "dc"], "globals": {"db": ["REF", 1], "da": ["REF", 2], "dc": ["REF", 2]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 16, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db", "dc"], "globals": {"db": ["REF", 1], "da": ["REF", 2], "dc": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 16, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {\n    'chair'    : 'a piece of furniture to sit on',\n    'cupboard' : 'a cabinet for storage',\n    'lamp'    : 'a device to provide illumination'\n}\n\ndb = {\n 'ship': 'paddle',\n 'car': 'wheel',\n 'airplane': 'wing'\n}\ndc = db \ndb = da\nda = dc\ndc = db\n#print(da)\n#print(db)\n#print(dc)"}
+</script>
+<div id="jm0bc36413-7df9-4543-85b5-eee96b6d7487" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jm0bc36413-7df9-4543-85b5-eee96b6d7487').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jm0bc36413-7df9-4543-85b5-eee96b6d7487',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+<div class="section" id="The-keys">
+<h3>The keys<a class="headerlink" href="#The-keys" title="Permalink to this headline">¶</a></h3>
+<p>Let’s try to better understand which keys we can use by looking again at the definition:</p>
+<blockquote>
+<div><p>Dictionaries are mutable containers which allow us to rapidly associate elements called <em>keys</em> to some <em>values</em></p>
+<ul class="simple">
+<li><p><strong>Keys are immutable, don’t have order and there cannot be duplicates</strong></p></li>
+<li><p>Values can be duplicated</p></li>
+</ul>
+</div></blockquote>
+<p><strong>QUESTION</strong>: have a careful look at the words in bold - can you tell a data structure we’ve already seen which has these features?</p>
+<p><strong>ANSWER</strong>: The keys of dictionaries for many aspects behave like elements of a set.</p>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><strong>Have you read the</strong> <a class="reference external" href="https://en.softpython.org/sets/sets-sol.html">tutorial on sets?</a><strong>?</strong></p>
+<p><strong>Before going on, make sure to understand well the</strong> <a class="reference external" href="https://eb.softpython.org/sets/sets-sol.html#Mutable-elements-and-hashes">section on mutable elements and hashes</a></p>
+</div>
+<div class="section" id="Keys-are-immutable">
+<h4>Keys are immutable<a class="headerlink" href="#Keys-are-immutable" title="Permalink to this headline">¶</a></h4>
+<p><strong>QUESTION</strong>: The definition does not force us to use strings as keys, other types are also allowed. But can we use all the types we want?</p>
+<p>For each of the following examples, try to tell whether the dictionary can be created or we will get an error (which one?). Also check how they are represented in Python Tutor.</p>
+<ol class="arabic">
+<li><p>integers</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="mi">4</span> <span class="p">:</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span>
+  <span class="mi">3</span> <span class="p">:</span> <span class="s1">&#39;dogs&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>float</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="mf">4.0</span> <span class="p">:</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span>
+  <span class="mf">3.0</span> <span class="p">:</span> <span class="s1">&#39;dogs&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>strings</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="s1">&#39;dogs&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>lists</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="p">:</span> <span class="s1">&#39;zam&#39;</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span> <span class="p">:</span> <span class="s1">&#39;zum&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>tuples</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="p">:</span> <span class="s1">&#39;zam&#39;</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="p">:</span> <span class="s1">&#39;zum&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>sets</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}</span> <span class="p">:</span> <span class="s1">&#39;zam&#39;</span><span class="p">,</span>
+    <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span> <span class="p">:</span> <span class="s1">&#39;zum&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>other dictionaries (check the first part of the definition !)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="s1">&#39;y&#39;</span><span class="p">}</span> <span class="p">:</span> <span class="s1">&#39;zam&#39;</span><span class="p">,</span>
+    <span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">:</span><span class="s1">&#39;z&#39;</span><span class="p">}</span> <span class="p">:</span> <span class="s1">&#39;zum&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p><strong>ANSWER</strong>: integers, float, strings and tuples are IMMUTABLE and so we can use them as keys (see definition). Instead, lists, sets (and other dictionaries) are MUTABLE, so we cannot use them as keys. If we try using a MUTABLE element such as a list like if it were the key of a dictionary, Python will complain, telling us the object is not <em>hashable</em> (exactly as it would complain if we tried to insert it in a set)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">{</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]:</span><span class="s1">&#39;zam&#39;</span><span class="p">,</span>
+<span class="go">       [3,4]:&#39;zum&#39;}</span>
+
+<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">TypeError                                 Traceback (most recent call last)</span>
+<span class="go">&lt;ipython-input-12-c3c2d6cc97b8&gt; in &lt;module&gt;</span>
+<span class="go">      1 { [1,2]:&#39;zam&#39;,</span>
+<span class="go">----&gt; 2   [3,4]:&#39;zum&#39;}</span>
+
+<span class="go">TypeError: unhashable type: &#39;list&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="Keys-don't-have-order">
+<h4>Keys don’t have order<a class="headerlink" href="#Keys-don't-have-order" title="Permalink to this headline">¶</a></h4>
+<p>In a real-life dictionary, items are always ordered according to some criteria, typically in alphabetical order.</p>
+<p>With Python we need to consider this important difference:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The keys are immutable, <strong>don’t have order</strong> and there cannot be duplicates</p></li>
+</ul>
+</div></blockquote>
+<p>When we say that a collection ‘does not have order’, it means that the order of elements we see when we insert or print them does not matter to determine whether a collection is equal to another one. In dictionaries, it means that if we specify couples in a different order, we obtain dictionaries that Python considers as equal.</p>
+<p>For example, the following dictionaries can all be considered as equal:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span>
+ <span class="s1">&#39;ships&#39;</span> <span class="p">:</span><span class="s1">&#39;port&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;airplanes&#39;</span><span class="p">:</span> <span class="s1">&#39;airport&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;trains&#39;</span><span class="p">:</span> <span class="s1">&#39;station&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;airplanes&#39;: &#39;airport&#39;, &#39;ships&#39;: &#39;port&#39;, &#39;trains&#39;: &#39;station&#39;}
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span>
+ <span class="s1">&#39;airplanes&#39;</span><span class="p">:</span> <span class="s1">&#39;airport&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;ships&#39;</span> <span class="p">:</span><span class="s1">&#39;port&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;trains&#39;</span><span class="p">:</span> <span class="s1">&#39;station&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;airplanes&#39;: &#39;airport&#39;, &#39;ships&#39;: &#39;port&#39;, &#39;trains&#39;: &#39;station&#39;}
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span>
+ <span class="s1">&#39;trains&#39;</span><span class="p">:</span> <span class="s1">&#39;station&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;ships&#39;</span> <span class="p">:</span><span class="s1">&#39;port&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;airplanes&#39;</span><span class="p">:</span> <span class="s1">&#39;airport&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;airplanes&#39;: &#39;airport&#39;, &#39;ships&#39;: &#39;port&#39;, &#39;trains&#39;: &#39;station&#39;}
+</pre></div></div>
+</div>
+<p><strong>Printing a dictionary</strong>: you may have noticed that Jupyter always prints the keys in alphabetical order. This is just a courtesy for us, but do not be fooled by it! If we try a native <code class="docutils literal notranslate"><span class="pre">print</span></code> we will obtain a different result!</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">({</span>
+ <span class="s1">&#39;ships&#39;</span> <span class="p">:</span><span class="s1">&#39;port&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;airplanes&#39;</span><span class="p">:</span> <span class="s1">&#39;airport&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;trains&#39;</span><span class="p">:</span> <span class="s1">&#39;station&#39;</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;airplanes&#39;: &#39;airport&#39;, &#39;ships&#39;: &#39;port&#39;, &#39;trains&#39;: &#39;station&#39;}
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Key-duplicates">
+<h4>Key duplicates<a class="headerlink" href="#Key-duplicates" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>Keys are immutable, don’t have order and <strong>there cannot be duplicates</strong></p></li>
+</ul>
+</div></blockquote>
+<p>We might ask ourselves how Python manages duplicates in keys. Let’s try to create a duplicated couple on purpose:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span>
+    <span class="s1">&#39;chair&#39;</span>   <span class="p">:</span> <span class="s1">&#39;a piece of furniture to sit on&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;chair&#39;</span>   <span class="p">:</span> <span class="s1">&#39;a piece of furniture to sit on&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;lamp&#39;</span>    <span class="p">:</span> <span class="s1">&#39;a device to provide illumination&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;chair&#39;: &#39;a piece of furniture to sit on&#39;,
+ &#39;lamp&#39;: &#39;a device to provide illumination&#39;}
+</pre></div></div>
+</div>
+<p>We notice Python didn’t complain and silently discarded the duplicate.</p>
+<p>What if we try inserting a couple with the same key but different value?</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span>
+    <span class="s1">&#39;chair&#39;</span>   <span class="p">:</span> <span class="s1">&#39;a piece of furniture to sit on&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;chair&#39;</span>   <span class="p">:</span> <span class="s1">&#39;a type of seat&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;lamp&#39;</span>    <span class="p">:</span> <span class="s1">&#39;a device to provide illumination&#39;</span>
+<span class="p">}</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;chair&#39;: &#39;a type of seat&#39;, &#39;lamp&#39;: &#39;a device to provide illumination&#39;}
+</pre></div></div>
+</div>
+<p>Notice Python kept only the last couple.</p>
+</div>
+</div>
+<div class="section" id="The-values">
+<h3>The values<a class="headerlink" href="#The-values" title="Permalink to this headline">¶</a></h3>
+<p>Let’s see once again the definition:</p>
+<blockquote>
+<div><p>Dictionaries are mutable containers which allow us to rapidly associate elements called keys to some values</p>
+<ul class="simple">
+<li><p>Keys are immutable, don’t have order and there cannot be duplicates</p></li>
+<li><p><strong>Values can be duplicated</strong></p></li>
+</ul>
+</div></blockquote>
+<p>Seems like values have less constraints than keys.</p>
+<p><strong>QUESTION</strong>: For each of the following examples, try to tell whether we can create the dictionary or we will get an error (which one?). Check how they are represented in Python Tutor.</p>
+<ol class="arabic">
+<li><p>integers</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+    <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">4</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>duplicated integers</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+    <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">3</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>float</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mf">3.0</span><span class="p">,</span>
+    <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mf">4.0</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>strings</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="s1">&#39;ice&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="s1">&#39;fire&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>lists</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;c&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>duplicated lists</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>lists containing duplicates</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="p">,</span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="s1">&#39;z&#39;</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>tuples</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">),</span>
+    <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>sets</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">},</span>
+    <span class="s1">&#39;b&#39;</span> <span class="p">:</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>dictionaries</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+            <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">9</span>
+         <span class="p">},</span>
+    <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+            <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span>
+            <span class="s1">&#39;z&#39;</span><span class="p">:</span><span class="mi">10</span>
+         <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p><strong>ANSWER</strong>: We can freely put whatever we please as values, Python will not complain. In particular, notice how different keys can have the same value.</p>
+</div>
+<div class="section" id="Empty-dictionary">
+<h3>Empty dictionary<a class="headerlink" href="#Empty-dictionary" title="Permalink to this headline">¶</a></h3>
+<p>We can create an empty dictionary by writing <code class="docutils literal notranslate"><span class="pre">{}</span></code>:</p>
+<div class="admonition warning">
+<p><strong>WARNING: THIS IS NOT THE</strong> <a class="reference external" href="https://en.softpython.org/sets/sets-sol.html#Empty-set">EMPTY SET</a> !!</p>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{}
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">type</span><span class="p">({})</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+dict
+</pre></div></div>
+</div>
+<p>A dictionary is a collection, and as we’ve already seen (with lists, tuples and sets), we can create an empty collection by typing its type, in this case <code class="docutils literal notranslate"><span class="pre">dict</span></code>, followed by round brackets:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">dict</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{}
+</pre></div></div>
+</div>
+<p>Let’s see how it’s represented in Python Tutor:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">diz</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jm18480124-0934-42ea-82ca-85851b906b7e" type="application/json" >
+    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["diz"], "globals": {"diz": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT"]}, "line": 2, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \ndiz = dict()"}
+</script>
+<div id="jm18480124-0934-42ea-82ca-85851b906b7e" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jm18480124-0934-42ea-82ca-85851b906b7e').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jm18480124-0934-42ea-82ca-85851b906b7e',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+</div>
+<div class="section" id="Keys-and-heterogenous-values">
+<h3>Keys and heterogenous values<a class="headerlink" href="#Keys-and-heterogenous-values" title="Permalink to this headline">¶</a></h3>
+<p>So far we’ve always used keys all of the same type and values all of the same type, but this is not mandatory. (the only required thing is for key types to be immutable):</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span>
+    <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;list&quot;</span><span class="p">],</span>
+     <span class="mi">7</span> <span class="p">:</span> <span class="p">(</span><span class="s2">&quot;this&quot;</span><span class="p">,</span><span class="s2">&quot;is&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;tuple&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{7: (&#39;this&#39;, &#39;is&#39;, &#39;a&#39;, &#39;tuple&#39;), &#39;a&#39;: 3, &#39;b&#39;: [&#39;a&#39;, &#39;list&#39;]}
+</pre></div></div>
+</div>
+<div alert alert-info><p><strong>NOTE: Although mixing types is possible, it’s not advisable!</strong></p>
+<p>Throwing different types inside a dictionary often brings misfortune, as it increases probability of incurring into bugs.</p>
+</div><p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing the result (or if it gives an error):</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span>       <span class="p">,</span>
+ <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="s1">&#39;d&#39;</span>
+
+ <span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a b&#39;</span><span class="p">:</span><span class="s1">&#39;c&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;c d&#39;</span><span class="p">:</span><span class="s1">&#39;e f&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span> <span class="o">=</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;b&#39;</span> <span class="o">=</span> <span class="s1">&#39;d&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">:</span>
+ <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="s1">&#39;d&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;1&quot;</span><span class="p">:[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+    <span class="s2">&quot;2,3&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">({</span><span class="s1">&#39;a:b,c:d&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">;</span>
+ <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="s1">&#39;d&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a:b&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;c:d&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span>
+ <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+ <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">2</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+ <span class="mi">3</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="s1">&#39;d&#39;</span><span class="p">,}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="s1">&#39;d&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{}:</span> <span class="mi">2</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">):[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]:(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;[1,2]&#39;</span><span class="p">:(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}:(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="nb">len</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}):(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">5</span><span class="p">:{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:{</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:{[</span><span class="mi">1</span><span class="p">]:</span><span class="mi">2</span><span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:{</span><span class="mi">1</span><span class="p">:[</span><span class="mi">2</span><span class="p">]}}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{[</span><span class="s2">&quot;a&quot;</span><span class="p">:{</span><span class="mi">1</span><span class="p">:[</span><span class="mi">2</span><span class="p">]}]}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">([{</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">}])</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="Dictionary-from-a-sequence-of-couples">
+<h2>Dictionary from a sequence of couples<a class="headerlink" href="#Dictionary-from-a-sequence-of-couples" title="Permalink to this headline">¶</a></h2>
+<p>We can obtain a dictionary by specifying a sequence of key/value couples as parameter of the function <code class="docutils literal notranslate"><span class="pre">dict</span></code>. For example we could pass a list of tuples:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">dict</span><span class="p">(</span>  <span class="p">[</span>
+         <span class="p">(</span><span class="s1">&#39;flour&#39;</span><span class="p">,</span><span class="mi">500</span><span class="p">),</span>
+         <span class="p">(</span><span class="s1">&#39;eggs&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
+         <span class="p">(</span><span class="s1">&#39;sugar&#39;</span><span class="p">,</span><span class="mi">200</span><span class="p">),</span>
+       <span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;eggs&#39;: 2, &#39;flour&#39;: 500, &#39;sugar&#39;: 200}
+</pre></div></div>
+</div>
+<p>We can also use other sequences, the important bit is that subsequences must all have two elements. For example, here is a tuple of lists:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">dict</span><span class="p">(</span>  <span class="p">(</span>
+         <span class="p">[</span><span class="s1">&#39;flour&#39;</span><span class="p">,</span><span class="mi">500</span><span class="p">],</span>
+         <span class="p">[</span><span class="s1">&#39;eggs&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+         <span class="p">[</span><span class="s1">&#39;sugar&#39;</span><span class="p">,</span><span class="mi">200</span><span class="p">],</span>
+       <span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;eggs&#39;: 2, &#39;flour&#39;: 500, &#39;sugar&#39;: 200}
+</pre></div></div>
+</div>
+<p>If a subsequence has a number of elements different from two, we obtain this error:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">dict</span><span class="p">(</span>  <span class="p">(</span>
+<span class="go">         [&#39;flour&#39;,500],</span>
+<span class="go">         [&#39;rotten&#39;,&#39;eggs&#39;, 3],</span>
+<span class="go">         [&#39;sugar&#39;,200],</span>
+<span class="go">       ))</span>
+
+<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">ValueError                                Traceback (most recent call last)</span>
+<span class="go">&lt;ipython-input-88-563d301b4aef&gt; in &lt;module&gt;</span>
+<span class="go">      2          [&#39;flour&#39;,500],</span>
+<span class="go">      3          [&#39;rotten&#39;,&#39;eggs&#39;, 3],</span>
+<span class="go">      4          [&#39;sugar&#39;,200],</span>
+<span class="go">      5        ))</span>
+
+<span class="go">ValueError: dictionary update sequence element #1 has length 3; 2 is required</span>
+</pre></div>
+</div>
+<p><strong>QUESTION</strong>: Compare the following expressions. Do they do the same thing? If so, which one would you prefer?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span> <span class="p">{</span>
+        <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+      <span class="p">}</span> <span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span> <span class="p">(</span>
+        <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">},</span>
+        <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">},</span>
+        <span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+      <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>ANSWER</strong>: The expressions do NOT produce the same result, and we must definitely prefer the first one.</p>
+<p>On our pc, we obtained this:</p>
+<div class="admonition warning">
+<p><strong>WARNING: on your computer you may get different results!</strong></p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># first</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">dict</span><span class="p">(</span> <span class="p">{</span>
+            <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">)}</span> <span class="p">)</span>
+
+<span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># second</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">dict</span><span class="p">(</span> <span class="p">(</span>
+            <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">})</span> <span class="p">)</span>
+
+<span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;c&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>In the first case we started with a set of tuples: since it is a set, the elements inside it are memorized in an order we <em>cannot</em> predict. When Python checks the tuples inside, for each of them obtains a key/value couple. Now, from the dictionary definition we know dictionary keys are also memorized without a precise order. Thus, inserting keys in an order or another doesn’t matter, the only important thing is keeping the key/value distinction. In the dictionary print we see the same couples we
+specified, only in different order: the proper couples have been created because tuples <em>are</em> ordered indeed.</p>
+<p>In the second case we started instead from a tuple of sets, so Python visited the elements of the tuple in the same order as the one we see: alas, by specifying the couples like sets the order in which Python read the elements becomes unpredictable. On our computer, with the first set we’ve been lucky and Python first read <code class="docutils literal notranslate"><span class="pre">'a'</span></code> and then <code class="docutils literal notranslate"><span class="pre">5</span></code>, with the following sets it read instead first the number and then the character! On your computer you might see a completely different result!</p>
+<p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing which result it produces (or if it gives an error):</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="s1">&#39;abcd&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">([</span><span class="s1">&#39;ab&#39;</span><span class="p">,</span><span class="s1">&#39;cd&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">([</span><span class="s1">&#39;a1&#39;</span><span class="p">,</span><span class="s1">&#39;c2&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">([])</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(())</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">((</span><span class="s1">&#39;  &#39;</span><span class="p">,))</span>   <span class="c1"># nasty</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="Dictionary-from-keyword-arguments">
+<h2>Dictionary from keyword arguments<a class="headerlink" href="#Dictionary-from-keyword-arguments" title="Permalink to this headline">¶</a></h2>
+<p>As further creation method, we can specify keys as they were parameters with a name:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">dict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;a&#39;: 5, &#39;b&#39;: 6}
+</pre></div></div>
+</div>
+<div class="admonition warning">
+<p><strong>WARNING: keys will be subject to the same restrictive rules of function parameter names!</strong></p>
+</div>
+<p>For example, by using curly brackets this dictionary is perfectly lecit:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="p">{</span><span class="s1">&#39;a b&#39;</span> <span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+ <span class="s1">&#39;c d&#39;</span> <span class="p">:</span> <span class="mi">6</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;a b&#39;: 2, &#39;c d&#39;: 6}
+</pre></div></div>
+</div>
+<p>But if we try creating it using <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">b</span></code> as argument of <code class="docutils literal notranslate"><span class="pre">dict</span></code>, we will incur into problems:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">dict</span><span class="p">(</span><span class="n">a</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">c</span> <span class="n">d</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+  File <span class="nb">&quot;&lt;ipython-input-97-444f8661585a&gt;&quot;</span>, line <span class="m">1</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="n">a</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">c</span> <span class="n">d</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+           <span class="o">^</span>
+<span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
+</pre></div>
+</div>
+<p>Strings will also give trouble:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">dict</span><span class="p">(</span><span class="s1">&#39;a b&#39;</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;c d&#39;</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+  File <span class="nb">&quot;&lt;ipython-input-98-45aafbb56e81&gt;&quot;</span>, line <span class="m">1</span>
+    <span class="nb">dict</span><span class="p">(</span><span class="s1">&#39;a b&#39;</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;c d&#39;</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+        <span class="o">^</span>
+<span class="gr">SyntaxError</span>: <span class="n">keyword can&#39;t be an expression</span>
+</pre></div>
+</div>
+<p>And be careful about tricks like using variables, we won’t obtain the desired result:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ka</span> <span class="o">=</span> <span class="s1">&#39;a b&#39;</span>
+<span class="n">kc</span> <span class="o">=</span> <span class="s1">&#39;c d&#39;</span>
+
+<span class="nb">dict</span><span class="p">(</span><span class="n">ka</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">kc</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;ka&#39;: 2, &#39;kc&#39;: 6}
+</pre></div></div>
+</div>
+<p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing the result (or if it gives an error):</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="mi">3</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="s1">&#39;costs&#39;</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span><span class="s1">&#39;benefits&#39;</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="n">_costs</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span><span class="n">_benefits</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="mi">33</span><span class="n">trentini</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="n">trentini33</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="n">trentini_33</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="n">trentini</span><span class="o">-</span><span class="mi">33</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="n">costs</span><span class="o">=</span><span class="mi">1</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">benefits</span><span class="o">=</span><span class="mi">3</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="n">costs</span><span class="o">=</span><span class="mi">1</span><span class="o">==</span><span class="mi">2</span><span class="p">,</span><span class="n">benefits</span><span class="o">=</span><span class="mi">3</span><span class="o">==</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">v1</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="nb">dict</span><span class="p">(</span><span class="n">k1</span><span class="o">=</span><span class="n">v1</span><span class="p">,</span><span class="n">k2</span><span class="o">=</span><span class="n">v2</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="Copying-a-dictionary">
+<h2>Copying a dictionary<a class="headerlink" href="#Copying-a-dictionary" title="Permalink to this headline">¶</a></h2>
+<p>There are two ways to copy a dictionary, you can either do a <em>shallow</em> copy or a <em>deep</em> copy.</p>
+<div class="section" id="Shallow-copy">
+<h3>Shallow copy<a class="headerlink" href="#Shallow-copy" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to create a shallow copy by passing another dictionary to function <code class="docutils literal notranslate"><span class="pre">dict</span></code>:</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">da</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+      <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+      <span class="s1">&#39;z&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">db</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">da</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">da</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;x&#39;: 3, &#39;z&#39;: 1, &#39;y&#39;: 5}
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">db</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;x&#39;: 3, &#39;z&#39;: 1, &#39;y&#39;: 5}
+</pre></div></div>
+</div>
+<p>In Python Tutor we will see two different memory regions:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">da</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+      <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+      <span class="s1">&#39;z&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span>
+<span class="n">db</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">da</span><span class="p">)</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jm8739313a-2cb4-4f12-85bb-17c464d9a965" type="application/json" >
+    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", 3], ["z", 1], ["y", 5]]}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 2], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", 3], ["z", 1], ["y", 5]], "2": ["DICT", ["x", 3], ["z", 1], ["y", 5]]}, "line": 5, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {'x':3,\n      'y':5,\n      'z':1}\ndb = dict(da)"}
+</script>
+<div id="jm8739313a-2cb4-4f12-85bb-17c464d9a965" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jm8739313a-2cb4-4f12-85bb-17c464d9a965').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jm8739313a-2cb4-4f12-85bb-17c464d9a965',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+<p><strong>QUESTION</strong>: can we also write like this? With respect to the previous example, will we obtain different results?</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">da</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+      <span class="s1">&#39;y&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+      <span class="s1">&#39;z&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span>
+<span class="n">db</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">da</span><span class="p">))</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jmdec5e39f-afed-4930-8f02-622a53f06ef8" type="application/json" >
+    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", 3], ["z", 1], ["y", 5]]}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 2], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", 3], ["z", 1], ["y", 5]], "2": ["DICT", ["x", 3], ["z", 1], ["y", 5]]}, "line": 5, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {'x':3,\n      'y':5,\n      'z':1}\ndb = dict(dict(da))"}
+</script>
+<div id="jmdec5e39f-afed-4930-8f02-622a53f06ef8" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jmdec5e39f-afed-4930-8f02-622a53f06ef8').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jmdec5e39f-afed-4930-8f02-622a53f06ef8',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+<p><strong>ANSWER</strong>: The code produces the same results of previous example, although it is not efficient (a temporary dictionary will be created by the internal <code class="docutils literal notranslate"><span class="pre">dict</span></code> and then it will be immediately discarded)</p>
+<p><strong>Mutable values</strong>: In the example we used integer values, which are <em>immutable.</em> If we tried <em>mutable</em> values like lists, what would happen?</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">da</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
+      <span class="s1">&#39;y&#39;</span><span class="p">:[</span><span class="s1">&#39;d&#39;</span><span class="p">],</span>
+      <span class="s1">&#39;z&#39;</span><span class="p">:[</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">]}</span>
+<span class="n">db</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">da</span><span class="p">)</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jm78afe1b5-ee81-4eba-abbd-04f03cf257d7" type="application/json" >
+    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]], "2": ["LIST", "a", "b", "c"], "3": ["LIST", "e", "f"], "4": ["LIST", "d"]}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 5], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]], "2": ["LIST", "a", "b", "c"], "3": ["LIST", "e", "f"], "4": ["LIST", "d"], "5": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]]}, "line": 5, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {'x':['a','b','c'],\n      'y':['d'],\n      'z':['e','f']}\ndb = dict(da)"}
+</script>
+<div id="jm78afe1b5-ee81-4eba-abbd-04f03cf257d7" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jm78afe1b5-ee81-4eba-abbd-04f03cf257d7').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jm78afe1b5-ee81-4eba-abbd-04f03cf257d7',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+<p>If you try executing Python Tutor, you will see an explosion of arrows which go from the new dictionary <code class="docutils literal notranslate"><span class="pre">db</span></code> to the values of <code class="docutils literal notranslate"><span class="pre">da</span></code> (which are lists). No panic! We are going to give a better explanation in the next notebook, for now just note that <strong>with the shallow copy of mutable values the new dictionary will have memory regions in common with the original dictionary.</strong></p>
+</div>
+<div class="section" id="Deep-copy">
+<h3>Deep copy<a class="headerlink" href="#Deep-copy" title="Permalink to this headline">¶</a></h3>
+<p>When there are mutable shared memory regions like in the case above, it’s easy to do mistakes and introduce subtle bugs you might notice much later in the development cycle.</p>
+<p>In order to have completely separated memory regions, we can use <em>deep copy.</em></p>
+<p>First we must tell Python we intend to use functions from the module <code class="docutils literal notranslate"><span class="pre">copy</span></code>, and then we will be allowed to call its <code class="docutils literal notranslate"><span class="pre">deepcopy</span></code> function:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
+
+<span class="n">da</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
+      <span class="s1">&#39;y&#39;</span><span class="p">:[</span><span class="s1">&#39;d&#39;</span><span class="p">],</span>
+      <span class="s1">&#39;z&#39;</span><span class="p">:[</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">]}</span>
+<span class="n">db</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">da</span><span class="p">)</span>
+
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jm3c90e4d6-c25e-48c7-b4d7-ddfa66d64c84" type="application/json" >
+    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy"], "globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy"], "globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "func_name": "<module>", "heap": {}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy"], "globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "func_name": "<module>", "heap": {}, "line": 6, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy", "da"], "globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]], "2": ["LIST", "a", "b", "c"], "3": ["LIST", "e", "f"], "4": ["LIST", "d"]}, "line": 7, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy", "da", "db"], "globals": {"db": ["REF", 5], "deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]], "2": ["LIST", "a", "b", "c"], "3": ["LIST", "e", "f"], "4": ["LIST", "d"], "5": ["DICT", ["x", ["REF", 6]], ["z", ["REF", 7]], ["y", ["REF", 8]]], "6": ["LIST", "a", "b", "c"], "7": ["LIST", "e", "f"], "8": ["LIST", "d"]}, "line": 7, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nfrom copy import deepcopy\n\nda = {'x':['a','b','c'],\n      'y':['d'],\n      'z':['e','f']}\ndb = deepcopy(da)"}
+</script>
+<div id="jm3c90e4d6-c25e-48c7-b4d7-ddfa66d64c84" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jm3c90e4d6-c25e-48c7-b4d7-ddfa66d64c84').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jm3c90e4d6-c25e-48c7-b4d7-ddfa66d64c84',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+<p>If you execute the code in Python Tutor, you will notice that by following the arrow from <code class="docutils literal notranslate"><span class="pre">db</span></code> we will end up in an totally new orange/yellow memory region, which shares nothing with the memory region pointed by <code class="docutils literal notranslate"><span class="pre">da</span></code>.</p>
+<p><strong>QUESTION</strong>: Have a look at the following code - after its execution, will you see arrows going from <code class="docutils literal notranslate"><span class="pre">db</span></code> to elements of <code class="docutils literal notranslate"><span class="pre">da</span></code>?</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">da</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">},</span>
+      <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}}</span>
+<span class="n">db</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">da</span><span class="p">)</span>
+<span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+
+<script id="json-jm2f666927-4698-4dfe-96b6-76b337780d1b" type="application/json" >
+    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["y", ["REF", 3]]], "2": ["SET", 1, 2, 3], "3": ["SET", 4, 5]}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 4], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["y", ["REF", 3]]], "2": ["SET", 1, 2, 3], "3": ["SET", 4, 5], "4": ["DICT", ["x", ["REF", 2]], ["y", ["REF", 3]]]}, "line": 4, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {'x': {1,2,3},\n      'y': {4,5}}\ndb = dict(da)"}
+</script>
+<div id="jm2f666927-4698-4dfe-96b6-76b337780d1b" class="pytutorVisualizer"> </div>
+
+<style>
+.vizLayoutTd {
+    background-color: #fff !important;
+}
+
+#pyStdout {
+    min-height:25px;
+}
+
+/* 'Edit this code' link, hiding because replaces browser tab !!!*/
+#editCodeLinkDiv {
+    display:none;
+}
+</style>
+
+<script>
+(function(){
+
+    var trace = JSON.parse(document.getElementById('json-jm2f666927-4698-4dfe-96b6-76b337780d1b').innerHTML);
+    // NOTE 1: id without #
+    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
+    //        - id should be number
+    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
+    addVisualizerToPage(trace, 'jm2f666927-4698-4dfe-96b6-76b337780d1b',{'embeddedMode' : false,
+                                     'visualizerIdOverride':visualizerIdOverride})
+
+
+    // set overflow for pytuts - need to do in python as css
+    // does not allow parent selection
+    var pytuts = $('.pytutorVisualizer')
+    pytuts.closest('div.output_html.rendered_html.output_result')
+            .css('overflow-x', 'visible')
+
+    //pytuts.closest('div.output_html.rendered_html.output_result')
+    //      .css('background-color','red')
+
+})()
+</script></div>
+</div>
+<p><strong>ANSWER</strong>: Yes, because the values from <code class="docutils literal notranslate"><span class="pre">da</span></code> are sets which are mutable.</p>
+</div>
+</div>
+<div class="section" id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+<p>Go on reading <a class="reference external" href="https://en.softpython.org/dictionaries/dictionaries2-sol.html">Dictionaries 2</a></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dictionaries2-sol.html" class="btn btn-neutral float-right" title="Dictionaries 2 - operators" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../sets/sets-sol.html" class="btn btn-neutral float-left" title="Sets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright # CC-BY 2017 - 2020, David Leoni, Alessio Zamboni, Marco Caresia
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
