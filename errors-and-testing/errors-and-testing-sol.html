@@ -1780,7 +1780,7 @@ Exception: TODO IMPLEMENT ME!
 </div>
 <p>To fix them, you will need to:</p>
 <ol class="arabic simple">
-<li><p>substitute the row <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">Exception(&quot;IMPLEMENTAMI&quot;)</span></code> with the body of the function</p></li>
+<li><p>substitute the row <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">Exception(&quot;TODO</span> <span class="pre">IMPLEMENT</span> <span class="pre">ME!&quot;)</span></code> with the body of the function</p></li>
 <li><p>execute the cell</p></li>
 </ol>
 <p>If cell execution doesn’t result in raised exceptions, perfect ! It means your function does what it is expected to do (the <code class="docutils literal notranslate"><span class="pre">assert</span></code> which succeed do not produce any output)</p>
@@ -1821,7 +1821,7 @@ AssertionError:
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 
 <span></span><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; RITORNA the sum of numbers x and y</span>
+    <span class="sd">&quot;&quot;&quot; RETURN the sum of numbers x and y</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
 
@@ -1903,8 +1903,8 @@ Exception: TODO IMPLEMENT ME!
 </div>
 <p>tells Python to immediatly stop execution, and signal an error to the caller of the function <code class="docutils literal notranslate"><span class="pre">even_number</span></code>. If there were commands right after <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">Exception(&quot;TODO</span> <span class="pre">IMPLEMENT</span> <span class="pre">ME&quot;)</span></code>, they would not be executed. Here, we are directly calling the function from the prompt, and we didn’t tell Python how to handle the <code class="docutils literal notranslate"><span class="pre">Exception</span></code>, so Python just stopped and showed the error message given as parameter to the <code class="docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <div class="admonition note">
-<p class="admonition-title fa fa-exclamation-circle"><strong>Spend time reading well the function text!</strong></p>
-<p>Always read very well function text and ask yourself questions! What is the supposed input? What should be the output? Is there any output to return at all, or should you instead modify <em>in-place</em> a passed parameter (i.e. for example, when you sort a list)? Are there any edge cases, es what happens for <code class="docutils literal notranslate"><span class="pre">n=0</span></code>)? What about <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&lt;</span> <span class="pre">0</span></code> ?</p>
+<p class="admonition-title fa fa-exclamation-circle"><strong>Spend time reading the function text!</strong></p>
+<p>Always carefully read the function text and ask yourself questions! What is the supposed input? What should be the output? Is there any output to return at all, or should you instead modify <em>in-place</em> a passed parameter (i.e. for example, when you sort a list)? Are there any edge cases, es what happens for <code class="docutils literal notranslate"><span class="pre">n=0</span></code>)? What about <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&lt;</span> <span class="pre">0</span></code> ?</p>
 </div>
 <p>Let’s code a possible solution. As it often happens, first version may be buggy, in this case for example purposes we intentionally introduce a bug:</p>
 <div class="nbinput nblast docutils container">
