@@ -1114,32 +1114,6 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span> <span class="c1"># sin, you lose parameter i</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># prints 2, not the 7 we passed!</span>
-
-<span class="n">f</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-0
-1
-2
-2
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span>  <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>  <span class="c1"># debugging hell, you lose the i of external cycle</span>
@@ -1166,6 +1140,32 @@ div.rendered_html tbody tr:hover {
 3
 4
 4
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span> <span class="c1"># sin, you lose parameter i</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># prints 2, not the 7 we passed!</span>
+
+<span class="n">f</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0
+1
+2
+2
 </pre></div></div>
 </div>
 </div>
@@ -1273,7 +1273,7 @@ div.rendered_html tbody tr:hover {
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># RETURN a NEW list</span>
 <span class="k">def</span> <span class="nf">crisis</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
-    <span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>           <span class="c1"># BAD, as above</span>
+    <span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>    <span class="c1"># BAD, as above</span>
     <span class="k">return</span> <span class="n">my_list</span>
 </pre></div>
 </div>
@@ -1284,7 +1284,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># RETURN a NEW dictionary</span>
-<span class="k">def</span> <span class="nf">tormento</span><span class="p">(</span><span class="n">my_dict</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">torment</span><span class="p">(</span><span class="n">my_dict</span><span class="p">):</span>
     <span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span>  <span class="c1"># BAD, you are modifying the input dictionary instead of creating a new one!</span>
     <span class="k">return</span> <span class="n">my_dict</span>
 </pre></div>
@@ -1310,9 +1310,9 @@ div.rendered_html tbody tr:hover {
 <p><strong>You shall never ever reassign values to function calls or mmethods</strong></p>
 </div>
 <p><em>WRONG:</em></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mia_funzione</span><span class="p">()</span> <span class="o">=</span> <span class="mi">666</span>
-<span class="n">mia_funzione</span><span class="p">()</span> <span class="o">=</span> <span class="s1">&#39;evil&#39;</span>
-<span class="n">mia_funzione</span><span class="p">()</span> <span class="o">=</span> <span class="p">[</span><span class="mi">666</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_function</span><span class="p">()</span> <span class="o">=</span> <span class="mi">666</span>
+<span class="n">my_function</span><span class="p">()</span> <span class="o">=</span> <span class="s1">&#39;evil&#39;</span>
+<span class="n">my_function</span><span class="p">()</span> <span class="o">=</span> <span class="p">[</span><span class="mi">666</span><span class="p">]</span>
 </pre></div>
 </div>
 <p><em>CORRECT:</em></p>
@@ -1325,7 +1325,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <p>Function calls like <code class="docutils literal notranslate"><span class="pre">my_function()</span></code> return calculations results and store them in a box in memory which is only created for the purposes of the call, and Python will not allow us to reuse it like it were a variabile.</p>
-<p>Whenever you see <code class="docutils literal notranslate"><span class="pre">name()</span></code> in the left part, it <em>cannot</em> be followed by the equality sign <code class="docutils literal notranslate"><span class="pre">=</span></code> (but it can be followed by due equals sign <code class="docutils literal notranslate"><span class="pre">==</span></code> if you are doing a comparison).</p>
+<p>Whenever you see <code class="docutils literal notranslate"><span class="pre">name()</span></code> in the left part, it <em>cannot</em> be followed by the equality sign <code class="docutils literal notranslate"><span class="pre">=</span></code> (but it can be followed by two equals sign <code class="docutils literal notranslate"><span class="pre">==</span></code> if you are doing a comparison).</p>
 </div>
 <div class="section" id="V-COMMANDMENT">
 <h2>V COMMANDMENT<a class="headerlink" href="#V-COMMANDMENT" title="Permalink to this headline">¶</a></h2>
@@ -1351,7 +1351,7 @@ div.rendered_html tbody tr:hover {
 [&#39;c&#39;, &#39;i&#39;, &#39;a&#39;, &#39;o&#39;]
 </pre></div></div>
 </div>
-<p>When you allow the Forces of Evil to take the best of you, you might be tempted to use reserved words like <code class="docutils literal notranslate"><span class="pre">list</span></code> as a variable for you own miserable purposes:</p>
+<p>When you allow the forces of evil to take the best of you, you might be tempted to use reserved words like <code class="docutils literal notranslate"><span class="pre">list</span></code> as a variable for you own miserable purposes:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
@@ -1441,20 +1441,20 @@ TypeError: &#39;list&#39; object is not callable
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;__main__.MyClass at 0x7f547c35bf28&gt;
+&lt;__main__.MyClass at 0x7f56fa7d90f0&gt;
 </pre></div></div>
 </div>
 <p>and will not have <code class="docutils literal notranslate"><span class="pre">my_field</span></code>:</p>
-<p>mc.my_field</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mc</span><span class="o">.</span><span class="n">my_field</span>
+<span class="o">---------------------------------------------------------------------------</span>
 <span class="ne">AttributeError</span>                            <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
 <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">26</span><span class="o">-</span><span class="mi">5</span><span class="n">c4e6630908d</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
-<span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">mc</span><span class="o">.</span><span class="n">male</span>
+<span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">mc</span><span class="o">.</span><span class="n">my_field</span>
 
 <span class="ne">AttributeError</span><span class="p">:</span> <span class="s1">&#39;MyClass&#39;</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s1">&#39;my_field&#39;</span>
 </pre></div>
 </div>
-<p>For the same reasoning, you shall never reassign <code class="docutils literal notranslate"><span class="pre">self</span></code> to lists or others things:</p>
+<p>Following the same reasoning, you shall never reassign <code class="docutils literal notranslate"><span class="pre">self</span></code> to lists or others things:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
@@ -1470,13 +1470,17 @@ TypeError: &#39;list&#39; object is not callable
 </div>
 <div class="section" id="IX-COMMANDMENT">
 <h2>IX COMMANDMENT<a class="headerlink" href="#IX-COMMANDMENT" title="Permalink to this headline">¶</a></h2>
-<div id="prova" class="alert alert-info"><p><strong>You shall test!</strong></p>
-</div><p>Untested code by definition <em>does not work</em>. For ideas on how to test it, have a look at <a class="reference external" href="https://en.softpython.org/errors-and-testing/errors-and-testing-sol.ipynb">Errors and testing</a></p>
+<div class="admonition note">
+<p><strong>You shall test!</strong></p>
+</div>
+<p>Untested code by definition <em>does not work</em>. For ideas on how to test it, have a look at <a class="reference external" href="https://en.softpython.org/errors-and-testing/errors-and-testing-sol.ipynb">Errors and testing</a></p>
 </div>
 <div class="section" id="X-COMMANDMENT">
 <h2>X COMMANDMENT<a class="headerlink" href="#X-COMMANDMENT" title="Permalink to this headline">¶</a></h2>
-<div id="prova" class="alert alert-info"><p><strong>You shall never ever add or remove elements from a sequence you are iterating with a</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> <strong>!</strong></p>
-</div><p>Falling into such temptations <strong>would produce totally unpredictable behaviours</strong> (do you know the expression <em>pulling the rug out from under your feet ?</em> )</p>
+<div class="admonition note">
+<p><strong>You shall never ever add or remove elements from a sequence you are iterating with a</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> <strong>!</strong></p>
+</div>
+<p>Falling into such temptations <strong>would produce totally unpredictable behaviours</strong> (do you know the expression <em>pulling the rug out from under your feet ?</em> )</p>
 <p><strong>Do not add</strong>, because you risk to walk on a tapis roulant that never turns off:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
 <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
@@ -1515,9 +1519,18 @@ TypeError: &#39;list&#39; object is not callable
 [&#39;b&#39;, &#39;d&#39;]
 </pre></div></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">O_o'</span></code> Do not even try to make sense of such sorcery - nobody can, because it is related to internal implmentation of Python.</p>
-<p>My version of Python gives this absurd result, yours may give another. Same applies for iteration on sets and dictionaries. <strong>You are warned</strong>.</p>
-<p><strong>If you really need to remove stuff from the sequence you are iterating on</strong>, use a <a class="reference external" href="https://en.softpython.org/control-flow/flow3-while-sol.html">while cycle</a> or make first a copy of the original sequence.</p>
+<p><code class="docutils literal notranslate"><span class="pre">O_o'</span></code> Do not even try to make sense of such sorcery - nobody can, because it is related to Python internal implementation.</p>
+<p>Our version of Python gives this absurd result, yours may give another. Same applies for iteration on sets and dictionaries. <strong>You are warned</strong>.</p>
+<p><strong>If you really need to remove stuff from the sequence you are iterating on</strong>, use a <a class="reference external" href="https://en.softpython.org/control-flow/flow3-while-sol.html">while cycle</a> or first make a copy of the original sequence.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
