@@ -132,7 +132,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Allen-Downey---Think-Python">Allen Downey - Think Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#W3Resources-website">W3Resources website</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Software-Carpentry">Software Carpentry</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../references.html#LeetCode">LeetCode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#LeetCode">LeetCode</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#LeetCode---Strings">LeetCode - Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#LeetCode---Lists">LeetCode - Lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#LeetCode---Sets-and-Dictionaries">LeetCode - Sets and Dictionaries</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#HackerRank">HackerRank</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Geeks-for-Geeks">Geeks for Geeks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Dive-into-Python-3">Dive into Python 3</a></li>
@@ -1273,7 +1278,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;chair&#39;: &#39;a piece of furniture to sit on&#39;, &#39;cupboard&#39;: &#39;a cabinet for storage&#39;, &#39;lamp&#39;: &#39;a device to provide illumination&#39;}
+{&#39;cupboard&#39;: &#39;a cabinet for storage&#39;, &#39;chair&#39;: &#39;a piece of furniture to sit on&#39;, &#39;lamp&#39;: &#39;a device to provide illumination&#39;}
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1283,10 +1288,10 @@ div.rendered_html tbody tr:hover {
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmc83850fc-df7d-4cd4-a89d-487918dcc6e9" type="application/json" >
-    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["furniture"], "globals": {"furniture": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 7, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["furniture"], "globals": {"furniture": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 7, "stack_to_render": [], "event": "return", "stdout": "{'chair': 'a piece of furniture to sit on', 'cupboard': 'a cabinet for storage', 'lamp': 'a device to provide illumination'}\n"}], "code": " \nfurniture = {\n    'chair'    : 'a piece of furniture to sit on',\n    'cupboard' : 'a cabinet for storage',\n    'lamp'     : 'a device to provide illumination'\n}\nprint(furniture)"}
+<script id="json-jmfaa7ebfa-36b2-4e7b-aec1-27fb0f54c9f0" type="application/json" >
+    {"code": " \nfurniture = {\n    'chair'    : 'a piece of furniture to sit on',\n    'cupboard' : 'a cabinet for storage',\n    'lamp'     : 'a device to provide illumination'\n}\nprint(furniture)", "trace": [{"globals": {}, "line": 3, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 4, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 5, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"furniture": ["REF", 1]}, "line": 7, "stdout": "", "ordered_globals": ["furniture"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]]}}, {"globals": {"furniture": ["REF", 1]}, "line": 7, "stdout": "{'cupboard': 'a cabinet for storage', 'chair': 'a piece of furniture to sit on', 'lamp': 'a device to provide illumination'}\n", "ordered_globals": ["furniture"], "func_name": "<module>", "stack_to_render": [], "event": "return", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]]}}]}
 </script>
-<div id="jmc83850fc-df7d-4cd4-a89d-487918dcc6e9" class="pytutorVisualizer"> </div>
+<div id="jmfaa7ebfa-36b2-4e7b-aec1-27fb0f54c9f0" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1306,12 +1311,12 @@ div.rendered_html tbody tr:hover {
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmc83850fc-df7d-4cd4-a89d-487918dcc6e9').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmfaa7ebfa-36b2-4e7b-aec1-27fb0f54c9f0').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmc83850fc-df7d-4cd4-a89d-487918dcc6e9',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmfaa7ebfa-36b2-4e7b-aec1-27fb0f54c9f0',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -1365,10 +1370,10 @@ div.rendered_html tbody tr:hover {
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm0bc36413-7df9-4543-85b5-eee96b6d7487" type="application/json" >
-    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 9, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 10, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]]}, "line": 11, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 2], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 13, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db", "dc"], "globals": {"db": ["REF", 2], "da": ["REF", 1], "dc": ["REF", 2]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 14, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db", "dc"], "globals": {"db": ["REF", 1], "da": ["REF", 1], "dc": ["REF", 2]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 15, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db", "dc"], "globals": {"db": ["REF", 1], "da": ["REF", 2], "dc": ["REF", 2]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 16, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db", "dc"], "globals": {"db": ["REF", 1], "da": ["REF", 2], "dc": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["chair", "a piece of furniture to sit on"], ["cupboard", "a cabinet for storage"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["airplane", "wing"], ["car", "wheel"], ["ship", "paddle"]]}, "line": 16, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {\n    'chair'    : 'a piece of furniture to sit on',\n    'cupboard' : 'a cabinet for storage',\n    'lamp'    : 'a device to provide illumination'\n}\n\ndb = {\n 'ship': 'paddle',\n 'car': 'wheel',\n 'airplane': 'wing'\n}\ndc = db \ndb = da\nda = dc\ndc = db\n#print(da)\n#print(db)\n#print(dc)"}
+<script id="json-jm5cb5e854-25dc-4d8d-881f-ec78f0c41c26" type="application/json" >
+    {"code": " \nda = {\n    'chair'    : 'a piece of furniture to sit on',\n    'cupboard' : 'a cabinet for storage',\n    'lamp'    : 'a device to provide illumination'\n}\n\ndb = {\n 'ship': 'paddle',\n 'car': 'wheel',\n 'airplane': 'wing'\n}\ndc = db \ndb = da\nda = dc\ndc = db\n#print(da)\n#print(db)\n#print(dc)", "trace": [{"globals": {}, "line": 3, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 4, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 5, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"da": ["REF", 1]}, "line": 9, "stdout": "", "ordered_globals": ["da"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]]}}, {"globals": {"da": ["REF", 1]}, "line": 10, "stdout": "", "ordered_globals": ["da"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]]}}, {"globals": {"da": ["REF", 1]}, "line": 11, "stdout": "", "ordered_globals": ["da"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]]}}, {"globals": {"da": ["REF", 1], "db": ["REF", 2]}, "line": 13, "stdout": "", "ordered_globals": ["da", "db"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["ship", "paddle"], ["car", "wheel"], ["airplane", "wing"]]}}, {"globals": {"da": ["REF", 1], "dc": ["REF", 2], "db": ["REF", 2]}, "line": 14, "stdout": "", "ordered_globals": ["da", "db", "dc"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["ship", "paddle"], ["car", "wheel"], ["airplane", "wing"]]}}, {"globals": {"da": ["REF", 1], "dc": ["REF", 2], "db": ["REF", 1]}, "line": 15, "stdout": "", "ordered_globals": ["da", "db", "dc"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["ship", "paddle"], ["car", "wheel"], ["airplane", "wing"]]}}, {"globals": {"da": ["REF", 2], "dc": ["REF", 2], "db": ["REF", 1]}, "line": 16, "stdout": "", "ordered_globals": ["da", "db", "dc"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["ship", "paddle"], ["car", "wheel"], ["airplane", "wing"]]}}, {"globals": {"dc": ["REF", 1], "da": ["REF", 2], "db": ["REF", 1]}, "line": 16, "stdout": "", "ordered_globals": ["da", "db", "dc"], "func_name": "<module>", "stack_to_render": [], "event": "return", "heap": {"1": ["DICT", ["cupboard", "a cabinet for storage"], ["chair", "a piece of furniture to sit on"], ["lamp", "a device to provide illumination"]], "2": ["DICT", ["ship", "paddle"], ["car", "wheel"], ["airplane", "wing"]]}}]}
 </script>
-<div id="jm0bc36413-7df9-4543-85b5-eee96b6d7487" class="pytutorVisualizer"> </div>
+<div id="jm5cb5e854-25dc-4d8d-881f-ec78f0c41c26" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1388,12 +1393,12 @@ div.rendered_html tbody tr:hover {
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm0bc36413-7df9-4543-85b5-eee96b6d7487').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm5cb5e854-25dc-4d8d-881f-ec78f0c41c26').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm0bc36413-7df9-4543-85b5-eee96b6d7487',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm5cb5e854-25dc-4d8d-881f-ec78f0c41c26',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -1597,7 +1602,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;airplanes&#39;: &#39;airport&#39;, &#39;ships&#39;: &#39;port&#39;, &#39;trains&#39;: &#39;station&#39;}
+{&#39;trains&#39;: &#39;station&#39;, &#39;airplanes&#39;: &#39;airport&#39;, &#39;ships&#39;: &#39;port&#39;}
 </pre></div></div>
 </div>
 </div>
@@ -1844,10 +1849,10 @@ dict
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm18480124-0934-42ea-82ca-85851b906b7e" type="application/json" >
-    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["diz"], "globals": {"diz": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT"]}, "line": 2, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \ndiz = dict()"}
+<script id="json-jm5081ec89-cb5c-416b-87bd-653d274f8988" type="application/json" >
+    {"code": " \ndiz = dict()", "trace": [{"globals": {}, "line": 2, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"diz": ["REF", 1]}, "line": 2, "stdout": "", "ordered_globals": ["diz"], "func_name": "<module>", "stack_to_render": [], "event": "return", "heap": {"1": ["DICT"]}}]}
 </script>
-<div id="jm18480124-0934-42ea-82ca-85851b906b7e" class="pytutorVisualizer"> </div>
+<div id="jm5081ec89-cb5c-416b-87bd-653d274f8988" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1867,12 +1872,12 @@ dict
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm18480124-0934-42ea-82ca-85851b906b7e').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm5081ec89-cb5c-416b-87bd-653d274f8988').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm18480124-0934-42ea-82ca-85851b906b7e',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm5081ec89-cb5c-416b-87bd-653d274f8988',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -2349,7 +2354,7 @@ specified, only in different order: the proper couples have been created because
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;x&#39;: 3, &#39;z&#39;: 1, &#39;y&#39;: 5}
+{&#39;y&#39;: 5, &#39;z&#39;: 1, &#39;x&#39;: 3}
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -2366,7 +2371,7 @@ specified, only in different order: the proper couples have been created because
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;x&#39;: 3, &#39;z&#39;: 1, &#39;y&#39;: 5}
+{&#39;y&#39;: 5, &#39;z&#39;: 1, &#39;x&#39;: 3}
 </pre></div></div>
 </div>
 <p>In Python Tutor we will see two different memory regions:</p>
@@ -2391,10 +2396,10 @@ specified, only in different order: the proper couples have been created because
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm8739313a-2cb4-4f12-85bb-17c464d9a965" type="application/json" >
-    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", 3], ["z", 1], ["y", 5]]}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 2], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", 3], ["z", 1], ["y", 5]], "2": ["DICT", ["x", 3], ["z", 1], ["y", 5]]}, "line": 5, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {'x':3,\n      'y':5,\n      'z':1}\ndb = dict(da)"}
+<script id="json-jmeaba574a-bf53-4a6b-b051-ca87940cd50d" type="application/json" >
+    {"code": " \nda = {'x':3,\n      'y':5,\n      'z':1}\ndb = dict(da)", "trace": [{"globals": {}, "line": 2, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 3, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 4, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"da": ["REF", 1]}, "line": 5, "stdout": "", "ordered_globals": ["da"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["y", 5], ["z", 1], ["x", 3]]}}, {"globals": {"da": ["REF", 1], "db": ["REF", 2]}, "line": 5, "stdout": "", "ordered_globals": ["da", "db"], "func_name": "<module>", "stack_to_render": [], "event": "return", "heap": {"1": ["DICT", ["y", 5], ["z", 1], ["x", 3]], "2": ["DICT", ["y", 5], ["z", 1], ["x", 3]]}}]}
 </script>
-<div id="jm8739313a-2cb4-4f12-85bb-17c464d9a965" class="pytutorVisualizer"> </div>
+<div id="jmeaba574a-bf53-4a6b-b051-ca87940cd50d" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2414,12 +2419,12 @@ specified, only in different order: the proper couples have been created because
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm8739313a-2cb4-4f12-85bb-17c464d9a965').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmeaba574a-bf53-4a6b-b051-ca87940cd50d').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm8739313a-2cb4-4f12-85bb-17c464d9a965',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmeaba574a-bf53-4a6b-b051-ca87940cd50d',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -2457,10 +2462,10 @@ specified, only in different order: the proper couples have been created because
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmdec5e39f-afed-4930-8f02-622a53f06ef8" type="application/json" >
-    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", 3], ["z", 1], ["y", 5]]}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 2], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", 3], ["z", 1], ["y", 5]], "2": ["DICT", ["x", 3], ["z", 1], ["y", 5]]}, "line": 5, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {'x':3,\n      'y':5,\n      'z':1}\ndb = dict(dict(da))"}
+<script id="json-jmcd4bdad9-82bf-4743-95ba-ec2407f323c0" type="application/json" >
+    {"code": " \nda = {'x':3,\n      'y':5,\n      'z':1}\ndb = dict(dict(da))", "trace": [{"globals": {}, "line": 2, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 3, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 4, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"da": ["REF", 1]}, "line": 5, "stdout": "", "ordered_globals": ["da"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["y", 5], ["z", 1], ["x", 3]]}}, {"globals": {"da": ["REF", 1], "db": ["REF", 2]}, "line": 5, "stdout": "", "ordered_globals": ["da", "db"], "func_name": "<module>", "stack_to_render": [], "event": "return", "heap": {"1": ["DICT", ["y", 5], ["z", 1], ["x", 3]], "2": ["DICT", ["y", 5], ["z", 1], ["x", 3]]}}]}
 </script>
-<div id="jmdec5e39f-afed-4930-8f02-622a53f06ef8" class="pytutorVisualizer"> </div>
+<div id="jmcd4bdad9-82bf-4743-95ba-ec2407f323c0" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2480,12 +2485,12 @@ specified, only in different order: the proper couples have been created because
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmdec5e39f-afed-4930-8f02-622a53f06ef8').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmcd4bdad9-82bf-4743-95ba-ec2407f323c0').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmdec5e39f-afed-4930-8f02-622a53f06ef8',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmcd4bdad9-82bf-4743-95ba-ec2407f323c0',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -2524,10 +2529,10 @@ specified, only in different order: the proper couples have been created because
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm78afe1b5-ee81-4eba-abbd-04f03cf257d7" type="application/json" >
-    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]], "2": ["LIST", "a", "b", "c"], "3": ["LIST", "e", "f"], "4": ["LIST", "d"]}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 5], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]], "2": ["LIST", "a", "b", "c"], "3": ["LIST", "e", "f"], "4": ["LIST", "d"], "5": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]]}, "line": 5, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {'x':['a','b','c'],\n      'y':['d'],\n      'z':['e','f']}\ndb = dict(da)"}
+<script id="json-jm3a26a2f1-0c81-4b6b-8e7f-ecb0ab388641" type="application/json" >
+    {"code": " \nda = {'x':['a','b','c'],\n      'y':['d'],\n      'z':['e','f']}\ndb = dict(da)", "trace": [{"globals": {}, "line": 2, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 3, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 4, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"da": ["REF", 1]}, "line": 5, "stdout": "", "ordered_globals": ["da"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["y", ["REF", 2]], ["z", ["REF", 3]], ["x", ["REF", 4]]], "2": ["LIST", "d"], "3": ["LIST", "e", "f"], "4": ["LIST", "a", "b", "c"]}}, {"globals": {"da": ["REF", 1], "db": ["REF", 5]}, "line": 5, "stdout": "", "ordered_globals": ["da", "db"], "func_name": "<module>", "stack_to_render": [], "event": "return", "heap": {"1": ["DICT", ["y", ["REF", 2]], ["z", ["REF", 3]], ["x", ["REF", 4]]], "2": ["LIST", "d"], "3": ["LIST", "e", "f"], "4": ["LIST", "a", "b", "c"], "5": ["DICT", ["y", ["REF", 2]], ["z", ["REF", 3]], ["x", ["REF", 4]]]}}]}
 </script>
-<div id="jm78afe1b5-ee81-4eba-abbd-04f03cf257d7" class="pytutorVisualizer"> </div>
+<div id="jm3a26a2f1-0c81-4b6b-8e7f-ecb0ab388641" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2547,12 +2552,12 @@ specified, only in different order: the proper couples have been created because
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm78afe1b5-ee81-4eba-abbd-04f03cf257d7').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm3a26a2f1-0c81-4b6b-8e7f-ecb0ab388641').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm78afe1b5-ee81-4eba-abbd-04f03cf257d7',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm3a26a2f1-0c81-4b6b-8e7f-ecb0ab388641',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -2598,10 +2603,10 @@ specified, only in different order: the proper couples have been created because
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm3c90e4d6-c25e-48c7-b4d7-ddfa66d64c84" type="application/json" >
-    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy"], "globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "func_name": "<module>", "heap": {}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy"], "globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "func_name": "<module>", "heap": {}, "line": 5, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy"], "globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "func_name": "<module>", "heap": {}, "line": 6, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy", "da"], "globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]], "2": ["LIST", "a", "b", "c"], "3": ["LIST", "e", "f"], "4": ["LIST", "d"]}, "line": 7, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["deepcopy", "da", "db"], "globals": {"db": ["REF", 5], "deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["z", ["REF", 3]], ["y", ["REF", 4]]], "2": ["LIST", "a", "b", "c"], "3": ["LIST", "e", "f"], "4": ["LIST", "d"], "5": ["DICT", ["x", ["REF", 6]], ["z", ["REF", 7]], ["y", ["REF", 8]]], "6": ["LIST", "a", "b", "c"], "7": ["LIST", "e", "f"], "8": ["LIST", "d"]}, "line": 7, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nfrom copy import deepcopy\n\nda = {'x':['a','b','c'],\n      'y':['d'],\n      'z':['e','f']}\ndb = deepcopy(da)"}
+<script id="json-jmb6887ef7-078a-4e25-b3f4-a379334a23b2" type="application/json" >
+    {"code": " \nfrom copy import deepcopy\n\nda = {'x':['a','b','c'],\n      'y':['d'],\n      'z':['e','f']}\ndb = deepcopy(da)", "trace": [{"globals": {}, "line": 2, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "line": 4, "stdout": "", "ordered_globals": ["deepcopy"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "line": 5, "stdout": "", "ordered_globals": ["deepcopy"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "line": 6, "stdout": "", "ordered_globals": ["deepcopy"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"da": ["REF", 1], "deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "line": 7, "stdout": "", "ordered_globals": ["deepcopy", "da"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["y", ["REF", 2]], ["z", ["REF", 3]], ["x", ["REF", 4]]], "2": ["LIST", "d"], "3": ["LIST", "e", "f"], "4": ["LIST", "a", "b", "c"]}}, {"globals": {"da": ["REF", 1], "db": ["REF", 5], "deepcopy": ["IMPORTED_FAUX_PRIMITIVE", "imported object"]}, "line": 7, "stdout": "", "ordered_globals": ["deepcopy", "da", "db"], "func_name": "<module>", "stack_to_render": [], "event": "return", "heap": {"1": ["DICT", ["y", ["REF", 2]], ["z", ["REF", 3]], ["x", ["REF", 4]]], "2": ["LIST", "d"], "3": ["LIST", "e", "f"], "4": ["LIST", "a", "b", "c"], "5": ["DICT", ["y", ["REF", 6]], ["z", ["REF", 7]], ["x", ["REF", 8]]], "6": ["LIST", "d"], "7": ["LIST", "e", "f"], "8": ["LIST", "a", "b", "c"]}}]}
 </script>
-<div id="jm3c90e4d6-c25e-48c7-b4d7-ddfa66d64c84" class="pytutorVisualizer"> </div>
+<div id="jmb6887ef7-078a-4e25-b3f4-a379334a23b2" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2621,12 +2626,12 @@ specified, only in different order: the proper couples have been created because
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm3c90e4d6-c25e-48c7-b4d7-ddfa66d64c84').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmb6887ef7-078a-4e25-b3f4-a379334a23b2').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm3c90e4d6-c25e-48c7-b4d7-ddfa66d64c84',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmb6887ef7-078a-4e25-b3f4-a379334a23b2',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -2663,10 +2668,10 @@ specified, only in different order: the proper couples have been created because
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm2f666927-4698-4dfe-96b6-76b337780d1b" type="application/json" >
-    {"trace": [{"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 2, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": [], "globals": {}, "func_name": "<module>", "heap": {}, "line": 3, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da"], "globals": {"da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["y", ["REF", 3]]], "2": ["SET", 1, 2, 3], "3": ["SET", 4, 5]}, "line": 4, "stack_to_render": [], "event": "step_line", "stdout": ""}, {"ordered_globals": ["da", "db"], "globals": {"db": ["REF", 4], "da": ["REF", 1]}, "func_name": "<module>", "heap": {"1": ["DICT", ["x", ["REF", 2]], ["y", ["REF", 3]]], "2": ["SET", 1, 2, 3], "3": ["SET", 4, 5], "4": ["DICT", ["x", ["REF", 2]], ["y", ["REF", 3]]]}, "line": 4, "stack_to_render": [], "event": "return", "stdout": ""}], "code": " \nda = {'x': {1,2,3},\n      'y': {4,5}}\ndb = dict(da)"}
+<script id="json-jm589d16e2-b980-4935-b7ce-b0cf5542738d" type="application/json" >
+    {"code": " \nda = {'x': {1,2,3},\n      'y': {4,5}}\ndb = dict(da)", "trace": [{"globals": {}, "line": 2, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {}, "line": 3, "stdout": "", "ordered_globals": [], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {}}, {"globals": {"da": ["REF", 1]}, "line": 4, "stdout": "", "ordered_globals": ["da"], "func_name": "<module>", "stack_to_render": [], "event": "step_line", "heap": {"1": ["DICT", ["y", ["REF", 2]], ["x", ["REF", 3]]], "2": ["SET", 4, 5], "3": ["SET", 1, 2, 3]}}, {"globals": {"da": ["REF", 1], "db": ["REF", 4]}, "line": 4, "stdout": "", "ordered_globals": ["da", "db"], "func_name": "<module>", "stack_to_render": [], "event": "return", "heap": {"1": ["DICT", ["y", ["REF", 2]], ["x", ["REF", 3]]], "2": ["SET", 4, 5], "3": ["SET", 1, 2, 3], "4": ["DICT", ["y", ["REF", 2]], ["x", ["REF", 3]]]}}]}
 </script>
-<div id="jm2f666927-4698-4dfe-96b6-76b337780d1b" class="pytutorVisualizer"> </div>
+<div id="jm589d16e2-b980-4935-b7ce-b0cf5542738d" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2686,12 +2691,12 @@ specified, only in different order: the proper couples have been created because
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm2f666927-4698-4dfe-96b6-76b337780d1b').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm589d16e2-b980-4935-b7ce-b0cf5542738d').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm2f666927-4698-4dfe-96b6-76b337780d1b',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm589d16e2-b980-4935-b7ce-b0cf5542738d',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
