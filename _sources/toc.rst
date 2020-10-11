@@ -30,6 +30,7 @@ A - Foundations
     Control flow 1: if <control-flow/flow1-if-sol.ipynb>
     Control flow 2: for <control-flow/flow2-for-sol.ipynb>
     Control flow 3: while <control-flow/flow3-while-sol.ipynb>
+    Matrices: list of lists <matrices-lists/matrices-lists-sol.ipynb> 
 
     Errors and testing <errors-and-testing/errors-and-testing-sol.ipynb>
     commandments.ipynb
