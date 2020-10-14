@@ -33,8 +33,16 @@ A - Foundations
     Matrices: list of lists <matrices-lists/matrices-lists-sol.ipynb> 
 
     Errors and testing <errors-and-testing/errors-and-testing-sol.ipynb>
-    commandments.ipynb
-        
+    commandments.ipynb        
+
+B - Data analysis
+=======================
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    
+    Data formats (CSV, JSON) <formats/formats-sol.ipynb>
 
         
 |space|
