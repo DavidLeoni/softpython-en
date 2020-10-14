@@ -109,6 +109,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../index.html#Intended-audience">Intended audience</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#Contents">Contents</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#A---Foundations">A - Foundations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#B---Data-analysis">B - Data analysis</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#Authors">Authors</a></li>
@@ -1013,6 +1014,41 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#b-data-analysis">B - Data analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../formats/formats-sol.html">Data formats (CSV, JSON)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../formats/formats-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../formats/formats-sol.html#Introduction">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../formats/formats-sol.html#1.-line-files">1. line files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#open-command">open command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#The-encoding">The encoding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#with-block">with block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#people-complex-line-file:">people-complex line file:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#Exercise---line-file-immersione-in-python-toc">Exercise - line file immersione-in-python-toc</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../formats/formats-sol.html#2.-CSV-files">2. CSV files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#Why-parsing-a-CSV-?">Why parsing a CSV ?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#Reading-a-CSV">Reading a CSV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#Writing-a-CSV">Writing a CSV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#Reading-and-writing-a-CSV">Reading and writing a CSV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#CSV-Botteghe-storiche">CSV Botteghe storiche</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#Problem:-wrong-characters-??">Problem: wrong characters ??</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#Botteghe-storiche-in-Python">Botteghe storiche in Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#Botteghe-storiche---rank_categories">Botteghe storiche - rank_categories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#Botteghe-storiche---enrich">Botteghe storiche - enrich</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../formats/formats-sol.html#3.-JSON-files">3. JSON files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats-sol.html#JSONL">JSONL</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../toc.html#space"> </a></li>
 <li class="toctree-l1"><a class="reference internal" href="../toc.html#index">Index</a></li>
 </ul>
@@ -1338,7 +1374,7 @@ div.rendered_html tbody tr:hover {
 <ol class="arabic simple">
 <li><p>Unzip <a class="reference external" href="../_static/generated/control-flow.zip">exercises zip</a> in a folder, you should obtain something like this:</p></li>
 </ol>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sets
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>control-flow
     flow1-if.ipynb
     flow1-if-sol.ipynb
     flow2-for.ipynb
@@ -1459,10 +1495,10 @@ Done!
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm47c6e1c8-81f6-40d8-aaab-183073d3b6d8" type="application/json" >
-    {"trace": [{"heap": {}, "globals": {}, "stdout": "", "stack_to_render": [], "event": "step_line", "line": 2, "func_name": "<module>", "ordered_globals": []}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1]}, "stdout": "", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["sports"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "volleyball"}, "stdout": "", "stack_to_render": [], "event": "step_line", "line": 4, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "volleyball"}, "stdout": "Found an element!\n", "stack_to_render": [], "event": "step_line", "line": 5, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "volleyball"}, "stdout": "Found an element!\nvolleyball\n", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "tennis"}, "stdout": "Found an element!\nvolleyball\n", "stack_to_render": [], "event": "step_line", "line": 4, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "tennis"}, "stdout": "Found an element!\nvolleyball\nFound an element!\n", "stack_to_render": [], "event": "step_line", "line": 5, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "tennis"}, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\n", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "soccer"}, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\n", "stack_to_render": [], "event": "step_line", "line": 4, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "soccer"}, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\n", "stack_to_render": [], "event": "step_line", "line": 5, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "soccer"}, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\n", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "swimming"}, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\n", "stack_to_render": [], "event": "step_line", "line": 4, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "swimming"}, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\nFound an element!\n", "stack_to_render": [], "event": "step_line", "line": 5, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "swimming"}, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\nFound an element!\nswimming\n", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "swimming"}, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\nFound an element!\nswimming\n", "stack_to_render": [], "event": "step_line", "line": 7, "func_name": "<module>", "ordered_globals": ["sports", "element"]}, {"heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}, "globals": {"sports": ["REF", 1], "element": "swimming"}, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\nFound an element!\nswimming\nDone!\n", "stack_to_render": [], "event": "return", "line": 7, "func_name": "<module>", "ordered_globals": ["sports", "element"]}], "code": " \nsports = ['volleyball', 'tennis', 'soccer', 'swimming']\nfor element in sports:\n    print('Found an element!')\n    print(element)\n\nprint('Done!')"}
+<script id="json-jm37961ef5-63d0-4134-bada-5b150464b98c" type="application/json" >
+    {"code": " \nsports = ['volleyball', 'tennis', 'soccer', 'swimming']\nfor element in sports:\n    print('Found an element!')\n    print(element)\n\nprint('Done!')", "trace": [{"stack_to_render": [], "line": 2, "stdout": "", "func_name": "<module>", "globals": {}, "ordered_globals": [], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 3, "stdout": "", "func_name": "<module>", "globals": {"sports": ["REF", 1]}, "ordered_globals": ["sports"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 4, "stdout": "", "func_name": "<module>", "globals": {"element": "volleyball", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 5, "stdout": "Found an element!\n", "func_name": "<module>", "globals": {"element": "volleyball", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 3, "stdout": "Found an element!\nvolleyball\n", "func_name": "<module>", "globals": {"element": "volleyball", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 4, "stdout": "Found an element!\nvolleyball\n", "func_name": "<module>", "globals": {"element": "tennis", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 5, "stdout": "Found an element!\nvolleyball\nFound an element!\n", "func_name": "<module>", "globals": {"element": "tennis", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 3, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\n", "func_name": "<module>", "globals": {"element": "tennis", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 4, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\n", "func_name": "<module>", "globals": {"element": "soccer", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 5, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\n", "func_name": "<module>", "globals": {"element": "soccer", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 3, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\n", "func_name": "<module>", "globals": {"element": "soccer", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 4, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\n", "func_name": "<module>", "globals": {"element": "swimming", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 5, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\nFound an element!\n", "func_name": "<module>", "globals": {"element": "swimming", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 3, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\nFound an element!\nswimming\n", "func_name": "<module>", "globals": {"element": "swimming", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 7, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\nFound an element!\nswimming\n", "func_name": "<module>", "globals": {"element": "swimming", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "step_line", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}, {"stack_to_render": [], "line": 7, "stdout": "Found an element!\nvolleyball\nFound an element!\ntennis\nFound an element!\nsoccer\nFound an element!\nswimming\nDone!\n", "func_name": "<module>", "globals": {"element": "swimming", "sports": ["REF", 1]}, "ordered_globals": ["sports", "element"], "event": "return", "heap": {"1": ["LIST", "volleyball", "tennis", "soccer", "swimming"]}}]}
 </script>
-<div id="jm47c6e1c8-81f6-40d8-aaab-183073d3b6d8" class="pytutorVisualizer"> </div>
+<div id="jm37961ef5-63d0-4134-bada-5b150464b98c" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -1482,12 +1518,12 @@ Done!
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm47c6e1c8-81f6-40d8-aaab-183073d3b6d8').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm37961ef5-63d0-4134-bada-5b150464b98c').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm47c6e1c8-81f6-40d8-aaab-183073d3b6d8',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm37961ef5-63d0-4134-bada-5b150464b98c',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3339,8 +3375,8 @@ plate: [&#39;strawberry&#39;, &#39;cherry&#39;, &#39;apple&#39;, &#39;apple&#39;
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 this
-is
 a
+is
 set
 </pre></div></div>
 </div>
@@ -3363,7 +3399,7 @@ set
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;mo&#39;, &#39;de&#39;, &#39;pan&#39;, &#39;nium&#39;}
+{&#39;nium&#39;, &#39;mo&#39;, &#39;pan&#39;, &#39;de&#39;}
 </pre></div></div>
 </div>
 <div class="section" id="Questions---sets">
@@ -3435,10 +3471,10 @@ set
 <div class="highlight"><pre>
 Found key   : cream puff
   with value: 5
-Found key   : donut
-  with value: 2
 Found key   : brioche
   with value: 8
+Found key   : donut
+  with value: 2
 </pre></div></div>
 </div>
 <p>At each iteration, the declared variable <code class="docutils literal notranslate"><span class="pre">key</span></code> is assigned to a key taken from the dictionary, in an order we cannot predict.</p>
@@ -3461,10 +3497,10 @@ Found key   : brioche
 <div class="highlight"><pre>
 Found key  : cream puff
  with value: 5
-Found key  : donut
- with value: 2
 Found key  : brioche
  with value: 8
+Found key  : donut
+ with value: 2
 </pre></div></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">.items()</span></code> return a list of key/value couples, and during each iteration a couple is assigned to the variable <code class="docutils literal notranslate"><span class="pre">key</span></code> and <code class="docutils literal notranslate"><span class="pre">value</span></code>.</p>
@@ -3964,9 +4000,9 @@ Expected Income:
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 materials in common:
+   scissors : 150
    folders : 110
    pens : 90
-   scissors : 150
 </pre></div></div>
 </div>
 </div>
@@ -4090,7 +4126,7 @@ Total: 110 kg
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;volleyball&#39;: 1, &#39;soccer&#39;: 3, &#39;tennis&#39;: 2}
+{&#39;volleyball&#39;: 1, &#39;tennis&#39;: 2, &#39;soccer&#39;: 3}
 </pre></div></div>
 </div>
 </div>
@@ -4916,10 +4952,10 @@ Loop is over !
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jma71ed263-a6e3-4246-ba74-7436cfeaa04b" type="application/json" >
-    {"trace": [{"heap": {}, "globals": {}, "stdout": "", "stack_to_render": [], "event": "step_line", "line": 2, "func_name": "<module>", "ordered_globals": []}, {"heap": {}, "globals": {"i": 1}, "stdout": "", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["i"]}, {"heap": {}, "globals": {"x": "P", "i": 1}, "stdout": "", "stack_to_render": [], "event": "step_line", "line": 4, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "P", "i": 1}, "stdout": "", "stack_to_render": [], "event": "step_line", "line": 7, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "P", "i": 1}, "stdout": "", "stack_to_render": [], "event": "step_line", "line": 10, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "P", "i": 1}, "stdout": "P\n", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "A", "i": 1}, "stdout": "P\n", "stack_to_render": [], "event": "step_line", "line": 4, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "A", "i": 1}, "stdout": "P\n", "stack_to_render": [], "event": "step_line", "line": 5, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "A", "i": 1}, "stdout": "P\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 6, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "A", "i": 1}, "stdout": "P\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "R", "i": 1}, "stdout": "P\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 4, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "R", "i": 1}, "stdout": "P\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 7, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "R", "i": 1}, "stdout": "P\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 10, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "R", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\n", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "A", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\n", "stack_to_render": [], "event": "step_line", "line": 4, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "A", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\n", "stack_to_render": [], "event": "step_line", "line": 5, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "A", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 6, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "A", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 3, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "D", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 4, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "D", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 7, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "D", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "stack_to_render": [], "event": "step_line", "line": 8, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "D", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\nbreak, exits loop!\n", "stack_to_render": [], "event": "step_line", "line": 9, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "D", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\nbreak, exits loop!\n", "stack_to_render": [], "event": "step_line", "line": 12, "func_name": "<module>", "ordered_globals": ["i", "x"]}, {"heap": {}, "globals": {"x": "D", "i": 1}, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\nbreak, exits loop!\nLoop is over !\n", "stack_to_render": [], "event": "return", "line": 12, "func_name": "<module>", "ordered_globals": ["i", "x"]}], "code": " \ni = 1\nfor x in 'PARADE':    \n    if x == 'A':\n        print(\"continue, jumps to next element\")\n        continue    \n    if x == 'D':\n        print('break, exits loop!')\n        break\n    print(x)    \n    \nprint('Loop is over !')"}
+<script id="json-jmb6831f14-1b20-407d-9b7b-f7e19c283809" type="application/json" >
+    {"code": " \ni = 1\nfor x in 'PARADE':    \n    if x == 'A':\n        print(\"continue, jumps to next element\")\n        continue    \n    if x == 'D':\n        print('break, exits loop!')\n        break\n    print(x)    \n    \nprint('Loop is over !')", "trace": [{"stack_to_render": [], "line": 2, "stdout": "", "func_name": "<module>", "globals": {}, "ordered_globals": [], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 3, "stdout": "", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 4, "stdout": "", "func_name": "<module>", "globals": {"x": "P", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 7, "stdout": "", "func_name": "<module>", "globals": {"x": "P", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 10, "stdout": "", "func_name": "<module>", "globals": {"x": "P", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 3, "stdout": "P\n", "func_name": "<module>", "globals": {"x": "P", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 4, "stdout": "P\n", "func_name": "<module>", "globals": {"x": "A", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 5, "stdout": "P\n", "func_name": "<module>", "globals": {"x": "A", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 6, "stdout": "P\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "A", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 3, "stdout": "P\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "A", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 4, "stdout": "P\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "R", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 7, "stdout": "P\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "R", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 10, "stdout": "P\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "R", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 3, "stdout": "P\ncontinue, jumps to next element\nR\n", "func_name": "<module>", "globals": {"x": "R", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 4, "stdout": "P\ncontinue, jumps to next element\nR\n", "func_name": "<module>", "globals": {"x": "A", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 5, "stdout": "P\ncontinue, jumps to next element\nR\n", "func_name": "<module>", "globals": {"x": "A", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 6, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "A", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 3, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "A", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 4, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "D", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 7, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "D", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 8, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\n", "func_name": "<module>", "globals": {"x": "D", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 9, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\nbreak, exits loop!\n", "func_name": "<module>", "globals": {"x": "D", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 12, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\nbreak, exits loop!\n", "func_name": "<module>", "globals": {"x": "D", "i": 1}, "ordered_globals": ["i", "x"], "event": "step_line", "heap": {}}, {"stack_to_render": [], "line": 12, "stdout": "P\ncontinue, jumps to next element\nR\ncontinue, jumps to next element\nbreak, exits loop!\nLoop is over !\n", "func_name": "<module>", "globals": {"x": "D", "i": 1}, "ordered_globals": ["i", "x"], "event": "return", "heap": {}}]}
 </script>
-<div id="jma71ed263-a6e3-4246-ba74-7436cfeaa04b" class="pytutorVisualizer"> </div>
+<div id="jmb6831f14-1b20-407d-9b7b-f7e19c283809" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -4939,12 +4975,12 @@ Loop is over !
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jma71ed263-a6e3-4246-ba74-7436cfeaa04b').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmb6831f14-1b20-407d-9b7b-f7e19c283809').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jma71ed263-a6e3-4246-ba74-7436cfeaa04b',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmb6831f14-1b20-407d-9b7b-f7e19c283809',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
