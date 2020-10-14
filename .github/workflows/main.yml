@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build_docs_job:
     if: (github.repository == 'DavidLeoni/softpython-en') && ((github.ref == 'refs/heads/master') || (github.ref == 'refs/heads/dev'))
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     name: Build docs    
     steps:   
     - name: Install deps
@@ -20,7 +20,7 @@ jobs:
     - name: sets WEB_PATH
       run: echo "::set-env name=WEB_PATH::"
     - name: Run Sphinx in RTD docker      
-      uses: DavidLeoni/readthedocs-to-actions@v1.1
+      uses: DavidLeoni/readthedocs-to-actions@v1.2
       with:
         RTD_PRJ_NAME: softpython-en
         GIT_URL: https://github.com/${{ github.repository }}.git
