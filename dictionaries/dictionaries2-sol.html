@@ -993,7 +993,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#deep_clone">deep_clone</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#MODIFYING-matrices">MODIFYING matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#Modifying-matrices">Modifying matrices</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillc">fillc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillx">fillx</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillz">fillz</a></li>
@@ -1676,8 +1676,10 @@ div.rendered_html tbody tr:hover {
 <span class="nb">print</span><span class="p">(</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: Absolutely NOT. The couples key/value in the dictionary <em>are not</em> ordered, so it makes no sense to get a value at a given position.</p>
-<p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing which result it produces (or if it gives an error):</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: Absolutely NOT. The couples key/value in the dictionary <em>are not</em> ordered, so it makes no sense to get a value at a given position.</p>
+</div><p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing which result it produces (or if it gives an error):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">kabbalah</span> <span class="o">=</span> <span class="p">{</span>
     <span class="mi">1</span> <span class="p">:</span> <span class="s1">&#39;Progress&#39;</span><span class="p">,</span>
     <span class="mi">3</span> <span class="p">:</span> <span class="s1">&#39;Love&#39;</span><span class="p">,</span>
@@ -1715,7 +1717,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </li>
 </ul>
-<p><strong>ANSWER</strong>: In the dictionary we have keys which are integer numbers: so we can use numbers among square brackets, which we will call <em>keys,</em> but not <em>positions.</em></p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: In the dictionary we have keys which are integer numbers: so we can use numbers among square brackets, which we will call <em>keys,</em> but not <em>positions.</em></p>
 <p>The unique expressions which will produce results are those for which the number specified among the square brackets is effectively present among the keys:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kabbalah</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 <span class="go">&#39;Progress&#39;</span>
@@ -1738,7 +1742,7 @@ div.rendered_html tbody tr:hover {
 <span class="go">KeyError: 2</span>
 </pre></div>
 </div>
-<p><strong>QUESTION</strong>: Look at the following code fragments, and for each try guessing which result it produces (or if it gives an error):</p>
+</div><p><strong>QUESTION</strong>: Look at the following code fragments, and for each try guessing which result it produces (or if it gives an error):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">}(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </pre></div>
@@ -1861,7 +1865,9 @@ div.rendered_html tbody tr:hover {
 <span class="go">{&#39;z&#39;: 7}</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
@@ -1873,6 +1879,27 @@ div.rendered_html tbody tr:hover {
 <span class="n">d2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;z&#39;</span> <span class="p">:</span> <span class="n">d1</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">d1</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]}</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;z&#39;: 7}
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">d1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2151,7 +2178,9 @@ div.rendered_html tbody tr:hover {
 <span class="go">{&#39;bolts&#39;: 5, &#39;wheels&#39;: 4, &#39;pincers&#39;: 5}</span>
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
@@ -2165,6 +2194,21 @@ div.rendered_html tbody tr:hover {
 <span class="n">workshop</span><span class="p">[</span><span class="s1">&#39;wheels&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">workshop</span><span class="p">[</span><span class="s1">&#39;wheels&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="n">workshop</span><span class="p">[</span><span class="s1">&#39;bolts&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">workshop</span><span class="p">[</span><span class="s1">&#39;pincers&#39;</span><span class="p">]</span>
 <span class="c1">#print(workshop)</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">workshop</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;wheels&#39;</span> <span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="s1">&#39;bolts&#39;</span>  <span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s1">&#39;pincers&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2334,7 +2378,9 @@ div.rendered_html tbody tr:hover {
 <ul class="simple">
 <li><p><strong>DO NOT</strong> write lines which begin with <code class="docutils literal notranslate"><span class="pre">desktop</span> <span class="pre">=</span></code></p></li>
 </ul>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
@@ -2350,6 +2396,23 @@ div.rendered_html tbody tr:hover {
 <span class="k">del</span> <span class="n">desktop</span><span class="p">[</span><span class="s1">&#39;pens&#39;</span><span class="p">]</span>
 <span class="n">desktop</span><span class="p">[</span><span class="s1">&#39;pencil sharpeners&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="c1">#print(desktop)</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">desktop</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;paper&#39;</span>  <span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+    <span class="s1">&#39;pencils&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+    <span class="s1">&#39;pens&#39;</span>   <span class="p">:</span><span class="mi">3</span>
+<span class="p">}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2385,7 +2448,9 @@ div.rendered_html tbody tr:hover {
 <span class="go">{&#39;roses&#39;: 7, &#39;tulips&#39;: 11, &#39;sunflowers&#39;: 3}</span>
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
@@ -2409,6 +2474,29 @@ div.rendered_html tbody tr:hover {
 <span class="n">garden</span><span class="p">[</span><span class="s1">&#39;roses&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">garden</span><span class="p">[</span><span class="s1">&#39;roses&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">to_add</span><span class="p">[</span><span class="s1">&#39;roses&#39;</span><span class="p">]</span>
 <span class="n">garden</span><span class="p">[</span><span class="s1">&#39;tulips&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">garden</span><span class="p">[</span><span class="s1">&#39;tulips&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">to_add</span><span class="p">[</span><span class="s1">&#39;tulips&#39;</span><span class="p">]</span>
 <span class="c1">#print(garden)</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">to_remove</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;weeds&#39;</span><span class="p">,</span> <span class="s1">&#39;litter&#39;</span><span class="p">]</span>
+<span class="n">to_add</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;tulips&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+           <span class="s1">&#39;roses&#39;</span> <span class="p">:</span> <span class="mi">2</span>
+<span class="p">}</span>
+
+<span class="n">garden</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;sunflowers&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+           <span class="s1">&#39;tulips&#39;</span><span class="p">:</span><span class="mi">7</span><span class="p">,</span>
+           <span class="s1">&#39;weeds&#39;</span> <span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+           <span class="s1">&#39;roses&#39;</span> <span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+           <span class="s1">&#39;litter&#39;</span> <span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2440,7 +2528,9 @@ div.rendered_html tbody tr:hover {
 <span class="go">{&#39;hello&#39;: &#39;hola&#39;, &#39;road&#39;: &#39;carretera&#39;}</span>
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
@@ -2461,6 +2551,29 @@ div.rendered_html tbody tr:hover {
 <span class="n">en_es</span><span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">it_es</span><span class="p">[</span><span class="n">en_it</span><span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">]]</span>
 <span class="n">en_es</span><span class="p">[</span><span class="s1">&#39;road&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">it_es</span><span class="p">[</span><span class="n">en_it</span><span class="p">[</span><span class="s1">&#39;road&#39;</span><span class="p">]]</span>
 <span class="c1">#print(en_es)</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">en_it</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;hello&#39;</span> <span class="p">:</span> <span class="s1">&#39;ciao&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;road&#39;</span> <span class="p">:</span> <span class="s1">&#39;strada&#39;</span>
+<span class="p">}</span>
+
+<span class="n">it_es</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;ciao&#39;</span> <span class="p">:</span> <span class="s1">&#39;hola&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;strada&#39;</span> <span class="p">:</span> <span class="s1">&#39;carretera&#39;</span>
+<span class="p">}</span>
+
+<span class="n">en_es</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2715,8 +2828,6 @@ False
 <span></span><span class="c1"># WARNING: FOR PYTHON TUTOR TO WORK, REMEMBER TO EXECUTE THIS CELL with Shift+Enter</span>
 <span class="c1">#          (it&#39;s sufficient to execute it only once)</span>
 
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../&#39;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">jupman</span>
 </pre></div>
 </div>
@@ -2911,7 +3022,9 @@ False
 <li><p>The number of books borrowed by Rita</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if everybody among Marco, Gloria and Rita borrowed at least a book, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p></li>
 </ol>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
@@ -2926,6 +3039,32 @@ False
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. Rita borrowed&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">loans</span><span class="p">[</span><span class="s1">&#39;Rita&#39;</span><span class="p">]),</span> <span class="s2">&quot;book(s)&quot;</span><span class="p">)</span>
 <span class="n">res</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">loans</span><span class="p">[</span><span class="s1">&#39;Marco&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">loans</span><span class="p">[</span><span class="s1">&#39;Gloria&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">loans</span><span class="p">[</span><span class="s1">&#39;Rita&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3. Have everybody borrowed at least a book?&quot;</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+1. The first book borrowed by Gloria is War and Peace
+   The last book borrowed by Rita is 1984
+2. Rita borrowed 3 book(s)
+3. Have everybody borrowed at least a book? True
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">loans</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Marco&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s1">&#39;Les Misérables&#39;</span><span class="p">,</span> <span class="s1">&#39;Ulysses&#39;</span><span class="p">],</span>
+         <span class="s1">&#39;Gloria&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;War and Peace&#39;</span><span class="p">],</span>
+         <span class="s1">&#39;Rita&#39;</span><span class="p">:</span>   <span class="p">[</span><span class="s1">&#39;The Shining&#39;</span><span class="p">,</span><span class="s1">&#39;Dracula&#39;</span><span class="p">,</span><span class="s1">&#39;1984&#39;</span><span class="p">]}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3202,8 +3341,10 @@ True
 </pre></div>
 </div>
 <p>NOTE: all values (<code class="docutils literal notranslate"><span class="pre">3</span></code> and <code class="docutils literal notranslate"><span class="pre">8</span></code>) are <strong>immutable</strong>.</p>
-<p><strong>ANSWER</strong>: In this case we manually created a dictionary <code class="docutils literal notranslate"><span class="pre">d2</span></code> using <em>immutable</em> values taken from <code class="docutils literal notranslate"><span class="pre">d1</span></code>. So in Python Tutor we will see two distinct memory regions and a successive modification to <code class="docutils literal notranslate"><span class="pre">d1</span></code> will not alter <code class="docutils literal notranslate"><span class="pre">d2</span></code>:</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: In this case we manually created a dictionary <code class="docutils literal notranslate"><span class="pre">d2</span></code> using <em>immutable</em> values taken from <code class="docutils literal notranslate"><span class="pre">d1</span></code>. So in Python Tutor we will see two distinct memory regions and a successive modification to <code class="docutils literal notranslate"><span class="pre">d1</span></code> will not alter <code class="docutils literal notranslate"><span class="pre">d2</span></code>:</p>
+</div><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
@@ -3298,9 +3439,11 @@ d2= {&#39;a&#39;: 3, &#39;b&#39;: 8}
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;d2=&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: when used as a function, <code class="docutils literal notranslate"><span class="pre">dict</span></code> executes a <em>shallow</em> copy, that is, copies the structure of the dictionary without duplicating the mutable values. In this specific case, all values we have are immutable integers, so the copy can also be considered a complete duplication. When we assign the value <code class="docutils literal notranslate"><span class="pre">7</span></code> to the key <code class="docutils literal notranslate"><span class="pre">'a'</span></code> in <code class="docutils literal notranslate"><span class="pre">d1</span></code> we are modifying the original data structure , leaving the copy we just made <code class="docutils literal notranslate"><span class="pre">d2</span></code> unaltered, so <code class="docutils literal notranslate"><span class="pre">d1</span> <span class="pre">==</span> <span class="pre">d2</span></code> will be <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: when used as a function, <code class="docutils literal notranslate"><span class="pre">dict</span></code> executes a <em>shallow</em> copy, that is, copies the structure of the dictionary without duplicating the mutable values. In this specific case, all values we have are immutable integers, so the copy can also be considered a complete duplication. When we assign the value <code class="docutils literal notranslate"><span class="pre">7</span></code> to the key <code class="docutils literal notranslate"><span class="pre">'a'</span></code> in <code class="docutils literal notranslate"><span class="pre">d1</span></code> we are modifying the original data structure , leaving the copy we just made <code class="docutils literal notranslate"><span class="pre">d2</span></code> unaltered, so <code class="docutils literal notranslate"><span class="pre">d1</span> <span class="pre">==</span> <span class="pre">d2</span></code> will be <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <p>Let’s verify it in Python Tutor:</p>
-<div class="nbinput docutils container">
+</div><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
@@ -3395,9 +3538,11 @@ d2= {&#39;a&#39;: 3, &#39;b&#39;: 8}
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;d2=&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: We used <code class="docutils literal notranslate"><span class="pre">dict</span></code> like a function, so we did a <em>shallow copy.</em> In this case we have lists as values, which are <em>mutable</em> objects. This means the shallow copy only copied references to the lists, but <em>not</em> the lists themselves. For this reason you will see arrows going from the copy of the dictionary <code class="docutils literal notranslate"><span class="pre">d2</span></code> to memory regions of the original lists. This means that if you try to modify a list after the copy occurred (for example with the method <code class="docutils literal notranslate"><span class="pre">.append(3)</span></code>), as a matter of fact you
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: We used <code class="docutils literal notranslate"><span class="pre">dict</span></code> like a function, so we did a <em>shallow copy.</em> In this case we have lists as values, which are <em>mutable</em> objects. This means the shallow copy only copied references to the lists, but <em>not</em> the lists themselves. For this reason you will see arrows going from the copy of the dictionary <code class="docutils literal notranslate"><span class="pre">d2</span></code> to memory regions of the original lists. This means that if you try to modify a list after the copy occurred (for example with the method <code class="docutils literal notranslate"><span class="pre">.append(3)</span></code>), as a matter of fact you
 will also modify the list reachable from the copied dictionary <code class="docutils literal notranslate"><span class="pre">d2</span></code>. Let’s check this out in Python Tutor:</p>
-<div class="nbinput docutils container">
+</div><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
@@ -3493,8 +3638,10 @@ d2= {&#39;a&#39;: [1, 2, 3], &#39;b&#39;: [4, 5, 6]}
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;d2=&#39;</span><span class="p">,</span> <span class="n">d2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: We used <code class="docutils literal notranslate"><span class="pre">copy.deepcopy</span></code>, making an in-depth copy. In this case we have mutable lists as values. The deep copy duplicated all the objects it was able to reach, lists included. So in this case we will obtain two completely distinct memory regions. After the copy, if we modify a list reachable from the original <code class="docutils literal notranslate"><span class="pre">d1</span></code>, we will be sure that we cannot tarnish objects reachable from <code class="docutils literal notranslate"><span class="pre">d2</span></code>. Let’s check it in Python Tutor:</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: We used <code class="docutils literal notranslate"><span class="pre">copy.deepcopy</span></code>, making an in-depth copy. In this case we have mutable lists as values. The deep copy duplicated all the objects it was able to reach, lists included. So in this case we will obtain two completely distinct memory regions. After the copy, if we modify a list reachable from the original <code class="docutils literal notranslate"><span class="pre">d1</span></code>, we will be sure that we cannot tarnish objects reachable from <code class="docutils literal notranslate"><span class="pre">d2</span></code>. Let’s check it in Python Tutor:</p>
+</div><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
@@ -3639,7 +3786,9 @@ d2= {&#39;a&#39;: [1, 2], &#39;b&#39;: [4, 5, 6]}
 <span class="go">}</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
@@ -3658,6 +3807,28 @@ d2= {&#39;a&#39;: [1, 2], &#39;b&#39;: [4, 5, 6]}
 <span class="nb">print</span><span class="p">(</span><span class="n">zd</span><span class="p">)</span>
 
 <span class="c1">#jupman.pytut()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;c&#39;: [&#39;Z&#39;, &#39;O&#39;, &#39;O&#39;, &#39;M&#39;], &#39;a&#39;: [&#39;Z&#39;, &#39;O&#39;, &#39;O&#39;, &#39;M&#39;], &#39;b&#39;: [&#39;Z&#39;, &#39;O&#39;, &#39;O&#39;, &#39;M&#39;]}
+{&#39;c&#39;: [&#39;D&#39;, &#39;O&#39;, &#39;O&#39;, &#39;M&#39;], &#39;a&#39;: [&#39;D&#39;, &#39;O&#39;, &#39;O&#39;, &#39;M&#39;], &#39;b&#39;: [&#39;D&#39;, &#39;O&#39;, &#39;O&#39;, &#39;M&#39;]}
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;ZOOM&#39;</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>

@@ -993,7 +993,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#deep_clone">deep_clone</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#MODIFYING-matrices">MODIFYING matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#Modifying-matrices">Modifying matrices</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillc">fillc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillx">fillx</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillz">fillz</a></li>
@@ -1693,9 +1693,11 @@ set
 the shelves for breakfast stuff. Image what could happen if an evil sorcerer could transform the objects already placed into other objects, like for example the coffee into bleach (let’s assume that at the moment of the transmutation the <em>hash</em> label also changes). Much confusion would certainly follow, and, if we aren’t cautious, also a great stomachache or worse.</p>
 <p>So to offer you the advantage of a fast search while avoiding disastrous situations, Python imposes to place inside sets only objects with a stable <em>hash,</em> that is <em>immutable</em> objects.</p>
 <p><strong>QUESTION</strong>: Can we insert a tuple inside a set? Try to verify your intuition with a code example.</p>
-<p><strong>ANSWER</strong>: Yes, tuples are <em>immutable,</em> so they have a corrispending <em>hash</em> which remains stable for all the program duration, for example this is a tuple set:<code class="docutils literal notranslate"><span class="pre">{(1,2),</span> <span class="pre">(3,4,5)}</span></code></p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: Yes, tuples are <em>immutable,</em> so they have a corrispending <em>hash</em> which remains stable for all the program duration, for example this is a tuple set:<code class="docutils literal notranslate"><span class="pre">{(1,2),</span> <span class="pre">(3,4,5)}</span></code></p>
 <p>Note we can consider a tuple as really immutable only if it contains elements which are also immutable.</p>
-</div>
+</div></div>
 <div class="section" id="Empty-set">
 <h3>Empty set<a class="headerlink" href="#Empty-set" title="Permalink to this headline">¶</a></h3>
 <div class="admonition warning">
@@ -1730,7 +1732,9 @@ set()
 </pre></div></div>
 </div>
 <p><strong>EXERCISE</strong>: try writing <code class="docutils literal notranslate"><span class="pre">{}</span></code> in the cell below and look at the object type obtained with <code class="docutils literal notranslate"><span class="pre">type</span></code></p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
@@ -1740,12 +1744,25 @@ set()
 </pre></div>
 </div>
 </div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
 <p><strong>QUESTION</strong>: Can we try inserting a set inside another set? Have a careful look at the set definition, then verify your suppositions by writing some code to create a set which has another set inside.</p>
 <div class="admonition warning">
 <p><strong>WARNING: To perform the check, DO NOT use the</strong> <code class="docutils literal notranslate"><span class="pre">set</span></code> <strong>function, only use creation with curly brackets</strong></p>
 </div>
-<p><strong>ANSWER</strong>: A set is <em>mutable,</em> so we <em>cannot</em> insert it as an element of another set (its <em>hash</em> label could vary over time). By writing <code class="docutils literal notranslate"><span class="pre">{{1,2,3}}</span></code> you will get an error.</p>
-<p><strong>QUESTION</strong>: If we write something like this, what do we get? (careful!)</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: A set is <em>mutable,</em> so we <em>cannot</em> insert it as an element of another set (its <em>hash</em> label could vary over time). By writing <code class="docutils literal notranslate"><span class="pre">{{1,2,3}}</span></code> you will get an error.</p>
+</div><p><strong>QUESTION</strong>: If we write something like this, what do we get? (careful!)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">]))</span>
 </pre></div>
 </div>
@@ -1754,13 +1771,15 @@ set()
 <li><p>a set containing another set which contains <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> as elements</p></li>
 <li><p>an error (which one?)</p></li>
 </ol>
-<p><strong>ANSWER</strong>: 1:</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 1:</p>
 <ul class="simple">
 <li><p>inside we have the expression <code class="docutils literal notranslate"><span class="pre">set(['a','b'])</span></code> which generates the set <code class="docutils literal notranslate"><span class="pre">{'a','b'}</span></code></p></li>
 <li><p>outside we have the expression <code class="docutils literal notranslate"><span class="pre">set(</span> <span class="pre">set(['a','b'])</span>&#160; <span class="pre">)</span></code> which is given the set just created, so we can rewrite it as <code class="docutils literal notranslate"><span class="pre">set({'a','b'})</span></code></p></li>
 <li><p>Since <code class="docutils literal notranslate"><span class="pre">set</span></code> when used as a function expects a sequence, and a set <em>is</em> a sequence, the external <code class="docutils literal notranslate"><span class="pre">set</span></code> takes all the elements it finds inside the sequence <code class="docutils literal notranslate"><span class="pre">{'a','b'}</span></code> we passed, and generates a new set with <code class="docutils literal notranslate"><span class="pre">'a'</span></code> and <code class="docutils literal notranslate"><span class="pre">'b'</span></code> inside.</p></li>
 </ul>
-<p><strong>QUESTION</strong>: Have a look at following expressions, and for each of them try to guess which result it produces (or if it gives an error):</p>
+</div><p><strong>QUESTION</strong>: Have a look at following expressions, and for each of them try to guess which result it produces (or if it gives an error):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;oh&#39;</span><span class="p">,</span><span class="s1">&#39;la&#39;</span><span class="p">,</span><span class="s1">&#39;la&#39;</span><span class="p">}</span>
 </pre></div>
@@ -1866,7 +1885,9 @@ set()
 <span class="go">[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
@@ -1881,6 +1902,28 @@ set()
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;la =&quot;</span><span class="p">,</span><span class="n">la</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lb =&quot;</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+la = [&#39;c&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;b&#39;, &#39;e&#39;]
+lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2013,7 +2056,9 @@ lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 9 duplicates
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
@@ -2028,6 +2073,27 @@ lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="s1">&#39;distincts :&#39;</span><span class="p">,</span> <span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">la</span><span class="p">))</span>
 <span class="c1">#print(len(s), &#39;distincts :&#39;, list(sorted(s)))  # ALTERNATIVE WITH SORTED</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">),</span> <span class="s1">&#39;duplicates&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+word     : ababbbbcdd
+4 distincts : a,b,c,d
+6 duplicates
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2066,12 +2132,25 @@ word     : ababbbbcdd
 </div>
 <p>Note there aren’t duplicated elements</p>
 <p><strong>EXERCISE</strong>: What if we use the <code class="docutils literal notranslate"><span class="pre">+</span></code>? Try writing in a cell <code class="docutils literal notranslate"><span class="pre">{'a','b'}</span> <span class="pre">+</span> <span class="pre">{'c','d','e'}</span></code>. What happens?</p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -2150,8 +2229,10 @@ word     : ababbbbcdd
 <li><p>always <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 <li><p>sometimes <code class="docutils literal notranslate"><span class="pre">True</span></code> sometimes <code class="docutils literal notranslate"><span class="pre">False</span></code> according to values of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code></p></li>
 </ol>
-<p><strong>ANSWER</strong>: 2: the number of elements from the union will always be lesser or equal to the sum of the number of elements of each single set we are going to merge, so from the <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> comparison we will always get <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
-</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 2: the number of elements from the union will always be lesser or equal to the sum of the number of elements of each single set we are going to merge, so from the <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> comparison we will always get <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</div></div>
 <div class="section" id="Exercise---everythingbut-1">
 <h3>Exercise - everythingbut 1<a class="headerlink" href="#Exercise---everythingbut-1" title="Permalink to this headline">¶</a></h3>
 <p>Write some code which creates a set <code class="docutils literal notranslate"><span class="pre">s4</span></code> which contains all the elements of <code class="docutils literal notranslate"><span class="pre">s1</span></code> and <code class="docutils literal notranslate"><span class="pre">s2</span></code> but does not contain the elements of <code class="docutils literal notranslate"><span class="pre">s3</span></code>.</p>
@@ -2169,7 +2250,9 @@ word     : ababbbbcdd
 <span class="go">{&#39;d&#39;, &#39;a&#39;, &#39;c&#39;, &#39;g&#39;, &#39;e&#39;}</span>
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
@@ -2181,6 +2264,21 @@ word     : ababbbbcdd
 <span class="c1"># write here</span>
 <span class="n">s4</span> <span class="o">=</span> <span class="p">(</span><span class="n">s1</span> <span class="o">|</span> <span class="n">s2</span><span class="p">)</span> <span class="o">-</span> <span class="n">s3</span>
 <span class="c1">#print(s4)</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">])</span>
+<span class="n">s3</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">])</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2332,11 +2430,13 @@ word     : ababbbbcdd
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">x</span> <span class="o">&amp;</span> <span class="n">y</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: We are merging the common elements between <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>, with the elements present in <code class="docutils literal notranslate"><span class="pre">x</span></code> but not in <code class="docutils literal notranslate"><span class="pre">y</span></code>. Thus, we are taking all the elements of <code class="docutils literal notranslate"><span class="pre">x</span></code>, so the expression can be greatly simplified by just writing:</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: We are merging the common elements between <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>, with the elements present in <code class="docutils literal notranslate"><span class="pre">x</span></code> but not in <code class="docutils literal notranslate"><span class="pre">y</span></code>. Thus, we are taking all the elements of <code class="docutils literal notranslate"><span class="pre">x</span></code>, so the expression can be greatly simplified by just writing:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
 </pre></div>
 </div>
-</div>
+</div></div>
 <div class="section" id="Symmetric-difference">
 <h3>Symmetric difference<a class="headerlink" href="#Symmetric-difference" title="Permalink to this headline">¶</a></h3>
 <p>The symmetric difference of two sets is their union except their intersection, that is all elements except the common ones:</p>
@@ -2403,22 +2503,26 @@ word     : ababbbbcdd
 </ol>
 <p><strong>QUESTION</strong>: given 3 sets <code class="docutils literal notranslate"><span class="pre">A</span></code>, <code class="docutils literal notranslate"><span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">C</span></code>, what’s the expression to obtain the azure part?</p>
 <p><img alt="sewqe" src="../_images/ex-abc-common.png" /></p>
-<p><strong>ANSWER</strong>:</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">A</span> <span class="o">&amp;</span> <span class="n">B</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">A</span> <span class="o">&amp;</span> <span class="n">C</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">B</span> <span class="o">&amp;</span> <span class="n">C</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>QUESTION</strong>: If we use the following values in the previous exercise, what would the set which denotes the azure part contain?</p>
+</div><p><strong>QUESTION</strong>: If we use the following values in the previous exercise, what would the set which denotes the azure part contain?</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;ab&#39;</span><span class="p">,</span><span class="s1">&#39;ac&#39;</span><span class="p">,</span><span class="s1">&#39;abc&#39;</span><span class="p">}</span>
 <span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;ab&#39;</span><span class="p">,</span><span class="s1">&#39;bc&#39;</span><span class="p">,</span><span class="s1">&#39;abc&#39;</span><span class="p">}</span>
 <span class="n">C</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;ac&#39;</span><span class="p">,</span><span class="s1">&#39;bc&#39;</span><span class="p">,</span><span class="s1">&#39;abc&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 <p>Once you guessed the result, try executing the formula you obtained in the previous exercise with the provided values and compare the results with the solution.</p>
-<p><strong>ANSWER</strong>: If the formula is correct you should obtain:</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: If the formula is correct you should obtain:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="s1">&#39;ac&#39;</span><span class="p">,</span> <span class="s1">&#39;bc&#39;</span><span class="p">,</span> <span class="s1">&#39;ab&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
-</div>
+</div></div>
 <div class="section" id="Membership">
 <h3>Membership<a class="headerlink" href="#Membership" title="Permalink to this headline">¶</a></h3>
 <p>As for any sequence, when we want to check whether an element is contained in a set we can use the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator which returns a boolean value:</p>
@@ -2642,13 +2746,15 @@ False
 </div>
 </li>
 </ol>
-<p><strong>ANSWER</strong>: All the expressions reported above return a boolean which is <code class="docutils literal notranslate"><span class="pre">True</span></code> if the element <code class="docutils literal notranslate"><span class="pre">'e'</span></code> is present in the sequence.</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: All the expressions reported above return a boolean which is <code class="docutils literal notranslate"><span class="pre">True</span></code> if the element <code class="docutils literal notranslate"><span class="pre">'e'</span></code> is present in the sequence.</p>
 <p>All the operations of search and/counting (<code class="docutils literal notranslate"><span class="pre">in</span></code>, <code class="docutils literal notranslate"><span class="pre">find</span></code>, <code class="docutils literal notranslate"><span class="pre">index</span></code>, <code class="docutils literal notranslate"><span class="pre">count</span></code>) on strings, lists and tuples take a search time which in the worst case like here can be equal to the sequence dimension (<code class="docutils literal notranslate"><span class="pre">'e'</span></code> is at the end).</p>
 <p>On the other hand, since sets (expression 8.) are based on <em>hashes,</em> they allow an immediate search, independently from the set dimension or the elements position (so creating the set with <code class="docutils literal notranslate"><span class="pre">e</span></code> at the end makes no difference).</p>
 <div class="admonition note">
 <p><strong>To make performant searches it’s preferable to use hash based collections, like sets or dictionaries !</strong></p>
 </div>
-</div>
+</div></div>
 </div>
 </div>
 <div class="section" id="Equality">
@@ -2992,12 +3098,25 @@ False
 </pre></div></div>
 </div>
 <p><strong>EXERCISE</strong>: with <code class="docutils literal notranslate"><span class="pre">union</span></code> we can use any sequence, but that’s not the case with operators. Try writing <code class="docutils literal notranslate"><span class="pre">{1,2,3}</span> <span class="pre">|</span> <span class="pre">[2,3,4]</span></code> and see what happens.</p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -3116,8 +3235,10 @@ False
 </pre></div></div>
 </div>
 <p><strong>QUESTION</strong>: what did the call to <code class="docutils literal notranslate"><span class="pre">update</span></code> return?</p>
-<p><strong>ANSWER</strong>: since Jupyter didn’t show anything, it means the call to <code class="docutils literal notranslate"><span class="pre">update</span></code> method implicitly returned the <code class="docutils literal notranslate"><span class="pre">None</span></code> object.</p>
-<p>Let’s look what at happened with Python Tutor - we also added a <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span></code> to put in evidence what was returned by calling <code class="docutils literal notranslate"><span class="pre">.update</span></code>:</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: since Jupyter didn’t show anything, it means the call to <code class="docutils literal notranslate"><span class="pre">update</span></code> method implicitly returned the <code class="docutils literal notranslate"><span class="pre">None</span></code> object.</p>
+</div><p>Let’s look what at happened with Python Tutor - we also added a <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span></code> to put in evidence what was returned by calling <code class="docutils literal notranslate"><span class="pre">.update</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
@@ -3263,7 +3384,9 @@ None
 <span class="go">{&#39;a&#39;, &#39;g&#39;, &#39;e&#39;, &#39;d&#39;, &#39;c&#39;}</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
@@ -3276,6 +3399,29 @@ None
 <span class="n">s1</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
 <span class="n">s1</span><span class="o">.</span><span class="n">difference_update</span><span class="p">(</span><span class="n">s3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;e&#39;, &#39;c&#39;, &#39;a&#39;, &#39;d&#39;, &#39;g&#39;}
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">])</span>
+<span class="n">s3</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">])</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3417,8 +3563,10 @@ None
 <li><p>prints <code class="docutils literal notranslate"><span class="pre">{'a','b',{'c','d','e'}}</span></code></p></li>
 <li><p>an error (which one?)</p></li>
 </ol>
-<p><strong>ANSWER</strong>: 4 - produces <code class="docutils literal notranslate"><span class="pre">TypeError:</span> <span class="pre">unhashable</span> <span class="pre">type:</span> <span class="pre">'set'</span></code> : we are trying to insert a set as element of another set, but sets are <em>mutable</em> so their <em>hash</em> label (which allows Python to find them quickly) might vary over time.</p>
-<p><strong>QUESTION</strong>: Look at the following code, which result does it produce?</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 4 - produces <code class="docutils literal notranslate"><span class="pre">TypeError:</span> <span class="pre">unhashable</span> <span class="pre">type:</span> <span class="pre">'set'</span></code> : we are trying to insert a set as element of another set, but sets are <em>mutable</em> so their <em>hash</em> label (which allows Python to find them quickly) might vary over time.</p>
+</div><p><strong>QUESTION</strong>: Look at the following code, which result does it produce?</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
 <span class="n">y</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="n">x</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
@@ -3431,14 +3579,16 @@ None
 <li><p><code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> will be the same (how?)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> will be different (how?)</p></li>
 </ol>
-<p><strong>ANSWER</strong>: 3. It will print:</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 3. It will print:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">=</span> <span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">}</span>
 <span class="n">y</span><span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 <p>because <code class="docutils literal notranslate"><span class="pre">y=set(x)</span></code> creates a NEW set by copying all the elements in the input sequence <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
 <p>Let’s verify with Python Tutor:</p>
-<div class="nbinput docutils container">
+</div><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
@@ -3605,7 +3755,9 @@ None
 <span class="go">{(&#39;r&#39;, &#39;u&#39;), (&#39;b&#39;, &#39;a&#39;), (&#39;r&#39;, &#39;e&#39;)}</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
@@ -3621,6 +3773,28 @@ None
 <span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">]))</span>
 <span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">word</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="mi">8</span><span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{(&#39;b&#39;, &#39;i&#39;), (&#39;b&#39;, &#39;a&#39;)}
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;bababiba&quot;</span>
+<span class="c1">#word = &quot;rubareru&quot;</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3758,7 +3932,9 @@ Applying filter for alkenes : {&#39;vegetables&#39;, &#39;paper&#39;}
 Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
@@ -3781,6 +3957,35 @@ Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Separated contaminants:&quot;</span><span class="p">,</span> <span class="n">separated</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Initial trash: {&#39;vegetables&#39;, &#39;mercury&#39;, &#39;alkenes&#39;, &#39;paper&#39;}
+Applying filter for cadmium : {&#39;vegetables&#39;, &#39;mercury&#39;, &#39;alkenes&#39;, &#39;paper&#39;}
+Applying filter for mercury : {&#39;vegetables&#39;, &#39;alkenes&#39;, &#39;paper&#39;}
+Applying filter for alkenes : {&#39;vegetables&#39;, &#39;paper&#39;}
+
+Separated contaminants: {&#39;alkenes&#39;, &#39;mercury&#39;}
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">filters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cadmium&#39;</span><span class="p">,</span><span class="s1">&#39;mercury&#39;</span><span class="p">,</span><span class="s1">&#39;alkenes&#39;</span><span class="p">]</span>
+<span class="n">trash</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;alkenes&#39;</span><span class="p">,</span><span class="s1">&#39;vegetables&#39;</span><span class="p">,</span><span class="s1">&#39;mercury&#39;</span><span class="p">,</span><span class="s1">&#39;paper&#39;</span><span class="p">}</span>
+
+<span class="n">separated</span> <span class="o">=</span> <span class="n">trash</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">filters</span><span class="p">)</span> <span class="c1"># creates a NEW set</span>
+
+<span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -3988,7 +4193,9 @@ False
 <li><p>always <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> according to the value of <code class="docutils literal notranslate"><span class="pre">x</span></code></p></li>
 </ol>
-<p><strong>ANSWER</strong>: 4, <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> according to the value ot<code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 4, <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code> according to the value ot<code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
 <p>Probably you thought the expression always returns <code class="docutils literal notranslate"><span class="pre">False</span></code>: after all, how could a set ever be disjoint from itself? In fact the expression almost always returns <code class="docutils literal notranslate"><span class="pre">False</span></code> <em>except</em> for the particular case of the empty set:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 <span class="n">x</span><span class="o">.</span><span class="n">isdisjoint</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -3999,7 +4206,7 @@ False
 <p class="admonition-title fa fa-exclamation-circle"><strong>MORAL OF THE STORY: ALWAYS CHECK FOR THE EMPTY SET !</strong></p>
 <p>For this and many other methods the empty set often causes behaviours which aren’t always intuitive, so we invite you to always check case by case.</p>
 </div>
-</div>
+</div></div>
 </div>
 <div class="section" id="Exercise---matrioska">
 <h2>Exercise - matrioska<a class="headerlink" href="#Exercise---matrioska" title="Permalink to this headline">¶</a></h2>
@@ -4031,7 +4238,9 @@ False
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Is the sequence a matrioska? False
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
@@ -4055,6 +4264,37 @@ False
            <span class="n">sets</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">sets</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Is the sequence a matrioska?&quot;</span><span class="p">,</span> <span class="n">checks</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Is the sequence a matrioska? True
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">sets</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">}]</span>
+
+
+<span class="c1">#sets = [{&#39;a&#39;,&#39;b&#39;},</span>
+<span class="c1">#        {&#39;a&#39;,&#39;b&#39;,&#39;c&#39;},</span>
+<span class="c1">#        {&#39;a&#39;,&#39;e&#39;,&#39;d&#39;},</span>
+<span class="c1">#        {&#39;a&#39;,&#39;b&#39;,&#39;d&#39;,&#39;e&#39;}]</span>
+
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4096,7 +4336,9 @@ If you are a beginner, you might skip them and come back later</div>
 <span class="go">{&#39;bo&#39;, &#39;on&#39;}</span>
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
 </pre></div>
 </div>
@@ -4113,6 +4355,17 @@ If you are a beginner, you might skip them and come back later</div>
 <span class="n">found</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 <span class="n">syllabs</span><span class="p">(</span><span class="s2">&quot;bonobo&quot;</span><span class="p">,</span> <span class="n">found</span><span class="p">)</span>
 <span class="c1">#print(found)</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -4137,7 +4390,9 @@ If you are a beginner, you might skip them and come back later</div>
 <span class="go">[ [&#39;d&#39;,&#39;d&#39;],[&#39;a&#39;,&#39;b&#39;],[&#39;d&#39;,&#39;d&#39;],[&#39;c&#39;,&#39;a&#39;],[&#39;c&#39;,&#39;a&#39;],[&#39;d&#39;,&#39;d&#39;],[&#39;a&#39;,&#39;b&#39;] ]</span>
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
 </pre></div>
 </div>
@@ -4170,6 +4425,17 @@ If you are a beginner, you might skip them and come back later</div>
 </pre></div>
 </div>
 </div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="Verifify-comprehension">
@@ -4188,14 +4454,16 @@ If you are a beginner, you might skip them and come back later</div>
 <li><p><strong>BEWARE</strong> of the empty list!</p></li>
 <li><p>your code must work with <strong>any</strong> number of sets (the image is just an example)</p></li>
 </ul>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="k">def</span> <span class="nf">inter_for</span><span class="p">(</span><span class="n">sets</span><span class="p">):</span>
 
-    <span class="c1">#jupman-raise</span>
+
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sets</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="nb">set</span><span class="p">()</span>
 
@@ -4208,7 +4476,7 @@ If you are a beginner, you might skip them and come back later</div>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">ret</span><span class="o">.</span><span class="n">intersection_update</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">ret</span>
-    <span class="c1">#/jupman-raise</span>
+
 
 <span class="c1"># TEST START - DO NOT TOUCH !</span>
 <span class="k">assert</span> <span class="n">inter_for</span><span class="p">([])</span> <span class="o">==</span> <span class="nb">set</span><span class="p">()</span>
@@ -4228,19 +4496,75 @@ If you are a beginner, you might skip them and come back later</div>
 </pre></div>
 </div>
 </div>
-<div class="nbinput nblast docutils container">
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">inter_for</span><span class="p">(</span><span class="n">sets</span><span class="p">):</span>
+
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
+
+<span class="c1"># TEST START - DO NOT TOUCH !</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([])</span> <span class="o">==</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([</span><span class="nb">set</span><span class="p">(),</span><span class="nb">set</span><span class="p">()])</span> <span class="o">==</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([</span><span class="nb">set</span><span class="p">(),</span><span class="nb">set</span><span class="p">(),</span><span class="nb">set</span><span class="p">()])</span> <span class="o">==</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;b&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([{</span><span class="s1">&#39;c&#39;</span><span class="p">},{</span><span class="s1">&#39;c&#39;</span><span class="p">},{</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">},{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
+<span class="c1"># check we didn&#39;t modify the input sets</span>
+<span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_for</span><span class="p">([</span><span class="n">s</span><span class="p">,{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">s</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="c1"># TEST END</span>
+</pre></div>
+</div>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="k">def</span> <span class="nf">inter_fast</span><span class="p">(</span><span class="n">sets</span><span class="p">):</span>
 
-    <span class="c1">#jupman-raise</span>
+
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sets</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="nb">set</span><span class="p">()</span>
 
     <span class="k">return</span> <span class="nb">set</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="o">*</span><span class="n">sets</span><span class="p">)</span>
-    <span class="c1">#/jupman-raise</span>
+
+
+<span class="c1"># TEST START - DO NOT TOUCH !</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([])</span> <span class="o">==</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([</span><span class="nb">set</span><span class="p">(),</span><span class="nb">set</span><span class="p">()])</span> <span class="o">==</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([</span><span class="nb">set</span><span class="p">(),</span><span class="nb">set</span><span class="p">(),</span><span class="nb">set</span><span class="p">()])</span> <span class="o">==</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;b&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([{</span><span class="s1">&#39;c&#39;</span><span class="p">},{</span><span class="s1">&#39;c&#39;</span><span class="p">},{</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">},{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">},{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
+<span class="c1"># check we didn&#39;t modify the input sets</span>
+<span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([</span><span class="n">s</span><span class="p">,{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}])</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">s</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<span class="c1"># TEST END</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">inter_fast</span><span class="p">(</span><span class="n">sets</span><span class="p">):</span>
+
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="c1"># TEST START - DO NOT TOUCH !</span>
 <span class="k">assert</span> <span class="n">inter_fast</span><span class="p">([])</span> <span class="o">==</span> <span class="nb">set</span><span class="p">()</span>

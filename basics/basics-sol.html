@@ -993,7 +993,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#deep_clone">deep_clone</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#MODIFYING-matrices">MODIFYING matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#Modifying-matrices">Modifying matrices</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillc">fillc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillx">fillx</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillz">fillz</a></li>
@@ -1459,7 +1459,7 @@ div.rendered_html tbody tr:hover {
 </ol>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: In this book we use ONLY PYTHON 3</strong></p>
-<p>If by chance you obtain weird behaviours, check you are using Python 3 and not 2. If by chance by typing <code class="docutils literal notranslate"><span class="pre">python</span></code> your operating system runs python 2, try executing the third by typing the command <code class="docutils literal notranslate"><span class="pre">python3</span></code></p>
+<p>If you obtain weird behaviours, check you are using Python 3 and not 2. If by typing <code class="docutils literal notranslate"><span class="pre">python</span></code> your operating system runs python 2, try executing <code class="docutils literal notranslate"><span class="pre">python3</span></code></p>
 </div>
 <div class="admonition note">
 <p><strong>If you don’t find Jupyter / something doesn’t work:</strong> have a look at <a class="reference external" href="https://en.softpython.org/installation.html#Jupyter-Notebook">installation</a></p>
@@ -1736,8 +1736,6 @@ str
 
 <span class="c1"># it&#39;s enough to execute once, you can also find in all notebooks in the first cell.</span>
 
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../&#39;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">jupman</span>
 </pre></div>
 </div>
@@ -1996,7 +1994,9 @@ str
 <ul class="simple">
 <li><p>are two variables enough? If they aren’t, try to introduce a third one.</p></li>
 </ul>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
@@ -2010,6 +2010,20 @@ str
 <span class="n">b</span> <span class="o">=</span> <span class="n">temp</span>   <span class="c1"># reassign b to the value of temp, that is 5</span>
 <span class="c1">#print(a)</span>
 <span class="c1">#print(b)</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2065,7 +2079,9 @@ str
 9
 </pre></div></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
@@ -2093,6 +2109,25 @@ str
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+9
+4
+7
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
 </pre></div>
 </div>
 </div>
@@ -2261,7 +2296,9 @@ So many!
 <span class="go">5</span>
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
@@ -2272,6 +2309,19 @@ So many!
 <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span><span class="n">a</span>
 <span class="c1">#print(a)</span>
 <span class="c1">#print(b)</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2389,12 +2439,25 @@ So many!
 <li><p><code class="docutils literal notranslate"><span class="pre">aren'tyouboredyet</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;angular&gt;</span></code></p></li>
 </ol>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -2634,7 +2697,9 @@ float
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>In total there are 6592 minutes left.
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
@@ -2645,6 +2710,29 @@ float
 
 <span class="c1"># write here</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In total there are&quot;</span><span class="p">,</span> <span class="n">days</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">hours</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">minutes</span><span class="p">,</span> <span class="s2">&quot;minutes left&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+In total there are 6592 minutes left
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">days</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">hours</span> <span class="o">=</span> <span class="mi">13</span>
+<span class="n">minutes</span> <span class="o">=</span> <span class="mi">52</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2764,7 +2852,9 @@ In total there are 6592 minutes left
    20 minutes
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
@@ -2776,6 +2866,30 @@ In total there are 6592 minutes left
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  &#39;</span><span class="p">,</span> <span class="n">tot_minutes</span> <span class="o">//</span> <span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="p">),</span> <span class="s1">&#39;days&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">tot_minutes</span> <span class="o">%</span> <span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="p">))</span> <span class="o">//</span> <span class="mi">60</span><span class="p">,</span> <span class="s1">&#39;hours&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  &#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">tot_minutes</span> <span class="o">%</span> <span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="p">))</span> <span class="o">%</span> <span class="mi">60</span><span class="p">,</span> <span class="s1">&#39;minutes&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+There are left:
+   3 days
+   11 hours
+   20 minutes
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">tot_minutes</span> <span class="o">=</span> <span class="mi">5000</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2883,8 +2997,10 @@ There are left:
 <span class="mf">4.</span> <span class="o">-</span><span class="nb">max</span><span class="p">(</span><span class="o">-</span><span class="n">a</span><span class="p">,</span><span class="o">-</span><span class="n">b</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: 1. and 3. are equivalent</p>
-</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 1. and 3. are equivalent</p>
+</div></div>
 <div class="section" id="Exercise---transportation">
 <h3>Exercise - transportation<a class="headerlink" href="#Exercise---transportation" title="Permalink to this headline">¶</a></h3>
 <p>✪✪ A company has a truck that every day delivers products to its best client. The truck can at most transport 10 tons of material. Unfortunately, the roads it can drive through have bridges that limit the maximum weight a vehicle can have to pass. These limits are provided in 5 variables:</p>
@@ -2907,7 +3023,9 @@ There are left:
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>In a single journey we can transport at most 4 tons.
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
@@ -2923,6 +3041,31 @@ There are left:
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;In a single journey we can transport at most&#39;</span><span class="p">,</span>
        <span class="nb">max</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">b1</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">),</span><span class="nb">min</span><span class="p">(</span><span class="n">b1</span><span class="p">,</span><span class="n">b5</span><span class="p">)),</span>
       <span class="s1">&#39;tons&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+In a single journey we can transport at most 4 tons
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span>   <span class="c1"># 4</span>
+<span class="c1">#b1,b2,b3,b4,b5 = 2,6,2,4,5  # 2</span>
+<span class="c1">#b1,b2,b3,b4,b5 = 8,6,2,9,5  # 6</span>
+<span class="c1">#b1,b2,b3,b4,b5 = 8,9,9,4,7  # 8</span>
+
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2971,7 +3114,9 @@ In a single journey we can transport at most 4 tons
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The first armchair will be produced in 82 hours.
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
@@ -2986,6 +3131,30 @@ In a single journey we can transport at most 4 tons
 <span class="n">t</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">b_mat</span><span class="p">,</span> <span class="n">b_bac</span><span class="p">,</span> <span class="n">b_cov</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">r_mat</span><span class="p">,</span> <span class="n">r_bac</span><span class="p">,</span> <span class="n">r_cov</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The first armchair will be produced in&#39;</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span><span class="s1">&#39;hours.&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+The first armchair will be produced in 38 hours.
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">b_mat</span><span class="p">,</span> <span class="n">b_bac</span><span class="p">,</span> <span class="n">b_cov</span><span class="p">,</span> <span class="n">r_mat</span><span class="p">,</span> <span class="n">r_bac</span><span class="p">,</span> <span class="n">r_cov</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span><span class="mi">54</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="mi">24</span>   <span class="c1"># 38</span>
+<span class="c1">#b_mat, b_bac, b_cov, r_mat, r_bac, r_cov = 81,37,32,54,36,91  # 82</span>
+<span class="c1">#b_mat, b_bac, b_cov, r_mat, r_bac, r_cov = 21,39,47,54,36,91  # 48</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4295,7 +4464,9 @@ float
 <h3>Exercise - circle<a class="headerlink" href="#Exercise---circle" title="Permalink to this headline">¶</a></h3>
 <p>✪ Calculate the area of a circle at the center of a soccer ball (radius = 9.1m), remember that <span class="math notranslate nohighlight">\(area= pi*r^2\)</span></p>
 <p>Your code should print as result <code class="docutils literal notranslate"><span class="pre">263.02199094102605</span></code></p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
 </pre></div>
 </div>
@@ -4306,6 +4477,23 @@ float
 <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.1415926536</span>
 <span class="n">area</span> <span class="o">=</span> <span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">area</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+263.02199094102605
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
 </pre></div>
 </div>
 </div>
@@ -4359,7 +4547,9 @@ float
 <p>✪ Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">0.000003</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">2.753278226511882</span></code></p>
 <div class="math notranslate nohighlight">
 \[-\frac{\sqrt{x+3}}{\frac{(x + 2)^3}{\log{x}}}\]</div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
 </pre></div>
 </div>
@@ -4381,19 +4571,63 @@ float
 2.753278226511882
 </pre></div></div>
 </div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.000003</span>
+
+<span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+2.753278226511882
+</pre></div></div>
+</div>
 </div>
 <div class="section" id="Exercise---summation">
 <h3>Exercise - summation<a class="headerlink" href="#Exercise---summation" title="Permalink to this headline">¶</a></h3>
 <p>Write some code to calculate the value of the following expression (don’t use cycles, write down all calculations), you should obtain <code class="docutils literal notranslate"><span class="pre">20.53333333333333</span></code></p>
 <div class="math notranslate nohighlight">
 \[\sum_{j=1}^{3}{\frac{j^4}{j + 2}}\]</div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[102]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># write here</span>
 <span class="p">((</span><span class="mi">1</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="p">((</span><span class="mi">2</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="p">((</span><span class="mi">3</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[102]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+20.53333333333333
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[102]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4514,8 +4748,10 @@ float
 <li><p>always <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 <li><p>sometimes <code class="docutils literal notranslate"><span class="pre">True</span></code> and sometimes <code class="docutils literal notranslate"><span class="pre">False</span></code> (give examples)</p></li>
 </ol>
-<p><strong>ANSWER</strong>: 3: for integers like <code class="docutils literal notranslate"><span class="pre">x=2.0</span></code> it is <code class="docutils literal notranslate"><span class="pre">True</span></code>, in other cases like <code class="docutils literal notranslate"><span class="pre">x=2.3</span></code> it is <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
-<p><strong>QUESTION</strong>: Given a float <code class="docutils literal notranslate"><span class="pre">x</span></code>, the following formula is:</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 3: for integers like <code class="docutils literal notranslate"><span class="pre">x=2.0</span></code> it is <code class="docutils literal notranslate"><span class="pre">True</span></code>, in other cases like <code class="docutils literal notranslate"><span class="pre">x=2.3</span></code> it is <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</div><p><strong>QUESTION</strong>: Given a float <code class="docutils literal notranslate"><span class="pre">x</span></code>, the following formula is:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -4524,8 +4760,10 @@ float
 <li><p>always <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 <li><p>sometimes <code class="docutils literal notranslate"><span class="pre">True</span></code> and sometimes <code class="docutils literal notranslate"><span class="pre">False</span></code> (give examples)</p></li>
 </ol>
-<p><strong>ANSWER</strong>: 1.</p>
-</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 1.</p>
+</div></div>
 <div class="section" id="Exercise---Invigorate">
 <h3>Exercise - Invigorate<a class="headerlink" href="#Exercise---Invigorate" title="Permalink to this headline">¶</a></h3>
 <p>✪ Excessive studies lead you search on internet recipes of energetic drinks. Luckily, a guru of nutrition just posted on her Instagram channel &#64;DrinkSoYouGetHealthy this recipe of a miracle drink:</p>
@@ -4556,7 +4794,9 @@ I pour half of the mix ( 4.5 dl ) into the glass
 I fill the glass until superior deciliter, now it contains: 5 dl
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
 </pre></div>
 </div>
@@ -4601,13 +4841,49 @@ I pour half of the mix ( 0.0 dl ) into the glass
 I fill the glass until superior deciliter, now it contains: 0 dl
 </pre></div></div>
 </div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">kiwi</span> <span class="o">=</span> <span class="mf">2.4</span>
+<span class="n">soy</span> <span class="o">=</span> <span class="mf">4.8</span>
+<span class="n">shampoo</span> <span class="o">=</span> <span class="mf">3.1</span>
+<span class="n">measuring_cup</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">mixer</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">glass</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+
+<span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+I pour into the measuring cup 2.4 dl of kiwi juice, then I remove excess until keeping 2 dl
+I transfer into the mixer, now it contains 2.0 dl
+I pour into the measuring cup 4.8 dl of soia, then I remove excess until keeping 4 dl
+I transfer into the mixer, now it contains 6.0 dl
+I pour into the measuring cup 3.1 dl of shampoo, then I remove excess until keeping 3 dl
+I transfer into the mixer, now it contains 9.0 dl
+I pour half of the mix ( 0.0 dl ) into the glass
+I fill the glass until superior deciliter, now it contains: 0 dl
+</pre></div></div>
+</div>
 </div>
 <div class="section" id="Exercise---roundminder">
 <h3>Exercise - roundminder<a class="headerlink" href="#Exercise---roundminder" title="Permalink to this headline">¶</a></h3>
 <p>✪ Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">-5.50</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">41</span></code></p>
 <div class="math notranslate nohighlight">
 \[\lvert{\lceil{x}\rceil}\rvert + \lfloor{x}\rceil^2\]</div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
 </pre></div>
 </div>
@@ -4617,6 +4893,29 @@ I fill the glass until superior deciliter, now it contains: 0 dl
 
 <span class="c1"># write here</span>
 <span class="nb">abs</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">+</span> <span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+41
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mf">5.50</span>   <span class="c1"># 41</span>
+<span class="c1">#x = -5.49  # 30</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4783,16 +5082,20 @@ True
 </pre></div></div>
 </div>
 <p><strong>QUESTION</strong>: Can we perfectly represnt the number <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> as a <code class="docutils literal notranslate"><span class="pre">float</span></code>?</p>
-<p><strong>ANSWER</strong>: <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> is irrational so there’s no hope of a perfect representation, any calculation will always have a certain degree of imprecision.</p>
-<p><strong>QUESTION</strong>: Which of these expressions give the same result?</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> is irrational so there’s no hope of a perfect representation, any calculation will always have a certain degree of imprecision.</p>
+</div><p><strong>QUESTION</strong>: Which of these expressions give the same result?</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a)&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">==</span> <span class="mf">3.0</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b)&#39;</span><span class="p">,</span> <span class="nb">abs</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mf">3.0</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">0.0000001</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;c)&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="n">abs_tol</span><span class="o">=</span><span class="mf">0.0000001</span><span class="p">))</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: b) and c) give <code class="docutils literal notranslate"><span class="pre">True</span></code>. a) gives <code class="docutils literal notranslate"><span class="pre">False</span></code>, because durting floating point calculations rounding errors are made.</p>
-</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: b) and c) give <code class="docutils literal notranslate"><span class="pre">True</span></code>. a) gives <code class="docutils literal notranslate"><span class="pre">False</span></code>, because durting floating point calculations rounding errors are made.</p>
+</div></div>
 <div class="section" id="Exercise---quadratic">
 <h3>Exercise - quadratic<a class="headerlink" href="#Exercise---quadratic" title="Permalink to this headline">¶</a></h3>
 <p>✪ Write some code to calculate the zeroes of the equation <span class="math notranslate nohighlight">\(ax^2-b = 0\)</span></p>
@@ -4812,7 +5115,9 @@ True
 -0.5477225575051661 is a solution? True
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[112]:
 </pre></div>
 </div>
@@ -4833,6 +5138,31 @@ True
 <span class="c1"># we need to change the default tolerance value</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">format</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="s1">&#39;.20f&#39;</span><span class="p">),</span> <span class="s2">&quot;is a solution?&quot;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="p">(</span><span class="n">x1</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">abs_tol</span><span class="o">=</span><span class="mf">0.00001</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">format</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="s1">&#39;.20f&#39;</span><span class="p">),</span> <span class="s2">&quot;is a solution?&quot;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="p">((</span><span class="n">x2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">abs_tol</span><span class="o">=</span><span class="mf">0.00001</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+11.0 * x**2 - 3.3 = 0  per x1 = 0.54772255750516607442
+11.0 * x**2 - 3.3 = 0  per x2 = -0.54772255750516607442
+0.54772255750516607442 is a solution? True
+-0.54772255750516607442 is a solution? True
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[112]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">11.0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mf">3.3</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4872,7 +5202,9 @@ TrashTrend is the most frequent? True ( 30.0 % )
 <ul class="simple">
 <li><p><strong>WARNING</strong>: your code must work with <strong>ANY</strong> series of variables !!</p></li>
 </ul>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[114]:
 </pre></div>
 </div>
@@ -4890,6 +5222,35 @@ TrashTrend is the most frequent? True ( 30.0 % )
 <span class="nb">print</span><span class="p">(</span><span class="n">b3</span><span class="p">,</span> <span class="s1">&#39;is the most frequent?&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">f3</span><span class="p">,</span><span class="n">mx</span><span class="p">),</span> <span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">f3</span><span class="o">*</span><span class="mf">100.0</span><span class="p">,</span> <span class="s1">&#39;.1f&#39;</span><span class="p">),</span><span class="s1">&#39;% )&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b4</span><span class="p">,</span> <span class="s1">&#39;is the most frequent?&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">f4</span><span class="p">,</span><span class="n">mx</span><span class="p">),</span> <span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">f4</span><span class="o">*</span><span class="mf">100.0</span><span class="p">,</span> <span class="s1">&#39;.1f&#39;</span><span class="p">),</span><span class="s1">&#39;% )&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">b5</span><span class="p">,</span> <span class="s1">&#39;is the most frequent?&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">f5</span><span class="p">,</span><span class="n">mx</span><span class="p">),</span> <span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="p">(</span><span class="n">f5</span><span class="o">*</span><span class="mf">100.0</span><span class="p">,</span> <span class="s1">&#39;.1f&#39;</span><span class="p">),</span><span class="s1">&#39;% )&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+TooManyLikes is the most frequent? False ( 25.0 % )
+Boombasticks is the most frequent? True ( 30.0 % )
+Timewasters Inc is the most frequent? False ( 10.0 % )
+Vanity 3.0 is the most frequent? False ( 5.0 % )
+TrashTrend is the most frequent? True ( 30.0 % )
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[114]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="s1">&#39;TooManyLikes&#39;</span><span class="p">,</span> <span class="s1">&#39;Boombasticks&#39;</span><span class="p">,</span> <span class="s1">&#39;Timewasters Inc&#39;</span><span class="p">,</span> <span class="s1">&#39;Vanity 3.0&#39;</span><span class="p">,</span><span class="s1">&#39;TrashTrend&#39;</span>    <span class="c1"># brand</span>
+
+<span class="n">f1</span><span class="p">,</span><span class="n">f2</span><span class="p">,</span><span class="n">f3</span><span class="p">,</span><span class="n">f4</span><span class="p">,</span><span class="n">f5</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.3</span>  <span class="c1"># frequencies (as percentages)  False True False False True</span>
+<span class="c1"># CAREFUL, they look the same but it must work also with these!</span>
+<span class="c1">#f1,f2,f3,f4,f5 = 0.25, 0.3, 0.1, 0.05, 0.1 + 0.2  #  False True False False True</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -5105,7 +5466,9 @@ False
 <div class="section" id="Challenge---Triangle-area">
 <h3>Challenge - Triangle area<a class="headerlink" href="#Challenge---Triangle-area" title="Permalink to this headline">¶</a></h3>
 <p>✪ Compute the area of a triangle having base 120 units (<code class="docutils literal notranslate"><span class="pre">b</span></code>) and height 33 (<code class="docutils literal notranslate"><span class="pre">h</span></code>). Assign the result to a variable named <code class="docutils literal notranslate"><span class="pre">area</span></code> and print it. Your code should show <code class="docutils literal notranslate"><span class="pre">Triangle</span> <span class="pre">area</span> <span class="pre">is:</span> <span class="pre">120.0</span></code></p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[124]:
 </pre></div>
 </div>
@@ -5115,16 +5478,40 @@ False
 </pre></div>
 </div>
 </div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[124]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="Challenge---square-area">
 <h3>Challenge - square area<a class="headerlink" href="#Challenge---square-area" title="Permalink to this headline">¶</a></h3>
 <p>✪ Compute the area of a square having side (<code class="docutils literal notranslate"><span class="pre">s</span></code>) equal to 145 units. Assign the result to a variable named <code class="docutils literal notranslate"><span class="pre">area</span></code> and print it, it should show <code class="docutils literal notranslate"><span class="pre">Square</span> <span class="pre">area</span> <span class="pre">is:</span> <span class="pre">21025</span></code></p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[125]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[125]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -5135,7 +5522,9 @@ False
 <p>✪ Modify the program at previous point. to acquire the side <code class="docutils literal notranslate"><span class="pre">s</span></code> from the user at runtime.</p>
 <p><strong>Hint</strong>: use the <a class="reference external" href="https://www.geeksforgeeks.org/taking-input-in-python/">input</a> function and remember to convert the acquired value into an <code class="docutils literal notranslate"><span class="pre">int</span></code>). NOTE: from our experimentations, <code class="docutils literal notranslate"><span class="pre">input</span></code> tends to have problems in Jupyter so you’d better try in some other editor.</p>
 <p>Try also to put the two previous scripts in two separate files (e.g. <code class="docutils literal notranslate"><span class="pre">triangle_area.py</span></code> and <code class="docutils literal notranslate"><span class="pre">square_area.py</span></code> and execute them from the terminal)</p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[126]:
 </pre></div>
 </div>
@@ -5145,17 +5534,41 @@ False
 </pre></div>
 </div>
 </div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[126]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="Challenge---trapezoid">
 <h3>Challenge - trapezoid<a class="headerlink" href="#Challenge---trapezoid" title="Permalink to this headline">¶</a></h3>
 <p>✪ Write a small script (<code class="docutils literal notranslate"><span class="pre">trapezoid.py</span></code>) that computes the area of a trapezoid having major base (<code class="docutils literal notranslate"><span class="pre">mj</span></code>) equal to 30 units, minor base (mn) equal to 12 and height (<code class="docutils literal notranslate"><span class="pre">h</span></code>) equal to 17. Print the resulting area. Try executing the script from a text editor like Spyder or Visual Studio Code and from the terminal.</p>
 <p>It should print <code class="docutils literal notranslate"><span class="pre">Trapezoid</span> <span class="pre">area</span> <span class="pre">is:</span>&#160; <span class="pre">357.0</span></code></p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[127]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[127]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -5168,7 +5581,9 @@ False
 \[\sum\limits_{i=1}^n i = \frac{n (n+1)}{2}\]</div>
 <p>Then modify the program to make it acquire the number of integers to sum N from the user at runtime</p>
 <p>It should show <code class="docutils literal notranslate"><span class="pre">Sum</span> <span class="pre">of</span> <span class="pre">first</span> <span class="pre">1200</span> <span class="pre">integers:</span>&#160; <span class="pre">720600.0</span></code></p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[128]:
 </pre></div>
 </div>
@@ -5178,17 +5593,41 @@ False
 </pre></div>
 </div>
 </div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[128]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="challenge---hypotenuse">
 <h3>challenge - hypotenuse<a class="headerlink" href="#challenge---hypotenuse" title="Permalink to this headline">¶</a></h3>
 <p>Write a small script to compute the length of the hypotenuse (<code class="docutils literal notranslate"><span class="pre">c</span></code>) of a right triangle having sides <code class="docutils literal notranslate"><span class="pre">a</span></code>=133 and <code class="docutils literal notranslate"><span class="pre">b</span></code>=72 units (see picture below). It should print <code class="docutils literal notranslate"><span class="pre">Hypotenuse:</span>&#160; <span class="pre">151.23822268196622</span></code></p>
 <p><img alt="triangle 9u349y43" src="../_images/triangle.png" /></p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[129]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[129]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -5278,7 +5717,9 @@ person you included an average takes <code class="docutils literal notranslate">
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>24 minutes e 30 seconds
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[133]:
 </pre></div>
 </div>
@@ -5287,6 +5728,20 @@ person you included an average takes <code class="docutils literal notranslate">
 <span class="c1">#sec1,sec2,sec3, ga1,ga2, bo1,bo2 = 9,7,1, 3,5, 2,9  # 10 minutes e 50 seconds</span>
 
 <span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[133]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">sec1</span><span class="p">,</span><span class="n">sec2</span><span class="p">,</span><span class="n">sec3</span><span class="p">,</span> <span class="n">ga1</span><span class="p">,</span><span class="n">ga2</span><span class="p">,</span> <span class="n">bo1</span><span class="p">,</span><span class="n">bo2</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span><span class="mi">6</span>   <span class="c1"># 24 minutes e 30 seconds</span>
+<span class="c1">#sec1,sec2,sec3, ga1,ga2, bo1,bo2 = 9,7,1, 3,5, 2,9  # 10 minutes e 50 seconds</span>
+
+<span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -5318,7 +5773,9 @@ person you included an average takes <code class="docutils literal notranslate">
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The destination is False
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[134]:
 </pre></div>
 </div>
@@ -5332,6 +5789,25 @@ person you included an average takes <code class="docutils literal notranslate">
 <span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span><span class="mi">999</span>  <span class="c1"># False</span>
 
 <span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[134]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">58</span><span class="p">,</span><span class="mi">17</span>   <span class="c1"># 1</span>
+<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">58</span><span class="p">,</span><span class="mi">31</span>   <span class="c1"># 2</span>
+<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span><span class="mi">29</span>   <span class="c1"># 3</span>
+<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">42</span><span class="p">,</span><span class="mi">75</span>   <span class="c1"># 4</span>
+<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">666</span><span class="p">,</span><span class="mi">31</span>  <span class="c1"># False</span>
+<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">58</span><span class="p">,</span><span class="mi">666</span>  <span class="c1"># False</span>
+<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span><span class="mi">999</span>  <span class="c1"># False</span>
+
+<span class="c1"># write here</span>
+
 
 </pre></div>
 </div>

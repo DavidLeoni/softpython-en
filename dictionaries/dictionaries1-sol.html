@@ -993,7 +993,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#deep_clone">deep_clone</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#MODIFYING-matrices">MODIFYING matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#Modifying-matrices">Modifying matrices</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillc">fillc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillx">fillx</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillz">fillz</a></li>
@@ -1595,8 +1595,6 @@ div.rendered_html tbody tr:hover {
 <span></span><span class="c1"># WARNING: FOR PYTHON TUTOR TO WORK, REMEMBER TO EXECUTE THIS CELL with Shift+Enter</span>
 <span class="c1">#          (it&#39;s sufficient to execute it only once)</span>
 
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../&#39;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">jupman</span>
 </pre></div>
 </div>
@@ -1770,12 +1768,14 @@ div.rendered_html tbody tr:hover {
 </ul>
 </div></blockquote>
 <p><strong>QUESTION</strong>: have a careful look at the words in bold - can you tell a data structure we’ve already seen which has these features?</p>
-<p><strong>ANSWER</strong>: The keys of dictionaries for many aspects behave like elements of a set.</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: The keys of dictionaries for many aspects behave like elements of a set.</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>Have you read the</strong> <a class="reference external" href="https://en.softpython.org/sets/sets-sol.html">tutorial on sets?</a><strong>?</strong></p>
 <p><strong>Before going on, make sure to understand well the</strong> <a class="reference external" href="https://eb.softpython.org/sets/sets-sol.html#Mutable-elements-and-hashes">section on mutable elements and hashes</a></p>
 </div>
-<div class="section" id="Keys-are-immutable">
+</div><div class="section" id="Keys-are-immutable">
 <h4>Keys are immutable<a class="headerlink" href="#Keys-are-immutable" title="Permalink to this headline">¶</a></h4>
 <p><strong>QUESTION</strong>: The definition does not force us to use strings as keys, other types are also allowed. But can we use all the types we want?</p>
 <p>For each of the following examples, try to tell whether the dictionary can be created or we will get an error (which one?). Also check how they are represented in Python Tutor.</p>
@@ -1837,7 +1837,9 @@ div.rendered_html tbody tr:hover {
 </div>
 </li>
 </ol>
-<p><strong>ANSWER</strong>: integers, float, strings and tuples are IMMUTABLE and so we can use them as keys (see definition). Instead, lists, sets (and other dictionaries) are MUTABLE, so we cannot use them as keys. If we try using a MUTABLE element such as a list like if it were the key of a dictionary, Python will complain, telling us the object is not <em>hashable</em> (exactly as it would complain if we tried to insert it in a set)</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: integers, float, strings and tuples are IMMUTABLE and so we can use them as keys (see definition). Instead, lists, sets (and other dictionaries) are MUTABLE, so we cannot use them as keys. If we try using a MUTABLE element such as a list like if it were the key of a dictionary, Python will complain, telling us the object is not <em>hashable</em> (exactly as it would complain if we tried to insert it in a set)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="p">{</span>  <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]:</span><span class="s1">&#39;zam&#39;</span><span class="p">,</span>
 <span class="go">       [3,4]:&#39;zum&#39;}</span>
 
@@ -1850,7 +1852,7 @@ div.rendered_html tbody tr:hover {
 <span class="go">TypeError: unhashable type: &#39;list&#39;</span>
 </pre></div>
 </div>
-</div>
+</div></div>
 <div class="section" id="Keys-don't-have-order">
 <h4>Keys don’t have order<a class="headerlink" href="#Keys-don't-have-order" title="Permalink to this headline">¶</a></h4>
 <p>In a real-life dictionary, items are always ordered according to some criteria, typically in alphabetical order.</p>
@@ -2112,8 +2114,10 @@ div.rendered_html tbody tr:hover {
 </div>
 </li>
 </ol>
-<p><strong>ANSWER</strong>: We can freely put whatever we please as values, Python will not complain. In particular, notice how different keys can have the same value.</p>
-</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: We can freely put whatever we please as values, Python will not complain. In particular, notice how different keys can have the same value.</p>
+</div></div>
 <div class="section" id="Empty-dictionary">
 <h3>Empty dictionary<a class="headerlink" href="#Empty-dictionary" title="Permalink to this headline">¶</a></h3>
 <p>We can create an empty dictionary by writing <code class="docutils literal notranslate"><span class="pre">{}</span></code>:</p>
@@ -2475,7 +2479,9 @@ dict
     <span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: The expressions do NOT produce the same result, and we must definitely prefer the first one.</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: The expressions do NOT produce the same result, and we must definitely prefer the first one.</p>
 <p>On our pc, we obtained this:</p>
 <div class="admonition warning">
 <p><strong>WARNING: on your computer you may get different results!</strong></p>
@@ -2501,7 +2507,7 @@ dict
 <p>In the first case we started with a set of tuples: since it is a set, the elements inside it are memorized in an order we <em>cannot</em> predict. When Python checks the tuples inside, for each of them obtains a key/value couple. Now, from the dictionary definition we know dictionary keys are also memorized without a precise order. Thus, inserting keys in an order or another doesn’t matter, the only important thing is keeping the key/value distinction. In the dictionary print we see the same couples we
 specified, only in different order: the proper couples have been created because tuples <em>are</em> ordered indeed.</p>
 <p>In the second case we started instead from a tuple of sets, so Python visited the elements of the tuple in the same order as the one we see: alas, by specifying the couples like sets the order in which Python read the elements becomes unpredictable. On our computer, with the first set we’ve been lucky and Python first read <code class="docutils literal notranslate"><span class="pre">'a'</span></code> and then <code class="docutils literal notranslate"><span class="pre">5</span></code>, with the following sets it read instead first the number and then the character! On your computer you might see a completely different result!</p>
-<p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing which result it produces (or if it gives an error):</p>
+</div><p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing which result it produces (or if it gives an error):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">dict</span><span class="p">(</span><span class="s1">&#39;abcd&#39;</span><span class="p">)</span>
 </pre></div>
@@ -2851,8 +2857,10 @@ specified, only in different order: the proper couples have been created because
 })()
 </script></div>
 </div>
-<p><strong>ANSWER</strong>: The code produces the same results of previous example, although it is not efficient (a temporary dictionary will be created by the internal <code class="docutils literal notranslate"><span class="pre">dict</span></code> and then it will be immediately discarded)</p>
-<p><strong>Mutable values</strong>: In the example we used integer values, which are <em>immutable.</em> If we tried <em>mutable</em> values like lists, what would happen?</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: The code produces the same results of previous example, although it is not efficient (a temporary dictionary will be created by the internal <code class="docutils literal notranslate"><span class="pre">dict</span></code> and then it will be immediately discarded)</p>
+</div><p><strong>Mutable values</strong>: In the example we used integer values, which are <em>immutable.</em> If we tried <em>mutable</em> values like lists, what would happen?</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
@@ -3057,8 +3065,10 @@ specified, only in different order: the proper couples have been created because
 })()
 </script></div>
 </div>
-<p><strong>ANSWER</strong>: Yes, because the values from <code class="docutils literal notranslate"><span class="pre">da</span></code> are sets which are mutable.</p>
-</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: Yes, because the values from <code class="docutils literal notranslate"><span class="pre">da</span></code> are sets which are mutable.</p>
+</div></div>
 </div>
 <div class="section" id="Continue">
 <h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>

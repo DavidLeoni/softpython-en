@@ -993,7 +993,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#deep_clone">deep_clone</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#MODIFYING-matrices">MODIFYING matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#Modifying-matrices">Modifying matrices</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillc">fillc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillx">fillx</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillz">fillz</a></li>
@@ -1530,8 +1530,10 @@ Party
 </pre></div></div>
 </div>
 <p><strong>QUESTION</strong>: this above version has a serious problem. Can you spot it ??</p>
-<p><strong>ANSWER</strong>: the program above is partying even when we do not have enough ingredients !</p>
-</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: the program above is partying even when we do not have enough ingredients !</p>
+</div></div>
 </div>
 <div class="section" id="Check-with-the-return">
 <h2>Check with the return<a class="headerlink" href="#Check-with-the-return" title="Permalink to this headline">¶</a></h2>
@@ -1541,7 +1543,9 @@ Party
 <p>The exercise goal is keeping it outside, so to use the value returned by <code class="docutils literal notranslate"><span class="pre">make_pie</span></code> for deciding whether to party or not.</p>
 </div>
 <p>If you have any doubts on functions with return values, check <a class="reference external" href="http://greenteapress.com/thinkpython2/html/thinkpython2007.html">Chapter 6 of Think Python</a></p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
@@ -1557,7 +1561,7 @@ Party
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># implement here the function</span>
-    <span class="c1">#jupman-strip</span>
+
     <span class="k">if</span> <span class="n">milk</span> <span class="o">&gt;</span> <span class="mf">1.3</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;take milk&quot;</span><span class="p">)</span>
         <span class="c1"># return True  # NO, it would finish right here</span>
@@ -1581,20 +1585,57 @@ Party
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Heat&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I made the pie !&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="kc">True</span>
-    <span class="c1">#/jupman-strip</span>
+
 
 
 <span class="c1"># now write here the function call, make_pie(5,1,0.3)</span>
 <span class="c1"># using the result to declare whether it is possible or not to party :-(</span>
 
-<span class="c1">#jupman-strip</span>
+
 <span class="n">made_pie</span> <span class="o">=</span> <span class="n">make_pie</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.3</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">made_pie</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Party&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No party !&quot;</span><span class="p">)</span>
-<span class="c1">#/jupman-strip</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+take milk
+take sugar
+Don&#39;t have enough flour !
+No party !
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">make_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;  - suppose we need 1.3 kg for milk, 0.2kg for sugar and 1.0kg for flour</span>
+
+<span class="sd">         - takes as parameters the quantities we have in the sideboard</span>
+<span class="sd">         IMPROVE WITH return COMMAND: RETURN True if the pie is doable,</span>
+<span class="sd">                                             False otherwise</span>
+
+<span class="sd">         *OUTSIDE* USE THE VALUE RETURNED TO PARTY OR NOT</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># implement here the function</span>
+
+
+
+<span class="c1"># now write here the function call, make_pie(5,1,0.3)</span>
+<span class="c1"># using the result to declare whether it is possible or not to party :-(</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -1625,7 +1666,9 @@ No party !
 </div>
 <p>Note: in professional programs, the exception messages are intended for programmers, verbose, and tipically end up hidden in system logs. To final users you should only show short messages which are understanble by a non-technical public. At most, you can add an error code which the user might give to the technician for diagnosing the problem.</p>
 <p><strong>EXERCISE</strong>: Try to rewrite the function above by substituting the rows containing <code class="docutils literal notranslate"><span class="pre">return</span></code> with <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">Exception()</span></code>:</p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
@@ -1639,7 +1682,7 @@ No party !
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># implement function</span>
-    <span class="c1">#jupman-strip</span>
+
 
     <span class="k">if</span> <span class="n">milk</span> <span class="o">&gt;</span> <span class="mf">1.3</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;take milk&quot;</span><span class="p">)</span>
@@ -1656,7 +1699,24 @@ No party !
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mix&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Heat&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I made the pie !&quot;</span><span class="p">)</span>
-   <span class="c1">#/jupman-strip</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">make_exceptional_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; - suppose we need 1.3 kg for milk, 0.2kg for sugar and 1.0kg for flour</span>
+
+<span class="sd">        - takes as parameters the quantities we have in the sideboard</span>
+
+<span class="sd">        - if there are missing ingredients, raises Exception</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># implement function</span>
 
 </pre></div>
 </div>
@@ -2188,7 +2248,9 @@ AssertionError:
 <li><p>substitute <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">Exception(&quot;TODO</span> <span class="pre">IMPLEMENT</span> <span class="pre">ME&quot;)</span></code> with <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">x</span> <span class="pre">*</span> <span class="pre">y</span></code> and execute the cell. If you have written correctly, nothing should happen. In this case, congratulatins! The code you have written is correct <em>with reference to the tests</em> !</p></li>
 <li><p>Try to substitute instead with <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">10</span></code> and see what happens.</p></li>
 </ul>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
@@ -2196,9 +2258,27 @@ AssertionError:
 <span></span><span class="k">def</span> <span class="nf">my_mul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; RETURN the multiplication of numbers x and y</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1">#jupman-raise</span>
+
     <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
-    <span class="c1">#/jupman-raise</span>
+
+
+
+<span class="k">assert</span> <span class="n">my_mul</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="k">assert</span> <span class="n">my_mul</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="k">assert</span> <span class="n">my_mul</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">6</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">my_mul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; RETURN the multiplication of numbers x and y</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
 <span class="k">assert</span> <span class="n">my_mul</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>

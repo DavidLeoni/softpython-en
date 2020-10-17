@@ -993,7 +993,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#deep_clone">deep_clone</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#MODIFYING-matrices">MODIFYING matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#Modifying-matrices">Modifying matrices</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillc">fillc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillx">fillx</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillz">fillz</a></li>
@@ -1730,12 +1730,25 @@ C:\Users\David\MYFOLDER&gt;
 </div>
 </div>
 <p><strong>EXERCISE</strong>: with Python we can write comments by starting a row with a sharp <code class="docutils literal notranslate"><span class="pre">#</span></code>. Like before, type in the next cell <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">+</span> <span class="pre">5</span></code> but this time type it in the row under the writing <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">write</span> <span class="pre">here</span></code>:</p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># write here</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -1986,7 +1999,9 @@ So I will buy other 3 at the Steam Market
 <ul class="simple">
 <li><p><strong>DO NOT</strong> put numerical constants in your code like <code class="docutils literal notranslate"><span class="pre">7</span></code>, <code class="docutils literal notranslate"><span class="pre">4</span></code> or <code class="docutils literal notranslate"><span class="pre">3</span></code>! Write generic code which only uses the provided variables.</p></li>
 </ul>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
@@ -1998,6 +2013,30 @@ So I will buy other 3 at the Steam Market
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I have&quot;</span><span class="p">,</span> <span class="n">dirigibles</span><span class="p">,</span> <span class="s2">&quot;steam dirigibles&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I want a dirigible parked at each castle&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;So I will buy other&quot;</span><span class="p">,</span> <span class="n">castles</span> <span class="o">-</span> <span class="n">dirigibles</span><span class="p">,</span> <span class="s2">&quot;at the Steam Market&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+I&#39;ve built 7 castles in the air
+I have 4 steam dirigibles
+I want a dirigible parked at each castle
+So I will buy other 3 at the Steam Market
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">castles</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">dirigibles</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2042,8 +2081,6 @@ So I will buy other 3 at the Steam Market
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="c1"># Remember to execute this cell with Control+Enter</span>
 <span class="c1"># These commands tell Python where to find the file jupman.py</span>
-<span class="kn">import</span> <span class="nn">sys</span><span class="p">;</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../&#39;</span><span class="p">);</span>
 <span class="kn">import</span> <span class="nn">jupman</span><span class="p">;</span>
 </pre></div>
 </div>
@@ -2318,7 +2355,9 @@ Tonight the pirates will drink 50 mugs, and 30 will remain for tomorrow
 <li><p>To keep track of remaining kegs, make a variable <code class="docutils literal notranslate"><span class="pre">remaining_mugs</span></code></p></li>
 <li><p>if you are using Jupyter, try using <code class="docutils literal notranslate"><span class="pre">jupman.pytut()</span></code> at the cell end to visualize the execution</p></li>
 </ul>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
@@ -2337,6 +2376,34 @@ Tonight the pirates will drink 50 mugs, and 30 will remain for tomorrow
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tonight the pirates will drink&quot;</span><span class="p">,</span> <span class="n">pirates</span> <span class="o">*</span> <span class="n">each_wants</span><span class="p">,</span> <span class="s2">&quot;mugs, and&quot;</span><span class="p">,</span> <span class="n">remaining_mugs</span><span class="p">,</span> <span class="s2">&quot;will remain for tomorrow&quot;</span><span class="p">)</span>
 
 <span class="c1">#jupman.pytut()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+In the tavern there are 10 pirates, each wants 5 mugs of grog
+We have 4 kegs full of grog
+From each keg we can take 20 mugs
+Tonight the pirates will drink 50 mugs, and 30 will remain for tomorrow
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">pirates</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">each_wants</span> <span class="o">=</span> <span class="mi">5</span>      <span class="c1"># mugs of grog</span>
+<span class="n">kegs</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">keg_capacity</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># mugs of grog</span>
+
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>

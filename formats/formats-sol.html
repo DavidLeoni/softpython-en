@@ -992,7 +992,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#deep_clone">deep_clone</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#MODIFYING-matrices">MODIFYING matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#Modifying-matrices">Modifying matrices</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillc">fillc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillx">fillx</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillz">fillz</a></li>
@@ -1536,7 +1536,9 @@ Furthermore, at the end of the row in the part <code class="docutils literal not
 </pre></div>
 </div>
 <p><strong>✪ 1.1 EXERCISE</strong>: Try to rewrite here the block we’ve just seen, and execute the cell by pressing Control-Enter. Rewrite the code with the fingers, not with copy-paste ! Pay attention to correct indentation with spaces in the block.</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
@@ -1559,6 +1561,26 @@ Leonardo
 
 </pre></div></div>
 </div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Leonardo
+
+</pre></div></div>
+</div>
 <p><strong>✪ 1.2 EXERCISE</strong>: you might wondering what exactly is that <code class="docutils literal notranslate"><span class="pre">f</span></code>, and what exatly the method <code class="docutils literal notranslate"><span class="pre">readlines</span></code> should be doing. When you find yourself in these situations, you might help yourself with functions <code class="docutils literal notranslate"><span class="pre">type</span></code> and <code class="docutils literal notranslate"><span class="pre">help</span></code>. This time, directly copy paste the same code here, but insert inside <code class="docutils literal notranslate"><span class="pre">with</span></code> block the commands:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">print(type(f))</span></code></p></li>
@@ -1566,7 +1588,9 @@ Leonardo
 <li><p><code class="docutils literal notranslate"><span class="pre">print(help(f.readline))</span></code> # Attention: remember the f. before the readline !!</p></li>
 </ul>
 <p>Every time you add something, try to execute with Control+Enter and see what happens</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
@@ -1578,6 +1602,224 @@ Leonardo
     <span class="nb">print</span><span class="p">(</span><span class="n">help</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">help</span><span class="p">(</span><span class="n">f</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;class &#39;_io.TextIOWrapper&#39;&gt;
+Help on built-in function readline:
+
+readline(size=-1, /) method of _io.TextIOWrapper instance
+    Read until newline or EOF.
+
+    Returns an empty string if EOF is hit immediately.
+
+None
+Help on TextIOWrapper object:
+
+class TextIOWrapper(_TextIOBase)
+ |  Character and line based layer over a BufferedIOBase object, buffer.
+ |
+ |  encoding gives the name of the encoding that the stream will be
+ |  decoded or encoded with. It defaults to locale.getpreferredencoding(False).
+ |
+ |  errors determines the strictness of encoding and decoding (see
+ |  help(codecs.Codec) or the documentation for codecs.register) and
+ |  defaults to &#34;strict&#34;.
+ |
+ |  newline controls how line endings are handled. It can be None, &#39;&#39;,
+ |  &#39;\n&#39;, &#39;\r&#39;, and &#39;\r\n&#39;.  It works as follows:
+ |
+ |  * On input, if newline is None, universal newlines mode is
+ |    enabled. Lines in the input can end in &#39;\n&#39;, &#39;\r&#39;, or &#39;\r\n&#39;, and
+ |    these are translated into &#39;\n&#39; before being returned to the
+ |    caller. If it is &#39;&#39;, universal newline mode is enabled, but line
+ |    endings are returned to the caller untranslated. If it has any of
+ |    the other legal values, input lines are only terminated by the given
+ |    string, and the line ending is returned to the caller untranslated.
+ |
+ |  * On output, if newline is None, any &#39;\n&#39; characters written are
+ |    translated to the system default line separator, os.linesep. If
+ |    newline is &#39;&#39; or &#39;\n&#39;, no translation takes place. If newline is any
+ |    of the other legal values, any &#39;\n&#39; characters written are translated
+ |    to the given string.
+ |
+ |  If line_buffering is True, a call to flush is implied when a call to
+ |  write contains a newline character.
+ |
+ |  Method resolution order:
+ |      TextIOWrapper
+ |      _TextIOBase
+ |      _IOBase
+ |      builtins.object
+ |
+ |  Methods defined here:
+ |
+ |  __getstate__(...)
+ |
+ |  __init__(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |
+ |  __next__(self, /)
+ |      Implement next(self).
+ |
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |
+ |  close(self, /)
+ |      Flush and close the IO object.
+ |
+ |      This method has no effect if the file is already closed.
+ |
+ |  detach(self, /)
+ |      Separate the underlying buffer from the TextIOBase and return it.
+ |
+ |      After the underlying buffer has been detached, the TextIO is in an
+ |      unusable state.
+ |
+ |  fileno(self, /)
+ |      Returns underlying file descriptor if one exists.
+ |
+ |      OSError is raised if the IO object does not use a file descriptor.
+ |
+ |  flush(self, /)
+ |      Flush write buffers, if applicable.
+ |
+ |      This is not implemented for read-only and non-blocking streams.
+ |
+ |  isatty(self, /)
+ |      Return whether this is an &#39;interactive&#39; stream.
+ |
+ |      Return False if it can&#39;t be determined.
+ |
+ |  read(self, size=-1, /)
+ |      Read at most n characters from stream.
+ |
+ |      Read from underlying buffer until we have n characters or we hit EOF.
+ |      If n is negative or omitted, read until EOF.
+ |
+ |  readable(self, /)
+ |      Return whether object was opened for reading.
+ |
+ |      If False, read() will raise OSError.
+ |
+ |  readline(self, size=-1, /)
+ |      Read until newline or EOF.
+ |
+ |      Returns an empty string if EOF is hit immediately.
+ |
+ |  seek(self, cookie, whence=0, /)
+ |      Change stream position.
+ |
+ |      Change the stream position to the given byte offset. The offset is
+ |      interpreted relative to the position indicated by whence.  Values
+ |      for whence are:
+ |
+ |      * 0 -- start of stream (the default); offset should be zero or positive
+ |      * 1 -- current stream position; offset may be negative
+ |      * 2 -- end of stream; offset is usually negative
+ |
+ |      Return the new absolute position.
+ |
+ |  seekable(self, /)
+ |      Return whether object supports random access.
+ |
+ |      If False, seek(), tell() and truncate() will raise OSError.
+ |      This method may need to do a test seek().
+ |
+ |  tell(self, /)
+ |      Return current stream position.
+ |
+ |  truncate(self, pos=None, /)
+ |      Truncate file to size bytes.
+ |
+ |      File pointer is left unchanged.  Size defaults to the current IO
+ |      position as reported by tell().  Returns the new size.
+ |
+ |  writable(self, /)
+ |      Return whether object was opened for writing.
+ |
+ |      If False, write() will raise OSError.
+ |
+ |  write(self, text, /)
+ |      Write string to stream.
+ |      Returns the number of characters written (which is always equal to
+ |      the length of the string).
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |
+ |  buffer
+ |
+ |  closed
+ |
+ |  encoding
+ |      Encoding of the text stream.
+ |
+ |      Subclasses should override.
+ |
+ |  errors
+ |      The error setting of the decoder or encoder.
+ |
+ |      Subclasses should override.
+ |
+ |  line_buffering
+ |
+ |  name
+ |
+ |  newlines
+ |      Line endings translated so far.
+ |
+ |      Only line endings translated during reading are considered.
+ |
+ |      Subclasses should override.
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from _IOBase:
+ |
+ |  __del__(...)
+ |
+ |  __enter__(...)
+ |
+ |  __exit__(...)
+ |
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |
+ |  readlines(self, hint=-1, /)
+ |      Return a list of lines from the stream.
+ |
+ |      hint can be specified to control the number of lines read: no more
+ |      lines will be read if the total size (in bytes/characters) of all
+ |      lines so far exceeds hint.
+ |
+ |  writelines(self, lines, /)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from _IOBase:
+ |
+ |  __dict__
+
+None
+Leonardo
+
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here the code (copy and paste)</span>
+
 
 </pre></div>
 </div>
@@ -1836,7 +2078,9 @@ Leonardo da Vinci
 </pre></div></div>
 </div>
 <p><strong>✪ 1.3 EXERCISE</strong>: Again, rewrite the block above in the cell below, ed execute the cell with Control+Enter. Question: what happens if you use <code class="docutils literal notranslate"><span class="pre">strip()</span></code> instead of <code class="docutils literal notranslate"><span class="pre">rstrip()</span></code>? What about <code class="docutils literal notranslate"><span class="pre">lstrip()</span></code>? Can you deduce the meaning of <code class="docutils literal notranslate"><span class="pre">r</span></code> and <code class="docutils literal notranslate"><span class="pre">l</span></code>? If you can’t manage it, try to use python command <code class="docutils literal notranslate"><span class="pre">help</span></code> by calling <code class="docutils literal notranslate"><span class="pre">help(string.rstrip)</span></code></p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
@@ -1847,6 +2091,25 @@ Leonardo da Vinci
     <span class="n">name</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
     <span class="n">surname</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">surname</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Leonardo da Vinci
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -1906,7 +2169,9 @@ the cycle will terminate:</p>
 </pre></div>
 </div>
 <p><strong>✪ 1.4 EXERCISE</strong>: As before, rewrite in the cell below the code with the <code class="docutils literal notranslate"><span class="pre">while</span></code>, paying attention to the indentation (for the external <code class="docutils literal notranslate"><span class="pre">with</span></code> line use copy-and-paste):</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
@@ -1920,6 +2185,27 @@ the cycle will terminate:</p>
         <span class="n">surname</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">surname</span><span class="p">)</span>
         <span class="n">line</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Leonardo da Vinci
+Sandro Botticelli
+Niccolò Macchiavelli
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here the code of internal while</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2012,7 +2298,9 @@ Niccolò Macchiavelli, 1469-05-03
 </pre></div></div>
 </div>
 <p><strong>✪ 1.5 EXERCISE</strong>: Write here the solution of the exercise ‘People complex’:</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
@@ -2027,6 +2315,27 @@ Niccolò Macchiavelli, 1469-05-03
         <span class="n">born</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()[</span><span class="nb">len</span><span class="p">(</span><span class="s2">&quot;birthdate: &quot;</span><span class="p">):]</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">surname</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">born</span><span class="p">)</span>
         <span class="n">line</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Leonardo da Vinci, 1452-04-15
+Sandro Botticelli, 1445-03-01
+Niccolò Macchiavelli, 1469-05-03
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2206,7 +2515,9 @@ BookmarkPageNumber: 47
 </pre></div></div>
 </div>
 <p><strong>IMPLEMENTATION</strong>: Write here the solution for the line file <code class="docutils literal notranslate"><span class="pre">immersione-in-python-toc.txt</span></code>, and try execute it by pressing Control + Enter:</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
@@ -2245,6 +2556,32 @@ BookmarkPageNumber: 47
       Ogni cosa è un oggetto  47
 </pre></div></div>
 </div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+   Il vostro primo programma Python  38
+      Immersione!  38
+      Dichiarare funzioni  41
+         Argomenti opzionali e con nome  42
+      Scrivere codice leggibile  44
+         Stringhe di documentazione  44
+      Il percorso di ricerca di import  46
+      Ogni cosa è un oggetto  47
+</pre></div></div>
+</div>
 </div>
 </div>
 <div class="section" id="2.-CSV-files">
@@ -2264,10 +2601,14 @@ BookmarkPageNumber: 47
 <p>To load and process CSVs there exist many powerful and intuitive modules such as Pandas in Python or R dataframes. Yet, in this notebook we will load CSVs using the most simple method possible, that is reading row by row, mimicking the method already seen in the previous part of the tutorial. Don’t think this method is primitive or stupid, according to the situation it may save the day. How? Some files may potentially occupy huge amounts of memory, and in moder laptops as of 2019 we only have 4
 gigabytes of RAM, the memory where Python stores variables. Given this, Python base functions to read files try their best to avoid loading everything in RAM. Tyipcally a file is read sequentially one piece at a time, putting in RAM only one row at a time.</p>
 <p><strong>QUESTION 2.1</strong>: if we want to know if a given file of 1000 terabytes contains only 3 million rows in which the word ‘ciao’ is present, are we obliged to put in RAM <em>all</em> of the rows ?</p>
-<p><strong>ANSWER</strong>: no, it is sufficient to keep in memory one row at a time, and hold the count in another variable</p>
-<p><strong>QUESTION 2.2</strong>: What if we wanted to take a 100 terabyte file and create another one by appending to each row of the first one the word ‘ciao’? Should we put in RAM at the same time all the rows of the first file ? What about the rows of second one?</p>
-<p><strong>ANSWER</strong>: No, it is enough to keep in RAM one row at a time, which is first read from the first file and then written right away in the second file.</p>
-</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: no, it is sufficient to keep in memory one row at a time, and hold the count in another variable</p>
+</div><p><strong>QUESTION 2.2</strong>: What if we wanted to take a 100 terabyte file and create another one by appending to each row of the first one the word ‘ciao’? Should we put in RAM at the same time all the rows of the first file ? What about the rows of second one?</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: No, it is enough to keep in RAM one row at a time, which is first read from the first file and then written right away in the second file.</p>
+</div></div>
 <div class="section" id="Reading-a-CSV">
 <h3>Reading a CSV<a class="headerlink" href="#Reading-a-CSV" title="Permalink to this headline">¶</a></h3>
 <p>We will start with artifical example CSV. Let’s look at <a class="reference external" href="example-1.csv">example-1.csv</a> which you can find in the same folder as this Jupyter notebook. It contains animals with their expected lifespan:</p>
@@ -2418,7 +2759,9 @@ We just read a row !
 </pre></div>
 </div>
 <p><strong>HINT</strong>: Try creating an empty list and then adding elements with <code class="docutils literal notranslate"><span class="pre">.append</span></code> method</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
@@ -2452,6 +2795,25 @@ We just read a row !
 [[&#39;animal&#39;, &#39; lifespan&#39;], [&#39;dog&#39;, &#39;12&#39;], [&#39;cat&#39;, &#39;14&#39;], [&#39;pelican&#39;, &#39;30&#39;], [&#39;squirrel&#39;, &#39;6&#39;], [&#39;eagle&#39;, &#39;25&#39;]]
 </pre></div></div>
 </div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[[&#39;animal&#39;, &#39; lifespan&#39;], [&#39;dog&#39;, &#39;12&#39;], [&#39;cat&#39;, &#39;14&#39;], [&#39;pelican&#39;, &#39;30&#39;], [&#39;squirrel&#39;, &#39;6&#39;], [&#39;eagle&#39;, &#39;25&#39;]]
+</pre></div></div>
+</div>
 <p><strong>✪✪ EXERCISE 2.5</strong>: You may have noticed that numbers in lists are represented as strings like <code class="docutils literal notranslate"><span class="pre">'12'</span></code> (note apeces), instead that like Python integer numbers (represented without apeces), <code class="docutils literal notranslate"><span class="pre">12</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>We just read a row!
 [&#39;dog&#39;, &#39;12&#39;]
@@ -2471,7 +2833,9 @@ We just read a row !
 </div>
 <p><strong>HINT 1</strong>: to jump a row you can use the instruction <code class="docutils literal notranslate"><span class="pre">next(my_reader)</span></code></p>
 <p><strong>HINT 2</strong>: to convert a string into an integer, you can use for example. <code class="docutils literal notranslate"><span class="pre">int('25')</span></code></p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
@@ -2486,6 +2850,25 @@ We just read a row !
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">my_reader</span><span class="p">:</span>
         <span class="n">big_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">])])</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">big_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[[&#39;dog&#39;, 12], [&#39;cat&#39;, 14], [&#39;pelican&#39;, 30], [&#39;squirrel&#39;, 6], [&#39;eagle&#39;, 25]]
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2522,7 +2905,9 @@ We just read a row !
 </div>
 <p>This result is quite disappointing</p>
 <p><strong>✪ EXERCISE 2.6</strong>: you probably found yourself in the same situation when trying to print a sequence generated by a call to <code class="docutils literal notranslate"><span class="pre">range(5)</span></code>: instead of the actual sequence you get a <code class="docutils literal notranslate"><span class="pre">range</span></code> object. If you want to convert the generator to a list, what should you do?</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
@@ -2533,6 +2918,25 @@ We just read a row !
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">my_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">my_reader</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[[&#39;animal&#39;, &#39; lifespan&#39;], [&#39;dog&#39;, &#39;12&#39;], [&#39;cat&#39;, &#39;14&#39;], [&#39;pelican&#39;, &#39;30&#39;], [&#39;squirrel&#39;, &#39;6&#39;], [&#39;eagle&#39;, &#39;25&#39;]]
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2559,7 +2963,9 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 </pre></div>
 </div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
@@ -2575,8 +2981,21 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 </pre></div>
 </div>
 </div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here the code</span>
+
+
+</pre></div>
+</div>
+</div>
 <p><strong>✪ EXERCISE 2.8</strong>: Taking the solution from previous exercise (using only one print), try down here to move the print to the left (removing any spaces). Does it still work ?</p>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
@@ -2591,6 +3010,17 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 </pre></div>
 </div>
 </div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
 <p><strong>✪✪ EXERCISE 2.9</strong>: Now that we understood which kind of beast <code class="docutils literal notranslate"><span class="pre">my_reader</span></code> is, try to produce this result as done before, but using a <em>list comprehension</em> instead of the <code class="docutils literal notranslate"><span class="pre">for</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[[&#39;dog&#39;, 12],
  [&#39;cat&#39;, 14],
@@ -2602,7 +3032,9 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 <ul class="simple">
 <li><p>If you can, try also to write the whole transformation to create <code class="docutils literal notranslate"><span class="pre">big_list</span></code> in one row, usinf the function <a class="reference external" href="https://docs.python.org/3/library/itertools.html#itertools.islice">itertools.islice</a> to jump the header (for example <code class="docutils literal notranslate"><span class="pre">itertools.islice(['A',</span> <span class="pre">'B',</span> <span class="pre">'C',</span> <span class="pre">'D',</span> <span class="pre">'E'],</span> <span class="pre">2,</span> <span class="pre">None)</span></code> first two elements and produces the sequence C D E F G - in our case the elements produced by <code class="docutils literal notranslate"><span class="pre">my_reader</span></code> would be rows)</p></li>
 </ul>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
@@ -2614,6 +3046,29 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
     <span class="c1"># write here</span>
     <span class="n">big_list</span> <span class="o">=</span> <span class="p">[[</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">islice</span><span class="p">(</span><span class="n">my_reader</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="kc">None</span><span class="p">)]</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">big_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[[&#39;dog&#39;, 12], [&#39;cat&#39;, 14], [&#39;pelican&#39;, 30], [&#39;squirrel&#39;, 6], [&#39;eagle&#39;, 25]]
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">my_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+    <span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2639,7 +3094,9 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 </pre></div>
 </div>
 </div>
-<p><strong>ANSWER</strong>:</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>animal,lifespan,description
 dog,12,dogs walk
 cat,14,cats walk
@@ -2648,7 +3105,7 @@ squirrel,6,squirrels fly
 eagle,25,eagles fly
 </pre></div>
 </div>
-<p><strong>✪ Exercise 2.11</strong>: Not every CSV is structured in the same way, sometimes when we write csvs or import them some tweak is necessary. Let’s see which problems may arise:</p>
+</div><p><strong>✪ Exercise 2.11</strong>: Not every CSV is structured in the same way, sometimes when we write csvs or import them some tweak is necessary. Let’s see which problems may arise:</p>
 <ul class="simple">
 <li><p>In the file, try to put one or two spaces before numbers, for example write down here and look what happens</p></li>
 </ul>
@@ -2656,14 +3113,22 @@ eagle,25,eagles fly
 </pre></div>
 </div>
 <p><strong>QUESTION 2.11.1</strong>: Does the space get imported?</p>
-<p><strong>ANSWER</strong>: yes</p>
-<p><strong>QUESTION 2.11.2</strong>: if we convert to integer, is the space a problem?</p>
-<p><strong>ANSWER</strong>: no</p>
-<p><strong>QUESTION 2.11.3</strong> Modify only dogs description from <code class="docutils literal notranslate"><span class="pre">dogs</span> <span class="pre">walk</span></code> to <code class="docutils literal notranslate"><span class="pre">dogs</span> <span class="pre">walk,</span> <span class="pre">but</span> <span class="pre">don't</span> <span class="pre">fly</span></code> and try to riexecute the cell which opens the file. What happens?</p>
-<p><strong>ANSWER</strong>: Python reads one element more in the list</p>
-<p><strong>QUESTION 2.11.4</strong>: To overcome previous problem, a solution you can adopt in CSVs is to round strings containing commas with double quotes, like this: <code class="docutils literal notranslate"><span class="pre">&quot;dogs</span> <span class="pre">walk,</span> <span class="pre">but</span> <span class="pre">don't</span> <span class="pre">fly&quot;</span></code>. Does it work ?</p>
-<p><strong>ANSWER</strong>: yes</p>
-</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: yes</p>
+</div><p><strong>QUESTION 2.11.2</strong>: if we convert to integer, is the space a problem?</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: no</p>
+</div><p><strong>QUESTION 2.11.3</strong> Modify only dogs description from <code class="docutils literal notranslate"><span class="pre">dogs</span> <span class="pre">walk</span></code> to <code class="docutils literal notranslate"><span class="pre">dogs</span> <span class="pre">walk,</span> <span class="pre">but</span> <span class="pre">don't</span> <span class="pre">fly</span></code> and try to riexecute the cell which opens the file. What happens?</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: Python reads one element more in the list</p>
+</div><p><strong>QUESTION 2.11.4</strong>: To overcome previous problem, a solution you can adopt in CSVs is to round strings containing commas with double quotes, like this: <code class="docutils literal notranslate"><span class="pre">&quot;dogs</span> <span class="pre">walk,</span> <span class="pre">but</span> <span class="pre">don't</span> <span class="pre">fly&quot;</span></code>. Does it work ?</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: yes</p>
+</div></div>
 <div class="section" id="Reading-as-dictionaries">
 <h4>Reading as dictionaries<a class="headerlink" href="#Reading-as-dictionaries" title="Permalink to this headline">¶</a></h4>
 <p>To read a CSV, instead of getting lists, you may more conveniently get dictionaries in the form of <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code>s</p>
@@ -2951,13 +3416,15 @@ the data.</p>
  <span class="p">(</span><span class="s1">&#39;BAZAR&#39;</span><span class="p">,</span> <span class="mi">11</span><span class="p">)]</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="k">def</span> <span class="nf">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">):</span>
-    <span class="c1">#jupman-raise</span>
+
     <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="kn">import</span> <span class="nn">csv</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;botteghe.csv&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>  <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
@@ -2970,7 +3437,47 @@ the data.</p>
                 <span class="k">else</span><span class="p">:</span>
                     <span class="n">ret</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">return</span> <span class="nb">sorted</span><span class="p">([(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">val</span> <span class="ow">in</span> <span class="n">ret</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">val</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">],</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="c1">#/jupman-raise</span>
+
+
+<span class="n">stopwords</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;S.N.C.&#39;</span><span class="p">,</span> <span class="s1">&#39;SNC&#39;</span><span class="p">,</span><span class="s1">&#39;S.A.S.&#39;</span><span class="p">,</span> <span class="s1">&#39;S.R.L.&#39;</span><span class="p">,</span> <span class="s1">&#39;S.C.A.R.L.&#39;</span><span class="p">,</span> <span class="s1">&#39;SCARL&#39;</span><span class="p">,</span><span class="s1">&#39;S.A.S&#39;</span><span class="p">,</span> <span class="s1">&#39;COMMERCIALE&#39;</span><span class="p">,</span><span class="s1">&#39;FAMIGLIA&#39;</span><span class="p">,</span><span class="s1">&#39;COOPERATIVA&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;&#39;</span><span class="p">,</span> <span class="s1">&#39;C.&#39;</span><span class="p">,</span> <span class="s1">&#39;ESERCIZIO&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;IL&#39;</span><span class="p">,</span> <span class="s1">&#39;DE&#39;</span><span class="p">,</span> <span class="s1">&#39;DI&#39;</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;DA&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;LA&#39;</span><span class="p">,</span> <span class="s1">&#39;AL&#39;</span><span class="p">,</span>  <span class="s1">&#39;DEL&#39;</span><span class="p">,</span> <span class="s1">&#39;ALLA&#39;</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">categories</span> <span class="o">=</span> <span class="n">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">)</span>
+
+<span class="n">categories</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[(&#39;BAR&#39;, 191),
+ (&#39;RISTORANTE&#39;, 150),
+ (&#39;HOTEL&#39;, 67),
+ (&#39;ALBERGO&#39;, 64),
+ (&#39;MACELLERIA&#39;, 27),
+ (&#39;PANIFICIO&#39;, 22),
+ (&#39;FARMACIA&#39;, 21),
+ (&#39;CALZATURE&#39;, 21),
+ (&#39;ALIMENTARI&#39;, 20),
+ (&#39;SPORT&#39;, 16),
+ (&#39;PIZZERIA&#39;, 16),
+ (&#39;FERRAMENTA&#39;, 12),
+ (&#39;TABACCHI&#39;, 12),
+ (&#39;BAZAR&#39;, 11)]
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">stopwords</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
              <span class="s1">&#39;S.N.C.&#39;</span><span class="p">,</span> <span class="s1">&#39;SNC&#39;</span><span class="p">,</span><span class="s1">&#39;S.A.S.&#39;</span><span class="p">,</span> <span class="s1">&#39;S.R.L.&#39;</span><span class="p">,</span> <span class="s1">&#39;S.C.A.R.L.&#39;</span><span class="p">,</span> <span class="s1">&#39;SCARL&#39;</span><span class="p">,</span><span class="s1">&#39;S.A.S&#39;</span><span class="p">,</span> <span class="s1">&#39;COMMERCIALE&#39;</span><span class="p">,</span><span class="s1">&#39;FAMIGLIA&#39;</span><span class="p">,</span><span class="s1">&#39;COOPERATIVA&#39;</span><span class="p">,</span>
@@ -3059,13 +3566,15 @@ OrderedDict<span class="o">([</span>   <span class="o">(</span><span class="s1">
                 <span class="o">(</span><span class="s1">&#39;Categorie&#39;</span>, <span class="s1">&#39;[]&#39;</span><span class="o">)])</span>
 </pre></div>
 </div>
-<div class="nbinput nblast docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="k">def</span> <span class="nf">enrich</span><span class="p">(</span><span class="n">categories</span><span class="p">):</span>
-    <span class="c1">#jupman-raise</span>
+
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
 
 
@@ -3094,7 +3603,21 @@ OrderedDict<span class="o">([</span>   <span class="o">(</span><span class="s1">
                         <span class="n">new_d</span><span class="p">[</span><span class="s1">&#39;Categorie&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cat</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
                 <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span><span class="n">new_d</span><span class="p">)</span>
 
-    <span class="c1">#/jupman-raise</span>
+
+
+<span class="n">enrich</span><span class="p">(</span><span class="n">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">))</span>
+
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">def</span> <span class="nf">enrich</span><span class="p">(</span><span class="n">categories</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">enrich</span><span class="p">(</span><span class="n">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">))</span>
 

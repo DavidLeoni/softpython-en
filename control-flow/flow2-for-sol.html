@@ -993,7 +993,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#deep_clone">deep_clone</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#MODIFYING-matrices">MODIFYING matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#Modifying-matrices">Modifying matrices</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillc">fillc</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillx">fillx</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists-sol.html#fillz">fillz</a></li>
@@ -1503,8 +1503,6 @@ Done!
 <span></span><span class="c1"># WARNING: FOR PYTHON TUTOR TO WORK, REMEMBER TO EXECUTE THIS CELL with Shift+Enter</span>
 <span class="c1">#          (it&#39;s sufficient to execute it only once)</span>
 
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../&#39;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">jupman</span>
 </pre></div>
 </div>
@@ -1826,7 +1824,9 @@ The second trip starts
 End of second trip
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
@@ -1877,6 +1877,46 @@ The second trip starts
 End of second trip
 </pre></div></div>
 </div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">trip1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Marrakesh&#39;</span><span class="p">,</span><span class="s1">&#39;Fez&#39;</span><span class="p">,</span><span class="s1">&#39;Bazaar&#39;</span><span class="p">,</span><span class="s1">&#39;Kasbah&#39;</span><span class="p">]</span>
+<span class="n">trip2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Koutoubia&#39;</span><span class="p">,</span> <span class="s1">&#39;El Badii&#39;</span><span class="p">,</span> <span class="s1">&#39;Chellah&#39;</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+The first trip starts
+      You: Let&#39;s go to Marrakesh !
+   Carpet: I hear and obey
+      You: Let&#39;s go to Fez !
+   Carpet: I hear and obey
+      You: Let&#39;s go to Bazaar !
+   Carpet: I hear and obey
+      You: Let&#39;s go to Kasbah !
+   Carpet: I hear and obey
+End of second trip
+
+The second trip starts
+      You: Let&#39;s go to Koutoubia !
+    Carpet: I hear and obey
+      You: Let&#39;s go to El Badii !
+    Carpet: I hear and obey
+      You: Let&#39;s go to Chellah !
+    Carpet: I hear and obey
+End of second trip
+</pre></div></div>
+</div>
 </div>
 <div class="section" id="Esercise---evensum">
 <h3>Esercise - evensum<a class="headerlink" href="#Esercise---evensum" title="Permalink to this headline">¶</a></h3>
@@ -1889,7 +1929,9 @@ End of second trip
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>16
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
@@ -1902,6 +1944,27 @@ End of second trip
     <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">s</span> <span class="o">+=</span> <span class="n">x</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+16
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -1938,7 +2001,9 @@ L l
 O o
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
@@ -1948,6 +2013,37 @@ O o
 <span class="c1"># write here</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+B b
+I i
+R r
+B b
+A a
+N n
+T t
+E e
+L l
+L l
+O o
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;birbantello&quot;</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -1994,7 +2090,9 @@ t is not interesting
 e is good
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
@@ -2017,6 +2115,41 @@ e is good
         <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="s1">&#39;is ugly&#39;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="s1">&#39;is not interesting&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+a is good
+r is bad
+t is not interesting
+i is ugly
+c is good
+u is bad
+l is ugly
+a is good
+t is not interesting
+e is good
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;articulate&#39;</span>
+
+<span class="n">good</span> <span class="o">=</span> <span class="s1">&#39;abcde&#39;</span>
+<span class="n">bad</span> <span class="o">=</span> <span class="s1">&#39;ru&#39;</span>
+<span class="n">ugly</span> <span class="o">=</span> <span class="s1">&#39;ijklmn&#39;</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2076,7 +2209,9 @@ Good evening Mr Jeweller
 These guests were admitted: Consul, Notary, Dean, Jeweller
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
@@ -2101,6 +2236,54 @@ These guests were admitted: Consul, Notary, Dean, Jeweller
 
 <span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;These guests were admitted:&#39;</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">admitted</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Open the doors!
+
+Good evening Mr Consul
+  This way, Your Excellence
+  Next in line !
+Good evening Mr Notary
+  This way, Your Excellence
+  Next in line !
+Good evening Mr Skeleton
+  Ferruccio, would you please take care of Mr Skeleton ?
+  Next in line !
+Good evening Mr Dean
+  This way, Your Excellence
+  Next in line !
+Good evening Mr Goblin
+  Ferruccio, would you please take care of Mr Goblin ?
+  Next in line !
+Good evening Mr Vampire
+  Ferruccio, would you please take care of Mr Vampire ?
+  Next in line !
+Good evening Mr Jeweller
+  This way, Your Excellence
+  Next in line !
+
+These guests were admitted: Consul, Notary, Dean, Jeweller
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">queue</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Consul&#39;</span><span class="p">,</span><span class="s1">&#39;Notary&#39;</span><span class="p">,</span><span class="s1">&#39;Skeleton&#39;</span><span class="p">,</span><span class="s1">&#39;Dean&#39;</span><span class="p">,</span><span class="s1">&#39;Goblin&#39;</span><span class="p">,</span><span class="s1">&#39;Vampire&#39;</span><span class="p">,</span> <span class="s1">&#39;Jeweller&#39;</span><span class="p">]</span>
+<span class="n">unwelcome</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Vampire&#39;</span><span class="p">,</span><span class="s1">&#39;Goblin&#39;</span><span class="p">,</span><span class="s1">&#39;Skeleton&#39;</span><span class="p">}</span>
+<span class="n">admitted</span> <span class="o">=</span> <span class="p">[]</span>
+
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2176,7 +2359,9 @@ We reached the capacity of 15 kg, there remain 1 kg
 We filled 3 bags
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
@@ -2199,6 +2384,54 @@ We filled 3 bags
         <span class="n">bags</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;We filled&#39;</span><span class="p">,</span> <span class="n">bags</span><span class="p">,</span> <span class="s1">&#39;bags&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Take 5 kg
+The scale weight shows 5 kg
+Take 1 kg
+The scale weight shows 6 kg
+Take 7 kg
+The scale weight shows 13 kg
+Take 4 kg
+The scale weight shows 17 kg
+We reached the capacity of 15 kg, there remain 2 kg
+
+Take 3 kg
+The scale weight shows 5 kg
+Take 9 kg
+The scale weight shows 14 kg
+Take 5 kg
+The scale weight shows 19 kg
+We reached the capacity of 15 kg, there remain 4 kg
+
+Take 2 kg
+The scale weight shows 6 kg
+Take 7 kg
+The scale weight shows 13 kg
+Take 3 kg
+The scale weight shows 16 kg
+We reached the capacity of 15 kg, there remain 1 kg
+
+We filled 3 bags
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">containers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">capacity</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2436,7 +2669,9 @@ The double of 2 is 4
 The double of 3 is 6
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
@@ -2445,6 +2680,29 @@ The double of 3 is 6
 <span class="c1"># write here</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The double of&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+The double of 0 is 0
+The double of 1 is 2
+The double of 2 is 4
+The double of 3 is 6
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2490,7 +2748,9 @@ Not divisible by 3
 14
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
@@ -2506,6 +2766,42 @@ Not divisible by 3
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="n">k</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Multiples of 3
+3
+6
+9
+12
+15
+
+Not divisible by 3
+4
+5
+7
+8
+10
+11
+13
+14
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">k</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span><span class="mi">15</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2564,7 +2860,9 @@ Not divisible by 3
 8
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
@@ -2580,6 +2878,33 @@ Not divisible by 3
 
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mn</span><span class="p">,</span> <span class="n">mx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+5
+6
+7
+8
+9
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">9</span>   <span class="c1"># 5 6 7 8 9</span>
+<span class="c1">#a,b = 8,3  # 3 4 5 6 7 8</span>
+<span class="c1">#a,b = 6,6  # 6</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2643,7 +2968,9 @@ tomato sauce, pasta
 meat sauce, lasagna
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
@@ -2653,6 +2980,30 @@ meat sauce, lasagna
 <span class="c1"># write here</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">kitchen</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">kitchen</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">kitchen</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+oil, soup
+eggs, pie
+tomato sauce, pasta
+meat sauce, lasagna
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">kitchen</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;oil&#39;</span><span class="p">,</span> <span class="s1">&#39;soup&#39;</span><span class="p">,</span> <span class="s1">&#39;eggs&#39;</span><span class="p">,</span> <span class="s1">&#39;pie&#39;</span><span class="p">,</span> <span class="s1">&#39;tomato sauce&#39;</span><span class="p">,</span> <span class="s1">&#39;pasta&#39;</span><span class="p">,</span> <span class="s1">&#39;meat sauce&#39;</span><span class="p">,</span> <span class="s1">&#39;lasagna&#39;</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2683,7 +3034,9 @@ o o
 n w
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
@@ -2696,6 +3049,32 @@ n w
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">la</span><span class="p">)):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">la</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">lb</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+n s
+e h
+o o
+n w
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">]</span>
+<span class="n">lb</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2728,7 +3107,9 @@ Disgust : negative
 Ecstasy : positive
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
@@ -2742,6 +3123,33 @@ Ecstasy : positive
         <span class="nb">print</span><span class="p">(</span><span class="n">emotions</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">&#39;: positive&#39;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">emotions</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s1">&#39;: negative&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Fear : negative
+Anger : negative
+Sadness : negative
+Joy : positive
+Disgust : negative
+Ecstasy : positive
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">emotions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Fear&#39;</span><span class="p">,</span> <span class="s1">&#39;Anger&#39;</span><span class="p">,</span><span class="s1">&#39;Sadness&#39;</span><span class="p">,</span><span class="s1">&#39;Joy&#39;</span><span class="p">,</span><span class="s1">&#39;Disgust&#39;</span><span class="p">,</span><span class="s1">&#39;Ecstasy&#39;</span><span class="p">]</span>
+<span class="n">grade</span> <span class="o">=</span>    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>       <span class="o">-</span><span class="mi">1</span><span class="p">,</span>     <span class="o">-</span><span class="mi">1</span><span class="p">,</span>       <span class="mi">1</span><span class="p">,</span>     <span class="o">-</span><span class="mi">1</span><span class="p">,</span>        <span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2774,7 +3182,9 @@ to
 o
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
@@ -2784,6 +3194,31 @@ o
 <span class="c1"># write here</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">:])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+netto
+etto
+tto
+to
+o
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;organetto&#39;</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2831,7 +3266,9 @@ sghiribizz
 sghiribizzo
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
@@ -2841,6 +3278,47 @@ sghiribizzo
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[:</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">*</span><span class="n">i</span><span class="p">,</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+s
+ ghiribizzo
+sg
+  hiribizzo
+sgh
+   iribizzo
+sghi
+    ribizzo
+sghir
+     ibizzo
+sghiri
+      bizzo
+sghirib
+       izzo
+sghiribi
+        zzo
+sghiribiz
+         zo
+sghiribizz
+          o
+sghiribizzo
+
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;sghiribizzo&#39;</span>
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -2891,7 +3369,9 @@ sghiribizzo
 CGCCACTTAAGCGCCCTGTATTAAAGTCGC
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
@@ -2913,6 +3393,31 @@ CGCCACTTAAGCGCCCTGTATTAAAGTCGC
 <span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">bars</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+ATACATATAGGGCCAATTATTATAAGTCAC
+   ||  || |  |  |   |  ||||| |
+CGCCACTTAAGCGCCCTGTATTAAAGTCGC
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">s1</span> <span class="o">=</span> <span class="s2">&quot;ATACATATAGGGCCAATTATTATAAGTCAC&quot;</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="s2">&quot;CGCCACTTAAGCGCCCTGTATTAAAGTCGC&quot;</span>
+
+<span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
@@ -2951,7 +3456,9 @@ O
 </pre></div>
 </div>
 <p>(note that ‘sportello’ has odd length and there are <em>five</em> characters in the first half and <em>four</em> in the second</p>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
@@ -2971,6 +3478,36 @@ O
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">midpoint</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+s
+p
+o
+r
+t
+E
+L
+L
+O
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">s</span> <span class="o">=</span>  <span class="s1">&#39;sportello&#39;</span>  <span class="c1"># sportELLO</span>
+<span class="c1">#s = &#39;maglia&#39;     # magLIA</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3014,7 +3551,9 @@ In the room 2 we hear Mew! and Moo!
 In the room 3 we hear Moo! and Bark!
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
@@ -3034,6 +3573,37 @@ In the room 3 we hear Moo! and Bark!
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">rooms</span><span class="p">)):</span>
     <span class="n">room</span> <span class="o">=</span> <span class="n">rooms</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;In the room&#39;</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;we hear&#39;</span><span class="p">,</span><span class="n">sounds</span><span class="p">[</span><span class="n">room</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="s1">&#39;and&#39;</span><span class="p">,</span> <span class="n">sounds</span><span class="p">[</span><span class="n">room</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+In the room 1 we hear Bark! and Bleat!
+In the room 2 we hear Mew! and Moo!
+In the room 3 we hear Moo! and Bark!
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">sounds</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;dog&#39;</span><span class="p">:</span><span class="s1">&#39;Bark!&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;cat&#39;</span><span class="p">:</span><span class="s1">&#39;Mew!&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;cow&#39;</span><span class="p">:</span><span class="s1">&#39;Moo!&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;sheep&#39;</span><span class="p">:</span><span class="s1">&#39;Bleat!&#39;</span><span class="p">}</span>
+
+<span class="n">rooms</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;sheep&#39;</span><span class="p">),</span>
+         <span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span><span class="s1">&#39;cow&#39;</span><span class="p">),</span>
+         <span class="p">(</span><span class="s1">&#39;cow&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">)]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3085,7 +3655,9 @@ group 3 : Lucario and Gardevoir and Eevee
 group 4 : Dragonite and Volcarona and Sylveon
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
@@ -3102,6 +3674,34 @@ group 4 : Dragonite and Volcarona and Sylveon
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">g</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;group&#39;</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39; and &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pokemon</span><span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">k</span><span class="p">:(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">k</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+group 1 : Charizard and Gengar and Arcanine and Bulbasaur
+group 2 : Blaziken and Umbreon and Lucario and Gardevoir
+group 3 : Eevee and Dragonite and Volcarona and Sylveon
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1">#               0         1          2         3            4         5</span>
+<span class="n">pokemon</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Charizard&#39;</span><span class="p">,</span><span class="s1">&#39;Gengar&#39;</span><span class="p">,</span><span class="s1">&#39;Arcanine&#39;</span><span class="p">,</span><span class="s1">&#39;Bulbasaur&#39;</span><span class="p">,</span><span class="s1">&#39;Blaziken&#39;</span><span class="p">,</span><span class="s1">&#39;Umbreon&#39;</span><span class="p">,</span>
+<span class="c1">#               6         7          8         9           10         11</span>
+           <span class="s1">&#39;Lucario&#39;</span><span class="p">,</span><span class="s1">&#39;Gardevoir&#39;</span><span class="p">,</span><span class="s1">&#39;Eevee&#39;</span><span class="p">,</span> <span class="s1">&#39;Dragonite&#39;</span><span class="p">,</span> <span class="s1">&#39;Volcarona&#39;</span><span class="p">,</span> <span class="s1">&#39;Sylveon&#39;</span> <span class="p">]</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="c1">#g = 4</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3134,8 +3734,10 @@ group 3 : Eevee and Dragonite and Volcarona and Sylveon
 </pre></div>
 </div>
 <p><strong>QUESTION</strong>: Do you see any problem?</p>
-<p><strong>ANSWER</strong>: if we go through the list and in <em>the meanwhile</em> we keep adding pieces, there is a concrete risk we will never terminate examining the list! Read carefully what follows:</p>
-<div class="admonition note">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: if we go through the list and in <em>the meanwhile</em> we keep adding pieces, there is a concrete risk we will never terminate examining the list! Read carefully what follows:</p>
+</div><div class="admonition note">
 <p><a class="reference external" href="https://en.softpython.org/commandments.html#X-COMMANDMENT">X COMMANDMENT</a>: <strong>You shall never ever add nor remove elements from a sequence you are iterating with a</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> <strong>!</strong></p>
 </div>
 <p>Falling into such temptations <strong>would produce totally unpredictable behaviours</strong> (do you know the expression <em>pulling the rug out from under your feet ?</em> )</p>
@@ -3189,7 +3791,9 @@ group 3 : Eevee and Dragonite and Volcarona and Sylveon
 <span class="go">[&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
@@ -3200,6 +3804,27 @@ group 3 : Eevee and Dragonite and Volcarona and Sylveon
 <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">la</span><span class="p">):</span>  <span class="c1"># with list we create a *copy* of the original list,  which remains stable</span>
     <span class="n">la</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3227,7 +3852,9 @@ group 3 : Eevee and Dragonite and Volcarona and Sylveon
 <ul class="simple">
 <li><p><strong>NOTE</strong>: here we <em>are not</em> adding nor removing cells from the list</p></li>
 </ul>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
@@ -3240,6 +3867,28 @@ group 3 : Eevee and Dragonite and Volcarona and Sylveon
     <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">la</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;z&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;z&#39;, &#39;a&#39;, &#39;z&#39;, &#39;m&#39;, &#39;z&#39;, &#39;r&#39;, &#39;z&#39;]
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3268,7 +3917,9 @@ group 3 : Eevee and Dragonite and Volcarona and Sylveon
 <span class="go">gOiRbAbNoGnUTAN</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
@@ -3289,6 +3940,28 @@ group 3 : Eevee and Dragonite and Volcarona and Sylveon
 
 <span class="n">sc</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sc</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+gOiRbAbNoGnUTAN
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">sa</span><span class="p">,</span><span class="n">sb</span> <span class="o">=</span> <span class="s1">&#39;gibbon&#39;</span><span class="p">,</span> <span class="s1">&#39;ORANGUTAN&#39;</span>   <span class="c1"># gOiRbAbNoGnUTAN</span>
+<span class="c1">#sa,sb = &#39;cruise ship&#39;, &#39;BOAT&#39;  # cBrOuAiTse ship</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3330,7 +4003,9 @@ gOiRbAbNoGnUTAN
 <div class="admonition warning">
 <p><strong>WARNING: Either way, always remember the sacred</strong> <a class="reference external" href="https://en.softpython.org/commandments.html#X-COMMANDMENT">X COMMANDMENT</a>: <strong>You shall never ever add nor remove elements from a sequence you are iterating with a</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> <strong>!</strong></p>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
@@ -3366,7 +4041,36 @@ basket: [&#39;melon&#39;, &#39;watermelon&#39;, &#39;melon&#39;, &#39;watermelon
 plate: [&#39;strawberry&#39;, &#39;cherry&#39;, &#39;apple&#39;, &#39;apple&#39;]
 </pre></div></div>
 </div>
-<div class="nbinput docutils container">
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># WAY 1</span>
+
+<span class="n">basket</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;strawberry&#39;</span><span class="p">,</span> <span class="s1">&#39;melon&#39;</span><span class="p">,</span> <span class="s1">&#39;cherry&#39;</span><span class="p">,</span> <span class="s1">&#39;watermelon&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;melon&#39;</span><span class="p">,</span><span class="s1">&#39;watermelon&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">preferences</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;cherry&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;strawberry&#39;</span><span class="p">}</span>
+<span class="n">plate</span> <span class="o">=</span> <span class="p">[]</span>
+
+
+<span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+basket: [&#39;melon&#39;, &#39;watermelon&#39;, &#39;melon&#39;, &#39;watermelon&#39;]
+plate: [&#39;strawberry&#39;, &#39;cherry&#39;, &#39;apple&#39;, &#39;apple&#39;]
+</pre></div></div>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
@@ -3391,6 +4095,32 @@ plate: [&#39;strawberry&#39;, &#39;cherry&#39;, &#39;apple&#39;, &#39;apple&#39;
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;basket:&#39;</span><span class="p">,</span><span class="n">basket</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;plate:&#39;</span><span class="p">,</span><span class="n">plate</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+basket: [&#39;melon&#39;, &#39;watermelon&#39;, &#39;melon&#39;, &#39;watermelon&#39;]
+plate: [&#39;strawberry&#39;, &#39;cherry&#39;, &#39;apple&#39;, &#39;apple&#39;]
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># WAY 2</span>
+
+<span class="n">basket</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;strawberry&#39;</span><span class="p">,</span> <span class="s1">&#39;melon&#39;</span><span class="p">,</span> <span class="s1">&#39;cherry&#39;</span><span class="p">,</span> <span class="s1">&#39;watermelon&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;melon&#39;</span><span class="p">,</span><span class="s1">&#39;watermelon&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="p">]</span>
+<span class="n">preferences</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;cherry&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;strawberry&#39;</span><span class="p">}</span>
+<span class="n">plate</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3731,12 +4461,14 @@ Found key  : brioche
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Found&#39;</span><span class="p">,</span> <span class="n">dct</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: The two codes reported above are equivalent, with an important difference: code A will be executed in a time proportional to the dimension of <code class="docutils literal notranslate"><span class="pre">dct</span></code> (because it needs to go through all the dictionary), code B instead will be always executed in a short constant time which does <em>not</em> depend on the dimension of <code class="docutils literal notranslate"><span class="pre">dct</span></code>. Both the command <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">k</span> <span class="pre">in</span> <span class="pre">dct</span></code> that the expression <code class="docutils literal notranslate"><span class="pre">dct[k]</span></code> which retrieves the value associated to key <code class="docutils literal notranslate"><span class="pre">k</span></code> are extremely fast.</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: The two codes reported above are equivalent, with an important difference: code A will be executed in a time proportional to the dimension of <code class="docutils literal notranslate"><span class="pre">dct</span></code> (because it needs to go through all the dictionary), code B instead will be always executed in a short constant time which does <em>not</em> depend on the dimension of <code class="docutils literal notranslate"><span class="pre">dct</span></code>. Both the command <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">k</span> <span class="pre">in</span> <span class="pre">dct</span></code> that the expression <code class="docutils literal notranslate"><span class="pre">dct[k]</span></code> which retrieves the value associated to key <code class="docutils literal notranslate"><span class="pre">k</span></code> are extremely fast.</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: be sure to fully understand this point!</strong></p>
 <p>So many people write code as in part A, losing the main feature of dictionaries which is fast access. As long as data is small you may not notice, but when we have several megabytes of key/value couples you start feeling the time lost in pointless loops! For more you can read (or review) the <a class="reference external" href="https://en.softpython.org/dictionaries/dictionaries2-sol.html#Fast-disorder">section Fast disorder</a> in the dictionaries tutorial.</p>
 </div>
-</div>
+</div></div>
 <div class="section" id="Exercise---color-of-hearts">
 <h3>Exercise - color of hearts<a class="headerlink" href="#Exercise---color-of-hearts" title="Permalink to this headline">¶</a></h3>
 <p>✪ Write some code which given a dictionary <code class="docutils literal notranslate"><span class="pre">suits</span></code>, for each suits prints its color.</p>
@@ -3760,7 +4492,9 @@ The color of hearts is red
 The color of clubs is black
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
@@ -3776,6 +4510,35 @@ The color of clubs is black
 
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">suits</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The color of&#39;</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="n">suits</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+The color of spades is black
+The color of clubs is black
+The color of diamonds is red
+The color of hearts is red
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">suits</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;hearts&#39;</span><span class="p">:</span><span class="s1">&#39;red&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;spades&#39;</span><span class="p">:</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;diamonds&#39;</span><span class="p">:</span><span class="s1">&#39;red&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;clubs&#39;</span><span class="p">:</span><span class="s1">&#39;black&#39;</span>
+<span class="p">}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3809,7 +4572,9 @@ The color of hearts is red
 couple of equal elements: rubies and rubies
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
@@ -3839,6 +4604,34 @@ couple of equal elements: rubies and rubies
 couple of equal elements: gems and gems
 </pre></div></div>
 </div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">jewels</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;rubies&#39;</span><span class="p">:</span> <span class="s1">&#39;jade&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;opals&#39;</span><span class="p">:</span><span class="s1">&#39;topazes&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;gems&#39;</span><span class="p">:</span><span class="s1">&#39;gems&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;diamonds&#39;</span><span class="p">:</span> <span class="s1">&#39;gems&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;rubies&#39;</span><span class="p">:</span><span class="s1">&#39;rubies&#39;</span>
+<span class="p">}</span>
+
+<span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+couple of equal elements: rubies and rubies
+couple of equal elements: gems and gems
+</pre></div></div>
+</div>
 </div>
 <div class="section" id="Exercise---powers">
 <h3>Exercise - powers<a class="headerlink" href="#Exercise---powers" title="Permalink to this headline">¶</a></h3>
@@ -3852,7 +4645,9 @@ couple of equal elements: gems and gems
 <span class="go">{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
@@ -3865,6 +4660,27 @@ couple of equal elements: gems and gems
     <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3897,7 +4713,9 @@ couple of equal elements: gems and gems
  &#39;violet&#39;: False}
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
@@ -3913,6 +4731,33 @@ couple of equal elements: gems and gems
 
 <span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
 <span class="n">pprint</span><span class="p">(</span><span class="n">is_cap</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;GILLYFLOWER&#39;: True,
+ &#39;PASSION FLOWER&#39;: True,
+ &#39;ROSE&#39;: True,
+ &#39;sunflower&#39;: False,
+ &#39;tulip&#39;: False,
+ &#39;violet&#39;: False}
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">flowers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sunflower&#39;</span><span class="p">,</span><span class="s1">&#39;GILLYFLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;tulip&#39;</span><span class="p">,</span> <span class="s1">&#39;PASSION FLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;ROSE&#39;</span><span class="p">,</span> <span class="s1">&#39;violet&#39;</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -3957,7 +4802,9 @@ couple of equal elements: gems and gems
   exhibition ink : 20000 €
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
@@ -3980,6 +4827,43 @@ couple of equal elements: gems and gems
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">exhibitions</span><span class="p">)):</span>
     <span class="n">technique</span> <span class="o">=</span> <span class="n">exhibitions</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  exhibition&#39;</span><span class="p">,</span> <span class="n">technique</span><span class="p">,</span> <span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">prices</span><span class="p">[</span><span class="n">technique</span><span class="p">]</span><span class="o">*</span><span class="n">q</span><span class="p">,</span>  <span class="s1">&#39;€&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Expected Income:
+  exhibition watercolor : 60000 €
+  exhibition oil : 120000 €
+  exhibition mural : 40000 €
+  exhibition tempera : 80000 €
+  exhibition charcoal : 140000 €
+  exhibition ink : 20000 €
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">q</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="n">exhibitions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;watercolor&#39;</span><span class="p">,</span> <span class="s1">&#39;oil&#39;</span><span class="p">,</span> <span class="s1">&#39;mural&#39;</span><span class="p">,</span> <span class="s1">&#39;tempera&#39;</span><span class="p">,</span> <span class="s1">&#39;charcoal&#39;</span><span class="p">,</span><span class="s1">&#39;ink&#39;</span><span class="p">]</span>
+
+<span class="n">prices</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;watercolor&#39;</span><span class="p">:</span> <span class="mi">3000</span><span class="p">,</span>
+          <span class="s1">&#39;oil&#39;</span>       <span class="p">:</span> <span class="mi">6000</span><span class="p">,</span>
+          <span class="s1">&#39;mural&#39;</span>     <span class="p">:</span> <span class="mi">2000</span><span class="p">,</span>
+          <span class="s1">&#39;tempera&#39;</span>   <span class="p">:</span> <span class="mi">4000</span><span class="p">,</span>
+          <span class="s1">&#39;charcoal&#39;</span>  <span class="p">:</span> <span class="mi">7000</span><span class="p">,</span>
+          <span class="s1">&#39;ink&#39;</span>       <span class="p">:</span> <span class="mi">1000</span>
+<span class="p">}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4022,7 +4906,9 @@ Expected Income:
    scissors : 150
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
@@ -4044,6 +4930,39 @@ Expected Income:
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">store1</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">store2</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  &#39;</span><span class="p">,</span><span class="n">k</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">store1</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="n">store2</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+materials in common:
+   pens : 90
+   folders : 110
+   scissors : 150
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">store1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pens&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span>
+          <span class="s1">&#39;folders&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span>
+          <span class="s1">&#39;papers&#39;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span>
+          <span class="s1">&#39;scissors&#39;</span><span class="p">:</span><span class="mi">40</span><span class="p">}</span>
+
+<span class="n">store2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pens&#39;</span><span class="p">:</span><span class="mi">80</span><span class="p">,</span>
+          <span class="s1">&#39;folders&#39;</span><span class="p">:</span><span class="mi">90</span><span class="p">,</span>
+          <span class="s1">&#39;goniometer&#39;</span><span class="p">:</span><span class="mi">130</span><span class="p">,</span>
+          <span class="s1">&#39;scissors&#39;</span><span class="p">:</span><span class="mi">110</span><span class="p">,</span>
+          <span class="s1">&#39;rulers&#39;</span><span class="p">:</span><span class="mi">120</span><span class="p">,</span>
+          <span class="p">}</span>
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4085,7 +5004,9 @@ Found 90 kg of soy
 Total: 110 kg
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
@@ -4126,6 +5047,42 @@ Found 90 kg of soy
 Total: 110 kg
 </pre></div></div>
 </div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">legumes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lentils&#39;</span><span class="p">,</span> <span class="s1">&#39;soy&#39;</span><span class="p">]</span>    <span class="c1"># 110</span>
+<span class="c1">#legumes = [&#39;beans&#39;, &#39;broad beans&#39;, &#39;chickpeas&#39;]   # 170</span>
+
+<span class="c1">#        0  1  2  3  4  5</span>
+<span class="n">store</span> <span class="o">=</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">50</span><span class="p">]</span>
+
+<span class="n">registry</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;peas&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+            <span class="s1">&#39;soy&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
+            <span class="s1">&#39;chickpeas&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
+            <span class="s1">&#39;lentils&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+            <span class="s1">&#39;broad beans&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+            <span class="s1">&#39;beans&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Searching for lentils and soy ...
+Found 20 kg of lentils
+Found 90 kg of soy
+Total: 110 kg
+</pre></div></div>
+</div>
 </div>
 <div class="section" id="Exercise---sports">
 <h3>Exercise - sports<a class="headerlink" href="#Exercise---sports" title="Permalink to this headline">¶</a></h3>
@@ -4146,7 +5103,9 @@ Total: 110 kg
 <span class="go">{&#39;tennis&#39;: 2, &#39;soccer&#39;: 3, &#39;volleyball&#39;: 1}</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
@@ -4171,6 +5130,34 @@ Total: 110 kg
         <span class="n">counts</span><span class="p">[</span><span class="n">v</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">counts</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{&#39;tennis&#39;: 2, &#39;volleyball&#39;: 1, &#39;soccer&#39;: 3}
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Gianni&#39;</span><span class="p">:</span><span class="s1">&#39;soccer&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Paolo&#39;</span><span class="p">:</span><span class="s1">&#39;tennis&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Sara&#39;</span><span class="p">:</span><span class="s1">&#39;volleyball&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Elena&#39;</span><span class="p">:</span><span class="s1">&#39;tennis&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Roberto&#39;</span><span class="p">:</span><span class="s1">&#39;soccer&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Carla&#39;</span><span class="p">:</span><span class="s1">&#39;soccer&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4210,9 +5197,11 @@ Total: 110 kg
 </pre></div>
 </div>
 <p><strong>QUESTION</strong>: Do you see any problem?</p>
-<p><strong>ANSWER</strong>: if you go through a dictionary and in <em>the meanwhile</em> you keep adding pieces, there is a concrete risk we will never terminate examining the keys !</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: if you go through a dictionary and in <em>the meanwhile</em> you keep adding pieces, there is a concrete risk we will never terminate examining the keys !</p>
 <p>So carefully read what follows:</p>
-<div class="admonition note">
+</div><div class="admonition note">
 <p><a class="reference external" href="https://en.softpython.org/commandments.html#X-COMMANDMENT">X COMMANDMENT</a>: <strong>You shall never ever add nor remove elements from a dictionary you are iterating with a</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> <strong>!</strong></p>
 </div>
 <p>In this case, if we try executing the code, we will get an explicit error:</p>
@@ -4300,7 +5289,9 @@ Total: 110 kg
     <span class="n">chars</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="o">+</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>    <span class="c1"># WARNING !! TROUBLE AHEAD !!</span>
 </pre></div>
 </div>
-<p><strong>ANSWER</strong>: Absolutely not - in this case we’re lucky and we will obtain an explicit error, in other cases we might obtain infinite loops or incomprehensible results:</p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: Absolutely not - in this case we’re lucky and we will obtain an explicit error, in other cases we might obtain infinite loops or incomprehensible results:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
 <span class="ne">RuntimeError</span>                              <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
 <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">36</span><span class="o">-</span><span class="mi">550</span><span class="n">c4c302120</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
@@ -4313,7 +5304,9 @@ Total: 110 kg
 </pre></div>
 </div>
 <p><strong>Do something better:</strong> try now rewriting a version of the program without this bug:</p>
-<div class="nbinput nblast docutils container">
+</div><a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
@@ -4331,6 +5324,24 @@ Total: 110 kg
     <span class="n">chars</span><span class="p">[</span><span class="s1">&#39;z&#39;</span><span class="o">+</span><span class="n">el</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 
 <span class="c1">#chars</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">chars</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+    <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>
+    <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">4</span>
+<span class="p">}</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4522,7 +5533,9 @@ Thanks Wilma - next one !
 Casting is over for today!
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
@@ -4542,6 +5555,52 @@ Casting is over for today!
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Thanks&#39;</span><span class="p">,</span> <span class="n">actress</span><span class="p">,</span> <span class="s1">&#39;- next one !&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Casting is over for today!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Leela enters the scene!
+   Capitan Harlock enters the scene!
+      Leela and Capitan Harlock get ready ... ACTION!
+    Thanks Capitan Harlock - next one !
+   Lupin enters the scene!
+      Leela and Lupin get ready ... ACTION!
+    Thanks Lupin - next one !
+   Kenshiro enters the scene!
+      Leela and Kenshiro get ready ... ACTION!
+    Thanks Kenshiro - next one !
+Thanks Leela - next one !
+Wilma enters the scene!
+   Capitan Harlock enters the scene!
+      Wilma and Capitan Harlock get ready ... ACTION!
+    Thanks Capitan Harlock - next one !
+   Lupin enters the scene!
+      Wilma and Lupin get ready ... ACTION!
+    Thanks Lupin - next one !
+   Kenshiro enters the scene!
+      Wilma and Kenshiro get ready ... ACTION!
+    Thanks Kenshiro - next one !
+Thanks Wilma - next one !
+
+Casting is over for today!
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">actresses</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Leela&#39;</span><span class="p">,</span><span class="s1">&#39;Wilma&#39;</span><span class="p">]</span>
+<span class="n">actors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Capitan Harlock&#39;</span><span class="p">,</span> <span class="s1">&#39;Lupin&#39;</span><span class="p">,</span> <span class="s1">&#39;Kenshiro&#39;</span><span class="p">]</span>
+
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4602,7 +5661,9 @@ Casting is over for today!
 5 3
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
@@ -4613,6 +5674,41 @@ Casting is over for today!
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3
+4 1
+4 2
+4 3
+5 1
+5 2
+5 3
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4664,7 +5760,9 @@ Casting is over for today!
 4 4
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
@@ -4674,6 +5772,40 @@ Casting is over for today!
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0 0
+0 1
+0 2
+0 3
+0 4
+1 1
+1 2
+1 3
+1 4
+2 2
+2 3
+2 4
+3 3
+3 4
+4 4
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4724,7 +5856,9 @@ trawling net contains 2 n
 trawling net contains 1 i
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
@@ -4739,6 +5873,37 @@ trawling net contains 1 i
     <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">characters</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39;contains&#39;</span><span class="p">,</span><span class="n">x</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">y</span><span class="p">),</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+ships contains 1 i
+ships contains 2 s
+pier contains 1 i
+fish trap contains 1 i
+fish trap contains 1 s
+sails contains 1 i
+sails contains 2 s
+trawling net contains 2 n
+trawling net contains 1 i
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ships&#39;</span><span class="p">,</span><span class="s1">&#39;pier&#39;</span><span class="p">,</span><span class="s1">&#39;oar&#39;</span><span class="p">,</span><span class="s1">&#39;fish trap&#39;</span><span class="p">,</span><span class="s1">&#39;sails&#39;</span><span class="p">,</span><span class="s1">&#39;trawling net&#39;</span><span class="p">]</span>
+<span class="n">characters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">]</span>
+
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4786,7 +5951,9 @@ Does the hexagon have 5 sides? False
 Does the hexagon have 6 sides? True
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
@@ -4798,6 +5965,43 @@ Does the hexagon have 6 sides? True
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">polygons</span><span class="p">)):</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">polygons</span><span class="p">)):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Does the&#39;</span><span class="p">,</span> <span class="n">polygons</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s1">&#39;have&#39;</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;sides?&#39;</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">3</span> <span class="o">==</span> <span class="n">j</span><span class="o">+</span><span class="mi">3</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Does the triangle have 3 sides? True
+Does the triangle have 4 sides? False
+Does the triangle have 5 sides? False
+Does the triangle have 6 sides? False
+Does the square have 3 sides? False
+Does the square have 4 sides? True
+Does the square have 5 sides? False
+Does the square have 6 sides? False
+Does the pentagon have 3 sides? False
+Does the pentagon have 4 sides? False
+Does the pentagon have 5 sides? True
+Does the pentagon have 6 sides? False
+Does the hexagon have 3 sides? False
+Does the hexagon have 4 sides? False
+Does the hexagon have 5 sides? False
+Does the hexagon have 6 sides? True
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1">#                 0              1              2             3</span>
+<span class="n">polygons</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;triangle&quot;</span><span class="p">,</span><span class="s2">&quot;square&quot;</span><span class="p">,</span><span class="s2">&quot;pentagon&quot;</span><span class="p">,</span> <span class="s2">&quot;hexagon&quot;</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -4848,7 +6052,9 @@ N joUr
 N jouR
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
@@ -4861,6 +6067,39 @@ N jouR
 <span class="k">for</span> <span class="n">c1</span> <span class="ow">in</span> <span class="n">sa</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sb</span><span class="p">)):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">c1</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">sb</span><span class="p">[:</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">sb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">+</span> <span class="n">sb</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+B Jour
+B jOur
+B joUr
+B jouR
+O Jour
+O jOur
+O joUr
+O jouR
+N Jour
+N jOur
+N joUr
+N jouR
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">sa</span> <span class="o">=</span> <span class="s1">&#39;bon&#39;</span>
+<span class="n">sb</span> <span class="o">=</span> <span class="s1">&#39;jour&#39;</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -5212,7 +6451,9 @@ n
 g
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
@@ -5226,6 +6467,37 @@ g
         <span class="k">continue</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+t
+n
+m
+s
+
+w
+l
+k
+n
+g
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">phrase</span> <span class="o">=</span> <span class="s1">&#39;autonomous walking&#39;</span>
+<span class="c1">#phrase=&#39;continuous&#39;</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -5326,7 +6598,9 @@ must
 stop
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
@@ -5344,6 +6618,35 @@ stop
         <span class="k">break</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+At
+some
+point
+you
+must
+stop
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">phrase</span> <span class="o">=</span> <span class="s1">&#39;At some point you must stop. Never go beyond the limit.&#39;</span>
+<span class="c1">#phrase = &quot;Respect the halt. Do you want to have us arrested?&quot;</span>
+<span class="c1">#phrase = &#39;Stop.&#39;</span>
+<span class="c1">#phrase = &#39;No stop&#39;</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
@@ -5395,7 +6698,9 @@ pa
 BREAKDANCE!
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
@@ -5422,6 +6727,45 @@ BREAKDANCE!
     <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;BREAKDANCE!&#39;</span><span class="p">)</span>
         <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+unz
+pa
+pa
+tud
+unz
+pa
+BREAKDANCE!
+
+tud
+boom
+boom
+unz
+tud
+pa
+pa
+unz
+tud
+pa
+BREAKDANCE!
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">music</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;unz&#39;</span><span class="p">,</span><span class="s1">&#39;pa&#39;</span><span class="p">,</span><span class="s1">&#39;pa&#39;</span><span class="p">,</span><span class="s1">&#39;tud&#39;</span><span class="p">,</span><span class="s1">&#39;unz&#39;</span><span class="p">,</span><span class="s1">&#39;pa&#39;</span><span class="p">,</span><span class="s1">&#39;pa&#39;</span><span class="p">,</span><span class="s1">&#39;tud&#39;</span><span class="p">,</span><span class="s1">&#39;unz&#39;</span><span class="p">,</span><span class="s1">&#39;boom&#39;</span><span class="p">,</span><span class="s1">&#39;boom&#39;</span><span class="p">,</span><span class="s1">&#39;tud&#39;</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
