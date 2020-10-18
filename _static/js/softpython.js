@@ -5,6 +5,9 @@ softpython = {
      * 
      */
     initWebsiteLangs : function(){
+
+        console.log("softpython.js initWebsiteLangs start");
+
         if (!window.JUPMAN_LANG){
             console.log("No JUPMAN_LANG defined, skipping initWebsiteLangs");
             return;
@@ -51,7 +54,7 @@ softpython = {
             console.log(xhr.responseText);
         };
         xhr.send(null);
-        console.log("jupman.js initWebsiteLangs end");
+        console.log("softpython.js initWebsiteLangs end");
      }
 
 }

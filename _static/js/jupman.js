@@ -112,7 +112,7 @@ var jupman = {
      * @since 3.2 
      */
     toggleSolution : function(caller){
-
+        
         let toggler = $(caller);
         let content = toggler.next();
         
@@ -151,7 +151,7 @@ var jupman = {
         if (typeof $ == "undefined"){
             console.error("   No jquery found! Skipping ... ");
         } else {
-            
+                        
             console.log("Initializing generic jupman-togglable stuff");
 
             let defaultShowMsg = 'Show';
@@ -206,7 +206,7 @@ var jupman = {
     },
 
     /**
-     *   Jupyter only instructions - doesn't run on ReadTheDocs
+     *   Jupyter only instructions - doesn't run on website
      */
     initJupyter : function(){
        console.log('jupman.js initJupyter start') 
@@ -279,7 +279,7 @@ $
     },
     
     /**
-    * RTD only instructions
+    * Website only instructions
     */
     initWebsite : function(){  
         
@@ -327,14 +327,11 @@ $
         // need it in js as there are no css parent selectors.
         // NOTE: these selectors are different from Jupyter ones !!!
         var pytuts = $('.pytutorVisualizer')        
-
-        pytuts.closest('div.output_area.rendered_html.container')
-              .css('overflow', 'visible');
-
-        jupman.initWebsiteLangs();
+        pytuts.closest('div.output_area.rendered_html.docutils.container')
+              .css('overflow', 'visible')
 
         console.log("jupman.js initWebsite end")
-    },    
+    },
     
     /**
      * Initializes jupman.js
