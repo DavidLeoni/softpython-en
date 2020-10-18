@@ -229,6 +229,7 @@ html_static_path = ['_static/']
 html_js_files = [
     'js/jupman.js',  # shared among jupyter and ReadTheDocs
     'js/pytutor-embed.bundle.min.js',
+    'js/softpython.js'
 ]
 
 html_css_files = [
