@@ -429,6 +429,14 @@ pdf_fit_background_mode = 'scale'
 def setup(app):    
     jmt.init(jm)    
 
+
+    # temporary hack to have graph-drawing stuff
+    jmt.info('Copying soft.py ...')
+    import shutil
+    shutil.copy('soft.py', 'graph-formats/')
+    shutil.copy('soft.py', 'binary-relations/')
+
+
     if 'googleanalytics_id' in globals() and globals()['googleanalytics_id']:
         print("Found googleanalytics_id")
         import googleanalytics
@@ -463,6 +471,9 @@ def setup(app):
                     '_static/generated/project-template',
                     patterns = sub)
     """
+
+
+
         
 
 
