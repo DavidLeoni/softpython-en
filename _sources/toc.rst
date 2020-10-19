@@ -44,6 +44,8 @@ B - Data analysis
     :glob:
     
     Data formats (CSV, JSON) <formats/formats-sol.ipynb>
+    Graph formats <graph-formats/graph-formats-sol.ipynb>
+    Binary relations <binary-relations/binary-relations-sol.ipynb>
 
         
 |space|
