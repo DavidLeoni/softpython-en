@@ -1,7 +1,6 @@
 #
 #                  Library of utilities for 
-#                        softpython.org
-
+#                          SoftPython
 #                    author:  David Leoni   
 # 
 #                   DO NOT MODIFY THIS FILE !
@@ -79,15 +78,9 @@ def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
     """
     
     if G == None:
-        raise ValueError('Provided Graph is None !')
+        raise ValueError('Provided Graph is None !')        
+                
     
-    if save_to:
-        if not save_to.lower().endswith('.png'):
-            raise ValueError("Provided filename should end with .png  found instead save_to=%s" % save_to)
-            
-    import matplotlib
-    import matplotlib.pyplot as plt
-    import matplotlib.image as mpimg
     import networkx as nx
        
     # fix graphviz path for anaconda in windows ...
@@ -160,21 +153,37 @@ def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
 
     make_legend()
     
-    # if we are in jupyter ...
-    import importlib
-    ipython_spec = importlib.util.find_spec("IPython")
-    if ipython_spec:
-        from IPython.display import Image, display
-        plt = Image(pdot.create_png())
-        display(plt)
-    if save_to:
+    fix_save_to = save_to.strip().lower()
+
+    if fix_save_to:
         try:
-            pdot.write_png(save_to)
-            print("Image saved to file: ", save_to)
+            # note for saving dot we don't require graph_viz installed
+            if fix_save_to.endswith('.dot'):
+                pdot.write_raw(save_to.strip())
+                print("Dot saved to file: ", save_to)
+            else:               
+                if not fix_save_to.endswith('.png'):
+                    raise ValueError("Provided filename should end with .png  found instead save_to=%s" % save_to) 
+                pdot.write_png(save_to)
+                print("Image saved to file: ", save_to)
+
         except Exception as e:
             print("ERROR: Could not save file to ", save_to)
             print(e)
-    
+
+    # if we are in jupyter ...
+    if not fix_save_to.endswith('.dot'):
+        # if we save the dot file it's probably because 
+        # we don't have graphviz on our system
+        import importlib
+        ipython_spec = importlib.util.find_spec("IPython")
+        if ipython_spec:
+            import matplotlib
+            import matplotlib.pyplot as plt
+            import matplotlib.image as mpimg
+            from IPython.display import Image, display
+            plt = Image(pdot.create_png())
+            display(plt)    
     
 def draw_mat(mat, legend_edges=None, label='', save_to='', options={}):    
     """ Draws a matrix as a DiGraph 
@@ -279,3 +288,89 @@ def draw_proof(proof, db, step_id=None, only_ids=False):
         for target in proof[key-1]['step_ids']:
             G.add_edge(key, target)
     draw_nx(G)
+
+
+def viz_server(default_module='example.py'):
+    """
+      default_module: a module name to execute, 
+              (can be either with or without the '.py')
+    """
+    from flask import Flask, render_template_string, request, redirect
+
+    web_site = Flask(__name__, static_url_path='/')
+
+    index_html = """
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <title>softpython viz tool</title>    
+        </head>
+        <body>
+        
+            <form style="display:block; margin-bottom:15px;" 
+                  action="/" 
+                  method="post">
+                <input type="text" 
+                       name="module" 
+                       value="{{module}}"/>
+                <input type="submit" 
+                       value="Reload"/>
+            </form>                                    
+            <img src='https://g.gravizo.com/svg?{{dot}}'/>
+            <pre> {{error}} </pre>            
+        </body>
+        </html>    
+    """
+
+    def load_index(module):
+        default_data = "digraph G {}"
+        data = default_data
+        err = ''
+        try:
+            print("The module is '" + module + "'")
+            import importlib
+            smod = module.strip()
+            if smod.endswith('.py'):
+                smod = smod[:-3]
+            mod = importlib.import_module(smod)
+            importlib.reload(mod)                                            
+            with open('output.dot', 'r') as file:
+                data = file.read()	
+                i = data.index('{')
+                
+                if i != -1:
+                    # gravizo really wants a named graph
+                    # [ strict ] (graph | digraph) [ ID ] '{' stmt_list '}'
+                    j = data.index('graph')
+                    sp = data[j:i].strip().split()    
+                    if len(sp) == 1:
+                        data = data[:j] + 'graph G ' + data[i:]
+                    # gravizo really does not want "" quotes
+                    data = data[:i].replace('"','') + data[i:]
+                
+        except Exception as e:
+            print('****** ERROR')
+            import traceback 
+            traceback.print_exc() 
+            data = default_data
+            err = e.__class__.__name__ + ': '+ str(e)
+        import urllib
+        from urllib.parse import quote
+        data=quote(data)
+        return render_template_string(index_html, 
+                                module=module,
+                                dot=data,
+                                error=err)
+
+    @web_site.route('/')
+    def index():
+        return load_index(default_module)
+
+    @web_site.route('/', methods = ['POST'])
+    def reload():                
+        module = request.form['module']            
+        return load_index(module)
+
+    web_site.run(host='0.0.0.0', port=8080)    
