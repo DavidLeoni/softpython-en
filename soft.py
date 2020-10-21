@@ -89,7 +89,7 @@ def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
         if os.name == 'nt':
             from os.path import expanduser
             home = expanduser("~")   # because in windows actual path can differ from user login !!!
-            graphviz_path = 'C:\\Users\\' + home + '\\Anaconda3\\Library\\bin\\graphviz'
+            graphviz_path = '"C:\\Users\\' + home + '\\Anaconda3\\Library\\bin\\graphviz"'
             if os.path.exists(graphviz_path) and "PATH" in os.environ and (graphviz_path not in os.environ["PATH"]) :
                 os.environ["PATH"] += ';' + graphviz_path
     except Exception as e:
