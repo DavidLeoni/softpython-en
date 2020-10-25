@@ -1,5 +1,5 @@
 #
-#                  Library of utilities for 
+#                    Library of utilities for 
 #                          SoftPython
 #                    author:  David Leoni   
 # 
@@ -11,7 +11,10 @@
 import unittest
 import sys
 
-   
+import random
+# some attempt for avoiding random graphviz layout https://github.com/DavidLeoni/softpython-en/issues/2
+random.seed(0)
+
 
 def show_distances():
     import networkx as nx
@@ -60,10 +63,12 @@ def get_pydot_mod(obj):
 def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
     """ Draws a NetworkX graph object. By default, assumes it is a DiGraph.
         
-        Optionally, saves it as .png image to filepath  save_to 
+        - save_to: optional filepath where to save a .png image or .dot file        
+        - to show clusters, set the cluster attribute in nodes
+        - options: Dictionary of GraphViz options
     
         For required libraries, see 
-        https://sciprog.davidleoni.it/graph-formats/graph-formats-sol.html#Required-libraries
+        https://en.softpython.org/graph-formats/graph-formats-sol.html#Required-libraries
     
         legend_edges example:
         
@@ -73,8 +78,7 @@ def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
                 {'label':'mondo',
                  'color':'blue'}
 
-            ]
-    
+            ]    
     """
     
     if G == None:
@@ -117,7 +121,9 @@ def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
     
     merge(G.graph['node'], {'color':'blue', 'fontcolor':'blue'})
     merge(G.graph['edge'], {'arrowsize': '0.6', 'splines': 'curved', 'fontcolor':'brown'})
-    merge(G.graph['graph'], {'scale': '3'}) # 
+    
+    # for random layout problems, see https://github.com/DavidLeoni/softpython-en/issues/2
+    merge(G.graph['graph'], {'scale': '3', 'start':'random0', 'style':'dotted, rounded',}) 
 
     # adding attributes to edges in multigraphs is more complicated but see
     # https://stackoverflow.com/a/26694158                    
@@ -151,8 +157,39 @@ def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
 
             pdot.add_subgraph(glegend)
 
-    make_legend()
     
+
+    def make_clusters():
+
+        allowed_types = (int,float,str,tuple)
+
+        clus = {}
+        nodes = G.nodes(data=True)
+        if len(nodes) > 0:
+            for node_id, data in nodes:                
+                if 'cluster' in data:
+                    c = data['cluster']
+                    
+                    if not type(c) in allowed_types:
+                        raise ValueError('Cluster type must be one of %s, found insted: %s' \
+                                          % (type(c),allowed_types))
+                    if c in clus:
+                        clus[c].append(node_id)
+                    else:
+                        clus[c] = [node_id]
+                    
+            for c in clus:        
+                if len(clus[c]) > 0:
+                    pydot_mod = get_pydot_mod(pdot)
+                    pydot_nodes = []                
+                    pydot_cluster = pydot_mod.Cluster(graph_name=str(c))
+                    for node_id in clus[c]:
+                        pydot_node = pydot_mod.Node(name=node_id)
+                        pydot_cluster.add_node(pydot_node)                        
+                    pdot.add_subgraph(pydot_cluster)
+
+    make_clusters()
+    make_legend()
     fix_save_to = save_to.strip().lower()
 
     if fix_save_to:
@@ -188,10 +225,12 @@ def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
 def draw_mat(mat, legend_edges=None, label='', save_to='', options={}):    
     """ Draws a matrix as a DiGraph 
         
-        Optionally, saves it as .png image to filepath  save_to
-        
+        - save_to: optional filepath where to save a .png image or .dot file        
+        - to show clusters, set the cluster attribute in nodes
+        - options: Dictionary of GraphViz options
+    
         For required libraries, see 
-        https://sciprog.davidleoni.it/graph-formats/graph-formats-sol.html#Required-libraries
+        https://en.softpython.org/graph-formats/graph-formats-sol.html#Required-libraries        
         
         For other options, see draw_nx
         
@@ -227,10 +266,13 @@ def draw_adj(d,legend_edges=None, label='', save_to='', options={}):
               'f': ['c']       # node 'f' links to node 'c'
             }
 
-        Optionally, saves it as .png image to filepath  save_to
-        
+        - save_to: optional filepath where to save a .png image or .dot file        
+        - to show clusters, set the cluster attribute in nodes
+        - options: Dictionary of GraphViz options
+    
         For required libraries, see 
-        https://sciprog.davidleoni.it/graph-formats/graph-formats-sol.html#Required-libraries
+        https://en.softpython.org/graph-formats/graph-formats-sol.html#Required-libraries
+            
         
         For other options, see draw_nx
 
@@ -292,8 +334,13 @@ def draw_proof(proof, db, step_id=None, only_ids=False):
 
 def viz_server(default_module='example.py'):
     """
+      Creates a Flask server to serve GraphViz by connecting to Gravizo online service
+            
       default_module: a module name to execute, 
               (can be either with or without the '.py')
+
+      WARNING: this is a prototype to use only when GraphViz is not installable, like in repl.it
+      See also https://github.com/DavidLeoni/softpython-en/issues/3              
     """
     from flask import Flask, render_template_string, request, redirect
 
