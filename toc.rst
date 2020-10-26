@@ -48,6 +48,7 @@ B - Data analysis
     Graph formats <graph-formats/graph-formats-sol.ipynb>
     Binary relations <binary-relations/binary-relations-sol.ipynb>
     Visualization <visualization/visualization-sol.ipynb>
+    Visualization - The AlgoRythm Opera Challenge <visualization/algorythm-opera-chal.ipynb>
         
 |space|
 ==========
