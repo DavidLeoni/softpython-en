@@ -435,7 +435,7 @@ def setup(app):
     import shutil
     shutil.copy('soft.py', 'graph-formats/')
     shutil.copy('soft.py', 'binary-relations/')
-
+    shutil.copy('soft.py', 'visualization/')
 
     if 'googleanalytics_id' in globals() and globals()['googleanalytics_id']:
         print("Found googleanalytics_id")

@@ -32,7 +32,8 @@ A - Foundations
     Control flow 3: while <control-flow/flow3-while-sol.ipynb>
     Sequences and comprehensions <sequences/sequences-sol.ipynb>
     Matrices: list of lists <matrices-lists/matrices-lists-sol.ipynb> 
-
+    Matrices: Numpy <matrices-numpy/matrices-numpy-sol.ipynb> 
+    
     Errors and testing <errors-and-testing/errors-and-testing-sol.ipynb>
     commandments.ipynb        
 
@@ -46,7 +47,7 @@ B - Data analysis
     Data formats (CSV, JSON) <formats/formats-sol.ipynb>
     Graph formats <graph-formats/graph-formats-sol.ipynb>
     Binary relations <binary-relations/binary-relations-sol.ipynb>
-
+    Visualization <visualization/visualization-sol.ipynb>
         
 |space|
 ==========
