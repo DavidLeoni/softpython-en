@@ -33,6 +33,7 @@ A - Foundations
     Sequences and comprehensions <sequences/sequences-sol.ipynb>
     Matrices: list of lists <matrices-lists/matrices-lists-sol.ipynb> 
     Matrices: Numpy <matrices-numpy/matrices-numpy-sol.ipynb> 
+    Matrices: Numpy images <matrices-numpy/numpy-images-sol.ipynb> 
     
     Errors and testing <errors-and-testing/errors-and-testing-sol.ipynb>
     commandments.ipynb        
