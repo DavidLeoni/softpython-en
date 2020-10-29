@@ -1652,8 +1652,8 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="Download-exercises-zip">
 <h2><a class="reference external" href="../_static/generated/matrices-numpy.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/matrices-numpy">Browse files online</a></p>
-<p>Images are a direct application of matrices, and show we can nicely translate a pixel on the screen into a matrix cell.</p>
-<p>Typically, images come divided into color channels: a common scheme is the RGB model, which stands for Red Green and Blue. In this tutorial we will load an image where each pixel is made of three integer values ranging from 0 to 255 included. Each integer indicates how much of a color component is present in the pixel, with zero meaning absence and 255 bright colors.</p>
+<p>Images are a direct application of matrices, and show we can nicely translate a matrix cell into a pixel on the screen.</p>
+<p>Typically, images are divided into color channels: a common scheme is the RGB model, which stands for Red Green and Blue. In this tutorial we will load an image where each pixel is made of three integer values ranging from 0 to 255 included. Each integer indicates how much of a color component is present in the pixel, with zero meaning absence and 255 bright colors.</p>
 <div class="section" id="What-to-do">
 <h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -1720,7 +1720,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888ded1198&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5172e0128&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1732,7 +1732,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="section" id="Monochrome">
 <h3>Monochrome<a class="headerlink" href="#Monochrome" title="Permalink to this headline">¶</a></h3>
-<p>To simplify the task, we will start easy with a monochromatic view of the image we will call <code class="docutils literal notranslate"><span class="pre">gimg</span></code>:</p>
+<p>For an easy start, we first get a monochromatic view of the image we call <code class="docutils literal notranslate"><span class="pre">gimg</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -1750,7 +1750,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888de4dd68&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd51725dc88&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1760,7 +1760,7 @@ div.rendered_html tbody tr:hover {
 <img alt="../_images/matrices-numpy_numpy-images-sol_6_1.png" src="../_images/matrices-numpy_numpy-images-sol_6_1.png" />
 </div>
 </div>
-<p>If we have taken the RED, why is it shown GREEN?? Matplotlib considers the picture as just a square matrix of integer numbers:</p>
+<p>If we have taken the RED, why is it shown GREEN?? For Matplotlib, the picture is only a square matrix of integer numbers, for now it has no notion of the best color scheme we would like to see:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
@@ -1802,7 +1802,7 @@ div.rendered_html tbody tr:hover {
 numpy.ndarray
 </pre></div></div>
 </div>
-<p>and by default matplotlib shows the intensity of light using with a greenish colormap.</p>
+<p>By default matplotlib shows the intensity of light using with a greenish colormap.</p>
 <p>Luckily, <a class="reference external" href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">many color maps</a> are available, for example the <code class="docutils literal notranslate"><span class="pre">'hot'</span></code> one:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
@@ -1819,7 +1819,7 @@ numpy.ndarray
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888de137f0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5172227f0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1845,7 +1845,7 @@ numpy.ndarray
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888ddcee10&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5171dcda0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1855,7 +1855,7 @@ numpy.ndarray
 <img alt="../_images/matrices-numpy_numpy-images-sol_14_1.png" src="../_images/matrices-numpy_numpy-images-sol_14_1.png" />
 </div>
 </div>
-<p>To type a little less, let’s define this shorthand function:</p>
+<p>Let’s define this shorthand function to type a little less:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
@@ -1904,12 +1904,12 @@ numpy.ndarray
 <img alt="../_images/matrices-numpy_numpy-images-sol_20_0.png" src="../_images/matrices-numpy_numpy-images-sol_20_0.png" />
 </div>
 </div>
-<p><strong>NOTE 1</strong>: differently from regular lists of lists, in Numpy we can write slices for different dimension <strong>within the same square brackets</strong></p>
-<p><strong>NOTE 2</strong>: We are still talking about matrices, so pictures also follow the very same conventions of regular algebra we’ve also seen with lists of lists: the first index is for rows and starts from 0 in the left upper corner, and second index is for columns:</p>
-<p><strong>NOTE 3</strong>: the indeces shown on the extracted picture are not the indeces of the original matrix</p>
+<p><strong>NOTE 1</strong>: differently from regular lists of lists, in Numpy we can write slices for different dimensions <strong>within the same square brackets</strong></p>
+<p><strong>NOTE 2</strong>: We are still talking about matrices, so pictures also follow the very same conventions of regular algebra we’ve also seen with lists of lists: the first index is for rows and starts from 0 in the left upper corner, and second index is for columns.</p>
+<p><strong>NOTE 3</strong>: the indeces shown on the extracted picture are <em>not</em> the indeces of the original matrix!</p>
 <div class="section" id="Exercise---Head-focus">
 <h3>Exercise - Head focus<a class="headerlink" href="#Exercise---Head-focus" title="Permalink to this headline">¶</a></h3>
-<p>Try to select the head:</p>
+<p>Try selecting the head:</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
@@ -2315,8 +2315,8 @@ array([5, 9, 4, 8, 6])
 </div>
 <div class="section" id="Writing-into-images">
 <h2>Writing into images<a class="headerlink" href="#Writing-into-images" title="Permalink to this headline">¶</a></h2>
-<p>Let’s go back to images. First note that <code class="docutils literal notranslate"><span class="pre">gimg</span></code> since it was generated by a call to <code class="docutils literal notranslate"><span class="pre">pt.imshow</span></code> it was set as READ-ONLY:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>  <span class="c1"># NOT POSSIBLE!</span>
+<p>Let’s go back to images. First note that <code class="docutils literal notranslate"><span class="pre">gimg</span></code> was generated by calling <code class="docutils literal notranslate"><span class="pre">pt.imshow</span></code>, which set it as READ-ONLY:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>  <span class="c1"># NOT POSSIBLE WITH LOADED IMAGES!</span>
 <span class="o">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span>                                <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
 <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">186</span><span class="o">-</span><span class="mi">7</span><span class="n">d21dd84cac2</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
@@ -2325,7 +2325,7 @@ array([5, 9, 4, 8, 6])
 <span class="ne">ValueError</span><span class="p">:</span> <span class="n">assignment</span> <span class="n">destination</span> <span class="ow">is</span> <span class="n">read</span><span class="o">-</span><span class="n">only</span>
 </pre></div>
 </div>
-<p>If we want something into we can write to, we need to perform a deep copy:</p>
+<p>If we want something we can write into, we need to perform a <strong>deep copy</strong>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
@@ -2374,7 +2374,7 @@ array([5, 9, 4, 8, 6])
 </div>
 <div class="section" id="Exercise---Stripes">
 <h3>Exercise - Stripes<a class="headerlink" href="#Exercise---Stripes" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that given top-left coordinates <code class="docutils literal notranslate"><span class="pre">tl</span></code> and bottom-right coordinates <code class="docutils literal notranslate"><span class="pre">br</span></code> creates a NEW image <code class="docutils literal notranslate"><span class="pre">nimg</span></code> with lines drawn like these:</p>
+<p>Write a program that given top-left coordinates <code class="docutils literal notranslate"><span class="pre">tl</span></code> and bottom-right coordinates <code class="docutils literal notranslate"><span class="pre">br</span></code> creates a NEW image <code class="docutils literal notranslate"><span class="pre">nimg</span></code> with lines drawn like in the example:</p>
 <ul class="simple">
 <li><p>use a width of 5 pixels</p></li>
 </ul>
@@ -2450,17 +2450,13 @@ array([5, 9, 4, 8, 6])
 </div>
 <div class="section" id="In-a-dark-integer-night">
 <h2>In a dark integer night<a class="headerlink" href="#In-a-dark-integer-night" title="Permalink to this headline">¶</a></h2>
-<p>Let’s say we want to darken the scene. One simple approach would be to divide all the numbers by two.</p>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
+<p>Let’s say we want to darken the scene. One simple approach would be to divide all the numbers by two:</p>
+<div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-<span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+<span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2468,25 +2464,7 @@ array([5, 9, 4, 8, 6])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_78_0.png" src="../_images/matrices-numpy_numpy-images-sol_78_0.png" />
-</div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_80_0.png" src="../_images/matrices-numpy_numpy-images-sol_80_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_77_0.png" src="../_images/matrices-numpy_numpy-images-sol_77_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -2519,7 +2497,7 @@ array([[104, 104, 105, ...,  58,  59,  58],
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gimg</span> <span class="o">/</span> <span class="mf">3.0</span>
+<span></span><span class="n">gimg</span> <span class="o">/</span> <span class="mf">3.14</span>
 </pre></div>
 </div>
 </div>
@@ -2529,19 +2507,19 @@ array([[104, 104, 105, ...,  58,  59,  58],
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-array([[69.66666667, 69.66666667, 70.        , ..., 39.        ,
-        39.33333333, 39.        ],
-       [71.33333333, 71.33333333, 71.66666667, ..., 37.33333333,
-        38.66666667, 39.        ],
-       [72.33333333, 72.33333333, 72.33333333, ..., 35.        ,
-        36.66666667, 38.        ],
+array([[66.56050955, 66.56050955, 66.87898089, ..., 37.2611465 ,
+        37.57961783, 37.2611465 ],
+       [68.15286624, 68.15286624, 68.47133758, ..., 35.66878981,
+        36.94267516, 37.2611465 ],
+       [69.10828025, 69.10828025, 69.10828025, ..., 33.43949045,
+        35.03184713, 36.30573248],
        ...,
-       [12.        , 11.        , 10.        , ..., 24.        ,
-        22.33333333, 21.33333333],
-       [14.        , 12.        , 10.33333333, ..., 23.33333333,
-        21.66666667, 20.33333333],
-       [12.33333333, 10.33333333,  8.        , ..., 22.66666667,
-        21.        , 20.        ]])
+       [11.46496815, 10.50955414,  9.55414013, ..., 22.92993631,
+        21.33757962, 20.38216561],
+       [13.37579618, 11.46496815,  9.87261146, ..., 22.29299363,
+        20.70063694, 19.42675159],
+       [11.78343949,  9.87261146,  7.6433121 , ..., 21.65605096,
+        20.06369427, 19.10828025]])
 </pre></div></div>
 </div>
 <p>To go back to unsigned bytes, you can use <code class="docutils literal notranslate"><span class="pre">astype</span></code>:</p>
@@ -2586,7 +2564,7 @@ array([[69, 69, 70, ..., 39, 39, 39],
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_88_0.png" src="../_images/matrices-numpy_numpy-images-sol_88_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_85_0.png" src="../_images/matrices-numpy_numpy-images-sol_85_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -2602,7 +2580,7 @@ array([[69, 69, 70, ..., 39, 39, 39],
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_89_0.png" src="../_images/matrices-numpy_numpy-images-sol_89_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_86_0.png" src="../_images/matrices-numpy_numpy-images-sol_86_0.png" />
 </div>
 </div>
 <p>Something really bad happened:</p>
@@ -2631,14 +2609,14 @@ array([[ 53,  53,  54, ..., 217, 218, 217],
 </pre></div></div>
 </div>
 <p>Why do we get values less than &lt; 100 ??</p>
-<p>This is not so weird, technically it’s called integer overflow and it’s the way CPU works with byte sized integers, so most programming languages actually behave like this. In regular Python you don’t notice it because standard Python allows for arbitrary sized integers, but that comes at a big performance cost that Numpy cannot afford, so in a sense we can say Numpy is ‘closer to the metal’ of the CPU.</p>
+<p>This is not so weird, technically it’s called integer overflow and is the way CPU works with byte sized integers, so most programming languages actually behave like this. In regular Python you don’t notice it because standard Python allows for arbitrary sized integers, but that comes at a big performance cost that Numpy cannot afford, so in a sense we can say Numpy is ‘closer to the metal’ of the CPU.</p>
 <p>Let’s see a simpler example:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">ubyte</span><span class="p">)</span>  <span class="c1"># unsigned byte, values from 0 to 255 included</span>
+<span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>  <span class="c1"># unsigned 8 bit byte, values from 0 to 255 included</span>
 </pre></div>
 </div>
 </div>
@@ -2813,7 +2791,7 @@ array([[2, 2, 2],
 <ul class="simple">
 <li><p><strong>DO NOT</strong> exceed 255 value for cells - if you see dark spots in your image where before there was white (i.e. background sky), it means color cycled back to small values!</p></li>
 <li><p><strong>DO NOT</strong> write suff like <code class="docutils literal notranslate"><span class="pre">gimg</span> <span class="pre">+</span> <span class="pre">light</span></code>, this would surely exceed the 255 bound !!</p></li>
-<li><p><strong>MUST</strong> have unsigned bytes as cells type !</p></li>
+<li><p><strong>MUST</strong> have unsigned bytes as cells type</p></li>
 </ul>
 <p><strong>HINT 1</strong>: if direct sum is not the way, which safe operations are there which surely won’t provoke any overflow? <strong>HINT 2</strong>: you will need more than one step to solve the exercise</p>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -2833,7 +2811,7 @@ array([[2, 2, 2],
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_109_0.png" src="../_images/matrices-numpy_numpy-images-sol_109_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_106_0.png" src="../_images/matrices-numpy_numpy-images-sol_106_0.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -2852,14 +2830,14 @@ array([[2, 2, 2],
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_111_0.png" src="../_images/matrices-numpy_numpy-images-sol_111_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_108_0.png" src="../_images/matrices-numpy_numpy-images-sol_108_0.png" />
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="RGB---Get-colorful">
 <h2>RGB - Get colorful<a class="headerlink" href="#RGB---Get-colorful" title="Permalink to this headline">¶</a></h2>
-<p>Let’s get a third dimension. Our new third dimension will have three planes of integers, in this order:</p>
+<p>Let’s get a third dimension for representing colors. Our new third dimension will have three planes of integers, in this order:</p>
 <p>0: <strong>R</strong>ed</p>
 <p>1: <strong>G</strong>reen</p>
 <p>2: <strong>B</strong>lue</p>
@@ -2878,14 +2856,14 @@ array([[2, 2, 2],
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dbbe940&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516fcc940&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_114_1.png" src="../_images/matrices-numpy_numpy-images-sol_114_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_110_1.png" src="../_images/matrices-numpy_numpy-images-sol_110_1.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -2924,6 +2902,7 @@ numpy.ndarray
 (1080, 1440, 3)
 </pre></div></div>
 </div>
+<p>Each pixel is represented by three integer values:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
@@ -3065,15 +3044,12 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="section" id="Exercise---Focus---top-left">
 <h2>Exercise - Focus - top left<a class="headerlink" href="#Exercise---Focus---top-left" title="Permalink to this headline">¶</a></h2>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
+<div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[:</span><span class="mi">100</span><span class="p">,:</span><span class="mi">100</span><span class="p">,:])</span>
+<span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[:</span><span class="mi">100</span><span class="p">,:</span><span class="mi">100</span><span class="p">,:])</span>
 </pre></div>
 </div>
 </div>
@@ -3083,41 +3059,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888db7d668&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516f8c588&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_125_1.png" src="../_images/matrices-numpy_numpy-images-sol_125_1.png" />
-</div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
-</div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888db7d668&gt;
-</pre></div></div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_127_1.png" src="../_images/matrices-numpy_numpy-images-sol_127_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_121_1.png" src="../_images/matrices-numpy_numpy-images-sol_121_1.png" />
 </div>
 </div>
 </div>
@@ -3141,14 +3090,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888db9c240&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516fa6978&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_130_1.png" src="../_images/matrices-numpy_numpy-images-sol_130_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_124_1.png" src="../_images/matrices-numpy_numpy-images-sol_124_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3168,14 +3117,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888db9c240&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516fa6978&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_132_1.png" src="../_images/matrices-numpy_numpy-images-sol_132_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_126_1.png" src="../_images/matrices-numpy_numpy-images-sol_126_1.png" />
 </div>
 </div>
 </div>
@@ -3199,14 +3148,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dbe0908&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd51714fd30&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_135_1.png" src="../_images/matrices-numpy_numpy-images-sol_135_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_129_1.png" src="../_images/matrices-numpy_numpy-images-sol_129_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3226,14 +3175,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dbe0908&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd51714fd30&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_137_1.png" src="../_images/matrices-numpy_numpy-images-sol_137_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_131_1.png" src="../_images/matrices-numpy_numpy-images-sol_131_1.png" />
 </div>
 </div>
 </div>
@@ -3257,14 +3206,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dcefcf8&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd517198d68&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_140_1.png" src="../_images/matrices-numpy_numpy-images-sol_140_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_134_1.png" src="../_images/matrices-numpy_numpy-images-sol_134_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3284,14 +3233,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dcefcf8&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd517198d68&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_142_1.png" src="../_images/matrices-numpy_numpy-images-sol_142_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_136_1.png" src="../_images/matrices-numpy_numpy-images-sol_136_1.png" />
 </div>
 </div>
 </div>
@@ -3315,14 +3264,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dde2160&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5170b9518&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_145_1.png" src="../_images/matrices-numpy_numpy-images-sol_145_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_139_1.png" src="../_images/matrices-numpy_numpy-images-sol_139_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3342,14 +3291,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dde2160&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5170b9518&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_147_1.png" src="../_images/matrices-numpy_numpy-images-sol_147_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_141_1.png" src="../_images/matrices-numpy_numpy-images-sol_141_1.png" />
 </div>
 </div>
 </div>
@@ -3373,14 +3322,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dc2c9e8&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5171d7cc0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_150_1.png" src="../_images/matrices-numpy_numpy-images-sol_150_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_144_1.png" src="../_images/matrices-numpy_numpy-images-sol_144_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3400,14 +3349,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dc2c9e8&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5171d7cc0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_152_1.png" src="../_images/matrices-numpy_numpy-images-sol_152_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_146_1.png" src="../_images/matrices-numpy_numpy-images-sol_146_1.png" />
 </div>
 </div>
 </div>
@@ -3431,14 +3380,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dc61630&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd517094390&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_155_1.png" src="../_images/matrices-numpy_numpy-images-sol_155_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_149_1.png" src="../_images/matrices-numpy_numpy-images-sol_149_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3458,14 +3407,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dc61630&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd517094390&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_157_1.png" src="../_images/matrices-numpy_numpy-images-sol_157_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_151_1.png" src="../_images/matrices-numpy_numpy-images-sol_151_1.png" />
 </div>
 </div>
 </div>
@@ -3489,14 +3438,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dd52a20&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516f37a58&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_160_1.png" src="../_images/matrices-numpy_numpy-images-sol_160_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_154_1.png" src="../_images/matrices-numpy_numpy-images-sol_154_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3516,14 +3465,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dd52a20&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516f37a58&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_162_1.png" src="../_images/matrices-numpy_numpy-images-sol_162_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_156_1.png" src="../_images/matrices-numpy_numpy-images-sol_156_1.png" />
 </div>
 </div>
 </div>
@@ -3547,14 +3496,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dda9198&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd517172080&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_165_1.png" src="../_images/matrices-numpy_numpy-images-sol_165_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_159_1.png" src="../_images/matrices-numpy_numpy-images-sol_159_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3574,14 +3523,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dda9198&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd517172080&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_167_1.png" src="../_images/matrices-numpy_numpy-images-sol_167_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_161_1.png" src="../_images/matrices-numpy_numpy-images-sol_161_1.png" />
 </div>
 </div>
 </div>
@@ -3605,14 +3554,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dc8a7f0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5171c26d8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_170_1.png" src="../_images/matrices-numpy_numpy-images-sol_170_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_164_1.png" src="../_images/matrices-numpy_numpy-images-sol_164_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3632,14 +3581,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dc8a7f0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5171c26d8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_172_1.png" src="../_images/matrices-numpy_numpy-images-sol_172_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_166_1.png" src="../_images/matrices-numpy_numpy-images-sol_166_1.png" />
 </div>
 </div>
 </div>
@@ -3667,14 +3616,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888db3ccc0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516f50c50&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_175_1.png" src="../_images/matrices-numpy_numpy-images-sol_175_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_169_1.png" src="../_images/matrices-numpy_numpy-images-sol_169_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3694,14 +3643,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888db3ccc0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516f50c50&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_177_1.png" src="../_images/matrices-numpy_numpy-images-sol_177_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_171_1.png" src="../_images/matrices-numpy_numpy-images-sol_171_1.png" />
 </div>
 </div>
 </div>
@@ -3729,14 +3678,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dad6358&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516ee52e8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_180_1.png" src="../_images/matrices-numpy_numpy-images-sol_180_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_174_1.png" src="../_images/matrices-numpy_numpy-images-sol_174_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3756,14 +3705,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888dad6358&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516ee52e8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_182_1.png" src="../_images/matrices-numpy_numpy-images-sol_182_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_176_1.png" src="../_images/matrices-numpy_numpy-images-sol_176_1.png" />
 </div>
 </div>
 </div>
@@ -3791,14 +3740,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888da8e9b0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516e9d940&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_185_1.png" src="../_images/matrices-numpy_numpy-images-sol_185_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_179_1.png" src="../_images/matrices-numpy_numpy-images-sol_179_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3818,14 +3767,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888da8e9b0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516e9d940&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_187_1.png" src="../_images/matrices-numpy_numpy-images-sol_187_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_181_1.png" src="../_images/matrices-numpy_numpy-images-sol_181_1.png" />
 </div>
 </div>
 </div>
@@ -3852,14 +3801,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888da4ae10&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516e5ada0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_190_1.png" src="../_images/matrices-numpy_numpy-images-sol_190_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_184_1.png" src="../_images/matrices-numpy_numpy-images-sol_184_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3879,14 +3828,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888da4ae10&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516e5ada0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_192_1.png" src="../_images/matrices-numpy_numpy-images-sol_192_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_186_1.png" src="../_images/matrices-numpy_numpy-images-sol_186_1.png" />
 </div>
 </div>
 </div>
@@ -3913,14 +3862,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888da884e0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516e97438&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_195_1.png" src="../_images/matrices-numpy_numpy-images-sol_195_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_189_1.png" src="../_images/matrices-numpy_numpy-images-sol_189_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -3940,14 +3889,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888da884e0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516e97438&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_197_1.png" src="../_images/matrices-numpy_numpy-images-sol_197_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_191_1.png" src="../_images/matrices-numpy_numpy-images-sol_191_1.png" />
 </div>
 </div>
 </div>
@@ -3974,14 +3923,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888da40b00&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516e51a90&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_200_1.png" src="../_images/matrices-numpy_numpy-images-sol_200_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_194_1.png" src="../_images/matrices-numpy_numpy-images-sol_194_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4001,20 +3950,20 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888da40b00&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516e51a90&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_202_1.png" src="../_images/matrices-numpy_numpy-images-sol_202_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_196_1.png" src="../_images/matrices-numpy_numpy-images-sol_196_1.png" />
 </div>
 </div>
 </div>
 <div class="section" id="Exercise---Feeling-Gray-again">
 <h2>Exercise - Feeling Gray again<a class="headerlink" href="#Exercise---Feeling-Gray-again" title="Permalink to this headline">¶</a></h2>
-<p>Given an RGB image, reset all the values</p>
+<p>Given an RGB image, set all the values equal to red channel</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
@@ -4091,7 +4040,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_205_1.png" src="../_images/matrices-numpy_numpy-images-sol_205_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_199_1.png" src="../_images/matrices-numpy_numpy-images-sol_199_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4165,7 +4114,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_207_1.png" src="../_images/matrices-numpy_numpy-images-sol_207_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_201_1.png" src="../_images/matrices-numpy_numpy-images-sol_201_1.png" />
 </div>
 </div>
 </div>
@@ -4187,14 +4136,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888d9b84e0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd516dc8470&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_209_1.png" src="../_images/matrices-numpy_numpy-images-sol_209_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_203_1.png" src="../_images/matrices-numpy_numpy-images-sol_203_1.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -4281,14 +4230,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f888d972e80&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd5140dde10&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_215_1.png" src="../_images/matrices-numpy_numpy-images-sol_215_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_209_1.png" src="../_images/matrices-numpy_numpy-images-sol_209_1.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -4306,14 +4255,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f8889c4b550&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd51409e470&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_216_1.png" src="../_images/matrices-numpy_numpy-images-sol_216_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_210_1.png" src="../_images/matrices-numpy_numpy-images-sol_210_1.png" />
 </div>
 </div>
 </div>
@@ -4340,14 +4289,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f8889c04cf8&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd514057c88&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_219_1.png" src="../_images/matrices-numpy_numpy-images-sol_219_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_213_1.png" src="../_images/matrices-numpy_numpy-images-sol_213_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4369,14 +4318,14 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f8889c04cf8&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd514057c88&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_221_1.png" src="../_images/matrices-numpy_numpy-images-sol_221_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_215_1.png" src="../_images/matrices-numpy_numpy-images-sol_215_1.png" />
 </div>
 </div>
 </div>
@@ -4410,14 +4359,14 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f8889bc23c8&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd50efdc358&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_224_2.png" src="../_images/matrices-numpy_numpy-images-sol_224_2.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_218_2.png" src="../_images/matrices-numpy_numpy-images-sol_218_2.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4446,14 +4395,14 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f8889bc23c8&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd50efdc358&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_226_2.png" src="../_images/matrices-numpy_numpy-images-sol_226_2.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_220_2.png" src="../_images/matrices-numpy_numpy-images-sol_220_2.png" />
 </div>
 </div>
 </div>
@@ -4479,14 +4428,14 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f8889b7e9b0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd50ef99940&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_229_1.png" src="../_images/matrices-numpy_numpy-images-sol_229_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_223_1.png" src="../_images/matrices-numpy_numpy-images-sol_223_1.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4507,14 +4456,14 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7f8889b7e9b0&gt;
+&lt;matplotlib.image.AxesImage at 0x7fd50ef99940&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_231_1.png" src="../_images/matrices-numpy_numpy-images-sol_231_1.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_225_1.png" src="../_images/matrices-numpy_numpy-images-sol_225_1.png" />
 </div>
 </div>
 </div>
@@ -4559,7 +4508,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_238_0.png" src="../_images/matrices-numpy_numpy-images-sol_238_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_232_0.png" src="../_images/matrices-numpy_numpy-images-sol_232_0.png" />
 </div>
 </div>
 <p>Then apply the fade - notice that by ‘applying’ we mean subtracting the fade (so white in the fade will actually correspond to dark in the picture)</p>
@@ -4579,7 +4528,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_241_0.png" src="../_images/matrices-numpy_numpy-images-sol_241_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_235_0.png" src="../_images/matrices-numpy_numpy-images-sol_235_0.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4597,7 +4546,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_243_0.png" src="../_images/matrices-numpy_numpy-images-sol_243_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_237_0.png" src="../_images/matrices-numpy_numpy-images-sol_237_0.png" />
 </div>
 </div>
 </div>
@@ -4642,7 +4591,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_249_0.png" src="../_images/matrices-numpy_numpy-images-sol_249_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_243_0.png" src="../_images/matrices-numpy_numpy-images-sol_243_0.png" />
 </div>
 </div>
 <p>Then apply the fade:</p>
@@ -4662,7 +4611,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_252_0.png" src="../_images/matrices-numpy_numpy-images-sol_252_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_246_0.png" src="../_images/matrices-numpy_numpy-images-sol_246_0.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4680,7 +4629,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/matrices-numpy_numpy-images-sol_254_0.png" src="../_images/matrices-numpy_numpy-images-sol_254_0.png" />
+<img alt="../_images/matrices-numpy_numpy-images-sol_248_0.png" src="../_images/matrices-numpy_numpy-images-sol_248_0.png" />
 </div>
 </div>
 </div>
