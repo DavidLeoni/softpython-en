@@ -50,6 +50,8 @@ B - Data analysis
     Binary relations <binary-relations/binary-relations-sol.ipynb>
     Visualization <visualization/visualization-sol.ipynb>
     Visualization - The AlgoRythm Opera Challenge <visualization/algorythm-opera-chal.ipynb>
+    Analytics with Pandas <pandas/pandas-sol.ipynb>
+    Analytics with Pandas Case study: EURES Job Offers <pandas/eures-jobs-sol.ipynb>
         
 |space|
 ==========
