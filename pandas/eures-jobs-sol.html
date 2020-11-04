@@ -1770,7 +1770,7 @@ language. We will try to convert it to a dataset with more columns and translate
 </div>
 <div class="section" id="offerte-dataset">
 <h2>offerte dataset<a class="headerlink" href="#offerte-dataset" title="Permalink to this headline">¶</a></h2>
-<p>We will load the dataset <a class="reference external" href="data/offerte-lavoro.csv">data/offerte-lavoro.csv</a> into Pandas:</p>
+<p>We will load the dataset <a class="reference external" href="offerte-lavoro.csv">offerte-lavoro.csv</a> into Pandas:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
@@ -1917,7 +1917,8 @@ memory usage: 3.4+ KB
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">replacements</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Reference&#39;</span><span class="p">,</span><span class="s1">&#39;Workplace&#39;</span><span class="p">,</span><span class="s1">&#39;Positions&#39;</span><span class="p">,</span><span class="s1">&#39;Qualification&#39;</span><span class="p">,</span><span class="s1">&#39;Contract type&#39;</span><span class="p">,</span><span class="s1">&#39;Required languages&#39;</span><span class="p">,</span><span class="s1">&#39;Gross retribution&#39;</span><span class="p">,</span><span class="s1">&#39;Offer description&#39;</span><span class="p">]</span>
+<span></span><span class="n">replacements</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Reference&#39;</span><span class="p">,</span><span class="s1">&#39;Workplace&#39;</span><span class="p">,</span><span class="s1">&#39;Positions&#39;</span><span class="p">,</span><span class="s1">&#39;Qualification&#39;</span><span class="p">,</span><span class="s1">&#39;Contract type&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Required languages&#39;</span><span class="p">,</span><span class="s1">&#39;Gross retribution&#39;</span><span class="p">,</span><span class="s1">&#39;Offer description&#39;</span><span class="p">]</span>
 <span class="n">diz</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">offerte</span><span class="p">:</span>
@@ -4675,7 +4676,7 @@ memory usage: 3.4+ KB
       <td>[France]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'english': 'C1', 'french': 'C1', 'italian': '...</td>
+      <td>{'french': 'C1', 'english': 'C1', 'italian': '...</td>
     </tr>
     <tr>
       <th>2</th>
@@ -4810,7 +4811,7 @@ memory usage: 3.4+ KB
       <td>[Switzerland]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'italian': 'B2', 'german': 'C1', 'french': 'B2'}</td>
+      <td>{'french': 'B2', 'german': 'C1', 'italian': 'B2'}</td>
     </tr>
     <tr>
       <th>11</th>
@@ -4825,7 +4826,7 @@ memory usage: 3.4+ KB
       <td>[]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'english': 'C1', 'german': 'C1', 'italian': '...</td>
+      <td>{'spanish': 'B2', 'german': 'C1', 'italian': '...</td>
     </tr>
     <tr>
       <th>12</th>
@@ -4870,7 +4871,7 @@ memory usage: 3.4+ KB
       <td>[Austria]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'english': 'C1', 'german': 'C1'}</td>
+      <td>{'german': 'C1', 'english': 'C1'}</td>
     </tr>
     <tr>
       <th>15</th>
@@ -5020,7 +5021,7 @@ memory usage: 3.4+ KB
       <td>[France]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'italian': 'C1', 'french': 'C1'}</td>
+      <td>{'french': 'C1', 'italian': 'C1'}</td>
     </tr>
     <tr>
       <th>25</th>
@@ -5065,7 +5066,7 @@ memory usage: 3.4+ KB
       <td>[Norway]</td>
       <td>5.0</td>
       <td>9.0</td>
-      <td>{'english': 'C1', 'german': 'C1', 'italian': '...</td>
+      <td>{'german': 'C1', 'italian': 'B2', 'english': '...</td>
     </tr>
     <tr>
       <th>28</th>
@@ -5080,7 +5081,7 @@ memory usage: 3.4+ KB
       <td>[]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'english': 'C1', 'german': 'C1', 'italian': '...</td>
+      <td>{'spanish': 'B2', 'english': 'C1', 'italian': ...</td>
     </tr>
     <tr>
       <th>29</th>
@@ -5140,7 +5141,7 @@ memory usage: 3.4+ KB
       <td>[France]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'italian': 'C1', 'french': 'C1'}</td>
+      <td>{'french': 'C1', 'italian': 'C1'}</td>
     </tr>
     <tr>
       <th>33</th>
@@ -5215,7 +5216,7 @@ memory usage: 3.4+ KB
       <td>[Spain]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'french': 'C1', 'italian': 'C1', 'spanish': '...</td>
+      <td>{'french': 'C1', 'spanish': 'B2', 'italian': '...</td>
     </tr>
     <tr>
       <th>38</th>
@@ -5275,7 +5276,7 @@ memory usage: 3.4+ KB
       <td>[]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'english': 'B2', 'german': 'B2'}</td>
+      <td>{'german': 'B2', 'english': 'B2'}</td>
     </tr>
     <tr>
       <th>42</th>
@@ -5380,7 +5381,7 @@ memory usage: 3.4+ KB
       <td>[Cyprus, Greece, Spain]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'english': 'B2', 'german': 'B2'}</td>
+      <td>{'german': 'B2', 'english': 'B2'}</td>
     </tr>
     <tr>
       <th>49</th>
@@ -5395,7 +5396,7 @@ memory usage: 3.4+ KB
       <td>[]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'english': 'B2', 'german': 'B2'}</td>
+      <td>{'german': 'B2', 'english': 'B2'}</td>
     </tr>
     <tr>
       <th>50</th>
@@ -5410,7 +5411,7 @@ memory usage: 3.4+ KB
       <td>[France]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'english': 'C1', 'italian': 'C1', 'french': '...</td>
+      <td>{'french': 'C1', 'english': 'C1', 'italian': '...</td>
     </tr>
     <tr>
       <th>51</th>
@@ -5425,7 +5426,7 @@ memory usage: 3.4+ KB
       <td>[Belgium]</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>{'english': 'C1', 'italian': 'C1', 'french': '...</td>
+      <td>{'french': 'C1', 'english': 'C1', 'italian': '...</td>
     </tr>
     <tr>
       <th>52</th>
