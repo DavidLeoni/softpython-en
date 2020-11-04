@@ -19,7 +19,7 @@
     </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>EURES job offers &mdash; SoftPython</title>
+  <title>Pandas - EURES job offers case study &mdash; SoftPython</title>
   
 
   
@@ -55,6 +55,7 @@
   <link rel="stylesheet" href="../_static/css/softpython-theme.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Pandas - Italian poets challenge" href="italian-poets-chal.html" />
     <link rel="prev" title="Pandas solutions" href="pandas-sol.html" /> 
 </head>
 
@@ -1400,6 +1401,26 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="italian-poets-chal.html">Analytics with Pandas Challenge: Italian poets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Download-exercises">Download exercises</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="italian-poets-chal.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Tell-me-more">Tell me more</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Getting-in-shape">Getting in shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#10-rows">10 rows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Born-in-Verona">Born in Verona</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#How-many-people-in-Verona">How many people in Verona</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Python-is-everywhere">Python is everywhere</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Verona-after-1500">Verona after 1500</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#First-Antonio">First Antonio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Some-Antonio">Some Antonio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Cesares-during-1800">Cesares during 1800</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Sorting">Sorting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Where-poets-are-born">Where poets are born</a></li>
+<li class="toctree-l3"><a class="reference internal" href="italian-poets-chal.html#Duplicated-poets">Duplicated poets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../toc.html#space"> </a></li>
@@ -1454,7 +1475,7 @@
     
         <li><a href="../toc.html">A - Foundations</a> &raquo;</li>
     
-    <li>EURES job offers</li>
+    <li>Pandas - EURES job offers case study</li>
     -->
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -1715,8 +1736,8 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="EURES-job-offers">
-<h1>EURES job offers<a class="headerlink" href="#EURES-job-offers" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Pandas---EURES-job-offers-case-study">
+<h1>Pandas - EURES job offers case study<a class="headerlink" href="#Pandas---EURES-job-offers-case-study" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="Download-exercises-and-solution">
 <h2><a class="reference external" href="../_static/generated/pandas.zip">Download exercises and solution</a><a class="headerlink" href="#Download-exercises-and-solution" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="What-to-do">
@@ -1733,6 +1754,7 @@ div.rendered_html tbody tr:hover {
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pandas
     eures-jobs.ipynb
     eures-jobs-sol.ipynb
+    italian-poets-chal.ipynb
     pandas.ipynb
     pandas-sol.ipynb
     jupman.py
@@ -1758,8 +1780,8 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-<p>After exiting your school prison, you will look for a job and if you go in Europe you will be shocked to discover a great variety of languages are spoken. Many job listings are provided by <a class="reference external" href="https://ec.europa.eu/eures/public/homepage">Eures</a> portal, which is easily searchable with many fields on which you can filter. For this exercise we will use a test dataset which was generated just for a hackaton: it is a crude italian version of the job offers data, with many fields expressed in natural
-language. We will try to convert it to a dataset with more columns and translate some terms to English.</p>
+<p>After exiting your school prison, when looking for a job in Europe you will be shocked to discover a great variety of languages are spoken. Many job listings are provided by <a class="reference external" href="https://ec.europa.eu/eures/public/homepage">Eures</a> portal, which is easily searchable with many fields on which you can filter. For this exercise we will use a test dataset which was generated just for a hackaton: it is a crude italian version of the job offers data, with many fields expressed in natural language. We
+will try to convert it to a dataset with more columns and translate some terms to English.</p>
 <p>Data provider: <a class="reference external" href="https://dati.trentino.it/dataset/offerte-di-lavoro-eures-test-odhb2019">Autonomous Province of Trento</a></p>
 <p>License: <a class="reference external" href="http://creativecommons.org/publicdomain/zero/1.0/deed.it">Creative Commons Zero 1.0</a></p>
 <div class="admonition warning">
@@ -5458,6 +5480,8 @@ memory usage: 3.4+ KB
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="italian-poets-chal.html" class="btn btn-neutral float-right" title="Pandas - Italian poets challenge" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="pandas-sol.html" class="btn btn-neutral float-left" title="Pandas solutions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
