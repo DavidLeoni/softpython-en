@@ -52,6 +52,7 @@ B - Data analysis
     Visualization - The AlgoRythm Opera Challenge <visualization/algorythm-opera-chal.ipynb>
     Analytics with Pandas <pandas/pandas-sol.ipynb>
     Analytics with Pandas Case study: EURES Job Offers <pandas/eures-jobs-sol.ipynb>
+    Analytics with Pandas Challenge: Italian poets <pandas/italian-poets-chal.ipynb>
         
 |space|
 ==========
