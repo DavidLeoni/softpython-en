@@ -121,9 +121,8 @@ def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
     
     merge(G.graph['node'], {'color':'blue', 'fontcolor':'blue'})
     merge(G.graph['edge'], {'arrowsize': '0.6', 'splines': 'curved', 'fontcolor':'brown'})
-    
-    # for random layout problems, see https://github.com/DavidLeoni/softpython-en/issues/2
-    merge(G.graph['graph'], {'scale': '3', 'start':'random0', 'style':'dotted, rounded',}) 
+        
+    merge(G.graph['graph'], {'scale': '3', 'style':'dotted, rounded',}) 
 
     # adding attributes to edges in multigraphs is more complicated but see
     # https://stackoverflow.com/a/26694158                    
