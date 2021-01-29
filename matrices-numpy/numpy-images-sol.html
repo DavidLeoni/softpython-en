@@ -131,7 +131,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../references.html#Allen-Downey---Think-Python">Allen Downey - Think Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#Foundations-of-Python-Programming">Foundations of Python Programming</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#W3Resources-website">W3Resources website</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Software-Carpentry">Software Carpentry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Edabit">Edabit</a><ul>
@@ -148,7 +148,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../references.html#LeetCode---Sets-and-Dictionaries">LeetCode - Sets and Dictionaries</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../references.html#LeetCode---Matrices">LeetCode - Matrices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#LeetCode---Matrices">LeetCode - Matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#Leet-code---Graphs">Leet code - Graphs</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#HackerRank">HackerRank</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Geeks-for-Geeks">Geeks for Geeks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Dive-into-Python-3">Dive into Python 3</a></li>
@@ -1090,7 +1093,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#flip"><code class="docutils literal notranslate"><span class="pre">flip</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#Exercise---Too-many">Exercise - Too many</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Exercise---Hall-of-mirrors">Exercise - Hall of mirrors</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---The-nose-from-above">Exercise - The nose from above</a></li>
 </ul>
 </li>
@@ -1818,7 +1821,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5172e0128&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f21a128&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1848,7 +1851,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd51725dc88&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f195cc0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1917,7 +1920,7 @@ numpy.ndarray
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5172227f0&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f15b828&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -1943,7 +1946,7 @@ numpy.ndarray
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5171dcda0&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f115e80&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2146,8 +2149,8 @@ numpy.ndarray
 <img alt="../_images/matrices-numpy_numpy-images-sol_36_0.png" src="../_images/matrices-numpy_numpy-images-sol_36_0.png" />
 </div>
 </div>
-<div class="section" id="Exercise---Too-many">
-<h3>Exercise - Too many<a class="headerlink" href="#Exercise---Too-many" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="Exercise---Hall-of-mirrors">
+<h3>Exercise - Hall of mirrors<a class="headerlink" href="#Exercise---Hall-of-mirrors" title="Permalink to this headline">¶</a></h3>
 <p>Try to replicate somehow the head, pointing it in different directions as in the example</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -2645,7 +2648,7 @@ array([[69, 69, 70, ..., 39, 39, 39],
        [12, 10,  8, ..., 22, 21, 20]], dtype=uint8)
 </pre></div></div>
 </div>
-<p>We used division, because it guarantees we will never go below zero, which is important when working with unsigned bytes as we’re doing here. Let’s see what happens when we violate the datatype bounds.</p>
+<p>We used division because it guarantees we will never go below zero, which is important when working with unsigned bytes as we’re doing here. Let’s see what happens when we violate the datatype bounds.</p>
 <div class="section" id="The-Integer-Shining">
 <h3>The Integer Shining<a class="headerlink" href="#The-Integer-Shining" title="Permalink to this headline">¶</a></h3>
 <p>Intuitevely, if we want more light we can try increasing the matrices values but something terrible hides in the shadows….</p>
@@ -2888,10 +2891,11 @@ array([[2, 2, 2],
 <p>Now try writing some code which enhances scene luminosity by adding <code class="docutils literal notranslate"><span class="pre">light=125</span></code> without distortions (you may still see some pixellation due to the fact we have taken just one color channel from the original image)</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> exceed 255 value for cells - if you see dark spots in your image where before there was white (i.e. background sky), it means color cycled back to small values!</p></li>
-<li><p><strong>DO NOT</strong> write suff like <code class="docutils literal notranslate"><span class="pre">gimg</span> <span class="pre">+</span> <span class="pre">light</span></code>, this would surely exceed the 255 bound !!</p></li>
+<li><p><strong>DO NOT</strong> write stuff like <code class="docutils literal notranslate"><span class="pre">gimg</span> <span class="pre">+</span> <span class="pre">light</span></code>, this would surely exceed the 255 bound !!</p></li>
 <li><p><strong>MUST</strong> have unsigned bytes as cells type</p></li>
 </ul>
-<p><strong>HINT 1</strong>: if direct sum is not the way, which safe operations are there which surely won’t provoke any overflow? <strong>HINT 2</strong>: you will need more than one step to solve the exercise</p>
+<p><strong>HINT 1</strong>: if direct sum is not the way, which safe operations are there which surely won’t provoke any overflow?</p>
+<p><strong>HINT 2</strong>: you will need more than one step to solve the exercise</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
@@ -2954,7 +2958,7 @@ array([[2, 2, 2],
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516fcc940&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ef05978&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3157,7 +3161,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516f8c588&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778eec3630&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3188,7 +3192,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516fa6978&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778eed9438&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3215,7 +3219,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516fa6978&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778eed9438&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3246,7 +3250,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd51714fd30&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ef1d828&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3273,7 +3277,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd51714fd30&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ef1d828&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3304,7 +3308,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd517198d68&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f060ef0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3331,7 +3335,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd517198d68&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f060ef0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3362,7 +3366,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5170b9518&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f135860&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3389,7 +3393,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5170b9518&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f135860&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3420,7 +3424,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5171d7cc0&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778efdc0b8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3447,7 +3451,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5171d7cc0&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778efdc0b8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3478,7 +3482,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd517094390&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ef58f28&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3505,7 +3509,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd517094390&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ef58f28&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3536,7 +3540,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516f37a58&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f008a90&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3563,7 +3567,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516f37a58&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f008a90&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3594,7 +3598,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd517172080&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f0480b8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3621,7 +3625,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd517172080&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778f0480b8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3652,7 +3656,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5171c26d8&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778efac7b8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3679,7 +3683,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5171c26d8&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778efac7b8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3714,7 +3718,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516f50c50&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ee85c88&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3741,7 +3745,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516f50c50&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ee85c88&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3776,7 +3780,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516ee52e8&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ee1e320&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3803,7 +3807,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516ee52e8&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ee1e320&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3838,7 +3842,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516e9d940&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778edd8978&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3865,7 +3869,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516e9d940&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778edd8978&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3899,7 +3903,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516e5ada0&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ee12dd8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3926,7 +3930,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516e5ada0&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ee12dd8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3960,7 +3964,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516e97438&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778edcf470&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3987,7 +3991,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516e97438&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778edcf470&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4021,7 +4025,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516e51a90&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ed89b00&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4048,7 +4052,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516e51a90&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ed89b00&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4234,7 +4238,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd516dc8470&gt;
+&lt;matplotlib.image.AxesImage at 0x7f778ed014a8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4328,7 +4332,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd5140dde10&gt;
+&lt;matplotlib.image.AxesImage at 0x7f7786fe5e80&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4353,7 +4357,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd51409e470&gt;
+&lt;matplotlib.image.AxesImage at 0x7f7786fa54a8&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4387,7 +4391,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd514057c88&gt;
+&lt;matplotlib.image.AxesImage at 0x7f7786f5ecc0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4416,7 +4420,7 @@ array([209, 223, 236], dtype=uint8)
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd514057c88&gt;
+&lt;matplotlib.image.AxesImage at 0x7f7786f5ecc0&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4457,7 +4461,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd50efdc358&gt;
+&lt;matplotlib.image.AxesImage at 0x7f7786f1c390&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4493,7 +4497,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd50efdc358&gt;
+&lt;matplotlib.image.AxesImage at 0x7f7786f1c390&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4526,7 +4530,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd50ef99940&gt;
+&lt;matplotlib.image.AxesImage at 0x7f7786ed9978&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4554,7 +4558,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;matplotlib.image.AxesImage at 0x7fd50ef99940&gt;
+&lt;matplotlib.image.AxesImage at 0x7f7786ed9978&gt;
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4753,7 +4757,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright # CC-BY 2017 - 2020, David Leoni, Alessio Zamboni, Marco Caresia
+        &copy; Copyright # CC-BY 2017 - 2021, David Leoni, Alessio Zamboni, Marco Caresia
 
     </p>
   </div>

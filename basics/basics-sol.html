@@ -131,7 +131,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../references.html#Allen-Downey---Think-Python">Allen Downey - Think Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#Foundations-of-Python-Programming">Foundations of Python Programming</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#W3Resources-website">W3Resources website</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Software-Carpentry">Software Carpentry</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Edabit">Edabit</a><ul>
@@ -148,7 +148,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../references.html#LeetCode---Sets-and-Dictionaries">LeetCode - Sets and Dictionaries</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../references.html#LeetCode---Matrices">LeetCode - Matrices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html#LeetCode---Matrices">LeetCode - Matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#Leet-code---Graphs">Leet code - Graphs</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#HackerRank">HackerRank</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Geeks-for-Geeks">Geeks for Geeks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../references.html#Dive-into-Python-3">Dive into Python 3</a></li>
@@ -1090,7 +1093,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../matrices-numpy/numpy-images-sol.html#flip"><code class="docutils literal notranslate"><span class="pre">flip</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/numpy-images-sol.html#Exercise---Too-many">Exercise - Too many</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/numpy-images-sol.html#Exercise---Hall-of-mirrors">Exercise - Hall of mirrors</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/numpy-images-sol.html#Exercise---The-nose-from-above">Exercise - The nose from above</a></li>
 </ul>
 </li>
@@ -2093,10 +2096,10 @@ str
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmf422c644-ae78-44f9-b594-063027727857" type="application/json" >
-    {"code": " \nflowers = 4   \n\nx = flowers + 1\n\nflowers = x", "trace": [{"stdout": "", "func_name": "<module>", "line": 2, "ordered_globals": [], "event": "step_line", "stack_to_render": [], "heap": {}, "globals": {}}, {"stdout": "", "func_name": "<module>", "line": 4, "ordered_globals": ["flowers"], "event": "step_line", "stack_to_render": [], "heap": {}, "globals": {"flowers": 4}}, {"stdout": "", "func_name": "<module>", "line": 6, "ordered_globals": ["flowers", "x"], "event": "step_line", "stack_to_render": [], "heap": {}, "globals": {"x": 5, "flowers": 4}}, {"stdout": "", "func_name": "<module>", "line": 6, "ordered_globals": ["flowers", "x"], "event": "return", "stack_to_render": [], "heap": {}, "globals": {"x": 5, "flowers": 5}}]}
+<script id="json-jm5fce18cd-c29b-4a1d-9ab0-da1cbb953005" type="application/json" >
+    {"code": " \nflowers = 4   \n\nx = flowers + 1\n\nflowers = x", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"flowers": 4}, "ordered_globals": ["flowers"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"flowers": 4, "x": 5}, "ordered_globals": ["flowers", "x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"flowers": 5, "x": 5}, "ordered_globals": ["flowers", "x"], "stack_to_render": [], "heap": {}, "stdout": ""}]}
 </script>
-<div id="jmf422c644-ae78-44f9-b594-063027727857" class="pytutorVisualizer"> </div>
+<div id="jm5fce18cd-c29b-4a1d-9ab0-da1cbb953005" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2116,12 +2119,12 @@ str
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmf422c644-ae78-44f9-b594-063027727857').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm5fce18cd-c29b-4a1d-9ab0-da1cbb953005').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmf422c644-ae78-44f9-b594-063027727857',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm5fce18cd-c29b-4a1d-9ab0-da1cbb953005',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3410,7 +3413,7 @@ In a single journey we can transport at most 4 tons
 </div>
 <div class="section" id="Exercise---armchairs">
 <h3>Exercise - armchairs<a class="headerlink" href="#Exercise---armchairs" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ The tycoon De Industrionis owns to factories of armchairs, one in Belluno city and one in Rovigo. To make an armchair three main components are needed: a mattress, a seatback and a cover. Each factory produces all required components, taking a certain time to produce each component:</p>
+<p>✪✪ The tycoon De Industrionis owns two factories of armchairs, one in Belluno city and one in Rovigo. To make an armchair three main components are needed: a mattress, a seatback and a cover. Each factory produces all required components, taking a certain time to produce each component:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
@@ -3609,7 +3612,7 @@ True
 </div>
 <div class="section" id="Booleans---Questions-with-costants">
 <h3>Booleans - Questions with costants<a class="headerlink" href="#Booleans---Questions-with-costants" title="Permalink to this headline">¶</a></h3>
-<p><strong>QUESTION</strong>: For each of the following boolean expressions, try to guess the result (<em>before</em> guess, and <em>then</em> try them !):</p>
+<p><strong>QUESTION</strong>: For each of the following boolean expressions, try guessing the result (<em>before</em> guess, and <em>then</em> try them !):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
 </pre></div>
@@ -4536,7 +4539,7 @@ True
 </div>
 <div class="section" id="Real-numbers">
 <h2>Real numbers<a class="headerlink" href="#Real-numbers" title="Permalink to this headline">¶</a></h2>
-<p>Python saves the real numbers (floating point numbers) in 64 bit of information divided by sign, expnonent and mantissa (also called significand). Let’s see an example:</p>
+<p>Python saves the real numbers (floating point numbers) in 64 bit of information divided by sign, exponent and mantissa (also called significand). Let’s see an example:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
@@ -4576,7 +4579,7 @@ float
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: you must use the dot instead of comma!</strong></p>
 <p>So you will write 3.14 instead of 3,14</p>
-<p>Be very careful whenever you copy numbers from documents in latin languages, they might contain very insidious commas!</p>
+<p>Be very careful, whenever you copy numbers from documents in latin languages, they might contain very insidious commas!</p>
 </div>
 <div class="section" id="Scientifical-notation">
 <h3>Scientifical notation<a class="headerlink" href="#Scientifical-notation" title="Permalink to this headline">¶</a></h3>
@@ -4835,7 +4838,7 @@ float
 263.02199094102605
 </pre></div></div>
 </div>
-<p>Note that the parenthesis around the squared <code class="docutils literal notranslate"><span class="pre">r</span></code> are not necessary because the power operator has the precedence, but htey may help in augmenting the code readability.</p>
+<p>Note that the parenthesis around the squared <code class="docutils literal notranslate"><span class="pre">r</span></code> are not necessary because the power operator has the precedence, but they may help in augmenting the code readability.</p>
 <p>We recall here the operator precedence:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -4876,7 +4879,7 @@ float
 <h3>Exercise - fractioning<a class="headerlink" href="#Exercise---fractioning" title="Permalink to this headline">¶</a></h3>
 <p>✪ Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">0.000003</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">2.753278226511882</span></code></p>
 <div class="math notranslate nohighlight">
-\[-\frac{\sqrt{x+3}}{\frac{(x + 2)^3}{\log{x}}}\]</div>
+\[\Large -\frac{\sqrt{x+3}}{\frac{(x + 2)^3}{\log{x}}}\]</div>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
@@ -4928,7 +4931,7 @@ float
 <h3>Exercise - summation<a class="headerlink" href="#Exercise---summation" title="Permalink to this headline">¶</a></h3>
 <p>Write some code to calculate the value of the following expression (don’t use cycles, write down all calculations), you should obtain <code class="docutils literal notranslate"><span class="pre">20.53333333333333</span></code></p>
 <div class="math notranslate nohighlight">
-\[\sum_{j=1}^{3}{\frac{j^4}{j + 2}}\]</div>
+\[\normalsize \sum_{j=1}^{3}{\frac{j^4}{j + 2}}\]</div>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
@@ -5013,7 +5016,7 @@ float
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">round(x)</span></code></p></td>
 <td><p>round x to closest integer</p></td>
 <td><div class="math notranslate nohighlight">
-\[\lfloor{2.5}\rceil\]</div>
+\[\lfloor{2.4}\rceil\]</div>
 </td>
 <td><p>2</p></td>
 </tr>
@@ -5040,19 +5043,11 @@ float
 </pre></div>
 </div>
 </li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">3.5</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">3.51</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="o">-</span><span class="mf">3.49</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
@@ -5096,11 +5091,11 @@ float
 </div></div>
 <div class="section" id="Exercise---Invigorate">
 <h3>Exercise - Invigorate<a class="headerlink" href="#Exercise---Invigorate" title="Permalink to this headline">¶</a></h3>
-<p>✪ Excessive studies lead you search on internet recipes of energetic drinks. Luckily, a guru of nutrition just posted on her Instagram channel &#64;DrinkSoYouGetHealthy this recipe of a miracle drink:</p>
+<p>✪ Excessive studies lead you search on internet recipes of energetic drinks. Luckily, a guru of nutrition just posted on her Instagram channel &#64;HealthyDrink this recipe of a miracle drink:</p>
 <blockquote>
 <div><p>Pour in a mixer 2 decilitres of kiwi juice, 4 decilitres of soy sauce, and 3 decilitres of shampoo of karitè bio. Mix vigorously and then pour half drink into a glass. Fill the glass until the superior deciliter. Swallow in one shot.</p>
 </div></blockquote>
-<p>You run to shop the ingredients, and get ready for mixing them. You have a measuring cup with which you transfer the precious fluids, one by one. While transfering, you always pour a little bit more than necessary (but never more than 1 decilitre), and for each ingredient you then remove the excess.</p>
+<p>You run shopping the ingredients, and get ready for mixing them. You have a measuring cup with which you transfer the precious fluids, one by one. While transfering, you always pour a little bit more than necessary (but never more than 1 decilitre), and for each ingredient you then remove the excess.</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> use subtractions, try using only rounding operators</p></li>
 </ul>
@@ -5131,7 +5126,9 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">kiwi</span> <span class="o">=</span> <span class="mf">2.4</span>
+<span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">kiwi</span> <span class="o">=</span> <span class="mf">2.4</span>
 <span class="n">soy</span> <span class="o">=</span> <span class="mf">4.8</span>
 <span class="n">shampoo</span> <span class="o">=</span> <span class="mf">3.1</span>
 <span class="n">measuring_cup</span> <span class="o">=</span> <span class="mf">0.0</span>
@@ -5149,7 +5146,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I pour into the measuring cup&#39;</span><span class="p">,</span> <span class="n">shampoo</span><span class="p">,</span> <span class="s1">&#39;dl of shampoo, then I remove excess until keeping&#39;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">shampoo</span><span class="p">),</span> <span class="s1">&#39;dl&#39;</span><span class="p">)</span>
 <span class="n">mixer</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">shampoo</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I transfer into the mixer, now it contains&#39;</span><span class="p">,</span> <span class="n">mixer</span><span class="p">,</span> <span class="s1">&#39;dl&#39;</span><span class="p">)</span>
-<span class="n">bicchiere</span> <span class="o">=</span> <span class="n">mixer</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">glass</span> <span class="o">=</span> <span class="n">mixer</span><span class="o">/</span><span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I pour half of the mix (&#39;</span><span class="p">,</span> <span class="n">glass</span><span class="p">,</span> <span class="s1">&#39;dl ) into the glass&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I fill the glass until superior deciliter, now it contains:&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">glass</span><span class="p">),</span> <span class="s1">&#39;dl&#39;</span><span class="p">)</span>
 
@@ -5167,8 +5164,8 @@ I pour into the measuring cup 4.8 dl of soia, then I remove excess until keeping
 I transfer into the mixer, now it contains 6.0 dl
 I pour into the measuring cup 3.1 dl of shampoo, then I remove excess until keeping 3 dl
 I transfer into the mixer, now it contains 9.0 dl
-I pour half of the mix ( 0.0 dl ) into the glass
-I fill the glass until superior deciliter, now it contains: 0 dl
+I pour half of the mix ( 4.5 dl ) into the glass
+I fill the glass until superior deciliter, now it contains: 5 dl
 </pre></div></div>
 </div>
 </div><div class="nbinput docutils container">
@@ -5176,7 +5173,9 @@ I fill the glass until superior deciliter, now it contains: 0 dl
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">kiwi</span> <span class="o">=</span> <span class="mf">2.4</span>
+<span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">kiwi</span> <span class="o">=</span> <span class="mf">2.4</span>
 <span class="n">soy</span> <span class="o">=</span> <span class="mf">4.8</span>
 <span class="n">shampoo</span> <span class="o">=</span> <span class="mf">3.1</span>
 <span class="n">measuring_cup</span> <span class="o">=</span> <span class="mf">0.0</span>
@@ -5201,8 +5200,8 @@ I pour into the measuring cup 4.8 dl of soia, then I remove excess until keeping
 I transfer into the mixer, now it contains 6.0 dl
 I pour into the measuring cup 3.1 dl of shampoo, then I remove excess until keeping 3 dl
 I transfer into the mixer, now it contains 9.0 dl
-I pour half of the mix ( 0.0 dl ) into the glass
-I fill the glass until superior deciliter, now it contains: 0 dl
+I pour half of the mix ( 4.5 dl ) into the glass
+I fill the glass until superior deciliter, now it contains: 5 dl
 </pre></div></div>
 </div>
 </div>
@@ -5210,7 +5209,7 @@ I fill the glass until superior deciliter, now it contains: 0 dl
 <h3>Exercise - roundminder<a class="headerlink" href="#Exercise---roundminder" title="Permalink to this headline">¶</a></h3>
 <p>✪ Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">-5.50</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">41</span></code></p>
 <div class="math notranslate nohighlight">
-\[\lvert{\lceil{x}\rceil}\rvert + \lfloor{x}\rceil^2\]</div>
+\[\large \lvert{\lceil{x}\rceil}\rvert + \lfloor{x}\rceil^2\]</div>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
@@ -5510,7 +5509,7 @@ True
 </div>
 <div class="section" id="Exercise---trendy">
 <h3>Exercise - trendy<a class="headerlink" href="#Exercise---trendy" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ You are already thinking about next vacations, but there is a big problem: where do you go, if you don’t have a <em>selfie-stick.</em> You cannot leave with this serious anxiety: to uniform yourself to this mass phenomena you must buy the stick which is most similar to others. You then conduct a rigourous statistical survey among turists obssessed by selfie sticks with the goal to find the most frequent brands of sticks, in other words, the <em>mode</em> of the frequencies. You obtain these results:</p>
+<p>✪✪ You are already thinking about next vacations, but there is a big problem: where do you go, if you don’t have a <em>selfie-stick</em>? You cannot leave with this serious anxiety: to uniform yourself to this mass phenomena you must buy the stick which is most similar to others. You then conduct a rigourous statistical survey among turists obssessed by selfie sticks with the goal to find the most frequent brands of sticks, in other words, the <em>mode</em> of the frequencies. You obtain these results:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[113]:
 </pre></div>
@@ -6047,31 +6046,15 @@ person you included an average takes <code class="docutils literal notranslate">
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>24 minutes e 30 seconds
 </pre></div>
 </div>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
+<div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[133]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sec1</span><span class="p">,</span><span class="n">sec2</span><span class="p">,</span><span class="n">sec3</span><span class="p">,</span> <span class="n">ga1</span><span class="p">,</span><span class="n">ga2</span><span class="p">,</span> <span class="n">bo1</span><span class="p">,</span><span class="n">bo2</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span><span class="mi">6</span>   <span class="c1"># 24 minutes e 30 seconds</span>
-<span class="c1">#sec1,sec2,sec3, ga1,ga2, bo1,bo2 = 9,7,1, 3,5, 2,9  # 10 minutes e 50 seconds</span>
+<span></span><span class="n">sec1</span><span class="p">,</span><span class="n">sec2</span><span class="p">,</span><span class="n">sec3</span><span class="p">,</span> <span class="n">ga1</span><span class="p">,</span><span class="n">ga2</span><span class="p">,</span> <span class="n">bo1</span><span class="p">,</span><span class="n">bo2</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span><span class="mi">6</span>   <span class="c1"># 24 minutes and 30 seconds</span>
+<span class="c1">#sec1,sec2,sec3, ga1,ga2, bo1,bo2 = 9,7,1, 3,5, 2,9  # 10 minutes and 50 seconds</span>
 
-<span class="c1"># write here</span>
-
-</pre></div>
-</div>
-</div>
-</div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[133]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sec1</span><span class="p">,</span><span class="n">sec2</span><span class="p">,</span><span class="n">sec3</span><span class="p">,</span> <span class="n">ga1</span><span class="p">,</span><span class="n">ga2</span><span class="p">,</span> <span class="n">bo1</span><span class="p">,</span><span class="n">bo2</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span><span class="mi">6</span>   <span class="c1"># 24 minutes e 30 seconds</span>
-<span class="c1">#sec1,sec2,sec3, ga1,ga2, bo1,bo2 = 9,7,1, 3,5, 2,9  # 10 minutes e 50 seconds</span>
-
-<span class="c1"># write here</span>
-
+<span class="c1"># write your code</span>
 
 </pre></div>
 </div>
@@ -6103,9 +6086,7 @@ person you included an average takes <code class="docutils literal notranslate">
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The destination is False
 </pre></div>
 </div>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
+<div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[134]:
 </pre></div>
 </div>
@@ -6118,26 +6099,7 @@ person you included an average takes <code class="docutils literal notranslate">
 <span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">58</span><span class="p">,</span><span class="mi">666</span>  <span class="c1"># False</span>
 <span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span><span class="mi">999</span>  <span class="c1"># False</span>
 
-<span class="c1"># write here</span>
-
-</pre></div>
-</div>
-</div>
-</div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[134]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">58</span><span class="p">,</span><span class="mi">17</span>   <span class="c1"># 1</span>
-<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">58</span><span class="p">,</span><span class="mi">31</span>   <span class="c1"># 2</span>
-<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span><span class="mi">29</span>   <span class="c1"># 3</span>
-<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">42</span><span class="p">,</span><span class="mi">75</span>   <span class="c1"># 4</span>
-<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">666</span><span class="p">,</span><span class="mi">31</span>  <span class="c1"># False</span>
-<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">58</span><span class="p">,</span><span class="mi">666</span>  <span class="c1"># False</span>
-<span class="n">r1</span><span class="p">,</span><span class="n">r2</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span><span class="mi">999</span>  <span class="c1"># False</span>
-
-<span class="c1"># write here</span>
-
+<span class="c1"># write your code</span>
 
 </pre></div>
 </div>
@@ -6182,7 +6144,7 @@ person you included an average takes <code class="docutils literal notranslate">
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright # CC-BY 2017 - 2020, David Leoni, Alessio Zamboni, Marco Caresia
+        &copy; Copyright # CC-BY 2017 - 2021, David Leoni, Alessio Zamboni, Marco Caresia
 
     </p>
   </div>
