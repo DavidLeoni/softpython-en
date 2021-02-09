@@ -1252,6 +1252,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#Networkx">Networkx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Fancy-networkx-graphs">Fancy networkx graphs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Converting-networkx-graphs">Converting networkx graphs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---mat_to_nx">Exercise - mat_to_nx</a></li>
 </ul>
@@ -1959,8 +1960,9 @@ Dot saved to file:  example.dot
 <div class="highlight"><pre>
 digraph  {
 scale=3;
-node [fontcolor=blue, color=blue];
-edge [splines=curved, fontcolor=brown, arrowsize=&#34;0.6&#34;];
+style=&#34;dotted, rounded&#34;;
+node [color=blue, fontcolor=blue];
+edge [arrowsize=&#34;0.6&#34;, splines=curved, fontcolor=brown];
 0;
 1;
 0 -&gt; 0  [weight=1, label=1];
@@ -3971,7 +3973,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;networkx.classes.digraph.DiGraph at 0x7ff40e249cf8&gt;
+&lt;networkx.classes.digraph.DiGraph at 0x7feef1d68150&gt;
 </pre></div></div>
 </div>
 <p>To display it in a way uniform with the rest of the course, we developed a function called <code class="docutils literal notranslate"><span class="pre">soft.draw_nx</span></code> :</p>
@@ -4091,11 +4093,77 @@ could give troubles for other purposes, for example if we give the numbers the m
 <img alt="../_images/graph-formats_graph-formats-sol_143_0.png" src="../_images/graph-formats_graph-formats-sol_143_0.png" />
 </div>
 </div>
+<div class="section" id="Fancy-networkx-graphs">
+<h3>Fancy networkx graphs<a class="headerlink" href="#Fancy-networkx-graphs" title="Permalink to this headline">¶</a></h3>
+<p>With networkx we can set additional attributes to embellish the resulting graph, here we show a bus network example.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+
+<span class="c1"># we can force horizontal layout like this:</span>
+
+<span class="n">G</span><span class="o">.</span><span class="n">graph</span><span class="p">[</span><span class="s1">&#39;graph&#39;</span><span class="p">]</span><span class="o">=</span> <span class="p">{</span>
+                    <span class="s1">&#39;rankdir&#39;</span><span class="p">:</span><span class="s1">&#39;LR&#39;</span><span class="p">,</span>
+                  <span class="p">}</span>
+
+<span class="c1"># When we add nodes, we can identify them with an identifier like the</span>
+<span class="c1"># stop_id which is separate from the label, because in some unfortunate</span>
+<span class="c1"># case two different stops can share the same label.</span>
+
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trento&#39;</span><span class="p">,</span>
+                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">fontcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s1">&#39;723&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Rovereto&#39;</span><span class="p">,</span>
+                  <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">fontcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s1">&#39;870&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Arco&#39;</span><span class="p">,</span>
+                  <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">fontcolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s1">&#39;1180&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Riva&#39;</span><span class="p">,</span>
+                   <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">fontcolor</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+
+<span class="c1"># IMPORTANT: edges connect stop_ids ,  NOT labels !!!!</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="s1">&#39;870&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="s1">&#39;723&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">)</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;1180&#39;</span><span class="p">)</span>
+
+<span class="c1"># we can retrieve an edge like this:</span>
+
+<span class="n">edge</span> <span class="o">=</span> <span class="n">G</span><span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">][</span><span class="s1">&#39;1180&#39;</span><span class="p">]</span>
+
+<span class="c1"># and set attributes, like these:</span>
+
+<span class="n">edge</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>                <span class="c1"># it takes 5 minutes to go from Trento-Autostaz</span>
+                                  <span class="c1"># to Trento Corso 3 Novembre</span>
+
+<span class="n">edge</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>            <span class="c1"># the label is a string</span>
+
+<span class="n">edge</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#2ca02c&#39;</span>         <span class="c1"># we can set some style for the edge, such as color</span>
+<span class="n">edge</span><span class="p">[</span><span class="s1">&#39;penwidth&#39;</span><span class="p">]</span><span class="o">=</span> <span class="mi">4</span>               <span class="c1"># and thickness</span>
+
+<span class="n">edge</span><span class="p">[</span><span class="s1">&#39;route_short_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;B301&#39;</span> <span class="c1"># we can add any attribute we want,</span>
+                                  <span class="c1"># Note these custom ones won&#39;t show in the graph</span>
+
+<span class="n">legend</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;#2ca02c&#39;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;B211&#39;</span><span class="p">}]</span>
+
+<span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">,</span>  <span class="n">legend</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/graph-formats_graph-formats-sol_145_0.png" src="../_images/graph-formats_graph-formats-sol_145_0.png" />
+</div>
+</div>
+</div>
 <div class="section" id="Converting-networkx-graphs">
 <h3>Converting networkx graphs<a class="headerlink" href="#Converting-networkx-graphs" title="Permalink to this headline">¶</a></h3>
 <p>If you try to just output the string representation of the graph, networkx will give the empty string:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4112,7 +4180,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4121,7 +4189,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4130,7 +4198,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4139,17 +4207,17 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&#39;&lt;networkx.classes.digraph.DiGraph object at 0x7ff40e249cf8&gt;&#39;
+&#39;&lt;networkx.classes.digraph.DiGraph object at 0x7feeb67b4110&gt;&#39;
 </pre></div></div>
 </div>
 <p>To convert to the dict of adjacency lists we know, you can use this method:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4158,17 +4226,17 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;a&#39;: [&#39;b&#39;, &#39;c&#39;], &#39;b&#39;: [&#39;d&#39;, &#39;b&#39;, &#39;c&#39;], &#39;c&#39;: [], &#39;d&#39;: []}
+{&#39;1&#39;: [&#39;1180&#39;], &#39;723&#39;: [&#39;1&#39;], &#39;870&#39;: [&#39;1&#39;], &#39;1180&#39;: []}
 </pre></div></div>
 </div>
 <p>The above works, but it doesn’t convert additional edge info. For a complete conversion, use <code class="docutils literal notranslate"><span class="pre">nx.to_dict_of_dicts</span></code></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4177,21 +4245,25 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;a&#39;: {&#39;b&#39;: {&#39;label&#39;: 123, &#39;weight&#39;: 123}, &#39;c&#39;: {}},
- &#39;b&#39;: {&#39;b&#39;: {}, &#39;c&#39;: {}, &#39;d&#39;: {}},
- &#39;c&#39;: {},
- &#39;d&#39;: {}}
+{&#39;1&#39;: {&#39;1180&#39;: {&#39;weight&#39;: 5,
+   &#39;label&#39;: &#39;5&#39;,
+   &#39;color&#39;: &#39;#2ca02c&#39;,
+   &#39;penwidth&#39;: 4,
+   &#39;route_short_name&#39;: &#39;B301&#39;}},
+ &#39;723&#39;: {&#39;1&#39;: {}},
+ &#39;870&#39;: {&#39;1&#39;: {}},
+ &#39;1180&#39;: {}}
 </pre></div></div>
 </div>
 </div>
 <div class="section" id="Exercise---mat_to_nx">
 <h3>Exercise - mat_to_nx<a class="headerlink" href="#Exercise---mat_to_nx" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ Now try by yourself to convert a matrix as list of lists along with node ids (like <a class="reference external" href="#mat_ids_to_adj">you did before</a>) into a networkx object.</p>
+<p>✪✪ Now try by yourself to convert a matrix as list of lists along with node ids (like <a class="reference external" href="#Exercise---mat_ids_to_adj">you did before</a>) into a networkx object.</p>
 <p>This time, don’t create a dictionary to pass it to <code class="docutils literal notranslate"><span class="pre">nx.DiGraph</span></code> constructor: instead, use networkx methods like <code class="docutils literal notranslate"><span class="pre">.add_edge</span></code> and <code class="docutils literal notranslate"><span class="pre">add_node</span></code>. For usage example, check the <a class="reference external" href="https://networkx.github.io/documentation/stable/tutorial.html">networkx tutorial</a>. Do you need to explicitly call <code class="docutils literal notranslate"><span class="pre">add_node</span></code> before referring to some node with <code class="docutils literal notranslate"><span class="pre">add_edge</span></code> ?</p>
 <p>Implement a function that given a real-valued nxn matrix as list of lists and a list of immutable identifiers for the nodes, RETURN the corresponding graph in networkx format (as nx.DiGraph).</p>
 <p>If matrix is not <code class="docutils literal notranslate"><span class="pre">n</span></code>x<code class="docutils literal notranslate"><span class="pre">n</span></code> or <code class="docutils literal notranslate"><span class="pre">ids</span></code> length does not match <code class="docutils literal notranslate"><span class="pre">n</span></code>, raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p>
@@ -4202,7 +4274,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4309,7 +4381,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4402,14 +4474,14 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 <div class="section" id="Simple-statistics">
 <h2>Simple statistics<a class="headerlink" href="#Simple-statistics" title="Permalink to this headline">¶</a></h2>
-<p>We will now compute simple statistics abour graphs. More advanced stuff will be done in Part B notebook about <a class="reference external" href="https://sciprog.davidleoni.it/graph-algos/graph-algos.html">graph algorithms</a>.</p>
+<p>We will now compute simple statistics about graphs (they don’t require node discovery algorithms).</p>
 <div class="section" id="Outdegrees-and-indegrees">
 <h3>Outdegrees and indegrees<a class="headerlink" href="#Outdegrees-and-indegrees" title="Permalink to this headline">¶</a></h3>
 <p>The <em>out-degree</em> <span class="math notranslate nohighlight">\(\deg^+(v)\)</span> of a node <span class="math notranslate nohighlight">\(v\)</span> is the number of edges going out from it, while the <em>in-degree</em> <span class="math notranslate nohighlight">\(\deg^-(v)\)</span> is the number of edges going into it.</p>
 <p><em>NOTE:</em> the out-degree and in-degree are <em>not</em> the sum of weights ! They just count presence or absence of edges.</p>
 <p>For example, consider this graph:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4431,7 +4503,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/graph-formats_graph-formats-sol_159_0.png" src="../_images/graph-formats_graph-formats-sol_159_0.png" />
+<img alt="../_images/graph-formats_graph-formats-sol_161_0.png" src="../_images/graph-formats_graph-formats-sol_161_0.png" />
 </div>
 </div>
 <p>The out-degree of <code class="docutils literal notranslate"><span class="pre">d</span></code> is 2, because it has one outgoing edge to <code class="docutils literal notranslate"><span class="pre">b</span></code> but also an outgoing edge to itself. The indegree of <code class="docutils literal notranslate"><span class="pre">d</span></code> is 3, because it has an edge coming from <code class="docutils literal notranslate"><span class="pre">b</span></code>, one from <code class="docutils literal notranslate"><span class="pre">c</span></code> and one self-loop from <code class="docutils literal notranslate"><span class="pre">d</span></code> itself.</p>
@@ -4445,7 +4517,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4485,7 +4557,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4529,7 +4601,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4578,7 +4650,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4627,7 +4699,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4664,7 +4736,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4706,7 +4778,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4746,7 +4818,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4787,7 +4859,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4828,7 +4900,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4869,7 +4941,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4900,7 +4972,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4946,7 +5018,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4994,7 +5066,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5034,7 +5106,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <h3>networkx Indegrees and outdegrees<a class="headerlink" href="#networkx-Indegrees-and-outdegrees" title="Permalink to this headline">¶</a></h3>
 <p>With Networkx we can easily calculate indegrees and outdegrees of a node:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5057,11 +5129,11 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/graph-formats_graph-formats-sol_201_0.png" src="../_images/graph-formats_graph-formats-sol_201_0.png" />
+<img alt="../_images/graph-formats_graph-formats-sol_203_0.png" src="../_images/graph-formats_graph-formats-sol_203_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5070,7 +5142,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -5082,7 +5154,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5093,7 +5165,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5107,7 +5179,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5117,7 +5189,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5133,7 +5205,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div><a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5143,7 +5215,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5154,7 +5226,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5170,7 +5242,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/graph-formats_graph-formats-sol_220_0.png" src="../_images/graph-formats_graph-formats-sol_220_0.png" />
+<img alt="../_images/graph-formats_graph-formats-sol_222_0.png" src="../_images/graph-formats_graph-formats-sol_222_0.png" />
 </div>
 </div>
 </div>

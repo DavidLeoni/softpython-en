@@ -1252,6 +1252,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../graph-formats/graph-formats-sol.html#Networkx">Networkx</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../graph-formats/graph-formats-sol.html#Fancy-networkx-graphs">Fancy networkx graphs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../graph-formats/graph-formats-sol.html#Converting-networkx-graphs">Converting networkx graphs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../graph-formats/graph-formats-sol.html#Exercise---mat_to_nx">Exercise - mat_to_nx</a></li>
 </ul>
@@ -1918,8 +1919,8 @@ Leonardo
 <p><strong>✪ 1.2 EXERCISE</strong>: you might wondering what exactly is that <code class="docutils literal notranslate"><span class="pre">f</span></code>, and what exatly the method <code class="docutils literal notranslate"><span class="pre">readlines</span></code> should be doing. When you find yourself in these situations, you might help yourself with functions <code class="docutils literal notranslate"><span class="pre">type</span></code> and <code class="docutils literal notranslate"><span class="pre">help</span></code>. This time, directly copy paste the same code here, but insert inside <code class="docutils literal notranslate"><span class="pre">with</span></code> block the commands:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">print(type(f))</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">print(help(f))</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">print(help(f.readline))</span></code> # Attention: remember the f. before the readline !!</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">help(f)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">help(f.readline)</span></code> # Attention: remember the f. before the readline !!</p></li>
 </ul>
 <p>Every time you add something, try to execute with Control+Enter and see what happens</p>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -1932,11 +1933,10 @@ Leonardo
 <span></span><span class="c1"># write here the code (copy and paste)</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;people-simple.txt&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">line</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">f</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">help</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">help</span><span class="p">(</span><span class="n">f</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">f</span><span class="p">))</span>
+    <span class="n">help</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">)</span>
+    <span class="n">help</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1945,6 +1945,8 @@ Leonardo
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
+Leonardo
+
 &lt;class &#39;_io.TextIOWrapper&#39;&gt;
 Help on built-in function readline:
 
@@ -1953,10 +1955,11 @@ readline(size=-1, /) method of _io.TextIOWrapper instance
 
     Returns an empty string if EOF is hit immediately.
 
-None
 Help on TextIOWrapper object:
 
 class TextIOWrapper(_TextIOBase)
+ |  TextIOWrapper(buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)
+ |
  |  Character and line based layer over a BufferedIOBase object, buffer.
  |
  |  encoding gives the name of the encoding that the stream will be
@@ -1998,9 +2001,6 @@ class TextIOWrapper(_TextIOBase)
  |
  |  __init__(self, /, *args, **kwargs)
  |      Initialize self.  See help(type(self)) for accurate signature.
- |
- |  __new__(*args, **kwargs) from builtins.type
- |      Create and return a new object.  See help(type) for accurate signature.
  |
  |  __next__(self, /)
  |      Implement next(self).
@@ -2050,6 +2050,11 @@ class TextIOWrapper(_TextIOBase)
  |
  |      Returns an empty string if EOF is hit immediately.
  |
+ |  reconfigure(self, /, *, encoding=None, errors=None, newline=None, line_buffering=None, write_through=None)
+ |      Reconfigure the text stream with new parameters.
+ |
+ |      This also does an implicit stream flush.
+ |
  |  seek(self, cookie, whence=0, /)
  |      Change stream position.
  |
@@ -2089,6 +2094,12 @@ class TextIOWrapper(_TextIOBase)
  |      the length of the string).
  |
  |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |
+ |  ----------------------------------------------------------------------
  |  Data descriptors defined here:
  |
  |  buffer
@@ -2116,6 +2127,8 @@ class TextIOWrapper(_TextIOBase)
  |
  |      Subclasses should override.
  |
+ |  write_through
+ |
  |  ----------------------------------------------------------------------
  |  Methods inherited from _IOBase:
  |
@@ -2136,14 +2149,15 @@ class TextIOWrapper(_TextIOBase)
  |      lines so far exceeds hint.
  |
  |  writelines(self, lines, /)
+ |      Write a list of lines to stream.
+ |
+ |      Line separators are not added, so it is usual for each of the
+ |      lines provided to have a line separator at the end.
  |
  |  ----------------------------------------------------------------------
  |  Data descriptors inherited from _IOBase:
  |
  |  __dict__
-
-None
-Leonardo
 
 </pre></div></div>
 </div>
@@ -2163,6 +2177,8 @@ Leonardo
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
+Leonardo
+
 &lt;class &#39;_io.TextIOWrapper&#39;&gt;
 Help on built-in function readline:
 
@@ -2171,10 +2187,11 @@ readline(size=-1, /) method of _io.TextIOWrapper instance
 
     Returns an empty string if EOF is hit immediately.
 
-None
 Help on TextIOWrapper object:
 
 class TextIOWrapper(_TextIOBase)
+ |  TextIOWrapper(buffer, encoding=None, errors=None, newline=None, line_buffering=False, write_through=False)
+ |
  |  Character and line based layer over a BufferedIOBase object, buffer.
  |
  |  encoding gives the name of the encoding that the stream will be
@@ -2216,9 +2233,6 @@ class TextIOWrapper(_TextIOBase)
  |
  |  __init__(self, /, *args, **kwargs)
  |      Initialize self.  See help(type(self)) for accurate signature.
- |
- |  __new__(*args, **kwargs) from builtins.type
- |      Create and return a new object.  See help(type) for accurate signature.
  |
  |  __next__(self, /)
  |      Implement next(self).
@@ -2268,6 +2282,11 @@ class TextIOWrapper(_TextIOBase)
  |
  |      Returns an empty string if EOF is hit immediately.
  |
+ |  reconfigure(self, /, *, encoding=None, errors=None, newline=None, line_buffering=None, write_through=None)
+ |      Reconfigure the text stream with new parameters.
+ |
+ |      This also does an implicit stream flush.
+ |
  |  seek(self, cookie, whence=0, /)
  |      Change stream position.
  |
@@ -2307,6 +2326,12 @@ class TextIOWrapper(_TextIOBase)
  |      the length of the string).
  |
  |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |
+ |  ----------------------------------------------------------------------
  |  Data descriptors defined here:
  |
  |  buffer
@@ -2334,6 +2359,8 @@ class TextIOWrapper(_TextIOBase)
  |
  |      Subclasses should override.
  |
+ |  write_through
+ |
  |  ----------------------------------------------------------------------
  |  Methods inherited from _IOBase:
  |
@@ -2354,14 +2381,15 @@ class TextIOWrapper(_TextIOBase)
  |      lines so far exceeds hint.
  |
  |  writelines(self, lines, /)
+ |      Write a list of lines to stream.
+ |
+ |      Line separators are not added, so it is usual for each of the
+ |      lines provided to have a line separator at the end.
  |
  |  ----------------------------------------------------------------------
  |  Data descriptors inherited from _IOBase:
  |
  |  __dict__
-
-None
-Leonardo
 
 </pre></div></div>
 </div>
@@ -3234,7 +3262,7 @@ We just read a row !
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;_csv.reader object at 0x7fa700853978&gt;
+&lt;_csv.reader object at 0x7f0d1c5001d0&gt;
 </pre></div></div>
 </div>
 <p>This result is quite disappointing</p>
@@ -3492,11 +3520,11 @@ eagle,25,eagles fly
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39; lifespan&#39;: &#39;12&#39;, &#39;animal&#39;: &#39;dog&#39;}
-{&#39; lifespan&#39;: &#39;14&#39;, &#39;animal&#39;: &#39;cat&#39;}
-{&#39; lifespan&#39;: &#39;30&#39;, &#39;animal&#39;: &#39;pelican&#39;}
-{&#39; lifespan&#39;: &#39;6&#39;, &#39;animal&#39;: &#39;squirrel&#39;}
-{&#39; lifespan&#39;: &#39;25&#39;, &#39;animal&#39;: &#39;eagle&#39;}
+OrderedDict([(&#39;animal&#39;, &#39;dog&#39;), (&#39; lifespan&#39;, &#39;12&#39;)])
+OrderedDict([(&#39;animal&#39;, &#39;cat&#39;), (&#39; lifespan&#39;, &#39;14&#39;)])
+OrderedDict([(&#39;animal&#39;, &#39;pelican&#39;), (&#39; lifespan&#39;, &#39;30&#39;)])
+OrderedDict([(&#39;animal&#39;, &#39;squirrel&#39;), (&#39; lifespan&#39;, &#39;6&#39;)])
+OrderedDict([(&#39;animal&#39;, &#39;eagle&#39;), (&#39; lifespan&#39;, &#39;25&#39;)])
 </pre></div></div>
 </div>
 </div>
@@ -3795,13 +3823,13 @@ the data.</p>
  (&#39;ALBERGO&#39;, 64),
  (&#39;MACELLERIA&#39;, 27),
  (&#39;PANIFICIO&#39;, 22),
- (&#39;FARMACIA&#39;, 21),
  (&#39;CALZATURE&#39;, 21),
+ (&#39;FARMACIA&#39;, 21),
  (&#39;ALIMENTARI&#39;, 20),
- (&#39;SPORT&#39;, 16),
  (&#39;PIZZERIA&#39;, 16),
- (&#39;FERRAMENTA&#39;, 12),
+ (&#39;SPORT&#39;, 16),
  (&#39;TABACCHI&#39;, 12),
+ (&#39;FERRAMENTA&#39;, 12),
  (&#39;BAZAR&#39;, 11)]
 </pre></div></div>
 </div>
@@ -3835,13 +3863,13 @@ the data.</p>
  (&#39;ALBERGO&#39;, 64),
  (&#39;MACELLERIA&#39;, 27),
  (&#39;PANIFICIO&#39;, 22),
- (&#39;FARMACIA&#39;, 21),
  (&#39;CALZATURE&#39;, 21),
+ (&#39;FARMACIA&#39;, 21),
  (&#39;ALIMENTARI&#39;, 20),
- (&#39;SPORT&#39;, 16),
  (&#39;PIZZERIA&#39;, 16),
- (&#39;FERRAMENTA&#39;, 12),
+ (&#39;SPORT&#39;, 16),
  (&#39;TABACCHI&#39;, 12),
+ (&#39;FERRAMENTA&#39;, 12),
  (&#39;BAZAR&#39;, 11)]
 </pre></div></div>
 </div>
@@ -3985,51 +4013,51 @@ OrderedDict<span class="o">([</span>   <span class="o">(</span><span class="s1">
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{   &#39;Cap&#39;: &#39;38068&#39;,
-    &#39;Categorie&#39;: &#34;[&#39;BAR&#39;, &#39;RISTORANTE&#39;]&#34;,
-    &#39;Civico&#39;: &#39;30&#39;,
-    &#39;Comune&#39;: &#39;Sover&#39;,
-    &#39;Frazione/Località&#39;: &#39;Piscine di Sover&#39;,
-    &#39;Indirizzo&#39;: &#39;Via del Lagorai&#39;,
-    &#39;Insegna&#39;: &#39;BAZZANELLA RENATA&#39;,
-    &#39;Note&#39;: &#39;generi misti, bar - ristorante&#39;,
-    &#39;Numero&#39;: &#39;1&#39;}
-{   &#39;Cap&#39;: &#39;38051&#39;,
-    &#39;Categorie&#39;: &#39;[]&#39;,
-    &#39;Civico&#39;: &#39;48&#39;,
-    &#39;Comune&#39;: &#39;Borgo Valsugana&#39;,
-    &#39;Frazione/Località&#39;: &#39;&#39;,
-    &#39;Indirizzo&#39;: &#39;Corso Ausugum&#39;,
-    &#39;Insegna&#39;: &#39;CONFEZIONI MONTIBELLER S.R.L.&#39;,
-    &#39;Note&#39;: &#39;esercizio commerciale&#39;,
-    &#39;Numero&#39;: &#39;2&#39;}
-{   &#39;Cap&#39;: &#39;38051&#39;,
-    &#39;Categorie&#39;: &#39;[]&#39;,
-    &#39;Civico&#39;: &#39;8&#39;,
-    &#39;Comune&#39;: &#39;Borgo Valsugana&#39;,
-    &#39;Frazione/Località&#39;: &#39;&#39;,
-    &#39;Indirizzo&#39;: &#39;Largo Dordi&#39;,
-    &#39;Insegna&#39;: &#39;FOTOGRAFICA TRINTINAGLIA UMBERTO S.N.C.&#39;,
-    &#39;Note&#39;: &#39;esercizio commerciale, attività artigianale&#39;,
-    &#39;Numero&#39;: &#39;3&#39;}
-{   &#39;Cap&#39;: &#39;38055&#39;,
-    &#39;Categorie&#39;: &#34;[&#39;BAR&#39;]&#34;,
-    &#39;Civico&#39;: &#39;24&#39;,
-    &#39;Comune&#39;: &#39;Grigno&#39;,
-    &#39;Frazione/Località&#39;: &#39;Serafini&#39;,
-    &#39;Indirizzo&#39;: &#39;&#39;,
-    &#39;Insegna&#39;: &#39;BAR SERAFINI DI MINATI RENZO&#39;,
-    &#39;Note&#39;: &#39;esercizio commerciale&#39;,
-    &#39;Numero&#39;: &#39;4&#39;}
-{   &#39;Cap&#39;: &#39;38066&#39;,
-    &#39;Categorie&#39;: &#39;[]&#39;,
-    &#39;Civico&#39;: &#39;35&#39;,
-    &#39;Comune&#39;: &#39;Riva del Garda&#39;,
-    &#39;Frazione/Località&#39;: &#39;&#39;,
-    &#39;Indirizzo&#39;: &#39;Via S. Francesco&#39;,
-    &#39;Insegna&#39;: &#39;SEMBENINI GINO &amp; FIGLI S.R.L.&#39;,
-    &#39;Note&#39;: &#39;&#39;,
-    &#39;Numero&#39;: &#39;6&#39;}
+OrderedDict([   (&#39;Numero&#39;, &#39;1&#39;),
+                (&#39;Insegna&#39;, &#39;BAZZANELLA RENATA&#39;),
+                (&#39;Indirizzo&#39;, &#39;Via del Lagorai&#39;),
+                (&#39;Civico&#39;, &#39;30&#39;),
+                (&#39;Comune&#39;, &#39;Sover&#39;),
+                (&#39;Cap&#39;, &#39;38068&#39;),
+                (&#39;Frazione/Località&#39;, &#39;Piscine di Sover&#39;),
+                (&#39;Note&#39;, &#39;generi misti, bar - ristorante&#39;),
+                (&#39;Categorie&#39;, &#34;[&#39;BAR&#39;, &#39;RISTORANTE&#39;]&#34;)])
+OrderedDict([   (&#39;Numero&#39;, &#39;2&#39;),
+                (&#39;Insegna&#39;, &#39;CONFEZIONI MONTIBELLER S.R.L.&#39;),
+                (&#39;Indirizzo&#39;, &#39;Corso Ausugum&#39;),
+                (&#39;Civico&#39;, &#39;48&#39;),
+                (&#39;Comune&#39;, &#39;Borgo Valsugana&#39;),
+                (&#39;Cap&#39;, &#39;38051&#39;),
+                (&#39;Frazione/Località&#39;, &#39;&#39;),
+                (&#39;Note&#39;, &#39;esercizio commerciale&#39;),
+                (&#39;Categorie&#39;, &#39;[]&#39;)])
+OrderedDict([   (&#39;Numero&#39;, &#39;3&#39;),
+                (&#39;Insegna&#39;, &#39;FOTOGRAFICA TRINTINAGLIA UMBERTO S.N.C.&#39;),
+                (&#39;Indirizzo&#39;, &#39;Largo Dordi&#39;),
+                (&#39;Civico&#39;, &#39;8&#39;),
+                (&#39;Comune&#39;, &#39;Borgo Valsugana&#39;),
+                (&#39;Cap&#39;, &#39;38051&#39;),
+                (&#39;Frazione/Località&#39;, &#39;&#39;),
+                (&#39;Note&#39;, &#39;esercizio commerciale, attività artigianale&#39;),
+                (&#39;Categorie&#39;, &#39;[]&#39;)])
+OrderedDict([   (&#39;Numero&#39;, &#39;4&#39;),
+                (&#39;Insegna&#39;, &#39;BAR SERAFINI DI MINATI RENZO&#39;),
+                (&#39;Indirizzo&#39;, &#39;&#39;),
+                (&#39;Civico&#39;, &#39;24&#39;),
+                (&#39;Comune&#39;, &#39;Grigno&#39;),
+                (&#39;Cap&#39;, &#39;38055&#39;),
+                (&#39;Frazione/Località&#39;, &#39;Serafini&#39;),
+                (&#39;Note&#39;, &#39;esercizio commerciale&#39;),
+                (&#39;Categorie&#39;, &#34;[&#39;BAR&#39;]&#34;)])
+OrderedDict([   (&#39;Numero&#39;, &#39;6&#39;),
+                (&#39;Insegna&#39;, &#39;SEMBENINI GINO &amp; FIGLI S.R.L.&#39;),
+                (&#39;Indirizzo&#39;, &#39;Via S. Francesco&#39;),
+                (&#39;Civico&#39;, &#39;35&#39;),
+                (&#39;Comune&#39;, &#39;Riva del Garda&#39;),
+                (&#39;Cap&#39;, &#39;38066&#39;),
+                (&#39;Frazione/Località&#39;, &#39;&#39;),
+                (&#39;Note&#39;, &#39;&#39;),
+                (&#39;Categorie&#39;, &#39;[]&#39;)])
 </pre></div></div>
 </div>
 </div>
@@ -4103,7 +4131,7 @@ OrderedDict<span class="o">([</span>   <span class="o">(</span><span class="s1">
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[{&#39;address&#39;: &#39;Piazza Grazioli - Lavis&#39;, &#39;totalSlots&#39;: 10, &#39;name&#39;: &#39;Grazioli&#39;, &#39;bikes&#39;: 3, &#39;slots&#39;: 7, &#39;id&#39;: &#39;Grazioli - Lavis&#39;, &#39;position&#39;: [46.139732902099794, 11.111516155225331]}, {&#39;address&#39;: &#39;Piazza della Croce - Pressano&#39;, &#39;totalSlots&#39;: 7, &#39;name&#39;: &#39;Pressano&#39;, &#39;bikes&#39;: 2, &#39;slots&#39;: 5, &#39;id&#39;: &#39;Pressano - Lavis&#39;, &#39;position&#39;: [46.15368174037716, 11.106601229430453]}, {&#39;address&#39;: &#39;Via Stazione - Lavis&#39;, &#39;totalSlots&#39;: 10, &#39;name&#39;: &#39;Stazione RFI&#39;, &#39;bikes&#39;: 4, &#39;slots&#39;: 6, &#39;id&#39;: &#39;Stazione RFI - Lavis&#39;, &#39;position&#39;: [46.148180371138814, 11.096753997622727]}]
+[{&#39;name&#39;: &#39;Grazioli&#39;, &#39;address&#39;: &#39;Piazza Grazioli - Lavis&#39;, &#39;id&#39;: &#39;Grazioli - Lavis&#39;, &#39;bikes&#39;: 3, &#39;slots&#39;: 7, &#39;totalSlots&#39;: 10, &#39;position&#39;: [46.139732902099794, 11.111516155225331]}, {&#39;name&#39;: &#39;Pressano&#39;, &#39;address&#39;: &#39;Piazza della Croce - Pressano&#39;, &#39;id&#39;: &#39;Pressano - Lavis&#39;, &#39;bikes&#39;: 2, &#39;slots&#39;: 5, &#39;totalSlots&#39;: 7, &#39;position&#39;: [46.15368174037716, 11.106601229430453]}, {&#39;name&#39;: &#39;Stazione RFI&#39;, &#39;address&#39;: &#39;Via Stazione - Lavis&#39;, &#39;id&#39;: &#39;Stazione RFI - Lavis&#39;, &#39;bikes&#39;: 4, &#39;slots&#39;: 6, &#39;totalSlots&#39;: 10, &#39;position&#39;: [46.148180371138814, 11.096753997622727]}]
 </pre></div></div>
 </div>
 <p>Notice that what we’ve just read with the function <code class="docutils literal notranslate"><span class="pre">json.load</span></code> is not simple text anymore, but Python objects. For this json, the most external object is a list (note the square brackets at the file beginning and end). We can check using <code class="docutils literal notranslate"><span class="pre">type</span></code> on <code class="docutils literal notranslate"><span class="pre">python_content</span></code>:</p>
@@ -4141,13 +4169,13 @@ list
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;address&#39;: &#39;Piazza Grazioli - Lavis&#39;,
- &#39;bikes&#39;: 3,
+{&#39;name&#39;: &#39;Grazioli&#39;,
+ &#39;address&#39;: &#39;Piazza Grazioli - Lavis&#39;,
  &#39;id&#39;: &#39;Grazioli - Lavis&#39;,
- &#39;name&#39;: &#39;Grazioli&#39;,
- &#39;position&#39;: [46.139732902099794, 11.111516155225331],
+ &#39;bikes&#39;: 3,
  &#39;slots&#39;: 7,
- &#39;totalSlots&#39;: 10}
+ &#39;totalSlots&#39;: 10,
+ &#39;position&#39;: [46.139732902099794, 11.111516155225331]}
 </pre></div></div>
 </div>
 <p>We see it’s the station in Piazza Grazioli. To get the exact name, we will access the <code class="docutils literal notranslate"><span class="pre">'address'</span></code> key in the first dictionary:</p>
