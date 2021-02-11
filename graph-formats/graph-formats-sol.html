@@ -4097,7 +4097,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <h3>Fancy networkx graphs<a class="headerlink" href="#Fancy-networkx-graphs" title="Permalink to this headline">¶</a></h3>
 <p>With networkx we can set additional attributes to embellish the resulting graph, here we show a bus network example.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4111,7 +4111,7 @@ could give troubles for other purposes, for example if we give the numbers the m
                   <span class="p">}</span>
 
 <span class="c1"># When we add nodes, we can identify them with an identifier like the</span>
-<span class="c1"># stop_id which is separate from the label, because in some unfortunate</span>
+<span class="c1"># stop_id which is separate from the label, for example in some unfortunate</span>
 <span class="c1"># case two different stops can share the same label.</span>
 
 <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trento&#39;</span><span class="p">,</span>
@@ -4134,8 +4134,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 
 <span class="c1"># and set attributes, like these:</span>
 
-<span class="n">edge</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>                <span class="c1"># it takes 5 minutes to go from Trento-Autostaz</span>
-                                  <span class="c1"># to Trento Corso 3 Novembre</span>
+<span class="n">edge</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>                <span class="c1"># the actual weight (not shown!)</span>
 
 <span class="n">edge</span><span class="p">[</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>            <span class="c1"># the label is a string</span>
 
@@ -4145,7 +4144,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <span class="n">edge</span><span class="p">[</span><span class="s1">&#39;route_short_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;B301&#39;</span> <span class="c1"># we can add any attribute we want,</span>
                                   <span class="c1"># Note these custom ones won&#39;t show in the graph</span>
 
-<span class="n">legend</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;#2ca02c&#39;</span><span class="p">,</span> <span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;B211&#39;</span><span class="p">}]</span>
+<span class="n">legend</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;B211&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;#2ca02c&#39;</span><span class="p">}</span> <span class="p">]</span>
 
 <span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">,</span>  <span class="n">legend</span><span class="p">)</span>
 </pre></div>
