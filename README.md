@@ -3,7 +3,7 @@
 
 Introductive guide to coding, data cleaning and analysis for Python 3, with many worked exercises.
 
-**English version status: IN PROGRESS, completion due by December 2020**
+**English version status: IN PROGRESS, completion due by December 2021**
 
 **Students: here on Github there are only source files, the official website is** https://en.softpython.org
 

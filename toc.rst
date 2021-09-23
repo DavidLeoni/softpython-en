@@ -3,40 +3,197 @@
     :glob:
 
     Home <index.ipynb>
-    Overview <overview.ipynb>
-    References <references.ipynb>
+    Overview <overview.ipynb>    
     Installation <installation.ipynb>    
 
 A - Foundations
-=======================
+====================
 
 .. toctree::
     :maxdepth: 2
     :glob:
 
-    Tools and scripts <tools/tools-sol.ipynb>
-    Basics <basics/basics-sol.ipynb>
-    Strings 1: Introduction <strings/strings1-sol.ipynb>
-    Strings 2: Operators <strings/strings2-sol.ipynb>
-    Strings 3: Methods <strings/strings3-sol.ipynb>
-    Lists 1: Introduction <lists/lists1-sol.ipynb>
-    Lists 2: Operators <lists/lists2-sol.ipynb>
-    Lists 3: Methods <lists/lists3-sol.ipynb>
-    Tuples <tuples/tuples-sol.ipynb> 
-    Sets <sets/sets-sol.ipynb> 
-    Dictionaries 1: Introduction <dictionaries/dictionaries1-sol.ipynb>
-    Dictionaries 2: Operators <dictionaries/dictionaries2-sol.ipynb>
-    Dictionaries 3: Methods <dictionaries/dictionaries3-sol.ipynb>
-    Control flow 1: if <control-flow/flow1-if-sol.ipynb>
-    Control flow 2: for <control-flow/flow2-for-sol.ipynb>
-    Control flow 3: while <control-flow/flow3-while-sol.ipynb>
-    Sequences and comprehensions <sequences/sequences-sol.ipynb>
-    Matrices: list of lists <matrices-lists/matrices-lists-sol.ipynb> 
-    Matrices: Numpy <matrices-numpy/matrices-numpy-sol.ipynb> 
-    Matrices: Numpy images <matrices-numpy/numpy-images-sol.ipynb> 
+    quick-intro/quick-intro-sol.ipynb
+    tools/tools-sol.ipynb    
+
+A1 Data types
+===============================
     
-    Errors and testing <errors-and-testing/errors-and-testing-sol.ipynb>
-    commandments.ipynb        
+Basics
+-------
+    
+.. toctree::
+    :maxdepth: 3
+    :glob:            
+    
+    integers <basics/basics1-ints-sol.ipynb>
+    booleans <basics/basics2-bools-sol.ipynb>
+    floats <basics/basics3-floats-sol.ipynb>
+    challenges <basics/basics4-chal.ipynb>
+    
+    
+Strings
+----------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    
+    intro <strings/strings1-sol.ipynb>
+    operators <strings/strings2-sol.ipynb>
+    basic methods <strings/strings3-sol.ipynb>
+    search methods <strings/strings4-sol.ipynb>
+    challenges <strings/strings5-chal.ipynb>
+    
+    
+Lists
+--------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    
+    intro <lists/lists1-sol.ipynb>
+    operators <lists/lists2-sol.ipynb>
+    basic methods <lists/lists3-sol.ipynb>
+    search methods <lists/lists4-sol.ipynb>
+    challenges <lists/lists5-chal.ipynb>
+    
+Tuples
+--------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    intro <tuples/tuples1-sol.ipynb>
+    challenges <tuples/tuples2-chal.ipynb>
+    
+    
+Sets
+---------
+    
+.. toctree::
+    :maxdepth: 3
+    :glob:
+        
+    intro <sets/sets1-sol.ipynb>
+    challenges <sets/sets2-chal.ipynb>
+
+Dizionaries
+--------------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    
+    intro <dictionaries/dictionaries1-sol.ipynb>
+    operators <dictionaries/dictionaries2-sol.ipynb>
+    methods <dictionaries/dictionaries3-sol.ipynb>
+    special dictionaries <dictionaries/dictionaries4-sol.ipynb>
+    challenges <dictionaries/dictionaries5-chal.ipynb>
+    
+A2 Control Flow
+=====================================
+
+If command
+-----------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    intro <if/if1-sol.ipynb>
+    challenges <if/if2-chal.ipynb>
+
+For cycle
+------------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    
+    intro <for/for1-intro-sol.ipynb>    
+    iterating strings <for/for2-strings-sol.ipynb>
+    iterating lists <for/for3-lists-sol.ipynb>
+    iterating tuples <for/for4-tuples-sol.ipynb>
+    iterating sets <for/for5-sets-sol.ipynb>
+    iterating dictionaries <for/for6-dictionaries-sol.ipynb>
+    nested fors <for/for7-nested-sol.ipynb>    
+    challenges <for/for8-chal.ipynb>
+
+While cycle
+-------------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    intro <while/while1-sol.ipynb>
+    challenges <while/while2-chal.ipynb>
+
+Sequences
+-----------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    intro <sequences/sequences1-sol.ipynb>
+    challenges <sequences/sequences2-chal.ipynb>
+    
+    
+A3 Algorithms  
+============================
+
+Functions, error handling and testing
+--------------------------------------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    defining functions <functions/fun1-intro-sol.ipynb>
+    error handling and testing <functions/fun2-errors-and-testing-sol.ipynb>
+    functions with strings <functions/fun3-strings-sol.ipynb>
+    functions with lists <functions/fun4-lists-sol.ipynb>    
+    functions with tuples <functions/fun5-tuples-sol.ipynb>
+    functions with sets <functions/fun6-sets-sol.ipynb>
+    functions with dictionaries <functions/fun7-dictionaries-sol.ipynb>
+    challenges <functions/fun8-chal.ipynb>
+    
+    
+Matrices of lists
+----------------------------   
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    intro <matrices-lists/matrices-lists1-sol.ipynb>
+    more exercises <matrices-lists/matrices-lists2-sol.ipynb>
+    challenges <matrices-lists/matrices-lists3-chal.ipynb>
+
+Mixed structures
+---------------------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    intro <mixed-structures/mixed-structures1-sol.ipynb>
+    challenges <mixed-structures/mixed-structures2-chal.ipynb>            
+
+Numpy matrices
+-------------------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    intro <matrices-numpy/matrices-numpy1-sol.ipynb>
+    exercises <matrices-numpy/matrices-numpy2-sol.ipynb>
+    challenges <matrices-numpy/matrices-numpy3-chal.ipynb>  
 
 B - Data analysis
 =======================
@@ -45,20 +202,61 @@ B - Data analysis
     :maxdepth: 2
     :glob:
     
-    Data formats (CSV, JSON) <formats/formats-sol.ipynb>
-    Graph formats <graph-formats/graph-formats-sol.ipynb>
+    toc-analytics.rst
     Binary relations <binary-relations/binary-relations-sol.ipynb>
-    Visualization <visualization/visualization-sol.ipynb>
-    Visualization - The AlgoRythm Opera Challenge <visualization/algorythm-opera-chal.ipynb>
-    Pandas analytics  <pandas/pandas-sol.ipynb>
-    Pandas analytics - EURES Job Offers <pandas/eures-jobs-sol.ipynb>
-    Pandas analytics challenge - Italian poets <pandas/italian-poets-chal.ipynb>
+
+C - Applications
+========================
+
+TODO
+
+D - Projects
+=======================
+
+
+
+Worked projects
+^^^^^^^^^^^^^^^^^^
+
+.. toctree::
+    :maxdepth: 2
+    :glob:
+    
+Line data
+^^^^^^^^^^^^^^^^
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    
+    TODO
+
+Tabular data
+^^^^^^^^^^^^^^^^^^
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    
+    TODO
+
+Relational data
+^^^^^^^^^^^^^^^^^^
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    
+    TODO
+
+E - Appendix
+==============
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
         
-|space|
-==========
-
-.. |space| unicode:: U+0020 .. space
-
-
-Index
-==========
+    commandments.ipynb
+    thanks.ipynb
+    changelog.ipynb
+    references.ipynb

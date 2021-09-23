@@ -124,6 +124,7 @@ extensions = [
 # Exclude build directory and Jupyter backup files:
 exclude_patterns = [jm.build,
                     jm.generated, 
+                    "**-chal-sol.*",
                     "_templates/exam-server",
                      "_private",
                      "_test",                     
@@ -208,6 +209,8 @@ todo_include_todos = True
 html_theme_options = {
     # fix for https://github.com/DavidLeoni/jupman/issues/38
     'collapse_navigation': False,
+    # needed for big docs  https://github.com/DavidLeoni/jupman/issues/77
+    'navigation_depth': 5,
 }
 
 # NOTE: in order to have complete collapsible menu, 
@@ -427,13 +430,13 @@ pdf_use_numbered_links = False
 pdf_fit_background_mode = 'scale'
 
 def setup(app):    
-    jmt.init(jm)    
+    jmt.init(jm, globals())    
 
 
     # temporary hack to have graph-drawing stuff
     jmt.info('Copying soft.py ...')
     import shutil
-    shutil.copy('soft.py', 'graph-formats/')
+    shutil.copy('soft.py', 'formats/')
     shutil.copy('soft.py', 'binary-relations/')
     shutil.copy('soft.py', 'visualization/')
 
@@ -451,10 +454,9 @@ def setup(app):
                             }, True)
     app.add_transform(AutoStructify)
     for folder in jm.get_exercise_folders():
-        jm.zip_folder(folder)
-    #jm.zip_folders('exams/*/solutions', 
-    #                lambda x:  '%s-%s-exam' % (jm.filename, x.split('/')[-2]))
-    #jm.zip_folders('challenges/*/', renamer = lambda x: '%s-challenge' % x.split('/')[1])
+        jm.zip_folder(folder)    
+    jm.zip_folders('challenges/*/', renamer = lambda x: '%s-challenge' % x.split('/')[1])
+    jm.zip_folders('projects/*/', renamer = lambda x: '%s-prj' % x.split('/')[1])
     #jm.zip_paths(['project'], '_static/generated/project-template')
 
     def sub(x):
