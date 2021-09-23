@@ -117,7 +117,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../index.html#Contents">Contents</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#A---Foundations">A - Foundations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#A.1-Data-types">A.1 Data types</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../index.html#A.2-Flow-control">A.2 Flow control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#A.2-Control-flow">A.2 Control flow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#A.3-Algorithms">A.3 Algorithms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#B---Data-analysis">B - Data analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#C---Applications">C - Applications</a></li>
@@ -2453,10 +2453,10 @@ str
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmacd3bb32-1c77-400c-be65-c2ead92716b1" type="application/json" >
+<script id="json-jma7ad81e0-35d2-4c3a-ab5c-9d4c81ec21c3" type="application/json" >
     {"code": " \nflowers = 4   \n\nx = flowers + 1\n\nflowers = x", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"flowers": 4}, "ordered_globals": ["flowers"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"flowers": 4, "x": 5}, "ordered_globals": ["flowers", "x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"flowers": 5, "x": 5}, "ordered_globals": ["flowers", "x"], "stack_to_render": [], "heap": {}, "stdout": ""}]}
 </script>
-<div id="jmacd3bb32-1c77-400c-be65-c2ead92716b1" class="pytutorVisualizer"> </div>
+<div id="jma7ad81e0-35d2-4c3a-ab5c-9d4c81ec21c3" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2476,12 +2476,12 @@ str
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmacd3bb32-1c77-400c-be65-c2ead92716b1').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jma7ad81e0-35d2-4c3a-ab5c-9d4c81ec21c3').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmacd3bb32-1c77-400c-be65-c2ead92716b1',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jma7ad81e0-35d2-4c3a-ab5c-9d4c81ec21c3',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -2752,7 +2752,14 @@ str
 </div>
 <p>There are various ways to do it, try to use <strong>only one</strong> temporary variable and be careful not to lose values !</p>
 <p><strong>HINT</strong>: to help yourself, try to write down in comments the state of the memory, and think which command to do</p>
-<p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">#</span> <span class="pre">a</span> <span class="pre">b</span> <span class="pre">c</span> <span class="pre">t</span>&#160;&#160;&#160; <span class="pre">which</span> <span class="pre">command</span> <span class="pre">do</span> <span class="pre">I</span> <span class="pre">need?</span> <span class="pre">#</span> <span class="pre">4</span> <span class="pre">7</span> <span class="pre">9</span> <span class="pre">#</span> <span class="pre">4</span> <span class="pre">7</span> <span class="pre">9</span> <span class="pre">7</span>&#160;&#160;&#160; <span class="pre">t</span> <span class="pre">=</span> <span class="pre">b</span> <span class="pre">#</span> <span class="pre">#</span> <span class="pre">#</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># a b c t    which command do I need?</span>
+<span class="c1"># 4 7 9</span>
+<span class="c1"># 4 7 9 7    t = b</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+</pre></div>
+</div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>

@@ -117,7 +117,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../index.html#Contents">Contents</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#A---Foundations">A - Foundations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#A.1-Data-types">A.1 Data types</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../index.html#A.2-Flow-control">A.2 Flow control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#A.2-Control-flow">A.2 Control flow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#A.3-Algorithms">A.3 Algorithms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#B---Data-analysis">B - Data analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../index.html#C---Applications">C - Applications</a></li>
@@ -2194,13 +2194,9 @@ person you included an average takes <code class="docutils literal notranslate">
 <span class="c1">#sec1,sec2,sec3, ga1,ga2, bo1,bo2 = 9,7,1, 3,5, 2,9  # 10 minutes and 50 seconds</span>
 
 
-<span class="c1"># write your code</span>
+<span class="c1"># write here</span>
 
-<span class="n">totsecs</span> <span class="o">=</span> <span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">sec1</span><span class="p">,</span> <span class="n">sec2</span><span class="p">,</span> <span class="n">sec3</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">4</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">ga1</span><span class="p">,</span><span class="n">ga2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">20</span> <span class="o">+</span> <span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">bo1</span><span class="p">,</span><span class="n">bo2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span> <span class="mi">30</span>
-<span class="n">mins</span> <span class="o">=</span> <span class="n">totsecs</span> <span class="o">//</span> <span class="mi">60</span>
-<span class="n">secs</span> <span class="o">=</span> <span class="n">totsecs</span> <span class="o">%</span> <span class="mi">60</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">mins</span><span class="p">,</span> <span class="s1">&#39;minutes and&#39;</span><span class="p">,</span> <span class="n">secs</span><span class="p">,</span> <span class="s1">&#39;seconds&#39;</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2255,7 +2251,7 @@ person you included an average takes <code class="docutils literal notranslate">
 </div>
 <div class="section" id="The-Tunnel-of-Time">
 <h2>The Tunnel of Time<a class="headerlink" href="#The-Tunnel-of-Time" title="Permalink to this headline">¶</a></h2>
-<p>Recently a spatio-temporal tunnel has been discovered which allows to travel in time. Humanity realized events can only get worse and is struggling to send probes through the tunnel, to repair the tragic errors it committed in the past. Alas, in the tunnel there are very strong magnetic-gravitational fields which might have sucked the probe into the folds of time (represented in grey).</p>
+<p>Recently a spatio-temporal tunnel has been discovered which allows time travellling. To repair the tragic errors it committed in the past, humanity is struggling to send probes through the tunnel. Alas, in the tunnel there are very strong magnetic-gravitational fields which might have sucked the probe into the folds of time (represented in shades of grey).</p>
 <p>Write some code which given the <code class="docutils literal notranslate"><span class="pre">px,py</span></code> position of the probe, prints <code class="docutils literal notranslate"><span class="pre">True</span></code> if the probe went into a grey zone, and <code class="docutils literal notranslate"><span class="pre">False</span></code> if it went into a white zone.</p>
 <ul class="simple">
 <li><p>Origin 0,0 is at the center</p></li>
