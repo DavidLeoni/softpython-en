@@ -1,0 +1,2295 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-125857337-4']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Functions 7 - exercises with dictionaries &mdash; SoftPython</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/jupman-web.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/softpython-theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://en.softpython.org/functions/fun7-dictionaries-sol.html" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/jupman.js"></script>
+        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script type="text/javascript" src="../_static/js/softpython.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Functions 8 - Challenges" href="fun8-chal.html" />
+    <link rel="prev" title="Functions 6- exercises with sets" href="fun6-sets-sol.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../toc-page.html" class="icon icon-home"> SoftPython
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Intended-audience">Intended audience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Contents">Contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#A---Foundations">A - Foundations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#A.1-Data-types">A.1 Data types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#A.2-Flow-control">A.2 Flow control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#A.3-Algorithms">A.3 Algorithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#B---Data-analysis">B - Data analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#C---Worked-projects">C - Worked projects</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Author">Author</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../index.html#Contributors">Contributors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#License">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#Acknowledgments">Acknowledgments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Chapters">Chapters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Why-Python?">Why Python?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Approach-and-goals">Approach and goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Doesn't-work,-what-should-I-do?">Doesn’t work, what should I do?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../overview.html#How-to-ask-questions">How to ask questions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Installation-and-tools">Installation and tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview.html#Let's-start-!">Let’s start !</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Installing-Python">Installing Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Windows-installation">Windows installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Mac-installation">Mac installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Linux-installation">Linux installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Installing-packages">Installing packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Jupyter-Notebook">Jupyter Notebook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Run-Jupyter-notebook">Run Jupyter notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Saving-Jupyter-notebooks">Saving Jupyter notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Turning-off-Jupyter-server">Turning off Jupyter server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Navigating-notebooks">Navigating notebooks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Installing-Jupyter-notebook---all-operating-systems">Installing Jupyter notebook - all operating systems</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Projects-with-virtual-environments">Projects with virtual environments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Creating-virtual-environments">Creating virtual environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Activate-a-virtual-environment">Activate a virtual environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../installation.html#Executing-environments-inside-Jupyter">Executing environments inside Jupyter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../installation.html#With-Anaconda">With Anaconda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../installation.html#Without-Anaconda">Without Anaconda</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#Further-readings">Further readings</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html">A - Foundations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tools/tools-sol.html">Tools and scripts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Python-interpreter">Python interpreter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Let's-open-system-console">Let’s open system console</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Listing-files-and-folders">Listing files and folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Let's-launch-the-Python-interpreter">Let’s launch the Python interpreter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Exiting-the-interpreter">Exiting the interpreter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Modules">Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Simple-text-editor">Simple text editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#IDE">IDE</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Jupyter">Jupyter</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Printing-an-expression">Printing an expression</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Exercise---Castles-in-the-air">Exercise - Castles in the air</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Visualizing-the-execution-with-Python-Tutor">Visualizing the execution with Python Tutor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Debugging-code-in-Jupyter">Debugging code in Jupyter</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../tools/tools-sol.html#Python-Tutor-:-Limitation-1">Python Tutor : Limitation 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tools/tools-sol.html#Python-Tutor-:-Limitation-2">Python Tutor : Limitation 2</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Exercise---tavern">Exercise - tavern</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tools/tools-sol.html#Python-Architecture">Python Architecture</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Python-is-a-high-level-language">Python is a high level language</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tools/tools-sol.html#Performance">Performance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#a1-data-types">A1 Data types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#basics">Basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics1-ints-sol.html">integers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics1-ints-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics1-ints-sol.html#Jupyter">Jupyter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics1-ints-sol.html#Objects">Objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics1-ints-sol.html#Variables">Variables</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Detect-the-type-of-a-variable">Detect the type of a variable</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Reassign-a-variable">Reassign a variable</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Reusing-a-variable">Reusing a variable</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Assignments---questions">Assignments - questions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Exercise---exchange">Exercise - exchange</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Exercise---cycling">Exercise - cycling</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Changing-type-during-execution">Changing type during execution</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Multiple-commands-on-the-same-line">Multiple commands on the same line</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Multiple-initializations">Multiple initializations</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Exercise---exchange-like-a-ninja">Exercise - exchange like a ninja</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Names-of-variables">Names of variables</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Names-of-variables---questions">Names of variables - questions</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics1-ints-sol.html#Numerical-types">Numerical types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics1-ints-sol.html#Integer-numbers">Integer numbers</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Exercise---deadline-1">Exercise - deadline 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Modulo-operator">Modulo operator</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Exercise---deadline-2">Exercise - deadline 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#min-and-max">min and max</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Exercise---transportation">Exercise - transportation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics1-ints-sol.html#Exercise---armchairs">Exercise - armchairs</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics1-ints-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics2-bools-sol.html">booleans</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Boolean-operators">Boolean operators</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics2-bools-sol.html#and">and</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics2-bools-sol.html#or">or</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics2-bools-sol.html#not">not</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Questions-with-costants">Questions with costants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Questions-with-variables">Questions with variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#De-Morgan">De Morgan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Conversion">Conversion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Questions---what-is-a-boolean?">Questions - what is a boolean?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Evaluation-order">Evaluation order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Evaluation-errors">Evaluation errors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Comparison-operators">Comparison operators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Lava-Temple">Exercise - The Lava Temple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Tower-of-Gradius-I">Exercise - The Tower of Gradius I</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Pipe-Jump">Exercise - The Pipe Jump</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Tower-of-Gradius-II">Exercise - The Tower of Gradius II</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics3-floats-sol.html">floats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics3-floats-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics3-floats-sol.html#Real-numbers">Real numbers</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Scientifical-notation">Scientifical notation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Too-big-or-too-small-numbers">Too big or too small numbers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Exercise---circle">Exercise - circle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Exercise---fractioning">Exercise - fractioning</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Exercise---summation">Exercise - summation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Reals---conversion">Reals - conversion</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Exercise---Invigorate">Exercise - Invigorate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Exercise---roundminder">Exercise - roundminder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Reals---equality">Reals - equality</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Exercise---quadratic">Exercise - quadratic</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics3-floats-sol.html#Exercise---trendy">Exercise - trendy</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics3-floats-sol.html#Decimal-numbers">Decimal numbers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics3-floats-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics/basics4-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#Challenges">Challenges</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---which-booleans-1?">Challenge - which booleans 1?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---which-booleans-2?">Challenge - which booleans 2?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---airport">Challenge - airport</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---Holiday-trip">Challenge - Holiday trip</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#The-Tunnel-of-Time">The Tunnel of Time</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#strings">Strings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Creating-strings">Creating strings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Printing---the-cells">Printing - the cells</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#The-empty-string">The empty string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Printing-many-strings">Printing many strings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Length-of-a-string">Length of a string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Printing---escape-sequences">Printing - escape sequences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Esempio---line-feed">Esempio - line feed</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Example---tabulation">Example - tabulation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Encodings">Encodings</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#ASCII-characters">ASCII characters</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Unicode-characters">Unicode characters</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Strings-are-immutable">Strings are immutable</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Reassign-variables">Reassign variables</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Reassign-a-variable-to-itself">Reassign a variable to itself</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Strings-and-numbers">Strings and numbers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Conversions---from-string-to-number">Conversions - from string to number</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Conversions---from-number-to-string">Conversions - from number to string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-strings">Formatting strings</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-%">Formatting with <code class="docutils literal notranslate"><span class="pre">%</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Exercise---supercars">Exercise - supercars</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings2-sol.html">operators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Reading-characters">Reading characters</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---alternate">Exercise - alternate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Negative-indexes">Negative indexes</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Substitute-characters">Substitute characters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Slices">Slices</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---garalampog">Exercise - garalampog</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---ifEweEfav-lkSD-lkWe">Exercise - ifEweEfav lkSD lkWe</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Slices---limits">Slices - limits</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Slice---Omitting-limits">Slice - Omitting limits</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---ysterymyster">Exercise - ysterymyster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Slice---negative-limits">Slice - negative limits</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---javarnanda">Exercise - javarnanda</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Slice---modifying">Slice - modifying</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---the-run">Exercise - the run</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-1">Exercise - contained 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-2">Exercise - contained 2</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Comparisons">Comparisons</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Equality-operators">Equality operators</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---statist">Exercise - statist</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Comparing-characters">Comparing characters</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Comparing-different-lengths">Comparing different lengths</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---Character-intervals">Exercise - Character intervals</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---The-Library-of-Encodicus">Exercise - The Library of Encodicus</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Replication-operator">Replication operator</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---za-za-za">Exercise - za za za</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings3-sol.html">basic methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Example---upper">Example - <code class="docutils literal notranslate"><span class="pre">upper</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---walking">Exercise - walking</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#lower-method"><code class="docutils literal notranslate"><span class="pre">lower</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---lowermid">Exercise - lowermid</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#capitalize-method"><code class="docutils literal notranslate"><span class="pre">capitalize</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---Your-Excellence">Exercise - Your Excellence</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#startswith-method"><code class="docutils literal notranslate"><span class="pre">startswith</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---by-Jove">Exercise - by Jove</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#endswith-method"><code class="docutils literal notranslate"><span class="pre">endswith</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---Snobbonis">Exercise - Snobbonis</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#isalpha-method"><code class="docutils literal notranslate"><span class="pre">isalpha</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---Fighting-the-hackers">Exercise - Fighting the hackers</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#isdigit-method"><code class="docutils literal notranslate"><span class="pre">isdigit</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---Selling-numbers">Exercise - Selling numbers</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#isupper-and-islower-methods"><code class="docutils literal notranslate"><span class="pre">isupper</span></code> and <code class="docutils literal notranslate"><span class="pre">islower</span></code> methods</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings3-sol.html#Exercise---dwarves-and-GIANTS">Exercise - dwarves and GIANTS</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings3-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings4-sol.html">search methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#strip-method"><code class="docutils literal notranslate"><span class="pre">strip</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Specificying-character-to-strip">Specificying character to strip</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Exercise---Biblio-bank">Exercise - Biblio bank</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#lstrip-method"><code class="docutils literal notranslate"><span class="pre">lstrip</span></code> method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#rstrip-method"><code class="docutils literal notranslate"><span class="pre">rstrip</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Exercise---Bad-to-the-bone">Exercise - Bad to the bone</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#count-method"><code class="docutils literal notranslate"><span class="pre">count</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Do-not-abuse-count">Do not abuse count</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Exercise---astro-money">Exercise - astro money</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#find-method"><code class="docutils literal notranslate"><span class="pre">find</span></code> method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#rfind-method"><code class="docutils literal notranslate"><span class="pre">rfind</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Do-not-abuse-find">Do not abuse find</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Exercise---The-port-of-Monkey-Island">Exercise - The port of Monkey Island</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Exercise---bananas">Exercise - bananas</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#replace-method"><code class="docutils literal notranslate"><span class="pre">replace</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Do-not-abuse-replace">Do not abuse replace</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Exercise---Do-not-open-that-door">Exercise - Do not open that door</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings4-sol.html#Exercise---The-Kingdom-of-Stringards">Exercise - The Kingdom of Stringards</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#Other-exercises">Other exercises</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings4-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../strings/strings5-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings5-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings5-chal.html#TODO">TODO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#lists">Lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Creating-lists">Creating lists</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Empty-list">Empty list</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---scambi-di-liste">Exercise - scambi di liste</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Tabelle">Tabelle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Domanda---creazione-di-liste">Domanda - creazione di liste</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---domino">Exercise - domino</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---create-lists-2">Exercise - create lists 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---create-lists-3">Exercise - create lists 3</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---create-lists-4">Exercise - create lists 4</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Convert-sequences-into-lists">Convert sequences into lists</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---gulp">Exercise - gulp</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists1-sol.html#Exercise---garaga">Exercise - garaga</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists2-sol.html">operators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Length-of-a-list">Length of a list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Reading-an-element">Reading an element</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---Gutenberg-apprentice">Exercise - Gutenberg apprentice</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Writing-an-element">Writing an element</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---a-jammed-parking-lot">Exercise - a jammed parking lot</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Mutating-shared-lists">Mutating shared lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#List-of-strings">List of strings</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---province-codes">Exercise - province codes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---games">Exercise - games</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Slices">Slices</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Slice---limits">Slice - limits</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---The-'treccia-mochena'">Exercise - The ‘treccia mochena’</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Slices---omitting-limits">Slices - omitting limits</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---An-out-of-tune-guitar">Exercise - An out of tune guitar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Slices---negative-limits">Slices - negative limits</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---The-NonsenShop">Exercise - The NonsenShop</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Slice---step">Slice - step</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Slices---modifying">Slices - modifying</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---The-railway-outlaws">Exercise - The railway outlaws</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#List-of-lists">List of lists</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---couples">Exercise - couples</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---Glory-to-Gladiators!">Exercise - Glory to Gladiators!</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#not-in">not in</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---vegetables">Exercise - vegetables</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#List-concatenation-with-+">List concatenation with +</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---concatenation">Exercise - concatenation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#min-and-max">min and max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#sum">sum</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---balance">Exercise - balance</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Multiplying-lists">Multiplying lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Equality">Equality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists3-sol.html">basic methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#append-method"><code class="docutils literal notranslate"><span class="pre">append</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---augmenting-a-list-1">Exercise - augmenting a list 1</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#extend-method"><code class="docutils literal notranslate"><span class="pre">extend</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Extending-with-sequences">Extending with sequences</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise:-augmenting-a-list-2">Exercise: augmenting a list 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---zslice">Exercise - zslice</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---Zebarerun">Exercise - Zebarerun</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#insert-method"><code class="docutils literal notranslate"><span class="pre">insert</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---insertando">Exercise - insertando</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---insappend">Exercise - insappend</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#pop-method"><code class="docutils literal notranslate"><span class="pre">pop</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---popcorn">Exercise - popcorn</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---zonzo">Exercise - zonzo</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#reverse-method"><code class="docutils literal notranslate"><span class="pre">reverse</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---good-manners">Exercise - good manners</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---precious-things">Exercise - precious things</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---powers">Exercise - powers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#sort-method"><code class="docutils literal notranslate"><span class="pre">sort</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Custom-sorting">Custom sorting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---numlist">Exercise - numlist</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#join---build-strings-from-lists"><code class="docutils literal notranslate"><span class="pre">join</span></code> - build strings from lists</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---barzoletta">Exercise - barzoletta</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---dub-dab-dib-dob">Exercise - dub dab dib dob</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---ghirigori">Exercise - ghirigori</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---welldone">Exercise - welldone</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists4-sol.html">search methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists4-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists4-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists4-sol.html#split-method---from-strings-to-lists"><code class="docutils literal notranslate"><span class="pre">split</span></code> method - from strings to lists</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Exercise---trash-dance">Exercise - trash dance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Exercise---Trash-in-tour">Exercise - Trash in tour</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Exercise---manylines">Exercise - manylines</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Exercise---takechars">Exercise - takechars</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists4-sol.html#count-method"><code class="docutils literal notranslate"><span class="pre">count</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Do-not-abuse-count">Do not abuse count</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Exercise---country-life">Exercise - country life</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists4-sol.html#index-method"><code class="docutils literal notranslate"><span class="pre">index</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Do-not-abuse-index">Do not abuse index</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Exercise---Spatoč">Exercise - Spatoč</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists4-sol.html#remove-method"><code class="docutils literal notranslate"><span class="pre">remove</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Do-not-abuse-remove">Do not abuse remove</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists4-sol.html#Exercise---nob">Exercise - nob</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists4-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../lists/lists5-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists5-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists5-chal.html#TODO">TODO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#tuples">Tuples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples1-sol.html#Download-exercise-zip">Download exercise zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples1-sol.html#Creating-tuples">Creating tuples</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Empty-tuple">Empty tuple</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Tuples-without-brackets">Tuples without brackets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Heterogenous-elements">Heterogenous elements</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Creating-tuples-from-sequences">Creating tuples from sequences</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Creating-sequences-from-tuples">Creating sequences from tuples</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples1-sol.html#Operators">Operators</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#len">len</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Reading-an-element">Reading an element</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---animals">Exercise - animals</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Slices">Slices</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Concatenation">Concatenation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Membership">Membership</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Multiplication">Multiplication</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---welcome">Exercise - welcome</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples1-sol.html#Write-an-element">Write an element</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---badmod">Exercise - badmod</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---abde">Exercise - abde</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---charismatic">Exercise - charismatic</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---sorting">Exercise - sorting</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples1-sol.html#Methods">Methods</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#index-method"><code class="docutils literal notranslate"><span class="pre">index</span></code> method</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Do-not-abuse-index">Do not abuse index</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---The-chinese-boxes">Exercise - The chinese boxes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#count-method"><code class="docutils literal notranslate"><span class="pre">count</span></code> method</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Do-not-abuse-count">Do not abuse count</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---fruits">Exercise - fruits</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../tuples/tuples2-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples2-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../tuples/tuples2-chal.html#TODO">TODO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#sets">Sets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sets/sets1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Creating-a-set">Creating a set</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Converting-sequences-to-sets">Converting sequences to sets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Mutable-elements-and-hashes">Mutable elements and hashes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Empty-set">Empty set</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---dedup">Exercise - dedup</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Frozenset">Frozenset</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Operators">Operators</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#len">len</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---distincts">Exercise - distincts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Union">Union</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---everythingbut-1">Exercise - everythingbut 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Intersection">Intersection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Difference">Difference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Symmetric-difference">Symmetric difference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Membership">Membership</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Equality">Equality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Methods-like-operators">Methods like operators</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#union">union</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#update">update</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---everythingbut-2">Exercise - everythingbut 2</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Other-methods">Other methods</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#add-method"><code class="docutils literal notranslate"><span class="pre">add</span></code> method</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#remove-method"><code class="docutils literal notranslate"><span class="pre">remove</span></code> method</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---bababiba">Exercise - bababiba</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#discard-method"><code class="docutils literal notranslate"><span class="pre">discard</span></code> method</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---trash">Exercise - trash</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#issubset-method"><code class="docutils literal notranslate"><span class="pre">issubset</span></code> method</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#issuperset-method"><code class="docutils literal notranslate"><span class="pre">issuperset</span></code> method</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#isdisjoint-method"><code class="docutils literal notranslate"><span class="pre">isdisjoint</span></code> method</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---matrioska">Exercise - matrioska</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Exercise-with-functions">Exercise with functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---syllabs">Exercise - syllabs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---distinguish">Exercise - distinguish</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Verifify-comprehension">Verifify comprehension</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---intersectron">Exercise - intersectron</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#References">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#dizionaries">Dizionaries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Creating-a-dictionary">Creating a dictionary</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#The-keys">The keys</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#The-values">The values</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Empty-dictionary">Empty dictionary</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Keys-and-heterogenous-values">Keys and heterogenous values</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Exercise---barone">Exercise - barone</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Dictionary-from-a-sequence-of-couples">Dictionary from a sequence of couples</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Exercise---galattico-veramente">Exercise - galattico veramente</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Dictionary-from-keyword-arguments">Dictionary from keyword arguments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Copying-a-dictionary">Copying a dictionary</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Shallow-copy">Shallow copy</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Deep-copy">Deep copy</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html">operators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Download-exercise-zip">Download exercise zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#len">len</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Reading-a-value">Reading a value</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Fast-disorder">Fast disorder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---z7">Exercise - z7</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Writing-in-the-dictionary">Writing in the dictionary</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Writing---adding-key/value">Writing - adding key/value</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Writing---reassociate-a-key">Writing - reassociate a key</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---workshop">Exercise - workshop</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Writing---deleting">Writing - deleting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---desktop">Exercise - desktop</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---garden">Exercise - garden</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---translations">Exercise - translations</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Membership-with-in">Membership with <code class="docutils literal notranslate"><span class="pre">in</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#not-in">not in</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---The-Helmsman">Exercise - The Helmsman</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Dictionaries-of-sequences">Dictionaries of sequences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---loans">Exercise - loans</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---Shark-Bay">Exercise - Shark Bay</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---The-Storm-Sea">Exercise - The Storm Sea</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Equality">Equality</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Equality-and-order">Equality and order</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Equality-and-copies">Equality and copies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Exercise---Zoom-Doom">Exercise - Zoom Doom</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries2-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html">methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Download-exercise-zip">Download exercise zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#keys-method"><code class="docutils literal notranslate"><span class="pre">keys</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Exercise---messy-keys">Exercise - messy keys</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Exercise---sorted-keys">Exercise - sorted keys</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Exercise---keyring">Exercise - keyring</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#values-method"><code class="docutils literal notranslate"><span class="pre">values</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Exercise---one-by-one">Exercise - one by one</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Exercise---bag">Exercise - bag</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Exercise---common-values">Exercise - common values</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Exercise---small-big">Exercise - small big</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#items-method"><code class="docutils literal notranslate"><span class="pre">items</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Exercise---union-without-update">Exercise - union without update</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#update-method"><code class="docutils literal notranslate"><span class="pre">update</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Exercise---axby">Exercise - axby</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries3-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dictionaries/dictionaries4-sol.html">special dictionaries</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries4-sol.html#Download-exercise-zip">Download exercise zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries4-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries4-sol.html#OrderedDict">OrderedDict</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries4-sol.html#Exercise---phonebook">Exercise - phonebook</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries4-sol.html#Exercise---OrderedDict-copy">Exercise - OrderedDict copy</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries4-sol.html#Counter">Counter</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dictionaries/dictionaries4-sol.html#Exercise---saddened">Exercise - saddened</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries4-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#a2-control-flow">A2 Control Flow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#if-command">If command</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../if/if1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#The-basic-command-if-else">The basic command <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">else</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#else-is-optional"><code class="docutils literal notranslate"><span class="pre">else</span></code> is optional</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#Exercise---no-fuel">Exercise - no fuel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#The-command-if---elif---else">The command <em>if - elif - else</em></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Questions">Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#Questions---Are-they-equivalent?">Questions - Are they equivalent?</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---strawberries">Are they equivalent? - strawberries</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---max">Are they equivalent? - max</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---min">Are they equivalent? - min</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---big-small">Are they equivalent? - big small</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---Cippirillo">Are they equivalent? - Cippirillo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---farm">Exercise - farm</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---accents">Exercise - accents</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---Arcana">Exercise - Arcana</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#Nested-ifs">Nested ifs</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---abscissae-and-ordinates-1">Exercise - abscissae and ordinates 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Esercise---abscissae-and-ordinates-2">Esercise - abscissae and ordinates 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---bus">Exercise - bus</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---chronometer">Exercise - chronometer</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#id1">Questions - Are they equivalent?</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---inside-outside-1">Are they equivalent? - inside outside 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---stars-planets">Are they equivalent? - stars planets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---green-red">Are they equivalent? - green red</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---circles-squares">Are they equivalent? - circles squares</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---inside-outside-2">Are they equivalent? - inside outside 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Are-they-equivalent?---Ciabanga">Are they equivalent? - Ciabanga</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---The-maximum">Exercise - The maximum</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#Ternary-operator">Ternary operator</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Questions-ternary-ifs">Questions ternary ifs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---shoes">Exercise - shoes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---the-little-train">Exercise - the little train</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../if/if2-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../if/if2-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#for-cycle">For cycle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../for/for1-intro-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#Iteration-by-element">Iteration by element</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Names-of-variables-in-for">Names of variables in <code class="docutils literal notranslate"><span class="pre">for</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Iterating-strings">Iterating strings</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Iterating-tuples">Iterating tuples</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Questions---iteration">Questions - iteration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---magic-carpet">Exercise - magic carpet</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Esercise---evensum">Esercise - evensum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---birbantello">Exercise - birbantello</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---articulate">Exercise - articulate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---gala">Exercise - gala</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---balance">Exercise - balance</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#Counting-with-range">Counting with range</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Questions---range">Questions - range</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---printdoubles">Exercise - printdoubles</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---multiples-or-not">Exercise - multiples or not</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---ab-interval">Exercise - ab interval</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---FizzBuzz">Exercise - FizzBuzz</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#Iterating-by-index">Iterating by index</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---kitchen">Exercise - kitchen</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---neon">Exercise - neon</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---emotions">Exercise - emotions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---organetto">Exercise - organetto</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---sghiribizzo">Exercise - sghiribizzo</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---dna">Exercise - dna</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---sportello">Exercise - sportello</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---farm">Exercise - farm</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---pokemon">Exercise - pokemon</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#Modifying-during-iteration">Modifying during iteration</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---duplicate">Exercise - duplicate</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---hammers">Exercise - hammers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---Orangutan">Exercise - Orangutan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---basket">Exercise - basket</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#break-and-continue-commands"><code class="docutils literal notranslate"><span class="pre">break</span></code> and <code class="docutils literal notranslate"><span class="pre">continue</span></code> commands</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Terminate-with-break">Terminate with <code class="docutils literal notranslate"><span class="pre">break</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Jumping-with-continue">Jumping with <code class="docutils literal notranslate"><span class="pre">continue</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Combining-break-and-continue">Combining <code class="docutils literal notranslate"><span class="pre">break</span></code> and <code class="docutils literal notranslate"><span class="pre">continue</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Questions---break-and-continue">Questions - break and continue</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---autonomous-walking">Exercise - autonomous walking</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---breaking-bad">Exercise - breaking bad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---breaking-point">Exercise - breaking point</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for1-intro-sol.html#Exercise---breakdance">Exercise - breakdance</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../for/for2-strings-sol.html">iterating strings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../for/for2-strings-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for2-strings-sol.html#Exercise---Impertinence">Exercise - Impertinence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for2-strings-sol.html#Exercise---rosco">Exercise - rosco</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for2-strings-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../for/for3-lists-sol.html">iterating lists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../for/for3-lists-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for3-lists-sol.html#Exercise---The-contest">Exercise - The contest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for3-lists-sol.html#Exercise---babbà">Exercise - babbà</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for3-lists-sol.html#Exercise---The-Temple-of-Fortune">Exercise - The Temple of Fortune</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for3-lists-sol.html#Exercise---the-longest-word">Exercise - the longest word</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for3-lists-sol.html#Exercise---desert">Exercise - desert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for3-lists-sol.html#Exercise---splash">Exercise - splash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for3-lists-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../for/for4-tuples-sol.html">iterating tuples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../for/for4-tuples-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for4-tuples-sol.html#Exercise---double-couples">Exercise - double couples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for4-tuples-sol.html#Exercise---carpet">Exercise - carpet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for4-tuples-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../for/for5-sets-sol.html">iterating sets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../for/for5-sets-sol.html#Download-exercises-zip">Download exercises zip</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../for/for5-sets-sol.html#Questions---sets">Questions - sets</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for5-sets-sol.html#TODO">TODO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for5-sets-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../for/for6-dictionaries-sol.html">iterating dictionaries</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Iterating-keys">Iterating keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Iterating-key-value-pairs">Iterating key-value pairs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Iterating-values">Iterating values</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Questions---iteration">Questions - iteration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Questions---Are-they-equivalent?">Questions - Are they equivalent?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Are-they-equivalent-?-postin">Are they equivalent ? postin</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Are-they-equivalent-?-cortel">Are they equivalent ? cortel</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Are-they-equivalent-?---gel">Are they equivalent ? - gel</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Are-they-equivalent-?---giri">Are they equivalent ? - giri</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Are-they-equivalent?---Found">Are they equivalent? - Found</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Iteration-exercises">Iteration exercises</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---color-of-hearts">Exercise - color of hearts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---jewels">Exercise - jewels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---powers">Exercise - powers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---flowers">Exercise - flowers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---art">Exercise - art</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---stationery-stores">Exercise - stationery stores</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---legumes">Exercise - legumes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---smog">Exercise - smog</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---sports">Exercise - sports</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---green-lizard">Exercise - green lizard</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Modifying-a-dictionary-during-iteration">Modifying a dictionary during iteration</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---zazb">Exercise - zazb</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---DIY">Exercise - DIY</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Exercise---mine">Exercise - mine</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../for/for7-nested-sol.html">nested fors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Nested-for">Nested <code class="docutils literal notranslate"><span class="pre">for</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Questions---nested-for">Questions - nested for</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Exercise---casting">Exercise - casting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Exercise---cover-the-plane">Exercise - cover the plane</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Exercise---triangular">Exercise - triangular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Exercise---port">Exercise - port</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Exercise---polygons">Exercise - polygons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Exercise---bon-jour">Exercise - bon jour</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for7-nested-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../for/for8-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../for/for8-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for8-chal.html#TODO">TODO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#while-cycle">While cycle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../while/while1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#Counting-with-a-while">Counting with a while</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Terminating-while">Terminating <code class="docutils literal notranslate"><span class="pre">while</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Non-terminating-while">Non terminating <code class="docutils literal notranslate"><span class="pre">while</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Questions">Questions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Esercises">Esercises</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---printeven">Exercise - printeven</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---average">Exercise - average</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#break-and-continue-commands"><code class="docutils literal notranslate"><span class="pre">break</span></code> and <code class="docutils literal notranslate"><span class="pre">continue</span></code> commands</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Terminate-with-a-break">Terminate with a <code class="docutils literal notranslate"><span class="pre">break</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Jumping-with-continue">Jumping with <code class="docutils literal notranslate"><span class="pre">continue</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Questions-about-break-and-continue">Questions about <code class="docutils literal notranslate"><span class="pre">break</span></code> and <code class="docutils literal notranslate"><span class="pre">continue</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#Questions---Are-they-equivalent?">Questions - Are they equivalent?</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---BORG">Are they equivalent? - BORG</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---until-3">Are they equivalent? - until 3</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---by-chance">Are they equivalent? - by chance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---until-six">Are they equivalent? - until six</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---countdown-1">Are they equivalent? - countdown 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---countdown-2">Are they equivalent? - countdown 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---sorcery">Are they equivalent? - sorcery</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---ping-pong">Are they equivalent? - ping pong</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---zanna">Are they equivalent? - zanna</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---pasticcio">Are they equivalent? - pasticcio</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#Exercises---counters">Exercises - counters</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---don't-break-1">Exercise - don’t break 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---don't-break-2">Exercise - don’t break 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---Give-me-a-break">Exercise - Give me a break</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---paperboard">Exercise - paperboard</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---until-ten">Exercise - until ten</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---cccc">Exercise - cccc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---converge">Exercise - converge</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#Searching-a-sequence">Searching a sequence</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#How-to-check">How to check</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---Turbolenz-with-a-break">Exercise - Turbolenz with a break</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---Turbulenz-without-break">Exercise - Turbulenz without break</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---hangar">Exercise - hangar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---Wild-West">Exercise - Wild West</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---The-Balance-of-Language">Exercise - The Balance of Language</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---the-tree-shaker">Exercise - the tree shaker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---fantastic-story-of-the-ghost-castle">Exercise - fantastic story of the ghost castle</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#Modifying-sequences">Modifying sequences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Stack---Drawing-from-a-card-deck">Stack - Drawing from a card deck</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Stack---Drawing-until-condition">Stack - Drawing until condition</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---Don't-break-my-heart">Exercise - Don’t break my heart</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Questions---what-happens?">Questions - what happens?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Questions---are-they-equivalent?">Questions - are they equivalent?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---train">Are they equivalent? - train</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Are-they-equivalent?---append-nx">Are they equivalent? - append nx</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#Exercises---stack">Exercises - stack</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---break-sum">Exercise - break sum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---travelbook">Exercise - travelbook</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---BANG-!">Exercise - BANG !</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../while/while1-sol.html#Exercise---Growing-or-degrowing?">Exercise - Growing or degrowing?</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../while/while2-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../while/while2-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../while/while2-chal.html#TODO">TODO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#sequences">Sequences</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sequences/sequences1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Iterables---lists">Iterables - lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#iterables---range">iterables - range</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Materializing-a-sequence">Materializing a sequence</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Questions---range">Questions - <code class="docutils literal notranslate"><span class="pre">range</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#reversed">reversed</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Iterating-with-next">Iterating with <code class="docutils literal notranslate"><span class="pre">next</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---sconcerto">Exercise - sconcerto</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Materializing-an-iterator">Materializing an iterator</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#sorted">sorted</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---reversort">Exercise - reversort</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#zip">zip</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---ladder">Exercise - ladder</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#List-comprehensions">List comprehensions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#List-comprehensions-on-strings">List comprehensions on strings</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Questions---List-comprehensions">Questions - List comprehensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercises---list-comprehension">Exercises - list comprehension</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---Bubble-bubble">Exercise - Bubble bubble</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---root">Exercise - root</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---When-The-Telephone-Rings">Exercise - When The Telephone Rings</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---don't-worry">Exercise - don’t worry</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---greater-than-3">Exercise - greater than 3</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---even">Exercise - even</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---both-ends">Exercise - both ends</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---dashes">Exercise - dashes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---lollosa">Exercise - lollosa</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---dog-cat">Exercise - dog cat</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---smurfs">Exercise - smurfs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---precious-metals">Exercise - precious metals</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Filtered-list-comprehensions">Filtered list comprehensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Questions---filtered-list-comprehensions">Questions - filtered list comprehensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercises---filtered-list-comprehensions">Exercises - filtered list comprehensions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---savannah">Exercise - savannah</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---puZZled">Exercise - puZZled</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Exercise---Data-science">Exercise - Data science</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../sequences/sequences2-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences2-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../sequences/sequences2-chal.html#TODO">TODO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../toc.html#a3-algorithms">A3 Algorithms</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../toc.html#functions-error-handling-and-testing">Functions, error handling and testing</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="fun1-intro-sol.html">defining functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="fun1-intro-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun1-intro-sol.html#Introduction">Introduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#What-is-a-function-?">What is a function ?</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun1-intro-sol.html#Namespace-and-variable-scope">Namespace and variable scope</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun1-intro-sol.html#Argument-passing">Argument passing</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#Positional-arguments">Positional arguments</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#Passing-arguments-by-keyword">Passing arguments by keyword</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#Specifying-default-values">Specifying default values</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun1-intro-sol.html#Simple-exercises">Simple exercises</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#sum2">sum2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#comparep">comparep</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#comparer">comparer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#even">even</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#gre">gre</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#is_vocal">is_vocal</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#sphere_volume">sphere_volume</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#ciri">ciri</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#age">age</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun1-intro-sol.html#Verify-comprehension">Verify comprehension</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun1-intro-sol.html#Lambda-functions">Lambda functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#Exercises:-lambdas">Exercises: lambdas</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#apply_borders">apply_borders</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun1-intro-sol.html#process">process</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fun2-errors-and-testing-sol.html">error handling and testing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Introduction">Introduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Unforeseen-situations">Unforeseen situations</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#make_problematic_pie">make_problematic_pie</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Check-with-the-return">Check with the return</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Exceptions">Exceptions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Manage-exceptions">Manage exceptions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Particular-exceptions">Particular exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun2-errors-and-testing-sol.html#assert">assert</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#When-to-use-assert?">When to use assert?</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Testing">Testing</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Where-Is-Your-Software?">Where Is Your Software?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Testing-with-asserts">Testing with asserts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Exercise-structure">Exercise structure</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Exercise---gre3">Exercise - gre3</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Exercise---final_price">Exercise - final_price</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Exercise---arrival_time">Exercise - arrival_time</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun2-errors-and-testing-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fun3-strings-sol.html">functions with strings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="fun3-strings-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun3-strings-sol.html#First-functions">First functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#length">length</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#contains">contains</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun3-strings-sol.html#Immutable-values">Immutable values</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#Changing-the-world:-fail-/-1">Changing the world: fail / 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#Changing-the-world:-fail-/-2">Changing the world: fail / 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#Changing-the-world:-success!">Changing the world: success!</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#global-keyword">global keyword</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun3-strings-sol.html#Mutable-values">Mutable values</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#Doubling:-fail-/-1">Doubling: fail / 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#Doubling:-fail-/-2">Doubling: fail / 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#Doubling:-fail-/-3">Doubling: fail / 3</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#Doubling:-fail-/-4">Doubling: fail / 4</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#Doubling:-success!">Doubling: success!</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#invertlet">invertlet</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#nspace">nspace</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#startend">startend</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#swap">swap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun3-strings-sol.html#Verify-comprehension">Verify comprehension</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#has_char">has_char</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#count">count</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#has_lower">has_lower</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#dialect">dialect</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#countvoc">countvoc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#extract_email">extract_email</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#canon_phone">canon_phone</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#phone_prefix">phone_prefix</a></li>
+<li class="toctree-l5"><a class="reference internal" href="fun3-strings-sol.html#palindrome">palindrome</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="fun3-strings-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fun4-lists-sol.html">functions with lists</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="fun4-lists-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun4-lists-sol.html#TODO">TODO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun4-lists-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fun5-tuples-sol.html">functions with tuples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="fun5-tuples-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun5-tuples-sol.html#TODO">TODO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun5-tuples-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fun6-sets-sol.html">functions with sets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="fun6-sets-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun6-sets-sol.html#TODO">TODO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun6-sets-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">functions with dictionaries</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#TODO">TODO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fun8-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="fun8-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="fun8-chal.html#TODO">TODO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#matrices-of-lists">Matrices of lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#What-to-do">What to do</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Overview">Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Exercises">Exercises</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Matrix-dimensions">Matrix dimensions</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Extracting-rows-and-columns">Extracting rows and columns</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#How-to-extract-a-row">How to extract a row</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Extracting-row-pointers">Extracting row pointers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Extract-row-with-a-for">Extract row with a for</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Extract-row-with-range">Extract row with range</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Extract-row-with-a-slice">Extract row with a slice</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Extract-row-with-list-comprehension">Extract row with list comprehension</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Extract-column-with-a-for">Extract column with a <code class="docutils literal notranslate"><span class="pre">for</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Extract-column-with-a-list-comprehension">Extract column with a list comprehension</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Creating-new-matrices">Creating new matrices</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#empty-matrix">empty matrix</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#empty_matrix-the-elegant-way"><code class="docutils literal notranslate"><span class="pre">empty_matrix</span></code> the elegant way</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#deep_clone">deep_clone</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Modifying-matrices">Modifying matrices</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#fillc">fillc</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#fillx">fillx</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#fillz">fillz</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#stitch_down">stitch_down</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#stitch_up">stitch_up</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#stitch_right">stitch_right</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#insercol">insercol</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#threshold">threshold</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#swap_rows">swap_rows</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#swap_cols">swap_cols</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html">more exercises</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---diag">Exercise - diag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---anti_diag">Exercise - anti_diag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---is_utriang">Exercise - is_utriang</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---stitch_left_mod">Exercise - stitch_left_mod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---transpose_1">Exercise - transpose_1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---transpose_2">Exercise - transpose_2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---cirpillino">Exercise - cirpillino</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---flag">Exercise - flag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---avoid_diag">Exercise - avoid_diag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---no_diag">Exercise - no_diag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---no_anti_diag">Exercise - no_anti_diag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---repcol">Exercise - repcol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---matinc">Exercise - matinc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---flip">Exercise - flip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---wall">Exercise - wall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---sortast">Exercise - sortast</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---skyscraper">Exercise - skyscraper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---school-lab">Exercise - school lab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---dump">Exercise - dump</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---matrix-multiplication">Exercise - matrix multiplication</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---check_nqueen">Exercise - check_nqueen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-lists/matrices-lists3-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists3-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#mixed-structures">Mixed structures</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Download-exercises-zip">Download exercises zip</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Exercise---Luxury-Holding">Exercise - Luxury Holding</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Exercise---extract_managers">Exercise - extract_managers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Exercise---extract_companies">Exercise - extract_companies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Exercise---avg_age">Exercise - avg_age</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Exercise---sectors">Exercise - sectors</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Other-exercises">Other exercises</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Exercise---medie">Exercise - medie</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Exercise---has_pref">Exercise - has_pref</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Exercise---festival">Exercise - festival</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Exercise---actorswap">Exercise - actorswap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../mixed-structures/mixed-structures1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../mixed-structures/mixed-structures2-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../mixed-structures/mixed-structures2-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#numpy-matrices">Numpy matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Introduction">Introduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#np.array">np.array</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Creating-a-matrix-filled-with-ones">Creating a matrix filled with ones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Creating-a-matrix-filled-with-a-number-k">Creating a matrix filled with a number <code class="docutils literal notranslate"><span class="pre">k</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Dimensions-of-a-matrix">Dimensions of a matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Reading-and-writing">Reading and writing</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Filling-the-whole-matrix">Filling the whole matrix</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Slices">Slices</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Writing-a-constant-in-a-slice">Writing a constant in a slice</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Writing-a-matrix-into-a-slice">Writing a matrix into a slice</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Assignment-and-copy">Assignment and copy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Calculations">Calculations</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Scalar-multiplication">Scalar multiplication</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Scalar-sum">Scalar sum</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Multiplication">Multiplication</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Dividing-by-a-scalar">Dividing by a scalar</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Aggregation">Aggregation</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Aggregating-by-row-or-column">Aggregating by row or column</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Filtering">Filtering</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Finding-indexes-with-np.where">Finding indexes with <code class="docutils literal notranslate"><span class="pre">np.where</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Writing-into-cells-which-satisfy-a-criteria">Writing into cells which satisfy a criteria</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#arange-and-linspace-sequences">arange and linspace sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#NaNs-and-infinities">NaNs and infinities</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#NaNs">NaNs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Detecting-NaN">Detecting NaN</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Sequences-with-NaNs">Sequences with NaNs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Exercise-NaN:-two-vars">Exercise NaN: two vars</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Operations-on-NaNs">Operations on NaNs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#NaN-and-Numpy">NaN and Numpy</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Where-are-the-NaNs-?">Where are the NaNs ?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Infinities">Infinities</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Positive-infinity-np.inf">Positive infinity <code class="docutils literal notranslate"><span class="pre">np.inf</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Negative-infinity">Negative infinity</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Combining-infinities-and-NaNs">Combining infinities and NaNs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Negative-zero">Negative zero</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Exercise:-detect-proper-numbers">Exercise: detect proper numbers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Exercise:-guess-expressions">Exercise: guess expressions</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html">exercises</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Introduction">Introduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#frame">frame</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---frameslices">Exercise - frameslices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---framefill">Exercise - framefill</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---avg_rows">Exercise - avg_rows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---matrot">Exercise - matrot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---odd">Exercise - odd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---doublealt">Exercise - doublealt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---chessboard">Exercise - chessboard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---altsum">Exercise - altsum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---avg_half">Exercise - avg_half</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---matxarr">Exercise - matxarr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---colgap">Exercise - colgap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---substmax">Exercise - substmax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---quadrants">Exercise - quadrants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---downup">Exercise - downup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---stairsteps">Exercise - stairsteps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---vertstairs">Exercise - vertstairs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---comprescol">Exercise - comprescol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---revtriang">Exercise - revtriang</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---walkas">Exercise - walkas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Exercise---walkaz">Exercise - walkaz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#Continue">Continue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy2-sol.html#References">References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matrices-numpy/matrices-numpy3-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-numpy/matrices-numpy3-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#b-data-analysis">B - Data analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../toc-analytics.html">Data formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../formats/formats1-lines-sol.html">line files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats1-lines-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats1-lines-sol.html#Introduction">Introduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats1-lines-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats1-lines-sol.html#Line-files">Line files</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats1-lines-sol.html#open-command">open command</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats1-lines-sol.html#The-encoding">The encoding</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats1-lines-sol.html#with-block">with block</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats1-lines-sol.html#people-complex-line-file">people-complex line file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats1-lines-sol.html#Exercise---line-file-immersione-in-python-toc">Exercise - line file immersione-in-python-toc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats1-lines-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../formats/formats2-csv-sol.html">CSV files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats2-csv-sol.html#Download-exercises-zip">Download exercises zip</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Why-parsing-a-CSV-?">Why parsing a CSV ?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Reading-a-CSV">Reading a CSV</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#What's-a-reader-?">What’s a reader ?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Consuming-a-file">Consuming a file</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Reading-as-dictionaries">Reading as dictionaries</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats2-csv-sol.html#Writing-a-CSV">Writing a CSV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats2-csv-sol.html#Reading-and-writing-a-CSV">Reading and writing a CSV</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats2-csv-sol.html#CSV-Botteghe-storiche">CSV Botteghe storiche</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Problem:-wrong-characters-??">Problem: wrong characters ??</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Botteghe-storiche-in-Python">Botteghe storiche in Python</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Botteghe-storiche---rank_categories">Botteghe storiche - rank_categories</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Botteghe-storiche---enrich">Botteghe storiche - enrich</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats2-csv-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../formats/formats3-json-sol.html">JSON files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats3-json-sol.html#Download-exercises-zip">Download exercises zip</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats3-json-sol.html#JSONL">JSONL</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats3-json-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../formats/formats5-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats5-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc-analytics.html#visualization">Visualization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../visualization/visualization1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Introduction">Introduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#First-example">First example</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Plot-style">Plot style</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#x-power-2-exercise">x power 2 exercise</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Axis-limits">Axis limits</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Axis-size">Axis size</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Changing-tick-labels">Changing tick labels</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Introducting-numpy">Introducting numpy</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Example-without-numpy">Example without numpy</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Example-with-numpy">Example with numpy</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#y-=-sin(x)-+-3-exercise">y = sin(x) + 3 exercise</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Showing-degrees-per-node">Showing degrees per node</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#indegree-per-node">indegree per node</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Bar-plots">Bar plots</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#indegree-per-node-bar-plot">indegree per node bar plot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#indegree-per-node-sorted-alphabetically">indegree per node sorted alphabetically</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#indegree-per-node-sorted">indegree per node sorted</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#out-degrees-per-node-sorted">out degrees per node sorted</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#degrees-per-node">degrees per node</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Frequency-histogram">Frequency histogram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Showing-plots-side-by-side">Showing plots side by side</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Graph-models">Graph models</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Other-plots">Other plots</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Pie-chart">Pie chart</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Fancy-plots">Fancy plots</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Background-color">Background color</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Text">Text</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Images">Images</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization1-sol.html#Color-intensity">Color intensity</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Exercise---Be-fancy">Exercise - Be fancy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../visualization/visualization2-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization2-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization2-chal.html#The-variables">The variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization2-chal.html#1.-plot_sheet">1. plot_sheet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization2-chal.html#2.-plot_pentagram">2. plot_pentagram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization2-chal.html#3.-plot_notes">3. plot_notes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization2-chal.html#Final-result-1">Final result 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization2-chal.html#Final-result-2">Final result 2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../visualization/visualization-images-sol.html">images</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Download-exercises-zip">Download exercises zip</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization-images-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Introduction">Introduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization-images-sol.html#Monochrome">Monochrome</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Focus">Focus</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Head-focus">Exercise - Head focus</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#hstack-and-vstack"><code class="docutils literal notranslate"><span class="pre">hstack</span></code> and <code class="docutils literal notranslate"><span class="pre">vstack</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Passport">Exercise - Passport</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#flip"><code class="docutils literal notranslate"><span class="pre">flip</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Hall-of-mirrors">Exercise - Hall of mirrors</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---The-nose-from-above">Exercise - The nose from above</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Writing-arrays">Writing arrays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Writing-into-images">Writing into images</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Stripes">Exercise - Stripes</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#In-a-dark-integer-night">In a dark integer night</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization-images-sol.html#The-Integer-Shining">The Integer Shining</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Be-bright">Exercise - Be bright</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#RGB---Get-colorful">RGB - Get colorful</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Focus---top-left">Exercise - Focus - top left</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Focus---bottom---left">Exercise - Focus - bottom - left</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Focus---bottom---right">Exercise - Focus - bottom - right</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Focus---top---right">Exercise - Focus - top - right</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Look-the-other-way">Exercise - Look the other way</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Upside-down-world">Exercise - Upside down world</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Shrinking-Walls---X">Exercise - Shrinking Walls - X</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Shrinking-Walls---Y">Exercise - Shrinking Walls - Y</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Shrinking-World">Exercise - Shrinking World</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Pixellate">Exercise - Pixellate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Feeling-Red">Exercise - Feeling Red</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Feeling-Green">Exercise - Feeling Green</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Feeling-Blue">Exercise - Feeling Blue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---No-Red">Exercise - No Red</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---No-Green">Exercise - No Green</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---No-Blue">Exercise - No Blue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Feeling-Gray-again">Exercise - Feeling Gray again</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Beyond-the-limit">Exercise - Beyond the limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Gimme-light">Exercise - Gimme light</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---When-the-darkness-comes---with-a-warning">Exercise - When the darkness comes - with a warning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---When-the-darkness-comes---without-a-warning">Exercise - When the darkness comes - without a warning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---Fade-to-black">Exercise - Fade to black</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../visualization/visualization-images-sol.html#Exercise---vertical-fade">Exercise - vertical fade</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../toc-analytics.html#pandas">Pandas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas1-sol.html">intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Download-exercises-zip">Download exercises zip</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Check-installation">Check installation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#2.-Data-analysis-of-Astro-Pi">2. Data analysis of Astro Pi</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#2.1-Exercise---meteo-info">2.1 Exercise - meteo info</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#3.-Indexing,-filtering,-ordering">3. Indexing, filtering, ordering</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#3.1-Exercise---Meteo-stats">3.1 Exercise - Meteo stats</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#4.-MatPlotLib-review">4. MatPlotLib review</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Matplotlib-plots-from-pandas-datastructures">Matplotlib plots from pandas datastructures</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#5.-Calculating-new-columns">5. Calculating new columns</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.1-Exercise:-Meteo-Fahrenheit-temperature">5.1 Exercise: Meteo Fahrenheit temperature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.2-Exercise---Pressure-vs-Temperature">5.2 Exercise - Pressure vs Temperature</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#6.-Object-values">6. Object values</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Filter-by-textual-values">Filter by textual values</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Extracting-strings">Extracting strings</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#7.-Transforming">7. Transforming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#8.-Grouping">8. Grouping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#9.-Exercise:-meteo-average-temperatures">9. Exercise: meteo average temperatures</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.1-meteo-plot">9.1 meteo plot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.2-meteo-pressure-and-raining">9.2 meteo pressure and raining</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.3-meteo-average-temperature">9.3 meteo average temperature</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#10.-Merging-tables">10. Merging tables</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Exercise-10.1-better-merge">Exercise 10.1 better merge</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas2-sol.html">exercises</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Download-exercises-and-solution">Download exercises and solution</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#offerte-dataset">offerte dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#rename-columns">rename columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.1-countries_to_list">1.1 countries_to_list</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.2-Filling-column-Workplace-Country">1.2 Filling column Workplace Country</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#2.-Work-dates">2. Work dates</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.1-from_to-function">2.1 from_to function</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.2.-From-To-columns">2.2. From To columns</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#3.-Required-languages">3. Required languages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.1-function-reqlan">3.1 function reqlan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.2-Languages-column">3.2 Languages column</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas3-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Download-exercises">Download exercises</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas3-chal.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Load-the-dataset">Load the dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Tell-me-more">Tell me more</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Getting-in-shape">Getting in shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#10-rows">10 rows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Born-in-Verona">Born in Verona</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#How-many-people-in-Verona">How many people in Verona</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Python-is-everywhere">Python is everywhere</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Verona-after-1500">Verona after 1500</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#First-Antonio">First Antonio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Some-Antonio">Some Antonio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Cesares-during-1800">Cesares during 1800</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Sorting">Sorting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Where-poets-are-born">Where poets are born</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas3-chal.html#Duplicated-poets">Duplicated poets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../binary-relations/binary-relations-sol.html">Binary relations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Reflexive-relations">Reflexive relations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Exercise---is_reflexive_mat">Exercise - is_reflexive_mat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Exercise---is_reflexive_adj">Exercise - is_reflexive_adj</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Symmetric-relations">Symmetric relations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Exercise---is_symmetric_mat">Exercise - is_symmetric_mat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Exercise---is_symmetric_adj">Exercise - is_symmetric_adj</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Surjective-relations">Surjective relations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Exercise---surjective">Exercise - surjective</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../binary-relations/binary-relations-sol.html#Further-resources">Further resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#c-applications">C - Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#d-projects">D - Projects</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#e-appendix">E - Appendix</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../commandments.html">Commandments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#I-COMMANDMENT">I COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#II-COMMANDMENT">II COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#III-COMMANDMENT">III COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#IV-COMMANDMENT">IV COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#V-COMMANDMENT">V COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#VI-COMMANDMENT">VI COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#VII-COMMANDMENT">VII COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#VIII-COMMANDMENT">VIII COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#IX-COMMANDMENT">IX COMMANDMENT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../commandments.html#X-COMMANDMENT">X COMMANDMENT</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changelog.html#Revisions">Revisions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../changelog.html#July-2020">July 2020</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../references.html">References</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#Foundations-of-Python-Programming">Foundations of Python Programming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#W3Resources-website">W3Resources website</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#Software-Carpentry">Software Carpentry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#Edabit">Edabit</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../references.html#Edabit---Basics">Edabit - Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../references.html#Edabit---Strings">Edabit - Strings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../references.html#Edabit---Lists">Edabit - Lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../references.html#Edabit---Dictionaries">Edabit - Dictionaries</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../references.html#Edabit---Matrices">Edabit - Matrices</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#LeetCode">LeetCode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../references.html#LeetCode---Strings">LeetCode - Strings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../references.html#LeetCode---Lists">LeetCode - Lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../references.html#LeetCode---Sets-and-Dictionaries">LeetCode - Sets and Dictionaries</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#LeetCode---Matrices">LeetCode - Matrices</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../references.html#Leet-code---Graphs">Leet code - Graphs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#HackerRank">HackerRank</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#Geeks-for-Geeks">Geeks for Geeks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#Dive-into-Python-3">Dive into Python 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../references.html#Introduction-to-Scientific-Programming-with-Python">Introduction to Scientific Programming with Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../toc-page.html">SoftPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+    <div id='jupman-langs'></div>
+
+    
+    <script>
+    if (window.location.hostname.includes('softpython.org')){
+        JUPMAN_LANG = window.location.hostname.slice(0,window.location.hostname.indexOf('.'));
+    } else {
+        JUPMAN_LANG = 'en';        
+    }
+    console.log('JUPMAN_LANG=',JUPMAN_LANG);
+    </script>
+    
+    
+     <!-- <li> <h2 style="background-color:red; color:yellow">WARNING! THIS VERSION IS OLD !  <br/>
+    <a style=" text-decoration: underline;" href="https://jupman.softpython.org/en/latest">GOT TO LATEST VERSION</a></li>
+ </h2></li>-->
+    <!-- Commented because doesn't work with sections,
+         see https://github.com/DavidLeoni/jupman/issues/39
+    <li><a href="../toc-page.html">Docs</a> &raquo;</li>
+    
+        <li><a href="../toc.html">A - Foundations</a> &raquo;</li>
+    
+    <li>Functions 7 - exercises with dictionaries</li>
+    -->
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># Remember to execute this cell with Control+Enter</span>
+<span class="kn">import</span> <span class="nn">jupman</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="Functions-7---exercises-with-dictionaries">
+<h1>Functions 7 - exercises with dictionaries<a class="headerlink" href="#Functions-7---exercises-with-dictionaries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/functions.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/functions">Browse files online</a></p>
+</div>
+<div class="section" id="TODO">
+<h2>TODO<a class="headerlink" href="#TODO" title="Permalink to this headline">¶</a></h2>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># SOLUTION</span>
+
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+<p>Go on with exercises about <a class="reference external" href="https://en.softpython.org/functions/fun8-chal.html">function challenges</a></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="fun8-chal.html" class="btn btn-neutral float-right" title="Functions 8 - Challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="fun6-sets-sol.html" class="btn btn-neutral float-left" title="Functions 6- exercises with sets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright # CC-BY 2017 - 2021, David Leoni, Alessio Zamboni, Marco Caresia.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-125857337-4', 'auto');
+    
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>
