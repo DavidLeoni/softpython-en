@@ -230,7 +230,8 @@ D - Projects
 .. toctree::
     :maxdepth: 2
     :glob:
- 
+
+.. 
     toc-worked-projects.rst
 
 
