@@ -2103,8 +2103,9 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="section" id="Bus-network">
 <h1>Bus network<a class="headerlink" href="#Bus-network" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-and-solution">
-<h2><a class="reference external" href="../../_static/generated/bus-network-prj.zip">Download exercises and solution</a><a class="headerlink" href="#Download-exercises-and-solution" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Download-worked-project">
+<h2><a class="reference external" href="../../_static/generated/bus-network-prj.zip">Download worked project</a><a class="headerlink" href="#Download-worked-project" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/projects/bus-network">Browse files online</a></p>
 <p>In this worked project we will visualize intercity bus network in GTFS format taken from <a class="reference external" href="https://dati.trentino.it/dataset/trasporti-pubblici-del-trentino-formato-gtfs">dati.trentino.it</a>, MITT service. Original data was split in several files which we merged into dataset <a class="reference external" href="network-short.csv">network-short.csv</a>.</p>
 </div>
 <div class="section" id="What-to-do">
@@ -2252,7 +2253,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;penwidth&#39;: 4, &#39;route_short_name&#39;: &#39;B301&#39;, &#39;label&#39;: &#39;5&#39;, &#39;color&#39;: &#39;#2ca02c&#39;, &#39;weight&#39;: 5}
+{&#39;weight&#39;: 5, &#39;label&#39;: &#39;5&#39;, &#39;color&#39;: &#39;#2ca02c&#39;, &#39;penwidth&#39;: 4, &#39;route_short_name&#39;: &#39;B301&#39;}
 </pre></div></div>
 </div>
 </div>
@@ -2298,46 +2299,48 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[{&#39;&#39;: &#39;3&#39;,
-  &#39;agency_id&#39;: &#39;12&#39;,
-  &#39;arrival_time&#39;: &#39;06:27:00&#39;,
-  &#39;departure_time&#39;: &#39;06:27:00&#39;,
-  &#39;direction_id&#39;: &#39;0&#39;,
-  &#39;route_id&#39;: &#39;76&#39;,
-  &#39;route_long_name&#39;: &#39;Trento-Sardagna-Candriai-Vaneze-Vason-Viote&#39;,
-  &#39;route_short_name&#39;: &#39;B202&#39;,
-  &#39;route_type&#39;: &#39;3&#39;,
-  &#39;service_id&#39;: &#39;22018091220190621&#39;,
-  &#39;stop_code&#39;: &#39;2620VE&#39;,
-  &#39;stop_desc&#39;: &#39;&#39;,
-  &#39;stop_id&#39;: &#39;5025&#39;,
-  &#39;stop_lat&#39;: &#39;46.073125&#39;,
-  &#39;stop_lon&#39;: &#39;11.093579&#39;,
-  &#39;stop_name&#39;: &#39;Sardagna Civ.20&#39;,
-  &#39;stop_sequence&#39;: &#39;4&#39;,
-  &#39;trip_headsign&#39;: &#39;Trento-Autostaz.&#39;,
-  &#39;trip_id&#39;: &#39;0002402742018091220190621&#39;,
-  &#39;zone_id&#39;: &#39;2620.0&#39;},
- {&#39;&#39;: &#39;4&#39;,
-  &#39;agency_id&#39;: &#39;12&#39;,
-  &#39;arrival_time&#39;: &#39;06:28:00&#39;,
-  &#39;departure_time&#39;: &#39;06:28:00&#39;,
-  &#39;direction_id&#39;: &#39;0&#39;,
-  &#39;route_id&#39;: &#39;76&#39;,
-  &#39;route_long_name&#39;: &#39;Trento-Sardagna-Candriai-Vaneze-Vason-Viote&#39;,
-  &#39;route_short_name&#39;: &#39;B202&#39;,
-  &#39;route_type&#39;: &#39;3&#39;,
-  &#39;service_id&#39;: &#39;22018091220190621&#39;,
-  &#39;stop_code&#39;: &#39;2620MS&#39;,
-  &#39;stop_desc&#39;: &#39;&#39;,
-  &#39;stop_id&#39;: &#39;843&#39;,
-  &#39;stop_lat&#39;: &#39;46.069871&#39;,
-  &#39;stop_lon&#39;: &#39;11.097749&#39;,
-  &#39;stop_name&#39;: &#39;Sardagna-Maso Scala&#39;,
-  &#39;stop_sequence&#39;: &#39;5&#39;,
-  &#39;trip_headsign&#39;: &#39;Trento-Autostaz.&#39;,
-  &#39;trip_id&#39;: &#39;0002402742018091220190621&#39;,
-  &#39;zone_id&#39;: &#39;2620.0&#39;}]
+[OrderedDict([(&#39;&#39;, &#39;3&#39;),
+              (&#39;route_id&#39;, &#39;76&#39;),
+              (&#39;agency_id&#39;, &#39;12&#39;),
+              (&#39;route_short_name&#39;, &#39;B202&#39;),
+              (&#39;route_long_name&#39;,
+               &#39;Trento-Sardagna-Candriai-Vaneze-Vason-Viote&#39;),
+              (&#39;route_type&#39;, &#39;3&#39;),
+              (&#39;service_id&#39;, &#39;22018091220190621&#39;),
+              (&#39;trip_id&#39;, &#39;0002402742018091220190621&#39;),
+              (&#39;trip_headsign&#39;, &#39;Trento-Autostaz.&#39;),
+              (&#39;direction_id&#39;, &#39;0&#39;),
+              (&#39;arrival_time&#39;, &#39;06:27:00&#39;),
+              (&#39;departure_time&#39;, &#39;06:27:00&#39;),
+              (&#39;stop_id&#39;, &#39;5025&#39;),
+              (&#39;stop_sequence&#39;, &#39;4&#39;),
+              (&#39;stop_code&#39;, &#39;2620VE&#39;),
+              (&#39;stop_name&#39;, &#39;Sardagna Civ.20&#39;),
+              (&#39;stop_desc&#39;, &#39;&#39;),
+              (&#39;stop_lat&#39;, &#39;46.073125&#39;),
+              (&#39;stop_lon&#39;, &#39;11.093579&#39;),
+              (&#39;zone_id&#39;, &#39;2620.0&#39;)]),
+ OrderedDict([(&#39;&#39;, &#39;4&#39;),
+              (&#39;route_id&#39;, &#39;76&#39;),
+              (&#39;agency_id&#39;, &#39;12&#39;),
+              (&#39;route_short_name&#39;, &#39;B202&#39;),
+              (&#39;route_long_name&#39;,
+               &#39;Trento-Sardagna-Candriai-Vaneze-Vason-Viote&#39;),
+              (&#39;route_type&#39;, &#39;3&#39;),
+              (&#39;service_id&#39;, &#39;22018091220190621&#39;),
+              (&#39;trip_id&#39;, &#39;0002402742018091220190621&#39;),
+              (&#39;trip_headsign&#39;, &#39;Trento-Autostaz.&#39;),
+              (&#39;direction_id&#39;, &#39;0&#39;),
+              (&#39;arrival_time&#39;, &#39;06:28:00&#39;),
+              (&#39;departure_time&#39;, &#39;06:28:00&#39;),
+              (&#39;stop_id&#39;, &#39;843&#39;),
+              (&#39;stop_sequence&#39;, &#39;5&#39;),
+              (&#39;stop_code&#39;, &#39;2620MS&#39;),
+              (&#39;stop_name&#39;, &#39;Sardagna-Maso Scala&#39;),
+              (&#39;stop_desc&#39;, &#39;&#39;),
+              (&#39;stop_lat&#39;, &#39;46.069871&#39;),
+              (&#39;stop_lon&#39;, &#39;11.097749&#39;),
+              (&#39;zone_id&#39;, &#39;2620.0&#39;)])]
 </pre></div></div>
 </div>
 </div>
@@ -2593,11 +2596,11 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[{&#39;color&#39;: &#39;#1f77b4&#39;, &#39;label&#39;: &#39;B201&#39;},
- {&#39;color&#39;: &#39;#ff7f0e&#39;, &#39;label&#39;: &#39;B202&#39;},
- {&#39;color&#39;: &#39;#2ca02c&#39;, &#39;label&#39;: &#39;B211&#39;},
- {&#39;color&#39;: &#39;#d62728&#39;, &#39;label&#39;: &#39;B217&#39;},
- {&#39;color&#39;: &#39;#9467bd&#39;, &#39;label&#39;: &#39;B301&#39;}]
+[{&#39;label&#39;: &#39;B201&#39;, &#39;color&#39;: &#39;#1f77b4&#39;},
+ {&#39;label&#39;: &#39;B202&#39;, &#39;color&#39;: &#39;#ff7f0e&#39;},
+ {&#39;label&#39;: &#39;B211&#39;, &#39;color&#39;: &#39;#2ca02c&#39;},
+ {&#39;label&#39;: &#39;B217&#39;, &#39;color&#39;: &#39;#d62728&#39;},
+ {&#39;label&#39;: &#39;B301&#39;, &#39;color&#39;: &#39;#9467bd&#39;}]
 </pre></div></div>
 </div>
 </div>
@@ -2722,7 +2725,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;color&#39;: &#39;black&#39;, &#39;fontcolor&#39;: &#39;black&#39;, &#39;label&#39;: &#39;Trento\nAutostaz.&#39;}
+{&#39;label&#39;: &#39;Trento\nAutostaz.&#39;, &#39;color&#39;: &#39;black&#39;, &#39;fontcolor&#39;: &#39;black&#39;}
 </pre></div></div>
 </div>
 <p>If we examine its <code class="docutils literal notranslate"><span class="pre">in_edges</span></code>, we find it has incoming edges from <code class="docutils literal notranslate"><span class="pre">stop_id</span></code> <code class="docutils literal notranslate"><span class="pre">'723'</span></code> and <code class="docutils literal notranslate"><span class="pre">'870'</span></code>, which represent respectively <em>Trento Via Brescia</em> and <em>Sarche Centro Commerciale</em> :</p>
@@ -2741,7 +2744,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-InEdgeDataView([(&#39;723&#39;, &#39;1&#39;), (&#39;870&#39;, &#39;1&#39;)])
+InEdgeDataView([(&#39;870&#39;, &#39;1&#39;), (&#39;723&#39;, &#39;1&#39;)])
 </pre></div></div>
 </div>
 <p>If you get a View object, if needed you can easily transform to a list:</p>
@@ -2760,7 +2763,7 @@ InEdgeDataView([(&#39;723&#39;, &#39;1&#39;), (&#39;870&#39;, &#39;1&#39;)])
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[(&#39;723&#39;, &#39;1&#39;), (&#39;870&#39;, &#39;1&#39;)]
+[(&#39;870&#39;, &#39;1&#39;), (&#39;723&#39;, &#39;1&#39;)]
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -2778,7 +2781,7 @@ InEdgeDataView([(&#39;723&#39;, &#39;1&#39;), (&#39;870&#39;, &#39;1&#39;)])
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;color&#39;: &#39;black&#39;, &#39;fontcolor&#39;: &#39;black&#39;, &#39;label&#39;: &#39;Trento\nVia\nBrescia\n4&#39;}
+{&#39;label&#39;: &#39;Trento\nVia\nBrescia\n4&#39;, &#39;color&#39;: &#39;black&#39;, &#39;fontcolor&#39;: &#39;black&#39;}
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -2796,7 +2799,7 @@ InEdgeDataView([(&#39;723&#39;, &#39;1&#39;), (&#39;870&#39;, &#39;1&#39;)])
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;color&#39;: &#39;black&#39;, &#39;fontcolor&#39;: &#39;black&#39;, &#39;label&#39;: &#39;Sarche\nCentro\nComm.&#39;}
+{&#39;label&#39;: &#39;Sarche\nCentro\nComm.&#39;, &#39;color&#39;: &#39;black&#39;, &#39;fontcolor&#39;: &#39;black&#39;}
 </pre></div></div>
 </div>
 <p>There is only an outgoing edge toward <em>Trento Corso 3 Novembre</em> :</p>
@@ -2833,9 +2836,9 @@ OutEdgeDataView([(&#39;1&#39;, &#39;1108&#39;)])
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;color&#39;: &#39;black&#39;,
- &#39;fontcolor&#39;: &#39;black&#39;,
- &#39;label&#39;: &#39;Trento\nC.So\nTre\nNovembre&#39;}
+{&#39;label&#39;: &#39;Trento\nC.So\nTre\nNovembre&#39;,
+ &#39;color&#39;: &#39;black&#39;,
+ &#39;fontcolor&#39;: &#39;black&#39;}
 </pre></div></div>
 </div>
 <p>If, for example, we want to know the <code class="docutils literal notranslate"><span class="pre">route_id</span></code> of this outgoing edge, we can access it this way:</p>
@@ -2854,11 +2857,11 @@ OutEdgeDataView([(&#39;1&#39;, &#39;1108&#39;)])
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;color&#39;: &#39;#9467bd&#39;,
+{&#39;weight&#39;: 5,
  &#39;label&#39;: &#39;5&#39;,
- &#39;penwidth&#39;: 4,
  &#39;route_short_name&#39;: &#39;B301&#39;,
- &#39;weight&#39;: 5}
+ &#39;color&#39;: &#39;#9467bd&#39;,
+ &#39;penwidth&#39;: 4}
 </pre></div></div>
 </div>
 <p>If you want to change the color attribute of the node <code class="docutils literal notranslate"><span class="pre">'1'</span></code>, you can write like this:</p>
@@ -2940,6 +2943,10 @@ OutEdgeDataView([(&#39;1&#39;, &#39;1108&#39;)])
 <div class="highlight"><pre>
 SOLUTION: The hubs are:
 
+stop_id:757
+Tione
+Autostazione
+
 stop_id:742
 Ponte
 Arche
@@ -2948,10 +2955,6 @@ Autost.
 stop_id:1
 Trento
 Autostaz.
-
-stop_id:757
-Tione
-Autostazione
 
 </pre></div></div>
 </div>
@@ -2981,7 +2984,7 @@ Autostazione
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-OutEdgeView([(&#39;4391&#39;, &#39;4390&#39;), (&#39;870&#39;, &#39;1&#39;), (&#39;742&#39;, &#39;870&#39;), (&#39;842&#39;, &#39;3974&#39;), (&#39;1&#39;, &#39;1108&#39;), (&#39;829&#39;, &#39;3213&#39;), (&#39;3213&#39;, &#39;757&#39;), (&#39;1108&#39;, &#39;1109&#39;), (&#39;3974&#39;, &#39;841&#39;), (&#39;843&#39;, &#39;842&#39;), (&#39;4390&#39;, &#39;742&#39;), (&#39;746&#39;, &#39;857&#39;), (&#39;1556&#39;, &#39;4392&#39;), (&#39;723&#39;, &#39;1&#39;), (&#39;857&#39;, &#39;742&#39;), (&#39;841&#39;, &#39;881&#39;), (&#39;881&#39;, &#39;723&#39;), (&#39;4392&#39;, &#39;4391&#39;), (&#39;757&#39;, &#39;746&#39;), (&#39;5025&#39;, &#39;843&#39;)])
+OutEdgeView([(&#39;757&#39;, &#39;746&#39;), (&#39;746&#39;, &#39;857&#39;), (&#39;857&#39;, &#39;742&#39;), (&#39;742&#39;, &#39;870&#39;), (&#39;870&#39;, &#39;1&#39;), (&#39;1&#39;, &#39;1108&#39;), (&#39;5025&#39;, &#39;843&#39;), (&#39;843&#39;, &#39;842&#39;), (&#39;842&#39;, &#39;3974&#39;), (&#39;3974&#39;, &#39;841&#39;), (&#39;841&#39;, &#39;881&#39;), (&#39;881&#39;, &#39;723&#39;), (&#39;723&#39;, &#39;1&#39;), (&#39;1556&#39;, &#39;4392&#39;), (&#39;4392&#39;, &#39;4391&#39;), (&#39;4391&#39;, &#39;4390&#39;), (&#39;4390&#39;, &#39;742&#39;), (&#39;829&#39;, &#39;3213&#39;), (&#39;3213&#39;, &#39;757&#39;), (&#39;1108&#39;, &#39;1109&#39;)])
 </pre></div></div>
 </div>
 <p>If you get a View, you can iterate through the sequence like it were a list</p>
@@ -3001,11 +3004,11 @@ OutEdgeView([(&#39;4391&#39;, &#39;4390&#39;), (&#39;870&#39;, &#39;1&#39;), (&#
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;color&#39;: &#39;#9467bd&#39;,
+{&#39;weight&#39;: 5,
  &#39;label&#39;: &#39;5&#39;,
- &#39;penwidth&#39;: 4,
  &#39;route_short_name&#39;: &#39;B301&#39;,
- &#39;weight&#39;: 5}
+ &#39;color&#39;: &#39;#9467bd&#39;,
+ &#39;penwidth&#39;: 4}
 </pre></div></div>
 </div>
 <p>Now implement the function <code class="docutils literal notranslate"><span class="pre">plot_timings</span></code>, which given a networkx DiGraph <code class="docutils literal notranslate"><span class="pre">G</span></code> plots a frequency histogram of the time between bus stops.</p>

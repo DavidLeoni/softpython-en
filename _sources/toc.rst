@@ -227,41 +227,13 @@ TODO
 D - Projects
 =======================
 
-
-
-Worked projects
-^^^^^^^^^^^^^^^^^^
-
 .. toctree::
     :maxdepth: 2
     :glob:
-    
-Line data
-^^^^^^^^^^^^^^^^
 
-.. toctree::
-    :maxdepth: 3
-    :glob:
-    
-    TODO
+.. 
+    toc-worked-projects.rst
 
-Tabular data
-^^^^^^^^^^^^^^^^^^
-
-.. toctree::
-    :maxdepth: 3
-    :glob:
-    
-    TODO
-
-Relational data
-^^^^^^^^^^^^^^^^^^
-
-.. toctree::
-    :maxdepth: 3
-    :glob:
-    
-    TODO
 
 E - Appendix
 ==============
@@ -269,7 +241,7 @@ E - Appendix
 .. toctree::
     :maxdepth: 3
     :glob:
-        
+
     commandments.ipynb
     thanks.ipynb
     changelog.ipynb
