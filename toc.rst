@@ -227,40 +227,12 @@ TODO
 D - Projects
 =======================
 
-
-Worked projects
-^^^^^^^^^^^^^^^^^^
-
 .. toctree::
     :maxdepth: 2
-    :glob:        
-    
-Tabular data
-^^^^^^^^^^^^^^^^^^
-
-.. toctree::
-    :maxdepth: 3
     :glob:
-    
-    projects/bus-speed/bus-speed-sol.ipynb
+ 
+    toc-worked-projects.rst
 
-Text data
-^^^^^^^^^^^^^^^^
-
-.. toctree::
-    :maxdepth: 3
-    :glob:
-    
-    phone-calls/phone-calls-sol.ipynb
-
-Relational data
-^^^^^^^^^^^^^^^^^^
-
-.. toctree::
-    :maxdepth: 3
-    :glob:
-    
-    bus-network/bus-network-sol.ipynb
 
 E - Appendix
 ==============
@@ -268,7 +240,7 @@ E - Appendix
 .. toctree::
     :maxdepth: 3
     :glob:
-        
+
     commandments.ipynb
     thanks.ipynb
     changelog.ipynb
