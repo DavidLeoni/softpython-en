@@ -228,23 +228,13 @@ D - Projects
 =======================
 
 
-
 Worked projects
 ^^^^^^^^^^^^^^^^^^
 
 .. toctree::
     :maxdepth: 2
-    :glob:
+    :glob:        
     
-Line data
-^^^^^^^^^^^^^^^^
-
-.. toctree::
-    :maxdepth: 3
-    :glob:
-    
-    TODO
-
 Tabular data
 ^^^^^^^^^^^^^^^^^^
 
@@ -252,7 +242,16 @@ Tabular data
     :maxdepth: 3
     :glob:
     
-    TODO
+    projects/bus-speed/bus-speed-sol.ipynb
+
+Text data
+^^^^^^^^^^^^^^^^
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+    
+    phone-calls/phone-calls-sol.ipynb
 
 Relational data
 ^^^^^^^^^^^^^^^^^^
@@ -261,7 +260,7 @@ Relational data
     :maxdepth: 3
     :glob:
     
-    TODO
+    bus-network/bus-network-sol.ipynb
 
 E - Appendix
 ==============
