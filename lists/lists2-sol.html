@@ -313,7 +313,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Printing-many-strings">Printing many strings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Length-of-a-string">Length of a string</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Printing---escape-sequences">Printing - escape sequences</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Esempio---line-feed">Esempio - line feed</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Example---line-feed">Example - line feed</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Example---tabulation">Example - tabulation</a></li>
 </ul>
 </li>
@@ -461,9 +461,9 @@
 <li class="toctree-l4"><a class="reference internal" href="lists1-sol.html#What-to-do">What to do</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lists1-sol.html#Creating-lists">Creating lists</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Empty-list">Empty list</a></li>
-<li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Exercise---scambi-di-liste">Exercise - scambi di liste</a></li>
-<li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Tabelle">Tabelle</a></li>
-<li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Domanda---creazione-di-liste">Domanda - creazione di liste</a></li>
+<li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Exercise---list-swaps">Exercise - list swaps</a></li>
+<li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Tables">Tables</a></li>
+<li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Question---list-creation">Question - list creation</a></li>
 <li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Exercise---domino">Exercise - domino</a></li>
 <li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Exercise---create-lists-2">Exercise - create lists 2</a></li>
 <li class="toctree-l5"><a class="reference internal" href="lists1-sol.html#Exercise---create-lists-3">Exercise - create lists 3</a></li>
@@ -519,7 +519,7 @@
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---vegetables">Exercise - vegetables</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#List-concatenation-with-+">List concatenation with +</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#List-concatenation-with-+">List concatenation with <code class="docutils literal notranslate"><span class="pre">+</span></code></a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---concatenation">Exercise - concatenation</a></li>
 </ul>
 </li>
@@ -692,15 +692,6 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---matrioska">Exercise - matrioska</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Exercise-with-functions">Exercise with functions</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---syllabs">Exercise - syllabs</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---distinguish">Exercise - distinguish</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Verifify-comprehension">Verifify comprehension</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Exercise---intersectron">Exercise - intersectron</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -864,7 +855,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../toc.html#for-cycle">For cycle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#for-loops">For loops</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../for/for1-intro-sol.html">intro</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#Download-exercises-zip">Download exercises zip</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../for/for1-intro-sol.html#What-to-do">What to do</a></li>
@@ -1006,7 +997,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../toc.html#while-cycle">While cycle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../toc.html#while-loops">While loops</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../while/while1-sol.html">intro</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../while/while1-sol.html#What-to-do">What to do</a></li>
@@ -2353,7 +2344,7 @@ div.rendered_html tbody tr:hover {
 </ol>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 2: <code class="docutils literal notranslate"><span class="pre">len</span></code> wants as argument a <em>sequence</em> and gives back a <em>number,</em> so the internal call to <code class="docutils literal notranslate"><span class="pre">len(x)</span></code> produces a number which is given to the external <code class="docutils literal notranslate"><span class="pre">len</span></code> and at that point Python will complain it received a number instead of a sequence. Verify which error appears by writing <code class="docutils literal notranslate"><span class="pre">len(len(x))</span></code> down here.</p>
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 2: <code class="docutils literal notranslate"><span class="pre">len</span></code> wants a <em>sequence</em> as argument and gives back a <em>number,</em> so the internal call to <code class="docutils literal notranslate"><span class="pre">len(x)</span></code> produces a number which is given to the external <code class="docutils literal notranslate"><span class="pre">len</span></code> and at that point Python will complain it received a number instead of a sequence. Verify which error appears by writing <code class="docutils literal notranslate"><span class="pre">len(len(x))</span></code> down here.</p>
 </div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
@@ -2632,7 +2623,7 @@ div.rendered_html tbody tr:hover {
 <p>You have a <code class="docutils literal notranslate"><span class="pre">chars</span></code> list in which the original blocks are saved. Can you print the writing <code class="docutils literal notranslate"><span class="pre">Gutenberg</span></code>?</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> write characters nor additional strings (so no <code class="docutils literal notranslate"><span class="pre">'g'</span></code> nor <code class="docutils literal notranslate"><span class="pre">'G'</span></code>!)</p></li>
-<li><p>every character <strong>MAY</strong> be reused</p></li>
+<li><p>every character <strong>MAY</strong> be reused more than once</p></li>
 </ul>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -2763,10 +2754,10 @@ Gutenberg
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm84f3e53f-f099-4c47-9df5-128c716bb6e5" type="application/json" >
+<script id="json-jmce27880e-2c4d-4564-b128-0ebcb4985e53" type="application/json" >
     {"code": " \n#     0  1  2  3   \nla = [7, 9, 6, 8]\nla[2] = 5", "trace": [{"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6, 8]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 5, 8]}, "stdout": ""}]}
 </script>
-<div id="jm84f3e53f-f099-4c47-9df5-128c716bb6e5" class="pytutorVisualizer"> </div>
+<div id="jmce27880e-2c4d-4564-b128-0ebcb4985e53" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2786,12 +2777,12 @@ Gutenberg
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm84f3e53f-f099-4c47-9df5-128c716bb6e5').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmce27880e-2c4d-4564-b128-0ebcb4985e53').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm84f3e53f-f099-4c47-9df5-128c716bb6e5',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmce27880e-2c4d-4564-b128-0ebcb4985e53',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -2810,8 +2801,8 @@ Gutenberg
 <p>As you see, no new memory regions are created, it just overwrites an existing cell.</p>
 <div class="section" id="Exercise---a-jammed-parking-lot">
 <h3>Exercise - a jammed parking lot<a class="headerlink" href="#Exercise---a-jammed-parking-lot" title="Permalink to this headline">¶</a></h3>
-<p>You are the administrator of the condo “The Pythonic Joy”. Every apartment has one or two parkins spaces assigned and each one is numbered from <code class="docutils literal notranslate"><span class="pre">1</span></code> to <code class="docutils literal notranslate"><span class="pre">11</span></code>.</p>
-<p>What follows is the current parking lot, and as you can see there are three spaces not assigned, because the flats <code class="docutils literal notranslate"><span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">4</span></code> and <code class="docutils literal notranslate"><span class="pre">7</span></code> have no tenants anymore.</p>
+<p>You are the administrator of the condominum “The Pythonic Joy”. Every apartment has one or two parking spaces assigned, and each one is numbered from <code class="docutils literal notranslate"><span class="pre">1</span></code> to <code class="docutils literal notranslate"><span class="pre">11</span></code>.</p>
+<p>What follows is the current parking lot, and as you can see there are three spaces not assigned, because the flats <code class="docutils literal notranslate"><span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">4</span></code> and <code class="docutils literal notranslate"><span class="pre">7</span></code> have no tenants anymore:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
@@ -2887,10 +2878,8 @@ Gutenberg
 <div class="section" id="Mutating-shared-lists">
 <h2>Mutating shared lists<a class="headerlink" href="#Mutating-shared-lists" title="Permalink to this headline">¶</a></h2>
 <div class="admonition warning">
-<p><strong>WARNING: 90% OF PROGRAMMING ERRORS ARE CAUSED BY MISUNDERSTANDING THIS TOPIC !!!</strong></p>
-</div>
-<div class="admonition warning">
-<p><strong>READ VERY WELL !!!</strong></p>
+<p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: READ VERY WELL !!!</strong></p>
+<p>90% OF PROGRAMMING ERRORS ARE CAUSED BY MISUNDERSTANDING THIS TOPIC !!!</p>
 </div>
 <p>What happens when we associate the same identical mutable object to two variables, like for example a list, and then we mutate the object using one of the two variables?</p>
 <p>Let’s look at an example - first, we associate the list <code class="docutils literal notranslate"><span class="pre">[7,9,6]</span></code> to variable <code class="docutils literal notranslate"><span class="pre">la</span></code>:</p>
@@ -3001,8 +2990,8 @@ Gutenberg
 <span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
 <span class="n">lb</span> <span class="o">=</span> <span class="n">la</span>
 <span class="n">lb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;la è&#39;</span><span class="p">,</span> <span class="n">la</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lb è&#39;</span><span class="p">,</span> <span class="n">lb</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;la is&#39;</span><span class="p">,</span> <span class="n">la</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lb is&#39;</span><span class="p">,</span> <span class="n">lb</span><span class="p">)</span>
 
 <span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
 </pre></div>
@@ -3013,8 +3002,8 @@ Gutenberg
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-la è [5, 9, 6]
-lb è [5, 9, 6]
+la is [5, 9, 6]
+lb is [5, 9, 6]
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3024,10 +3013,10 @@ lb è [5, 9, 6]
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm62306139-e36e-4e68-a48c-3d025390712d" type="application/json" >
-    {"code": " \nla = [7,9,6]\nlb = la\nlb[0] = 5 \nprint('la \u00e8', la)\nprint('lb \u00e8', lb)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 5, 9, 6]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 5, 9, 6]}, "stdout": "la \u00e8 [5, 9, 6]\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 5, 9, 6]}, "stdout": "la \u00e8 [5, 9, 6]\nlb \u00e8 [5, 9, 6]\n"}]}
+<script id="json-jma08e7871-8b37-4bcb-aa1a-f108fe776af9" type="application/json" >
+    {"code": " \nla = [7,9,6]\nlb = la\nlb[0] = 5 \nprint('la is', la)\nprint('lb is', lb)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 5, 9, 6]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 5, 9, 6]}, "stdout": "la is [5, 9, 6]\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 5, 9, 6]}, "stdout": "la is [5, 9, 6]\nlb is [5, 9, 6]\n"}]}
 </script>
-<div id="jm62306139-e36e-4e68-a48c-3d025390712d" class="pytutorVisualizer"> </div>
+<div id="jma08e7871-8b37-4bcb-aa1a-f108fe776af9" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3047,12 +3036,12 @@ lb è [5, 9, 6]
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm62306139-e36e-4e68-a48c-3d025390712d').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jma08e7871-8b37-4bcb-aa1a-f108fe776af9').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm62306139-e36e-4e68-a48c-3d025390712d',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jma08e7871-8b37-4bcb-aa1a-f108fe776af9',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3101,10 +3090,10 @@ lb is [5, 9, 6]
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jma07ca048-473c-4d1b-9c31-d302191e6605" type="application/json" >
+<script id="json-jma396bb86-0f78-485c-959b-3920966748a2" type="application/json" >
     {"code": " \nla = [7,9,6]\nlb = [7,9,6]\nlb[0] = 5 \nprint('la is', la)\nprint('lb is', lb)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6], "2": ["LIST", 7, 9, 6]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6], "2": ["LIST", 5, 9, 6]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6], "2": ["LIST", 5, 9, 6]}, "stdout": "la is [7, 9, 6]\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 9, 6], "2": ["LIST", 5, 9, 6]}, "stdout": "la is [7, 9, 6]\nlb is [5, 9, 6]\n"}]}
 </script>
-<div id="jma07ca048-473c-4d1b-9c31-d302191e6605" class="pytutorVisualizer"> </div>
+<div id="jma396bb86-0f78-485c-959b-3920966748a2" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3124,12 +3113,12 @@ lb is [5, 9, 6]
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jma07ca048-473c-4d1b-9c31-d302191e6605').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jma396bb86-0f78-485c-959b-3920966748a2').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jma07ca048-473c-4d1b-9c31-d302191e6605',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jma396bb86-0f78-485c-959b-3920966748a2',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3183,9 +3172,9 @@ lc is [9, 6, 7, 5]
 <span class="n">lb</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
 <span class="n">lc</span> <span class="o">=</span> <span class="n">lb</span>
 <span class="n">la</span> <span class="o">=</span> <span class="n">lb</span>
-<span class="c1">#print(&#39;la è&#39;, la)</span>
-<span class="c1">#print(&#39;lb è&#39;, lb)</span>
-<span class="c1">#print(&#39;lc è&#39;, lc)</span>
+<span class="c1">#print(&#39;la is&#39;, la)</span>
+<span class="c1">#print(&#39;lb is&#39;, lb)</span>
+<span class="c1">#print(&#39;lc is&#39;, lc)</span>
 <span class="n">jupman</span><span class="o">.</span><span class="n">pytut</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -3197,10 +3186,10 @@ lc is [9, 6, 7, 5]
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm230dbb0a-5d63-410a-b680-26c7ff48d59f" type="application/json" >
-    {"code": " \nla = [8,7,7]\nlb = [9,6,7,5]\nlc = lb\nla = lb\n#print('la \u00e8', la)\n#print('lb \u00e8', lb)\n#print('lc \u00e8', lc)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 8, 7, 7]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 8, 7, 7], "2": ["LIST", 9, 6, 7, 5]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2], "lc": ["REF", 2]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 8, 7, 7], "2": ["LIST", 9, 6, 7, 5]}, "stdout": ""}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 2], "lb": ["REF", 2], "lc": ["REF", 2]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"2": ["LIST", 9, 6, 7, 5]}, "stdout": ""}]}
+<script id="json-jm6db0ac6f-f79a-4cda-9fb1-8e0f5335c4af" type="application/json" >
+    {"code": " \nla = [8,7,7]\nlb = [9,6,7,5]\nlc = lb\nla = lb\n#print('la is', la)\n#print('lb is', lb)\n#print('lc is', lc)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 8, 7, 7]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 8, 7, 7], "2": ["LIST", 9, 6, 7, 5]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2], "lc": ["REF", 2]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 8, 7, 7], "2": ["LIST", 9, 6, 7, 5]}, "stdout": ""}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 2], "lb": ["REF", 2], "lc": ["REF", 2]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"2": ["LIST", 9, 6, 7, 5]}, "stdout": ""}]}
 </script>
-<div id="jm230dbb0a-5d63-410a-b680-26c7ff48d59f" class="pytutorVisualizer"> </div>
+<div id="jm6db0ac6f-f79a-4cda-9fb1-8e0f5335c4af" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3220,12 +3209,12 @@ lc is [9, 6, 7, 5]
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm230dbb0a-5d63-410a-b680-26c7ff48d59f').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm6db0ac6f-f79a-4cda-9fb1-8e0f5335c4af').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm230dbb0a-5d63-410a-b680-26c7ff48d59f',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm6db0ac6f-f79a-4cda-9fb1-8e0f5335c4af',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3301,10 +3290,10 @@ lc is [9, 7]
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm543d60e3-5304-4305-86e2-0ca33a866652" type="application/json" >
+<script id="json-jm1d56b668-eaf2-49d8-afa4-94f57528ba20" type="application/json" >
     {"code": " \nla = [7,8,5]\nlb = [6,7]\nlc = lb\nlb = la\nlc[0] = 9\n#print('la is', la)\n#print('lb is', lb)\n#print('lc is', lc)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 8, 5]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 8, 5], "2": ["LIST", 6, 7]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2], "lc": ["REF", 2]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 8, 5], "2": ["LIST", 6, 7]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1], "lc": ["REF", 2]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 8, 5], "2": ["LIST", 6, 7]}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1], "lc": ["REF", 2]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 8, 5], "2": ["LIST", 9, 7]}, "stdout": ""}]}
 </script>
-<div id="jm543d60e3-5304-4305-86e2-0ca33a866652" class="pytutorVisualizer"> </div>
+<div id="jm1d56b668-eaf2-49d8-afa4-94f57528ba20" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3324,12 +3313,12 @@ lc is [9, 7]
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm543d60e3-5304-4305-86e2-0ca33a866652').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm1d56b668-eaf2-49d8-afa4-94f57528ba20').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm543d60e3-5304-4305-86e2-0ca33a866652',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm1d56b668-eaf2-49d8-afa4-94f57528ba20',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3610,10 +3599,10 @@ lc is [9, 7]
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm70eef37f-f10c-425a-ab9e-26d17cafcb52" type="application/json" >
+<script id="json-jm31ff910b-4207-41cf-be02-47b8f9ebd479" type="application/json" >
     {"code": " \n#     0  1  2  3  4  5  6  7  8  9\nla = [40,30,90,80,60,10,40,20,50,60]\nlb = la[3:7]", "trace": [{"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 40, 30, 90, 80, 60, 10, 40, 20, 50, 60]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 40, 30, 90, 80, 60, 10, 40, 20, 50, 60], "2": ["LIST", 80, 60, 10, 40]}, "stdout": ""}]}
 </script>
-<div id="jm70eef37f-f10c-425a-ab9e-26d17cafcb52" class="pytutorVisualizer"> </div>
+<div id="jm31ff910b-4207-41cf-be02-47b8f9ebd479" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3633,12 +3622,12 @@ lc is [9, 7]
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm70eef37f-f10c-425a-ab9e-26d17cafcb52').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm31ff910b-4207-41cf-be02-47b8f9ebd479').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm70eef37f-f10c-425a-ab9e-26d17cafcb52',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm31ff910b-4207-41cf-be02-47b8f9ebd479',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3775,9 +3764,9 @@ lc is [9, 7]
 </div></div>
 <div class="section" id="Exercise---The-'treccia-mochena'">
 <h3>Exercise - The ‘treccia mochena’<a class="headerlink" href="#Exercise---The-'treccia-mochena'" title="Permalink to this headline">¶</a></h3>
-<p>As you weel know in the Mocheni valley in Trentino there is a wonderful pastry: the famous ‘treccia Mochena’.</p>
-<p>At a quick glance it may look like a braid loaf, between 30 and 60 cm long with inside a mix of ingredients along a marvellous and secret cream.</p>
-<p>With your friends Camilla and Giorgio you bought a treccia divided in a certain number of portions stuffed of <code class="docutils literal notranslate"><span class="pre">walnuts</span></code>, <code class="docutils literal notranslate"><span class="pre">bluberries</span></code> and red <code class="docutils literal notranslate"><span class="pre">currants</span></code>.</p>
+<p>As you well know, a wonderful pastry is made in the Mocheni valley in Trentino: the famous ‘treccia mochena’.</p>
+<p>At a quick glance, it may look like a braid loaf, between 30 and 60 cm long with inside a mix of ingredients along a marvellous and secret cream.</p>
+<p>With your friends Camilla and Giorgio, you bought a treccia divided in a certain number of portions stuffed with <code class="docutils literal notranslate"><span class="pre">walnuts</span></code>, <code class="docutils literal notranslate"><span class="pre">bluberries</span></code> and red <code class="docutils literal notranslate"><span class="pre">currants</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">treccia</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -3846,7 +3835,7 @@ Camilla: [&#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;]
 </div>
 <div class="section" id="Slices---omitting-limits">
 <h3>Slices - omitting limits<a class="headerlink" href="#Slices---omitting-limits" title="Permalink to this headline">¶</a></h3>
-<p>If we will, it is possible to omit start index, in which case Python will suppose it’s <code class="docutils literal notranslate"><span class="pre">0</span></code>:</p>
+<p>If we will, it’s possible to omit start index, in which case Python will suppose it’s <code class="docutils literal notranslate"><span class="pre">0</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
@@ -3866,7 +3855,7 @@ Camilla: [&#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;]
 [90, 60, 80]
 </pre></div></div>
 </div>
-<p>It is also possible to omit the end index, in this case Python will extract elements until the list end:</p>
+<p>It’s also possible to omit the end index, in this case Python will extract elements until the list end:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
@@ -3939,10 +3928,10 @@ Camilla: [&#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;]
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmfacff75e-20ba-4fb0-9b6a-1e36c60289cd" type="application/json" >
+<script id="json-jm6fda0553-66f1-4282-b034-6e47bda57eb2" type="application/json" >
     {"code": " \nla = [7,8,9]\nlb = la[:]\nlb[0] = 6\n#print('la =',la)\n#print('lb =',lb)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 8, 9]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 8, 9], "2": ["LIST", 7, 8, 9]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 7, 8, 9], "2": ["LIST", 6, 8, 9]}, "stdout": ""}]}
 </script>
-<div id="jmfacff75e-20ba-4fb0-9b6a-1e36c60289cd" class="pytutorVisualizer"> </div>
+<div id="jm6fda0553-66f1-4282-b034-6e47bda57eb2" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3962,12 +3951,12 @@ Camilla: [&#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;]
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmfacff75e-20ba-4fb0-9b6a-1e36c60289cd').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm6fda0553-66f1-4282-b034-6e47bda57eb2').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmfacff75e-20ba-4fb0-9b6a-1e36c60289cd',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm6fda0553-66f1-4282-b034-6e47bda57eb2',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -4017,9 +4006,9 @@ Camilla: [&#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;]
 </div>
 <div class="section" id="Exercise---An-out-of-tune-guitar">
 <h3>Exercise - An out of tune guitar<a class="headerlink" href="#Exercise---An-out-of-tune-guitar" title="Permalink to this headline">¶</a></h3>
-<p>In the attic you found an old guitar which was around when you were a child. Now that you have a degree in Sound Engineering you try to play it while a sensor measures the produced note.</p>
+<p>In the attic you found an old guitar which was around when you were a child. Now that you have a degree in Sound Engineering you try playing it while a sensor measures the notes it produces.</p>
 <p>The sensor is a microphone, and each one tenth of second it records the main note it detected.</p>
-<p>With this test you discover this phenomena: some guitar strings when played have an oscillating behaviour but then they synthonize on a precise note until the end:</p>
+<p>You discover this phenomena: when played, some guitar strings have an oscillating behaviour, but then they synthonize on a precise note until the end:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;G&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;...&#39;</span>
 </pre></div>
 </div>
@@ -4027,8 +4016,8 @@ Camilla: [&#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;]
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;G&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;...&#39;</span>
 </pre></div>
 </div>
-<p>In a list <code class="docutils literal notranslate"><span class="pre">cutoffs</span></code> are recorded for each string the instants in which it starts or ends the weird behaviour. The instants are represented as a sequence of beats <code class="docutils literal notranslate"><span class="pre">'*'</span></code>, for example the first string starts an anomalous behaviour after 5 beats: <code class="docutils literal notranslate"><span class="pre">'*****'</span></code>, while the seconds ends the anomalous behaviour after 7 beats: <code class="docutils literal notranslate"><span class="pre">'*******'</span></code></p>
-<p>Write some code to cut the sensor output and obtain only the sequences of continues and correct notes. At the end it should PRINT:</p>
+<p>A list <code class="docutils literal notranslate"><span class="pre">cutoffs</span></code> records for each string the instants in which the weird behaviour starts or ends. The instants are represented as a sequence of beats <code class="docutils literal notranslate"><span class="pre">'*'</span></code>, for example the first string starts an anomalous behaviour after 5 beats: <code class="docutils literal notranslate"><span class="pre">'*****'</span></code>, while the seconds ends the anomalous behaviour after 7 beats: <code class="docutils literal notranslate"><span class="pre">'*******'</span></code></p>
+<p>Write some code to cut the sensor output and obtain only the sequences of continuous and correct notes. In the end, it should PRINT:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">]</span>
 <span class="p">[</span><span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;...&#39;</span><span class="p">]</span>
 <span class="p">[</span><span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;...&#39;</span><span class="p">]</span>
@@ -4107,7 +4096,7 @@ Camilla: [&#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;]
 </div>
 <div class="section" id="Slices---negative-limits">
 <h3>Slices - negative limits<a class="headerlink" href="#Slices---negative-limits" title="Permalink to this headline">¶</a></h3>
-<p>It is also possible to set inverse and negative limits, although it is not always intuitive:</p>
+<p>It’s also possible to set inverse and negative limits, although it’s not always intuitive:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
@@ -4285,7 +4274,7 @@ Camilla: [&#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;]
 []
 </pre></div></div>
 </div>
-<p>It is also possible to start from a negative index and arrive to a positive one. As long as the first index marks a position which precedes the second index, something gets returned:</p>
+<p>It’s also possible to start from a negative index and arrive to a positive one. As long as the first index marks a position which precedes the second index, something gets returned:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
@@ -4444,14 +4433,14 @@ Camilla: [&#39;c&#39;, &#39;c&#39;, &#39;c&#39;, &#39;c&#39;]
 </div>
 <div class="section" id="Exercise---The-NonsenShop">
 <h3>Exercise - The NonsenShop<a class="headerlink" href="#Exercise---The-NonsenShop" title="Permalink to this headline">¶</a></h3>
-<p>To keep your expenses under control you want to write a software which tracks everything you buy, and reduce useless expenses.</p>
-<p>You just need to take a picture of the receit with the smartphone, and an OCR (Optical Character Recognition) module will automatically obtain read the text.</p>
+<p>To keep your expenses under control you want to write a software which tracks everything you buy, and reduce pointless expenses.</p>
+<p>You just need to take a picture of the receit with the smartphone, and an OCR (Optical Character Recognition) module will automatically read the text.</p>
 <ul class="simple">
 <li><p><strong>all receits</strong> have the same schema: shop name, date, “Bought items”, 1 row per item, total, thanks.</p></li>
 <li><p>assume all the receits are always ordered by price</p></li>
 </ul>
 <ol class="arabic simple">
-<li><p>Write some code to create a NEW list with only the rows of items, for example:</p></li>
+<li><p>Write some code to create a NEW list with only the items rows, for example:</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Green varnish for salad        1,12€&#39;</span><span class="p">,</span>
  <span class="s1">&#39;Anti-wind lead confetti        4,99€&#39;</span><span class="p">,</span>
@@ -4557,7 +4546,7 @@ Most expensive item was: Transparent home shoes
 </div>
 <div class="section" id="Slice---step">
 <h3>Slice - step<a class="headerlink" href="#Slice---step" title="Permalink to this headline">¶</a></h3>
-<p>It is also possible to specify a third parameter called ‘step’ to tell Python how many cells to skip at each read. For example, here we start from index 3 and arrive to index 9 excluded, <strong>skipping by 2</strong>:</p>
+<p>It’s also possible to specify a third parameter called ‘step’ to tell Python how many cells to skip at each read. For example, here we start from index 3 and arrive to index 9 excluded, <strong>skipping by 2</strong>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
@@ -4681,10 +4670,10 @@ Most expensive item was: Transparent home shoes
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jme798be00-7483-4c7b-a50e-01ca22c46bcf" type="application/json" >
+<script id="json-jm7644fbbf-fdb1-42d8-bbf1-2bc08731251a" type="application/json" >
     {"code": " \n#     0  1  2  3  4  5  6  7\nla = [30,40,80,10,70,60,40,20]\nlb = la \nlb[3:6] = [91,92,93]", "trace": [{"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 30, 40, 80, 10, 70, 60, 40, 20]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 30, 40, 80, 10, 70, 60, 40, 20]}, "stdout": ""}, {"line": 5, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 1]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 30, 40, 80, 91, 92, 93, 40, 20]}, "stdout": ""}]}
 </script>
-<div id="jme798be00-7483-4c7b-a50e-01ca22c46bcf" class="pytutorVisualizer"> </div>
+<div id="jm7644fbbf-fdb1-42d8-bbf1-2bc08731251a" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -4704,12 +4693,12 @@ Most expensive item was: Transparent home shoes
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jme798be00-7483-4c7b-a50e-01ca22c46bcf').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm7644fbbf-fdb1-42d8-bbf1-2bc08731251a').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jme798be00-7483-4c7b-a50e-01ca22c46bcf',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm7644fbbf-fdb1-42d8-bbf1-2bc08731251a',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -4772,11 +4761,12 @@ Most expensive item was: Transparent home shoes
 <p>When trains reach Denver, their content is transfered into the empty wagons of the New York train like this:</p>
 <ul class="simple">
 <li><p>to prevent robberies, all the precious wagons are to be positioned <strong>nearby the locomotive</strong></p></li>
-<li><p>the cattle is to be placed <strong>always behind passengers</strong>, because as much as hygiene in the west is lacking, it is still easier to pretend humans bathe more than cattle</p></li>
+<li><p>the cattle is to be placed <strong>always behind passengers</strong>, because as much as hygiene in the west is lacking, it’s still easier to pretend humans bathe more than cattle</p></li>
 </ul>
 <p>Write some code which MODIFIES <code class="docutils literal notranslate"><span class="pre">new_york</span></code> by copying the strings from <code class="docutils literal notranslate"><span class="pre">colorado</span></code> and <code class="docutils literal notranslate"><span class="pre">fort</span></code></p>
 <ul class="simple">
 <li><p><strong>MINIMIZE the number of assignments!</strong> (the best solution only has two assignments!)</p></li>
+<li><p><strong>DO NOT</strong> write constant strings in your code (so no <code class="docutils literal notranslate"><span class="pre">&quot;cowboy&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;gold&quot;</span></code>, …)</p></li>
 </ul>
 <p>Example - given:</p>
 <div class="nbinput nblast docutils container">
@@ -4853,11 +4843,11 @@ Most expensive item was: Transparent home shoes
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">couples</span> <span class="o">=</span> <span class="p">[</span>             <span class="c1"># external list</span>
-            <span class="p">[</span><span class="mi">67</span><span class="p">,</span><span class="mi">95</span><span class="p">],</span>    <span class="c1"># internal list at index 0</span>
-            <span class="p">[</span><span class="mi">60</span><span class="p">,</span><span class="mi">59</span><span class="p">],</span>    <span class="c1"># internal list at index 1</span>
-            <span class="p">[</span><span class="mi">86</span><span class="p">,</span><span class="mi">75</span><span class="p">],</span>    <span class="c1"># internal list at index 2</span>
-            <span class="p">[</span><span class="mi">96</span><span class="p">,</span><span class="mi">90</span><span class="p">],</span>    <span class="c1"># internal list at index 3</span>
-            <span class="p">[</span><span class="mi">88</span><span class="p">,</span><span class="mi">87</span><span class="p">],</span>    <span class="c1"># internal list at index 4</span>
+            <span class="p">[</span><span class="mi">67</span><span class="p">,</span><span class="mi">95</span><span class="p">],</span>    <span class="c1">#    internal list at index 0</span>
+            <span class="p">[</span><span class="mi">60</span><span class="p">,</span><span class="mi">59</span><span class="p">],</span>    <span class="c1">#                     index 1</span>
+            <span class="p">[</span><span class="mi">86</span><span class="p">,</span><span class="mi">75</span><span class="p">],</span>    <span class="c1">#                     index 2</span>
+            <span class="p">[</span><span class="mi">96</span><span class="p">,</span><span class="mi">90</span><span class="p">],</span>    <span class="c1">#                     index 3</span>
+            <span class="p">[</span><span class="mi">88</span><span class="p">,</span><span class="mi">87</span><span class="p">],</span>    <span class="c1">#                     index 4</span>
           <span class="p">]</span>
 </pre></div>
 </div>
@@ -4922,13 +4912,13 @@ Most expensive item was: Transparent home shoes
 <div class="section" id="Exercise---couples">
 <h3>Exercise - couples<a class="headerlink" href="#Exercise---couples" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><p>Write some code to extract and print the number <code class="docutils literal notranslate"><span class="pre">86</span></code>, <code class="docutils literal notranslate"><span class="pre">67</span></code> and <code class="docutils literal notranslate"><span class="pre">87</span></code></p></li>
+<li><p>Write some code to extract and print the numbers <code class="docutils literal notranslate"><span class="pre">86</span></code>, <code class="docutils literal notranslate"><span class="pre">67</span></code> and <code class="docutils literal notranslate"><span class="pre">87</span></code></p></li>
 <li><p>Given a row with index <code class="docutils literal notranslate"><span class="pre">i</span></code> and a column <code class="docutils literal notranslate"><span class="pre">j</span></code>, print the number at row <code class="docutils literal notranslate"><span class="pre">i</span></code> and column <code class="docutils literal notranslate"><span class="pre">j</span></code> multiplied by the number at successive row and same column</p></li>
 </ol>
 <p>After your code, you should see printed</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>point 1: 86 67 87
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1) 86 67 87
 
-point 2:  i = 3  j = 1  result = 7830
+2) i = 3  j = 1  result = 7830
 </pre></div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -4952,9 +4942,9 @@ point 2:  i = 3  j = 1  result = 7830
 
 <span class="c1"># write here</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;point 1:&quot;</span><span class="p">,</span> <span class="n">couples</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">couples</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">couples</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1)&quot;</span><span class="p">,</span> <span class="n">couples</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">couples</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">couples</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;point 2:&quot;</span><span class="p">,</span><span class="s2">&quot; i =&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot; j =&quot;</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="s2">&quot; result =&quot;</span><span class="p">,</span> <span class="n">couples</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">couples</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2)&quot;</span><span class="p">,</span><span class="s2">&quot; i =&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot; j =&quot;</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="s2">&quot; result =&quot;</span><span class="p">,</span> <span class="n">couples</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">*</span><span class="n">couples</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -4963,9 +4953,9 @@ point 2:  i = 3  j = 1  result = 7830
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-point 1: 86 67 87
+1) 86 67 87
 
-point 2:  i = 3  j = 1  result = 7830
+2)  i = 3  j = 1  result = 7830
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
@@ -4994,8 +4984,7 @@ point 2:  i = 3  j = 1  result = 7830
 </div>
 <div class="section" id="Exercise---Glory-to-Gladiators!">
 <h3>Exercise - Glory to Gladiators!<a class="headerlink" href="#Exercise---Glory-to-Gladiators!" title="Permalink to this headline">¶</a></h3>
-<p>The gladiators fight for the glory of the battle and the entertainment of the Emperor and the people!</p>
-<p>Not all gladiators manage to fight the same number of battles..</p>
+<p>The gladiators fight for the glory of the battle and the entertainment of the Emperor and the people! Sadly, not all gladiators manage to fight the same number of battles..</p>
 <p>For each fight, each gladiator receives a reward in sesterces (in case he doesn’t survive, it will be offered to his patron…)</p>
 <p>At the end of the games, the Emperor throws the prize in sesterces to his favourite gladiator. The Emperor has bad aim and his weak arms don’t allow him to throw everything at once, so he always ends up throwing half of the money to the chosen gladiator and half to the next gladiator.</p>
 <ul class="simple">
@@ -5007,17 +4996,18 @@ point 2:  i = 3  j = 1  result = 7830
 </ul>
 <p><strong>Example - given</strong>:</p>
 <p><img alt="gladiatori" src="../_images/gladiators.png" /></p>
-<p>After your code, by writing (we use <code class="docutils literal notranslate"><span class="pre">pprint</span></code> so printing happens on many lines)</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
-<span class="n">pprint</span><span class="p">(</span><span class="n">gladiatori</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<p>and given:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">prize</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1</span>
 </pre></div>
 </div>
-<p>it must priny:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[[</span><span class="mi">67</span><span class="p">,</span> <span class="mi">95</span><span class="p">],</span>
- <span class="p">[</span><span class="mi">60</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">79</span><span class="p">],</span>
- <span class="p">[</span><span class="mi">86</span><span class="p">,</span> <span class="mi">95</span><span class="p">],</span>
- <span class="p">[</span><span class="mi">96</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">92</span><span class="p">],</span>
- <span class="p">[</span><span class="mi">88</span><span class="p">,</span> <span class="mi">87</span><span class="p">]]</span>
+<p>after your code, by writing (we use <code class="docutils literal notranslate"><span class="pre">pprint</span></code> so printing happens on many lines) it must result:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">gladiatori</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="go">[[67, 95],</span>
+<span class="go"> [60, 23, 23, 13, 79],</span>
+<span class="go"> [86, 95],</span>
+<span class="go"> [96, 90, 92],</span>
+<span class="go"> [88, 87]]</span>
 </pre></div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -5028,7 +5018,8 @@ point 2:  i = 3  j = 1  result = 7830
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 
-<span></span><span class="n">prize</span> <span class="o">=</span> <span class="mi">40</span>                      <span class="c1"># sesterces</span>
+<span></span><span class="n">prize</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1</span>                      <span class="c1"># sesterces, gladiator to award</span>
+<span class="c1">#prize, i = 10, 3</span>
 
 <span class="n">gladiators</span> <span class="o">=</span> <span class="p">[</span>                   <span class="c1"># external list</span>
                <span class="p">[</span><span class="mi">67</span><span class="p">,</span><span class="mi">95</span><span class="p">],</span>          <span class="c1"># internal list at index 0</span>
@@ -5037,8 +5028,6 @@ point 2:  i = 3  j = 1  result = 7830
                <span class="p">[</span><span class="mi">96</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">92</span><span class="p">],</span>       <span class="c1"># internal list at index 3</span>
                <span class="p">[</span><span class="mi">88</span><span class="p">,</span><span class="mi">87</span><span class="p">],</span>          <span class="c1"># internal list at index 4</span>
              <span class="p">]</span>
-
-<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>                            <span class="c1"># gladiator to award</span>
 
 <span class="c1"># write here</span>
 <span class="n">gladiators</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>   <span class="o">+=</span> <span class="n">prize</span> <span class="o">//</span> <span class="mi">2</span>
@@ -5067,7 +5056,8 @@ point 2:  i = 3  j = 1  result = 7830
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 
-<span></span><span class="n">prize</span> <span class="o">=</span> <span class="mi">40</span>                      <span class="c1"># sesterces</span>
+<span></span><span class="n">prize</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1</span>                      <span class="c1"># sesterces, gladiator to award</span>
+<span class="c1">#prize, i = 10, 3</span>
 
 <span class="n">gladiators</span> <span class="o">=</span> <span class="p">[</span>                   <span class="c1"># external list</span>
                <span class="p">[</span><span class="mi">67</span><span class="p">,</span><span class="mi">95</span><span class="p">],</span>          <span class="c1"># internal list at index 0</span>
@@ -5076,8 +5066,6 @@ point 2:  i = 3  j = 1  result = 7830
                <span class="p">[</span><span class="mi">96</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">92</span><span class="p">],</span>       <span class="c1"># internal list at index 3</span>
                <span class="p">[</span><span class="mi">88</span><span class="p">,</span><span class="mi">87</span><span class="p">],</span>          <span class="c1"># internal list at index 4</span>
              <span class="p">]</span>
-
-<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>                            <span class="c1"># gladiator to award</span>
 
 <span class="c1"># write here</span>
 
@@ -5169,9 +5157,9 @@ False
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING</strong>: <code class="docutils literal notranslate"><span class="pre">in</span></code> <strong>is often used in a wrong / inefficient way</strong></p>
 <p>Always ask yourself:</p>
 <ol class="arabic simple">
-<li><p>Can the list <em>not</em> contain the substring we’re looking for? Always remember to also handle his case!</p></li>
+<li><p>Could the list <em>not</em> contain the substring we’re looking for? Always remember to also handle his case!</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">in</span></code> performs a search on all the list, which might be inefficient: is it really necessary, or we already know the interval where to search?</p></li>
-<li><p>if we want to know whether <code class="docutils literal notranslate"><span class="pre">element</span></code> is in a position we know a priori (i.e. <code class="docutils literal notranslate"><span class="pre">3</span></code>), <code class="docutils literal notranslate"><span class="pre">in</span></code> is not needed, it’s enough to write <code class="docutils literal notranslate"><span class="pre">my_list[3]</span> <span class="pre">==</span> <span class="pre">element</span></code>. By using <code class="docutils literal notranslate"><span class="pre">in</span></code> Python might find duplicated elements which are <em>before</em> or <em>after</em> the one we want to verify!</p></li>
+<li><p>If we wanted to know whether <code class="docutils literal notranslate"><span class="pre">element</span></code> is in a position we know a priori (i.e. <code class="docutils literal notranslate"><span class="pre">3</span></code>), <code class="docutils literal notranslate"><span class="pre">in</span></code> is not needed, it’s enough to write <code class="docutils literal notranslate"><span class="pre">my_list[3]</span> <span class="pre">==</span> <span class="pre">element</span></code>. By using <code class="docutils literal notranslate"><span class="pre">in</span></code> Python might find duplicated elements which are <em>before</em> or <em>after</em> the one we want to verify!</p></li>
 </ol>
 </div>
 <p><strong>QUESTION</strong>: What’s the result of this expression? <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>?</p>
@@ -5436,7 +5424,7 @@ False
 </div>
 </div>
 <div class="section" id="List-concatenation-with-+">
-<h2>List concatenation with +<a class="headerlink" href="#List-concatenation-with-+" title="Permalink to this headline">¶</a></h2>
+<h2>List concatenation with <code class="docutils literal notranslate"><span class="pre">+</span></code><a class="headerlink" href="#List-concatenation-with-+" title="Permalink to this headline">¶</a></h2>
 <p>Given two lists <code class="docutils literal notranslate"><span class="pre">la</span></code> and <code class="docutils literal notranslate"><span class="pre">lb</span></code>, we can concatenate them with the operator <code class="docutils literal notranslate"><span class="pre">+</span></code> which produces a NEW list:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[102]:
@@ -5529,10 +5517,10 @@ False
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmfee787b8-c0da-4cd4-a382-c0565d23b43c" type="application/json" >
+<script id="json-jmddc66758-6d78-47d4-a6da-6faee0e42acf" type="application/json" >
     {"code": " \nla = [70,60,80]\nlb = [90,50]\nlc = la + lb\n\nprint(la)\nprint(lb)\nprint(lc)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 70, 60, 80]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 70, 60, 80], "2": ["LIST", 90, 50]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2], "lc": ["REF", 3]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 70, 60, 80], "2": ["LIST", 90, 50], "3": ["LIST", 70, 60, 80, 90, 50]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2], "lc": ["REF", 3]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 70, 60, 80], "2": ["LIST", 90, 50], "3": ["LIST", 70, 60, 80, 90, 50]}, "stdout": "[70, 60, 80]\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2], "lc": ["REF", 3]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 70, 60, 80], "2": ["LIST", 90, 50], "3": ["LIST", 70, 60, 80, 90, 50]}, "stdout": "[70, 60, 80]\n[90, 50]\n"}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2], "lc": ["REF", 3]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 70, 60, 80], "2": ["LIST", 90, 50], "3": ["LIST", 70, 60, 80, 90, 50]}, "stdout": "[70, 60, 80]\n[90, 50]\n[70, 60, 80, 90, 50]\n"}]}
 </script>
-<div id="jmfee787b8-c0da-4cd4-a382-c0565d23b43c" class="pytutorVisualizer"> </div>
+<div id="jmddc66758-6d78-47d4-a6da-6faee0e42acf" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -5552,12 +5540,12 @@ False
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmfee787b8-c0da-4cd4-a382-c0565d23b43c').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmddc66758-6d78-47d4-a6da-6faee0e42acf').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmfee787b8-c0da-4cd4-a382-c0565d23b43c',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmddc66758-6d78-47d4-a6da-6faee0e42acf',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -5747,7 +5735,7 @@ False
 </pre></div></div>
 </div>
 <div class="admonition warning">
-<p class="admonition-title fa fa-exclamation-circle"><a class="reference external" href="https://en.softpython.org/commandments.html#V-COMMANDMENT">V COMMANDMENT</a> <strong>: You shall never ever use</strong> <code class="docutils literal notranslate"><span class="pre">min</span></code> <strong>and</strong> <code class="docutils literal notranslate"><span class="pre">max</span></code> <strong>as variable names.</strong></p>
+<p class="admonition-title fa fa-exclamation-circle"><a class="reference external" href="https://en.softpython.org/commandments.html#V-COMMANDMENT">V COMMANDMENT</a> <strong>: You shall never ever use</strong> <code class="docutils literal notranslate"><span class="pre">min</span></code> <strong>and</strong> <code class="docutils literal notranslate"><span class="pre">max</span></code> <strong>as variable names</strong></p>
 <p>If you do, you will lose the functions!</p>
 </div>
 <p>Note it’s also possible to directly pass to <code class="docutils literal notranslate"><span class="pre">min</span></code> and <code class="docutils literal notranslate"><span class="pre">max</span></code> the elements to compare without including them in a list:</p>
@@ -6055,7 +6043,7 @@ False
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 
 <span></span><span class="n">balance</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
-<span class="c1">#bilancia = [4,3,3,1,9,8]</span>
+<span class="c1">#balance = [4,3,3,1,9,8]</span>
 
 <span class="c1"># write here</span>
 <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">balance</span><span class="p">)</span>
@@ -6079,7 +6067,7 @@ True
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 
 <span></span><span class="n">balance</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
-<span class="c1">#bilancia = [4,3,3,1,9,8]</span>
+<span class="c1">#balance = [4,3,3,1,9,8]</span>
 
 <span class="c1"># write here</span>
 
@@ -6256,10 +6244,10 @@ True
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm087d4c50-8ffa-4b4e-906a-bbc4eb4dec47" type="application/json" >
+<script id="json-jm7068c0f9-cc1c-4849-a2f0-054cddf9b7c4" type="application/json" >
     {"code": " \nla = [\"a\", \"world\", \"of\", \"words\"]\nlb = la * 2", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", "a", "world", "of", "words"]}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", "a", "world", "of", "words"], "2": ["LIST", "a", "world", "of", "words", "a", "world", "of", "words"]}, "stdout": ""}]}
 </script>
-<div id="jm087d4c50-8ffa-4b4e-906a-bbc4eb4dec47" class="pytutorVisualizer"> </div>
+<div id="jm7068c0f9-cc1c-4849-a2f0-054cddf9b7c4" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -6279,12 +6267,12 @@ True
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm087d4c50-8ffa-4b4e-906a-bbc4eb4dec47').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm7068c0f9-cc1c-4849-a2f0-054cddf9b7c4').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm087d4c50-8ffa-4b4e-906a-bbc4eb4dec47',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm7068c0f9-cc1c-4849-a2f0-054cddf9b7c4',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -6384,10 +6372,10 @@ True
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmc98ec83a-8bad-477a-b661-919c8cab4eb1" type="application/json" >
+<script id="json-jm569d613d-2969-4a58-bc00-806b0799bd99" type="application/json" >
     {"code": " \nla = [5,6]\nlb = [7,8,9]\nlc = [la,lb] * 2", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1]}, "ordered_globals": ["la"], "stack_to_render": [], "heap": {"1": ["LIST", 5, 6]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2]}, "ordered_globals": ["la", "lb"], "stack_to_render": [], "heap": {"1": ["LIST", 5, 6], "2": ["LIST", 7, 8, 9]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"la": ["REF", 1], "lb": ["REF", 2], "lc": ["REF", 3]}, "ordered_globals": ["la", "lb", "lc"], "stack_to_render": [], "heap": {"1": ["LIST", 5, 6], "2": ["LIST", 7, 8, 9], "3": ["LIST", ["REF", 1], ["REF", 2], ["REF", 1], ["REF", 2]]}, "stdout": ""}]}
 </script>
-<div id="jmc98ec83a-8bad-477a-b661-919c8cab4eb1" class="pytutorVisualizer"> </div>
+<div id="jm569d613d-2969-4a58-bc00-806b0799bd99" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -6407,12 +6395,12 @@ True
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmc98ec83a-8bad-477a-b661-919c8cab4eb1').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm569d613d-2969-4a58-bc00-806b0799bd99').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmc98ec83a-8bad-477a-b661-919c8cab4eb1',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm569d613d-2969-4a58-bc00-806b0799bd99',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 

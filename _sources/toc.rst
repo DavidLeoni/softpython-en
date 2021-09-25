@@ -112,7 +112,7 @@ If command
 ..    
     challenges <if/if2-chal.ipynb>
 
-For cycle
+For loops
 ------------
 
 .. toctree::
@@ -129,7 +129,7 @@ For cycle
 ..    
     challenges <for/for8-chal.ipynb>
 
-While cycle
+While loops
 -------------
 
 .. toctree::
