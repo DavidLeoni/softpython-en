@@ -18,7 +18,7 @@
     </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Cicli while &mdash; SoftPython</title>
+  <title>While loops &mdash; SoftPython</title>
   
 
   
@@ -1040,6 +1040,7 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Searching-a-sequence">Searching a sequence</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#What-we-need">What we need</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#How-to-check">How to check</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---Turbolenz-with-a-break">Exercise - Turbolenz with a break</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---Turbulenz-without-break">Exercise - Turbulenz without break</a></li>
@@ -1047,7 +1048,7 @@
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---Wild-West">Exercise - Wild West</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---The-Balance-of-Language">Exercise - The Balance of Language</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---the-tree-shaker">Exercise - the tree shaker</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#Exercise---fantastic-story-of-the-ghost-castle">Exercise - fantastic story of the ghost castle</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---the-ghost-castle">Exercise - the ghost castle</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Modifying-sequences">Modifying sequences</a><ul>
@@ -1835,7 +1836,7 @@
     
         <li><a href="../toc.html">A - Foundations</a> &raquo;</li>
     
-    <li>Cicli while</li>
+    <li>While loops</li>
     -->
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -2096,8 +2097,8 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Cicli-while">
-<h1>Cicli while<a class="headerlink" href="#Cicli-while" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="While-loops">
+<h1>While loops<a class="headerlink" href="#While-loops" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="Download-exercises-zip">
 <h2><a class="reference external" href="../_static/generated/while.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/while">Browse online files</a></p>
@@ -2218,10 +2219,10 @@ Loop is over !
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm762bd8ad-1fee-4037-801b-f394efe68daf" type="application/json" >
+<script id="json-jm5b79acf7-33ba-41bb-b1be-babaaf1f3d15" type="application/json" >
     {"code": " \ni = 1\nwhile i < 4:\n    print('Counted', i)\n    i += 1\n    \nprint('Loop is over !')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\nCounted 3\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\nCounted 3\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\nCounted 3\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\nCounted 3\nLoop is over !\n"}]}
 </script>
-<div id="jm762bd8ad-1fee-4037-801b-f394efe68daf" class="pytutorVisualizer"> </div>
+<div id="jm5b79acf7-33ba-41bb-b1be-babaaf1f3d15" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2241,12 +2242,12 @@ Loop is over !
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm762bd8ad-1fee-4037-801b-f394efe68daf').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm5b79acf7-33ba-41bb-b1be-babaaf1f3d15').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm762bd8ad-1fee-4037-801b-f394efe68daf',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm5b79acf7-33ba-41bb-b1be-babaaf1f3d15',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -2751,10 +2752,10 @@ Loop is over !
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmcfe25941-7519-4376-8603-573813d0c0da" type="application/json" >
+<script id="json-jmbad0689c-5396-4d6b-b14c-1a3f86998952" type="application/json" >
     {"code": " \ni = 1\nwhile i < 5:     \n    print('Counted', i)\n    if i > 3:        \n        print('break! Exiting the cycle!')\n        break    \n        print('After the break')\n    i += 1    \n    if i % 2 == 1:\n        print('continue, jumping to next condition check')\n        continue\n        print('After the continue')\n    print('arrived till the end')\n    \nprint('Loop is over !')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\n"}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\n"}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\n"}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\nbreak! Exiting the cycle!\n"}, {"line": 16, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\nbreak! Exiting the cycle!\n"}, {"line": 16, "event": "return", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\nbreak! Exiting the cycle!\nLoop is over !\n"}]}
 </script>
-<div id="jmcfe25941-7519-4376-8603-573813d0c0da" class="pytutorVisualizer"> </div>
+<div id="jmbad0689c-5396-4d6b-b14c-1a3f86998952" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -2774,12 +2775,12 @@ Loop is over !
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmcfe25941-7519-4376-8603-573813d0c0da').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmbad0689c-5396-4d6b-b14c-1a3f86998952').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmcfe25941-7519-4376-8603-573813d0c0da',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmbad0689c-5396-4d6b-b14c-1a3f86998952',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3606,7 +3607,7 @@ cccc
 <div class="section" id="Searching-a-sequence">
 <h2>Searching a sequence<a class="headerlink" href="#Searching-a-sequence" title="Permalink to this headline">¶</a></h2>
 <p>We are at the airport, and we’ve been told to reach the gate of our trusted airline company <em>Turbulenz</em>. We don’t remember exactly the gate, but we know we have to stop at the first <em>Turbulenz</em> sign we find. If by mistake we went further, we might encounter other gates for international flights, and who knows where we would end up.</p>
-<p>If we have to perform searches in potentially long sequences, knowing that probably a complete visit is not needed, it is convenient to use a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</p>
+<p>If we have to perform searches in potentially long sequences, and we don’t always need a complete visit, using a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop is more convenient and efficient than a <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
 <p>We could represent the example above as a list:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
@@ -3619,42 +3620,45 @@ cccc
 </div>
 </div>
 <p>Once the element is found, we would like the program to print the position in which it was found, in this case <code class="docutils literal notranslate"><span class="pre">3</span></code>.</p>
-<p>Naturally, if you read well the [list methods]https://en.softpython.org/lists/lists4-sol.html you will know we already have a handy method <code class="docutils literal notranslate"><span class="pre">index</span></code>, but in this notebook we will adopt the philosophy of ‘do it yourself’ and will try building our search algorithms from scratch.</p>
+<p>Naturally, if you read well the <a class="reference external" href="https://en.softpython.org/lists/lists4-sol.html">list search methods</a> you already know there is a handy method <code class="docutils literal notranslate"><span class="pre">.index('Turbulenz')</span></code>, but in this notebook we adopt the philosophy of ‘do it yourself’, and will try building our search algorithms from scratch.</p>
 <p><strong>QUESTION</strong>: Can you think of some corner case where <code class="docutils literal notranslate"><span class="pre">index</span></code> method can also bring a problem?</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: if the list does <em>not</em> contain what we’re looking for, <code class="docutils literal notranslate"><span class="pre">index</span></code> will raise an exception thus stopping the program.</p>
-</div><p>To build our search, we will need:</p>
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: if the list does <em>not</em> contain what we’re looking for, calling <code class="docutils literal notranslate"><span class="pre">index</span></code> will raise an exception thus stopping the program.</p>
+</div><div class="section" id="What-we-need">
+<h3>What we need<a class="headerlink" href="#What-we-need" title="Permalink to this headline">¶</a></h3>
+<p>To build our search, we will need:</p>
 <ol class="arabic simple">
 <li><p>control variable</p></li>
 <li><p>stop condition</p></li>
 <li><p>control variable update</p></li>
 </ol>
-<p>In this case the control variable could be an index, the stop condition will evaluate wheter we reached the end of the airport, and inside the cycle we will update the index to go on with the search. But where should we evaluate whether or not we have found the gate? Furthermore, since we are expert programmers we believe in misfortune, and know the horror scenario of Turbulenz company going bankrupt the very same day of our arrival could happen indeed! So we will also need to foresee the case
-our search could give no result, and decide what should happen in this situation.</p>
+<p>The control variable in this case could be an index, the stop condition could evaluate whether we reached the end of the airport, and inside the cycle we will update the index to keep searching. But where should we evaluate whether or not we have found the gate? Furthermore, since we are expert programmers we believe in misfortune, and know horror scenarios could happen indeed, like Turbulenz company going bankrupt the very same day of our arrival! Thus, we also need to foresee the case our
+search may give no result, and decide what should happen in such situation.</p>
+</div>
 <div class="section" id="How-to-check">
 <h3>How to check<a class="headerlink" href="#How-to-check" title="Permalink to this headline">¶</a></h3>
 <p>There are two ways to check a discovery:</p>
-<ul class="simple">
-<li><p>ihe most direct is to do an exit check inside the body of <code class="docutils literal notranslate"><span class="pre">while</span></code> itself, by putting an <code class="docutils literal notranslate"><span class="pre">if</span></code> which when we element is found performs the execution of a <code class="docutils literal notranslate"><span class="pre">break</span></code> command. It is by no means elegant, yet it could be a first approach.</p></li>
-<li><p>a better option is performing the check in the boolean condition of the <code class="docutils literal notranslate"><span class="pre">while</span></code>, but it could be slightly trickier devising a program which works in all the cases.</p></li>
-</ul>
+<ol class="loweralpha simple">
+<li><p>most direct way is to place an exit check inside the body of <code class="docutils literal notranslate"><span class="pre">while</span></code> itself: we could put an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement which controls when the element is found, and in such case performs the execution of a <code class="docutils literal notranslate"><span class="pre">break</span></code> command. It is by no means elegant, yet it could be a first approach.</p></li>
+<li><p>a better option would be performing the check in the boolean condition of the <code class="docutils literal notranslate"><span class="pre">while</span></code>, but devising a program which works in all cases could be slightly trickier.</p></li>
+</ol>
 <p>Let’s try them both in the following exercises.</p>
 </div>
 <div class="section" id="Exercise---Turbolenz-with-a-break">
 <h3>Exercise - Turbolenz with a break<a class="headerlink" href="#Exercise---Turbolenz-with-a-break" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ Write some code which using a <code class="docutils literal notranslate"><span class="pre">while</span></code> searches the list <code class="docutils literal notranslate"><span class="pre">airport</span></code> for the FIRST occurrence of <code class="docutils literal notranslate"><span class="pre">company</span></code>: as soon as it is found, stops searching and PRINTS the index where it was found.</p>
+<p>✪✪ Write some code which uses a <code class="docutils literal notranslate"><span class="pre">while</span></code> to search the list <code class="docutils literal notranslate"><span class="pre">airport</span></code> for the FIRST occurrence of <code class="docutils literal notranslate"><span class="pre">company</span></code>: as soon as it is found, stops searching and PRINTS the index where it was found.</p>
 <ul class="simple">
 <li><p>If the company is not found, PRINTS ‘Not found’</p></li>
 <li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">break</span></code> to stop the search</p></li>
-<li><p><strong>REMEMBER</strong> to try your code also with the other suggested airports</p></li>
+<li><p><strong>REMEMBER</strong> to test your code with all the suggested airports</p></li>
 </ul>
 <p>Example 1 - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">company</span><span class="o">=</span><span class="s1">&#39;Turbolenz&#39;</span>
 <span class="n">airport</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Flyall&#39;</span><span class="p">,</span><span class="s1">&#39;PiercedWings&#39;</span><span class="p">,</span><span class="s1">&#39;PigeonJet&#39;</span><span class="p">,</span><span class="s1">&#39;Turbolenz&#39;</span><span class="p">,</span> <span class="s1">&#39;BoingBoing&#39;</span><span class="p">,</span><span class="s1">&#39;Jettons&#39;</span><span class="p">,</span><span class="s1">&#39;Turbulenz&#39;</span><span class="p">,</span><span class="s1">&#39;BoingBoing&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>after your code it must print:</p>
+<p>after your code, it must print:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Found the first Turbolenz at index 3
 </pre></div>
 </div>
@@ -3675,9 +3679,9 @@ our search could give no result, and decide what should happen in this situation
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 
-<span></span><span class="c1"># write here</span>
 
-<span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
+
+<span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
 <span class="n">airport</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Flyall&#39;</span><span class="p">,</span><span class="s1">&#39;PiercedWings&#39;</span><span class="p">,</span><span class="s1">&#39;PigeonJet&#39;</span><span class="p">,</span><span class="s1">&#39;Turbolenz&#39;</span><span class="p">,</span> <span class="s1">&#39;BoingBoing&#39;</span><span class="p">,</span><span class="s1">&#39;Jettons&#39;</span><span class="p">,</span><span class="s1">&#39;Turbulenz&#39;</span><span class="p">,</span><span class="s1">&#39;BoingBoing&#39;</span><span class="p">]</span>
 
 <span class="c1">#company = &#39;FlapFlap&#39;</span>
@@ -3712,7 +3716,18 @@ Found the first Turbolenz at index 3
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 
-<span></span><span class="c1"># write here</span>
+
+
+<span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
+<span class="n">airport</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Flyall&#39;</span><span class="p">,</span><span class="s1">&#39;PiercedWings&#39;</span><span class="p">,</span><span class="s1">&#39;PigeonJet&#39;</span><span class="p">,</span><span class="s1">&#39;Turbolenz&#39;</span><span class="p">,</span> <span class="s1">&#39;BoingBoing&#39;</span><span class="p">,</span><span class="s1">&#39;Jettons&#39;</span><span class="p">,</span><span class="s1">&#39;Turbulenz&#39;</span><span class="p">,</span><span class="s1">&#39;BoingBoing&#39;</span><span class="p">]</span>
+
+<span class="c1">#company = &#39;FlapFlap&#39;</span>
+<span class="c1">#airport = [&#39;PiercedWings&#39;,&#39;BoingBoing&#39;,&#39;Turbolenz&#39;,&#39;PigeonJet&#39;]</span>
+<span class="c1">#airport = []</span>
+<span class="c1">#airport = [&#39;FlapFlap&#39;]</span>
+<span class="c1">#airport = [&#39;Turbolenz&#39;, &#39;FlapFlap&#39;]</span>
+
+<span class="c1"># write here</span>
 
 
 </pre></div>
@@ -3721,7 +3736,7 @@ Found the first Turbolenz at index 3
 </div>
 <div class="section" id="Exercise---Turbulenz-without-break">
 <h3>Exercise - Turbulenz without break<a class="headerlink" href="#Exercise---Turbulenz-without-break" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ Try now to rewrite the previous program, <strong>without</strong> using <code class="docutils literal notranslate"><span class="pre">break</span></code> nor <code class="docutils literal notranslate"><span class="pre">continue</span></code>: to verify the finding, you will need to enrich the termination condition.</p>
+<p>✪✪ Try now to rewrite the previous program <strong>without</strong> using <code class="docutils literal notranslate"><span class="pre">break</span></code> nor <code class="docutils literal notranslate"><span class="pre">continue</span></code>: to verify the finding, you will need to enrich the termination condition.</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
@@ -3783,7 +3798,7 @@ Found the first Turbolenz at index 2
 </pre></div>
 </div>
 </div>
-<p><strong>QUESTION</strong>: you probably used two conditions in the <code class="docutils literal notranslate"><span class="pre">while</span></code>. By exchanging the order of the conditions in the proposed solution, would the program work fine? If not, in which cases would it fail?</p>
+<p><strong>QUESTION</strong>: you probably used two conditions in the <code class="docutils literal notranslate"><span class="pre">while</span></code>. By exchanging the order of the conditions in the proposed solution, would the program work fine? If not, in which cases could it fail?</p>
 <ul class="simple">
 <li><p><strong>HINT</strong>: If you have doubts try reading the chapter <a class="reference external" href="https://en.softpython.org/basics/basics2-bools-sol.html#Evaluation-order">booleans - evaluation order</a></p></li>
 </ul>
@@ -3809,7 +3824,7 @@ Found the first Turbolenz at index 2
 </div></div>
 <div class="section" id="Exercise---hangar">
 <h3>Exercise - hangar<a class="headerlink" href="#Exercise---hangar" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ Our plane just landed but now it must reach the hangar, dodging all the extraneous objects which it finds on the track!</p>
+<p>✪✪ Our plane just landed but now it must reach the hangar, dodging all the extraneous objects on the track!</p>
 <p>Write some code which given a string <code class="docutils literal notranslate"><span class="pre">track</span></code> with a certain number of non-alphanumeric characters at the beginning, PRINTS the word which follows these characters.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">track</span> <span class="o">=</span> <span class="s1">&#39;★★🏳🏳♦🏳♦🏳🏳hangar★★★&#39;</span>
@@ -3821,7 +3836,7 @@ Found the first Turbolenz at index 2
 <li><p><strong>YOU CAN’T</strong> know beforehand which extra characters you will find in the string</p></li>
 <li><p><strong>DO NOT</strong> write characters like ★🏳♦-_ in the code</p></li>
 </ul>
-<p><strong>HINT</strong>: to determine if you found alphanumerical characters or numbers, use <code class="docutils literal notranslate"><span class="pre">.isalpha()</span></code> and <code class="docutils literal notranslate"><span class="pre">.isdigit()</span></code> methods</p>
+<p><strong>HINT</strong>: to determine if you have found alphanumerical characters or numbers, use <code class="docutils literal notranslate"><span class="pre">.isalpha()</span></code> and <code class="docutils literal notranslate"><span class="pre">.isdigit()</span></code> methods</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
@@ -3876,7 +3891,7 @@ hangar★★★
 <h3>Exercise - Wild West<a class="headerlink" href="#Exercise---Wild-West" title="Permalink to this headline">¶</a></h3>
 <p>✪✪ The two outlaws Carson and Butch agreed to bury a treasure in the jolly town of Tombstone, ma now each of them wants to take back the treasure without sharing anything with the partner.</p>
 <ul class="simple">
-<li><p>For arriving to the treasure there is a <code class="docutils literal notranslate"><span class="pre">road</span></code> from <code class="docutils literal notranslate"><span class="pre">Santa</span> <span class="pre">Fe</span></code> until <code class="docutils literal notranslate"><span class="pre">Tombstone</span></code> which we represent as a list of strings</p></li>
+<li><p>there is a <code class="docutils literal notranslate"><span class="pre">road</span></code> from <code class="docutils literal notranslate"><span class="pre">Santa</span> <span class="pre">Fe</span></code> until <code class="docutils literal notranslate"><span class="pre">Tombstone</span></code> to arrive to the treasure, which we represent as a list of strings</p></li>
 <li><p>we use two indexes <code class="docutils literal notranslate"><span class="pre">butch</span></code> and <code class="docutils literal notranslate"><span class="pre">carson</span></code> to represent where the outlaws are on the road</p></li>
 <li><p>each outlaw starts from a different town</p></li>
 <li><p>at each turn Carson moves of <strong>one</strong> city</p></li>
@@ -3928,6 +3943,7 @@ Final duel in  Tombstone !
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
 <span></span><span class="c1">#           0          1         2              3              4              5</span>
 <span class="n">road</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Santa Fe&#39;</span><span class="p">,</span><span class="s1">&#39;Denver&#39;</span><span class="p">,</span><span class="s1">&#39;Dodge City&#39;</span><span class="p">,</span> <span class="s1">&#39;Silverton&#39;</span><span class="p">,</span> <span class="s1">&#39;Agua Caliente&#39;</span><span class="p">,</span> <span class="s1">&#39;Tombstone&#39;</span><span class="p">]</span>
 
@@ -3972,11 +3988,12 @@ Butch reaches Agua Caliente
 Carson takes the treasure in  Tombstone !
 </pre></div></div>
 </div>
-</div><div class="nbinput docutils container">
+</div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
 <span></span><span class="c1">#           0          1         2              3              4              5</span>
 <span class="n">road</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Santa Fe&#39;</span><span class="p">,</span><span class="s1">&#39;Denver&#39;</span><span class="p">,</span><span class="s1">&#39;Dodge City&#39;</span><span class="p">,</span> <span class="s1">&#39;Silverton&#39;</span><span class="p">,</span> <span class="s1">&#39;Agua Caliente&#39;</span><span class="p">,</span> <span class="s1">&#39;Tombstone&#39;</span><span class="p">]</span>
 
@@ -3990,25 +4007,10 @@ Carson takes the treasure in  Tombstone !
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-Carson starts from Silverton
-Butch starts from Santa Fe
-Carson reaches Agua Caliente
-Butch reaches Dodge City
-Carson reaches Tombstone
-Butch reaches Agua Caliente
-
-Carson takes the treasure in  Tombstone !
-</pre></div></div>
-</div>
 </div>
 <div class="section" id="Exercise---The-Balance-of-Language">
 <h3>Exercise - The Balance of Language<a class="headerlink" href="#Exercise---The-Balance-of-Language" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ In the sacred writings of Zamfir is predicted that when all Earth inhabitants will speak a language with all the words of same length, universal harmony will be reached among human people. This event is probably in far in time and by that epoch the vocabulary of humans will be so wide and varied that checking all the words will certainly require an automata of jade: you are asked to program the underwater servers of Atlantis to perform a check in the centuries to come.</p>
+<p>✪✪ In the sacred writings of Zamfir the Prophet, it is predicted that when all Earth inhabitants speak a language with all the words of same length, universal harmony will be reached among human people. This event is probably far in time and by that epoch the vocabulary of humans will be so wide and varied that checking all the words will certainly require powerful calculations: you are asked to program the underwater servers of Atlantis to perform a check in the centuries to come.</p>
 <p>Given a string of words <code class="docutils literal notranslate"><span class="pre">language</span></code>, write some code which prints <code class="docutils literal notranslate"><span class="pre">True</span></code> if all the words have the same length, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <p>To have an efficient algorithm, you must use a <code class="docutils literal notranslate"><span class="pre">while</span></code>:</p>
 <ul class="simple">
@@ -4024,11 +4026,11 @@ Carson takes the treasure in  Tombstone !
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 
 
-<span></span><span class="n">language</span> <span class="o">=</span>  <span class="s2">&quot;bright cosmic armony&quot;</span>  <span class="c1"># True</span>
+<span></span><span class="n">language</span> <span class="o">=</span>  <span class="s2">&quot;eternal harmony forever&quot;</span>  <span class="c1"># True</span>
 <span class="c1">#language = &quot;war and violence&quot;      # False</span>
 <span class="c1">#language = &quot;vi rt uo si ty&quot;        # True</span>
-<span class="c1">#language = &quot;bullying deceit&quot;       # False</span>
-<span class="c1">#language = &quot;armony cannot exist&quot;   # False</span>
+<span class="c1">#language = &quot;deceit bullying&quot;       # False</span>
+<span class="c1">#language = &quot;harmony crashed today&quot; # False</span>
 <span class="c1">#language = &quot;peace&quot;                 # True</span>
 <span class="c1">#language = &quot;&quot;                      # True</span>
 
@@ -4063,11 +4065,11 @@ True
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 
 
-<span></span><span class="n">language</span> <span class="o">=</span>  <span class="s2">&quot;bright cosmic armony&quot;</span>  <span class="c1"># True</span>
+<span></span><span class="n">language</span> <span class="o">=</span>  <span class="s2">&quot;eternal harmony forever&quot;</span>  <span class="c1"># True</span>
 <span class="c1">#language = &quot;war and violence&quot;      # False</span>
 <span class="c1">#language = &quot;vi rt uo si ty&quot;        # True</span>
-<span class="c1">#language = &quot;bullying deceit&quot;       # False</span>
-<span class="c1">#language = &quot;armony cannot exist&quot;   # False</span>
+<span class="c1">#language = &quot;deceit bullying&quot;       # False</span>
+<span class="c1">#language = &quot;harmony crashed today&quot; # False</span>
 <span class="c1">#language = &quot;peace&quot;                 # True</span>
 <span class="c1">#language = &quot;&quot;                      # True</span>
 
@@ -4080,30 +4082,36 @@ True
 </div>
 <div class="section" id="Exercise---the-tree-shaker">
 <h3>Exercise - the tree shaker<a class="headerlink" href="#Exercise---the-tree-shaker" title="Permalink to this headline">¶</a></h3>
-<p>✪✪✪ Giustino the farmer decides to radically improve his farm productivity with high-tech devices, and asks you to develop a ‘tree shaker’ (so he calls it..) to perturbate the trees and harvest the exotic fruits he planted in the high lands (the climate change now allows this…)</p>
+<p>✪✪✪ Giustino the farmer decides to radically improve his farm productivity with high-tech devices, and asks you to develop a ‘tree shaker’ (so he calls it..) to perturbate the trees and harvest the exotic fruits he planted in his highlands (thanks to climate change…)</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">plantation</span></code> is a sequence of fruit trees, elements of the landscape (stones, gravel, etc) and signs <code class="docutils literal notranslate"><span class="pre">S</span></code>. The beginning and end of a subsequence of trees is always marked by a sign.</p>
 <p>The vehicle to design has a <code class="docutils literal notranslate"><span class="pre">cargo_bed</span></code> of <strong>capacity 7</strong> where it can store the harvest.</p>
-<p>Write some code to scan the <code class="docutils literal notranslate"><span class="pre">plantation</span></code> and harvests in <code class="docutils literal notranslate"><span class="pre">cargo_bed</span></code> the found fruits.</p>
+<p>Write some code to scan the <code class="docutils literal notranslate"><span class="pre">plantation</span></code> and harvests in <code class="docutils literal notranslate"><span class="pre">cargo_bed</span></code> the fruits as they are found.</p>
 <ul class="simple">
 <li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">while</span></code>, <strong>stopping</strong> as soon as the <code class="docutils literal notranslate"><span class="pre">cargo_bed</span></code> is full</p></li>
 <li><p><strong>DO NOT</strong> use <code class="docutils literal notranslate"><span class="pre">break</span></code> nor <code class="docutils literal notranslate"><span class="pre">continue</span></code></p></li>
-<li><p><strong>DO NOT</strong> write fruit names or landscape elements (no <code class="docutils literal notranslate"><span class="pre">bananas</span></code> nor <code class="docutils literal notranslate"><span class="pre">rocks</span></code> ..). You can write <code class="docutils literal notranslate"><span class="pre">'S'</span></code>.</p></li>
+<li><p><strong>DO NOT</strong> write fruit names or landscape elements (no <code class="docutils literal notranslate"><span class="pre">bananas</span></code> nor <code class="docutils literal notranslate"><span class="pre">rocks</span></code> ..). You can still write <code class="docutils literal notranslate"><span class="pre">'S'</span></code>, though.</p></li>
 </ul>
 <p>Example - given:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plantation</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;rocks&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;bananas&#39;</span><span class="p">,</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span><span class="s1">&#39;mangos&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;sand&#39;</span><span class="p">,</span>    <span class="s1">&#39;stones&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">plantation</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;rocks&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;bananas&#39;</span><span class="p">,</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span><span class="s1">&#39;mangos&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;sand&#39;</span><span class="p">,</span>    <span class="s1">&#39;stones&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>
             <span class="s1">&#39;S&#39;</span><span class="p">,</span>    <span class="s1">&#39;avocados&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;weeds&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;kiwi&#39;</span><span class="p">,</span>  <span class="s1">&#39;mangos&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span>       <span class="s1">&#39;S&#39;</span><span class="p">,</span>     <span class="s1">&#39;S&#39;</span><span class="p">,</span>
             <span class="s1">&#39;rocks&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>       <span class="s1">&#39;lime&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;pebbles&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>     <span class="s1">&#39;oranges&#39;</span><span class="p">,</span><span class="s1">&#39;coconuts&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>     <span class="s1">&#39;gravel&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
+</div>
 <p>after your code, it must result:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">cargo_bed</span><span class="p">)</span>
-<span class="go">[&#39;bananas&#39;, &#39;oranges&#39;, &#39;mangos&#39;, &#39;avocados&#39;, &#39;kiwi&#39;, &#39;mangos&#39;, &#39;lime&#39;]</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; print(cargo_bed)
+[&#39;bananas&#39;, &#39;oranges&#39;, &#39;mangos&#39;, &#39;avocados&#39;, &#39;kiwi&#39;, &#39;mangos&#39;, &#39;lime&#39;]
 </pre></div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4148,7 +4156,7 @@ True
 </pre></div></div>
 </div>
 </div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4184,9 +4192,9 @@ True
 </pre></div></div>
 </div>
 </div>
-<div class="section" id="Exercise---fantastic-story-of-the-ghost-castle">
-<h3>Exercise - fantastic story of the ghost castle<a class="headerlink" href="#Exercise---fantastic-story-of-the-ghost-castle" title="Permalink to this headline">¶</a></h3>
-<p>✪✪✪ Given the <code class="docutils literal notranslate"><span class="pre">string</span></code> and two characters <code class="docutils literal notranslate"><span class="pre">char1</span></code> and <code class="docutils literal notranslate"><span class="pre">char2</span></code>, write some code which PRINTS <code class="docutils literal notranslate"><span class="pre">True</span></code> if all occurrences of <code class="docutils literal notranslate"><span class="pre">char1</span></code> in string are <strong>always</strong> followed by <code class="docutils literal notranslate"><span class="pre">char2</span></code></p>
+<div class="section" id="Exercise---the-ghost-castle">
+<h3>Exercise - the ghost castle<a class="headerlink" href="#Exercise---the-ghost-castle" title="Permalink to this headline">¶</a></h3>
+<p>✪✪✪ Given a <code class="docutils literal notranslate"><span class="pre">string</span></code> and two characters <code class="docutils literal notranslate"><span class="pre">char1</span></code> and <code class="docutils literal notranslate"><span class="pre">char2</span></code>, write some code which PRINTS <code class="docutils literal notranslate"><span class="pre">True</span></code> if all occurrences of <code class="docutils literal notranslate"><span class="pre">char1</span></code> in <code class="docutils literal notranslate"><span class="pre">string</span></code> are <strong>always</strong> followed by <code class="docutils literal notranslate"><span class="pre">char2</span></code></p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">string</span><span class="p">,</span><span class="n">char1</span><span class="p">,</span><span class="n">char2</span> <span class="o">=</span> <span class="s1">&#39;fantastic story of the ghost castle&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span>
 </pre></div>
@@ -4199,11 +4207,12 @@ True
 <ul class="simple">
 <li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">while</span></code>, try to make it efficient by stopping as soon as possible.</p></li>
 <li><p><strong>DO NOT</strong> use <strong>break</strong></p></li>
+<li><p><strong>DO NOT</strong> use any search method (no <code class="docutils literal notranslate"><span class="pre">index</span></code>, <code class="docutils literal notranslate"><span class="pre">find</span></code>, <code class="docutils literal notranslate"><span class="pre">replace</span></code>, <code class="docutils literal notranslate"><span class="pre">count</span></code>…)</p></li>
 </ul>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4235,7 +4244,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4244,7 +4253,7 @@ True
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4280,7 +4289,7 @@ True
 <p>Suppose having a deck of cards which we represent as a list of strings, and we want to draw all the cards, reading them one by one.</p>
 <p>We can write a <code class="docutils literal notranslate"><span class="pre">while</span></code> that as long as the deck contains cards, keeps removing cards from the top with the <a class="reference external" href="https://en.softpython.org/lists/lists3-sol.html#pop-method">pop method</a> and prints their name. Remember <code class="docutils literal notranslate"><span class="pre">pop</span></code> MODIFIES the list by removing the last element AND gives back the element as call result, which we can save in a variable we will call <code class="docutils literal notranslate"><span class="pre">card</span></code>:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4314,16 +4323,16 @@ No more cards!
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmc4ee5253-1596-4a43-8007-f0b43f5853af" type="application/json" >
+<script id="json-jm889cb05a-3e7e-4050-8b2c-324fe08eea16" type="application/json" >
     {"code": " \ndeck = ['3 hearts',   # <---- bottom\n        '2 spades',\n        '9 hearts',\n        '5 diamonds',\n        '8 clubs']    # <---- top\n\nwhile len(deck) > 0:\n    card = deck.pop()      \n    print('Drawn', card)\n\nprint('No more cards!')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1]}, "ordered_globals": ["deck"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1]}, "ordered_globals": ["deck"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "2 spades"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "2 spades"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "2 spades"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "3 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "3 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\nDrawn 3 hearts\n"}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "3 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\nDrawn 3 hearts\n"}, {"line": 12, "event": "return", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "3 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\nDrawn 3 hearts\nNo more cards!\n"}]}
 </script>
-<div id="jmc4ee5253-1596-4a43-8007-f0b43f5853af" class="pytutorVisualizer"> </div>
+<div id="jm889cb05a-3e7e-4050-8b2c-324fe08eea16" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -4343,12 +4352,12 @@ No more cards!
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmc4ee5253-1596-4a43-8007-f0b43f5853af').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm889cb05a-3e7e-4050-8b2c-324fe08eea16').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmc4ee5253-1596-4a43-8007-f0b43f5853af',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm889cb05a-3e7e-4050-8b2c-324fe08eea16',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -4386,7 +4395,7 @@ No more cards!
 <li><p>Try executing the code by uncomment the second deck which has no hearts cards, and look at the different execution.</p></li>
 </ul>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4421,16 +4430,16 @@ Found hearts!
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm82feb234-a3e0-47c9-b947-73fd6182d202" type="application/json" >
+<script id="json-jm90330af4-31a6-403f-b38b-f43d4971ce30" type="application/json" >
     {"code": " \ndeck = ['3 hearts','2 spades','9 hearts','5 diamonds','8 clubs']\n#deck = ['8 spades','2 spades','5 diamonds','4 clubs']   # no hearts!\n\ncard = ''\nwhile len(deck) > 0:\n    card = deck.pop()      \n    print('Drawn', card)\n    if 'hearts' in card:\n        break\n        \nif 'hearts' in card:\n    print('Found hearts!')\nelse:\n    print(\"Didn't find hearts!\")", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1]}, "ordered_globals": ["deck"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": ""}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": ""}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 13, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 13, "event": "return", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nFound hearts!\n"}]}
 </script>
-<div id="jm82feb234-a3e0-47c9-b947-73fd6182d202" class="pytutorVisualizer"> </div>
+<div id="jm90330af4-31a6-403f-b38b-f43d4971ce30" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -4450,12 +4459,12 @@ Found hearts!
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm82feb234-a3e0-47c9-b947-73fd6182d202').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm90330af4-31a6-403f-b38b-f43d4971ce30').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm82feb234-a3e0-47c9-b947-73fd6182d202',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm90330af4-31a6-403f-b38b-f43d4971ce30',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -4483,7 +4492,7 @@ Found hearts!
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4520,7 +4529,7 @@ Found hearts!
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4632,7 +4641,7 @@ Found hearts!
 <li><p>this time <strong>use command</strong> <code class="docutils literal notranslate"><span class="pre">break</span></code></p></li>
 </ul>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4661,7 +4670,7 @@ Found hearts!
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4694,7 +4703,7 @@ Found hearts!
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4751,7 +4760,7 @@ Discarded H-Middle Ages
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4808,7 +4817,7 @@ Discarded H-Middle Ages
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4877,7 +4886,7 @@ BANG! left:   box
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4947,7 +4956,7 @@ BANG! left:   box
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4999,7 +5008,7 @@ Done! la is []
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -5046,7 +5055,7 @@ Done! la is []
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
