@@ -42,8 +42,7 @@ Strings
     intro <strings/strings1-sol.ipynb>
     operators <strings/strings2-sol.ipynb>
     basic methods <strings/strings3-sol.ipynb>
-    search methods <strings/strings4-sol.ipynb>
-..    
+    search methods <strings/strings4-sol.ipynb>  
     challenges <strings/strings5-chal.ipynb>
     
     
