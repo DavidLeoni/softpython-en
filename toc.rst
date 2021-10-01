@@ -57,7 +57,6 @@ Lists
     operators <lists/lists2-sol.ipynb>
     basic methods <lists/lists3-sol.ipynb>
     search methods <lists/lists4-sol.ipynb>
-..    
     challenges <lists/lists5-chal.ipynb>
     
 Tuples
@@ -68,7 +67,6 @@ Tuples
     :glob:
 
     intro <tuples/tuples1-sol.ipynb>
-..    
     challenges <tuples/tuples2-chal.ipynb>
     
     
