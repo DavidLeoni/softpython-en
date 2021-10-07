@@ -4,18 +4,7 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-125857337-4']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Sets &mdash; SoftPython</title>
@@ -60,7 +49,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Dictionaries 1 - Introduction" href="../dictionaries/dictionaries1-sol.html" />
+    <link rel="next" title="Sets 2 - First challenges" href="sets2-chal.html" />
     <link rel="prev" title="Tuples 2 - First challenges" href="../tuples/tuples2-chal.html" /> 
 </head>
 
@@ -714,6 +703,12 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---matrioska">Exercise - matrioska</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sets2-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sets2-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sets2-chal.html#Chalenge---Screwed">Chalenge - Screwed</a></li>
 </ul>
 </li>
 </ul>
@@ -823,6 +818,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../dictionaries/dictionaries5-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries5-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries5-chal.html#Challenge---The-Institute-for-Advanced-Technotronics">Challenge - The Institute for Advanced Technotronics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries5-chal.html#Challenge---Incredible-machines-contest">Challenge - Incredible machines contest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries5-chal.html#Challenge---Going-nuts">Challenge - Going nuts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dictionaries/dictionaries5-chal.html#Challenge---Galactic-storm">Challenge - Galactic storm</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -873,6 +876,12 @@
 <li class="toctree-l5"><a class="reference internal" href="../if/if1-sol.html#Exercise---the-little-train">Exercise - the little train</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if1-sol.html#Continue">Continue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../if/if2-chal.html">challenges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../if/if2-chal.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../if/if2-chal.html#Treasure-Island">Treasure Island</a></li>
 </ul>
 </li>
 </ul>
@@ -2134,6 +2143,7 @@ div.rendered_html tbody tr:hover {
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sets
     sets1.ipynb
     sets1-sol.ipynb
+    sets2-chal.ipynb
     jupman.py
 </pre></div>
 </div>
@@ -2202,7 +2212,7 @@ set
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;b&#39;, &#39;d&#39;, &#39;c&#39;, &#39;a&#39;}
+{&#39;b&#39;, &#39;d&#39;, &#39;a&#39;, &#39;c&#39;}
 </pre></div></div>
 </div>
 <p>The output shows the order in which the print was made is different from the order in which we built the set. Also, according to the Python version you’re using, on your computer it might be even different!</p>
@@ -2364,7 +2374,7 @@ set
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
--3262299758023616108
+-4993005941712753392
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -3807,10 +3817,10 @@ False
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm694269f3-bd64-4279-8aef-0ab92b92e74d" type="application/json" >
-    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nsb = sa.union(la)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "g", "r", "a"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "g", "r", "a"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "sb": ["REF", 3]}, "ordered_globals": ["sa", "la", "sb"], "stack_to_render": [], "heap": {"1": ["SET", "g", "r", "a"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"], "3": ["SET", "a", "g", "i", "r", "o"]}, "stdout": ""}]}
+<script id="json-jma1a18584-49d5-449b-87ef-336d2370a3ed" type="application/json" >
+    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nsb = sa.union(la)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "sb": ["REF", 3]}, "ordered_globals": ["sa", "la", "sb"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"], "3": ["SET", "r", "o", "a", "g", "i"]}, "stdout": ""}]}
 </script>
-<div id="jm694269f3-bd64-4279-8aef-0ab92b92e74d" class="pytutorVisualizer"> </div>
+<div id="jma1a18584-49d5-449b-87ef-336d2370a3ed" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3830,12 +3840,12 @@ False
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm694269f3-bd64-4279-8aef-0ab92b92e74d').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jma1a18584-49d5-449b-87ef-336d2370a3ed').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm694269f3-bd64-4279-8aef-0ab92b92e74d',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jma1a18584-49d5-449b-87ef-336d2370a3ed',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3896,7 +3906,7 @@ False
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;a&#39;, &#39;g&#39;, &#39;i&#39;, &#39;r&#39;, &#39;o&#39;}
+{&#39;r&#39;, &#39;o&#39;, &#39;a&#39;, &#39;g&#39;, &#39;i&#39;}
 </pre></div></div>
 </div>
 <p><strong>QUESTION</strong>: what did the call to <code class="docutils literal notranslate"><span class="pre">update</span></code> return?</p>
@@ -3924,7 +3934,7 @@ False
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;a&#39;, &#39;g&#39;, &#39;i&#39;, &#39;r&#39;, &#39;o&#39;}
+{&#39;r&#39;, &#39;o&#39;, &#39;a&#39;, &#39;g&#39;, &#39;i&#39;}
 None
 </pre></div></div>
 </div>
@@ -3935,10 +3945,10 @@ None
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm52a761d0-68d7-42c5-b2f3-d9ca567434a0" type="application/json" >
-    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nx = sa.update(la)\nprint(sa)\nprint(x)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "g", "r", "a"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "g", "r", "a"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "a", "g", "i", "r", "o"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "a", "g", "i", "r", "o"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'a', 'g', 'i', 'r', 'o'}\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "a", "g", "i", "r", "o"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'a', 'g', 'i', 'r', 'o'}\nNone\n"}]}
+<script id="json-jm3ae84b22-1778-4233-950c-88392e791e99" type="application/json" >
+    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nx = sa.update(la)\nprint(sa)\nprint(x)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "r", "o", "a", "g", "i"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "r", "o", "a", "g", "i"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'r', 'o', 'a', 'g', 'i'}\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "r", "o", "a", "g", "i"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'r', 'o', 'a', 'g', 'i'}\nNone\n"}]}
 </script>
-<div id="jm52a761d0-68d7-42c5-b2f3-d9ca567434a0" class="pytutorVisualizer"> </div>
+<div id="jm3ae84b22-1778-4233-950c-88392e791e99" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3958,12 +3968,12 @@ None
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm52a761d0-68d7-42c5-b2f3-d9ca567434a0').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm3ae84b22-1778-4233-950c-88392e791e99').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm52a761d0-68d7-42c5-b2f3-d9ca567434a0',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm3ae84b22-1778-4233-950c-88392e791e99',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -4072,7 +4082,7 @@ None
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;d&#39;, &#39;a&#39;, &#39;g&#39;, &#39;c&#39;, &#39;e&#39;}
+{&#39;a&#39;, &#39;g&#39;, &#39;c&#39;, &#39;e&#39;, &#39;d&#39;}
 </pre></div></div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4095,7 +4105,7 @@ None
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;d&#39;, &#39;a&#39;, &#39;g&#39;, &#39;c&#39;, &#39;e&#39;}
+{&#39;a&#39;, &#39;g&#39;, &#39;c&#39;, &#39;e&#39;, &#39;d&#39;}
 </pre></div></div>
 </div>
 </div>
@@ -4273,10 +4283,10 @@ None
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm69dc8c6e-998e-480c-9989-9e171a40b3ae" type="application/json" >
+<script id="json-jm058a5079-cfca-4273-858a-9b66869c29e9" type="application/json" >
     {"code": " \nx = {'a','b'}\ny = set(x)\nx.add('c')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1]}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {"1": ["SET", "b", "a"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "b", "a"], "2": ["SET", "b", "a"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "b", "c", "a"], "2": ["SET", "b", "a"]}, "stdout": ""}]}
 </script>
-<div id="jm69dc8c6e-998e-480c-9989-9e171a40b3ae" class="pytutorVisualizer"> </div>
+<div id="jm058a5079-cfca-4273-858a-9b66869c29e9" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -4296,12 +4306,12 @@ None
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm69dc8c6e-998e-480c-9989-9e171a40b3ae').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm058a5079-cfca-4273-858a-9b66869c29e9').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm69dc8c6e-998e-480c-9989-9e171a40b3ae',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm058a5079-cfca-4273-858a-9b66869c29e9',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -4632,12 +4642,12 @@ Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Initial trash: {&#39;alkenes&#39;, &#39;mercury&#39;, &#39;vegetables&#39;, &#39;paper&#39;}
-Applying filter for cadmium : {&#39;alkenes&#39;, &#39;mercury&#39;, &#39;vegetables&#39;, &#39;paper&#39;}
-Applying filter for mercury : {&#39;alkenes&#39;, &#39;vegetables&#39;, &#39;paper&#39;}
+Initial trash: {&#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;, &#39;mercury&#39;}
+Applying filter for cadmium : {&#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;, &#39;mercury&#39;}
+Applying filter for mercury : {&#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;}
 Applying filter for alkenes : {&#39;vegetables&#39;, &#39;paper&#39;}
 
-Separated contaminants: {&#39;alkenes&#39;, &#39;mercury&#39;}
+Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
@@ -4954,11 +4964,11 @@ Is the sequence a matrioska? True
 </pre></div>
 </div>
 </div>
-<!--
-## Continue
-
-Go on with [first challenges](https://en.softpython.org/sets/sets2-chal.html)
---></div>
+</div>
+<div class="section" id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+<p>Go on with <a class="reference external" href="https://en.softpython.org/sets/sets2-chal.html">first challenges</a></p>
+</div>
 </div>
 
 
@@ -4967,7 +4977,7 @@ Go on with [first challenges](https://en.softpython.org/sets/sets2-chal.html)
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../dictionaries/dictionaries1-sol.html" class="btn btn-neutral float-right" title="Dictionaries 1 - Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="sets2-chal.html" class="btn btn-neutral float-right" title="Sets 2 - First challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="../tuples/tuples2-chal.html" class="btn btn-neutral float-left" title="Tuples 2 - First challenges" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
@@ -5005,19 +5015,6 @@ Go on with [first challenges](https://en.softpython.org/sets/sets2-chal.html)
 
   
   
-    
-    <!-- Theme Analytics -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-125857337-4', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
     
    
 

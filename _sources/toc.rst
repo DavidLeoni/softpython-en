@@ -78,7 +78,6 @@ Sets
     :glob:
         
     intro <sets/sets1-sol.ipynb>
-..    
     challenges <sets/sets2-chal.ipynb>
 
 Dictionaries
@@ -92,7 +91,6 @@ Dictionaries
     operators <dictionaries/dictionaries2-sol.ipynb>
     methods <dictionaries/dictionaries3-sol.ipynb>
     special dictionaries <dictionaries/dictionaries4-sol.ipynb>
-..    
     challenges <dictionaries/dictionaries5-chal.ipynb>
     
 A2 Control Flow
@@ -106,7 +104,6 @@ If command
     :glob:
 
     intro <if/if1-sol.ipynb>
-..    
     challenges <if/if2-chal.ipynb>
 
 For loops
@@ -122,7 +119,7 @@ For loops
     iterating tuples <for/for4-tuples-sol.ipynb>
     iterating sets <for/for5-sets-sol.ipynb>
     iterating dictionaries <for/for6-dictionaries-sol.ipynb>
-    nested fors <for/for7-nested-sol.ipynb>    
+    nested fors <for/for7-nested-sol.ipynb>  
 ..    
     challenges <for/for8-chal.ipynb>
 
