@@ -119,8 +119,7 @@ For loops
     iterating tuples <for/for4-tuples-sol.ipynb>
     iterating sets <for/for5-sets-sol.ipynb>
     iterating dictionaries <for/for6-dictionaries-sol.ipynb>
-    nested fors <for/for7-nested-sol.ipynb>  
-..    
+    nested fors <for/for7-nested-sol.ipynb>     
     challenges <for/for8-chal.ipynb>
 
 While loops
@@ -131,7 +130,6 @@ While loops
     :glob:
 
     intro <while/while1-sol.ipynb>
-..    
     challenges <while/while2-chal.ipynb>
 
 Sequences
@@ -141,8 +139,7 @@ Sequences
     :maxdepth: 3
     :glob:
 
-    intro <sequences/sequences1-sol.ipynb>
-..    
+    intro <sequences/sequences1-sol.ipynb> 
     challenges <sequences/sequences2-chal.ipynb>
     
     
