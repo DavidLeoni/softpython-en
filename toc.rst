@@ -153,15 +153,15 @@ Functions, error handling and testing
     :maxdepth: 3
     :glob:
 
-    defining functions <functions/fun1-intro-sol.ipynb>
+    intro <functions/fun1-intro-sol.ipynb>
     error handling and testing <functions/fun2-errors-and-testing-sol.ipynb>
-..    
+    
     functions with strings <functions/fun3-strings-sol.ipynb>
     functions with lists <functions/fun4-lists-sol.ipynb>    
     functions with tuples <functions/fun5-tuples-sol.ipynb>
     functions with sets <functions/fun6-sets-sol.ipynb>
-    functions with dictionaries <functions/fun7-dictionaries-sol.ipynb>
 ..    
+    functions with dictionaries <functions/fun7-dictionaries-sol.ipynb>
     challenges <functions/fun8-chal.ipynb>
     
     
@@ -174,7 +174,6 @@ Matrices of lists
 
     intro <matrices-lists/matrices-lists1-sol.ipynb>
     more exercises <matrices-lists/matrices-lists2-sol.ipynb>
-..    
     challenges <matrices-lists/matrices-lists3-chal.ipynb>
 
 Mixed structures
@@ -185,7 +184,6 @@ Mixed structures
     :glob:
 
     intro <mixed-structures/mixed-structures1-sol.ipynb>
-..    
     challenges <mixed-structures/mixed-structures2-chal.ipynb>            
 
 Numpy matrices
