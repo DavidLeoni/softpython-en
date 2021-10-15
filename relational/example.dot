@@ -1,0 +1,11 @@
+digraph  {
+scale=3;
+style="dotted, rounded";
+node [color=blue, fontcolor=blue];
+edge [arrowsize="0.6", splines=curved, fontcolor=brown];
+0;
+1;
+0 -> 0  [weight=1, label=1];
+0 -> 1  [weight=1, label=1];
+1 -> 1  [weight=1, label=1];
+}

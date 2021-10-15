@@ -68,7 +68,7 @@ def draw_nx(G, legend_edges=None, label='', save_to='', options={}):
         - options: Dictionary of GraphViz options
     
         For required libraries, see 
-        https://en.softpython.org/graph-formats/graph-formats-sol.html#Required-libraries
+        https://en.softpython.org/relational/relational1-intro-sol.html#Required-libraries
     
         legend_edges example:
         
@@ -229,7 +229,7 @@ def draw_mat(mat, legend_edges=None, label='', save_to='', options={}):
         - options: Dictionary of GraphViz options
     
         For required libraries, see 
-        https://en.softpython.org/graph-formats/graph-formats-sol.html#Required-libraries        
+        https://en.softpython.org/relational1-intro-sol.html#Required-libraries        
         
         For other options, see draw_nx
         
@@ -270,7 +270,7 @@ def draw_adj(d,legend_edges=None, label='', save_to='', options={}):
         - options: Dictionary of GraphViz options
     
         For required libraries, see 
-        https://en.softpython.org/graph-formats/graph-formats-sol.html#Required-libraries
+        https://en.softpython.org/relational1-intro-sol.html#Required-libraries
             
         
         For other options, see draw_nx

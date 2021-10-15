@@ -437,7 +437,7 @@ def setup(app):
     jmt.info('Copying soft.py ...')
     import shutil
     shutil.copy('soft.py', 'formats/')
-    shutil.copy('soft.py', 'binary-relations/')
+    shutil.copy('soft.py', 'relational/')
     shutil.copy('soft.py', 'visualization/')
 
     if 'googleanalytics_id' in globals() and globals()['googleanalytics_id']:
