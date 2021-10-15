@@ -206,7 +206,7 @@ B - Data analysis
     :glob:
     
     toc-analytics.rst
-    Binary relations <binary-relations/binary-relations-sol.ipynb>
+    
 
 C - Applications
 ========================

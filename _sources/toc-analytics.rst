@@ -8,10 +8,8 @@ Data formats
 
     line files <formats/formats1-lines-sol.ipynb>
     CSV files <formats/formats2-csv-sol.ipynb>
-    JSON files <formats/formats3-json-sol.ipynb>    
-    graph formats <formats/formats4-graph-sol.ipynb>    
-..    
-    challenges <formats/formats5-chal.ipynb>    
+    JSON files <formats/formats3-json-sol.ipynb>        
+    challenges <formats/formats4-chal.ipynb>    
         
 Visualization
 ---------------
@@ -34,3 +32,16 @@ Pandas
     intro <pandas/pandas1-sol.ipynb>        
     exercises <pandas/pandas2-sol.ipynb>    
     challenges <pandas/pandas3-chal.ipynb>
+    
+    
+Relational data
+---------------------
+
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    intro <relational/relational1-intro-sol.ipynb>
+    binary relations <relational/relational2-binrel-sol.ipynb>
+..    
+    challenge <relational/relational3-chal.ipynb>
