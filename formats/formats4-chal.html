@@ -2348,13 +2348,14 @@ Harvey
 </pre></div>
 </div>
 <p>Each field name is separated from the value by a colon <code class="docutils literal notranslate"><span class="pre">:</span></code></p>
-<p>For example, here <code class="docutils literal notranslate"><span class="pre">From</span></code> is the field name and <code class="docutils literal notranslate"><span class="pre">Harvey</span> <span class="pre">The</span> <span class="pre">Salesman</span> <span class="pre">&lt;harvey&#64;thegreatvacuum.com&gt;</span></code> is the field value:</p>
+<p>For example, in</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>From: Harvey The Salesman &lt;harvey@thegreatvacuum.com&gt;
 </pre></div>
 </div>
-<p>Implement a function <code class="docutils literal notranslate"><span class="pre">read_mail(filename)</span></code> which parses the file and RETURN a dictionary holding all the field names</p>
+<p><code class="docutils literal notranslate"><span class="pre">From</span></code> is the field name, and <code class="docutils literal notranslate"><span class="pre">Harvey</span> <span class="pre">The</span> <span class="pre">Salesman</span> <span class="pre">&lt;harvey&#64;thegreatvacuum.com&gt;</span></code> is the field value.</p>
+<p>Implement a function <code class="docutils literal notranslate"><span class="pre">read_mail(filename)</span></code> which parses a <code class="docutils literal notranslate"><span class="pre">mailn.txt</span></code> file (<a class="reference external" href="../_static/generated/formats.zip">download files</a>) and RETURN a dictionary holding all the field names</p>
 <ul class="simple">
-<li><p>the body has no field name in the file, in the dictionary you can use Body as field name</p></li>
+<li><p>the body has no field name in the file, in the dictionary you can use <code class="docutils literal notranslate"><span class="pre">Body</span></code> as field name</p></li>
 <li><p><strong>REMEMBER</strong> to remove newlines from field values</p></li>
 <li><p><strong>DO NOT</strong> remove newlines from the body</p></li>
 <li><p><strong>HINT</strong>: Getting the body text right might be tricky, so first try just parsing the fields</p></li>
@@ -2362,26 +2363,24 @@ Harvey
 <p>Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">read_mail</span><span class="p">(</span><span class="s1">&#39;mail1.txt&#39;</span><span class="p">))</span>
 
-<span class="go">{&#39;Body&#39;: &#39;Hi!\n&#39;</span>
-<span class="go">         &#39;Find the best offers on our website: thegreatvacuum.com !!!\n&#39;</span>
-<span class="go">         &#39;Cheers, \n&#39;</span>
-<span class="go">         &#39;Harvey&#39;,</span>
-<span class="go"> &#39;Content-Type&#39;: &#39;text/plain; charset=&quot;us-ascii&quot;&#39;,</span>
-<span class="go"> &#39;Date&#39;: &#39;Thursday, 4 Jun 2020 09:43:14 -0800&#39;,</span>
-<span class="go"> &#39;From&#39;: &#39;Harvey The Salesman &lt;harvey@thegreatvacuum.com&gt;&#39;,</span>
+<span class="go">{&#39;Received&#39;: &#39;from forwarder@mailforeverybody.net&#39;,</span>
 <span class="go"> &#39;Message-Id&#39;: &#39;&lt;v121c0404ad6a23934739@&gt;&#39;,</span>
 <span class="go"> &#39;Mime-Version&#39;: &#39;1.0&#39;,</span>
-<span class="go"> &#39;Precedence&#39;: &#39;bulk&#39;,</span>
-<span class="go"> &#39;Received&#39;: &#39;from forwarder@mailforeverybody.net&#39;,</span>
+<span class="go"> &#39;Content-Type&#39;: &#39;text/plain; charset=&quot;us-ascii&quot;&#39;,</span>
+<span class="go"> &#39;Date&#39;: &#39;Thursday, 4 Jun 2020 09:43:14 -0800&#39;,</span>
+<span class="go"> &#39;To&#39;: &#39;noreply@softpython.org&#39;,</span>
+<span class="go"> &#39;From&#39;: &#39;Harvey The Salesman &lt;harvey@thegreatvacuum.com&gt;&#39;,</span>
 <span class="go"> &#39;Subject&#39;: &#39;DISCOUNTED Vacuum Cleaners&#39;,</span>
-<span class="go"> &#39;To&#39;: &#39;noreply@softpython.org&#39;}</span>
+<span class="go"> &#39;Precedence&#39;: &#39;bulk&#39;,</span>
+<span class="go"> &#39;Body&#39;: &#39;Hi!\nFind the best offers on our website: thegreatvacuum.com !!!\nCheers, \nHarvey&#39;}</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
 <span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
 
 <span class="k">def</span> <span class="nf">read_mail</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
@@ -2407,38 +2406,31 @@ Harvey
     <span class="s1">&#39;To&#39;</span><span class="p">:</span> <span class="s1">&#39;noreply@softpython.org&#39;</span>
 <span class="p">}</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">TEST PASSED!&#39;</span><span class="p">)</span>
-
+<span class="n">read_mail</span><span class="p">(</span><span class="s1">&#39;mail2.txt&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="p">{</span><span class="s1">&#39;Received&#39;</span><span class="p">:</span> <span class="s1">&#39;from mailman@networked-solutions.net&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Message-Id&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;v47gc04e7ad6a249f4539@&gt;&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Mime-Version&#39;</span><span class="p">:</span> <span class="s1">&#39;1.0&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span> <span class="s1">&#39;text/plain; charset=&quot;us-ascii&quot;&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Date&#39;</span><span class="p">:</span> <span class="s1">&#39;Tuesday, 7 Jul 2020 16:25:14 -0800&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;To&#39;</span><span class="p">:</span> <span class="s1">&#39;info@softpython.org&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;From&#39;</span><span class="p">:</span> <span class="s1">&#39;Mr Boss &lt;head@overpaid-data-scientists.com&gt;&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Subject&#39;</span><span class="p">:</span> <span class="s1">&#39;20K/month Job offer&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Precedence&#39;</span><span class="p">:</span> <span class="s1">&#39;bulk&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Body&#39;</span><span class="p">:</span> <span class="s2">&quot;Congratulations! You&#39;ve been crunching so many matrices </span><span class="se">\n</span><span class="s2">during the job interview you deserve 20.000€ salary/month + benefits.</span><span class="se">\n</span><span class="s2">We will install in your office three pinball machines </span><span class="se">\n</span><span class="s2">and a dispenser of M&amp;Ms - which colors do you prefer?</span><span class="se">\n</span><span class="s2">Best,</span><span class="se">\n</span><span class="s2">Your Next Boss</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-{&#39;Body&#39;: &#39;Hi!\n&#39;
-         &#39;Find the best offers on our website: thegreatvacuum.com !!!\n&#39;
-         &#39;Cheers, \n&#39;
-         &#39;Harvey&#39;,
- &#39;Content-Type&#39;: &#39;text/plain; charset=&#34;us-ascii&#34;&#39;,
- &#39;Date&#39;: &#39;Thursday, 4 Jun 2020 09:43:14 -0800&#39;,
- &#39;From&#39;: &#39;Harvey The Salesman &lt;harvey@thegreatvacuum.com&gt;&#39;,
- &#39;Message-Id&#39;: &#39;&lt;v121c0404ad6a23934739@&gt;&#39;,
- &#39;Mime-Version&#39;: &#39;1.0&#39;,
- &#39;Precedence&#39;: &#39;bulk&#39;,
- &#39;Received&#39;: &#39;from forwarder@mailforeverybody.net&#39;,
- &#39;Subject&#39;: &#39;DISCOUNTED Vacuum Cleaners&#39;,
- &#39;To&#39;: &#39;noreply@softpython.org&#39;}
-
-TEST PASSED!
-</pre></div></div>
 </div>
 </div>
 <div class="section" id="Spam-killer-2.-running-filters">
 <h3>Spam killer 2. running filters<a class="headerlink" href="#Spam-killer-2.-running-filters" title="Permalink to this headline">¶</a></h3>
 <p>You defined various filters you want to run on the mails. Each filter is defined as a tuple containing a field name and a string to search for. If the field value contains the string, the mail is marked as spam.</p>
-<p>Write a function <code class="docutils literal notranslate"><span class="pre">run_filter</span></code> which takes filters as list of tuples and a list of mail files, and RETURN a report as a list of lists: it has a header, and each row contains <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, <code class="docutils literal notranslate"><span class="pre">From</span></code>, and a <code class="docutils literal notranslate"><span class="pre">SPAM?</span></code> column as a boolean with <code class="docutils literal notranslate"><span class="pre">True</span></code> if any of the filters detected the mail as spam, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">run_filter</span></code> which takes filters as list of tuples and a list of mail files, and RETURN a report as a list of lists. It must have:</p>
+<ul class="simple">
+<li><p>a header</p></li>
+<li><p>rows</p></li>
+<li><p>columns <code class="docutils literal notranslate"><span class="pre">Subject</span></code>, <code class="docutils literal notranslate"><span class="pre">From</span></code></p></li>
+<li><p>column <code class="docutils literal notranslate"><span class="pre">SPAM?</span></code> as a boolean: <code class="docutils literal notranslate"><span class="pre">True</span></code> if any of the filters detected the mail as spam, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p></li>
+</ul>
 <p>Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">report</span> <span class="o">=</span> <span class="n">run_filters</span><span class="p">([(</span><span class="s1">&#39;From&#39;</span><span class="p">,</span> <span class="s1">&#39;secret-encounters-at-night.com&#39;</span><span class="p">),</span>
 <span class="go">                          (&#39;Body&#39;,&#39;offer&#39;) ],</span>
@@ -2451,11 +2443,12 @@ TEST PASSED!
 <span class="go"> [&#39;Some help with your thesis&#39;, &#39;John &lt;john@yourfriends.net&gt;&#39;, False]]</span>
 </pre></div>
 </div>
-<div class="nbinput docutils container">
+<div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
 <span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
 
 <span class="k">def</span> <span class="nf">run_filters</span><span class="p">(</span><span class="n">filters</span><span class="p">,</span> <span class="n">filenames</span><span class="p">):</span>
@@ -2464,13 +2457,9 @@ TEST PASSED!
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
-
-<span class="n">report</span> <span class="o">=</span> <span class="n">run_filters</span><span class="p">([(</span><span class="s1">&#39;From&#39;</span><span class="p">,</span> <span class="s1">&#39;secret-encounters-at-night.com&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Body&#39;</span><span class="p">,</span><span class="s1">&#39;offer&#39;</span><span class="p">)</span> <span class="p">],</span>
+<span class="n">report1</span> <span class="o">=</span> <span class="n">run_filters</span><span class="p">([(</span><span class="s1">&#39;From&#39;</span><span class="p">,</span> <span class="s1">&#39;secret-encounters-at-night.com&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Body&#39;</span><span class="p">,</span><span class="s1">&#39;offer&#39;</span><span class="p">)</span> <span class="p">],</span>
                      <span class="p">[</span><span class="s1">&#39;mail1.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;mail2.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;mail3.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;mail4.txt&#39;</span><span class="p">])</span>
-
-<span class="n">pprint</span><span class="p">(</span><span class="n">report</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
-
-<span class="k">assert</span> <span class="n">report</span> <span class="o">==</span> <span class="p">[</span>
+<span class="k">assert</span> <span class="n">report1</span> <span class="o">==</span> <span class="p">[</span>
      <span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">,</span> <span class="s1">&#39;From&#39;</span><span class="p">,</span> <span class="s1">&#39;SPAM?&#39;</span><span class="p">],</span>
      <span class="p">[</span><span class="s1">&#39;DISCOUNTED Vacuum Cleaners&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvey The Salesman &lt;harvey@thegreatvacuum.com&gt;&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
      <span class="p">[</span><span class="s1">&#39;20K/month Job offer&#39;</span><span class="p">,</span> <span class="s1">&#39;Mr Boss &lt;head@overpaid-data-scientists.com&gt;&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
@@ -2478,23 +2467,16 @@ TEST PASSED!
      <span class="p">[</span><span class="s1">&#39;Some help with your thesis&#39;</span><span class="p">,</span> <span class="s1">&#39;John &lt;john@yourfriends.net&gt;&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
 <span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">TEST PASSED!&#39;</span><span class="p">)</span>
+<span class="n">report2</span> <span class="o">=</span> <span class="n">run_filters</span><span class="p">([(</span><span class="s1">&#39;From&#39;</span><span class="p">,</span><span class="s1">&#39;vacuum&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;From&#39;</span><span class="p">,</span> <span class="s1">&#39;Guru&#39;</span><span class="p">)],</span>
+                     <span class="p">[</span><span class="s1">&#39;mail4.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;mail1.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;mail5.txt&#39;</span><span class="p">])</span>
+<span class="k">assert</span> <span class="n">report2</span> <span class="o">==</span> <span class="p">[</span>
+     <span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">,</span> <span class="s1">&#39;From&#39;</span><span class="p">,</span> <span class="s1">&#39;SPAM?&#39;</span><span class="p">],</span>
+     <span class="p">[</span><span class="s1">&#39;Some help with your thesis&#39;</span><span class="p">,</span> <span class="s1">&#39;John &lt;john@yourfriends.net&gt;&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
+     <span class="p">[</span><span class="s1">&#39;DISCOUNTED Vacuum Cleaners&#39;</span><span class="p">,</span> <span class="s1">&#39;Harvey The Salesman &lt;harvey@thegreatvacuum.com&gt;&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
+     <span class="p">[</span><span class="s1">&#39;Is somebody stealing your domain?&#39;</span><span class="p">,</span> <span class="s1">&#39;Internet Guru  &lt;service@cndomaintrouble.org&gt;&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
+<span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-[[&#39;Subject&#39;, &#39;From&#39;, &#39;SPAM?&#39;],
- [&#39;DISCOUNTED Vacuum Cleaners&#39;, &#39;Harvey The Salesman &lt;harvey@thegreatvacuum.com&gt;&#39;, True],
- [&#39;20K/month Job offer&#39;, &#39;Mr Boss &lt;head@overpaid-data-scientists.com&gt;&#39;, False],
- [&#39;I noticed you ...&#39;, &#39;That lady  &lt;lady@secret-encounters-at-night.com&gt;&#39;, True],
- [&#39;Some help with your thesis&#39;, &#39;John &lt;john@yourfriends.net&gt;&#39;, False]]
-
-TEST PASSED!
-</pre></div></div>
 </div>
 </div>
 </div>
