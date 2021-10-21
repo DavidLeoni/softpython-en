@@ -1452,6 +1452,7 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">challenges</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Challenge---Tiles">Challenge - Tiles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Challenge---The-Ark">Challenge - The Ark</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#The-Ark-1.-Sort-the-herd">The Ark 1. Sort the herd</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#The-Ark-2.-Enter-the-Farm">The Ark 2. Enter the Farm</a></li>
@@ -1460,7 +1461,6 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Challenge---Go-camping">Challenge - Go camping</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Challenge---Tiles">Challenge - Tiles</a></li>
 </ul>
 </li>
 </ul>
@@ -2321,14 +2321,67 @@ div.rendered_html tbody tr:hover {
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/matrices-lists">Browse online files</a></p>
 <p>We now propose some exercises without solution, do you accept the challenge?</p>
 </div>
+<div class="section" id="Challenge---Tiles">
+<h2>Challenge - Tiles<a class="headerlink" href="#Challenge---Tiles" title="Permalink to this headline">¶</a></h2>
+<p>✪✪ You are working in a construction site, and they tell you to fill the floor with tiles. You have a <code class="docutils literal notranslate"><span class="pre">stack</span></code> of tiles to place. On each, there is written at which coordinates it should be placed, and also the decoration it should show. The architect did not tell you exactly the dimensions the tiled floor should have, so you will have to deduce them by looking at the tiles coordinates.</p>
+<p>Each time you take one tile from the <code class="docutils literal notranslate"><span class="pre">stack</span></code>, you place it in the appropriate cell on the floor.</p>
+<p>Write some code which creates a NEW matrix of lists of lists called <code class="docutils literal notranslate"><span class="pre">mat</span></code>: before placing the tiles you will have to prepare a matrix with the appropriate number of cells to cover (retrieve dimensions by scanning the stack)</p>
+<ul class="simple">
+<li><p>tiles which remain empty will be marked with <code class="docutils literal notranslate"><span class="pre">'*'</span></code> symbol</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>MODIFY</strong> the given <code class="docutils literal notranslate"><span class="pre">stack</span></code>, by reducing it one item at a time (suppose the top of the stack is the end of list): at the end of your program it must be empty</p></li>
+<li><p><strong>DO NOT</strong> create a new stack (so no lines beginning with <code class="docutils literal notranslate"><span class="pre">stack</span> <span class="pre">=</span></code>)</p></li>
+<li><p><strong>DO NOT</strong> use <code class="docutils literal notranslate"><span class="pre">.remove</span></code> nor <code class="docutils literal notranslate"><span class="pre">.index</span></code> methods</p></li>
+</ul>
+<p>Example - given:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stack</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;H&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),</span>
+         <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;|&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;|&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+<p>Your code should produce:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
+<span class="go">[[&#39;*&#39;, &#39;*&#39;, &#39;*&#39;, &#39;*&#39;, &#39;*&#39;],</span>
+<span class="go"> [&#39;*&#39;, &#39;U&#39;, &#39;*&#39;, &#39;U&#39;, &#39;*&#39;],</span>
+<span class="go"> [&#39;*&#39;, &#39;|&#39;, &#39;H&#39;, &#39;|&#39;, &#39;*&#39;],</span>
+<span class="go"> [&#39;A&#39;, &#39;A&#39;, &#39;*&#39;, &#39;A&#39;, &#39;A&#39;]]</span>
+</pre></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+
+
+
+
+<span class="n">stack</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;H&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),</span>
+         <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;|&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;|&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">)]</span>
+
+<span class="c1"># write some code here</span>
+
+
+<span class="n">pprint</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="n">stack</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="k">assert</span> <span class="n">mat</span> <span class="o">==</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">],</span>
+                <span class="p">[</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">],</span>
+                <span class="p">[</span><span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;|&#39;</span><span class="p">,</span> <span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;|&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">],</span>
+                <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">]</span> <span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="section" id="Challenge---The-Ark">
 <h2>Challenge - The Ark<a class="headerlink" href="#Challenge---The-Ark" title="Permalink to this headline">¶</a></h2>
 <p>It’s year 2050, humans went far too often shopping with their SUVs, and now Earth is without natural resources with sun rays scorching what remains of the atmosphere.</p>
-<p>Luckily, a planet called Aurora which could host life has been recently discovered. A billionaire enterprenur who foresaw the disaster decided to build in secret a spaceship to escape named The Ark. The billionaire is now old and would not survive a long space travel, so he decides to send only animals to Aurora - humans won’t be allowed, as they would probably mess up that planet as they did with Earth. Sophisticated roboservants will then take care of the animals.</p>
+<p>Luckily, a planet which could host life called Aurora has been recently discovered. A billionaire enterprenur who foresaw the disaster decided to build in secret a spaceship to escape: it was named The Ark. The billionaire is now old and wouldn’t survive a long space travel, so he decides to send only animals to Aurora. Humans won’t be allowed, as they would probably mess up that planet as they did with Earth. Sophisticated roboservants will then take care of the animals.</p>
 <p>Animals are herded in a hurry to a field nearby the secret launch station.</p>
 <div class="section" id="The-Ark-1.-Sort-the-herd">
 <h3>The Ark 1. Sort the herd<a class="headerlink" href="#The-Ark-1.-Sort-the-herd" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">herd</span></code> is a list of animals, in no particular order. The herd needs to stay in a farm while last checks are performed on the spaceship. Before entering the farm, animals are sorted by their weight, which are provided as a dictionary <code class="docutils literal notranslate"><span class="pre">herd_weights</span></code>.</p>
+<p>✪✪ The <code class="docutils literal notranslate"><span class="pre">herd</span></code> is a list of animals, in no particular order. The herd needs to stay in a farm while last checks are performed on the spaceship. Before entering the farm, animals are sorted by their weight, which are provided as a dictionary <code class="docutils literal notranslate"><span class="pre">herd_weights</span></code>.</p>
 <p>Implement function <code class="docutils literal notranslate"><span class="pre">sort_herd(animals,</span> <span class="pre">weights)</span></code> which MODIFIES animals so that is sorted according to weight.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">herd</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span><span class="s1">&#39;giraffe&#39;</span><span class="p">,</span>
@@ -2357,7 +2410,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2391,13 +2444,15 @@ div.rendered_html tbody tr:hover {
                 <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">]</span>
+
+<span class="k">assert</span> <span class="n">sort_herd</span><span class="p">(</span><span class="n">herd</span><span class="p">,</span> <span class="n">herd_weights</span><span class="p">)</span> <span class="o">==</span> <span class="kc">None</span>  <span class="c1"># should return nothing!</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="The-Ark-2.-Enter-the-Farm">
 <h3>The Ark 2. Enter the Farm<a class="headerlink" href="#The-Ark-2.-Enter-the-Farm" title="Permalink to this headline">¶</a></h3>
-<p>After getting sorted, animals are ready to enter the farm. A farm is organized in a series of cattle pens: we can model them as a list of lists of different lengths, each holding a different kind of animals. Implement a function <code class="docutils literal notranslate"><span class="pre">enter_farm(animals)</span></code> which RETURN a NEW list of lists.</p>
+<p>✪✪✪ After getting sorted, animals are ready to enter the farm. A farm is organized in a series of cattle pens: we can model them as a list of lists of different lengths, each holding a different kind of animals. Implement a function <code class="docutils literal notranslate"><span class="pre">enter_farm(animals)</span></code> which RETURN a NEW list of lists.</p>
 <ul class="simple">
 <li><p><strong>NOTE</strong>: lists may have different lengths, so we cannot call this a matrix !</p></li>
 </ul>
@@ -2411,20 +2466,20 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <p>it should result:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;&gt; from pprint import pprint
-&gt;&gt; farm = enter_farm(sorted_herd)
-&gt;&gt; pprint(farm, width=190)
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="o">&gt;&gt;</span> <span class="n">farm</span> <span class="o">=</span> <span class="n">enter_farm</span><span class="p">(</span><span class="n">sorted_herd</span><span class="p">)</span>
+<span class="o">&gt;&gt;</span> <span class="n">pprint</span><span class="p">(</span><span class="n">farm</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">190</span><span class="p">)</span>
 
-[[&#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;, &#39;owl&#39;],
- [&#39;fox&#39;, &#39;fox&#39;, &#39;fox&#39;, &#39;fox&#39;, &#39;fox&#39;, &#39;fox&#39;, &#39;fox&#39;, &#39;fox&#39;, &#39;fox&#39;],
- [&#39;lion&#39;, &#39;lion&#39;, &#39;lion&#39;, &#39;lion&#39;, &#39;lion&#39;, &#39;lion&#39;],
- [&#39;zebra&#39;, &#39;zebra&#39;, &#39;zebra&#39;, &#39;zebra&#39;, &#39;zebra&#39;, &#39;zebra&#39;],
- [&#39;giraffe&#39;, &#39;giraffe&#39;, &#39;giraffe&#39;],
- [&#39;elephant&#39;, &#39;elephant&#39;, &#39;elephant&#39;]]
+<span class="p">[[</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;giraffe&#39;</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">],</span>
+ <span class="p">[</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">]]</span>
 </pre></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2434,7 +2489,6 @@ div.rendered_html tbody tr:hover {
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
-
 <span class="n">sorted_herd</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span>
                <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span>
                <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span>
@@ -2442,11 +2496,7 @@ div.rendered_html tbody tr:hover {
                <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span>
                <span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">]</span>
 
-<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
-<span class="n">farm</span> <span class="o">=</span> <span class="n">enter_farm</span><span class="p">(</span><span class="n">sorted_herd</span><span class="p">)</span>
-<span class="n">pprint</span><span class="p">(</span><span class="n">farm</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">190</span><span class="p">)</span>
-
-<span class="k">assert</span> <span class="n">farm</span> <span class="o">==</span> <span class="p">[</span>
+<span class="k">assert</span> <span class="n">enter_farm</span><span class="p">(</span><span class="n">sorted_herd</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span>
  <span class="p">[</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">],</span>
  <span class="p">[</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">],</span>
  <span class="p">[</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">],</span>
@@ -2454,23 +2504,25 @@ div.rendered_html tbody tr:hover {
  <span class="p">[</span><span class="s1">&#39;giraffe&#39;</span><span class="p">,</span><span class="s1">&#39;giraffe&#39;</span><span class="p">,</span><span class="s1">&#39;giraffe&#39;</span><span class="p">],</span>
  <span class="p">[</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span><span class="s1">&#39;elephant&#39;</span><span class="p">]</span>
 <span class="p">]</span>
-<span class="c1"># check it did not change the herd</span>
-<span class="k">assert</span> <span class="n">sorted_herd</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">,</span>
-                       <span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">]</span>
+
+<span class="k">assert</span> <span class="n">enter_farm</span><span class="p">([])</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="k">assert</span> <span class="n">enter_farm</span><span class="p">([</span><span class="s1">&#39;beetle&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;beetle&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="k">assert</span> <span class="n">enter_farm</span><span class="p">([</span><span class="s1">&#39;sheep&#39;</span><span class="p">,</span> <span class="s1">&#39;sheep&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;sheep&#39;</span><span class="p">,</span> <span class="s1">&#39;sheep&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="n">sorted_herd2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sheep&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">enter_farm</span><span class="p">(</span><span class="n">sorted_herd2</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;sheep&#39;</span><span class="p">],</span>
+                                     <span class="p">[</span><span class="s1">&#39;dog&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="k">assert</span> <span class="n">sorted_herd2</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;sheep&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">]</span>  <span class="c1"># check it did not change the input</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="The-Ark-3.-Enter-the-Ark">
 <h3>The Ark 3. Enter the Ark<a class="headerlink" href="#The-Ark-3.-Enter-the-Ark" title="Permalink to this headline">¶</a></h3>
-<p>An Ark spaceship is a huge rocket divided vertically in stages, each divided in exactly three compartments. Laws of physics suggest it’s best to stack heavier elements at the bottom, so it is decided to populate the base of the rocket with big animals like elephants, while lighter ones like birds will go to the tip.</p>
+<p>✪✪ An Ark spaceship is a huge rocket divided vertically in stages, each divided in exactly three compartments. Laws of physics suggest it’s best to stack heavier elements at the bottom, so it is decided to populate the base of the rocket with big animals like elephants, while lighter ones like birds will go to the tip.</p>
 <p>We can model The Ark as a list of lists matrix, where each row contains exactly three tuples of animals. Given as input a <code class="docutils literal notranslate"><span class="pre">farm</span></code> with animals already sorted, RETURN a NEW list of lists with the animals grouped in tuples.</p>
 <ul class="simple">
-<li><p><strong>SUPPOSE</strong> animals in rows are always exactly divisible by 3</p></li>
+<li><p><strong>ASSUME</strong> animals in rows are always exactly divisible by 3</p></li>
+<li><p><strong>WRITE</strong> something general, which handles also weird cases like a floor with mixed animal species</p></li>
 </ul>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">farm</span> <span class="o">=</span> <span class="p">[</span>
@@ -2496,7 +2548,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2505,7 +2557,6 @@ div.rendered_html tbody tr:hover {
     <span class="sd">&quot;&quot;&quot; RETURN a NEW list of lists</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
-
 
 <span class="n">farm</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">],</span>
@@ -2516,10 +2567,7 @@ div.rendered_html tbody tr:hover {
     <span class="p">[</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span><span class="s1">&#39;elephant&#39;</span><span class="p">]</span>
 <span class="p">]</span>
 
-<span class="n">ark</span> <span class="o">=</span> <span class="n">enter_ark</span><span class="p">(</span><span class="n">farm</span><span class="p">)</span>
-<span class="n">pprint</span><span class="p">(</span><span class="n">ark</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">190</span><span class="p">)</span>
-
-<span class="k">assert</span> <span class="n">ark</span> <span class="o">==</span> <span class="p">[</span>
+<span class="k">assert</span> <span class="n">enter_ark</span><span class="p">(</span><span class="n">farm</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span>
  <span class="p">[(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">)],</span>
  <span class="p">[(</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">),</span>      <span class="p">(</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">),</span>         <span class="p">(</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">)],</span>
  <span class="p">[(</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">),</span>          <span class="p">(</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">),</span>             <span class="p">(</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">)],</span>
@@ -2528,22 +2576,18 @@ div.rendered_html tbody tr:hover {
  <span class="p">[(</span><span class="s1">&#39;elephant&#39;</span><span class="p">,),</span>             <span class="p">(</span><span class="s1">&#39;elephant&#39;</span><span class="p">,),</span>                <span class="p">(</span><span class="s1">&#39;elephant&#39;</span><span class="p">,)]</span>
 <span class="p">]</span>
 
-<span class="c1"># orginal farm shouldn&#39;t change</span>
-<span class="k">assert</span> <span class="n">farm</span> <span class="o">==</span> <span class="p">[</span>
-    <span class="p">[</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span><span class="s1">&#39;owl&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span><span class="s1">&#39;fox&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span><span class="s1">&#39;lion&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span><span class="s1">&#39;zebra&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;giraffe&#39;</span><span class="p">,</span><span class="s1">&#39;giraffe&#39;</span><span class="p">,</span><span class="s1">&#39;giraffe&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span><span class="s1">&#39;elephant&#39;</span><span class="p">,</span><span class="s1">&#39;elephant&#39;</span><span class="p">]</span>
-<span class="p">]</span>
+<span class="k">assert</span> <span class="n">enter_ark</span><span class="p">([])</span> <span class="o">==</span> <span class="p">[]</span>
+<span class="n">cat_farm</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span><span class="s1">&#39;cat&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="k">assert</span> <span class="n">enter_ark</span><span class="p">(</span><span class="n">cat_farm</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span> <span class="p">[(</span><span class="s1">&#39;cat&#39;</span><span class="p">,),(</span><span class="s1">&#39;cat&#39;</span><span class="p">,),(</span><span class="s1">&#39;cat&#39;</span><span class="p">,)]</span> <span class="p">]</span>
+<span class="k">assert</span> <span class="n">cat_farm</span> <span class="o">==</span> <span class="p">[[</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span><span class="s1">&#39;cat&#39;</span><span class="p">]]</span>  <span class="c1">#check function didn&#39;t change the input</span>
+<span class="k">assert</span> <span class="n">enter_ark</span><span class="p">([</span> <span class="p">[</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span><span class="s1">&#39;dog&#39;</span><span class="p">,</span><span class="s1">&#39;mouse&#39;</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="p">[</span> <span class="p">[(</span><span class="s1">&#39;cat&#39;</span><span class="p">,),(</span><span class="s1">&#39;dog&#39;</span><span class="p">,),(</span><span class="s1">&#39;mouse&#39;</span><span class="p">,)]</span> <span class="p">]</span>  <span class="c1"># general case</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="The-Ark-4.-Aurora">
 <h3>The Ark 4. Aurora<a class="headerlink" href="#The-Ark-4.-Aurora" title="Permalink to this headline">¶</a></h3>
-<p>Implement function <code class="docutils literal notranslate"><span class="pre">land</span></code> which takes a <code class="docutils literal notranslate"><span class="pre">spaceship</span></code> and PRINTS a message about its content.</p>
+<p>✪✪ Implement function <code class="docutils literal notranslate"><span class="pre">land</span></code> which takes a <code class="docutils literal notranslate"><span class="pre">spaceship</span></code> and PRINTS a message about its content.</p>
 <p>Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ark</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">)],</span>
@@ -2570,7 +2614,7 @@ A new chapter begins...
 </pre></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2580,7 +2624,7 @@ A new chapter begins...
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
-<span class="n">ark</span> <span class="o">=</span> <span class="p">[</span>
+<span class="n">ark1</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">)],</span>
     <span class="p">[(</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">)],</span>
     <span class="p">[(</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">)],</span>
@@ -2589,17 +2633,9 @@ A new chapter begins...
     <span class="p">[(</span><span class="s1">&#39;elephant&#39;</span><span class="p">,),</span> <span class="p">(</span><span class="s1">&#39;elephant&#39;</span><span class="p">,),</span> <span class="p">(</span><span class="s1">&#39;elephant&#39;</span><span class="p">,)]</span>
 <span class="p">]</span>
 
-<span class="n">land</span><span class="p">(</span><span class="n">ark</span><span class="p">)</span>  <span class="c1"># should only print stuff</span>
+<span class="n">land</span><span class="p">(</span><span class="n">ark1</span><span class="p">)</span>  <span class="c1"># should only print stuff</span>
 
-<span class="c1"># checks function didn&#39;t change input</span>
-<span class="k">assert</span> <span class="n">ark</span> <span class="o">==</span> <span class="p">[</span>
-    <span class="p">[(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">,</span> <span class="s1">&#39;owl&#39;</span><span class="p">)],</span>
-    <span class="p">[(</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">,</span> <span class="s1">&#39;fox&#39;</span><span class="p">)],</span>
-    <span class="p">[(</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;lion&#39;</span><span class="p">,</span> <span class="s1">&#39;lion&#39;</span><span class="p">)],</span>
-    <span class="p">[(</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;zebra&#39;</span><span class="p">)],</span>
-    <span class="p">[(</span><span class="s1">&#39;giraffe&#39;</span><span class="p">,),</span> <span class="p">(</span><span class="s1">&#39;giraffe&#39;</span><span class="p">,),</span> <span class="p">(</span><span class="s1">&#39;giraffe&#39;</span><span class="p">,)],</span>
-    <span class="p">[(</span><span class="s1">&#39;elephant&#39;</span><span class="p">,),</span> <span class="p">(</span><span class="s1">&#39;elephant&#39;</span><span class="p">,),</span> <span class="p">(</span><span class="s1">&#39;elephant&#39;</span><span class="p">,)]</span>
-<span class="p">]</span>
+<span class="k">assert</span> <span class="n">land</span><span class="p">(</span><span class="n">ark1</span><span class="p">)</span> <span class="o">==</span> <span class="kc">None</span>  <span class="c1"># should return nothing!</span>
 </pre></div>
 </div>
 </div>
@@ -2607,8 +2643,12 @@ A new chapter begins...
 </div>
 <div class="section" id="Challenge---Go-camping">
 <h2>Challenge - Go camping<a class="headerlink" href="#Challenge---Go-camping" title="Permalink to this headline">¶</a></h2>
-<p>Let’s go camping in the wild! But first, you need to check you have everything needed. In particular, you are worried about not having all the items you wrote down in a <code class="docutils literal notranslate"><span class="pre">blocknote</span></code>. You open the bag with all the camping stuff, and spread the content around on your <code class="docutils literal notranslate"><span class="pre">bed</span></code>.</p>
+<p>✪✪✪ Let’s go camping in the wild! But first, you need to check you have everything needed. In particular, you are worried about not having all the items you wrote down in a <code class="docutils literal notranslate"><span class="pre">blocknote</span></code>. You open the bag with all the camping stuff, and spread the content around on your <code class="docutils literal notranslate"><span class="pre">bed</span></code>.</p>
 <p>Given a matrix <code class="docutils literal notranslate"><span class="pre">bed</span></code> as a list of lists of strings, and a tuple <code class="docutils literal notranslate"><span class="pre">blocknote</span></code> of elements to find, write a function <code class="docutils literal notranslate"><span class="pre">go_camping</span></code> which RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if ALL the elements of <code class="docutils literal notranslate"><span class="pre">blocknote</span></code> are present in <code class="docutils literal notranslate"><span class="pre">bed</span></code>, otherwise RETURN <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<ul class="simple">
+<li><p><strong>DO NOT</strong> use search methods like <code class="docutils literal notranslate"><span class="pre">index</span></code>, <code class="docutils literal notranslate"><span class="pre">count</span></code>, <code class="docutils literal notranslate"><span class="pre">remove</span></code>, … they’re slow!</p></li>
+<li><p><strong>DO NOT</strong> use <code class="docutils literal notranslate"><span class="pre">in</span></code> operator on lists</p></li>
+</ul>
 <p>Example 1 - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">blocknote</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;bottle&#39;</span><span class="p">,</span><span class="s1">&#39;lighter&#39;</span><span class="p">,</span><span class="s1">&#39;sunscreen&#39;</span><span class="p">)</span>
 <span class="n">bed</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;bottle&#39;</span><span class="p">,</span><span class="s1">&#39;glasses&#39;</span><span class="p">,</span><span class="s1">&#39;hat&#39;</span><span class="p">,</span><span class="s1">&#39;hat&#39;</span><span class="p">],</span>
@@ -2616,7 +2656,7 @@ A new chapter begins...
         <span class="p">[</span><span class="s1">&#39;hat&#39;</span><span class="p">,</span><span class="s1">&#39;lighter&#39;</span><span class="p">,</span><span class="s1">&#39;sunscreen&#39;</span><span class="p">,</span><span class="s1">&#39;bottle&#39;</span><span class="p">]]</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">'bottle'</span></code>, <code class="docutils literal notranslate"><span class="pre">'lighter'</span></code> and <code class="docutils literal notranslate"><span class="pre">'sunscreen'</span></code> are all present, so we expect <code class="docutils literal notranslate"><span class="pre">True</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">'bottle'</span></code>, <code class="docutils literal notranslate"><span class="pre">'lighter'</span></code> and <code class="docutils literal notranslate"><span class="pre">'sunscreen'</span></code> are all present, we expect <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">go_camping</span><span class="p">(</span><span class="n">blocknote</span><span class="p">,</span> <span class="n">bed</span><span class="p">))</span>
 <span class="go">True</span>
 </pre></div>
@@ -2628,13 +2668,13 @@ A new chapter begins...
          <span class="p">[</span><span class="s1">&#39;hat&#39;</span><span class="p">,</span><span class="s1">&#39;lighter&#39;</span><span class="p">,</span><span class="s1">&#39;sunscreen&#39;</span><span class="p">,</span><span class="s1">&#39;book&#39;</span><span class="p">]]</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">'lighter'</span></code> and <code class="docutils literal notranslate"><span class="pre">'sunscreen'</span></code> are present, but <code class="docutils literal notranslate"><span class="pre">'bottle'</span></code> is not, so we expect <code class="docutils literal notranslate"><span class="pre">False</span></code>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">'lighter'</span></code> and <code class="docutils literal notranslate"><span class="pre">'sunscreen'</span></code> are present, but <code class="docutils literal notranslate"><span class="pre">'bottle'</span></code> is not, we expect <code class="docutils literal notranslate"><span class="pre">False</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">go_camping</span><span class="p">(</span><span class="n">blocknote</span><span class="p">,</span> <span class="n">bed</span><span class="p">))</span>
 <span class="go">False</span>
 </pre></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2642,8 +2682,6 @@ A new chapter begins...
 
 <span></span><span class="k">def</span> <span class="nf">go_camping</span><span class="p">(</span><span class="n">notes</span><span class="p">,</span> <span class="n">bed</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
-
-
 
 <span class="c1"># expect True</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">go_camping</span><span class="p">((</span><span class="s1">&#39;bottle&#39;</span><span class="p">,</span><span class="s1">&#39;lighter&#39;</span><span class="p">,</span><span class="s1">&#39;sunscreen&#39;</span><span class="p">),</span>
@@ -2653,10 +2691,9 @@ A new chapter begins...
 
 <span class="c1"># expect False</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">go_camping</span><span class="p">((</span><span class="s1">&#39;bottle&#39;</span><span class="p">,</span><span class="s1">&#39;lighter&#39;</span><span class="p">,</span><span class="s1">&#39;sunscreen&#39;</span><span class="p">),</span>
-                <span class="p">[</span>  <span class="p">[</span><span class="s1">&#39;book&#39;</span><span class="p">,</span><span class="s1">&#39;glasses&#39;</span><span class="p">,</span><span class="s1">&#39;hat&#39;</span><span class="p">,</span><span class="s1">&#39;hat&#39;</span><span class="p">],</span>
-                   <span class="p">[</span><span class="s1">&#39;hat&#39;</span><span class="p">,</span><span class="s1">&#39;lighter&#39;</span><span class="p">,</span><span class="s1">&#39;book&#39;</span><span class="p">,</span><span class="s1">&#39;book&#39;</span><span class="p">],</span>
-                   <span class="p">[</span><span class="s1">&#39;hat&#39;</span><span class="p">,</span><span class="s1">&#39;lighter&#39;</span><span class="p">,</span><span class="s1">&#39;sunscreen&#39;</span><span class="p">,</span><span class="s1">&#39;book&#39;</span><span class="p">]]))</span>
-
+                 <span class="p">[</span>  <span class="p">[</span><span class="s1">&#39;book&#39;</span><span class="p">,</span><span class="s1">&#39;glasses&#39;</span><span class="p">,</span><span class="s1">&#39;hat&#39;</span><span class="p">,</span><span class="s1">&#39;hat&#39;</span><span class="p">],</span>
+                    <span class="p">[</span><span class="s1">&#39;hat&#39;</span><span class="p">,</span><span class="s1">&#39;lighter&#39;</span><span class="p">,</span><span class="s1">&#39;book&#39;</span><span class="p">,</span><span class="s1">&#39;book&#39;</span><span class="p">],</span>
+                    <span class="p">[</span><span class="s1">&#39;hat&#39;</span><span class="p">,</span><span class="s1">&#39;lighter&#39;</span><span class="p">,</span><span class="s1">&#39;sunscreen&#39;</span><span class="p">,</span><span class="s1">&#39;book&#39;</span><span class="p">]]))</span>
 
 <span class="k">assert</span> <span class="n">go_camping</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,),</span> <span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">]])</span> <span class="o">==</span> <span class="kc">True</span>
 <span class="k">assert</span> <span class="n">go_camping</span><span class="p">((</span><span class="s1">&#39;b&#39;</span><span class="p">,),</span> <span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">]])</span> <span class="o">==</span> <span class="kc">False</span>
@@ -2682,51 +2719,6 @@ A new chapter begins...
 <span class="k">assert</span> <span class="n">m</span> <span class="o">==</span> <span class="p">[[</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">],</span>
              <span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">],</span>
              <span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">]]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="Challenge---Tiles">
-<h2>Challenge - Tiles<a class="headerlink" href="#Challenge---Tiles" title="Permalink to this headline">¶</a></h2>
-<p>You are working in a construction site, and they tell you to fill the floor with tiles. You have a <code class="docutils literal notranslate"><span class="pre">stack</span></code> of tiles to place. On each, there is written at which coordinates it should be placed, and also the decoration it should show. The architect did not tell you exactly the dimensions the tiled floor should have, so you will have to deduce them by looking at the tiles coordinates.</p>
-<p>Each time you take one tile from the <code class="docutils literal notranslate"><span class="pre">stack</span></code>, you place it in the appropriate cell on the floor.</p>
-<p>Write some code which creates a NEW matrix of lists of lists called <code class="docutils literal notranslate"><span class="pre">mat</span></code>: before placing the tiles you will have to prepare a matrix with the appropriate number of cells to cover (retrieve dimensions by scanning the stack)</p>
-<ul class="simple">
-<li><p>tiles which remain empty will be marked with <code class="docutils literal notranslate"><span class="pre">'*'</span></code> symbol</p></li>
-</ul>
-<ul class="simple">
-<li><p><strong>REDUCE</strong> the stack one item at a time (suppose the top of the stack is end of list)</p></li>
-<li><p><strong>YOU MUST MODIFY</strong> the given stack, at the end of your program it must be empty</p></li>
-<li><p><strong>DO NOT</strong> create a new stack (so no lines beginning with <code class="docutils literal notranslate"><span class="pre">stack</span> <span class="pre">=</span></code>)</p></li>
-<li><p><strong>DO NOT</strong> use <code class="docutils literal notranslate"><span class="pre">.remove</span></code> nor <code class="docutils literal notranslate"><span class="pre">.index</span></code> methods</p></li>
-</ul>
-<p>Example - given:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stack</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;H&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),</span>
-         <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;|&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;|&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">)]</span>
-</pre></div>
-</div>
-<p>Your code should produce:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
-<span class="go">[[&#39;*&#39;, &#39;*&#39;, &#39;*&#39;, &#39;*&#39;, &#39;*&#39;],</span>
-<span class="go"> [&#39;*&#39;, &#39;U&#39;, &#39;*&#39;, &#39;U&#39;, &#39;*&#39;],</span>
-<span class="go"> [&#39;*&#39;, &#39;|&#39;, &#39;H&#39;, &#39;|&#39;, &#39;*&#39;],</span>
-<span class="go"> [&#39;A&#39;, &#39;A&#39;, &#39;*&#39;, &#39;A&#39;, &#39;A&#39;]]</span>
-</pre></div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
-
-<span class="n">stack</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;U&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;H&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),</span>
-         <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;|&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;|&#39;</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="s1">&#39;A&#39;</span><span class="p">)]</span>
-
-<span class="c1"># write here</span>
-
-
 </pre></div>
 </div>
 </div>
