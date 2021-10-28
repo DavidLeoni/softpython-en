@@ -1669,9 +1669,9 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Bar-plots">Bar plots</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#Exercise---Goleadors">Exercise - Goleadors</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#Exercise---sorting-chemical-elements">Exercise - sorting chemical elements</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#Exercise---double-bars">Exercise - double bars</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---goleadors">Exercise - goleadors</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---chemical-elements">Exercise - chemical elements</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---superheroes">Exercise - superheroes</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Showing-plots-side-by-side">Showing plots side by side</a><ul>
@@ -3116,9 +3116,10 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <img alt="../_images/visualization_visualization1-sol_59_0.png" src="../_images/visualization_visualization1-sol_59_0.png" />
 </div>
 </div>
-<div class="section" id="Exercise---Goleadors">
-<h3>Exercise - Goleadors<a class="headerlink" href="#Exercise---Goleadors" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="Exercise---goleadors">
+<h3>Exercise - goleadors<a class="headerlink" href="#Exercise---goleadors" title="Permalink to this headline">¶</a></h3>
 <p>✪✪ Display a bar plot of football players and their total goals in top-level football competitions (as of 2021), with their names sorted alphabetically</p>
+<p><strong>REMEMBER</strong> title and axis labels, make sure all texts are clearly visible</p>
 <p>EXPECTED OUTPUT: <img alt="expected-goleadors.png" src="../_images/expected-goleadors.png" /></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3204,9 +3205,9 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </div>
 </div>
 </div>
-<div class="section" id="Exercise---sorting-chemical-elements">
-<h3>Exercise - sorting chemical elements<a class="headerlink" href="#Exercise---sorting-chemical-elements" title="Permalink to this headline">¶</a></h3>
-<p>✪✪✪ Given multiple lists representig data about chemical elements, show a bar plot where symbols and names are sorted alphabetically according to their name.</p>
+<div class="section" id="Exercise---chemical-elements">
+<h3>Exercise - chemical elements<a class="headerlink" href="#Exercise---chemical-elements" title="Permalink to this headline">¶</a></h3>
+<p>✪✪✪ Given multiple lists representig data about chemical elements, show a bar plot where elements are sorted alphabetically according to their name.</p>
 <ul class="simple">
 <li><p>show elements as <em>name (symbol)</em></p></li>
 </ul>
@@ -3286,16 +3287,15 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </div>
 </div>
 </div>
-<div class="section" id="Exercise---double-bars">
-<h3>Exercise - double bars<a class="headerlink" href="#Exercise---double-bars" title="Permalink to this headline">¶</a></h3>
-<p>✪✪✪✪ Each year a contest between the super-heroes of two crime-ridden cities is held. The superheroes perform several challenges and each city receives a score. At the end, the mayor of each city wants to see how its city compared against the other city. The mayor wants you to show the performances in <strong>sorted</strong> order with respect to the mayor’s <code class="docutils literal notranslate"><span class="pre">city</span></code>, while showing also the performance of the other city for comparison. For example, here the performances of Gotham City are shown in sorted
-order:</p>
+<div class="section" id="Exercise---superheroes">
+<h3>Exercise - superheroes<a class="headerlink" href="#Exercise---superheroes" title="Permalink to this headline">¶</a></h3>
+<p>✪✪✪✪ Each year a contest between the super-heroes of two crime-ridden cities is held. The superheroes perform several challenges and each city receives a score. At the end, the mayor of each city wants to see how its city compared against the other city. The mayor wants you to show the performances in <strong>sorted</strong> order with respect to the mayor’s <code class="docutils literal notranslate"><span class="pre">city</span></code>, while showing also the performance of the other city for comparison.</p>
 <p>Look at <a class="reference external" href="https://matplotlib.org/gallery/lines_bars_and_markers/barchart.html#sphx-glr-gallery-lines-bars-and-markers-barchart-py">this example</a>, and make a double bar chart</p>
 <ul class="simple">
 <li><p>specify the city in the title</p></li>
 <li><p>remember x and y axis labels</p></li>
 </ul>
-<p>EXPECTED OUTPUT:</p>
+<p>EXPECTED OUTPUT (here the performances of Gotham City are shown in sorted order):</p>
 <p><img alt="expected-superhero-perf" src="../_images/expected-superhero-perf.png" /></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3482,13 +3482,13 @@ order:</p>
 </div>
 <div class="section" id="Exercise---sin(kx)">
 <h3>Exercise - sin(kx)<a class="headerlink" href="#Exercise---sin(kx)" title="Permalink to this headline">¶</a></h3>
-<p>Given a list <code class="docutils literal notranslate"><span class="pre">ks</span></code> containing <span class="math notranslate nohighlight">\(n\)</span> floats, show <span class="math notranslate nohighlight">\(n\)</span> plots of function <span class="math notranslate nohighlight">\(sin(k x)\)</span> from <code class="docutils literal notranslate"><span class="pre">left</span></code> to <code class="docutils literal notranslate"><span class="pre">right</span></code> with 50 subdivisions stacked vertically.</p>
+<p>Given a list <code class="docutils literal notranslate"><span class="pre">ks</span></code> containing <span class="math notranslate nohighlight">\(n\)</span> floats, show <span class="math notranslate nohighlight">\(n\)</span> plots stacked vertically of function <span class="math notranslate nohighlight">\(sin(k x)\)</span> with limits <code class="docutils literal notranslate"><span class="pre">left</span></code> to <code class="docutils literal notranslate"><span class="pre">right</span></code> subdivided in <code class="docutils literal notranslate"><span class="pre">50</span></code> intervals.</p>
 <ul class="simple">
 <li><p>display the <code class="docutils literal notranslate"><span class="pre">k</span></code> values as titles</p></li>
 <li><p>define a function <code class="docutils literal notranslate"><span class="pre">plot_sin</span></code> to be called <span class="math notranslate nohighlight">\(n\)</span> times</p></li>
 <li><p>put adequate vertical space</p></li>
 <li><p><strong>HINT</strong>: use numpy vector operations</p></li>
-<li><p><strong>REMEMBER</strong> <code class="docutils literal notranslate"><span class="pre">plt.show</span></code> must be called only <strong>ONCE</strong> in the whole program !</p></li>
+<li><p><strong>REMEMBER</strong> <code class="docutils literal notranslate"><span class="pre">plt.figure</span></code> and <code class="docutils literal notranslate"><span class="pre">plt.show</span></code> must be called only <strong>ONCE</strong> in the whole program !</p></li>
 </ul>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3559,7 +3559,7 @@ order:</p>
 </div>
 <div class="section" id="Other-plots">
 <h2>Other plots<a class="headerlink" href="#Other-plots" title="Permalink to this headline">¶</a></h2>
-<p>Matplotlib allows to display pretty much any you might like, here we collect some we use in the course, for others, see the <a class="reference external" href="https://matplotlib.org/gallery/index.html">extensive Matplotlib documentation</a></p>
+<p>Matplotlib allows to display pretty much anything, here we collect some we use in the book, for others, see the <a class="reference external" href="https://matplotlib.org/gallery/index.html">extensive Matplotlib documentation</a></p>
 <div class="section" id="Pie-chart">
 <h3>Pie chart<a class="headerlink" href="#Pie-chart" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
