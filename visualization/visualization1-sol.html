@@ -1661,25 +1661,21 @@
 <li class="toctree-l5"><a class="reference internal" href="#Changing-tick-labels">Changing tick labels</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#Introducting-numpy">Introducting numpy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Multiple-lines">Multiple lines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Numpy">Numpy</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#Example-without-numpy">Example without numpy</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Example-with-numpy">Example with numpy</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#y-=-sin(x)-+-3-exercise">y = sin(x) + 3 exercise</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#Showing-degrees-per-node">Showing degrees per node</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#indegree-per-node">indegree per node</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---sin(x)-+-3">Exercise - sin(x) + 3</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Bar-plots">Bar plots</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#indegree-per-node-bar-plot">indegree per node bar plot</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#indegree-per-node-sorted-alphabetically">indegree per node sorted alphabetically</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#indegree-per-node-sorted">indegree per node sorted</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#out-degrees-per-node-sorted">out degrees per node sorted</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#degrees-per-node">degrees per node</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---Goleadors">Exercise - Goleadors</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---sorting-chemical-elements">Exercise - sorting chemical elements</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---double-bars">Exercise - double bars</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#Frequency-histogram">Frequency histogram</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Showing-plots-side-by-side">Showing plots side by side</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#Graph-models">Graph models</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---sin(kx)">Exercise - sin(kx)</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Other-plots">Other plots</a><ul>
@@ -1689,13 +1685,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#Fancy-plots">Fancy plots</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#Background-color">Background color</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Text">Text</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#Images">Images</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#Images">Images</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Color-intensity">Color intensity</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---Be-fancy">Exercise - Be fancy</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#Exercise---Be-fancy">Exercise - Be fancy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Continue">Continue</a></li>
 </ul>
 </li>
@@ -1705,7 +1699,7 @@
 <li class="toctree-l4"><a class="reference internal" href="visualization2-chal.html#1.-plot_sheet">1. plot_sheet</a></li>
 <li class="toctree-l4"><a class="reference internal" href="visualization2-chal.html#2.-plot_pentagram">2. plot_pentagram</a></li>
 <li class="toctree-l4"><a class="reference internal" href="visualization2-chal.html#3.-plot_notes">3. plot_notes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="visualization2-chal.html#Final-result-1">Final result 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="visualization2-chal.html#Final-result-1:">Final result 1:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="visualization2-chal.html#Final-result-2">Final result 2</a></li>
 </ul>
 </li>
@@ -2601,14 +2595,51 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </div>
-<div class="section" id="Introducting-numpy">
-<h2>Introducting numpy<a class="headerlink" href="#Introducting-numpy" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Multiple-lines">
+<h2>Multiple lines<a class="headerlink" href="#Multiple-lines" title="Permalink to this headline">¶</a></h2>
+<p>To overlay multiple lines, you just need to perform several calls to <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code>. Matplotlib will automatically use a different color for each line.</p>
+<p><strong>REMEMBER:</strong> you should call <code class="docutils literal notranslate"><span class="pre">plt.show</span></code> only <strong>ONCE</strong> at the very end!!</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># we can give coordinates as simple numberlists</span>
+<span class="c1"># this are couples for the function y = 2 * x</span>
+<span class="n">xsa</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">ysa</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xsa</span><span class="p">,</span> <span class="n">ysa</span><span class="p">)</span>
+
+<span class="n">xsb</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">]</span>   <span class="c1"># note this other series can have a different number of points at different places</span>
+<span class="n">ysb</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span>  <span class="p">,</span> <span class="mi">2</span><span class="p">,</span>   <span class="mi">8</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xsb</span><span class="p">,</span> <span class="n">ysb</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/visualization_visualization1-sol_19_0.png" src="../_images/visualization_visualization1-sol_19_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="Numpy">
+<h2>Numpy<a class="headerlink" href="#Numpy" title="Permalink to this headline">¶</a></h2>
 <p>For functions involving reals, vanilla python starts showing its limits and its better to switch to numpy library. Matplotlib can easily handle both vanilla python sequences like lists and numpy array. Let’s see an example without numpy and one with it.</p>
 <div class="section" id="Example-without-numpy">
 <h3>Example without numpy<a class="headerlink" href="#Example-without-numpy" title="Permalink to this headline">¶</a></h3>
 <p>If we only use <em>vanilla</em> Python (that is, Python without extra libraries like numpy), to display the function <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">2x</span> <span class="pre">+</span> <span class="pre">1</span></code> we can come up with a solution like this</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2634,17 +2665,17 @@ div.rendered_html tbody tr:hover {
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_21_0.png" src="../_images/visualization_visualization1-sol_21_0.png" />
+<img alt="../_images/visualization_visualization1-sol_23_0.png" src="../_images/visualization_visualization1-sol_23_0.png" />
 </div>
 </div>
 </div>
 <div class="section" id="Example-with-numpy">
 <h3>Example with numpy<a class="headerlink" href="#Example-with-numpy" title="Permalink to this headline">¶</a></h3>
 <p>With numpy, we have at our disposal several new methods for dealing with arrays.</p>
-<p>First we can generate an interval of values with one of these methods.</p>
+<p>First we can generate <a class="reference external" href="https://en.softpython.org/matrices-numpy/matrices-numpy1-sol.html#arange-and-linspace-sequences">an interval of values</a> with one of these methods.</p>
 <p>Sine Python range does not allow float increments, we can use <code class="docutils literal notranslate"><span class="pre">np.arange</span></code>:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2656,7 +2687,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2666,7 +2697,7 @@ array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
 </div>
 <p>Equivalently, we could use <code class="docutils literal notranslate"><span class="pre">np.linspace</span></code>:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2677,7 +2708,7 @@ array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2687,7 +2718,7 @@ array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
 </div>
 <p>Numpy allows us to easily write functions on arrays in a natural manner. For example, to calculate <code class="docutils literal notranslate"><span class="pre">ys</span></code> we can now do like this:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2698,7 +2729,7 @@ array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2708,7 +2739,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </div>
 <p>Let’s put everything together:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2733,17 +2764,17 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_29_0.png" src="../_images/visualization_visualization1-sol_29_0.png" />
+<img alt="../_images/visualization_visualization1-sol_31_0.png" src="../_images/visualization_visualization1-sol_31_0.png" />
 </div>
 </div>
 </div>
-<div class="section" id="y-=-sin(x)-+-3-exercise">
-<h3>y = sin(x) + 3 exercise<a class="headerlink" href="#y-=-sin(x)-+-3-exercise" title="Permalink to this headline">¶</a></h3>
-<p>✪✪✪ Try to display the function <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">sin(x)</span> <span class="pre">+</span> <span class="pre">3</span></code> for x at pi/4 intervals, starting from 0. Use exactly 8 ticks.</p>
+<div class="section" id="Exercise---sin(x)-+-3">
+<h3>Exercise - sin(x) + 3<a class="headerlink" href="#Exercise---sin(x)-+-3" title="Permalink to this headline">¶</a></h3>
+<p>✪✪✪ Try to display the function <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">=</span> <span class="pre">sin(x)</span> <span class="pre">+</span> <span class="pre">3</span></code> for x at pi / 4 intervals, starting from 0. Use exactly 8 ticks.</p>
 <p><strong>NOTE</strong>: 8 is the <em>number of x ticks</em> (telecom people would use the term ‘samples’), <strong>NOT</strong> the x of the last tick !!</p>
 <ol class="loweralpha simple">
-<li><p>try to solve it without using numpy. For pi, use constant <code class="docutils literal notranslate"><span class="pre">math.pi</span></code> (first you need to import <code class="docutils literal notranslate"><span class="pre">math</span></code> module)</p></li>
-<li><p>try to solve it with numpy. For pi, use constant <code class="docutils literal notranslate"><span class="pre">np.pi</span></code> (which is exactly the same as <code class="docutils literal notranslate"><span class="pre">math.pi</span></code>)</p></li>
+<li><p>try to solve it <em>without</em> using numpy. For pi, use constant <code class="docutils literal notranslate"><span class="pre">math.pi</span></code> (first you need to import <code class="docutils literal notranslate"><span class="pre">math</span></code> module)</p></li>
+<li><p>try to solve it <em>with numpy</em>. For pi, use constant <code class="docutils literal notranslate"><span class="pre">np.pi</span></code> (which is exactly the same as <code class="docutils literal notranslate"><span class="pre">math.pi</span></code>)</p></li>
 </ol>
 <p>b.1) solve it with <code class="docutils literal notranslate"><span class="pre">np.arange</span></code></p>
 <p>b.2) solve it with <code class="docutils literal notranslate"><span class="pre">np.linspace</span></code></p>
@@ -2753,7 +2784,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </ol>
 <p><strong>NOTE</strong>: Latex often involves the usage of the <code class="docutils literal notranslate"><span class="pre">\</span></code> bar, like in <code class="docutils literal notranslate"><span class="pre">\frac{2,3}</span></code>. If we use it directly, Python will interpret <code class="docutils literal notranslate"><span class="pre">\f</span></code> as a special character and will not send to the Latex processor the string we meant:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2762,7 +2793,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2772,7 +2803,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </div>
 <p>One solution would be to double the slashes, like this:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2781,7 +2812,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2791,7 +2822,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </div>
 <p>An even better one is to prepend the string with the <code class="docutils literal notranslate"><span class="pre">r</span></code> character, which allows to write slashes only once:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2800,7 +2831,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -2809,7 +2840,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2822,7 +2853,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2849,11 +2880,11 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_38_0.png" src="../_images/visualization_visualization1-sol_38_0.png" />
+<img alt="../_images/visualization_visualization1-sol_40_0.png" src="../_images/visualization_visualization1-sol_40_0.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2865,11 +2896,11 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_40_0.png" src="../_images/visualization_visualization1-sol_40_0.png" />
+<img alt="../_images/visualization_visualization1-sol_42_0.png" src="../_images/visualization_visualization1-sol_42_0.png" />
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2880,7 +2911,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2911,11 +2942,11 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_43_0.png" src="../_images/visualization_visualization1-sol_43_0.png" />
+<img alt="../_images/visualization_visualization1-sol_45_0.png" src="../_images/visualization_visualization1-sol_45_0.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2927,11 +2958,11 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_45_0.png" src="../_images/visualization_visualization1-sol_45_0.png" />
+<img alt="../_images/visualization_visualization1-sol_47_0.png" src="../_images/visualization_visualization1-sol_47_0.png" />
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2944,7 +2975,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2973,11 +3004,11 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_48_0.png" src="../_images/visualization_visualization1-sol_48_0.png" />
+<img alt="../_images/visualization_visualization1-sol_50_0.png" src="../_images/visualization_visualization1-sol_50_0.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2989,11 +3020,11 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_50_0.png" src="../_images/visualization_visualization1-sol_50_0.png" />
+<img alt="../_images/visualization_visualization1-sol_52_0.png" src="../_images/visualization_visualization1-sol_52_0.png" />
 </div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3005,7 +3036,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3034,174 +3065,14 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_53_0.png" src="../_images/visualization_visualization1-sol_53_0.png" />
-</div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
 <img alt="../_images/visualization_visualization1-sol_55_0.png" src="../_images/visualization_visualization1-sol_55_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Showing-degrees-per-node">
-<h3>Showing degrees per node<a class="headerlink" href="#Showing-degrees-per-node" title="Permalink to this headline">¶</a></h3>
-<p>Going back to the indegrees and outdegrees as seen in <a class="reference external" href="https://en.softpython.org/relational/relational1-intro-sol.html#Simple-statistics">Relational data - Simple statistics paragraph</a>, we will try to study the distributions visually.</p>
-<p>Let’s take an example networkx DiGraph:</p>
-<div class="nbinput docutils container">
+</div><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
-
-<span class="n">G1</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">({</span>
-    <span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;b&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;c&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;d&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>
-<span class="p">})</span>
-
-<span class="n">draw_nx</span><span class="p">(</span><span class="n">G1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_58_0.png" src="../_images/visualization_visualization1-sol_58_0.png" />
-</div>
-</div>
-</div>
-<div class="section" id="indegree-per-node">
-<h3>indegree per node<a class="headerlink" href="#indegree-per-node" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ Display a plot for graph <code class="docutils literal notranslate"><span class="pre">G</span></code> where the xtick labels are the nodes, and the y is the indegree of those nodes.</p>
-<p><strong>Note:</strong> instead of <code class="docutils literal notranslate"><span class="pre">xticks</span></code> you might directly use <a class="reference external" href="https://matplotlib.org/gallery/lines_bars_and_markers/categorical_variables.html">categorical variables</a> IF you have matplotlib &gt;= 2.1.0</p>
-<p>Here we use <code class="docutils literal notranslate"><span class="pre">xticks</span></code> as sometimes you might need to fiddle with them anyway</p>
-<p>To get the nodes, you can use the <code class="docutils literal notranslate"><span class="pre">G1.nodes()</span></code> function:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-NodeView((&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;))
-</pre></div></div>
-</div>
-<p>It gives back a <code class="docutils literal notranslate"><span class="pre">NodeView</span></code> which is not a list, but still you can iterate through it with a <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">in</span></code> cycle:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-a
-b
-c
-d
-</pre></div></div>
-</div>
-<p>Also, you can get the indegree of a node with</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G1</span><span class="o">.</span><span class="n">in_degree</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-4
-</pre></div></div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here the solution</span>
-
-</pre></div>
-</div>
-</div>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
-
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">G1</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">())</span>
-<span class="n">ys_in</span> <span class="o">=</span> <span class="p">[</span><span class="n">G1</span><span class="o">.</span><span class="n">in_degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span> <span class="p">]</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys_in</span><span class="p">,</span>  <span class="s1">&#39;bo&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">ys_in</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;G1 Indegrees per node solution&quot;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">())</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;node&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;indegree&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_67_0.png" src="../_images/visualization_visualization1-sol_67_0.png" />
-</div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span>
 </pre></div>
 </div>
@@ -3210,16 +3081,16 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_69_0.png" src="../_images/visualization_visualization1-sol_69_0.png" />
+<img alt="../_images/visualization_visualization1-sol_57_0.png" src="../_images/visualization_visualization1-sol_57_0.png" />
 </div>
 </div>
 </div>
 </div>
 <div class="section" id="Bar-plots">
 <h2>Bar plots<a class="headerlink" href="#Bar-plots" title="Permalink to this headline">¶</a></h2>
-<p>The previous plot with dots doesn’t look so good - we might try to use instead a bar plot. First look at this this example, then proceed with the next exercise</p>
+<p>First look at this this example, then proceed with the next exercises</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3227,7 +3098,7 @@ d
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="n">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-<span class="n">ys</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span> <span class="p">]</span>
+<span class="n">ys</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span>
         <span class="mf">0.5</span><span class="p">,</span>             <span class="c1"># the width of the bars</span>
@@ -3242,107 +3113,56 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_71_0.png" src="../_images/visualization_visualization1-sol_71_0.png" />
+<img alt="../_images/visualization_visualization1-sol_59_0.png" src="../_images/visualization_visualization1-sol_59_0.png" />
 </div>
 </div>
-<div class="section" id="indegree-per-node-bar-plot">
-<h3>indegree per node bar plot<a class="headerlink" href="#indegree-per-node-bar-plot" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ Display a <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html">bar plot</a> for graph <code class="docutils literal notranslate"><span class="pre">G1</span></code> where the xtick labels are the nodes, and the y is the indegree of those nodes.</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-
-</pre></div>
-</div>
-</div>
+<div class="section" id="Exercise---Goleadors">
+<h3>Exercise - Goleadors<a class="headerlink" href="#Exercise---Goleadors" title="Permalink to this headline">¶</a></h3>
+<p>✪✪ Display a bar plot of football players and their total goals in top-level football competitions (as of 2021), with their names sorted alphabetically</p>
+<p>EXPECTED OUTPUT: <img alt="expected-goleadors.png" src="../_images/expected-goleadors.png" /></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">G1</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">())</span>
-<span class="n">ys_in</span> <span class="o">=</span> <span class="p">[</span><span class="n">G1</span><span class="o">.</span><span class="n">in_degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span> <span class="p">]</span>
 
+<span class="n">players</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Cristiano Ronaldo&quot;</span> <span class="p">:</span> <span class="mi">795</span><span class="p">,</span>
+    <span class="s2">&quot;Pelé&quot;</span> <span class="p">:</span> <span class="mi">765</span><span class="p">,</span>
+    <span class="s2">&quot;Lionel Messi&quot;</span> <span class="p">:</span> <span class="mi">755</span><span class="p">,</span>
+    <span class="s2">&quot;Romário&quot;</span> <span class="p">:</span> <span class="mi">753</span><span class="p">,</span>
+    <span class="s2">&quot;Ferenc Puskás&quot;</span> <span class="p">:</span> <span class="mi">729</span><span class="p">,</span>
+    <span class="s2">&quot;Josef Bican&quot;</span><span class="p">:</span> <span class="mi">720</span><span class="p">,</span>
+    <span class="s2">&quot;Jimmy Jones&quot;</span><span class="p">:</span> <span class="mi">647</span>
+<span class="p">}</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys_in</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+<span class="c1">#players={&quot;Zlatan Ibrahimović&quot;: 566, &quot;Alfredo Di Stéfano&quot;: 530}</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;G1 Indegrees per node solution&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">())</span>
+<span class="c1"># write here</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;node&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;indegree&#39;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_75_0.png" src="../_images/visualization_visualization1-sol_75_0.png" />
-</div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_77_0.png" src="../_images/visualization_visualization1-sol_77_0.png" />
-</div>
-</div>
-</div>
-<div class="section" id="indegree-per-node-sorted-alphabetically">
-<h3>indegree per node sorted alphabetically<a class="headerlink" href="#indegree-per-node-sorted-alphabetically" title="Permalink to this headline">¶</a></h3>
-<p>✪✪ Display the same bar plot as before, but now sort nodes alphabetically.</p>
-<p>NOTE: you cannot run <code class="docutils literal notranslate"><span class="pre">.sort()</span></code> method on the result given by <code class="docutils literal notranslate"><span class="pre">G1.nodes()</span></code>, because nodes in network by default have no inherent order. To use <code class="docutils literal notranslate"><span class="pre">.sort()</span></code> you need first to convert the result to a <code class="docutils literal notranslate"><span class="pre">list</span></code> object.</p>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">players</span><span class="p">))</span>
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">xs_labels</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">players</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 
-<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">G1</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">())</span>
+<span class="n">ys</span> <span class="o">=</span> <span class="p">[</span><span class="n">players</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">xs_labels</span> <span class="p">]</span>
 
-<span class="n">xs_labels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">())</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
 
-<span class="n">xs_labels</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-
-<span class="n">ys_in</span> <span class="o">=</span> <span class="p">[</span><span class="n">G1</span><span class="o">.</span><span class="n">in_degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">xs_labels</span> <span class="p">]</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys_in</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;G1 Indegrees per node, sorted labels solution&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Goals in top-level football competitions as of 2021&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">xs_labels</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;node&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;indegree&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Football player&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Goals&#39;</span><span class="p">)</span>
+
+
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -3352,80 +3172,88 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_80_0.png" src="../_images/visualization_visualization1-sol_80_0.png" />
+<img alt="../_images/visualization_visualization1-sol_62_0.png" src="../_images/visualization_visualization1-sol_62_0.png" />
 </div>
 </div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_82_0.png" src="../_images/visualization_visualization1-sol_82_0.png" />
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+
+<span class="n">players</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Cristiano Ronaldo&quot;</span> <span class="p">:</span> <span class="mi">795</span><span class="p">,</span>
+    <span class="s2">&quot;Pelé&quot;</span> <span class="p">:</span> <span class="mi">765</span><span class="p">,</span>
+    <span class="s2">&quot;Lionel Messi&quot;</span> <span class="p">:</span> <span class="mi">755</span><span class="p">,</span>
+    <span class="s2">&quot;Romário&quot;</span> <span class="p">:</span> <span class="mi">753</span><span class="p">,</span>
+    <span class="s2">&quot;Ferenc Puskás&quot;</span> <span class="p">:</span> <span class="mi">729</span><span class="p">,</span>
+    <span class="s2">&quot;Josef Bican&quot;</span><span class="p">:</span> <span class="mi">720</span><span class="p">,</span>
+    <span class="s2">&quot;Jimmy Jones&quot;</span><span class="p">:</span> <span class="mi">647</span>
+<span class="p">}</span>
+
+<span class="c1">#players={&quot;Zlatan Ibrahimović&quot;: 566, &quot;Alfredo Di Stéfano&quot;: 530}</span>
+
+<span class="c1"># write here</span>
+
 
 </pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="indegree-per-node-sorted">
-<h3>indegree per node sorted<a class="headerlink" href="#indegree-per-node-sorted" title="Permalink to this headline">¶</a></h3>
-<p>✪✪✪ Display the same bar plot as before, but now sort nodes according to their indegree. This is more challenging, to do it you need to use some sort trick. First read the <a class="reference external" href="https://docs.python.org/3/howto/sorting.html#key-functions">Python documentation</a> and then:</p>
+<div class="section" id="Exercise---sorting-chemical-elements">
+<h3>Exercise - sorting chemical elements<a class="headerlink" href="#Exercise---sorting-chemical-elements" title="Permalink to this headline">¶</a></h3>
+<p>✪✪✪ Given multiple lists representig data about chemical elements, show a bar plot where symbols and names are sorted alphabetically according to their name.</p>
+<ul class="simple">
+<li><p>show elements as <em>name (symbol)</em></p></li>
+</ul>
+<p><strong>REMEMBER</strong> title and axis labels, make sure all texts are clearly visible</p>
+<p><strong>HINT</strong>: This is more challenging, you need some sort trick - First read the <a class="reference external" href="https://docs.python.org/3/howto/sorting.html#key-functions">Python documentation</a> and then:</p>
 <ol class="arabic simple">
-<li><p>create a list of couples (list of tuples) where each tuple is the node identifier and the corresponding indegree</p></li>
+<li><p>create a list of couples (list of tuples) where each tuple is the node identifier and the corresponding weight</p></li>
 <li><p>sort the list by using the second value of the tuples as a key.</p></li>
 </ol>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-</pre></div>
-</div>
-</div>
+<p>EXPECTED OUTPUT:</p>
+<p><img alt="expected-chemical-elements.png" src="../_images/expected-chemical-elements.png" /></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">G1</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">())</span>
+<span class="n">symbols</span>       <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;He&#39;</span><span class="p">,</span> <span class="s1">&#39;Li&#39;</span><span class="p">,</span> <span class="s1">&#39;Be&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">]</span>
+<span class="n">names</span>         <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hydrogen&#39;</span><span class="p">,</span> <span class="s1">&#39;helium&#39;</span><span class="p">,</span> <span class="s1">&#39;lithium&#39;</span><span class="p">,</span> <span class="s1">&#39;beryllium&#39;</span><span class="p">,</span> <span class="s1">&#39;boron&#39;</span><span class="p">,</span> <span class="s1">&#39;carbon&#39;</span><span class="p">,</span> <span class="s1">&#39;nitrogen&#39;</span><span class="p">]</span>
+<span class="n">atomic_weight</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.008</span><span class="p">,</span> <span class="mf">4.0026</span><span class="p">,</span> <span class="mf">6.94</span><span class="p">,</span> <span class="mf">9.0122</span><span class="p">,</span> <span class="mf">10.81</span><span class="p">,</span> <span class="mf">12.011</span><span class="p">,</span> <span class="mf">14.007</span><span class="p">]</span>
 
-<span class="n">coords</span> <span class="o">=</span> <span class="p">[(</span><span class="n">v</span><span class="p">,</span> <span class="n">G1</span><span class="o">.</span><span class="n">in_degree</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span> <span class="p">]</span>
+<span class="c1"># write here</span>
 
-<span class="n">coords</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
 
-<span class="n">ys_in</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">]</span>
+<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">symbols</span><span class="p">))</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys_in</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">names</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">symbols</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span><span class="p">,</span> <span class="n">atomic_weight</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">symbols</span><span class="p">))</span> <span class="p">]</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;G1 Indegrees per node, sorted by indegree solution&quot;</span><span class="p">)</span>
+<span class="n">coords</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">ys</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Chemical elements&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">])</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;node&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;indegree&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Elements&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Atomic weight&#39;</span><span class="p">)</span>
+
+
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -3435,358 +3263,44 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_87_0.png" src="../_images/visualization_visualization1-sol_87_0.png" />
+<img alt="../_images/visualization_visualization1-sol_68_0.png" src="../_images/visualization_visualization1-sol_68_0.png" />
 </div>
 </div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">symbols</span>       <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;He&#39;</span><span class="p">,</span> <span class="s1">&#39;Li&#39;</span><span class="p">,</span> <span class="s1">&#39;Be&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">]</span>
+<span class="n">names</span>         <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hydrogen&#39;</span><span class="p">,</span> <span class="s1">&#39;helium&#39;</span><span class="p">,</span> <span class="s1">&#39;lithium&#39;</span><span class="p">,</span> <span class="s1">&#39;beryllium&#39;</span><span class="p">,</span> <span class="s1">&#39;boron&#39;</span><span class="p">,</span> <span class="s1">&#39;carbon&#39;</span><span class="p">,</span> <span class="s1">&#39;nitrogen&#39;</span><span class="p">]</span>
+<span class="n">atomic_weight</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.008</span><span class="p">,</span> <span class="mf">4.0026</span><span class="p">,</span> <span class="mf">6.94</span><span class="p">,</span> <span class="mf">9.0122</span><span class="p">,</span> <span class="mf">10.81</span><span class="p">,</span> <span class="mf">12.011</span><span class="p">,</span> <span class="mf">14.007</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
 </div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_89_0.png" src="../_images/visualization_visualization1-sol_89_0.png" />
-</div>
-</div>
-</div>
-<div class="section" id="out-degrees-per-node-sorted">
-<h3>out degrees per node sorted<a class="headerlink" href="#out-degrees-per-node-sorted" title="Permalink to this headline">¶</a></h3>
-<p>✪✪✪ Do the same graph as before for the outdegrees.</p>
-<p>You can get the outdegree of a node with:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G1</span><span class="o">.</span><span class="n">out_degree</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-3
-</pre></div></div>
-</div>
+<div class="section" id="Exercise---double-bars">
+<h3>Exercise - double bars<a class="headerlink" href="#Exercise---double-bars" title="Permalink to this headline">¶</a></h3>
+<p>✪✪✪✪ Each year a contest between the super-heroes of two crime-ridden cities is held. The superheroes perform several challenges and each city receives a score. At the end, the mayor of each city wants to see how its city compared against the other city. The mayor wants you to show the performances in <strong>sorted</strong> order with respect to the mayor’s <code class="docutils literal notranslate"><span class="pre">city</span></code>, while showing also the performance of the other city for comparison. For example, here the performances of Gotham City are shown in sorted
+order:</p>
+<p>Look at <a class="reference external" href="https://matplotlib.org/gallery/lines_bars_and_markers/barchart.html#sphx-glr-gallery-lines-bars-and-markers-barchart-py">this example</a>, and make a double bar chart</p>
+<ul class="simple">
+<li><p>specify the city in the title</p></li>
+<li><p>remember x and y axis labels</p></li>
+</ul>
+<p>EXPECTED OUTPUT:</p>
+<p><img alt="expected-superhero-perf" src="../_images/expected-superhero-perf.png" /></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">G1</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">())</span>
-
-<span class="n">coords</span> <span class="o">=</span> <span class="p">[(</span><span class="n">v</span><span class="p">,</span> <span class="n">G1</span><span class="o">.</span><span class="n">out_degree</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span> <span class="p">]</span>
-
-<span class="n">coords</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-<span class="n">ys_out</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">]</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys_out</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;G1 Outdegrees per node sorted solution&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">])</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;node&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;outdegree&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_94_0.png" src="../_images/visualization_visualization1-sol_94_0.png" />
-</div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_96_0.png" src="../_images/visualization_visualization1-sol_96_0.png" />
-</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="degrees-per-node">
-<h3>degrees per node<a class="headerlink" href="#degrees-per-node" title="Permalink to this headline">¶</a></h3>
-<p>✪✪✪ We might check as well the sorted degrees per node, intended as the sum of in_degree and out_degree. To get the sum, use <code class="docutils literal notranslate"><span class="pre">G1.degree(node)</span></code> function.</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here the solution</span>
-
-
-</pre></div>
-</div>
-</div>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
-
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">G1</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">())</span>
-
-<span class="n">coords</span> <span class="o">=</span> <span class="p">[(</span><span class="n">v</span><span class="p">,</span> <span class="n">G1</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span> <span class="p">]</span>
-
-<span class="n">coords</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-<span class="n">ys_deg</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">]</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys_deg</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;G1 degrees per node sorted SOLUTION&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">])</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;node&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;degree&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_101_0.png" src="../_images/visualization_visualization1-sol_101_0.png" />
-</div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_103_0.png" src="../_images/visualization_visualization1-sol_103_0.png" />
-</div>
-</div>
-<p>✪✪✪✪ <strong>EXERCISE</strong>: Look at <a class="reference external" href="https://matplotlib.org/gallery/lines_bars_and_markers/barchart.html#sphx-glr-gallery-lines-bars-and-markers-barchart-py">this example</a>, and make a double bar chart sorting nodes by their <em>total</em> degree. To do so, in the tuples you will need <code class="docutils literal notranslate"><span class="pre">vertex</span></code>, <code class="docutils literal notranslate"><span class="pre">in_degree</span></code>, <code class="docutils literal notranslate"><span class="pre">out_degree</span></code> and also <code class="docutils literal notranslate"><span class="pre">degree</span></code>.</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-</pre></div>
-</div>
-</div>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
-
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">G1</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">())</span>
-
-<span class="n">coords</span> <span class="o">=</span> <span class="p">[(</span><span class="n">v</span><span class="p">,</span> <span class="n">G1</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">v</span><span class="p">),</span> <span class="n">G1</span><span class="o">.</span><span class="n">in_degree</span><span class="p">(</span><span class="n">v</span><span class="p">),</span> <span class="n">G1</span><span class="o">.</span><span class="n">out_degree</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span> <span class="p">]</span>
-
-<span class="n">coords</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-<span class="n">ys_deg</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">]</span>
-<span class="n">ys_in</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">]</span>
-<span class="n">ys_out</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">]</span>
-
-
-<span class="n">width</span> <span class="o">=</span> <span class="mf">0.35</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
-<span class="n">rects1</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span> <span class="o">-</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">ys_in</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span>
-                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;SkyBlue&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;indegrees&#39;</span><span class="p">)</span>
-<span class="n">rects2</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">xs</span> <span class="o">+</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">ys_out</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span>
-                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;IndianRed&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;outdegrees&#39;</span><span class="p">)</span>
-
-<span class="c1"># Add some text for labels, title and custom x-axis tick labels, etc.</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;G1 in and out degrees per node SOLUTION&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coords</span><span class="p">])</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_107_0.png" src="../_images/visualization_visualization1-sol_107_0.png" />
-</div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_109_0.png" src="../_images/visualization_visualization1-sol_109_0.png" />
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="Frequency-histogram">
-<h2>Frequency histogram<a class="headerlink" href="#Frequency-histogram" title="Permalink to this headline">¶</a></h2>
-<p>Now let’s try to draw degree frequencies, that is, for each degree present in the graph we want to display a bar as high as the number of times that particular degree appears.</p>
-<p>For doing so, we will need a matplot histogram, see <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html">documentation</a></p>
-<p>We will need to tell matplotlib how many columns we want, which in histogram terms are called <em>bins</em>. We also need to give the histogram a series of numbers so it can count how many times each number occurs. Let’s consider this graph <code class="docutils literal notranslate"><span class="pre">G2</span></code>:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
-
-<span class="n">G2</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">({</span>
-    <span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;b&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;c&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;d&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;e&#39;</span><span class="p">:[],</span>
-    <span class="s1">&#39;f&#39;</span><span class="p">:[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;g&#39;</span><span class="p">:[</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">]</span>
-<span class="p">})</span>
-
-
-<span class="n">draw_nx</span><span class="p">(</span><span class="n">G2</span><span class="p">)</span>
-
-
-
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_112_0.png" src="../_images/visualization_visualization1-sol_112_0.png" />
-</div>
-</div>
-<p>If we take the the degree sequence of <code class="docutils literal notranslate"><span class="pre">G2</span></code> we get this:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">degrees_G2</span> <span class="o">=</span> <span class="p">[</span><span class="n">G2</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G2</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
-
-<span class="n">degrees_G2</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-[3, 7, 6, 7, 3, 3, 3]
-</pre></div></div>
-</div>
-<p>We see 3 appears four times, 6 once, and seven twice.</p>
-<p>Let’s try to determine a good number for the bins. First we can check the boundaries our x axis should have:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">min</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-3
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">max</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-7
-</pre></div></div>
-</div>
-<p>So our histogram on the x axis must go at least from 3 and at least to 7. If we want integer columns (bins), we will need at least ticks for going from 3 included to 7 included, so at least ticks for 3,4,5,6,7. For getting precise display, wen we have integer x it is best to also manually provide the sequence of bin edges, remembering it should start at least from the minimum <em>included</em> (in our case, 3) and arrive to the maximum + 1 <em>included</em> (in our case, 7 + 1 = 8)</p>
-<p><strong>NOTE</strong>: precise histogram drawing can be quite tricky, please do read <a class="reference external" href="https://stackoverflow.com/a/27084005">this StackOverflow post</a> for more details about it.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3794,22 +3308,51 @@ d
 <span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="n">degrees</span> <span class="o">=</span> <span class="p">[</span><span class="n">G2</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G2</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Punching glasses&#39;</span>   <span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">5</span><span class="p">),</span>
+    <span class="s1">&#39;Kicking the tires&#39;</span>  <span class="p">:</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span>  <span class="mi">5</span><span class="p">),</span>
+    <span class="s1">&#39;Throwing cars&#39;</span>      <span class="p">:</span> <span class="p">(</span><span class="mf">5.5</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span>
+    <span class="s1">&#39;Hot oil bath&#39;</span>       <span class="p">:</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span>  <span class="mi">7</span><span class="p">),</span>
+    <span class="s1">&#39;Jumping on the wall&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">1.5</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+    <span class="s1">&#39;Arresting mutants&#39;</span>  <span class="p">:</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span>  <span class="mi">3</span><span class="p">),</span>
+<span class="p">}</span>
 
-<span class="c1"># add histogram</span>
+<span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Gotham City&#39;</span>
+<span class="n">cities</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Gotham City&#39;</span><span class="p">,</span> <span class="s1">&#39;Metropolis&#39;</span><span class="p">]</span>
+<span class="c1">#city= &#39;Sin City&#39;</span>
+<span class="c1">#cities = [&#39;District X&#39;, &#39;Sin City&#39;]</span>
 
-<span class="c1"># in this case hist returns a tuple of three values</span>
-<span class="c1"># we put in three variables</span>
-<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">,</span>
-                            <span class="n">bins</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span>  <span class="c1">#  3 *included* , 4, 5, 6, 7, 8 *included*</span>
-                            <span class="n">width</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>        <span class="c1">#  graphical width of the bars</span>
+<span class="c1"># write here</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Degrees&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency counts&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;G2 Degree distribution&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">degrees</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ind</span> <span class="o">=</span> <span class="n">cities</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">ind</span><span class="p">])</span>
+<span class="n">perf1</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
+<span class="n">perf2</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span>  <span class="c1"># the label locations</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mf">0.35</span>                <span class="c1"># the width of the bars</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">rects1</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">perf1</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">rects2</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">perf2</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">cities</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1"># Add some text for labels, title and custom x-axis tick labels, etc.</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Scores&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Challenges&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Superhero performances by challenge.</span><span class="se">\n</span><span class="s1">Sorting by: &#39;</span>  <span class="o">+</span> <span class="n">city</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">rects1</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">rects2</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+
+
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
 </pre></div>
 </div>
 </div>
@@ -3817,102 +3360,49 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_119_0.png" src="../_images/visualization_visualization1-sol_119_0.png" />
+<img alt="../_images/visualization_visualization1-sol_73_0.png" src="../_images/visualization_visualization1-sol_73_0.png" />
 </div>
 </div>
-<p>As expected we see 3 is counted four times, 6 once, and seven twice.</p>
-<p>✪✪✪ <strong>EXERCISE</strong>: Still, it would be visually better to align the x ticks to the middle of the bars with <code class="docutils literal notranslate"><span class="pre">xticks</span></code>, and also to make the graph more tight by setting the <code class="docutils literal notranslate"><span class="pre">xlim</span></code> appropriately. This is not always easy to do.</p>
-<p>Read carefully <a class="reference external" href="https://stackoverflow.com/a/27084005">this StackOverflow post</a> and try do it by yourself.</p>
-<p><strong>NOTE</strong>: set <em>one thing at a time</em> and try if it works(i.e. first xticks and then xlim), doing everything at once might get quite confusing</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here the solution</span>
 
-
-</pre></div>
-</div>
-</div>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
-
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="n">degrees</span> <span class="o">=</span> <span class="p">[</span><span class="n">G2</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G2</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Punching glasses&#39;</span>   <span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">5</span><span class="p">),</span>
+    <span class="s1">&#39;Kicking the tires&#39;</span>  <span class="p">:</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span>  <span class="mi">5</span><span class="p">),</span>
+    <span class="s1">&#39;Throwing cars&#39;</span>      <span class="p">:</span> <span class="p">(</span><span class="mf">5.5</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span>
+    <span class="s1">&#39;Hot oil bath&#39;</span>       <span class="p">:</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span>  <span class="mi">7</span><span class="p">),</span>
+    <span class="s1">&#39;Jumping on the wall&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mf">1.5</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+    <span class="s1">&#39;Arresting mutants&#39;</span>  <span class="p">:</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span>  <span class="mi">3</span><span class="p">),</span>
+<span class="p">}</span>
 
-<span class="c1"># add histogram</span>
+<span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Gotham City&#39;</span>
+<span class="n">cities</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Gotham City&#39;</span><span class="p">,</span> <span class="s1">&#39;Metropolis&#39;</span><span class="p">]</span>
+<span class="c1">#city= &#39;Sin City&#39;</span>
+<span class="c1">#cities = [&#39;District X&#39;, &#39;Sin City&#39;]</span>
 
-<span class="n">min_x</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">degrees</span><span class="p">)</span>      <span class="c1"># 3</span>
-<span class="n">max_x</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">degrees</span><span class="p">)</span>      <span class="c1"># 7</span>
-<span class="n">bar_width</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="c1"># write here</span>
 
-<span class="c1"># in this case hist returns a tuple of three values</span>
-<span class="c1"># we put in three variables</span>
-<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">,</span>
-                            <span class="n">bins</span><span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span>  <span class="c1"># 3 *included* to  9 *excluded*</span>
-                                               <span class="c1"># it is like the xs, but with one number more !!</span>
-                                               <span class="c1"># to understand why read this</span>
-                                               <span class="c1"># https://stackoverflow.com/questions/27083051/matplotlib-xticks-not-lining-up-with-histogram/27084005#27084005</span>
-                            <span class="n">width</span><span class="o">=</span><span class="n">bar_width</span><span class="p">)</span>        <span class="c1">#  graphical width of the bars</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Degrees&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency counts&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;G2 Degree distribution, tight graph SOLUTION&#39;</span><span class="p">)</span>
-
-
-<span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">min_x</span><span class="p">,</span><span class="n">max_x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># 3 *included* to 8 *excluded*</span>
-                                 <span class="c1"># used numpy so we can later reuse it for float vector operations</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">xs</span> <span class="o">+</span> <span class="n">bar_width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span>  <span class="c1"># position of ticks</span>
-           <span class="n">xs</span> <span class="p">)</span>                 <span class="c1"># labels of ticks</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="n">min_x</span><span class="p">,</span> <span class="n">max_x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1">#  3 *included* to 8 *excluded*</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_124_0.png" src="../_images/visualization_visualization1-sol_124_0.png" />
-</div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_126_0.png" src="../_images/visualization_visualization1-sol_126_0.png" />
 </div>
 </div>
 </div>
 <div class="section" id="Showing-plots-side-by-side">
 <h2>Showing plots side by side<a class="headerlink" href="#Showing-plots-side-by-side" title="Permalink to this headline">¶</a></h2>
-<p>You can display plots on a grid. Each cell in the grid is idientified by only one number. For example, for a grid of two rows and three columns, you would have cells indexed like this:</p>
+<p>You can display plots on a grid. Each cell in the grid is identified by only one number. For example, for a grid of two rows and three columns, you would have cells indexed like this:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1 2 3
 4 5 6
 </pre></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3978,6 +3468,7 @@ d
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span><span class="n">ys6</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;6th cell&#39;</span><span class="p">)</span>
 
+<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">wspace</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">hspace</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># to avoid text overlapping</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -3986,137 +3477,82 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_128_0.png" src="../_images/visualization_visualization1-sol_128_0.png" />
+<img alt="../_images/visualization_visualization1-sol_77_0.png" src="../_images/visualization_visualization1-sol_77_0.png" />
 </div>
 </div>
-<div class="section" id="Graph-models">
-<h3>Graph models<a class="headerlink" href="#Graph-models" title="Permalink to this headline">¶</a></h3>
-<p>Let’s study frequencies of some known network types.</p>
-<div class="section" id="Erdős–Rényi-model">
-<h4>Erdős–Rényi model<a class="headerlink" href="#Erdős–Rényi-model" title="Permalink to this headline">¶</a></h4>
-<p>✪✪ A simple graph model we can think of is the so-called <a class="reference external" href="https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model">Erdős–Rényi model</a>: is is an <em>undirected</em> graph where have <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes, and each node is connected to each other with probability <code class="docutils literal notranslate"><span class="pre">p</span></code>. In networkx, we can generate a random one by issuing this command:</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">erdos_renyi_graph</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<p>In the drawing, by looking the absence of arrows confirms it is undirected:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_134_0.png" src="../_images/visualization_visualization1-sol_134_0.png" />
-</div>
-</div>
-<p>Try plotting degree distribution for different values of <code class="docutils literal notranslate"><span class="pre">p</span></code> (0.1, 0.5, 0.9) with a fixed <code class="docutils literal notranslate"><span class="pre">n=1000</span></code>, putting them side by side on the same row. What does their distribution look like ? Where are they centered ?</p>
-<p>To avoid rewriting the same code again and again, define a <code class="docutils literal notranslate"><span class="pre">plot_erdos(n,p,j)</span></code> function to be called three times.</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here the solution</span>
-
-
-</pre></div>
-</div>
-</div>
+<div class="section" id="Exercise---sin(kx)">
+<h3>Exercise - sin(kx)<a class="headerlink" href="#Exercise---sin(kx)" title="Permalink to this headline">¶</a></h3>
+<p>Given a list <code class="docutils literal notranslate"><span class="pre">ks</span></code> containing <span class="math notranslate nohighlight">\(n\)</span> floats, show <span class="math notranslate nohighlight">\(n\)</span> plots of function <span class="math notranslate nohighlight">\(sin(k x)\)</span> from <code class="docutils literal notranslate"><span class="pre">left</span></code> to <code class="docutils literal notranslate"><span class="pre">right</span></code> with 50 subdivisions stacked vertically.</p>
+<ul class="simple">
+<li><p>display the <code class="docutils literal notranslate"><span class="pre">k</span></code> values as titles</p></li>
+<li><p>define a function <code class="docutils literal notranslate"><span class="pre">plot_sin</span></code> to be called <span class="math notranslate nohighlight">\(n\)</span> times</p></li>
+<li><p>put adequate vertical space</p></li>
+<li><p><strong>HINT</strong>: use numpy vector operations</p></li>
+<li><p><strong>REMEMBER</strong> <code class="docutils literal notranslate"><span class="pre">plt.show</span></code> must be called only <strong>ONCE</strong> in the whole program !</p></li>
+</ul>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
 
+<span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">math</span>
 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">ks</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 
-<span class="k">def</span> <span class="nf">plot_erdos</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
-    <span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">erdos_renyi_graph</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+<span class="c1"># write here</span>
 
-    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span>   <span class="c1"># 1 row</span>
-                <span class="mi">3</span><span class="p">,</span>   <span class="c1"># 3 columns</span>
-                <span class="n">j</span><span class="p">)</span>   <span class="c1"># plotting in jth cell</span>
+<span class="k">def</span> <span class="nf">plot_sin</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+    <span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ks</span><span class="p">),</span>   <span class="c1"># rows</span>
+                <span class="mi">1</span><span class="p">,</span>   <span class="c1"># columns</span>
+                <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># cell number</span>
+    <span class="n">ys</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">k</span> <span class="o">*</span> <span class="n">xs</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;sin(</span><span class="si">%s</span><span class="s2">x)&quot;</span> <span class="o">%</span> <span class="n">k</span><span class="p">)</span>
 
-    <span class="n">degrees</span> <span class="o">=</span> <span class="p">[</span><span class="n">G</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
-    <span class="n">num_bins</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
 
-    <span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">degrees</span><span class="p">,</span> <span class="n">num_bins</span><span class="p">,</span>  <span class="n">width</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ks</span><span class="p">)):</span>
+    <span class="n">plot_sin</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">ks</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">i</span><span class="p">)</span>
 
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Degrees&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency counts&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;p = </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">p</span><span class="p">)</span>
-
-<span class="n">n</span> <span class="o">=</span> <span class="mi">1000</span>
-
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>  <span class="c1"># width: 10 inches, height 3 inches</span>
-
-<span class="n">plot_erdos</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">plot_erdos</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">plot_erdos</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                           Erdős–Rényi degree distribution SOLUTION&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">wspace</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">hspace</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>  <span class="c1"># to avoid text overlapping</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-
-                                           Erdős–Rényi degree distribution SOLUTION
-</pre></div></div>
-</div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_138_1.png" src="../_images/visualization_visualization1-sol_138_1.png" />
+<img alt="../_images/visualization_visualization1-sol_80_0.png" src="../_images/visualization_visualization1-sol_80_0.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+
+<span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">ks</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="c1"># write here</span>
+
+
 </pre></div>
 </div>
-</div>
-<div class="nboutput docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-
-                                           Erdős–Rényi degree distribution SOLUTION
-</pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_140_1.png" src="../_images/visualization_visualization1-sol_140_1.png" />
-</div>
+<img alt="../_images/visualization_visualization1-sol_82_0.png" src="../_images/visualization_visualization1-sol_82_0.png" />
 </div>
 </div>
 </div>
@@ -4127,7 +3563,7 @@ d
 <div class="section" id="Pie-chart">
 <h3>Pie chart<a class="headerlink" href="#Pie-chart" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4147,7 +3583,7 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_143_0.png" src="../_images/visualization_visualization1-sol_143_0.png" />
+<img alt="../_images/visualization_visualization1-sol_85_0.png" src="../_images/visualization_visualization1-sol_85_0.png" />
 </div>
 </div>
 </div>
@@ -4158,7 +3594,7 @@ d
 <div class="section" id="Background-color">
 <h3>Background color<a class="headerlink" href="#Background-color" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4173,11 +3609,11 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_146_0.png" src="../_images/visualization_visualization1-sol_146_0.png" />
+<img alt="../_images/visualization_visualization1-sol_88_0.png" src="../_images/visualization_visualization1-sol_88_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4191,14 +3627,14 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_147_0.png" src="../_images/visualization_visualization1-sol_147_0.png" />
+<img alt="../_images/visualization_visualization1-sol_89_0.png" src="../_images/visualization_visualization1-sol_89_0.png" />
 </div>
 </div>
 </div>
 <div class="section" id="Text">
 <h3>Text<a class="headerlink" href="#Text" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4221,16 +3657,15 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_149_0.png" src="../_images/visualization_visualization1-sol_149_0.png" />
-</div>
+<img alt="../_images/visualization_visualization1-sol_91_0.png" src="../_images/visualization_visualization1-sol_91_0.png" />
 </div>
 </div>
 </div>
 <div class="section" id="Images">
-<h2>Images<a class="headerlink" href="#Images" title="Permalink to this headline">¶</a></h2>
+<h3>Images<a class="headerlink" href="#Images" title="Permalink to this headline">¶</a></h3>
 <p>Let’s try adding the image <a class="reference external" href="clef.png">clef.png</a></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4259,14 +3694,15 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_151_0.png" src="../_images/visualization_visualization1-sol_151_0.png" />
+<img alt="../_images/visualization_visualization1-sol_93_0.png" src="../_images/visualization_visualization1-sol_93_0.png" />
+</div>
 </div>
 </div>
 <div class="section" id="Color-intensity">
 <h3>Color intensity<a class="headerlink" href="#Color-intensity" title="Permalink to this headline">¶</a></h3>
 <p>To tweak the color intensity we can use the <code class="docutils literal notranslate"><span class="pre">alpha</span></code> parameter, which varies from <code class="docutils literal notranslate"><span class="pre">0.0</span></code> to <code class="docutils literal notranslate"><span class="pre">1.0</span></code></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4290,21 +3726,32 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_153_0.png" src="../_images/visualization_visualization1-sol_153_0.png" />
-</div>
+<img alt="../_images/visualization_visualization1-sol_95_0.png" src="../_images/visualization_visualization1-sol_95_0.png" />
 </div>
 </div>
 </div>
 <div class="section" id="Exercise---Be-fancy">
-<h2>Exercise - Be fancy<a class="headerlink" href="#Exercise---Be-fancy" title="Permalink to this headline">¶</a></h2>
+<h3>Exercise - Be fancy<a class="headerlink" href="#Exercise---Be-fancy" title="Permalink to this headline">¶</a></h3>
 <p>Try writing some code to visualize the image down here</p>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
+<p>EXPECTED OUTPUT</p>
+<p><img alt="expected-fancy-plot.png" src="../_images/expected-fancy-plot.png" /></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
 <span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
@@ -4353,6 +3800,8 @@ d
                             <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span>
                             <span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 
+
+
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -4361,14 +3810,15 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_156_0.png" src="../_images/visualization_visualization1-sol_156_0.png" />
+<img alt="../_images/visualization_visualization1-sol_99_0.png" src="../_images/visualization_visualization1-sol_99_0.png" />
 </div>
 </div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
 <span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
@@ -4377,12 +3827,6 @@ d
 
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<img alt="../_images/visualization_visualization1-sol_158_0.png" src="../_images/visualization_visualization1-sol_158_0.png" />
 </div>
 </div>
 </div>
