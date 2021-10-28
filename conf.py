@@ -438,7 +438,7 @@ def setup(app):
     import shutil
     shutil.copy('soft.py', 'formats/')
     shutil.copy('soft.py', 'relational/')
-    shutil.copy('soft.py', 'visualization/')
+    
 
     if 'googleanalytics_id' in globals() and globals()['googleanalytics_id']:
         print("Found googleanalytics_id")
