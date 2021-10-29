@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Analytics with Pandas - 2. EURES job offers case study &mdash; SoftPython</title>
+  <title>Analytics with Pandas - 2. EURES case study &mdash; SoftPython</title>
   
 
   
@@ -1825,6 +1825,7 @@
 <li class="toctree-l5"><a class="reference internal" href="#What-to-do">What to do</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="#Introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#offerte-dataset">offerte dataset</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rename-columns">rename columns</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#1.-Rename-countries">1. Rename countries</a><ul>
@@ -1861,9 +1862,14 @@
 <li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#First-Antonio">First Antonio</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Some-Antonio">Some Antonio</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Cesares-during-1800">Cesares during 1800</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Sorting">Sorting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Where-poets-are-born">Where poets are born</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Duplicated-poets">Duplicated poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#The-old-ones">The old ones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Cities-of-poets">Cities of poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Most-duplicated-poets">Most duplicated poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#All-duplicated-poets">All duplicated poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Northern-poets">Northern poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Papers-please">Papers please</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Unknown-poets">Unknown poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pandas3-chal.html#Better-unknown-poets">Better unknown poets</a></li>
 </ul>
 </li>
 </ul>
@@ -2062,7 +2068,7 @@
     
         <li><a href="../toc-analytics.html">Data formats</a> &raquo;</li>
     
-    <li>Analytics with Pandas - 2. EURES job offers case study</li>
+    <li>Analytics with Pandas - 2. EURES case study</li>
     -->
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -2323,8 +2329,8 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Analytics-with-Pandas---2.-EURES-job-offers-case-study">
-<h1>Analytics with Pandas - 2. EURES job offers case study<a class="headerlink" href="#Analytics-with-Pandas---2.-EURES-job-offers-case-study" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Analytics-with-Pandas---2.-EURES-case-study">
+<h1>Analytics with Pandas - 2. EURES case study<a class="headerlink" href="#Analytics-with-Pandas---2.-EURES-case-study" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="Download-exercises-and-solution">
 <h2><a class="reference external" href="../_static/generated/pandas.zip">Download exercises and solution</a><a class="headerlink" href="#Download-exercises-and-solution" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="What-to-do">
@@ -2367,6 +2373,10 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
+</div>
+</div>
+<div class="section" id="Introduction">
+<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
 <p>After exiting your school prison, when looking for a job in Europe you will be shocked to discover a great variety of languages are spoken. Many job listings are provided by <a class="reference external" href="https://ec.europa.eu/eures/public/homepage">Eures</a> portal, which is easily searchable with many fields on which you can filter. For this exercise we will use a test dataset which was generated just for a hackaton: it is a crude italian version of the job offers data, with many fields expressed in natural language. We
 will try to convert it to a dataset with more columns and translate some terms to English.</p>
 <p>Data provider: <a class="reference external" href="https://dati.trentino.it/dataset/offerte-di-lavoro-eures-test-odhb2019">Autonomous Province of Trento</a></p>
@@ -2374,7 +2384,6 @@ will try to convert it to a dataset with more columns and translate some terms t
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING</strong>: avoid constants in function bodies !!</p>
 <p>In the exercises data you will find many names such as <code class="docutils literal notranslate"><span class="pre">'Austria'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Giugno'</span></code>, etc. <strong>DO NOT</strong> put such constant names inside body of functions !! You have to write generic code which works with any input.</p>
-</div>
 </div>
 </div>
 <div class="section" id="offerte-dataset">
@@ -3303,7 +3312,7 @@ memory usage: 3.4+ KB
 <div class="section" id="1.2-Filling-column-Workplace-Country">
 <h3>1.2 Filling column Workplace Country<a class="headerlink" href="#1.2-Filling-column-Workplace-Country" title="Permalink to this headline">¶</a></h3>
 <p>✪ Now create a new column <code class="docutils literal notranslate"><span class="pre">Workplace</span> <span class="pre">Country</span></code> with data calculated using the function you just defined.</p>
-<p>To do it, check method <a class="reference external" href="https://sciprog.davidleoni.it/pandas/pandas-sol.html#7.-Transforming">transform in Pandas worksheet</a></p>
+<p>To do it, check method <a class="reference external" href="https://en.softpython.org/pandas/pandas1-sol.html#6.3-Transforming-columns">transform in Pandas worksheet</a></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -4138,10 +4147,10 @@ memory usage: 3.4+ KB
 </div>
 <div class="section" id="2.2.-From-To-columns">
 <h3>2.2. From To columns<a class="headerlink" href="#2.2.-From-To-columns" title="Permalink to this headline">¶</a></h3>
-<p>✪ Change <code class="docutils literal notranslate"><span class="pre">offers</span></code> dataframe to so add <code class="docutils literal notranslate"><span class="pre">From</span></code> and <code class="docutils literal notranslate"><span class="pre">To</span></code> columns.</p>
+<p>✪ MODIFY <code class="docutils literal notranslate"><span class="pre">offers</span></code> dataframe by adding <code class="docutils literal notranslate"><span class="pre">From</span></code> and <code class="docutils literal notranslate"><span class="pre">To</span></code> columns.</p>
 <ul class="simple">
-<li><p><strong>HINT 1</strong>: You can call transform, see Transforming section in <a class="reference external" href="https://sciprog.davidleoni.it/pandas/pandas-sol.html#7.-Transforming">Pandas worksheet</a></p></li>
-<li><p><strong>HINT 2</strong> : to extract the element you want from the tuple, you can pass to the transform a function on the fly with <code class="docutils literal notranslate"><span class="pre">lambda</span></code>. See lambdas section in <a class="reference external" href="https://sciprog.davidleoni.it/functions/functions-sol.html#Lambda-functions">Functions worksheet</a></p></li>
+<li><p><strong>HINT 1</strong>: You can call transform, see Transforming section in <a class="reference external" href="https://en.softpython.org/pandas/pandas1-sol.html#6.3-Transforming-columns">Pandas worksheet</a></p></li>
+<li><p><strong>HINT 2</strong> : to extract the element you want from the tuple, you can pass to the transform a function on the fly with <code class="docutils literal notranslate"><span class="pre">lambda</span></code>. See lambdas section in <a class="reference external" href="https://en.softpython.org/functions/fun1-intro-sol.html#Lambda-functions">Functions worksheet</a></p></li>
 </ul>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -5001,7 +5010,7 @@ memory usage: 3.4+ KB
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">text</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">:</span>   <span class="c1"># WRONG !</span>
 </pre></div>
 </div>
-<p>To see why, do read <a class="reference external" href="https://sciprog.davidleoni.it/matrices-numpy/matrices-numpy-sol.html#NaNs-and-infinities">NaNs and Infinities section in Numpy Matrices worksheet</a> !</p>
+<p>To see why, do read <a class="reference external" href="https://en.softpython.org/matrices-numpy/matrices-numpy-sol.html#NaNs-and-infinities">NaNs and Infinities section in Numpy Matrices worksheet</a> !</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">

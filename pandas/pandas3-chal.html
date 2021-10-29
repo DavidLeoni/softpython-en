@@ -50,7 +50,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Relational data 1 - introduction" href="../relational/relational1-intro-sol.html" />
-    <link rel="prev" title="Analytics with Pandas - 2. EURES job offers case study" href="pandas2-sol.html" /> 
+    <link rel="prev" title="Analytics with Pandas - 2. EURES case study" href="pandas2-sol.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -1825,6 +1825,7 @@
 <li class="toctree-l5"><a class="reference internal" href="pandas2-sol.html#What-to-do">What to do</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="pandas2-sol.html#Introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pandas2-sol.html#offerte-dataset">offerte dataset</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pandas2-sol.html#rename-columns">rename columns</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pandas2-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
@@ -1861,9 +1862,14 @@
 <li class="toctree-l4"><a class="reference internal" href="#First-Antonio">First Antonio</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Some-Antonio">Some Antonio</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Cesares-during-1800">Cesares during 1800</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Sorting">Sorting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Where-poets-are-born">Where poets are born</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Duplicated-poets">Duplicated poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#The-old-ones">The old ones</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Cities-of-poets">Cities of poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Most-duplicated-poets">Most duplicated poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#All-duplicated-poets">All duplicated poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Northern-poets">Northern poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Papers-please">Papers please</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Unknown-poets">Unknown poets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Better-unknown-poets">Better unknown poets</a></li>
 </ul>
 </li>
 </ul>
@@ -2447,7 +2453,7 @@ memory usage: 150.0+ KB
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 rows: 3198
-columns: 3198
+columns: 6
 </pre></div></div>
 </div>
 </div>
@@ -3002,7 +3008,11 @@ columns: 3198
 </div>
 <div class="section" id="Python-is-everywhere">
 <h2>Python is everywhere<a class="headerlink" href="#Python-is-everywhere" title="Permalink to this headline">¶</a></h2>
-<p>Show poets born in Catania in the year -500 (I swear I did not altered the dataset in any way :-)</p>
+<p>Show poets born in Catania in the year -500</p>
+<ul class="simple">
+<li><p>mind the minus</p></li>
+<li><p>I swear we did not altered the dataset in any way :-)</p></li>
+</ul>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
@@ -3761,9 +3771,13 @@ columns: 3198
 </div></div>
 </div>
 </div>
-<div class="section" id="Sorting">
-<h2>Sorting<a class="headerlink" href="#Sorting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="The-old-ones">
+<h2>The old ones<a class="headerlink" href="#The-old-ones" title="Permalink to this headline">¶</a></h2>
 <p>Show poets in year of birth order</p>
+<ul class="simple">
+<li><p><strong>DO NOT</strong> include in the result NaN values</p></li>
+</ul>
+<p><strong>HINT</strong>: see <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.notnull.html">pd.notnull</a></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
@@ -3862,58 +3876,58 @@ columns: 3198
       <td>...</td>
     </tr>
     <tr>
-      <th>3146</th>
-      <td>http://www.wikidata.org/entity/Q97992833</td>
-      <td>Mino da Colle</td>
-      <td>http://www.wikidata.org/entity/Q91192</td>
-      <td>Colle di Val d'Elsa</td>
-      <td>Point(11.126666666 43.4225)</td>
-      <td>NaN</td>
+      <th>3104</th>
+      <td>http://www.wikidata.org/entity/Q78162153</td>
+      <td>Q78162153</td>
+      <td>http://www.wikidata.org/entity/Q13678</td>
+      <td>Agrigento</td>
+      <td>Point(13.576547222 37.311075)</td>
+      <td>1985.0</td>
     </tr>
     <tr>
-      <th>3147</th>
-      <td>http://www.wikidata.org/entity/Q98102625</td>
-      <td>Attaviano</td>
-      <td>http://www.wikidata.org/entity/Q3437</td>
-      <td>Perugia</td>
-      <td>Point(12.3888 43.1121)</td>
-      <td>NaN</td>
+      <th>2989</th>
+      <td>http://www.wikidata.org/entity/Q58995193</td>
+      <td>Giovanni Bertoglio</td>
+      <td>http://www.wikidata.org/entity/Q495</td>
+      <td>Turin</td>
+      <td>Point(7.7 45.066666666)</td>
+      <td>1986.0</td>
     </tr>
     <tr>
-      <th>3148</th>
-      <td>http://www.wikidata.org/entity/Q98102843</td>
-      <td>Schiatta Pallavillani</td>
-      <td>http://www.wikidata.org/entity/Q2044</td>
-      <td>Florence</td>
-      <td>Point(11.254166666 43.771388888)</td>
-      <td>NaN</td>
+      <th>2986</th>
+      <td>http://www.wikidata.org/entity/Q58308029</td>
+      <td>Gio Evan</td>
+      <td>http://www.wikidata.org/entity/Q19300</td>
+      <td>Molfetta</td>
+      <td>Point(16.6 41.2)</td>
+      <td>1988.0</td>
     </tr>
     <tr>
-      <th>3149</th>
-      <td>http://www.wikidata.org/entity/Q98102965</td>
-      <td>Q98102965</td>
-      <td>http://www.wikidata.org/entity/Q2044</td>
-      <td>Florence</td>
-      <td>Point(11.254166666 43.771388888)</td>
-      <td>NaN</td>
+      <th>2374</th>
+      <td>http://www.wikidata.org/entity/Q14922292</td>
+      <td>Q14922292</td>
+      <td>http://www.wikidata.org/entity/Q80652</td>
+      <td>Battipaglia</td>
+      <td>Point(14.983333333 40.616666666)</td>
+      <td>1991.0</td>
     </tr>
     <tr>
-      <th>3150</th>
-      <td>http://www.wikidata.org/entity/Q98103344</td>
-      <td>Luporo da Lucca</td>
-      <td>http://www.wikidata.org/entity/Q13373</td>
-      <td>Lucca</td>
-      <td>Point(10.516666666 43.85)</td>
-      <td>NaN</td>
+      <th>552</th>
+      <td>http://www.wikidata.org/entity/Q1151356</td>
+      <td>D.B.P.I.T.</td>
+      <td>http://www.wikidata.org/entity/Q220</td>
+      <td>Rome</td>
+      <td>Point(12.482777777 41.893055555)</td>
+      <td>2000.0</td>
     </tr>
   </tbody>
 </table>
-<p>3198 rows × 6 columns</p>
+<p>3070 rows × 6 columns</p>
 </div></div>
 </div>
 </div>
-<div class="section" id="Where-poets-are-born">
-<h2>Where poets are born<a class="headerlink" href="#Where-poets-are-born" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Cities-of-poets">
+<h2>Cities of poets<a class="headerlink" href="#Cities-of-poets" title="Permalink to this headline">¶</a></h2>
 <p>Find the 5 cities with most poets, sorted from most to least.</p>
 <ul class="simple">
 <li><p>use <code class="docutils literal notranslate"><span class="pre">groupby</span></code> and <code class="docutils literal notranslate"><span class="pre">sort_values</span></code> methods</p></li>
@@ -3945,8 +3959,8 @@ Name: subj, dtype: int64
 </pre></div></div>
 </div>
 </div>
-<div class="section" id="Duplicated-poets">
-<h2>Duplicated poets<a class="headerlink" href="#Duplicated-poets" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Most-duplicated-poets">
+<h2>Most duplicated poets<a class="headerlink" href="#Most-duplicated-poets" title="Permalink to this headline">¶</a></h2>
 <p>Find first 10 duplicated poets</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
@@ -3980,6 +3994,581 @@ Name: subj, dtype: int64
 </pre></div></div>
 </div>
 </div>
+<div class="section" id="All-duplicated-poets">
+<h2>All duplicated poets<a class="headerlink" href="#All-duplicated-poets" title="Permalink to this headline">¶</a></h2>
+<p>Print the number of all duplicated poets</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+There are 118 duplicated poets
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Northern-poets">
+<h2>Northern poets<a class="headerlink" href="#Northern-poets" title="Permalink to this headline">¶</a></h2>
+<p>Find all the poets born north of a given <code class="docutils literal notranslate"><span class="pre">town</span></code>. In other words, look for town latitude (the second coordinate in <code class="docutils literal notranslate"><span class="pre">coords</span></code>), print it, and then filter the table.</p>
+<ul class="simple">
+<li><p><strong>DO NOT</strong> put constants like <code class="docutils literal notranslate"><span class="pre">46.5</span></code> in your code!</p></li>
+<li><p><strong>DO NOT</strong> add new columns for longitude and latitude</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">town</span> <span class="o">=</span> <span class="s1">&#39;Bolzano&#39;</span>
+<span class="c1">#town = &#39;Trento&#39;</span>
+
+<span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Latitude of Bolzano : 46.5
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>subj</th>
+      <th>subjLabel</th>
+      <th>place</th>
+      <th>placeLabel</th>
+      <th>coord</th>
+      <th>birthyear</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>27</th>
+      <td>http://www.wikidata.org/entity/Q45105</td>
+      <td>Oswald von Wolkenstein</td>
+      <td>http://www.wikidata.org/entity/Q1013962</td>
+      <td>Schöneck Castle</td>
+      <td>Point(11.847977 46.820264)</td>
+      <td>1377.0</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>http://www.wikidata.org/entity/Q122070</td>
+      <td>Simon Lemnius</td>
+      <td>http://www.wikidata.org/entity/Q257965</td>
+      <td>Val Müstair</td>
+      <td>Point(10.39009 46.60566)</td>
+      <td>1511.0</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>http://www.wikidata.org/entity/Q122070</td>
+      <td>Simon Lemnius</td>
+      <td>http://www.wikidata.org/entity/Q257965</td>
+      <td>Val Müstair</td>
+      <td>Point(10.42 46.6)</td>
+      <td>1511.0</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>http://www.wikidata.org/entity/Q137683</td>
+      <td>Mary de Rachewiltz</td>
+      <td>http://www.wikidata.org/entity/Q185541</td>
+      <td>Brixen</td>
+      <td>Point(11.65 46.716666666)</td>
+      <td>1925.0</td>
+    </tr>
+    <tr>
+      <th>583</th>
+      <td>http://www.wikidata.org/entity/Q873784</td>
+      <td>Ignaz Vincenz Zingerle</td>
+      <td>http://www.wikidata.org/entity/Q131605</td>
+      <td>Merano</td>
+      <td>Point(11.163888888 46.668888888)</td>
+      <td>1825.0</td>
+    </tr>
+    <tr>
+      <th>636</th>
+      <td>http://www.wikidata.org/entity/Q1705031</td>
+      <td>Josef Kostner</td>
+      <td>http://www.wikidata.org/entity/Q255568</td>
+      <td>Urtijëi</td>
+      <td>Point(11.666666666 46.566666666)</td>
+      <td>1933.0</td>
+    </tr>
+    <tr>
+      <th>637</th>
+      <td>http://www.wikidata.org/entity/Q1705031</td>
+      <td>Josef Kostner</td>
+      <td>http://www.wikidata.org/entity/Q255568</td>
+      <td>Urtijëi</td>
+      <td>Point(11.66748 46.57432)</td>
+      <td>1933.0</td>
+    </tr>
+    <tr>
+      <th>770</th>
+      <td>http://www.wikidata.org/entity/Q1996716</td>
+      <td>Norbert Conrad Kaser</td>
+      <td>http://www.wikidata.org/entity/Q185541</td>
+      <td>Brixen</td>
+      <td>Point(11.65 46.716666666)</td>
+      <td>1947.0</td>
+    </tr>
+    <tr>
+      <th>1905</th>
+      <td>http://www.wikidata.org/entity/Q3839806</td>
+      <td>Luigi Maieron</td>
+      <td>http://www.wikidata.org/entity/Q53240</td>
+      <td>Cercivento</td>
+      <td>Point(12.983333333 46.533333333)</td>
+      <td>1954.0</td>
+    </tr>
+    <tr>
+      <th>2152</th>
+      <td>http://www.wikidata.org/entity/Q4505559</td>
+      <td>Karl Ziegler</td>
+      <td>http://www.wikidata.org/entity/Q504216</td>
+      <td>St. Martin in Passeier</td>
+      <td>Point(11.22727 46.78392)</td>
+      <td>1812.0</td>
+    </tr>
+    <tr>
+      <th>2741</th>
+      <td>http://www.wikidata.org/entity/Q24073666</td>
+      <td>Fedele Demetz</td>
+      <td>http://www.wikidata.org/entity/Q499129</td>
+      <td>Sëlva</td>
+      <td>Point(11.76038 46.55472)</td>
+      <td>1850.0</td>
+    </tr>
+    <tr>
+      <th>2939</th>
+      <td>http://www.wikidata.org/entity/Q55471982</td>
+      <td>Roberta Dapunt</td>
+      <td>http://www.wikidata.org/entity/Q644159</td>
+      <td>Val Badia</td>
+      <td>Point(11.89917 46.68361)</td>
+      <td>1970.0</td>
+    </tr>
+    <tr>
+      <th>2940</th>
+      <td>http://www.wikidata.org/entity/Q55471982</td>
+      <td>Roberta Dapunt</td>
+      <td>http://www.wikidata.org/entity/Q644159</td>
+      <td>Val Badia</td>
+      <td>Point(11.9 46.683333333)</td>
+      <td>1970.0</td>
+    </tr>
+    <tr>
+      <th>3128</th>
+      <td>http://www.wikidata.org/entity/Q95185585</td>
+      <td>Anna Katharina Mair</td>
+      <td>http://www.wikidata.org/entity/Q185541</td>
+      <td>Brixen</td>
+      <td>Point(11.65 46.716666666)</td>
+      <td>1967.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</div>
+<div class="section" id="Papers-please">
+<h2>Papers please<a class="headerlink" href="#Papers-please" title="Permalink to this headline">¶</a></h2>
+<p>Extract subject id (i.e. <code class="docutils literal notranslate"><span class="pre">Q8797</span></code>) and place id (i.e. <code class="docutils literal notranslate"><span class="pre">Q2028</span></code>) and MODIFY <code class="docutils literal notranslate"><span class="pre">df</span></code> by putting them into two new columns <code class="docutils literal notranslate"><span class="pre">subj_id</span></code> and <code class="docutils literal notranslate"><span class="pre">place_id</span></code></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>subj</th>
+      <th>subjLabel</th>
+      <th>place</th>
+      <th>placeLabel</th>
+      <th>coord</th>
+      <th>birthyear</th>
+      <th>subj_id</th>
+      <th>place_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>http://www.wikidata.org/entity/Q8797</td>
+      <td>Aemilius Macer</td>
+      <td>http://www.wikidata.org/entity/Q2028</td>
+      <td>Verona</td>
+      <td>Point(10.992777777 45.438611111)</td>
+      <td>NaN</td>
+      <td>Q8797</td>
+      <td>Q2028</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>http://www.wikidata.org/entity/Q8833</td>
+      <td>Gaius Maecenas</td>
+      <td>http://www.wikidata.org/entity/Q13378</td>
+      <td>Arezzo</td>
+      <td>Point(11.878055555 43.463055555)</td>
+      <td>NaN</td>
+      <td>Q8833</td>
+      <td>Q13378</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>http://www.wikidata.org/entity/Q5592</td>
+      <td>Michelangelo</td>
+      <td>http://www.wikidata.org/entity/Q52069</td>
+      <td>Caprese Michelangelo</td>
+      <td>Point(11.985833333 43.640833333)</td>
+      <td>1475.0</td>
+      <td>Q5592</td>
+      <td>Q52069</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>http://www.wikidata.org/entity/Q6197</td>
+      <td>Horace</td>
+      <td>http://www.wikidata.org/entity/Q52691</td>
+      <td>Venosa</td>
+      <td>Point(15.816666666 40.966666666)</td>
+      <td>-64.0</td>
+      <td>Q6197</td>
+      <td>Q52691</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>http://www.wikidata.org/entity/Q7170</td>
+      <td>Sallust</td>
+      <td>http://www.wikidata.org/entity/Q177061</td>
+      <td>Amiternum</td>
+      <td>Point(13.305769 42.400776)</td>
+      <td>-85.0</td>
+      <td>Q7170</td>
+      <td>Q177061</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>3193</th>
+      <td>http://www.wikidata.org/entity/Q99308713</td>
+      <td>Giovanni Marrasio</td>
+      <td>http://www.wikidata.org/entity/Q487174</td>
+      <td>Noto</td>
+      <td>Point(15.083333333 36.883333333)</td>
+      <td>1405.0</td>
+      <td>Q99308713</td>
+      <td>Q487174</td>
+    </tr>
+    <tr>
+      <th>3194</th>
+      <td>http://www.wikidata.org/entity/Q100775377</td>
+      <td>Annemarie Innerebner</td>
+      <td>http://www.wikidata.org/entity/Q6526</td>
+      <td>Bolzano</td>
+      <td>Point(11.35 46.5)</td>
+      <td>1924.0</td>
+      <td>Q100775377</td>
+      <td>Q6526</td>
+    </tr>
+    <tr>
+      <th>3195</th>
+      <td>http://www.wikidata.org/entity/Q100775410</td>
+      <td>Nesti Lyro Wollek</td>
+      <td>http://www.wikidata.org/entity/Q2044</td>
+      <td>Florence</td>
+      <td>Point(11.254166666 43.771388888)</td>
+      <td>1875.0</td>
+      <td>Q100775410</td>
+      <td>Q2044</td>
+    </tr>
+    <tr>
+      <th>3196</th>
+      <td>http://www.wikidata.org/entity/Q99655533</td>
+      <td>Lorenza Meletti</td>
+      <td>http://www.wikidata.org/entity/Q95093</td>
+      <td>Bondeno</td>
+      <td>Point(11.41542 44.88944)</td>
+      <td>1940.0</td>
+      <td>Q99655533</td>
+      <td>Q95093</td>
+    </tr>
+    <tr>
+      <th>3197</th>
+      <td>http://www.wikidata.org/entity/Q99912619</td>
+      <td>Nanni Falconi</td>
+      <td>http://www.wikidata.org/entity/Q391218</td>
+      <td>Pattada</td>
+      <td>Point(9.11 40.582222222)</td>
+      <td>1950.0</td>
+      <td>Q99912619</td>
+      <td>Q391218</td>
+    </tr>
+  </tbody>
+</table>
+<p>3198 rows × 8 columns</p>
+</div></div>
+</div>
+</div>
+<div class="section" id="Unknown-poets">
+<h2>Unknown poets<a class="headerlink" href="#Unknown-poets" title="Permalink to this headline">¶</a></h2>
+<p>Find all the ids of nameless poets and put them in <strong>a python list</strong>.</p>
+<ul class="simple">
+<li><p><strong>DO NOT</strong> use loops</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;Q4360247&#39;,
+ &#39;Q14922292&#39;,
+ &#39;Q19130448&#39;,
+ &#39;Q21207901&#39;,
+ &#39;Q19984452&#39;,
+ &#39;Q21209119&#39;,
+ &#39;Q21282215&#39;,
+ &#39;Q23673492&#39;,
+ &#39;Q29049430&#39;,
+ &#39;Q29052339&#39;,
+ &#39;Q31763467&#39;,
+ &#39;Q28465822&#39;,
+ &#39;Q48809843&#39;,
+ &#39;Q27553577&#39;,
+ &#39;Q48811051&#39;,
+ &#39;Q48861610&#39;,
+ &#39;Q55441810&#39;,
+ &#39;Q47468550&#39;,
+ &#39;Q50327630&#39;,
+ &#39;Q50330028&#39;,
+ &#39;Q55897192&#39;,
+ &#39;Q65019765&#39;,
+ &#39;Q51845316&#39;,
+ &#39;Q60838260&#39;,
+ &#39;Q64433131&#39;,
+ &#39;Q71684946&#39;,
+ &#39;Q93338246&#39;,
+ &#39;Q59187521&#39;,
+ &#39;Q61136330&#39;,
+ &#39;Q61450547&#39;,
+ &#39;Q52107491&#39;,
+ &#39;Q61790603&#39;,
+ &#39;Q61791394&#39;,
+ &#39;Q61827513&#39;,
+ &#39;Q61895377&#39;,
+ &#39;Q59851133&#39;,
+ &#39;Q59851150&#39;,
+ &#39;Q62066746&#39;,
+ &#39;Q66736238&#39;,
+ &#39;Q66921487&#39;,
+ &#39;Q85421610&#39;,
+ &#39;Q61080035&#39;,
+ &#39;Q87068357&#39;,
+ &#39;Q64031897&#39;,
+ &#39;Q64167386&#39;,
+ &#39;Q64364409&#39;,
+ &#39;Q69818426&#39;,
+ &#39;Q64512266&#39;,
+ &#39;Q78162153&#39;,
+ &#39;Q78499894&#39;,
+ &#39;Q88264630&#39;,
+ &#39;Q89674973&#39;,
+ &#39;Q94998318&#39;,
+ &#39;Q94325725&#39;,
+ &#39;Q84138681&#39;,
+ &#39;Q98102965&#39;,
+ &#39;Q80705985&#39;,
+ &#39;Q81100287&#39;,
+ &#39;Q81738068&#39;,
+ &#39;Q83643534&#39;,
+ &#39;Q83808244&#39;,
+ &#39;Q96097742&#39;,
+ &#39;Q96245247&#39;,
+ &#39;Q96248786&#39;,
+ &#39;Q95485499&#39;,
+ &#39;Q99196947&#39;]
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Better-unknown-poets">
+<h2>Better unknown poets<a class="headerlink" href="#Better-unknown-poets" title="Permalink to this headline">¶</a></h2>
+<p>Find all the ids, the birthplace and birthdate of nameless poets and put them in <strong>a python list of tuples</strong>.</p>
+<ul class="simple">
+<li><p>birthplaces must be integers - if not specified, put <code class="docutils literal notranslate"><span class="pre">-1</span></code></p></li>
+<li><p><strong>DO NOT</strong> use loops nor list comprehensions</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="c1"># write here</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[(&#39;Q4360247&#39;, &#39;Rome&#39;, 1907),
+ (&#39;Q14922292&#39;, &#39;Battipaglia&#39;, 1991),
+ (&#39;Q19130448&#39;, &#39;Vicenza&#39;, 1492),
+ (&#39;Q21207901&#39;, &#39;Aradeo&#39;, -1),
+ (&#39;Q19984452&#39;, &#39;Anghiari&#39;, -1),
+ (&#39;Q21209119&#39;, &#39;Giuliano Teatino&#39;, 1711),
+ (&#39;Q21282215&#39;, &#39;Palermo&#39;, 1590),
+ (&#39;Q23673492&#39;, &#39;Butera&#39;, -1),
+ (&#39;Q29049430&#39;, &#39;Fondi&#39;, -1),
+ (&#39;Q29052339&#39;, &#39;Taranto&#39;, 1733),
+ (&#39;Q31763467&#39;, &#39;Caltanissetta&#39;, 1755),
+ (&#39;Q28465822&#39;, &#39;Orvieto&#39;, 1700),
+ (&#39;Q48809843&#39;, &#39;Palermo&#39;, -1),
+ (&#39;Q27553577&#39;, &#39;Cavriana&#39;, 1250),
+ (&#39;Q48811051&#39;, &#39;Roccabernarda&#39;, 1550),
+ (&#39;Q48861610&#39;, &#39;Vittorio Veneto&#39;, 1452),
+ (&#39;Q55441810&#39;, &#39;Vernio&#39;, 1844),
+ (&#39;Q47468550&#39;, &#39;Florence&#39;, 1607),
+ (&#39;Q50327630&#39;, &#39;Rome&#39;, 1700),
+ (&#39;Q50330028&#39;, &#39;Rome&#39;, 1680),
+ (&#39;Q55897192&#39;, &#39;Narni&#39;, 1872),
+ (&#39;Q65019765&#39;, &#39;Afragola&#39;, 1853),
+ (&#39;Q51845316&#39;, &#39;Genoa&#39;, -1),
+ (&#39;Q60838260&#39;, &#39;Tuscany&#39;, -1),
+ (&#39;Q64433131&#39;, &#39;Castel Goffredo&#39;, -1),
+ (&#39;Q71684946&#39;, &#34;Trezzo sull&#39;Adda&#34;, -1),
+ (&#39;Q93338246&#39;, &#39;Viterbo&#39;, -1),
+ (&#39;Q59187521&#39;, &#39;Padua&#39;, 1850),
+ (&#39;Q61136330&#39;, &#39;Osilo&#39;, 1865),
+ (&#39;Q61450547&#39;, &#39;Siderno&#39;, 1847),
+ (&#39;Q52107491&#39;, &#39;Rome&#39;, 1680),
+ (&#39;Q61790603&#39;, &#39;Veneto&#39;, 1857),
+ (&#39;Q61791394&#39;, &#39;Piedimonte del Calvario&#39;, 1905),
+ (&#39;Q61827513&#39;, &#39;Grimacco&#39;, 1847),
+ (&#39;Q61895377&#39;, &#39;Como&#39;, 1731),
+ (&#39;Q59851133&#39;, &#39;Gorizia&#39;, 1883),
+ (&#39;Q59851150&#39;, &#39;Trieste&#39;, 1929),
+ (&#39;Q62066746&#39;, &#39;Bologna&#39;, 1926),
+ (&#39;Q66736238&#39;, &#39;Lucca&#39;, 1635),
+ (&#39;Q66921487&#39;, &#39;Alghero&#39;, 1914),
+ (&#39;Q85421610&#39;, &#39;Alghero&#39;, 1869),
+ (&#39;Q61080035&#39;, &#39;Greci&#39;, 1830),
+ (&#39;Q87068357&#39;, &#39;Polla&#39;, 1970),
+ (&#39;Q64031897&#39;, &#39;Castel Goffredo&#39;, 1445),
+ (&#39;Q64167386&#39;, &#39;Sambiase&#39;, 1930),
+ (&#39;Q64364409&#39;, &#39;Corleone&#39;, 1752),
+ (&#39;Q69818426&#39;, &#39;Galati Mamertino&#39;, 1923),
+ (&#39;Q64512266&#39;, &#39;Rieti&#39;, 1890),
+ (&#39;Q78162153&#39;, &#39;Agrigento&#39;, 1985),
+ (&#39;Q78499894&#39;, &#39;San Giorgio a Cremano&#39;, 1932),
+ (&#39;Q88264630&#39;, &#39;Bari&#39;, 1930),
+ (&#39;Q89674973&#39;, &#39;Genoa&#39;, 1939),
+ (&#39;Q94998318&#39;, &#39;Trieste&#39;, 1939),
+ (&#39;Q94325725&#39;, &#39;Orune&#39;, 1908),
+ (&#39;Q84138681&#39;, &#39;Rome&#39;, -1),
+ (&#39;Q98102965&#39;, &#39;Florence&#39;, -1),
+ (&#39;Q80705985&#39;, &#39;Patti&#39;, 1879),
+ (&#39;Q81100287&#39;, &#39;Lecco&#39;, 1935),
+ (&#39;Q81738068&#39;, &#39;Rogolo&#39;, 1940),
+ (&#39;Q83643534&#39;, &#39;Alessandria&#39;, 1717),
+ (&#39;Q83808244&#39;, &#39;Cancello e Arnone&#39;, 1921),
+ (&#39;Q96097742&#39;, &#39;Milan&#39;, 1982),
+ (&#39;Q96245247&#39;, &#39;Lecce&#39;, 1919),
+ (&#39;Q96248786&#39;, &#39;Guardia Lombardi&#39;, 1970),
+ (&#39;Q95485499&#39;, &#39;Borgo San Martino&#39;, 1907),
+ (&#39;Q99196947&#39;, &#39;Tivoli&#39;, 1973)]
+</pre></div></div>
+</div>
+</div>
 </div>
 
 
@@ -3989,7 +4578,7 @@ Name: subj, dtype: int64
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="../relational/relational1-intro-sol.html" class="btn btn-neutral float-right" title="Relational data 1 - introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="pandas2-sol.html" class="btn btn-neutral float-left" title="Analytics with Pandas - 2. EURES job offers case study" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pandas2-sol.html" class="btn btn-neutral float-left" title="Analytics with Pandas - 2. EURES case study" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
