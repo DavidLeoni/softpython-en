@@ -43,5 +43,5 @@ Relational data
 
     intro <relational/relational1-intro-sol.ipynb>
     binary relations <relational/relational2-binrel-sol.ipynb>
-..    
-    challenge <relational/relational3-chal.ipynb>
+    simple statistics <relational/relational3-simple-stats-sol.ipynb>    
+    challenge <relational/relational4-chal.ipynb>
