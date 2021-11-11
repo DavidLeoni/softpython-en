@@ -3467,6 +3467,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 4 5 6
 </pre></div>
 </div>
+<p><strong>REMEMBER</strong>: <code class="docutils literal notranslate"><span class="pre">plt.figure</span></code> and <code class="docutils literal notranslate"><span class="pre">plt.show</span></code> should be called only <strong>ONCE</strong> in the whole program !</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
@@ -3492,7 +3493,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 
 <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span>   <span class="c1"># 2 rows</span>
             <span class="mi">3</span><span class="p">,</span>   <span class="c1"># 3 columns</span>
-            <span class="mi">2</span><span class="p">)</span>   <span class="c1"># plotting in first cell</span>
+            <span class="mi">2</span><span class="p">)</span>   <span class="c1"># plotting in second cell</span>
 
 <span class="n">ys2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span><span class="n">ys2</span><span class="p">)</span>
@@ -3535,7 +3536,7 @@ array([1. , 1.2, 1.4, 1.6, 1.8, 2. , 2.2, 2.4, 2.6, 2.8])
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;6th cell&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">wspace</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">hspace</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># to avoid text overlapping</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>  <span class="c1"># ONLY call this ONCE at the very end</span>
 </pre></div>
 </div>
 </div>
