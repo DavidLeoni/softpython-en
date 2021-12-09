@@ -982,9 +982,9 @@
 <li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Download-exercises-zip">Download exercises zip</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Iterating-keys">Iterating keys</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Iterating-key-value-pairs">Iterating key-value pairs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Iterating-values">Iterating values</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Questions---iteration">Questions - iteration</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Questions---Are-they-equivalent?">Questions - Are they equivalent?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Iterating-values">Iterating values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Questions---iteration">Questions - iteration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Questions---Are-they-equivalent?">Questions - Are they equivalent?</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Are-they-equivalent-?-postin">Are they equivalent ? postin</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Are-they-equivalent-?-cortel">Are they equivalent ? cortel</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../for/for6-dictionaries-sol.html#Are-they-equivalent-?---gel">Are they equivalent ? - gel</a></li>
@@ -2710,18 +2710,16 @@ div.rendered_html tbody tr:hover {
 </div>
 <p>Given the dictionary, the customer name and a category, write a function <code class="docutils literal notranslate"><span class="pre">has_pref</span></code> which RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if that client has the given preference, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
 <p>Example:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ha_pref</span><span class="p">({</span>
-            <span class="s1">&#39;aldo&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="s1">&#39;cinema&#39;</span><span class="p">,</span> <span class="s1">&#39;musica&#39;</span><span class="p">,</span> <span class="s1">&#39;sport&#39;</span><span class="p">],</span>
-            <span class="s1">&#39;giovanni&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;musica&#39;</span><span class="p">],</span>
-            <span class="s1">&#39;giacomo&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s1">&#39;cinema&#39;</span><span class="p">,</span> <span class="s1">&#39;videogiochi&#39;</span><span class="p">]</span>
-
-        <span class="p">},</span> <span class="s1">&#39;aldo&#39;</span><span class="p">,</span> <span class="s1">&#39;musica&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">has_pref</span><span class="p">({</span>    <span class="s1">&#39;aldo&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="s1">&#39;cinema&#39;</span><span class="p">,</span> <span class="s1">&#39;music&#39;</span><span class="p">,</span> <span class="s1">&#39;sport&#39;</span><span class="p">],</span>
+              <span class="s1">&#39;giovanni&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;music&#39;</span><span class="p">],</span>
+              <span class="s1">&#39;giacomo&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s1">&#39;cinema&#39;</span><span class="p">,</span> <span class="s1">&#39;videogames&#39;</span><span class="p">]</span>
+         <span class="p">},</span> <span class="s1">&#39;aldo&#39;</span><span class="p">,</span> <span class="s1">&#39;music&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>must return <code class="docutils literal notranslate"><span class="pre">True</span></code>, because aldo likes music, while instead:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">has_pref</span><span class="p">({</span><span class="s1">&#39;aldo&#39;</span><span class="p">:</span>    <span class="p">[</span><span class="s1">&#39;cinema&#39;</span><span class="p">,</span> <span class="s1">&#39;music&#39;</span><span class="p">,</span> <span class="s1">&#39;sport&#39;</span><span class="p">],</span>
-         <span class="s1">&#39;giovanni&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;music&#39;</span><span class="p">],</span>
-         <span class="s1">&#39;giacomo&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s1">&#39;cinema&#39;</span><span class="p">,</span> <span class="s1">&#39;videogames&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">has_pref</span><span class="p">({</span><span class="s1">&#39;aldo&#39;</span><span class="p">:</span>     <span class="p">[</span><span class="s1">&#39;cinema&#39;</span><span class="p">,</span> <span class="s1">&#39;music&#39;</span><span class="p">,</span> <span class="s1">&#39;sport&#39;</span><span class="p">],</span>
+          <span class="s1">&#39;giovanni&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;music&#39;</span><span class="p">],</span>
+          <span class="s1">&#39;giacomo&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="s1">&#39;cinema&#39;</span><span class="p">,</span> <span class="s1">&#39;videogames&#39;</span><span class="p">]</span>
 
         <span class="p">},</span> <span class="s1">&#39;giacomo&#39;</span><span class="p">,</span> <span class="s1">&#39;sport&#39;</span><span class="p">)</span>
 </pre></div>
