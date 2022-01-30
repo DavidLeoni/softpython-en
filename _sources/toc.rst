@@ -3,8 +3,8 @@
     :glob:
 
     Home <index.ipynb>
-    Overview <overview.ipynb>    
-    Installation <installation.ipynb>    
+    Overview <overview.ipynb>        
+    Installation <installation.ipynb>
 
 A - Foundations
 ====================
@@ -12,7 +12,7 @@ A - Foundations
 .. toctree::
     :maxdepth: 2
     :glob:
-
+   
     quick-intro/quick-intro-sol.ipynb
     tools/tools-sol.ipynb    
 
