@@ -13,7 +13,7 @@ A - Foundations
     :maxdepth: 2
     :glob:
    
-    quick-intro/quick-intro-sol.ipynb
+    Quick intro to Python <quick-intro/quick-intro-sol.ipynb>
     tools/tools-sol.ipynb    
 
 A1 Data Types
