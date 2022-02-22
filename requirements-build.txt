@@ -9,6 +9,6 @@ sphinx_rtd_theme==0.5.2
 pylatexenc==2.1
 pathspec==0.7.0
 readthedocs-sphinx-ext==1.0.4
-pygments==2.7.1
+pygments==2.7.4
 jinja2==2.11.3
 markupsafe==2.0.1
