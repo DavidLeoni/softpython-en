@@ -164,7 +164,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../toc.html">A - Foundations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../quick-intro/quick-intro-sol.html">Quick intro to Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quick-intro/quick-intro-sol.html">Quick Python intro</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Download-exercises-zip">Download exercises zip</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#What-to-do">What to do</a></li>
 </ul>
@@ -1366,6 +1366,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../functions/fun4-lists-sol.html#Exercise---threeven">Exercise - threeven</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../functions/fun4-lists-sol.html#Exercise---separate_ip">Exercise - separate_ip</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../functions/fun4-lists-sol.html#Exercise---average">Exercise - average</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../functions/fun4-lists-sol.html#Exercise---Fake-news-generator">Exercise - Fake news generator</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../functions/fun4-lists-sol.html#Functions-with-assert">Functions with assert</a><ul>
@@ -1667,6 +1668,11 @@
 <li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Botteghe-storiche-in-Python">Botteghe storiche in Python</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Botteghe-storiche---rank_categories">Botteghe storiche - rank_categories</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Botteghe-storiche---enrich">Botteghe storiche - enrich</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats2-csv-sol.html#CSV-Air-quality">CSV Air quality</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#load_air_quality">load_air_quality</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#calc_avg_pollution">calc_avg_pollution</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../formats/formats2-csv-sol.html#Continue">Continue</a></li>
@@ -2433,7 +2439,7 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="Download-exercises-zip">
 <h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/relational">Browse files online</a></p>
-<p>We live in a world of <em>relations</em>, like <em>is friend of</em> or <em>works at company</em>. We will see some ways to represent such relations like matrices when considered as networks or, as we call them in computer science, <em>graphs</em>. We will also review other formats for storing graphs, such as <em>adjacency lists</em> and a have a quick look at a specialized library called Networkx.</p>
+<p>We live in a world of <em>relations</em>, like John <em>is friend of</em> Paul or Mary <em>works at</em> CodeWizards. We can display them as networks or, as we call them in computer science, <em>graphs</em>. We will see some ways for storing graphs, like matrices, adjacency lists and a also have a quick look at a specialized library called Networkx.</p>
 <div class="section" id="Required-libraries">
 <h3>Required libraries<a class="headerlink" href="#Required-libraries" title="Permalink to this headline">¶</a></h3>
 <p>In order for visualizations to work, you need installed the python library <code class="docutils literal notranslate"><span class="pre">networkx</span></code> and <code class="docutils literal notranslate"><span class="pre">pydot</span></code>. Pydot is an interface to the non-pyhon package <a class="reference external" href="http://graphviz.org/">GraphViz</a>.</p>
@@ -4654,7 +4660,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;networkx.classes.digraph.DiGraph at 0x7fee959a7e90&gt;
+&lt;networkx.classes.digraph.DiGraph at 0x7f8e54c26b50&gt;
 </pre></div></div>
 </div>
 <p>To display it in a way uniform with the rest of the course, we developed a function called <code class="docutils literal notranslate"><span class="pre">soft.draw_nx</span></code> :</p>
@@ -4892,7 +4898,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&#39;&lt;networkx.classes.digraph.DiGraph object at 0x7fee95acc550&gt;&#39;
+&#39;&lt;networkx.classes.digraph.DiGraph object at 0x7f8e54b95990&gt;&#39;
 </pre></div></div>
 </div>
 <p>To convert to the dict of adjacency lists we know, you can use this method:</p>

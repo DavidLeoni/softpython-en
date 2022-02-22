@@ -164,7 +164,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../toc.html">A - Foundations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../quick-intro/quick-intro-sol.html">Quick intro to Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quick-intro/quick-intro-sol.html">Quick Python intro</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Download-exercises-zip">Download exercises zip</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#What-to-do">What to do</a></li>
 </ul>
@@ -1366,6 +1366,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../functions/fun4-lists-sol.html#Exercise---threeven">Exercise - threeven</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../functions/fun4-lists-sol.html#Exercise---separate_ip">Exercise - separate_ip</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../functions/fun4-lists-sol.html#Exercise---average">Exercise - average</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../functions/fun4-lists-sol.html#Exercise---Fake-news-generator">Exercise - Fake news generator</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../functions/fun4-lists-sol.html#Functions-with-assert">Functions with assert</a><ul>
@@ -1667,6 +1668,11 @@
 <li class="toctree-l5"><a class="reference internal" href="#Botteghe-storiche-in-Python">Botteghe storiche in Python</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Botteghe-storiche---rank_categories">Botteghe storiche - rank_categories</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Botteghe-storiche---enrich">Botteghe storiche - enrich</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#CSV-Air-quality">CSV Air quality</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#load_air_quality">load_air_quality</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#calc_avg_pollution">calc_avg_pollution</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Continue">Continue</a></li>
@@ -2752,7 +2758,7 @@ We just read a row !
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;_csv.reader object at 0x7ff47c62e8d0&gt;
+&lt;_csv.reader object at 0x7f3840498950&gt;
 </pre></div></div>
 </div>
 <p>This result is quite disappointing</p>
@@ -3544,6 +3550,252 @@ OrderedDict([   (&#39;Numero&#39;, &#39;6&#39;),
                 (&#39;Note&#39;, &#39;&#39;),
                 (&#39;Categorie&#39;, &#39;[]&#39;)])
 </pre></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="CSV-Air-quality">
+<h2>CSV Air quality<a class="headerlink" href="#CSV-Air-quality" title="Permalink to this headline">¶</a></h2>
+<p>You will now analyze air_quality in Trentino. You are given a dataset which records various pollutants (‘Inquinante’) at various stations (<code class="docutils literal notranslate"><span class="pre">'Stazione'</span></code>) in Trentino. Pollutants values can be <code class="docutils literal notranslate"><span class="pre">'PM10'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Biossido</span> <span class="pre">Zolfo'</span></code>, and a few others. Each station records some set of pollutants. For each pollutant values are recorded (<code class="docutils literal notranslate"><span class="pre">'Valore'</span></code>) 24 times per day.</p>
+<p>Data provider: <a class="reference external" href="https://dati.trentino.it/dataset/qualita-dell-aria-rilevazioni-delle-stazioni-monitoraggio">dati.trentino.it</a></p>
+<div class="section" id="load_air_quality">
+<h3>load_air_quality<a class="headerlink" href="#load_air_quality" title="Permalink to this headline">¶</a></h3>
+<p>Implement a function to load the dataset <a class="reference external" href="air-quality.csv">air-quality.csv</a></p>
+<ul class="simple">
+<li><p><strong>USE encoding</strong> <code class="docutils literal notranslate"><span class="pre">latin-1</span></code></p></li>
+</ul>
+<p>Expected output:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">load_air_quality</span><span class="p">(</span><span class="s1">&#39;air-quality.csv&#39;</span><span class="p">)</span>
+<span class="go">[</span>
+<span class="go">     OrderedDict([(&#39;Stazione&#39;, &#39;Parco S. Chiara&#39;),</span>
+<span class="go">                  (&#39;Inquinante&#39;, &#39;PM10&#39;),</span>
+<span class="go">                  (&#39;Data&#39;, &#39;2019-05-04&#39;),</span>
+<span class="go">                  (&#39;Ora&#39;, &#39;1&#39;),</span>
+<span class="go">                  (&#39;Valore&#39;, &#39;17&#39;),</span>
+<span class="go">                  (&#39;Unità di misura&#39;, &#39;µg/mc&#39;)]),</span>
+<span class="go">     OrderedDict([(&#39;Stazione&#39;, &#39;Parco S. Chiara&#39;),</span>
+<span class="go">                  (&#39;Inquinante&#39;, &#39;PM10&#39;),</span>
+<span class="go">                  (&#39;Data&#39;, &#39;2019-05-04&#39;),</span>
+<span class="go">                  (&#39;Ora&#39;, &#39;2&#39;),</span>
+<span class="go">                  (&#39;Valore&#39;, &#39;19&#39;),</span>
+<span class="go">                  (&#39;Unità di misura&#39;, &#39;µg/mc&#39;)]),</span>
+<span class="go">    .</span>
+<span class="go">    .</span>
+<span class="go">    .</span>
+<span class="go">]</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><strong>IMPORTANT 1</strong>: look at the dataset by yourself !</p>
+<p>Here we show only first rows, but to get a clear picture of the dataset you need to study it a bit by yourself</p>
+</div>
+<div class="admonition warning">
+<p><strong>IMPORTANT 2</strong>: EVERY field is a STRING, including <code class="docutils literal notranslate"><span class="pre">'Valore'</span></code> !</p>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="k">def</span> <span class="nf">load_air_quality</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Loads file data and RETURN a list of dictionaries</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
+        <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">csvfile</span><span class="p">)</span>
+        <span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+            <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">lst</span>
+
+
+<span class="n">air_quality</span> <span class="o">=</span> <span class="n">load_air_quality</span><span class="p">(</span><span class="s1">&#39;air-quality.csv&#39;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[OrderedDict([(&#39;Stazione&#39;, &#39;Parco S. Chiara&#39;),
+              (&#39;Inquinante&#39;, &#39;PM10&#39;),
+              (&#39;Data&#39;, &#39;2019-05-04&#39;),
+              (&#39;Ora&#39;, &#39;1&#39;),
+              (&#39;Valore&#39;, &#39;17&#39;),
+              (&#39;Unità di misura&#39;, &#39;µg/mc&#39;)]),
+ OrderedDict([(&#39;Stazione&#39;, &#39;Parco S. Chiara&#39;),
+              (&#39;Inquinante&#39;, &#39;PM10&#39;),
+              (&#39;Data&#39;, &#39;2019-05-04&#39;),
+              (&#39;Ora&#39;, &#39;2&#39;),
+              (&#39;Valore&#39;, &#39;19&#39;),
+              (&#39;Unità di misura&#39;, &#39;µg/mc&#39;)]),
+ OrderedDict([(&#39;Stazione&#39;, &#39;Parco S. Chiara&#39;),
+              (&#39;Inquinante&#39;, &#39;PM10&#39;),
+              (&#39;Data&#39;, &#39;2019-05-04&#39;),
+              (&#39;Ora&#39;, &#39;3&#39;),
+              (&#39;Valore&#39;, &#39;17&#39;),
+              (&#39;Unità di misura&#39;, &#39;µg/mc&#39;)]),
+ OrderedDict([(&#39;Stazione&#39;, &#39;Parco S. Chiara&#39;),
+              (&#39;Inquinante&#39;, &#39;PM10&#39;),
+              (&#39;Data&#39;, &#39;2019-05-04&#39;),
+              (&#39;Ora&#39;, &#39;4&#39;),
+              (&#39;Valore&#39;, &#39;15&#39;),
+              (&#39;Unità di misura&#39;, &#39;µg/mc&#39;)]),
+ OrderedDict([(&#39;Stazione&#39;, &#39;Parco S. Chiara&#39;),
+              (&#39;Inquinante&#39;, &#39;PM10&#39;),
+              (&#39;Data&#39;, &#39;2019-05-04&#39;),
+              (&#39;Ora&#39;, &#39;5&#39;),
+              (&#39;Valore&#39;, &#39;13&#39;),
+              (&#39;Unità di misura&#39;, &#39;µg/mc&#39;)])]
+</pre></div></div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+<span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="k">def</span> <span class="nf">load_air_quality</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Loads file data and RETURN a list of dictionaries</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
+
+<span class="n">air_quality</span> <span class="o">=</span> <span class="n">load_air_quality</span><span class="p">(</span><span class="s1">&#39;air-quality.csv&#39;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="calc_avg_pollution">
+<h3>calc_avg_pollution<a class="headerlink" href="#calc_avg_pollution" title="Permalink to this headline">¶</a></h3>
+<p>Implement a function to RETURN a dictionary containing two elements tuples as keys:</p>
+<ul class="simple">
+<li><p>first tuple element is the station (‘Stazione’),</p></li>
+<li><p>second tuple element is the name of a pollutant (‘Inquinante’)</p></li>
+</ul>
+<p>To each tuple key, you must associate as value the average for that station <em>and</em> pollutant over all days.</p>
+<p>Expected output:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">calc_avg_pollution</span><span class="p">(</span><span class="n">air_quality</span><span class="p">)</span>
+<span class="go">{(&#39;Parco S. Chiara&#39;, &#39;PM10&#39;): 11.385752688172044,</span>
+<span class="go"> (&#39;Parco S. Chiara&#39;, &#39;PM2.5&#39;): 7.9471544715447155,</span>
+<span class="go"> (&#39;Parco S. Chiara&#39;, &#39;Biossido di Azoto&#39;): 20.828146143437078,</span>
+<span class="go"> (&#39;Parco S. Chiara&#39;, &#39;Ozono&#39;): 66.69541778975741,</span>
+<span class="go"> (&#39;Parco S. Chiara&#39;, &#39;Biossido Zolfo&#39;): 1.2918918918918918,</span>
+<span class="go"> (&#39;Via Bolzano&#39;, &#39;PM10&#39;): 12.526881720430108,</span>
+<span class="go"> (&#39;Via Bolzano&#39;, &#39;Biossido di Azoto&#39;): 29.28493894165536,</span>
+<span class="go"> (&#39;Via Bolzano&#39;, &#39;Ossido di Carbonio&#39;): 0.5964769647696474,</span>
+<span class="go"> (&#39;Piana Rotaliana&#39;, &#39;PM10&#39;): 9.728744939271255,</span>
+<span class="go"> (&#39;Piana Rotaliana&#39;, &#39;Biossido di Azoto&#39;): 15.170068027210885,</span>
+<span class="go"> (&#39;Piana Rotaliana&#39;, &#39;Ozono&#39;): 67.03633916554509,</span>
+<span class="go"> (&#39;Rovereto&#39;, &#39;PM10&#39;): 9.475806451612904,</span>
+<span class="go"> (&#39;Rovereto&#39;, &#39;PM2.5&#39;): 7.764784946236559,</span>
+<span class="go"> (&#39;Rovereto&#39;, &#39;Biossido di Azoto&#39;): 16.284167794316645,</span>
+<span class="go"> (&#39;Rovereto&#39;, &#39;Ozono&#39;): 70.54655870445345,</span>
+<span class="go"> (&#39;Borgo Valsugana&#39;, &#39;PM10&#39;): 11.819407008086253,</span>
+<span class="go"> (&#39;Borgo Valsugana&#39;, &#39;PM2.5&#39;): 7.413746630727763,</span>
+<span class="go"> (&#39;Borgo Valsugana&#39;, &#39;Biossido di Azoto&#39;): 15.73806275579809,</span>
+<span class="go"> (&#39;Borgo Valsugana&#39;, &#39;Ozono&#39;): 58.599730458221025,</span>
+<span class="go"> (&#39;Riva del Garda&#39;, &#39;PM10&#39;): 9.912398921832883,</span>
+<span class="go"> (&#39;Riva del Garda&#39;, &#39;Biossido di Azoto&#39;): 17.125845737483086,</span>
+<span class="go"> (&#39;Riva del Garda&#39;, &#39;Ozono&#39;): 68.38159675236807,</span>
+<span class="go"> (&#39;A22 (Avio)&#39;, &#39;PM10&#39;): 9.651821862348179,</span>
+<span class="go"> (&#39;A22 (Avio)&#39;, &#39;Biossido di Azoto&#39;): 33.0650406504065,</span>
+<span class="go"> (&#39;A22 (Avio)&#39;, &#39;Ossido di Carbonio&#39;): 0.4228848821081822,</span>
+<span class="go"> (&#39;Monte Gaza&#39;, &#39;PM10&#39;): 7.794520547945205,</span>
+<span class="go"> (&#39;Monte Gaza&#39;, &#39;Biossido di Azoto&#39;): 4.34412955465587,</span>
+<span class="go"> (&#39;Monte Gaza&#39;, &#39;Ozono&#39;): 99.0858310626703}</span>
+</pre></div>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+
+<span></span><span class="k">def</span> <span class="nf">calc_avg_pollution</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+
+    <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">diz</span> <span class="ow">in</span> <span class="n">db</span><span class="p">:</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">diz</span><span class="p">[</span><span class="s1">&#39;Stazione&#39;</span><span class="p">],</span> <span class="n">diz</span><span class="p">[</span><span class="s1">&#39;Inquinante&#39;</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">ret</span><span class="p">:</span>
+            <span class="n">ret</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">float</span><span class="p">(</span><span class="n">diz</span><span class="p">[</span><span class="s1">&#39;Valore&#39;</span><span class="p">])</span>
+            <span class="n">counts</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">ret</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">diz</span><span class="p">[</span><span class="s1">&#39;Valore&#39;</span><span class="p">])</span>
+            <span class="n">counts</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">ret</span><span class="p">:</span>
+        <span class="n">ret</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">/=</span> <span class="n">counts</span><span class="p">[</span><span class="n">t</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">ret</span>
+
+
+<span class="n">calc_avg_pollution</span><span class="p">(</span><span class="n">air_quality</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+{(&#39;Parco S. Chiara&#39;, &#39;PM10&#39;): 11.385752688172044,
+ (&#39;Parco S. Chiara&#39;, &#39;PM2.5&#39;): 7.9471544715447155,
+ (&#39;Parco S. Chiara&#39;, &#39;Biossido di Azoto&#39;): 20.828146143437078,
+ (&#39;Parco S. Chiara&#39;, &#39;Ozono&#39;): 66.69541778975741,
+ (&#39;Parco S. Chiara&#39;, &#39;Biossido Zolfo&#39;): 1.2918918918918918,
+ (&#39;Via Bolzano&#39;, &#39;PM10&#39;): 12.526881720430108,
+ (&#39;Via Bolzano&#39;, &#39;Biossido di Azoto&#39;): 29.28493894165536,
+ (&#39;Via Bolzano&#39;, &#39;Ossido di Carbonio&#39;): 0.5964769647696474,
+ (&#39;Piana Rotaliana&#39;, &#39;PM10&#39;): 9.728744939271255,
+ (&#39;Piana Rotaliana&#39;, &#39;Biossido di Azoto&#39;): 15.170068027210885,
+ (&#39;Piana Rotaliana&#39;, &#39;Ozono&#39;): 67.03633916554509,
+ (&#39;Rovereto&#39;, &#39;PM10&#39;): 9.475806451612904,
+ (&#39;Rovereto&#39;, &#39;PM2.5&#39;): 7.764784946236559,
+ (&#39;Rovereto&#39;, &#39;Biossido di Azoto&#39;): 16.284167794316645,
+ (&#39;Rovereto&#39;, &#39;Ozono&#39;): 70.54655870445345,
+ (&#39;Borgo Valsugana&#39;, &#39;PM10&#39;): 11.819407008086253,
+ (&#39;Borgo Valsugana&#39;, &#39;PM2.5&#39;): 7.413746630727763,
+ (&#39;Borgo Valsugana&#39;, &#39;Biossido di Azoto&#39;): 15.73806275579809,
+ (&#39;Borgo Valsugana&#39;, &#39;Ozono&#39;): 58.599730458221025,
+ (&#39;Riva del Garda&#39;, &#39;PM10&#39;): 9.912398921832883,
+ (&#39;Riva del Garda&#39;, &#39;Biossido di Azoto&#39;): 17.125845737483086,
+ (&#39;Riva del Garda&#39;, &#39;Ozono&#39;): 68.38159675236807,
+ (&#39;A22 (Avio)&#39;, &#39;PM10&#39;): 9.651821862348179,
+ (&#39;A22 (Avio)&#39;, &#39;Biossido di Azoto&#39;): 33.0650406504065,
+ (&#39;A22 (Avio)&#39;, &#39;Ossido di Carbonio&#39;): 0.4228848821081822,
+ (&#39;Monte Gaza&#39;, &#39;PM10&#39;): 7.794520547945205,
+ (&#39;Monte Gaza&#39;, &#39;Biossido di Azoto&#39;): 4.34412955465587,
+ (&#39;Monte Gaza&#39;, &#39;Ozono&#39;): 99.0858310626703}
+</pre></div></div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+
+<span></span><span class="k">def</span> <span class="nf">calc_avg_pollution</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
+
+<span class="n">calc_avg_pollution</span><span class="p">(</span><span class="n">air_quality</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>

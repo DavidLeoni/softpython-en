@@ -164,7 +164,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../toc.html">A - Foundations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../quick-intro/quick-intro-sol.html">Quick intro to Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quick-intro/quick-intro-sol.html">Quick Python intro</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Download-exercises-zip">Download exercises zip</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#What-to-do">What to do</a></li>
 </ul>
@@ -1366,6 +1366,7 @@
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---threeven">Exercise - threeven</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---separate_ip">Exercise - separate_ip</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---average">Exercise - average</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Exercise---Fake-news-generator">Exercise - Fake news generator</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Functions-with-assert">Functions with assert</a><ul>
@@ -1667,6 +1668,11 @@
 <li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Botteghe-storiche-in-Python">Botteghe storiche in Python</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Botteghe-storiche---rank_categories">Botteghe storiche - rank_categories</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#Botteghe-storiche---enrich">Botteghe storiche - enrich</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../formats/formats2-csv-sol.html#CSV-Air-quality">CSV Air quality</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#load_air_quality">load_air_quality</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../formats/formats2-csv-sol.html#calc_avg_pollution">calc_avg_pollution</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../formats/formats2-csv-sol.html#Continue">Continue</a></li>
@@ -2835,6 +2841,179 @@ not good
 </div>
 </div>
 </div>
+<div class="section" id="Exercise---Fake-news-generator">
+<h3>Exercise - Fake news generator<a class="headerlink" href="#Exercise---Fake-news-generator" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p><a class="reference external" href="https://en.wikipedia.org/wiki/Functional_illiteracy">Functional illiteracy</a> is reading and writing skills that are inadequate “to manage daily living and employment tasks that require reading skills beyond a basic level”</p>
+</div></blockquote>
+<p>✪✪ Knowing that functional illiteracy is on the rise, a news agency wants to fire obsolete human journalists and attract customers by feeding them with automatically generated <em>fake news</em>. You are asked to develop the algorithm for producing the texts: while ethically questionable, the company pays well, so you accept.</p>
+<p>Typically, a <em>fake news</em> starts with a real subject, a real fact (the <em>antecedent</em>), and follows it with some invented statement (the <em>consequence</em>). You are provided by the company three databases, one with subjects, one with antecedents and one of consequences. To each antecedent and consequence is associated a topic.</p>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">fake_news</span></code> which takes the databases and RETURN a list holding strings with all possible combinations of subjects, antecedents and consequences where the topic of antecedent matches the one of consequence. See desired output for more info.</p>
+<p><strong>NOTE</strong>: Your code MUST work with <em>any</em> database</p>
+<p><strong>Expected output</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fake_news</span><span class="p">(</span><span class="n">db_subjects</span><span class="p">,</span> <span class="n">db_antecedents</span><span class="p">,</span><span class="n">db_consequences</span><span class="p">)</span>
+
+<span class="go">[&#39;Government passed fiscal reform, now spending is out of control&#39;,</span>
+<span class="go"> &#39;Government passed fiscal reform, this increased taxes by 10%&#39;,</span>
+<span class="go"> &#39;Government passed fiscal reform, this increased deficit by a staggering 20%&#39;,</span>
+<span class="go"> &#39;Government passed fiscal reform, as a consequence our GDP has fallen dramatically&#39;,</span>
+<span class="go"> &#39;Government passed jobs act, now spending is out of control&#39;,</span>
+<span class="go"> &#39;Government passed jobs act, this increased taxes by 10%&#39;,</span>
+<span class="go"> &#39;Government passed jobs act, this increased deficit by a staggering 20%&#39;,</span>
+<span class="go"> &#39;Government passed jobs act, as a consequence our GDP has fallen dramatically&#39;,</span>
+<span class="go"> &#39;Government regulated pollution emissions, businesses had to fire many employees&#39;,</span>
+<span class="go"> &#39;Government regulated pollution emissions, businesses are struggling to meet law requirements&#39;,</span>
+<span class="go"> &#39;Government restricted building in natural areas, businesses had to fire many employees&#39;,</span>
+<span class="go"> &#39;Government restricted building in natural areas, businesses are struggling to meet law requirements&#39;,</span>
+<span class="go"> &#39;Government introduced more controls in agrifood production, businesses had to fire many employees&#39;,</span>
+<span class="go"> &#39;Government introduced more controls in agrifood production, businesses are struggling to meet law requirements&#39;,</span>
+<span class="go"> &#39;Government changed immigration policy, immigrants are stealing our jobs&#39;,</span>
+<span class="go"> &#39;Party X passed fiscal reform, now spending is out of control&#39;,</span>
+<span class="go"> &#39;Party X passed fiscal reform, this increased taxes by 10%&#39;,</span>
+<span class="go"> &#39;Party X passed fiscal reform, this increased deficit by a staggering 20%&#39;,</span>
+<span class="go"> &#39;Party X passed fiscal reform, as a consequence our GDP has fallen dramatically&#39;,</span>
+<span class="go"> &#39;Party X passed jobs act, now spending is out of control&#39;,</span>
+<span class="go"> &#39;Party X passed jobs act, this increased taxes by 10%&#39;,</span>
+<span class="go"> &#39;Party X passed jobs act, this increased deficit by a staggering 20%&#39;,</span>
+<span class="go"> &#39;Party X passed jobs act, as a consequence our GDP has fallen dramatically&#39;,</span>
+<span class="go"> &#39;Party X regulated pollution emissions, businesses had to fire many employees&#39;,</span>
+<span class="go"> &#39;Party X regulated pollution emissions, businesses are struggling to meet law requirements&#39;,</span>
+<span class="go"> &#39;Party X restricted building in natural areas, businesses had to fire many employees&#39;,</span>
+<span class="go"> &#39;Party X restricted building in natural areas, businesses are struggling to meet law requirements&#39;,</span>
+<span class="go"> &#39;Party X introduced more controls in agrifood production, businesses had to fire many employees&#39;,</span>
+<span class="go"> &#39;Party X introduced more controls in agrifood production, businesses are struggling to meet law requirements&#39;,</span>
+<span class="go"> &#39;Party X changed immigration policy, immigrants are stealing our jobs&#39;]</span>
+</pre></div>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+
+<span></span><span class="n">db_subjects</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;Government&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Party X&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">db_antecedents</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;passed fiscal reform&quot;</span><span class="p">,</span><span class="s2">&quot;economy&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;passed jobs act&quot;</span><span class="p">,</span><span class="s2">&quot;economy&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;regulated pollution emissions&quot;</span><span class="p">,</span> <span class="s2">&quot;environment&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;restricted building in natural areas&quot;</span><span class="p">,</span> <span class="s2">&quot;environment&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;introduced more controls in agrifood production&quot;</span><span class="p">,</span><span class="s2">&quot;environment&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;changed immigration policy&quot;</span><span class="p">,</span><span class="s2">&quot;foreign policy&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="n">db_consequences</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;economy&quot;</span><span class="p">,</span><span class="s2">&quot;now spending is out of control&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;economy&quot;</span><span class="p">,</span><span class="s2">&quot;this increased taxes by 10%&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;economy&quot;</span><span class="p">,</span><span class="s2">&quot;this increased deficit by a staggering 20%&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;economy&quot;</span><span class="p">,</span><span class="s2">&quot;as a consequence our GDP has fallen dramatically&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;environment&quot;</span><span class="p">,</span><span class="s2">&quot;businesses had to fire many employees&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;environment&quot;</span><span class="p">,</span><span class="s2">&quot;businesses are struggling to meet law requirements&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;foreign policy&quot;</span><span class="p">,</span><span class="s2">&quot;immigrants are stealing our jobs&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">fake_news</span><span class="p">(</span><span class="n">subjects</span><span class="p">,</span> <span class="n">antecedents</span><span class="p">,</span><span class="n">consequences</span><span class="p">):</span>
+
+    <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">subject</span> <span class="ow">in</span> <span class="n">subjects</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">ant</span> <span class="ow">in</span> <span class="n">antecedents</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">con</span> <span class="ow">in</span> <span class="n">consequences</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">ant</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">con</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                    <span class="n">ret</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">subject</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">ant</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">con</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">ret</span>
+
+
+
+<span class="n">fake_news</span><span class="p">(</span><span class="n">db_subjects</span><span class="p">,</span> <span class="n">db_antecedents</span><span class="p">,</span> <span class="n">db_consequences</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;Government passed fiscal reform, now spending is out of control&#39;,
+ &#39;Government passed fiscal reform, this increased taxes by 10%&#39;,
+ &#39;Government passed fiscal reform, this increased deficit by a staggering 20%&#39;,
+ &#39;Government passed fiscal reform, as a consequence our GDP has fallen dramatically&#39;,
+ &#39;Government passed jobs act, now spending is out of control&#39;,
+ &#39;Government passed jobs act, this increased taxes by 10%&#39;,
+ &#39;Government passed jobs act, this increased deficit by a staggering 20%&#39;,
+ &#39;Government passed jobs act, as a consequence our GDP has fallen dramatically&#39;,
+ &#39;Government regulated pollution emissions, businesses had to fire many employees&#39;,
+ &#39;Government regulated pollution emissions, businesses are struggling to meet law requirements&#39;,
+ &#39;Government restricted building in natural areas, businesses had to fire many employees&#39;,
+ &#39;Government restricted building in natural areas, businesses are struggling to meet law requirements&#39;,
+ &#39;Government introduced more controls in agrifood production, businesses had to fire many employees&#39;,
+ &#39;Government introduced more controls in agrifood production, businesses are struggling to meet law requirements&#39;,
+ &#39;Government changed immigration policy, immigrants are stealing our jobs&#39;,
+ &#39;Party X passed fiscal reform, now spending is out of control&#39;,
+ &#39;Party X passed fiscal reform, this increased taxes by 10%&#39;,
+ &#39;Party X passed fiscal reform, this increased deficit by a staggering 20%&#39;,
+ &#39;Party X passed fiscal reform, as a consequence our GDP has fallen dramatically&#39;,
+ &#39;Party X passed jobs act, now spending is out of control&#39;,
+ &#39;Party X passed jobs act, this increased taxes by 10%&#39;,
+ &#39;Party X passed jobs act, this increased deficit by a staggering 20%&#39;,
+ &#39;Party X passed jobs act, as a consequence our GDP has fallen dramatically&#39;,
+ &#39;Party X regulated pollution emissions, businesses had to fire many employees&#39;,
+ &#39;Party X regulated pollution emissions, businesses are struggling to meet law requirements&#39;,
+ &#39;Party X restricted building in natural areas, businesses had to fire many employees&#39;,
+ &#39;Party X restricted building in natural areas, businesses are struggling to meet law requirements&#39;,
+ &#39;Party X introduced more controls in agrifood production, businesses had to fire many employees&#39;,
+ &#39;Party X introduced more controls in agrifood production, businesses are struggling to meet law requirements&#39;,
+ &#39;Party X changed immigration policy, immigrants are stealing our jobs&#39;]
+</pre></div></div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
+
+<span></span><span class="n">db_subjects</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;Government&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;Party X&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">db_antecedents</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;passed fiscal reform&quot;</span><span class="p">,</span><span class="s2">&quot;economy&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;passed jobs act&quot;</span><span class="p">,</span><span class="s2">&quot;economy&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;regulated pollution emissions&quot;</span><span class="p">,</span> <span class="s2">&quot;environment&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;restricted building in natural areas&quot;</span><span class="p">,</span> <span class="s2">&quot;environment&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;introduced more controls in agrifood production&quot;</span><span class="p">,</span><span class="s2">&quot;environment&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;changed immigration policy&quot;</span><span class="p">,</span><span class="s2">&quot;foreign policy&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="n">db_consequences</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;economy&quot;</span><span class="p">,</span><span class="s2">&quot;now spending is out of control&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;economy&quot;</span><span class="p">,</span><span class="s2">&quot;this increased taxes by 10%&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;economy&quot;</span><span class="p">,</span><span class="s2">&quot;this increased deficit by a staggering 20%&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;economy&quot;</span><span class="p">,</span><span class="s2">&quot;as a consequence our GDP has fallen dramatically&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;environment&quot;</span><span class="p">,</span><span class="s2">&quot;businesses had to fire many employees&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;environment&quot;</span><span class="p">,</span><span class="s2">&quot;businesses are struggling to meet law requirements&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;foreign policy&quot;</span><span class="p">,</span><span class="s2">&quot;immigrants are stealing our jobs&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">fake_news</span><span class="p">(</span><span class="n">subjects</span><span class="p">,</span> <span class="n">antecedents</span><span class="p">,</span><span class="n">consequences</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
+
+
+<span class="n">fake_news</span><span class="p">(</span><span class="n">db_subjects</span><span class="p">,</span> <span class="n">db_antecedents</span><span class="p">,</span> <span class="n">db_consequences</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="Functions-with-assert">
 <h2>Functions with assert<a class="headerlink" href="#Functions-with-assert" title="Permalink to this headline">¶</a></h2>
@@ -2854,7 +3033,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2887,7 +3066,7 @@ not good
 <div class="highlight"><pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_3032/3187043984.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">/tmp/ipykernel_15271/3187043984.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-intense-fg ansi-bold">     14</span>
 <span class="ansi-green-intense-fg ansi-bold">     15</span> l <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">7</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
 <span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">assert</span> newdoublefor<span class="ansi-blue-fg">(</span>l<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">6</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">14</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
@@ -2898,7 +3077,7 @@ not good
 </pre></div></div>
 </div>
 </div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -2925,7 +3104,7 @@ not good
 <div class="highlight"><pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_3032/3187043984.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">/tmp/ipykernel_15271/3187043984.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-intense-fg ansi-bold">     14</span>
 <span class="ansi-green-intense-fg ansi-bold">     15</span> l <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">7</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
 <span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">assert</span> newdoublefor<span class="ansi-blue-fg">(</span>l<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">6</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">14</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
@@ -4466,14 +4645,23 @@ not good
 </div>
 </div>
 <p>This extracts the four, but if we want to find an algorithm for our problem, we must also find a way to progressively reduce the problem size. To do so, we can exploit the integer division operator <code class="docutils literal notranslate"><span class="pre">//</span></code>:</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="mi">574</span> <span class="o">//</span> <span class="mi">10</span>
 </pre></div>
 </div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+57
+</pre></div></div>
 </div>
 <p>Now, given any integer number, you know how to</p>
 <ol class="loweralpha simple">
@@ -4484,7 +4672,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4515,7 +4703,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4561,8 +4749,8 @@ Output: [1,0,0,0,0]
 </ol>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4590,8 +4778,32 @@ Output: [1,0,0,0,0]
 </pre></div>
 </div>
 </div>
-</div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">/tmp/ipykernel_15271/725919802.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     13</span>     <span class="ansi-red-fg">#/jupman-raise</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span>
+<span class="ansi-green-fg">---&gt; 15</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">     16</span> <span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span> <span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">]</span>
+
+<span class="ansi-green-fg">/tmp/ipykernel_15271/725919802.py</span> in <span class="ansi-cyan-fg">add_one_conv</span><span class="ansi-blue-fg">(lst)</span>
+<span class="ansi-green-intense-fg ansi-bold">      8</span>     <span class="ansi-red-fg">#jupman-raise</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span>     power <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">1</span>
+<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg">     </span>num <span class="ansi-blue-fg">=</span> listoint<span class="ansi-blue-fg">(</span>lst<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     11</span>
+<span class="ansi-green-intense-fg ansi-bold">     12</span>     <span class="ansi-green-fg">return</span> intolist<span class="ansi-blue-fg">(</span>num <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;listoint&#39; is not defined
+</pre></div></div>
+</div>
+</div><div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4613,6 +4825,30 @@ Output: [1,0,0,0,0]
 <span class="k">assert</span> <span class="n">add_one_conv</span><span class="p">([</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">/tmp/ipykernel_15271/725919802.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">     13</span>     <span class="ansi-red-fg">#/jupman-raise</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span>
+<span class="ansi-green-fg">---&gt; 15</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">     16</span> <span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span> <span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">]</span>
+
+<span class="ansi-green-fg">/tmp/ipykernel_15271/725919802.py</span> in <span class="ansi-cyan-fg">add_one_conv</span><span class="ansi-blue-fg">(lst)</span>
+<span class="ansi-green-intense-fg ansi-bold">      8</span>     <span class="ansi-red-fg">#jupman-raise</span>
+<span class="ansi-green-intense-fg ansi-bold">      9</span>     power <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">1</span>
+<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg">     </span>num <span class="ansi-blue-fg">=</span> listoint<span class="ansi-blue-fg">(</span>lst<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     11</span>
+<span class="ansi-green-intense-fg ansi-bold">     12</span>     <span class="ansi-green-fg">return</span> intolist<span class="ansi-blue-fg">(</span>num <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;listoint&#39; is not defined
+</pre></div></div>
 </div>
 </div>
 <div class="section" id="Exercise---add_one_carry">
@@ -4680,7 +4916,7 @@ Output: [1,0,0,0,0]
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4717,7 +4953,7 @@ Output: [1,0,0,0,0]
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -4752,7 +4988,7 @@ Output: [1,0,0,0,0]
 <p>Write a program that creates a list <code class="docutils literal notranslate"><span class="pre">seq</span></code> , such that for each value <code class="docutils literal notranslate"><span class="pre">n</span></code> between <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">50</span></code> , <code class="docutils literal notranslate"><span class="pre">seq</span> <span class="pre">[</span> <span class="pre">n</span> <span class="pre">]</span></code> contains the length of the sequence so generated. In case of <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">3</span></code> , the length is <code class="docutils literal notranslate"><span class="pre">8</span></code> . In case of <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">27</span></code> , the length is <code class="docutils literal notranslate"><span class="pre">111</span></code>.</p>
 <p>If you need to check your results, you can also try this <a class="reference external" href="https://www.dcode.fr/collatz-conjecture">nice online tool</a></p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
