@@ -220,7 +220,6 @@ D - Projects
     :maxdepth: 2
     :glob:
 
-.. 
     toc-worked-projects.rst
 
 
