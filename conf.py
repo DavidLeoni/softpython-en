@@ -436,9 +436,20 @@ def setup(app):
 
     # temporary hack to have graph-drawing stuff
     jmt.info('Copying soft.py ...')
-    import shutil
-    shutil.copy('soft.py', 'formats/')
-    shutil.copy('soft.py', 'relational/')
+    import shutil             
+    relational =  ['relational/',
+                   'formats/',
+                   'projects/slave-trade/',        
+                   'projects/bud-spencer-terence-hill-movies/',    
+                   'projects/bus-network/',
+                   'projects/wikispeedia/',
+                   'projects/mexican-drug-wars/',
+                   'projects/wordnet/',
+                   'projects/metamath/']
+    
+    for rel in relational:
+        jmt.info('Copying soft.py to %s' % rel)
+        shutil.copy('soft.py', rel)
     
 
     if 'googleanalytics_id' in globals() and globals()['googleanalytics_id']:
