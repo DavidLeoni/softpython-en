@@ -13,10 +13,6 @@ li.toctree-l1 > a > .toctree-expand {
 
 /* Fixes for https://github.com/DavidLeoni/jupman/issues/17 */
  
-/* code overflow */
-div.input_area  {
-    overflow:visible !important
-}
 
 /* too much output  */
 div.output_area.docutils.container:not(.rendered_html){ 
