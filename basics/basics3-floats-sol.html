@@ -312,9 +312,10 @@
 <li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Evaluation-order">Evaluation order</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Evaluation-errors">Evaluation errors</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Comparison-operators">Comparison operators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Joining-comparisons">Joining comparisons</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Exercise---The-Lawnmower-1">Exercise - The Lawnmower 1</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Exercise---The-Lawnmower-2">Exercise - The Lawnmower 2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Esercizio---Il-Tagliaerbe-3">Esercizio - Il Tagliaerbe 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Exercise---The-Lawnmower-3">Exercise - The Lawnmower 3</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Exercise---The-Lawnmower-4">Exercise - The Lawnmower 4</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Exercise---The-Lava-Temple">Exercise - The Lava Temple</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basics2-bools-sol.html#Exercise---The-Tower-of-Gradius-I">Exercise - The Tower of Gradius I</a></li>
@@ -346,14 +347,11 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="basics4-chal.html">Challenges</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basics4-chal.html#Download-exercises-zip">Download exercises zip</a></li>
-<li class="toctree-l4"><a class="reference internal" href="basics4-chal.html#Challenges">Challenges</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="basics4-chal.html#Challenge---which-booleans-1?">Challenge - which booleans 1?</a></li>
-<li class="toctree-l5"><a class="reference internal" href="basics4-chal.html#Challenge---which-booleans-2?">Challenge - which booleans 2?</a></li>
-<li class="toctree-l5"><a class="reference internal" href="basics4-chal.html#Challenge---airport">Challenge - airport</a></li>
-<li class="toctree-l5"><a class="reference internal" href="basics4-chal.html#Challenge---Holiday-trip">Challenge - Holiday trip</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="basics4-chal.html#The-Tunnel-of-Time">The Tunnel of Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basics4-chal.html#Challenge---which-booleans-1?">Challenge - which booleans 1?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basics4-chal.html#Challenge---which-booleans-2?">Challenge - which booleans 2?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basics4-chal.html#Challenge---airport">Challenge - airport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basics4-chal.html#Challenge---Holiday-trip">Challenge - Holiday trip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basics4-chal.html#Challange---The-Tunnel-of-Time">Challange - The Tunnel of Time</a></li>
 </ul>
 </li>
 </ul>
@@ -2866,7 +2864,7 @@ float
 7.5e-122
 </pre></div></div>
 </div>
-<p><strong>QUESTION</strong>: Look at the following expressions, and try to find which result they produce (or if they give and error):</p>
+<p><strong>QUESTION</strong>: Look at the following expressions, and try to find which result they produce (or if they give an error):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">1.000</span><span class="o">.</span><span class="mi">000</span><span class="p">)</span>
 </pre></div>
@@ -3482,7 +3480,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: what follows is valid for</strong> <strong>*all*</strong> <strong>programming languages!</strong></p>
 <p>Some results will look weird but this is the way most processors (CPU) operates, independently from Python.</p>
 </div>
-<p>When floating point calculations are performed, the processor may introduce rounding errors due to limits of internal representation. Under the hood the numbers like floats are memorized in a sequence of binary code of 64 bits, according to <em>IEEE-754 floating point arithmetic</em> standard: this imposes a physical limit to the precision of numbers, and sometimes we ight get surprises due to conversion from decimal to binary. For example, let’s try printing <code class="docutils literal notranslate"><span class="pre">4.1</span></code>:</p>
+<p>When floating point calculations are performed, the processor may introduce rounding errors due to limits of internal representation. Under the hood the numbers like floats are memorized in a sequence of binary code of 64 bits, according to <em>IEEE-754 floating point arithmetic</em> standard: this imposes a physical limit to the precision of numbers, and sometimes we get surprises due to conversion from decimal to binary. For example, let’s try printing <code class="docutils literal notranslate"><span class="pre">4.1</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
@@ -3500,7 +3498,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 4.1
 </pre></div></div>
 </div>
-<p>For our convenience Python is showing us <code class="docutils literal notranslate"><span class="pre">4.1</span></code>, but in reality in the processor memory ended up a different number! Which one? To discover what it hides, with <code class="docutils literal notranslate"><span class="pre">format</span></code> function we can explicitly format the number to, for example 55 digits of precision by using the <code class="docutils literal notranslate"><span class="pre">f</span></code> format specifier:</p>
+<p>For our convenience Python is showing us <code class="docutils literal notranslate"><span class="pre">4.1</span></code>, but in reality a different number ended up in the processor memory! Which one? To discover what it hides, with <code class="docutils literal notranslate"><span class="pre">format</span></code> function we can explicitly format the number to, for example 55 digits of precision by using the <code class="docutils literal notranslate"><span class="pre">f</span></code> format specifier:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>

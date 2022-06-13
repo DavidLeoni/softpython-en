@@ -312,9 +312,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Evaluation-order">Evaluation order</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Evaluation-errors">Evaluation errors</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Comparison-operators">Comparison operators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Joining-comparisons">Joining comparisons</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Lawnmower-1">Exercise - The Lawnmower 1</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Lawnmower-2">Exercise - The Lawnmower 2</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Esercizio---Il-Tagliaerbe-3">Esercizio - Il Tagliaerbe 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Lawnmower-3">Exercise - The Lawnmower 3</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Lawnmower-4">Exercise - The Lawnmower 4</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Lava-Temple">Exercise - The Lava Temple</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../basics/basics2-bools-sol.html#Exercise---The-Tower-of-Gradius-I">Exercise - The Tower of Gradius I</a></li>
@@ -346,14 +347,11 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../basics/basics4-chal.html">Challenges</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#Download-exercises-zip">Download exercises zip</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#Challenges">Challenges</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---which-booleans-1?">Challenge - which booleans 1?</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---which-booleans-2?">Challenge - which booleans 2?</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---airport">Challenge - airport</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---Holiday-trip">Challenge - Holiday trip</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#The-Tunnel-of-Time">The Tunnel of Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---which-booleans-1?">Challenge - which booleans 1?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---which-booleans-2?">Challenge - which booleans 2?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---airport">Challenge - airport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#Challenge---Holiday-trip">Challenge - Holiday trip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics/basics4-chal.html#Challange---The-Tunnel-of-Time">Challange - The Tunnel of Time</a></li>
 </ul>
 </li>
 </ul>
@@ -2990,10 +2988,10 @@ copyright infringment matters aside :-)</p>
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmd9c3f795-5f24-4ff9-9a32-a63c95a31cb8" type="application/json" >
+<script id="json-jmbdf3d4c6-cb06-423e-8c8f-cbbe86fbcd41" type="application/json" >
     {"code": " \ndef extrowp(mat, i):\n    \"\"\" RETURN the ith row from mat        \n    \"\"\"\n    return mat[i]\n\n    \nm = [\n      ['a','b'],\n      ['c','d'],\n      ['a','e'],    \n]\n\nrow = extrowp(m, 0)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"extrowp": ["REF", 1]}, "ordered_globals": ["extrowp"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"extrowp": ["REF", 1]}, "ordered_globals": ["extrowp"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"extrowp": ["REF", 1]}, "ordered_globals": ["extrowp"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrowp", "m"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"]}, "stdout": ""}, {"line": 2, "event": "call", "func_name": "extrowp", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrowp", "m"], "stack_to_render": [{"func_name": "extrowp", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrowp_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "extrowp", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrowp", "m"], "stack_to_render": [{"func_name": "extrowp", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrowp_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 5, "event": "return", "func_name": "extrowp", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrowp", "m"], "stack_to_render": [{"func_name": "extrowp", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "__return__": ["REF", 3]}, "ordered_varnames": ["mat", "i", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrowp_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 14, "event": "return", "func_name": "<module>", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2], "row": ["REF", 3]}, "ordered_globals": ["extrowp", "m", "row"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"]}, "stdout": ""}]}
 </script>
-<div id="jmd9c3f795-5f24-4ff9-9a32-a63c95a31cb8" class="pytutorVisualizer"> </div>
+<div id="jmbdf3d4c6-cb06-423e-8c8f-cbbe86fbcd41" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3013,12 +3011,12 @@ copyright infringment matters aside :-)</p>
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jmd9c3f795-5f24-4ff9-9a32-a63c95a31cb8').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmbdf3d4c6-cb06-423e-8c8f-cbbe86fbcd41').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmd9c3f795-5f24-4ff9-9a32-a63c95a31cb8',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmbdf3d4c6-cb06-423e-8c8f-cbbe86fbcd41',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3047,7 +3045,7 @@ copyright infringment matters aside :-)</p>
 <span></span><span class="c1"># WARNING: WRONG CODE!!!!</span>
 
 <span class="k">def</span> <span class="nf">extrow_wrong</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; RETURN the ith row from mat. NOTE: the row MUST be a new list ! &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot; RETURN the ith row from mat, as a NEW list&quot;&quot;&quot;</span>
 
     <span class="n">row</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">row</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
@@ -3072,10 +3070,10 @@ copyright infringment matters aside :-)</p>
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm5ef6060d-35fb-438f-9a89-dd203fa43fd3" type="application/json" >
-    {"code": " \n# WARNING: WRONG CODE!!!!\n\ndef extrow_wrong(mat, i):\n    \"\"\" RETURN the ith row from mat. NOTE: the row MUST be a new list ! \"\"\"\n    \n    row = []\n    row.append(mat[i])  \n    return row\n\nm = [\n      ['a','b'],\n      ['c','d'],\n      ['a','e'],    \n]\n\nrow = extrow_wrong(m,0)", "trace": [{"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1]}, "ordered_globals": ["extrow_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 13, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1]}, "ordered_globals": ["extrow_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1]}, "ordered_globals": ["extrow_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 17, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"]}, "stdout": ""}, {"line": 4, "event": "call", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "row": ["REF", 6]}, "ordered_varnames": ["mat", "i", "row"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST"], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "row": ["REF", 6]}, "ordered_varnames": ["mat", "i", "row"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST", ["REF", 3]], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 9, "event": "return", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "row": ["REF", 6], "__return__": ["REF", 6]}, "ordered_varnames": ["mat", "i", "row", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST", ["REF", 3]], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 17, "event": "return", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2], "row": ["REF", 6]}, "ordered_globals": ["extrow_wrong", "m", "row"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST", ["REF", 3]]}, "stdout": ""}]}
+<script id="json-jm6a46a1a7-0bab-47c2-8e27-c30f0c6a7d8f" type="application/json" >
+    {"code": " \n# WARNING: WRONG CODE!!!!\n\ndef extrow_wrong(mat, i):\n    \"\"\" RETURN the ith row from mat, as a NEW list\"\"\"\n    \n    row = []\n    row.append(mat[i])  \n    return row\n\nm = [\n      ['a','b'],\n      ['c','d'],\n      ['a','e'],    \n]\n\nrow = extrow_wrong(m,0)", "trace": [{"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1]}, "ordered_globals": ["extrow_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 13, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1]}, "ordered_globals": ["extrow_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1]}, "ordered_globals": ["extrow_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 17, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"]}, "stdout": ""}, {"line": 4, "event": "call", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "row": ["REF", 6]}, "ordered_varnames": ["mat", "i", "row"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST"], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "row": ["REF", 6]}, "ordered_varnames": ["mat", "i", "row"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST", ["REF", 3]], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 9, "event": "return", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "row": ["REF", 6], "__return__": ["REF", 6]}, "ordered_varnames": ["mat", "i", "row", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST", ["REF", 3]], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 17, "event": "return", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2], "row": ["REF", 6]}, "ordered_globals": ["extrow_wrong", "m", "row"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST", ["REF", 3]]}, "stdout": ""}]}
 </script>
-<div id="jm5ef6060d-35fb-438f-9a89-dd203fa43fd3" class="pytutorVisualizer"> </div>
+<div id="jm6a46a1a7-0bab-47c2-8e27-c30f0c6a7d8f" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3095,12 +3093,12 @@ copyright infringment matters aside :-)</p>
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm5ef6060d-35fb-438f-9a89-dd203fa43fd3').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm6a46a1a7-0bab-47c2-8e27-c30f0c6a7d8f').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm5ef6060d-35fb-438f-9a89-dd203fa43fd3',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm6a46a1a7-0bab-47c2-8e27-c30f0c6a7d8f',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3121,9 +3119,9 @@ copyright infringment matters aside :-)</p>
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: The code above adds a LIST as element to another empty list. In other words, it is wrapping the row (which is already a list) into another list. If you checj the problem in Python Tutor, you will see an arrow going from row to a list of one element which will contain exactly one arrow to the original row.</p>
 </div><p>You can build an actual copy in several ways, with a <code class="docutils literal notranslate"><span class="pre">for</span></code>, a slice or a list comprehension. Try to implement all versions, starting with the <code class="docutils literal notranslate"><span class="pre">for</span></code> here. Be sure to check your result with Python Tutor - to visualize python tutor inside the cell output, you might use the special command <code class="docutils literal notranslate"><span class="pre">jupman.pytut()</span></code> at the end of the cell as we did before. If you run the code with Python Tutor, you should only see <em>one</em> arrow going to the original <code class="docutils literal notranslate"><span class="pre">['a','b']</span></code> row in <code class="docutils literal notranslate"><span class="pre">m</span></code>, and there should be
 <em>another</em> <code class="docutils literal notranslate"><span class="pre">['a','b']</span></code> copy somewhere, with <code class="docutils literal notranslate"><span class="pre">row</span></code> variable pointing to it.</p>
-<p>✪ <strong>EXERCISE</strong>: Implement the function <code class="docutils literal notranslate"><span class="pre">esrowf</span></code> which RETURNS the <code class="docutils literal notranslate"><span class="pre">i</span></code>-th row from <code class="docutils literal notranslate"><span class="pre">mat</span></code></p>
+<p>✪ <strong>EXERCISE</strong>: Implement the function <code class="docutils literal notranslate"><span class="pre">esrowf</span></code> which RETURNS the <code class="docutils literal notranslate"><span class="pre">i</span></code>-th row from <code class="docutils literal notranslate"><span class="pre">mat</span></code> as a NEW list.</p>
 <ul class="simple">
-<li><p><strong>NOTE</strong>: the row MUST be a new list! To create a new list use a for cycle which iterates over the elements, <em>not</em> the indeces (so don’t use range!)</p></li>
+<li><p><strong>NOTE</strong>: To create a new list use a for cycle which iterates over the elements, <em>not</em> the indeces (so don’t use range!)</p></li>
 </ul>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3234,7 +3232,7 @@ range(0, 5)
 <p>Be careful, though. According to the sequence dimension, this might be dangerous. A billion elements list might saturate your computer RAM (in 2020 notebooks often have 4 gigabytes of RAM, that is, 4 billion bytes).</p>
 <p>✪ <strong>EXERCISE</strong>: Now implement the <code class="docutils literal notranslate"><span class="pre">extrowr</span></code> iterating over a range of row indexes:</p>
 <ul class="simple">
-<li><p><strong>NOTE 1</strong>: the row MUST be a new list! To create a new list use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
+<li><p><strong>NOTE 1</strong>: To create a new list use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
 <li><p><strong>NOTE 2</strong>: remember to use a new name for the column index!</p></li>
 </ul>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -3245,7 +3243,7 @@ range(0, 5)
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="k">def</span> <span class="nf">extrowr</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; RETURN the ith row from mat.</span>
+    <span class="sd">&quot;&quot;&quot; RETURN the ith row from mat as a NEW list</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">row</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3280,7 +3278,7 @@ range(0, 5)
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="k">def</span> <span class="nf">extrowr</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; RETURN the ith row from mat.</span>
+    <span class="sd">&quot;&quot;&quot; RETURN the ith row from mat as a NEW list</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
@@ -3307,10 +3305,10 @@ range(0, 5)
 </div>
 <div class="section" id="Extract-row-with-a-slice">
 <h3>Extract row with a slice<a class="headerlink" href="#Extract-row-with-a-slice" title="Permalink to this headline">¶</a></h3>
-<p>✪ Remember slices return a <em>copy</em> of a list? Now try to use them.</p>
-<p>Implement <code class="docutils literal notranslate"><span class="pre">extrows</span></code>, which RETURN the <code class="docutils literal notranslate"><span class="pre">i</span></code>-th row from <code class="docutils literal notranslate"><span class="pre">mat</span></code>.</p>
+<p>✪ Remember slices return a <em>copy</em> of a list? Now try using them.</p>
+<p>Implement <code class="docutils literal notranslate"><span class="pre">extrows</span></code>, which RETURN the <code class="docutils literal notranslate"><span class="pre">i</span></code>-th row from <code class="docutils literal notranslate"><span class="pre">mat</span></code> as a NEW list.</p>
 <ul class="simple">
-<li><p><strong>NOTE</strong>: the row MUST be a new list! To create it, use slices.</p></li>
+<li><p><strong>NOTE</strong>: To create it, use slices</p></li>
 </ul>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3377,10 +3375,7 @@ range(0, 5)
 </div>
 <div class="section" id="Extract-row-with-list-comprehension">
 <h3>Extract row with list comprehension<a class="headerlink" href="#Extract-row-with-list-comprehension" title="Permalink to this headline">¶</a></h3>
-<p>✪ Implement <code class="docutils literal notranslate"><span class="pre">extrowc</span></code>, which RETURNs the <code class="docutils literal notranslate"><span class="pre">i</span></code>-th row from <code class="docutils literal notranslate"><span class="pre">mat</span></code>. To create a new list use a <em>list comprehension</em>.</p>
-<ul class="simple">
-<li><p><strong>NOTE</strong>: the row MUST be a new list!</p></li>
-</ul>
+<p>✪ Implement <code class="docutils literal notranslate"><span class="pre">extrowc</span></code>, which RETURNs the <code class="docutils literal notranslate"><span class="pre">i</span></code>-th row from <code class="docutils literal notranslate"><span class="pre">mat</span></code> as a NEW list, using a <em>list comprehension</em>.</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
@@ -3693,10 +3688,10 @@ range(0, 5)
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm434be621-7d54-4c3b-980d-fe2b8f9d3d20" type="application/json" >
+<script id="json-jm53ccda36-a670-42e6-a426-89704438ddda" type="application/json" >
     {"code": " \nbad = [[0]*3]*5", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"bad": ["REF", 1]}, "ordered_globals": ["bad"], "stack_to_render": [], "heap": {"1": ["LIST", ["REF", 2], ["REF", 2], ["REF", 2], ["REF", 2], ["REF", 2]], "2": ["LIST", 0, 0, 0]}, "stdout": ""}]}
 </script>
-<div id="jm434be621-7d54-4c3b-980d-fe2b8f9d3d20" class="pytutorVisualizer"> </div>
+<div id="jm53ccda36-a670-42e6-a426-89704438ddda" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3716,12 +3711,12 @@ range(0, 5)
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm434be621-7d54-4c3b-980d-fe2b8f9d3d20').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm53ccda36-a670-42e6-a426-89704438ddda').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm434be621-7d54-4c3b-980d-fe2b8f9d3d20',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm53ccda36-a670-42e6-a426-89704438ddda',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -3850,10 +3845,10 @@ range(0, 5)
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm088e140e-e5b9-44d7-a0c3-de56cfc88949" type="application/json" >
+<script id="json-jm74c69799-1806-412f-9096-9f636584772f" type="application/json" >
     {"code": " \n# WARNING: WRONG CODE\ndef deep_clone_wrong(mat):\n    \"\"\" RETURN a NEW list of lists which is a COMPLETE DEEP clone\n        of mat (which is a list of lists)\n    \"\"\"\n    return mat[:]\n\nm = [\n        ['a','b'],\n        ['b','d']\n    ]       \n        \nres = deep_clone_wrong(m)\n\n# Notice you will have arrows in res list going to the _original_ mat. We don't want this !", "trace": [{"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deep_clone_wrong": ["REF", 1]}, "ordered_globals": ["deep_clone_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"deep_clone_wrong": ["REF", 1]}, "ordered_globals": ["deep_clone_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["deep_clone_wrong", "m"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "deep_clone_wrong(mat)", null], "2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"]}, "stdout": ""}, {"line": 3, "event": "call", "func_name": "deep_clone_wrong", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["deep_clone_wrong", "m"], "stack_to_render": [{"func_name": "deep_clone_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2]}, "ordered_varnames": ["mat"], "is_zombie": false, "is_highlighted": true, "unique_hash": "deep_clone_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"], "1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "deep_clone_wrong", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["deep_clone_wrong", "m"], "stack_to_render": [{"func_name": "deep_clone_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2]}, "ordered_varnames": ["mat"], "is_zombie": false, "is_highlighted": true, "unique_hash": "deep_clone_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"], "1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 7, "event": "return", "func_name": "deep_clone_wrong", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["deep_clone_wrong", "m"], "stack_to_render": [{"func_name": "deep_clone_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "__return__": ["REF", 5]}, "ordered_varnames": ["mat", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "deep_clone_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"], "5": ["LIST", ["REF", 3], ["REF", 4]], "1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 14, "event": "return", "func_name": "<module>", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2], "res": ["REF", 5]}, "ordered_globals": ["deep_clone_wrong", "m", "res"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "deep_clone_wrong(mat)", null], "2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"], "5": ["LIST", ["REF", 3], ["REF", 4]]}, "stdout": ""}]}
 </script>
-<div id="jm088e140e-e5b9-44d7-a0c3-de56cfc88949" class="pytutorVisualizer"> </div>
+<div id="jm74c69799-1806-412f-9096-9f636584772f" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -3873,12 +3868,12 @@ range(0, 5)
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm088e140e-e5b9-44d7-a0c3-de56cfc88949').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm74c69799-1806-412f-9096-9f636584772f').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm088e140e-e5b9-44d7-a0c3-de56cfc88949',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm74c69799-1806-412f-9096-9f636584772f',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
