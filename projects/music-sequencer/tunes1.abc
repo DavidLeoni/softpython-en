@@ -12,7 +12,8 @@ K:C                      % key
 X:2                      
 T:Transpose Your Head
 C:Matrix Queen  
-M:3/4    
+O:Venice                 % overriding header
+M:3/4
 K:G
 |F2  G4     |E4      E F|A2  B2  D2 |D3    E3   |C3    C3   |   
 

@@ -1,0 +1,16 @@
+%abc-2.1
+C:Drum Shaman
+M:4/4
+H:Folk songs collected while travelling
+
+X:1                     
+T:Jungle Beat 
+K:D
+|G1  G2 G1 G1 A1 E2 |E1 E1 D6 |
+
+X:2                      
+T:Byte Polka
+M:2/4                   % overrides M from header
+C:The Crazy Gipsie      % overrides C from header
+K:G
+|A3 A3 G2 E3 A3 G2  |   % melodies can also have a comment
