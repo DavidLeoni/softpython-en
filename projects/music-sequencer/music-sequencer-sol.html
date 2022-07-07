@@ -740,12 +740,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../../sets/sets1-sol.html#Operators">Operators</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../../sets/sets1-sol.html#len">len</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../sets/sets1-sol.html#Exercise---distincts">Exercise - distincts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../sets/sets1-sol.html#Membership">Membership</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../sets/sets1-sol.html#Union">Union</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../sets/sets1-sol.html#Exercise---everythingbut-1">Exercise - everythingbut 1</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../sets/sets1-sol.html#Intersection">Intersection</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../sets/sets1-sol.html#Difference">Difference</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../sets/sets1-sol.html#Symmetric-difference">Symmetric difference</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../../sets/sets1-sol.html#Membership">Membership</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../../sets/sets1-sol.html#Equality">Equality</a></li>
@@ -2667,7 +2667,7 @@ div.rendered_html tbody tr:hover {
 <h2><a class="reference external" href="../../_static/generated/music-sequencer-prj.zip">Download worked project</a><a class="headerlink" href="#Download-worked-project" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/projects/music-sequencer">Browse files online</a></p>
 <p><img alt="expected-plot-preview" src="../../_images/expected-plot.png" /></p>
-<p><a class="reference external" href="http://abcnotation.com/wiki/abc:standard:v2.1#rrhythm">ABC</a> is a popular format to write music notation in plain text files, you can see an example by openining <a class="reference external" href="tunes.abc">tunes.abc</a> with a text editor. A music sequencer is an editor software which typically displays notes as a matrix: you will parse simplified abc tunes and display their melodies in a matrix.</p>
+<p><a class="reference external" href="http://abcnotation.com/wiki/abc:standard:v2.1#rrhythm">ABC</a> is a popular format to write music notation in plain text files, you can see an example by openining <a class="reference external" href="tunes1.abc">tunes1.abc</a> with a text editor. A music sequencer is an editor software which typically displays notes as a matrix: you will parse simplified abc tunes and display their melodies in a matrix.</p>
 </div>
 <div class="section" id="What-to-do">
 <h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
@@ -2677,7 +2677,7 @@ div.rendered_html tbody tr:hover {
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>music-sequencer-prj
     music-sequencer.ipynb
     music-sequencer-sol.ipynb
-    tunes.abc
+    tunes1.abc
     jupman.py
 </pre></div>
 </div>
@@ -2791,13 +2791,13 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="2.-parse_tunes">
 <h2>2. parse_tunes<a class="headerlink" href="#2.-parse_tunes" title="Permalink to this headline">¶</a></h2>
 <p>An <code class="docutils literal notranslate"><span class="pre">.abc</span></code> file is a series of key:value fields. Keys are always one character long. Anything after a <code class="docutils literal notranslate"><span class="pre">%</span></code> is a comment and must be ignored</p>
-<p>File <a class="reference external" href="tunes.abc">tunes.abc</a> excerpt:</p>
+<p>File <a class="reference external" href="tunes1.abc">tunes1.abc</a> excerpt:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;tunes.abc&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">:</span><span class="mi">17</span><span class="p">]))</span>
+<span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;tunes1.abc&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">:</span><span class="mi">18</span><span class="p">]))</span>
 </pre></div>
 </div>
 </div>
@@ -2820,6 +2820,7 @@ K:C                      % key
 X:2
 T:Transpose Your Head
 C:Matrix Queen
+O:Venice                 % overriding header
 M:3/4
 K:G
 |F2  G4     |E4      E F|A2  B2  D2 |D3    E3   |C3    C3   |
@@ -2829,7 +2830,7 @@ K:G
 <p>First lines (3 in the example) are the file header, separated by tunes with a blank line.</p>
 <ul class="simple">
 <li><p>first line must always be ignored</p></li>
-<li><p>fields specified in the file header must be copied in <em>all</em> tunes</p></li>
+<li><p>fields specified in the file header must be copied in <em>all</em> tunes. Note a tune may override a field (es <code class="docutils literal notranslate"><span class="pre">O:Venice</span></code>).</p></li>
 </ul>
 <p>After the first blank line, there is the first tune:</p>
 <ul class="simple">
@@ -2839,18 +2840,18 @@ K:G
 <li><p>melody line has no field key, it always follows line with <code class="docutils literal notranslate"><span class="pre">K</span></code> and it immediately begins with a pipe: convert it to list by calling <code class="docutils literal notranslate"><span class="pre">parse_melody</span></code></p></li>
 </ul>
 <p>Following tunes are separated by blank lines</p>
-<p>Write a function <code class="docutils literal notranslate"><span class="pre">parse_tunes</span></code> which parses the file and outputs a list of dictionaries, one per tune. Use provided <code class="docutils literal notranslate"><span class="pre">field_names</span></code> to obtain dictionary keys. Full expected db is in <a class="reference external" href="expected_db.py">expected_db.py</a> file.</p>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">parse_tunes</span></code> which parses the file and outputs a list of dictionaries, one per tune. Use provided <code class="docutils literal notranslate"><span class="pre">field_names</span></code> to obtain dictionary keys. Full expected db is in <a class="reference external" href="expected_db1.py">expected_db1.py</a> file.</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>DO NOT write hundreds of</strong> <code class="docutils literal notranslate"><span class="pre">ifs</span></code></p>
 <p>Special keys are listed above, all others should be treated in a generic way</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>DO NOT assume header always contains</strong> <code class="docutils literal notranslate"><span class="pre">'origin'</span></code> <strong>and</strong> <code class="docutils literal notranslate"><span class="pre">'history'</span></code></p>
-<p>It can contain <em>any</em> field, which has to be then copied in all the tunes.</p>
+<p>It can contain <em>any</em> field, which has to be then copied in all the tunes, see <a class="reference external" href="tunes2.abc">tunes2.abc</a> for extra examples.</p>
 </div>
 <p><strong>Example</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tunes_db</span> <span class="o">=</span> <span class="n">parse_tunes</span><span class="p">(</span><span class="s1">&#39;tunes.abc&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">tunes_db</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span><span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">tunes_db1</span> <span class="o">=</span> <span class="n">parse_tunes</span><span class="p">(</span><span class="s1">&#39;tunes1.abc&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pprint</span><span class="p">(</span><span class="n">tunes_db1</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span><span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
 <span class="go">[</span>
 <span class="go"> {&#39;composer&#39;: &#39;The Lord of the Loop&#39;,</span>
 <span class="go">  &#39;history&#39;: &#39;Tune made in a dark algorithmic night&#39;,</span>
@@ -2867,7 +2868,7 @@ K:G
 <span class="go">  &#39;key&#39;: &#39;G&#39;,</span>
 <span class="go">  &#39;melody&#39;: [(5, 4),(6, 8),(4, 8),(4, 2),(5, 2),(0, 4),(1, 4),(3, 4),(3, 6),(4, 6),(2, 6),(2, 6)],</span>
 <span class="go">  &#39;meter&#39;: (3, 4),</span>
-<span class="go">  &#39;origin&#39;: &#39;Trento&#39;,</span>
+<span class="go">  &#39;origin&#39;: &#39;Venice&#39;,</span>
 <span class="go">  &#39;title&#39;: &#39;Transpose Your Head&#39;</span>
 <span class="go"> }</span>
 <span class="go">]</span>
@@ -2895,38 +2896,43 @@ K:G
 <span class="k">def</span> <span class="nf">parse_tunes</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
 
 
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;tunes.abc&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
         <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># skips %abc-2.1</span>
         <span class="n">tunes</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="n">common</span> <span class="o">=</span> <span class="p">{}</span>
-        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
-            <span class="c1">#pprint(line)</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+        <span class="k">while</span> <span class="n">line</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
             <span class="n">clean_line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
             <span class="k">if</span> <span class="n">clean_line</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
                 <span class="n">tune</span> <span class="o">=</span> <span class="n">common</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
                 <span class="n">tunes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tune</span><span class="p">)</span>
-            <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">tunes</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-                <span class="k">if</span> <span class="s1">&#39;key&#39;</span> <span class="ow">in</span> <span class="n">tune</span><span class="p">:</span>
-                    <span class="n">tune</span><span class="p">[</span><span class="s1">&#39;melody&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parse_melody</span><span class="p">(</span><span class="n">clean_line</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="c1"># process value</span>
+                <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="o">=</span> <span class="n">clean_line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;X&#39;</span><span class="p">:</span>    <span class="c1"># index</span>
+                    <span class="n">vp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;K&#39;</span><span class="p">:</span>  <span class="c1"># key</span>
+                    <span class="n">vp</span> <span class="o">=</span> <span class="n">v</span>
+                    <span class="n">melody_line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+                    <span class="n">melody_line</span> <span class="o">=</span> <span class="n">melody_line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+                    <span class="n">tune</span><span class="p">[</span><span class="s1">&#39;melody&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parse_melody</span><span class="p">(</span><span class="n">melody_line</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span><span class="p">:</span>  <span class="c1"># meter</span>
+                    <span class="n">s</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+                    <span class="n">vp</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
                 <span class="k">else</span><span class="p">:</span>
-                    <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="o">=</span> <span class="n">clean_line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
-                    <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;X&#39;</span><span class="p">:</span>    <span class="c1"># index</span>
-                        <span class="n">vp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-                    <span class="k">elif</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;M&#39;</span><span class="p">:</span>  <span class="c1"># meter</span>
-                        <span class="n">s</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
-                        <span class="n">vp</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
-                    <span class="k">else</span><span class="p">:</span>
-                        <span class="n">vp</span> <span class="o">=</span> <span class="n">v</span>
+                    <span class="n">vp</span> <span class="o">=</span> <span class="n">v</span>
+
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tunes</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># header</span>
+                    <span class="n">common</span><span class="p">[</span><span class="n">field_names</span><span class="p">[</span><span class="n">k</span><span class="p">]]</span> <span class="o">=</span> <span class="n">vp</span>
+                <span class="k">else</span><span class="p">:</span>               <span class="c1"># tune</span>
                     <span class="n">tune</span><span class="p">[</span><span class="n">field_names</span><span class="p">[</span><span class="n">k</span><span class="p">]]</span> <span class="o">=</span> <span class="n">vp</span>
-            <span class="k">else</span><span class="p">:</span> <span class="c1"># header</span>
-                <span class="n">couple</span> <span class="o">=</span> <span class="n">clean_line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
-                <span class="n">common</span><span class="p">[</span><span class="n">field_names</span><span class="p">[</span><span class="n">couple</span><span class="p">[</span><span class="mi">0</span><span class="p">]]]</span> <span class="o">=</span> <span class="n">couple</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 
         <span class="k">return</span> <span class="n">tunes</span>
 
 
-<span class="n">tunes_db</span> <span class="o">=</span> <span class="n">parse_tunes</span><span class="p">(</span><span class="s1">&#39;tunes.abc&#39;</span><span class="p">)</span>
-<span class="n">pprint</span><span class="p">(</span><span class="n">tunes_db</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span><span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">tunes_db1</span> <span class="o">=</span> <span class="n">parse_tunes</span><span class="p">(</span><span class="s1">&#39;tunes1.abc&#39;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">tunes_db1</span><span class="p">[:</span><span class="mi">3</span><span class="p">],</span><span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
 
 </pre></div>
 </div>
@@ -2950,8 +2956,16 @@ K:G
   &#39;key&#39;: &#39;G&#39;,
   &#39;melody&#39;: [(5, 4), (6, 8), (4, 8), (4, 2), (5, 2), (0, 4), (1, 4), (3, 4), (3, 6), (4, 6), (2, 6), (2, 6)],
   &#39;meter&#39;: (3, 4),
+  &#39;origin&#39;: &#39;Venice&#39;,
+  &#39;title&#39;: &#39;Transpose Your Head&#39;},
+ {&#39;composer&#39;: &#39;anonymous truck driver&#39;,
+  &#39;history&#39;: &#39;Tune made in a dark algorithmic night&#39;,
+  &#39;index&#39;: 3,
+  &#39;key&#39;: &#39;E&#39;,
+  &#39;melody&#39;: [(6, 4), (1, 4), (3, 8), (3, 6), (4, 4), (4, 4), (3, 2), (6, 6), (1, 6), (6, 4)],
+  &#39;meter&#39;: (4, 4),
   &#39;origin&#39;: &#39;Trento&#39;,
-  &#39;title&#39;: &#39;Transpose Your Head&#39;}]
+  &#39;title&#39;: &#39;Pedal to the Metal&#39;}]
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
@@ -2974,8 +2988,8 @@ K:G
 <span class="k">def</span> <span class="nf">parse_tunes</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
-<span class="n">tunes_db</span> <span class="o">=</span> <span class="n">parse_tunes</span><span class="p">(</span><span class="s1">&#39;tunes.abc&#39;</span><span class="p">)</span>
-<span class="n">pprint</span><span class="p">(</span><span class="n">tunes_db</span><span class="p">[:</span><span class="mi">2</span><span class="p">],</span><span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">tunes_db1</span> <span class="o">=</span> <span class="n">parse_tunes</span><span class="p">(</span><span class="s1">&#39;tunes1.abc&#39;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">tunes_db1</span><span class="p">[:</span><span class="mi">3</span><span class="p">],</span><span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
 
 </pre></div>
 </div>
@@ -2985,26 +2999,32 @@ K:G
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;history&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Tune made in a dark algorithmic night&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;origin&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Trento&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;index&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Algorave&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;composer&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;The Lord of the Loop&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;meter&#39;</span><span class="p">]</span><span class="o">==</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;C&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;melody&#39;</span><span class="p">]</span><span class="o">==</span>\
+<span></span><span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;history&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Tune made in a dark algorithmic night&#39;</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;origin&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Trento&#39;</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;index&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Algorave&#39;</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;composer&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;The Lord of the Loop&#39;</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;meter&#39;</span><span class="p">]</span><span class="o">==</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;C&#39;</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;melody&#39;</span><span class="p">]</span><span class="o">==</span>\
 <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">)]</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;history&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Tune made in a dark algorithmic night&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;origin&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Trento&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;index&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Transpose Your Head&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;composer&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Matrix Queen&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;meter&#39;</span><span class="p">]</span><span class="o">==</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;G&#39;</span>
-<span class="k">assert</span> <span class="n">tunes_db</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;melody&#39;</span><span class="p">]</span><span class="o">==</span>\
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;history&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Tune made in a dark algorithmic night&#39;</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;origin&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Venice&#39;</span>   <span class="c1"># tests override</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;index&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">2</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Transpose Your Head&#39;</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;composer&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Matrix Queen&#39;</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;meter&#39;</span><span class="p">]</span><span class="o">==</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;key&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;G&#39;</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;melody&#39;</span><span class="p">]</span><span class="o">==</span>\
 <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">)]</span>
-<span class="kn">from</span> <span class="nn">expected_db</span> <span class="kn">import</span> <span class="n">expected_db</span>
-<span class="k">assert</span> <span class="n">tunes_db</span> <span class="o">==</span> <span class="n">expected_db</span>
+<span class="kn">from</span> <span class="nn">expected_db1</span> <span class="kn">import</span> <span class="n">expected_db1</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">tunes_db1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">expected_db1</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">tunes_db1</span> <span class="o">==</span> <span class="n">expected_db1</span>
+
+<span class="n">tunes_db2</span> <span class="o">=</span> <span class="n">parse_tunes</span><span class="p">(</span><span class="s1">&#39;tunes2.abc&#39;</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">expected_db2</span> <span class="kn">import</span> <span class="n">expected_db2</span>
+<span class="k">assert</span> <span class="n">tunes_db2</span> <span class="o">==</span> <span class="n">expected_db2</span>
 </pre></div>
 </div>
 </div>
@@ -3015,7 +3035,7 @@ K:G
 <p>The rows are all the notes on keyboard (we assume 7 notes without black keys) and the columns represent the duration of a note.</p>
 <ul class="simple">
 <li><p>a note start is marked with <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> character, a sustain with <code class="docutils literal notranslate"><span class="pre">=</span></code> character and end with <code class="docutils literal notranslate"><span class="pre">&gt;</span></code></p></li>
-<li><p><strong>HINT 1</strong>: call <code class="docutils literal notranslate"><span class="pre">parse_melody</span></code> to obtain notes as a list of tuples (if you didn’t manage to implement it copy expected list from <a class="reference external" href="expected_db.py">expected_db.py</a>)</p></li>
+<li><p><strong>HINT 1</strong>: call <code class="docutils literal notranslate"><span class="pre">parse_melody</span></code> to obtain notes as a list of tuples (if you didn’t manage to implement it copy expected list from <a class="reference external" href="expected_db1.py">expected_db1.py</a>)</p></li>
 <li><p><strong>HINT 2</strong>: build first a list of list of characters, and only at the very end convert to a list of strings</p></li>
 <li><p><strong>HINT 3</strong>: try obtaining the note letters for first column by using <code class="docutils literal notranslate"><span class="pre">ord</span></code> and <code class="docutils literal notranslate"><span class="pre">chr</span></code></p></li>
 </ul>
@@ -3210,7 +3230,7 @@ K:G
 
 
 
-<span class="n">plot_tune</span><span class="p">(</span><span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plot_tune</span><span class="p">(</span><span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -3233,7 +3253,7 @@ K:G
 <span class="k">def</span> <span class="nf">plot_tune</span><span class="p">(</span><span class="n">tune</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
-<span class="n">plot_tune</span><span class="p">(</span><span class="n">tunes_db</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">plot_tune</span><span class="p">(</span><span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>

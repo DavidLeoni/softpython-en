@@ -740,12 +740,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#Operators">Operators</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#len">len</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---distincts">Exercise - distincts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Membership">Membership</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Union">Union</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Exercise---everythingbut-1">Exercise - everythingbut 1</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Intersection">Intersection</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Difference">Difference</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Symmetric-difference">Symmetric difference</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#Membership">Membership</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#Equality">Equality</a></li>
@@ -2743,7 +2743,7 @@ set
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;b&#39;, &#39;d&#39;, &#39;a&#39;, &#39;c&#39;}
+{&#39;d&#39;, &#39;c&#39;, &#39;a&#39;, &#39;b&#39;}
 </pre></div></div>
 </div>
 <p>The output shows the order in which the print was made is different from the order in which we built the set. Also, according to the Python version you’re using, on your computer it might be even different!</p>
@@ -2905,7 +2905,7 @@ set
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
--4993005941712753392
+-6776771877508249567
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -3340,12 +3340,237 @@ word     : ababbbbcdd
 </pre></div></div>
 </div>
 </div>
+<div class="section" id="Membership">
+<h3>Membership<a class="headerlink" href="#Membership" title="Permalink to this headline">¶</a></h3>
+<p>As for any sequence, when we want to check whether an element is contained in a set we can use the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator which returns a boolean value:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+True
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="s1">&#39;z&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+False
+</pre></div></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle"><code class="docutils literal notranslate"><span class="pre">in</span></code> <strong>IS VERY FAST WHEN USED WITH SETS</strong></p>
+<p>The speed of <code class="docutils literal notranslate"><span class="pre">in</span></code> operator DOES NOT depend on the set dimension</p>
+</div>
+<p>This is a substantial difference with respect to other sequences we’ve already seen: if you try searching for an element with <code class="docutils literal notranslate"><span class="pre">in</span></code> in strings, lists or tuples, and the element to find is toward the end (or there isn’t at all), Python will have to look through the whole sequence.</p>
+<div class="section" id="not-in">
+<h4>not in<a class="headerlink" href="#not-in" title="Permalink to this headline">¶</a></h4>
+<p>To check whether something is <strong>not</strong> belonging to a sequence, we can use two forms:</p>
+<p><strong>not in - form 1</strong>:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="s2">&quot;carrot&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+True
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="s2">&quot;watermelon&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+False
+</pre></div></div>
+</div>
+<p><strong>not in - forma 2</strong></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="ow">not</span> <span class="s2">&quot;carrot&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+True
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="ow">not</span> <span class="s2">&quot;watermelon&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+False
+</pre></div></div>
+</div>
+<p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing the result (or if it gives an error):</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">*</span><span class="mi">10</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;four&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;aa&#39;</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;aa&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">3</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">},</span> <span class="mi">6</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span> <span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="ow">in</span> <span class="p">{</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;3.4&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;3&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="p">{}</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([])</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="ow">not</span> <span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">}}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">((</span><span class="mi">4</span><span class="p">,))</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([()])</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p><strong>QUESTION</strong>: the following expressions are similar. What do they have in common? What is the difference with the last one (beyond the fact it is a set)?</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;e&#39;</span> <span class="ow">in</span> <span class="s1">&#39;abcde&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abcde&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abcde&#39;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;e&#39;</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;e&#39;</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;e&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: All the expressions reported above return a boolean which is <code class="docutils literal notranslate"><span class="pre">True</span></code> if the element <code class="docutils literal notranslate"><span class="pre">'e'</span></code> is present in the sequence.</p>
+<p>All the operations of search and/counting (<code class="docutils literal notranslate"><span class="pre">in</span></code>, <code class="docutils literal notranslate"><span class="pre">find</span></code>, <code class="docutils literal notranslate"><span class="pre">index</span></code>, <code class="docutils literal notranslate"><span class="pre">count</span></code>) on strings, lists and tuples take a search time which in the worst case like here can be equal to the sequence dimension (<code class="docutils literal notranslate"><span class="pre">'e'</span></code> is at the end).</p>
+<p>On the other hand, since sets (expression 8.) are based on <em>hashes,</em> they allow an immediate search, independently from the set dimension or the elements position (so creating the set with <code class="docutils literal notranslate"><span class="pre">e</span></code> at the end makes no difference).</p>
+<div class="admonition note">
+<p><strong>To make performant searches it’s preferable to use hash based collections, like sets or dictionaries !</strong></p>
+</div>
+</div></div>
+</div>
 <div class="section" id="Union">
 <h3>Union<a class="headerlink" href="#Union" title="Permalink to this headline">¶</a></h3>
 <p>The union operator <code class="docutils literal notranslate"><span class="pre">|</span></code> (called <em>pipe</em>) produces a NEW set containing all the elements from both the first and second set.</p>
 <p><img alt="eiu3" src="../_images/union.png" /></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3354,7 +3579,7 @@ word     : ababbbbcdd
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3365,7 +3590,7 @@ word     : ababbbbcdd
 <p>Note there aren’t duplicated elements</p>
 <p><strong>EXERCISE</strong>: What if we use the <code class="docutils literal notranslate"><span class="pre">+</span></code>? Try writing in a cell <code class="docutils literal notranslate"><span class="pre">{'a','b'}</span> <span class="pre">+</span> <span class="pre">{'c','d','e'}</span></code>. What happens?</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3472,7 +3697,7 @@ word     : ababbbbcdd
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3487,7 +3712,7 @@ word     : ababbbbcdd
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3507,7 +3732,7 @@ word     : ababbbbcdd
 <p>The intersection operator <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> produces a NEW set which contains all the common elements of the first and second set.</p>
 <p><img alt="okoerioe" src="../_images/intersection.png" /></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3516,7 +3741,7 @@ word     : ababbbbcdd
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3558,6 +3783,10 @@ word     : ababbbbcdd
 </pre></div>
 </div>
 </li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;cc&#39;</span> <span class="ow">in</span> <span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="s1">&#39;pacca&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;zucca&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">][::</span><span class="mi">2</span><span class="p">])</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">][</span><span class="mi">2</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
 </div>
@@ -3577,7 +3806,7 @@ word     : ababbbbcdd
 <p>The difference operator <code class="docutils literal notranslate"><span class="pre">-</span></code> produces a NEW set containing all the elements of the first set except the ones from the second:</p>
 <p><img alt="3423dde" src="../_images/difference.png" /></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3586,7 +3815,7 @@ word     : ababbbbcdd
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3628,6 +3857,10 @@ word     : ababbbbcdd
 </pre></div>
 </div>
 </li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;c&#39;</span> <span class="ow">in</span> <span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="s1">&#39;parco&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;cassa&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)])</span> <span class="o">-</span> <span class="nb">set</span><span class="p">([(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)])</span>
 </pre></div>
 </div>
@@ -3662,7 +3895,7 @@ word     : ababbbbcdd
 <p><img alt="kjdfslkj" src="../_images/symmetric-difference.png" /></p>
 <p>In Python you can directly express it with the <code class="docutils literal notranslate"><span class="pre">^</span></code> operator:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3671,7 +3904,7 @@ word     : ababbbbcdd
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3681,7 +3914,7 @@ word     : ababbbbcdd
 </div>
 <p>Let’s check the result corresponds to the definition:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -3693,7 +3926,7 @@ word     : ababbbbcdd
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3742,239 +3975,6 @@ word     : ababbbbcdd
 </pre></div>
 </div>
 </div></div>
-<div class="section" id="Membership">
-<h3>Membership<a class="headerlink" href="#Membership" title="Permalink to this headline">¶</a></h3>
-<p>As for any sequence, when we want to check whether an element is contained in a set we can use the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator which returns a boolean value:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-True
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s1">&#39;z&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-False
-</pre></div></div>
-</div>
-<div class="admonition warning">
-<p class="admonition-title fa fa-exclamation-circle"><code class="docutils literal notranslate"><span class="pre">in</span></code> <strong>IS VERY FAST WHEN USED WITH SETS</strong></p>
-<p>The speed of <code class="docutils literal notranslate"><span class="pre">in</span></code> operator DOES NOT depend on the set dimension</p>
-</div>
-<p>This is a substantial difference with respect to other sequences we’ve already seen: if you try searching for an element with <code class="docutils literal notranslate"><span class="pre">in</span></code> in strings, lists or tuples, and the element to find is toward the end (or there isn’t at all), Python will have to look through the whole sequence.</p>
-<div class="section" id="not-in">
-<h4>not in<a class="headerlink" href="#not-in" title="Permalink to this headline">¶</a></h4>
-<p>To check whether something is <strong>not</strong> belonging to a sequence, we can use two forms:</p>
-<p><strong>not in - form 1</strong>:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;carrot&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-True
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;watermelon&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-False
-</pre></div></div>
-</div>
-<p><strong>not in - forma 2</strong></p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="ow">not</span> <span class="s2">&quot;carrot&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-True
-</pre></div></div>
-</div>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="ow">not</span> <span class="s2">&quot;watermelon&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
-</pre></div>
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-False
-</pre></div></div>
-</div>
-<p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing the result (or if it gives an error):</p>
-<ol class="arabic">
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">*</span><span class="mi">10</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;four&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;aa&#39;</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;aa&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;c&#39;</span> <span class="ow">in</span> <span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="s1">&#39;parco&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;cassa&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;cc&#39;</span> <span class="ow">in</span> <span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="s1">&#39;pacca&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;zucca&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">3</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">},</span> <span class="mi">6</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span> <span class="p">]</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="ow">in</span> <span class="p">{</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;3.4&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))}</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;3&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="p">{}</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([])</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="ow">not</span> <span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">}}</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">((</span><span class="mi">4</span><span class="p">,))</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([()])</span>
-</pre></div>
-</div>
-</li>
-</ol>
-<p><strong>QUESTION</strong>: the following expressions are similar. What do they have in common? What is the difference with the last one (beyond the fact it is a set)?</p>
-<ol class="arabic">
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;e&#39;</span> <span class="ow">in</span> <span class="s1">&#39;abcde&#39;</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abcde&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abcde&#39;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;e&#39;</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;e&#39;</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;e&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">}</span>
-</pre></div>
-</div>
-</li>
-</ol>
-<a  class="jupman-sol jupman-sol-toggler"
- onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: All the expressions reported above return a boolean which is <code class="docutils literal notranslate"><span class="pre">True</span></code> if the element <code class="docutils literal notranslate"><span class="pre">'e'</span></code> is present in the sequence.</p>
-<p>All the operations of search and/counting (<code class="docutils literal notranslate"><span class="pre">in</span></code>, <code class="docutils literal notranslate"><span class="pre">find</span></code>, <code class="docutils literal notranslate"><span class="pre">index</span></code>, <code class="docutils literal notranslate"><span class="pre">count</span></code>) on strings, lists and tuples take a search time which in the worst case like here can be equal to the sequence dimension (<code class="docutils literal notranslate"><span class="pre">'e'</span></code> is at the end).</p>
-<p>On the other hand, since sets (expression 8.) are based on <em>hashes,</em> they allow an immediate search, independently from the set dimension or the elements position (so creating the set with <code class="docutils literal notranslate"><span class="pre">e</span></code> at the end makes no difference).</p>
-<div class="admonition note">
-<p><strong>To make performant searches it’s preferable to use hash based collections, like sets or dictionaries !</strong></p>
-</div>
-</div></div>
-</div>
 </div>
 <div class="section" id="Equality">
 <h2>Equality<a class="headerlink" href="#Equality" title="Permalink to this headline">¶</a></h2>
@@ -4348,10 +4348,10 @@ False
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jma1a18584-49d5-449b-87ef-336d2370a3ed" type="application/json" >
-    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nsb = sa.union(la)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "sb": ["REF", 3]}, "ordered_globals": ["sa", "la", "sb"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"], "3": ["SET", "r", "o", "a", "g", "i"]}, "stdout": ""}]}
+<script id="json-jmc104d4fd-892d-4bba-b058-b580a4f42b32" type="application/json" >
+    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nsb = sa.union(la)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "sb": ["REF", 3]}, "ordered_globals": ["sa", "la", "sb"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"], "3": ["SET", "o", "i", "r", "a", "g"]}, "stdout": ""}]}
 </script>
-<div id="jma1a18584-49d5-449b-87ef-336d2370a3ed" class="pytutorVisualizer"> </div>
+<div id="jmc104d4fd-892d-4bba-b058-b580a4f42b32" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -4371,12 +4371,12 @@ False
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jma1a18584-49d5-449b-87ef-336d2370a3ed').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jmc104d4fd-892d-4bba-b058-b580a4f42b32').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jma1a18584-49d5-449b-87ef-336d2370a3ed',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jmc104d4fd-892d-4bba-b058-b580a4f42b32',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -4437,7 +4437,7 @@ False
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;r&#39;, &#39;o&#39;, &#39;a&#39;, &#39;g&#39;, &#39;i&#39;}
+{&#39;o&#39;, &#39;i&#39;, &#39;r&#39;, &#39;a&#39;, &#39;g&#39;}
 </pre></div></div>
 </div>
 <p><strong>QUESTION</strong>: what did the call to <code class="docutils literal notranslate"><span class="pre">update</span></code> return?</p>
@@ -4465,7 +4465,7 @@ False
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;r&#39;, &#39;o&#39;, &#39;a&#39;, &#39;g&#39;, &#39;i&#39;}
+{&#39;o&#39;, &#39;i&#39;, &#39;r&#39;, &#39;a&#39;, &#39;g&#39;}
 None
 </pre></div></div>
 </div>
@@ -4476,10 +4476,10 @@ None
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm3ae84b22-1778-4233-950c-88392e791e99" type="application/json" >
-    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nx = sa.update(la)\nprint(sa)\nprint(x)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "r", "o", "a", "g", "i"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "r", "o", "a", "g", "i"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'r', 'o', 'a', 'g', 'i'}\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "r", "o", "a", "g", "i"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'r', 'o', 'a', 'g', 'i'}\nNone\n"}]}
+<script id="json-jma3ab1240-ff33-411c-9021-d028c1a75aa0" type="application/json" >
+    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nx = sa.update(la)\nprint(sa)\nprint(x)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "o", "i", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "o", "i", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'o', 'i', 'r', 'a', 'g'}\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "o", "i", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'o', 'i', 'r', 'a', 'g'}\nNone\n"}]}
 </script>
-<div id="jm3ae84b22-1778-4233-950c-88392e791e99" class="pytutorVisualizer"> </div>
+<div id="jma3ab1240-ff33-411c-9021-d028c1a75aa0" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -4499,12 +4499,12 @@ None
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm3ae84b22-1778-4233-950c-88392e791e99').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jma3ab1240-ff33-411c-9021-d028c1a75aa0').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm3ae84b22-1778-4233-950c-88392e791e99',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jma3ab1240-ff33-411c-9021-d028c1a75aa0',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -4613,7 +4613,7 @@ None
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;a&#39;, &#39;g&#39;, &#39;c&#39;, &#39;e&#39;, &#39;d&#39;}
+{&#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;a&#39;, &#39;g&#39;}
 </pre></div></div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4636,7 +4636,7 @@ None
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;a&#39;, &#39;g&#39;, &#39;c&#39;, &#39;e&#39;, &#39;d&#39;}
+{&#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;a&#39;, &#39;g&#39;}
 </pre></div></div>
 </div>
 </div>
@@ -4814,10 +4814,10 @@ None
 <div class="output_area rendered_html docutils container">
 <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm058a5079-cfca-4273-858a-9b66869c29e9" type="application/json" >
-    {"code": " \nx = {'a','b'}\ny = set(x)\nx.add('c')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1]}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {"1": ["SET", "b", "a"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "b", "a"], "2": ["SET", "b", "a"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "b", "c", "a"], "2": ["SET", "b", "a"]}, "stdout": ""}]}
+<script id="json-jm2a61fe67-e7ba-4eea-a981-63b2128dd760" type="application/json" >
+    {"code": " \nx = {'a','b'}\ny = set(x)\nx.add('c')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1]}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {"1": ["SET", "a", "b"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "a", "b"], "2": ["SET", "a", "b"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "c", "a", "b"], "2": ["SET", "a", "b"]}, "stdout": ""}]}
 </script>
-<div id="jm058a5079-cfca-4273-858a-9b66869c29e9" class="pytutorVisualizer"> </div>
+<div id="jm2a61fe67-e7ba-4eea-a981-63b2128dd760" class="pytutorVisualizer"> </div>
 
 <style>
 .vizLayoutTd {
@@ -4837,12 +4837,12 @@ None
 <script>
 (function(){
 
-    var trace = JSON.parse(document.getElementById('json-jm058a5079-cfca-4273-858a-9b66869c29e9').innerHTML);
+    var trace = JSON.parse(document.getElementById('json-jm2a61fe67-e7ba-4eea-a981-63b2128dd760').innerHTML);
     // NOTE 1: id without #
     // NOTE 2 - maybe there are more predictable ways, but this will work anyway
     //        - id should be number
     visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm058a5079-cfca-4273-858a-9b66869c29e9',{'embeddedMode' : false,
+    addVisualizerToPage(trace, 'jm2a61fe67-e7ba-4eea-a981-63b2128dd760',{'embeddedMode' : false,
                                      'visualizerIdOverride':visualizerIdOverride})
 
 
@@ -5173,8 +5173,8 @@ Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Initial trash: {&#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;, &#39;mercury&#39;}
-Applying filter for cadmium : {&#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;, &#39;mercury&#39;}
+Initial trash: {&#39;mercury&#39;, &#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;}
+Applying filter for cadmium : {&#39;mercury&#39;, &#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;}
 Applying filter for mercury : {&#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;}
 Applying filter for alkenes : {&#39;vegetables&#39;, &#39;paper&#39;}
 
