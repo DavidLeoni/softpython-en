@@ -3,8 +3,6 @@
 
 Introductive guide to coding, data cleaning and analysis for Python 3, with many worked exercises.
 
-**Status: mostly usable, completion due by December 2021**
-
 **Students: here on Github there are only source files, the official website is** https://en.softpython.org
 
 **Teachers**: All website pages are Jupyter notebooks converted to web pages using [NBSphinx](https://nbsphinx.readthedocs.io) using template [Jupman](https://github.com/DavidLeoni/jupman). To know how to build and modify the manual, see [Jupman guide](https://jupman.softpython.org/en/latest/usage.html)
@@ -22,3 +20,9 @@ The making of this website and related courses was funded mainly by [Department 
 All the material in this website is distributed with license CC-BY 4.0 International Attribution [https://creativecommons.org/licenses/by/4.0/deed.en](https://creativecommons.org/licenses/by/4.0/deed.en) 
 
 Basically, you can freely redistribute and modify the content, just remember to cite University of Trento and [the authors](https://en.softpython.org/index.html#Autori) 
+
+**Mirrors**:
+
+- official website:  https://it.softpython.org
+- Github replica:  https://davidleoni.github.io/softpython-en
+
