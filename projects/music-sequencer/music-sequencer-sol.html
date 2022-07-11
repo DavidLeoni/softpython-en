@@ -2667,7 +2667,7 @@ div.rendered_html tbody tr:hover {
 <h2><a class="reference external" href="../../_static/generated/music-sequencer-prj.zip">Download worked project</a><a class="headerlink" href="#Download-worked-project" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/projects/music-sequencer">Browse files online</a></p>
 <p><img alt="expected-plot-preview" src="../../_images/expected-plot.png" /></p>
-<p><a class="reference external" href="http://abcnotation.com/wiki/abc:standard:v2.1#rrhythm">ABC</a> is a popular format to write music notation in plain text files, you can see an example by openining <a class="reference external" href="tunes1.abc">tunes1.abc</a> with a text editor. A music sequencer is an editor software which typically displays notes as a matrix: you will parse simplified abc tunes and display their melodies in a matrix.</p>
+<p><a class="reference external" href="http://abcnotation.com/wiki/abc:standard:v2.1#rrhythm">ABC</a> is a popular format to write music notation in plain text files, you can see an example by openining <a class="reference external" href="tunes1.abc">tunes1.abc</a> with a text editor. A music sequencer is an editor software which typically displays notes as a matrix: let’s see how to parse simplified abc tunes and display their melodies in such a matrix.</p>
 </div>
 <div class="section" id="What-to-do">
 <h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
@@ -2791,7 +2791,7 @@ div.rendered_html tbody tr:hover {
 <div class="section" id="2.-parse_tunes">
 <h2>2. parse_tunes<a class="headerlink" href="#2.-parse_tunes" title="Permalink to this headline">¶</a></h2>
 <p>An <code class="docutils literal notranslate"><span class="pre">.abc</span></code> file is a series of key:value fields. Keys are always one character long. Anything after a <code class="docutils literal notranslate"><span class="pre">%</span></code> is a comment and must be ignored</p>
-<p>File <a class="reference external" href="tunes1.abc">tunes1.abc</a> excerpt:</p>
+<p>File <a class="reference external" href="tunes1.abc">tunes1.abc</a> EXCERPT:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
@@ -2830,7 +2830,11 @@ K:G
 <p>First lines (3 in the example) are the file header, separated by tunes with a blank line.</p>
 <ul class="simple">
 <li><p>first line must always be ignored</p></li>
-<li><p>fields specified in the file header must be copied in <em>all</em> tunes. Note a tune may override a field (es <code class="docutils literal notranslate"><span class="pre">O:Venice</span></code>).</p></li>
+<li><p>fields specified in the file header must be copied in <em>all</em> tunes</p>
+<ul>
+<li><p>Note a tune <strong>may override</strong> a field (es <code class="docutils literal notranslate"><span class="pre">O:Venice</span></code>).</p></li>
+</ul>
+</li>
 </ul>
 <p>After the first blank line, there is the first tune:</p>
 <ul class="simple">
@@ -2884,13 +2888,14 @@ K:G
 
 
 <span></span><span class="n">field_names</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;O&#39;</span><span class="p">:</span><span class="s1">&#39;origin&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;H&#39;</span><span class="p">:</span><span class="s1">&#39;history&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;X&#39;</span><span class="p">:</span><span class="s1">&#39;index&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;T&#39;</span><span class="p">:</span><span class="s1">&#39;title&#39;</span><span class="p">,</span>
     <span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="s1">&#39;composer&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;M&#39;</span><span class="p">:</span><span class="s1">&#39;meter&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;D&#39;</span><span class="p">:</span><span class="s1">&#39;discography&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;H&#39;</span><span class="p">:</span><span class="s1">&#39;history&#39;</span><span class="p">,</span>
     <span class="s1">&#39;K&#39;</span><span class="p">:</span><span class="s1">&#39;key&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;M&#39;</span><span class="p">:</span><span class="s1">&#39;meter&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;O&#39;</span><span class="p">:</span><span class="s1">&#39;origin&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;T&#39;</span><span class="p">:</span><span class="s1">&#39;title&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;X&#39;</span><span class="p">:</span><span class="s1">&#39;index&#39;</span><span class="p">,</span>
 <span class="p">}</span>
 
 <span class="k">def</span> <span class="nf">parse_tunes</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
@@ -2976,13 +2981,14 @@ K:G
 
 
 <span></span><span class="n">field_names</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;O&#39;</span><span class="p">:</span><span class="s1">&#39;origin&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;H&#39;</span><span class="p">:</span><span class="s1">&#39;history&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;X&#39;</span><span class="p">:</span><span class="s1">&#39;index&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;T&#39;</span><span class="p">:</span><span class="s1">&#39;title&#39;</span><span class="p">,</span>
     <span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="s1">&#39;composer&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;M&#39;</span><span class="p">:</span><span class="s1">&#39;meter&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;D&#39;</span><span class="p">:</span><span class="s1">&#39;discography&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;H&#39;</span><span class="p">:</span><span class="s1">&#39;history&#39;</span><span class="p">,</span>
     <span class="s1">&#39;K&#39;</span><span class="p">:</span><span class="s1">&#39;key&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;M&#39;</span><span class="p">:</span><span class="s1">&#39;meter&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;O&#39;</span><span class="p">:</span><span class="s1">&#39;origin&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;T&#39;</span><span class="p">:</span><span class="s1">&#39;title&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;X&#39;</span><span class="p">:</span><span class="s1">&#39;index&#39;</span><span class="p">,</span>
 <span class="p">}</span>
 
 <span class="k">def</span> <span class="nf">parse_tunes</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
@@ -2999,6 +3005,7 @@ K:G
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+
 <span></span><span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;history&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Tune made in a dark algorithmic night&#39;</span>
 <span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;origin&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Trento&#39;</span>
 <span class="k">assert</span> <span class="n">tunes_db1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;index&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span>
@@ -3022,6 +3029,7 @@ K:G
 <span class="k">assert</span> <span class="n">tunes_db1</span> <span class="o">==</span> <span class="n">expected_db1</span>
 
 <span class="n">tunes_db2</span> <span class="o">=</span> <span class="n">parse_tunes</span><span class="p">(</span><span class="s1">&#39;tunes2.abc&#39;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">tunes_db2</span><span class="p">)</span>
 
 <span class="kn">from</span> <span class="nn">expected_db2</span> <span class="kn">import</span> <span class="n">expected_db2</span>
 <span class="k">assert</span> <span class="n">tunes_db2</span> <span class="o">==</span> <span class="n">expected_db2</span>
