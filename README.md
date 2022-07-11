@@ -8,7 +8,7 @@ Introductive guide to coding, data cleaning and analysis for Python 3, with many
 **Teachers**: All website pages are Jupyter notebooks converted to web pages using [NBSphinx](https://nbsphinx.readthedocs.io) using template [Jupman](https://github.com/DavidLeoni/jupman). To know how to build and modify the manual, see [Jupman guide](https://jupman.softpython.org/en/latest/usage.html)
 
 
-**Mirrors**
+**Mirrors**:
 
 - official website:  https://it.softpython.org
 - replica:  https://davidleoni.github.io/softpython-en
