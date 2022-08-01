@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       SOURCE_BRANCH: ${{ github.head_ref || github.ref_name }} 
-      WEB_BRANCH: gh-pages
+      WEB_BRANCH: en.softpython.org
     name: Build docs          
     steps:  
     - name: Install deps
