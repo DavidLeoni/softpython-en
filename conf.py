@@ -121,6 +121,13 @@ extensions = [
     #, 'rst2pdf.pdfbuilder'
 ]
 
+#OFFLINE BROWSING https://github.com/DavidLeoni/jupman/issues/96
+mathjax_path = "js/mathjax/tex-mml-chtml.js"
+nbsphinx_requirejs_path = "js/require.min.js"  
+#must reset otherwise adds integrity and crossorigin html attributes
+nbsphinx_requirejs_options = { }
+
+
 # Exclude build directory and Jupyter backup files:
 exclude_patterns = [jm.build,
                     jm.generated, 
@@ -238,8 +245,8 @@ html_js_files = [
 
 html_css_files = [
     'css/jupman.css',      # shared among jupyter and website
-    'css/jupman-web.3.4.4.css',  # only on website
-    'css/softpython-theme.3.4.5.css'
+    'css/jupman-web.3.5.1.css',  # only on website
+    'css/softpython-theme.3.5.1.css'
 
 ]
 
