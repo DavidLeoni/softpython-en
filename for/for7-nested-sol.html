@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>For loops 7 - nested loops &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/for/for7-nested-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="for loops 8 - Challenge" href="for8-chal.html" />
     <link rel="prev" title="For loops 2 - iterating dictionaries" href="for6-dictionaries-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,18 +2614,17 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="For-loops-7---nested-loops">
-<h1>For loops 7 - nested loops<a class="headerlink" href="#For-loops-7---nested-loops" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/for.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="For-loops-7---nested-loops">
+<h1>For loops 7 - nested loops<a class="headerlink" href="#For-loops-7---nested-loops" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/for.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/for">Browse file online</a></p>
 <p>It’s possible to include a <code class="docutils literal notranslate"><span class="pre">for</span></code> cycle inside another one, for example we could visit all the words of a list of strings and for each word we could print all its characters:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;some&quot;</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;some&quot;</span><span class="p">,</span>
        <span class="s2">&quot;light&quot;</span><span class="p">,</span>
        <span class="s2">&quot;ahead&quot;</span><span class="p">]</span>
 
@@ -2705,9 +2659,9 @@ d
 
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Nested-for">
-<h2>Nested <code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#Nested-for" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Nested-for">
+<h2>Nested <code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#Nested-for" title="Permalink to this headline"></a></h2>
 <p>What we said previously about variable names is even more important with nested loops:</p>
 <div class="admonition note">
 <p><a class="reference external" href="https://en.softpython.org/commandments.html#II-COMMANDMENT">II COMMANDMENT</a> <strong>Whenever you insert a variable in a</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> <strong>cycle, such variable must be new</strong></p>
@@ -2717,8 +2671,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;volleyball&#39;</span><span class="p">,</span> <span class="s1">&#39;tennis&#39;</span><span class="p">,</span> <span class="s1">&#39;soccer&#39;</span><span class="p">,</span> <span class="s1">&#39;swimming&#39;</span><span class="p">]:</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;volleyball&#39;</span><span class="p">,</span> <span class="s1">&#39;tennis&#39;</span><span class="p">,</span> <span class="s1">&#39;soccer&#39;</span><span class="p">,</span> <span class="s1">&#39;swimming&#39;</span><span class="p">]:</span>
 
     <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>  <span class="c1"># debugging hell, you lose the external cycle s</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
@@ -2750,9 +2703,9 @@ d
 2
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Questions---nested-for">
-<h2>Questions - nested for<a class="headerlink" href="#Questions---nested-for" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Questions---nested-for">
+<h2>Questions - nested for<a class="headerlink" href="#Questions---nested-for" title="Permalink to this headline"></a></h2>
 <p>Look at the following code fragments , and for each try guessing the result it produces (or if it gives an error):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
@@ -2854,9 +2807,9 @@ d
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Exercise---casting">
-<h2>Exercise - casting<a class="headerlink" href="#Exercise---casting" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---casting">
+<h2>Exercise - casting<a class="headerlink" href="#Exercise---casting" title="Permalink to this headline"></a></h2>
 <p>✪ A new USA-Japanese videocultural production is going to be launched, so actors are called for casting. The director wants to try a scene with all the possible couples which can be formed among actors and actresses. Write some code which prints all the couples, also putting introduction messages.</p>
 <ul class="simple">
 <li><p><strong>NOTE</strong>: the number of actors and actresses may be different</p></li>
@@ -2899,9 +2852,7 @@ Casting is over for today!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">actresses</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Leela&#39;</span><span class="p">,</span><span class="s1">&#39;Wilma&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">actresses</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Leela&#39;</span><span class="p">,</span><span class="s1">&#39;Wilma&#39;</span><span class="p">]</span>
 <span class="n">actors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Captain Harlock&#39;</span><span class="p">,</span> <span class="s1">&#39;Lupin&#39;</span><span class="p">,</span> <span class="s1">&#39;Kenshiro&#39;</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
@@ -2953,20 +2904,16 @@ Casting is over for today!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">actresses</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Leela&#39;</span><span class="p">,</span><span class="s1">&#39;Wilma&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">actresses</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Leela&#39;</span><span class="p">,</span><span class="s1">&#39;Wilma&#39;</span><span class="p">]</span>
 <span class="n">actors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Captain Harlock&#39;</span><span class="p">,</span> <span class="s1">&#39;Lupin&#39;</span><span class="p">,</span> <span class="s1">&#39;Kenshiro&#39;</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---cover-the-plane">
-<h2>Exercise - cover the plane<a class="headerlink" href="#Exercise---cover-the-plane" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---cover-the-plane">
+<h2>Exercise - cover the plane<a class="headerlink" href="#Exercise---cover-the-plane" title="Permalink to this headline"></a></h2>
 <p>✪ Given the integers <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code>, write some code which prints all the possible couples of numbers <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> such that <span class="math notranslate nohighlight">\(1 \leq x \leq a\)</span> and <span class="math notranslate nohighlight">\(1 \leq y \leq b\)</span></p>
 <p>For example, given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
@@ -2996,9 +2943,7 @@ Casting is over for today!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
 
 <span class="c1"># write here</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
@@ -3033,19 +2978,15 @@ Casting is over for today!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---triangular">
-<h2>Exercise - triangular<a class="headerlink" href="#Exercise---triangular" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---triangular">
+<h2>Exercise - triangular<a class="headerlink" href="#Exercise---triangular" title="Permalink to this headline"></a></h2>
 <p>✪ Given the integer <code class="docutils literal notranslate"><span class="pre">a</span></code>, write some code which prints all the possible couples of numbers <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> such that <span class="math notranslate nohighlight">\(0 \leq x \leq y &lt; a\)</span></p>
 <p>For example, for</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
@@ -3075,9 +3016,7 @@ Casting is over for today!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="c1"># write here</span>
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">):</span>
@@ -3111,18 +3050,14 @@ Casting is over for today!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---port">
-<h2>Exercise - port<a class="headerlink" href="#Exercise---port" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---port">
+<h2>Exercise - port<a class="headerlink" href="#Exercise---port" title="Permalink to this headline"></a></h2>
 <p>✪ Write some code which given a list <code class="docutils literal notranslate"><span class="pre">words</span></code> and a list <code class="docutils literal notranslate"><span class="pre">characters</span></code>, for each word calculates how many characters it contains</p>
 <ul class="simple">
 <li><p><strong>ONLY</strong> count the characters present in <code class="docutils literal notranslate"><span class="pre">characters</span></code></p></li>
@@ -3151,9 +3086,7 @@ trawling net contains 1 i
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ships&#39;</span><span class="p">,</span><span class="s1">&#39;pier&#39;</span><span class="p">,</span><span class="s1">&#39;oar&#39;</span><span class="p">,</span><span class="s1">&#39;fish trap&#39;</span><span class="p">,</span><span class="s1">&#39;sails&#39;</span><span class="p">,</span><span class="s1">&#39;trawling net&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ships&#39;</span><span class="p">,</span><span class="s1">&#39;pier&#39;</span><span class="p">,</span><span class="s1">&#39;oar&#39;</span><span class="p">,</span><span class="s1">&#39;fish trap&#39;</span><span class="p">,</span><span class="s1">&#39;sails&#39;</span><span class="p">,</span><span class="s1">&#39;trawling net&#39;</span><span class="p">]</span>
 <span class="n">characters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">]</span>
 
 
@@ -3186,21 +3119,17 @@ trawling net contains 1 i
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ships&#39;</span><span class="p">,</span><span class="s1">&#39;pier&#39;</span><span class="p">,</span><span class="s1">&#39;oar&#39;</span><span class="p">,</span><span class="s1">&#39;fish trap&#39;</span><span class="p">,</span><span class="s1">&#39;sails&#39;</span><span class="p">,</span><span class="s1">&#39;trawling net&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ships&#39;</span><span class="p">,</span><span class="s1">&#39;pier&#39;</span><span class="p">,</span><span class="s1">&#39;oar&#39;</span><span class="p">,</span><span class="s1">&#39;fish trap&#39;</span><span class="p">,</span><span class="s1">&#39;sails&#39;</span><span class="p">,</span><span class="s1">&#39;trawling net&#39;</span><span class="p">]</span>
 <span class="n">characters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">]</span>
 
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---polygons">
-<h2>Exercise - polygons<a class="headerlink" href="#Exercise---polygons" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---polygons">
+<h2>Exercise - polygons<a class="headerlink" href="#Exercise---polygons" title="Permalink to this headline"></a></h2>
 <p>✪✪ Given a list <code class="docutils literal notranslate"><span class="pre">polygons</span></code> with polygon names ordered by sides number starting from a triangle, write some code which prints all the possible questions we can form regarding the number of sides. Start from a minimum of 3 sides until a maximum corresponding to the number of sides of the last polygon (remember names are ordered by number of sides!)</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#               0          1        2           3</span>
@@ -3232,9 +3161,7 @@ Does the hexagon have 6 sides? True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1">#                 0              1              2             3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1">#                 0              1              2             3</span>
 <span class="n">polygons</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;triangle&quot;</span><span class="p">,</span><span class="s2">&quot;square&quot;</span><span class="p">,</span><span class="s2">&quot;pentagon&quot;</span><span class="p">,</span> <span class="s2">&quot;hexagon&quot;</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
@@ -3271,20 +3198,16 @@ Does the hexagon have 6 sides? True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1">#                 0              1              2             3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1">#                 0              1              2             3</span>
 <span class="n">polygons</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;triangle&quot;</span><span class="p">,</span><span class="s2">&quot;square&quot;</span><span class="p">,</span><span class="s2">&quot;pentagon&quot;</span><span class="p">,</span> <span class="s2">&quot;hexagon&quot;</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---bon-jour">
-<h2>Exercise - bon jour<a class="headerlink" href="#Exercise---bon-jour" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---bon-jour">
+<h2>Exercise - bon jour<a class="headerlink" href="#Exercise---bon-jour" title="Permalink to this headline"></a></h2>
 <p>✪✪✪ Given two strings <code class="docutils literal notranslate"><span class="pre">sa</span></code> and <code class="docutils literal notranslate"><span class="pre">sb</span></code> in lowercase, write some code which prints single letters from <code class="docutils literal notranslate"><span class="pre">sa</span></code> as upper case, followed by all possible combinations of <code class="docutils literal notranslate"><span class="pre">sb</span></code> where ONLY ONE character is uppercase.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sa</span> <span class="o">=</span> <span class="s1">&#39;bon&#39;</span>
@@ -3312,9 +3235,7 @@ N jouR
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">sa</span> <span class="o">=</span> <span class="s1">&#39;bon&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">sa</span> <span class="o">=</span> <span class="s1">&#39;bon&#39;</span>
 <span class="n">sb</span> <span class="o">=</span> <span class="s1">&#39;jour&#39;</span>
 
 <span class="c1"># write here</span>
@@ -3348,79 +3269,57 @@ N jouR
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">sa</span> <span class="o">=</span> <span class="s1">&#39;bon&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">sa</span> <span class="o">=</span> <span class="s1">&#39;bon&#39;</span>
 <span class="n">sb</span> <span class="o">=</span> <span class="s1">&#39;jour&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/for/for8-chal.html">for challenges</a></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="for8-chal.html" class="btn btn-neutral float-right" title="for loops 8 - Challenge" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="for6-dictionaries-sol.html" class="btn btn-neutral float-left" title="For loops 2 - iterating dictionaries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="for8-chal.html" class="btn btn-neutral float-right" title="for loops 8 - Challenge" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

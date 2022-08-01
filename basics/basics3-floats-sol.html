@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Python basics 3 - floats &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/basics/basics3-floats-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Python basics 4 - Challenges" href="basics4-chal.html" />
     <link rel="prev" title="Basics 2 - booleans" href="basics2-bools-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,10 +2614,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Python-basics-3---floats">
-<h1>Python basics 3 - floats<a class="headerlink" href="#Python-basics-3---floats" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/basics.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Python-basics-3---floats">
+<h1>Python basics 3 - floats<a class="headerlink" href="#Python-basics-3---floats" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/basics.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/basics">Browse online files</a></p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>PREREQUISITES:</strong></p>
@@ -2671,16 +2626,15 @@ div.rendered_html tbody tr:hover {
 <li><p><strong>Having read</strong> <a class="reference external" href="https://en.softpython.org/basics/basics2-bools-sol.html">basics 2 - booleans</a></p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="Real-numbers">
-<h2>Real numbers<a class="headerlink" href="#Real-numbers" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Real-numbers">
+<h2>Real numbers<a class="headerlink" href="#Real-numbers" title="Permalink to this headline"></a></h2>
 <p>Python saves the real numbers (floating point numbers) in 64 bit of information divided by sign, exponent and mantissa (also called significand). Let’s see an example:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">3.14</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">3.14</span>
 </pre></div>
 </div>
 </div>
@@ -2697,8 +2651,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="mf">3.14</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mf">3.14</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2716,16 +2669,15 @@ float
 <p>So you will write <code class="docutils literal notranslate"><span class="pre">3.14</span></code> instead of <code class="docutils literal notranslate"><span class="pre">3,14</span></code></p>
 <p>Be very careful, whenever you copy numbers from documents in latin languages, they might contain very insidious commas!</p>
 </div>
-<div class="section" id="Scientifical-notation">
-<h3>Scientifical notation<a class="headerlink" href="#Scientifical-notation" title="Permalink to this headline">¶</a></h3>
+<section id="Scientifical-notation">
+<h3>Scientifical notation<a class="headerlink" href="#Scientifical-notation" title="Permalink to this headline"></a></h3>
 <p>Whenever numbers are very big or very small, to avoid having to write too many zeros it is convenient to use scientifical notation with the <em>e</em> like <span class="math notranslate nohighlight">\(xen\)</span> which multiplies the number <em>x</em> by <span class="math notranslate nohighlight">\(10^n\)</span></p>
 <p>With this notation, in memory are only put the most significative digits ( the <em>mantissa</em> ) and the exponent, thus avoiding to waste space.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">75e1</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">75e1</span>
 </pre></div>
 </div>
 </div>
@@ -2742,8 +2694,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">75e2</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">75e2</span>
 </pre></div>
 </div>
 </div>
@@ -2760,8 +2711,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">75e3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">75e3</span>
 </pre></div>
 </div>
 </div>
@@ -2778,8 +2728,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">75e123</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">75e123</span>
 </pre></div>
 </div>
 </div>
@@ -2796,8 +2745,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">75e0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">75e0</span>
 </pre></div>
 </div>
 </div>
@@ -2814,8 +2762,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">75e-1</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">75e-1</span>
 </pre></div>
 </div>
 </div>
@@ -2832,8 +2779,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">75e-2</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">75e-2</span>
 </pre></div>
 </div>
 </div>
@@ -2850,8 +2796,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">75e-123</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">75e-123</span>
 </pre></div>
 </div>
 </div>
@@ -2866,7 +2811,7 @@ float
 </div>
 <p><strong>QUESTION</strong>: Look at the following expressions, and try to find which result they produce (or if they give an error):</p>
 <ol class="arabic">
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">1.000</span><span class="o">.</span><span class="mi">000</span><span class="p">)</span>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">1.000.000</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
@@ -2882,7 +2827,7 @@ float
 </pre></div>
 </div>
 </li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">0.000</span><span class="o">.</span><span class="mi">123</span><span class="p">)</span>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">0.000.123</span><span class="p">)</span>
 </pre></div>
 </div>
 </li>
@@ -2923,13 +2868,13 @@ float
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Too-big-or-too-small-numbers">
-<h3>Too big or too small numbers<a class="headerlink" href="#Too-big-or-too-small-numbers" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Too-big-or-too-small-numbers">
+<h3>Too big or too small numbers<a class="headerlink" href="#Too-big-or-too-small-numbers" title="Permalink to this headline"></a></h3>
 <p>Sometimes calculations on very big or extra small numbers may give as a result <code class="docutils literal notranslate"><span class="pre">math.nan</span></code> (Not a Number) or <code class="docutils literal notranslate"><span class="pre">math.inf</span></code>. For the moment we just mention them, you can find a detailed description in the <a class="reference external" href="https://en.softpython.org/matrices-numpy/matrices-numpy-sol.html#NaN-e-infinities">Numpy page</a></p>
-</div>
-<div class="section" id="Exercise---circle">
-<h3>Exercise - circle<a class="headerlink" href="#Exercise---circle" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---circle">
+<h3>Exercise - circle<a class="headerlink" href="#Exercise---circle" title="Permalink to this headline"></a></h3>
 <p>✪ Calculate the area of a circle at the center of a soccer ball (radius = 9.1m), remember that <span class="math notranslate nohighlight">\(area=pi*r^2\)</span></p>
 <p>Your code should print as result <code class="docutils literal notranslate"><span class="pre">263.02199094102605</span></code></p>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -2938,8 +2883,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 
 <span class="n">r</span> <span class="o">=</span> <span class="mf">9.15</span>
 <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.1415926536</span>
@@ -2960,8 +2904,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -3009,9 +2952,9 @@ float
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="Exercise---The-golf-club">
-<h3>Exercise - The golf club<a class="headerlink" href="#Exercise---The-golf-club" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---The-golf-club">
+<h3>Exercise - The golf club<a class="headerlink" href="#Exercise---The-golf-club" title="Permalink to this headline"></a></h3>
 <p>Jobe the gardener is now so skilled that Dr Angelo decides to promote him to <em>paysagist</em> of the golf club where he is used to spend his weekends. But a new challenge awaits him: Jobe must perfectly mow the <em>green</em>, that is the ciruclar area of radius <code class="docutils literal notranslate"><span class="pre">r</span></code> which encircles the hole. The LED on Jobe’s lawnmower must light up when it’s positioned on the greenlight zones: write an expression which given two coordinates <code class="docutils literal notranslate"><span class="pre">x,y</span></code> produces <code class="docutils literal notranslate"><span class="pre">True</span></code> in this case and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise. With the only
 purpose to give some visual references, this time you can also see on the field some white balls marked with characters.</p>
 <ul class="simple">
@@ -3026,8 +2969,7 @@ purpose to give some visual references, this time you can also see on the field 
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">r</span> <span class="o">=</span> <span class="mi">50</span>
 
@@ -3058,8 +3000,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">r</span> <span class="o">=</span> <span class="mi">50</span>
 
@@ -3072,9 +3013,7 @@ True
 <span class="c1">#x,y = -37,37   # G: False</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3086,9 +3025,9 @@ True
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---fractioning">
-<h3>Exercise - fractioning<a class="headerlink" href="#Exercise---fractioning" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---fractioning">
+<h3>Exercise - fractioning<a class="headerlink" href="#Exercise---fractioning" title="Permalink to this headline"></a></h3>
 <p>✪ Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">0.000003</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">2.753278226511882</span></code></p>
 <div class="math notranslate nohighlight">
 \[\Large -\frac{\sqrt{x+3}}{\frac{(x + 2)^3}{\log{x}}}\]</div>
@@ -3098,8 +3037,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.000003</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.000003</span>
 
 <span class="c1"># write here</span>
 <span class="kn">import</span> <span class="nn">math</span>
@@ -3120,13 +3058,10 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.000003</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">0.000003</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3138,9 +3073,9 @@ True
 2.753278226511882
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---summation">
-<h3>Exercise - summation<a class="headerlink" href="#Exercise---summation" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---summation">
+<h3>Exercise - summation<a class="headerlink" href="#Exercise---summation" title="Permalink to this headline"></a></h3>
 <p>Write some code to calculate the value of the following expression (don’t use cycles, write down all calculations), you should obtain <code class="docutils literal notranslate"><span class="pre">20.53333333333333</span></code></p>
 <div class="math notranslate nohighlight">
 \[\normalsize \sum_{j=1}^{3}{\frac{j^4}{j + 2}}\]</div>
@@ -3150,8 +3085,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="p">((</span><span class="mi">1</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="p">((</span><span class="mi">2</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="p">((</span><span class="mi">3</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">2</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -3169,11 +3103,8 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3185,9 +3116,9 @@ True
 20.53333333333333
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Reals---conversion">
-<h3>Reals - conversion<a class="headerlink" href="#Reals---conversion" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Reals---conversion">
+<h3>Reals - conversion<a class="headerlink" href="#Reals---conversion" title="Permalink to this headline"></a></h3>
 <p>If we want to convert a real to an integer, several ways are available:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3300,9 +3231,9 @@ True
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 1.</p>
-</div></div>
-<div class="section" id="Exercise---Invigorate">
-<h3>Exercise - Invigorate<a class="headerlink" href="#Exercise---Invigorate" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Exercise---Invigorate">
+<h3>Exercise - Invigorate<a class="headerlink" href="#Exercise---Invigorate" title="Permalink to this headline"></a></h3>
 <p>✪ Excessive studies lead you search on internet recipes of energetic drinks. Luckily, a guru of nutrition just posted on her Instagram channel &#64;HealthyDrink this recipe of a miracle drink:</p>
 <blockquote>
 <div><p>Pour in a mixer 2 decilitres of kiwi juice, 4 decilitres of soy sauce, and 3 decilitres of shampoo of karitè bio. Mix vigorously and then pour half drink into a glass. Fill the glass until the superior deciliter. Swallow in one shot.</p>
@@ -3337,8 +3268,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">kiwi</span> <span class="o">=</span> <span class="mf">2.4</span>
 <span class="n">soy</span> <span class="o">=</span> <span class="mf">4.8</span>
@@ -3361,8 +3291,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <span class="n">glass</span> <span class="o">=</span> <span class="n">mixer</span><span class="o">/</span><span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I pour half of the mix (&#39;</span><span class="p">,</span> <span class="n">glass</span><span class="p">,</span> <span class="s1">&#39;dl ) into the glass&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I fill the glass until superior deciliter, now it contains:&#39;</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">glass</span><span class="p">),</span> <span class="s1">&#39;dl&#39;</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3384,8 +3313,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">kiwi</span> <span class="o">=</span> <span class="mf">2.4</span>
 <span class="n">soy</span> <span class="o">=</span> <span class="mf">4.8</span>
@@ -3396,9 +3324,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3416,9 +3342,9 @@ I pour half of the mix ( 4.5 dl ) into the glass
 I fill the glass until superior deciliter, now it contains: 5 dl
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---roundminder">
-<h3>Exercise - roundminder<a class="headerlink" href="#Exercise---roundminder" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---roundminder">
+<h3>Exercise - roundminder<a class="headerlink" href="#Exercise---roundminder" title="Permalink to this headline"></a></h3>
 <p>✪ Write some code to calculate the value of the following formula for <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">-5.51</span></code>, you should obtain <code class="docutils literal notranslate"><span class="pre">41</span></code></p>
 <div class="math notranslate nohighlight">
 \[\large \lvert{\lceil{x}\rceil}\rvert + \lfloor{x}\rceil^2\]</div>
@@ -3428,8 +3354,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mf">5.51</span>   <span class="c1"># 41</span>
 <span class="c1">#x = -5.49  # 30</span>
@@ -3452,16 +3377,13 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mf">5.51</span>   <span class="c1"># 41</span>
 <span class="c1">#x = -5.49  # 30</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3473,9 +3395,9 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 41
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Reals---equality">
-<h3>Reals - equality<a class="headerlink" href="#Reals---equality" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Reals---equality">
+<h3>Reals - equality<a class="headerlink" href="#Reals---equality" title="Permalink to this headline"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: what follows is valid for</strong> <strong>*all*</strong> <strong>programming languages!</strong></p>
 <p>Some results will look weird but this is the way most processors (CPU) operates, independently from Python.</p>
@@ -3485,8 +3407,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="mf">4.1</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">4.1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3503,8 +3424,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">format</span><span class="p">(</span><span class="mf">4.1</span><span class="p">,</span> <span class="s1">&#39;.55f&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span><span class="p">(</span><span class="mf">4.1</span><span class="p">,</span> <span class="s1">&#39;.55f&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3522,8 +3442,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="mf">7.9</span> <span class="o">-</span> <span class="mf">3.8</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">7.9</span> <span class="o">-</span> <span class="mf">3.8</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3540,8 +3459,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">format</span><span class="p">(</span><span class="mf">7.9</span> <span class="o">-</span> <span class="mf">3.8</span><span class="p">,</span> <span class="s1">&#39;.55f&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">format</span><span class="p">(</span><span class="mf">7.9</span> <span class="o">-</span> <span class="mf">3.8</span><span class="p">,</span> <span class="s1">&#39;.55f&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3558,8 +3476,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -3572,8 +3489,7 @@ I fill the glass until superior deciliter, now it contains: 5 dl
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">7.9</span> <span class="o">-</span> <span class="mf">3.8</span> <span class="o">==</span> <span class="mf">4.1</span>    <span class="c1"># TROUBLE AHEAD!</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">7.9</span> <span class="o">-</span> <span class="mf">3.8</span> <span class="o">==</span> <span class="mf">4.1</span>    <span class="c1"># TROUBLE AHEAD!</span>
 </pre></div>
 </div>
 </div>
@@ -3591,8 +3507,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 
 <span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="mf">7.9</span> <span class="o">-</span> <span class="mf">3.8</span><span class="p">,</span> <span class="mf">4.1</span><span class="p">)</span>   <span class="c1"># MUCH BETTER</span>
 </pre></div>
@@ -3612,8 +3527,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="mf">7.9</span> <span class="o">-</span> <span class="mf">3.8</span><span class="p">,</span> <span class="mf">4.1</span><span class="p">,</span> <span class="n">abs_tol</span><span class="o">=</span><span class="mf">0.000001</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="mf">7.9</span> <span class="o">-</span> <span class="mf">3.8</span><span class="p">,</span> <span class="mf">4.1</span><span class="p">,</span> <span class="n">abs_tol</span><span class="o">=</span><span class="mf">0.000001</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3640,9 +3554,9 @@ True
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: b) and c) give <code class="docutils literal notranslate"><span class="pre">True</span></code>. a) gives <code class="docutils literal notranslate"><span class="pre">False</span></code>, because durting floating point calculations rounding errors are made.</p>
-</div></div>
-<div class="section" id="Exercise---quadratic">
-<h3>Exercise - quadratic<a class="headerlink" href="#Exercise---quadratic" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Exercise---quadratic">
+<h3>Exercise - quadratic<a class="headerlink" href="#Exercise---quadratic" title="Permalink to this headline"></a></h3>
 <p>✪ Write some code to calculate the zeroes of the equation <span class="math notranslate nohighlight">\(ax^2-b = 0\)</span></p>
 <ul class="simple">
 <li><p>Show numbers with <strong>20 digits</strong> of precision</p></li>
@@ -3666,9 +3580,7 @@ Is -0.54772255750516607442 a solution? True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">11.0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">11.0</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mf">3.3</span>
 
 <span class="c1"># write here</span>
@@ -3702,27 +3614,22 @@ Is -0.54772255750516607442 a solution? True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">11.0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">a</span> <span class="o">=</span> <span class="mf">11.0</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mf">3.3</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---trendy">
-<h3>Exercise - trendy<a class="headerlink" href="#Exercise---trendy" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---trendy">
+<h3>Exercise - trendy<a class="headerlink" href="#Exercise---trendy" title="Permalink to this headline"></a></h3>
 <p>✪✪ You are already thinking about next vacations, but there is a big problem: where do you go, if you don’t have a <em>selfie-stick</em>? You cannot leave with this serious anxiety: to uniform yourself to this mass phenomena you must buy the stick which is most similar to others. You then conduct a rigourous statistical survey among turists obssessed by selfie sticks with the goal to find the most frequent brands of sticks, in other words, the <em>mode</em> of the frequencies. You obtain these results:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="s1">&#39;TooManyLikes&#39;</span><span class="p">,</span> <span class="s1">&#39;Boombasticks&#39;</span><span class="p">,</span> <span class="s1">&#39;Timewasters Inc&#39;</span><span class="p">,</span> <span class="s1">&#39;Vanity 3.0&#39;</span><span class="p">,</span><span class="s1">&#39;TrashTrend&#39;</span> <span class="c1"># brand</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="s1">&#39;TooManyLikes&#39;</span><span class="p">,</span> <span class="s1">&#39;Boombasticks&#39;</span><span class="p">,</span> <span class="s1">&#39;Timewasters Inc&#39;</span><span class="p">,</span> <span class="s1">&#39;Vanity 3.0&#39;</span><span class="p">,</span><span class="s1">&#39;TrashTrend&#39;</span> <span class="c1"># brand</span>
 <span class="n">f1</span><span class="p">,</span><span class="n">f2</span><span class="p">,</span><span class="n">f3</span><span class="p">,</span><span class="n">f4</span><span class="p">,</span><span class="n">f5</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.3</span>   <span class="c1"># frequencies (as percentages)</span>
 </pre></div>
 </div>
@@ -3744,9 +3651,7 @@ TrashTrend is the most frequent? True ( 30.0 % )
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="s1">&#39;TooManyLikes&#39;</span><span class="p">,</span> <span class="s1">&#39;Boombasticks&#39;</span><span class="p">,</span> <span class="s1">&#39;Timewasters Inc&#39;</span><span class="p">,</span> <span class="s1">&#39;Vanity 3.0&#39;</span><span class="p">,</span><span class="s1">&#39;TrashTrend&#39;</span>    <span class="c1"># brand</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="s1">&#39;TooManyLikes&#39;</span><span class="p">,</span> <span class="s1">&#39;Boombasticks&#39;</span><span class="p">,</span> <span class="s1">&#39;Timewasters Inc&#39;</span><span class="p">,</span> <span class="s1">&#39;Vanity 3.0&#39;</span><span class="p">,</span><span class="s1">&#39;TrashTrend&#39;</span>    <span class="c1"># brand</span>
 
 <span class="n">f1</span><span class="p">,</span><span class="n">f2</span><span class="p">,</span><span class="n">f3</span><span class="p">,</span><span class="n">f4</span><span class="p">,</span><span class="n">f5</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.3</span>  <span class="c1"># frequencies (as percentages)  False True False False True</span>
 <span class="c1"># CAREFUL, they look the same but it must work also with these!</span>
@@ -3778,31 +3683,26 @@ TrashTrend is the most frequent? True ( 30.0 % )
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="s1">&#39;TooManyLikes&#39;</span><span class="p">,</span> <span class="s1">&#39;Boombasticks&#39;</span><span class="p">,</span> <span class="s1">&#39;Timewasters Inc&#39;</span><span class="p">,</span> <span class="s1">&#39;Vanity 3.0&#39;</span><span class="p">,</span><span class="s1">&#39;TrashTrend&#39;</span>    <span class="c1"># brand</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="s1">&#39;TooManyLikes&#39;</span><span class="p">,</span> <span class="s1">&#39;Boombasticks&#39;</span><span class="p">,</span> <span class="s1">&#39;Timewasters Inc&#39;</span><span class="p">,</span> <span class="s1">&#39;Vanity 3.0&#39;</span><span class="p">,</span><span class="s1">&#39;TrashTrend&#39;</span>    <span class="c1"># brand</span>
 
 <span class="n">f1</span><span class="p">,</span><span class="n">f2</span><span class="p">,</span><span class="n">f3</span><span class="p">,</span><span class="n">f4</span><span class="p">,</span><span class="n">f5</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.3</span>  <span class="c1"># frequencies (as percentages)  False True False False True</span>
 <span class="c1"># CAREFUL, they look the same but it must work also with these!</span>
 <span class="c1">#f1,f2,f3,f4,f5 = 0.25, 0.3, 0.1, 0.05, 0.1 + 0.2  #  False True False False True</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Decimal-numbers">
-<h2>Decimal numbers<a class="headerlink" href="#Decimal-numbers" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Decimal-numbers">
+<h2>Decimal numbers<a class="headerlink" href="#Decimal-numbers" title="Permalink to this headline"></a></h2>
 <p>For most applications float numbers are sufficient, if you are conscius of their limits of representation and equality. If you really need more precision and/or preditability, Python offers a dedicated numeric type called <code class="docutils literal notranslate"><span class="pre">Decimal</span></code>, which allows arbitrary precision. To use it, you must first import <code class="docutils literal notranslate"><span class="pre">decimal</span></code> library:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">decimal</span> <span class="kn">import</span> <span class="n">Decimal</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decimal</span> <span class="kn">import</span> <span class="n">Decimal</span>
 </pre></div>
 </div>
 </div>
@@ -3811,8 +3711,7 @@ TrashTrend is the most frequent? True ( 30.0 % )
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;4.1&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;4.1&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3833,8 +3732,7 @@ Decimal(&#39;4.1&#39;)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">Decimal</span><span class="p">(</span><span class="mf">4.1</span><span class="p">)</span>  <span class="c1"># this way I keep the problems of floats ...</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Decimal</span><span class="p">(</span><span class="mf">4.1</span><span class="p">)</span>  <span class="c1"># this way I keep the problems of floats ...</span>
 </pre></div>
 </div>
 </div>
@@ -3852,8 +3750,7 @@ Decimal(&#39;4.0999999999999996447286321199499070644378662109375&#39;)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;7.9&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.8&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;7.9&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.8&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3871,8 +3768,7 @@ Decimal(&#39;4.1&#39;)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;4.1&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;7.9&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.8&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;4.1&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;7.9&#39;</span><span class="p">)</span> <span class="o">-</span> <span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;3.8&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3890,8 +3786,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sqrt</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sqrt</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3912,8 +3807,7 @@ Decimal(&#39;1.414213562373095048801688724&#39;)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sqrt</span><span class="p">()</span><span class="o">**</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sqrt</span><span class="p">()</span><span class="o">**</span><span class="n">Decimal</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3927,59 +3821,42 @@ Decimal(&#39;1.999999999999999999999999999&#39;)
 </pre></div></div>
 </div>
 <p>The only thing we can have more with Decimals is more digits to represent numbers, which if we want we can <a class="reference external" href="https://docs.python.org/3/library/decimal.html">increase at will</a> until we fill our pc memory. In this book we won’t talk anymore about Decimals because typically they are meant only for specific applications, for example, if you need to perform fincancial calculations you will probably want very exact digits!</p>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/basics/basics4-chal.html">the challenges</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="basics4-chal.html" class="btn btn-neutral float-right" title="Python basics 4 - Challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="basics2-bools-sol.html" class="btn btn-neutral float-left" title="Basics 2 - booleans" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="basics4-chal.html" class="btn btn-neutral float-right" title="Python basics 4 - Challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

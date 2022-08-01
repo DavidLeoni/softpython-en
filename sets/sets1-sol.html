@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Sets &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/sets/sets1-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Sets 2 - First challenges" href="sets2-chal.html" />
     <link rel="prev" title="Tuples 2 - First challenges" href="../tuples/tuples2-chal.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,15 +2614,15 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Sets">
-<h1>Sets<a class="headerlink" href="#Sets" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/sets.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Sets">
+<h1>Sets<a class="headerlink" href="#Sets" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/sets.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/sets">Browse online files</a></p>
 <p>A set is a <em>mutable</em> <em>unordered</em> collection of <em>immutable</em> <em>distinct</em> elements (that is, without duplicates). The Python datatype to represent sets is called <code class="docutils literal notranslate"><span class="pre">set</span></code>.</p>
-</div>
-<div class="section" id="What-to-do">
-<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="What-to-do">
+<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h2>
 <ol class="arabic simple">
 <li><p>Unzip <a class="reference external" href="../_static/generated/sets.zip">exercises zip</a> in a folder, you should obtain something like this:</p></li>
 </ol>
@@ -2692,17 +2647,16 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="Creating-a-set">
-<h2>Creating a set<a class="headerlink" href="#Creating-a-set" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Creating-a-set">
+<h2>Creating a set<a class="headerlink" href="#Creating-a-set" title="Permalink to this headline"></a></h2>
 <p>We can create a set using curly brackets, and separating the elements with commas <code class="docutils literal notranslate"><span class="pre">,</span></code></p>
 <p>Let’s try a set of characters:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -2710,8 +2664,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2733,8 +2686,7 @@ set
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2753,8 +2705,7 @@ set
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -2784,8 +2735,7 @@ set
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -2793,8 +2743,7 @@ set
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -2808,15 +2757,14 @@ set
 </pre></div></div>
 </div>
 <p>We note that Python silently removed the duplicates.</p>
-<div class="section" id="Converting-sequences-to-sets">
-<h3>Converting sequences to sets<a class="headerlink" href="#Converting-sequences-to-sets" title="Permalink to this headline">¶</a></h3>
+<section id="Converting-sequences-to-sets">
+<h3>Converting sequences to sets<a class="headerlink" href="#Converting-sequences-to-sets" title="Permalink to this headline"></a></h3>
 <p>As for lists and strings, we can create a <code class="docutils literal notranslate"><span class="pre">set</span></code> from another sequence:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">set</span><span class="p">(</span><span class="s1">&#39;acacia&#39;</span><span class="p">)</span> <span class="c1"># from string</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="s1">&#39;acacia&#39;</span><span class="p">)</span> <span class="c1"># from string</span>
 </pre></div>
 </div>
 </div>
@@ -2833,8 +2781,7 @@ set
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">set</span><span class="p">(</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># from list</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="c1"># from list</span>
 </pre></div>
 </div>
 </div>
@@ -2851,8 +2798,7 @@ set
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">set</span><span class="p">(</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span> <span class="c1"># from tuple</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span> <span class="c1"># from tuple</span>
 </pre></div>
 </div>
 </div>
@@ -2869,9 +2815,9 @@ set
 <div class="admonition note">
 <p><strong>REMEMBER: Sets are useful to remove duplicates from a sequence</strong></p>
 </div>
-</div>
-<div class="section" id="Mutable-elements-and-hashes">
-<h3>Mutable elements and hashes<a class="headerlink" href="#Mutable-elements-and-hashes" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Mutable-elements-and-hashes">
+<h3>Mutable elements and hashes<a class="headerlink" href="#Mutable-elements-and-hashes" title="Permalink to this headline"></a></h3>
 <p>Let’s see again the definition from the beginning:</p>
 <blockquote>
 <div><p>A set is a <em>mutable</em> <em>unordered</em> collection of <em>immutable</em> <em>distinct</em> elements</p>
@@ -2894,8 +2840,7 @@ set
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">hash</span><span class="p">(</span> <span class="s2">&quot;This is a nice day&quot;</span> <span class="p">)</span>  <span class="c1"># string</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">hash</span><span class="p">(</span> <span class="s2">&quot;This is a nice day&quot;</span> <span class="p">)</span>  <span class="c1"># string</span>
 </pre></div>
 </div>
 </div>
@@ -2912,8 +2857,7 @@ set
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">hash</span><span class="p">(</span> <span class="mi">111112222223333333344444445555555555</span> <span class="p">)</span>   <span class="c1"># number</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">hash</span><span class="p">(</span> <span class="mi">111112222223333333344444445555555555</span> <span class="p">)</span>   <span class="c1"># number</span>
 </pre></div>
 </div>
 </div>
@@ -2942,9 +2886,9 @@ the shelves for breakfast stuff. Image what could happen if an evil sorcerer cou
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: Yes, tuples are <em>immutable,</em> so they have a corrispending <em>hash</em> which remains stable for all the program duration, for example this is a tuple set:<code class="docutils literal notranslate"><span class="pre">{(1,2),</span> <span class="pre">(3,4,5)}</span></code></p>
 <p>Note we can consider a tuple as really immutable only if it contains elements which are also immutable.</p>
-</div></div>
-<div class="section" id="Empty-set">
-<h3>Empty set<a class="headerlink" href="#Empty-set" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Empty-set">
+<h3>Empty set<a class="headerlink" href="#Empty-set" title="Permalink to this headline"></a></h3>
 <div class="admonition warning">
 <p><strong>WARNING: If you write</strong> <code class="docutils literal notranslate"><span class="pre">{}</span></code> <strong>you will obtain a dictionary, NOT a set !!!</strong></p>
 </div>
@@ -2953,8 +2897,7 @@ the shelves for breakfast stuff. Image what could happen if an evil sorcerer cou
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -2962,8 +2905,7 @@ the shelves for breakfast stuff. Image what could happen if an evil sorcerer cou
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -2981,10 +2923,8 @@ set()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/></pre></div>
 </div>
 </div>
 <p><strong>QUESTION</strong>: Can we try inserting a set inside another set? Have a careful look at the set definition, then verify your suppositions by writing some code to create a set which has another set inside.</p>
@@ -3098,9 +3038,9 @@ set()
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Exercise---dedup">
-<h3>Exercise - dedup<a class="headerlink" href="#Exercise---dedup" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---dedup">
+<h3>Exercise - dedup<a class="headerlink" href="#Exercise---dedup" title="Permalink to this headline"></a></h3>
 <p>Write some brief code to create a list <code class="docutils literal notranslate"><span class="pre">lb</span></code> which contains all the elements of the list <code class="docutils literal notranslate"><span class="pre">la</span></code> without duplicates and alphabetically sorted.</p>
 <ul class="simple">
 <li><p>DO NOT change original list <code class="docutils literal notranslate"><span class="pre">la</span></code></p></li>
@@ -3123,8 +3063,7 @@ set()
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
 
@@ -3150,13 +3089,10 @@ lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3168,17 +3104,17 @@ la = [&#39;c&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;b&#3
 lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Frozenset">
-<h3>Frozenset<a class="headerlink" href="#Frozenset" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Frozenset">
+<h3>Frozenset<a class="headerlink" href="#Frozenset" title="Permalink to this headline"></a></h3>
 <div class="admonition note">
 <p><strong>INFO: this topic is optional for the purposes of the book</strong></p>
 </div>
 <p>In Python also exists <em>immutable</em> sets which are called <code class="docutils literal notranslate"><span class="pre">frozenset</span></code>. Here we just remind that since frozensets are <em>immutable</em> they do have associated a <em>hash</em> label and thus they can be inserted as elements of other sets. For other info we refer to the <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#frozenset">official documentation</a>.</p>
-</div>
-</div>
-<div class="section" id="Operators">
-<h2>Operators<a class="headerlink" href="#Operators" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Operators">
+<h2>Operators<a class="headerlink" href="#Operators" title="Permalink to this headline"></a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 22%" />
@@ -3222,14 +3158,13 @@ lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 </tr>
 </tbody>
 </table>
-<div class="section" id="len">
-<h3>len<a class="headerlink" href="#len" title="Permalink to this headline">¶</a></h3>
+<section id="len">
+<h3>len<a class="headerlink" href="#len" title="Permalink to this headline"></a></h3>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>  <span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>  <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3246,8 +3181,7 @@ lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span> <span class="nb">set</span><span class="p">()</span> <span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span> <span class="nb">set</span><span class="p">()</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3260,9 +3194,9 @@ lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 0
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---distincts">
-<h3>Exercise - distincts<a class="headerlink" href="#Exercise---distincts" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---distincts">
+<h3>Exercise - distincts<a class="headerlink" href="#Exercise---distincts" title="Permalink to this headline"></a></h3>
 <p>Given a string <code class="docutils literal notranslate"><span class="pre">word</span></code>, write some code that:</p>
 <ul class="simple">
 <li><p>prints the distinct characters present in <code class="docutils literal notranslate"><span class="pre">word</span></code> as alphabetically ordered (without the square brackets!), together with their number</p></li>
@@ -3294,8 +3228,7 @@ lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;ababbbbcdd&quot;</span>
 <span class="c1">#word = &quot;cccccaaabbbb&quot;</span>
 <span class="n">s</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
@@ -3322,11 +3255,8 @@ word     : ababbbbcdd
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3339,16 +3269,15 @@ word     : ababbbbcdd
 6 duplicates
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Membership">
-<h3>Membership<a class="headerlink" href="#Membership" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Membership">
+<h3>Membership<a class="headerlink" href="#Membership" title="Permalink to this headline"></a></h3>
 <p>As for any sequence, when we want to check whether an element is contained in a set we can use the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator which returns a boolean value:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3365,8 +3294,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s1">&#39;z&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;z&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3384,16 +3312,15 @@ False
 <p>The speed of <code class="docutils literal notranslate"><span class="pre">in</span></code> operator DOES NOT depend on the set dimension</p>
 </div>
 <p>This is a substantial difference with respect to other sequences we’ve already seen: if you try searching for an element with <code class="docutils literal notranslate"><span class="pre">in</span></code> in strings, lists or tuples, and the element to find is toward the end (or there isn’t at all), Python will have to look through the whole sequence.</p>
-<div class="section" id="not-in">
-<h4>not in<a class="headerlink" href="#not-in" title="Permalink to this headline">¶</a></h4>
+<section id="not-in">
+<h4>not in<a class="headerlink" href="#not-in" title="Permalink to this headline"></a></h4>
 <p>To check whether something is <strong>not</strong> belonging to a sequence, we can use two forms:</p>
 <p><strong>not in - form 1</strong>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;carrot&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;carrot&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3410,8 +3337,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;watermelon&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;watermelon&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3429,8 +3355,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="ow">not</span> <span class="s2">&quot;carrot&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="s2">&quot;carrot&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3447,8 +3372,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="ow">not</span> <span class="s2">&quot;watermelon&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="s2">&quot;watermelon&quot;</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;watermelon&quot;</span><span class="p">,</span><span class="s2">&quot;banana&quot;</span><span class="p">,</span><span class="s2">&quot;apple&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3563,18 +3487,17 @@ False
 <div class="admonition note">
 <p><strong>To make performant searches it’s preferable to use hash based collections, like sets or dictionaries !</strong></p>
 </div>
-</div></div>
-</div>
-<div class="section" id="Union">
-<h3>Union<a class="headerlink" href="#Union" title="Permalink to this headline">¶</a></h3>
+</div></section>
+</section>
+<section id="Union">
+<h3>Union<a class="headerlink" href="#Union" title="Permalink to this headline"></a></h3>
 <p>The union operator <code class="docutils literal notranslate"><span class="pre">|</span></code> (called <em>pipe</em>) produces a NEW set containing all the elements from both the first and second set.</p>
 <p><img alt="eiu3" src="../_images/union.png" /></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span> <span class="o">|</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span> <span class="o">|</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3593,10 +3516,8 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/></pre></div>
 </div>
 </div>
 <p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing the result (or if they give an error):</p>
@@ -3676,9 +3597,9 @@ False
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 2: the number of elements from the union will always be lesser or equal to the sum of the number of elements of each single set we are going to merge, so from the <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> comparison we will always get <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
-</div></div>
-<div class="section" id="Exercise---everythingbut-1">
-<h3>Exercise - everythingbut 1<a class="headerlink" href="#Exercise---everythingbut-1" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Exercise---everythingbut-1">
+<h3>Exercise - everythingbut 1<a class="headerlink" href="#Exercise---everythingbut-1" title="Permalink to this headline"></a></h3>
 <p>Write some code which creates a set <code class="docutils literal notranslate"><span class="pre">s4</span></code> which contains all the elements of <code class="docutils literal notranslate"><span class="pre">s1</span></code> and <code class="docutils literal notranslate"><span class="pre">s2</span></code> but does not contain the elements of <code class="docutils literal notranslate"><span class="pre">s3</span></code>.</p>
 <ul class="simple">
 <li><p>Your code should work with <em>any</em> set <code class="docutils literal notranslate"><span class="pre">s1</span></code>, <code class="docutils literal notranslate"><span class="pre">s2</span></code>, <code class="docutils literal notranslate"><span class="pre">s3</span></code></p></li>
@@ -3700,8 +3621,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">])</span>
 <span class="n">s3</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">])</span>
 
@@ -3715,28 +3635,24 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">])</span>
 <span class="n">s3</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">])</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Intersection">
-<h3>Intersection<a class="headerlink" href="#Intersection" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Intersection">
+<h3>Intersection<a class="headerlink" href="#Intersection" title="Permalink to this headline"></a></h3>
 <p>The intersection operator <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> produces a NEW set which contains all the common elements of the first and second set.</p>
 <p><img alt="okoerioe" src="../_images/intersection.png" /></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span> <span class="o">&amp;</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span> <span class="o">&amp;</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3800,17 +3716,16 @@ False
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Difference">
-<h3>Difference<a class="headerlink" href="#Difference" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Difference">
+<h3>Difference<a class="headerlink" href="#Difference" title="Permalink to this headline"></a></h3>
 <p>The difference operator <code class="docutils literal notranslate"><span class="pre">-</span></code> produces a NEW set containing all the elements of the first set except the ones from the second:</p>
 <p><img alt="3423dde" src="../_images/difference.png" /></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">}</span> <span class="o">-</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">}</span> <span class="o">-</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3888,9 +3803,9 @@ False
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
 </pre></div>
 </div>
-</div></div>
-<div class="section" id="Symmetric-difference">
-<h3>Symmetric difference<a class="headerlink" href="#Symmetric-difference" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Symmetric-difference">
+<h3>Symmetric difference<a class="headerlink" href="#Symmetric-difference" title="Permalink to this headline"></a></h3>
 <p>The symmetric difference of two sets is their union except their intersection, that is all elements except the common ones:</p>
 <p><img alt="kjdfslkj" src="../_images/symmetric-difference.png" /></p>
 <p>In Python you can directly express it with the <code class="docutils literal notranslate"><span class="pre">^</span></code> operator:</p>
@@ -3898,8 +3813,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span> <span class="o">^</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span> <span class="o">^</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -3917,8 +3831,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">}</span>
 
 <span class="p">(</span><span class="n">s1</span> <span class="o">|</span> <span class="n">s2</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">s1</span> <span class="o">&amp;</span> <span class="n">s2</span><span class="p">)</span>
@@ -3974,17 +3887,16 @@ False
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="s1">&#39;ac&#39;</span><span class="p">,</span> <span class="s1">&#39;bc&#39;</span><span class="p">,</span> <span class="s1">&#39;ab&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
-</div></div>
-</div>
-<div class="section" id="Equality">
-<h2>Equality<a class="headerlink" href="#Equality" title="Permalink to this headline">¶</a></h2>
+</div></section>
+</section>
+<section id="Equality">
+<h2>Equality<a class="headerlink" href="#Equality" title="Permalink to this headline"></a></h2>
 <p>We can check whether two sets are equal by using the equality operator <code class="docutils literal notranslate"><span class="pre">==</span></code>, which given two sets return <code class="docutils literal notranslate"><span class="pre">True</span></code> if they contain the same elements or <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span> <span class="o">==</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span> <span class="o">==</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4001,8 +3913,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span> <span class="o">==</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span> <span class="o">==</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4019,8 +3930,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span> <span class="o">==</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span> <span class="o">==</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4038,8 +3948,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">}</span> <span class="o">==</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">}</span> <span class="o">==</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4057,8 +3966,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span> <span class="o">!=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span> <span class="o">!=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4075,8 +3983,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">}</span> <span class="o">!=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">}</span> <span class="o">!=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4093,8 +4000,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">}</span> <span class="o">!=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">}</span> <span class="o">!=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4112,8 +4018,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">}</span> <span class="o">!=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">}</span> <span class="o">!=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4193,9 +4098,9 @@ False
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Methods-like-operators">
-<h2>Methods like operators<a class="headerlink" href="#Methods-like-operators" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Methods-like-operators">
+<h2>Methods like operators<a class="headerlink" href="#Methods-like-operators" title="Permalink to this headline"></a></h2>
 <p>There are methods which behave like the operators<code class="docutils literal notranslate"><span class="pre">|</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">^</span></code> by creating a <strong>NEW</strong> set.</p>
 <p><strong>NOTE</strong>: differently from operators, these methods accept as parameter <em>any</em> sequence, not just sets:</p>
 <table class="docutils align-default">
@@ -4267,16 +4172,15 @@ False
 </tr>
 </tbody>
 </table>
-<div class="section" id="union">
-<h3>union<a class="headerlink" href="#union" title="Permalink to this headline">¶</a></h3>
+<section id="union">
+<h3>union<a class="headerlink" href="#union" title="Permalink to this headline"></a></h3>
 <p>We’ll only have a look at <code class="docutils literal notranslate"><span class="pre">union</span></code>/<code class="docutils literal notranslate"><span class="pre">update</span></code>, all other methods behave similarly</p>
 <p>With <code class="docutils literal notranslate"><span class="pre">union</span></code>, given a set and a generic sequence (so not necessarily a set) we can create a NEW set:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sa</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sa</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4284,8 +4188,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4293,8 +4196,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sb</span> <span class="o">=</span> <span class="n">sa</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span> <span class="o">=</span> <span class="n">sa</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4302,8 +4204,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sb</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sb</span>
 </pre></div>
 </div>
 </div>
@@ -4321,10 +4222,8 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/></pre></div>
 </div>
 </div>
 <p>We can verify <code class="docutils literal notranslate"><span class="pre">union</span></code> creates a new set with Python Tutor:</p>
@@ -4332,8 +4231,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sa</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sa</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
 <span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">]</span>
 <span class="n">sb</span> <span class="o">=</span> <span class="n">sa</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
 
@@ -4392,16 +4290,15 @@ False
 })()
 </script></div>
 </div>
-</div>
-<div class="section" id="update">
-<h3>update<a class="headerlink" href="#update" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="update">
+<h3>update<a class="headerlink" href="#update" title="Permalink to this headline"></a></h3>
 <p>If we want to MODIFY the first set instead, we can use the methods ending with <code class="docutils literal notranslate"><span class="pre">update</span></code>:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sa</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sa</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4409,8 +4306,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4418,8 +4314,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4427,8 +4322,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">sa</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">sa</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4449,8 +4343,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sa</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sa</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">}</span>
 <span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">]</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">sa</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sa</span><span class="p">)</span>
@@ -4566,14 +4459,13 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---everythingbut-2">
-<h3>Exercise - everythingbut 2<a class="headerlink" href="#Exercise---everythingbut-2" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---everythingbut-2">
+<h3>Exercise - everythingbut 2<a class="headerlink" href="#Exercise---everythingbut-2" title="Permalink to this headline"></a></h3>
 <p>Given sets <code class="docutils literal notranslate"><span class="pre">s1</span></code>, <code class="docutils literal notranslate"><span class="pre">s2</span></code> e <code class="docutils literal notranslate"><span class="pre">s3</span></code>, write some code which MODIFIES <code class="docutils literal notranslate"><span class="pre">s1</span></code> so that it also contains the elements of <code class="docutils literal notranslate"><span class="pre">s2</span></code> but not the elements of <code class="docutils literal notranslate"><span class="pre">s3</span></code>:</p>
 <ul class="simple">
 <li><p>Your code should work with <em>any</em> set <code class="docutils literal notranslate"><span class="pre">s1</span></code>, <code class="docutils literal notranslate"><span class="pre">s2</span></code>, <code class="docutils literal notranslate"><span class="pre">s3</span></code></p></li>
@@ -4596,8 +4488,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">])</span>
 <span class="n">s3</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">])</span>
 
@@ -4620,15 +4511,12 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">])</span>
 <span class="n">s3</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">])</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4639,10 +4527,10 @@ None
 {&#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;a&#39;, &#39;g&#39;}
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Other-methods">
-<h2>Other methods<a class="headerlink" href="#Other-methods" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Other-methods">
+<h2>Other methods<a class="headerlink" href="#Other-methods" title="Permalink to this headline"></a></h2>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 28%" />
@@ -4690,15 +4578,14 @@ None
 </tr>
 </tbody>
 </table>
-<div class="section" id="add-method">
-<h3><code class="docutils literal notranslate"><span class="pre">add</span></code> method<a class="headerlink" href="#add-method" title="Permalink to this headline">¶</a></h3>
+<section id="add-method">
+<h3><code class="docutils literal notranslate"><span class="pre">add</span></code> method<a class="headerlink" href="#add-method" title="Permalink to this headline"></a></h3>
 <p>Given a set, we can add an element with the method <code class="docutils literal notranslate"><span class="pre">.add</span></code>:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4706,8 +4593,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4715,8 +4601,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -4734,8 +4619,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4743,8 +4627,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -4798,8 +4681,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">}</span>
 <span class="n">y</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="n">x</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
 
@@ -4858,16 +4740,15 @@ None
 })()
 </script></div>
 </div>
-</div>
-<div class="section" id="remove-method">
-<h3><code class="docutils literal notranslate"><span class="pre">remove</span></code> method<a class="headerlink" href="#remove-method" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="remove-method">
+<h3><code class="docutils literal notranslate"><span class="pre">remove</span></code> method<a class="headerlink" href="#remove-method" title="Permalink to this headline"></a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">remove</span></code> method takes the specified element out of the set. If it doesn’t exist, it produces an error:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -4875,8 +4756,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4884,8 +4764,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -4902,8 +4781,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4911,8 +4789,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -4935,9 +4812,9 @@ None
 <span class="ne">KeyError</span><span class="p">:</span> <span class="s1">&#39;z&#39;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Exercise---bababiba">
-<h3>Exercise - bababiba<a class="headerlink" href="#Exercise---bababiba" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---bababiba">
+<h3>Exercise - bababiba<a class="headerlink" href="#Exercise---bababiba" title="Permalink to this headline"></a></h3>
 <p>Given a string <code class="docutils literal notranslate"><span class="pre">word</span></code> of exactly 4 syllabs of two characters each, create a set <code class="docutils literal notranslate"><span class="pre">s</span></code> which contains tuples with 2 characters each. Each tuple must represent a syllab taken from <code class="docutils literal notranslate"><span class="pre">word</span></code>.</p>
 <ul class="simple">
 <li><p>to add elements to the set, only use <code class="docutils literal notranslate"><span class="pre">add</span></code></p></li>
@@ -4967,8 +4844,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;bababiba&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;bababiba&quot;</span>
 <span class="c1">#word = &quot;rubareru&quot;</span>
 
 <span class="c1"># write here</span>
@@ -4994,14 +4870,11 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;bababiba&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;bababiba&quot;</span>
 <span class="c1">#word = &quot;rubareru&quot;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -5012,16 +4885,15 @@ None
 {(&#39;b&#39;, &#39;a&#39;), (&#39;b&#39;, &#39;i&#39;)}
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="discard-method">
-<h3><code class="docutils literal notranslate"><span class="pre">discard</span></code> method<a class="headerlink" href="#discard-method" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="discard-method">
+<h3><code class="docutils literal notranslate"><span class="pre">discard</span></code> method<a class="headerlink" href="#discard-method" title="Permalink to this headline"></a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">discard</span></code> method removes the specifed element from the set. If it doesn’t exists, it does nothing (we may also say it <em>silently</em> discards the element):</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -5029,8 +4901,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5038,8 +4909,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -5056,8 +4926,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5065,8 +4934,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -5083,8 +4951,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5092,8 +4959,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">s</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span>
 </pre></div>
 </div>
 </div>
@@ -5106,9 +4972,9 @@ None
 {&#39;b&#39;}
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---trash">
-<h3>Exercise - trash<a class="headerlink" href="#Exercise---trash" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---trash">
+<h3>Exercise - trash<a class="headerlink" href="#Exercise---trash" title="Permalink to this headline"></a></h3>
 <p>✪✪ A waste processing plant receives a load of <code class="docutils literal notranslate"><span class="pre">trash</span></code>, which we represent as a set of strings:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">trash</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;alkenes&#39;</span><span class="p">,</span><span class="s1">&#39;vegetables&#39;</span><span class="p">,</span><span class="s1">&#39;mercury&#39;</span><span class="p">,</span><span class="s1">&#39;paper&#39;</span><span class="p">}</span>
 </pre></div>
@@ -5144,9 +5010,7 @@ Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">filters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cadmium&#39;</span><span class="p">,</span><span class="s1">&#39;mercury&#39;</span><span class="p">,</span><span class="s1">&#39;alkenes&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">filters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cadmium&#39;</span><span class="p">,</span><span class="s1">&#39;mercury&#39;</span><span class="p">,</span><span class="s1">&#39;alkenes&#39;</span><span class="p">]</span>
 <span class="n">trash</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;alkenes&#39;</span><span class="p">,</span><span class="s1">&#39;vegetables&#39;</span><span class="p">,</span><span class="s1">&#39;mercury&#39;</span><span class="p">,</span><span class="s1">&#39;paper&#39;</span><span class="p">}</span>
 
 <span class="n">separated</span> <span class="o">=</span> <span class="n">trash</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">filters</span><span class="p">)</span> <span class="c1"># creates a NEW set</span>
@@ -5164,8 +5028,7 @@ Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Separated contaminants:&quot;</span><span class="p">,</span> <span class="n">separated</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -5185,29 +5048,24 @@ Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">filters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cadmium&#39;</span><span class="p">,</span><span class="s1">&#39;mercury&#39;</span><span class="p">,</span><span class="s1">&#39;alkenes&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">filters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cadmium&#39;</span><span class="p">,</span><span class="s1">&#39;mercury&#39;</span><span class="p">,</span><span class="s1">&#39;alkenes&#39;</span><span class="p">]</span>
 <span class="n">trash</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;alkenes&#39;</span><span class="p">,</span><span class="s1">&#39;vegetables&#39;</span><span class="p">,</span><span class="s1">&#39;mercury&#39;</span><span class="p">,</span><span class="s1">&#39;paper&#39;</span><span class="p">}</span>
 
 <span class="n">separated</span> <span class="o">=</span> <span class="n">trash</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">filters</span><span class="p">)</span> <span class="c1"># creates a NEW set</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="issubset-method">
-<h3><code class="docutils literal notranslate"><span class="pre">issubset</span></code> method<a class="headerlink" href="#issubset-method" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="issubset-method">
+<h3><code class="docutils literal notranslate"><span class="pre">issubset</span></code> method<a class="headerlink" href="#issubset-method" title="Permalink to this headline"></a></h3>
 <p>To check whether all elements in a set <code class="docutils literal notranslate"><span class="pre">sa</span></code> are contained in another set <code class="docutils literal notranslate"><span class="pre">sb</span></code> we can write <code class="docutils literal notranslate"><span class="pre">sa.issubset(sb)</span></code>. Examples:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span><span class="o">.</span><span class="n">issubset</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span><span class="o">.</span><span class="n">issubset</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
@@ -5224,8 +5082,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issubset</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issubset</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
@@ -5245,8 +5102,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">set</span><span class="p">()</span><span class="o">.</span><span class="n">issubset</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">})</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">()</span><span class="o">.</span><span class="n">issubset</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
@@ -5259,16 +5115,15 @@ False
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="issuperset-method">
-<h3><code class="docutils literal notranslate"><span class="pre">issuperset</span></code> method<a class="headerlink" href="#issuperset-method" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="issuperset-method">
+<h3><code class="docutils literal notranslate"><span class="pre">issuperset</span></code> method<a class="headerlink" href="#issuperset-method" title="Permalink to this headline"></a></h3>
 <p>To verify whether a set <code class="docutils literal notranslate"><span class="pre">sa</span></code> contains all the elements of another set <code class="docutils literal notranslate"><span class="pre">sb</span></code> we can write <code class="docutils literal notranslate"><span class="pre">sa.issuperset(sb)</span></code>. Examples:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issuperset</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">})</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issuperset</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
@@ -5285,8 +5140,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issuperset</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issuperset</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
@@ -5303,8 +5157,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issuperset</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">})</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issuperset</span><span class="p">({</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
@@ -5324,8 +5177,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issuperset</span><span class="p">({})</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">issuperset</span><span class="p">({})</span>
 </pre></div>
 </div>
 </div>
@@ -5338,16 +5190,15 @@ False
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="isdisjoint-method">
-<h3><code class="docutils literal notranslate"><span class="pre">isdisjoint</span></code> method<a class="headerlink" href="#isdisjoint-method" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="isdisjoint-method">
+<h3><code class="docutils literal notranslate"><span class="pre">isdisjoint</span></code> method<a class="headerlink" href="#isdisjoint-method" title="Permalink to this headline"></a></h3>
 <p>A set is disjoint from another one if it doesn’t have any element in common, we can check for disjointness by using the method <code class="docutils literal notranslate"><span class="pre">isdisjoint</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">isdisjoint</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">isdisjoint</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
@@ -5364,8 +5215,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">isdisjoint</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span><span class="o">.</span><span class="n">isdisjoint</span><span class="p">({</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>
 </pre></div>
 </div>
 </div>
@@ -5401,10 +5251,10 @@ False
 <p class="admonition-title fa fa-exclamation-circle"><strong>MORAL OF THE STORY: ALWAYS CHECK FOR THE EMPTY SET !</strong></p>
 <p>For this and many other methods the empty set often causes behaviours which aren’t always intuitive, so we invite you to always check case by case.</p>
 </div>
-</div></div>
-</div>
-<div class="section" id="Exercise---matrioska">
-<h2>Exercise - matrioska<a class="headerlink" href="#Exercise---matrioska" title="Permalink to this headline">¶</a></h2>
+</div></section>
+</section>
+<section id="Exercise---matrioska">
+<h2>Exercise - matrioska<a class="headerlink" href="#Exercise---matrioska" title="Permalink to this headline"></a></h2>
 <p>✪✪ Given a list <code class="docutils literal notranslate"><span class="pre">sets</span></code> of exactly 4 sets, we define it a <em>matrioska</em> if each set contains all the elements of the previous set (plus eventually others). Write some code which PRINTS <code class="docutils literal notranslate"><span class="pre">True</span></code> if the sequence is a matrioska, otherwise PRINTS <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> use <code class="docutils literal notranslate"><span class="pre">if</span></code></p></li>
@@ -5439,9 +5289,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">sets</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">sets</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},</span>
         <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">},</span>
         <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">},</span>
         <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">}]</span>
@@ -5475,9 +5323,7 @@ Is the sequence a matrioska? True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">sets</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">sets</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},</span>
         <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">},</span>
         <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">},</span>
         <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">}]</span>
@@ -5490,64 +5336,45 @@ Is the sequence a matrioska? True
 
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/sets/sets2-chal.html">first challenges</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="sets2-chal.html" class="btn btn-neutral float-right" title="Sets 2 - First challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../tuples/tuples2-chal.html" class="btn btn-neutral float-left" title="Tuples 2 - First challenges" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sets2-chal.html" class="btn btn-neutral float-right" title="Sets 2 - First challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

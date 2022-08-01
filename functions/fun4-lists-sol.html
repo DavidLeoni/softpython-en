@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Functions 4 - exercises with lists &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/functions/fun4-lists-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Functions 5 - exercises with tuples" href="fun5-tuples-sol.html" />
     <link rel="prev" title="Functions 3 - exercises with strings" href="fun3-strings-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,16 +2614,16 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Functions-4---exercises-with-lists">
-<h1>Functions 4 - exercises with lists<a class="headerlink" href="#Functions-4---exercises-with-lists" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/functions.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Functions-4---exercises-with-lists">
+<h1>Functions 4 - exercises with lists<a class="headerlink" href="#Functions-4---exercises-with-lists" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/functions.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/functions">Browse files online</a></p>
-</div>
-<div class="section" id="Introduction">
-<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Exercise---printwords">
-<h3>Exercise - printwords<a class="headerlink" href="#Exercise---printwords" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Introduction">
+<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
+<section id="Exercise---printwords">
+<h3>Exercise - printwords<a class="headerlink" href="#Exercise---printwords" title="Permalink to this headline"></a></h3>
 <p>✪ Write a function <code class="docutils literal notranslate"><span class="pre">printwords</span></code> that PRINTS all the words in a phrase</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">printwords</span><span class="p">(</span><span class="s2">&quot;ciao come stai?&quot;</span><span class="p">)</span>
 </pre></div>
@@ -2684,9 +2639,7 @@ stai?
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="n">phrase</span> <span class="o">=</span> <span class="s2">&quot;ciao come stai?&quot;</span>
 
@@ -2714,17 +2667,13 @@ stai?
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---printeven">
-<h3>Exercise - printeven<a class="headerlink" href="#Exercise---printeven" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---printeven">
+<h3>Exercise - printeven<a class="headerlink" href="#Exercise---printeven" title="Permalink to this headline"></a></h3>
 <p>✪ Write a function <code class="docutils literal notranslate"><span class="pre">printeven(numbers)</span></code> that PRINTS all even numbers in a list of numbers <code class="docutils literal notranslate"><span class="pre">xs</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">printeven</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
 
@@ -2739,10 +2688,7 @@ stai?
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">printeven</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
 
@@ -2769,18 +2715,13 @@ stai?
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---find26">
-<h3>Exercise - find26<a class="headerlink" href="#Exercise---find26" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---find26">
+<h3>Exercise - find26<a class="headerlink" href="#Exercise---find26" title="Permalink to this headline"></a></h3>
 <p>✪ Write a function that RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if the number 26 is contained in a list of numbers</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">find26</span><span class="p">(</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">143</span><span class="p">,</span><span class="mi">431</span><span class="p">,</span><span class="mi">53</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="p">)</span>
 <span class="go">True</span>
@@ -2792,9 +2733,7 @@ stai?
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">find26</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="mi">26</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">)</span>
@@ -2817,17 +2756,13 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---firstsec">
-<h3>Exercise - firstsec<a class="headerlink" href="#Exercise---firstsec" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---firstsec">
+<h3>Exercise - firstsec<a class="headerlink" href="#Exercise---firstsec" title="Permalink to this headline"></a></h3>
 <p>✪ Write a function <code class="docutils literal notranslate"><span class="pre">firstsec(s)</span></code> that PRINTS the first and second word of a phrase.</p>
 <ul class="simple">
 <li><p>to find a list of words, you can use <code class="docutils literal notranslate"><span class="pre">.split()</span></code> method</p></li>
@@ -2844,9 +2779,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">firstsec</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
 
@@ -2870,17 +2803,13 @@ ciao come
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---threeven">
-<h3>Exercise - threeven<a class="headerlink" href="#Exercise---threeven" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---threeven">
+<h3>Exercise - threeven<a class="headerlink" href="#Exercise---threeven" title="Permalink to this headline"></a></h3>
 <p>✪ Write a function that PRINTS <code class="docutils literal notranslate"><span class="pre">&quot;yes&quot;</span></code> if first three elements of a list are even numbers. Otherwise, the function must PRINT <code class="docutils literal notranslate"><span class="pre">&quot;no&quot;</span></code>. In case the list contains less than three elements, PRINT <code class="docutils literal notranslate"><span class="pre">&quot;not</span> <span class="pre">good&quot;</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">threeven</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
 <span class="go">yes</span>
@@ -2896,9 +2825,7 @@ ciao come
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">threeven</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
@@ -2929,17 +2856,13 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---separate_ip">
-<h3>Exercise - separate_ip<a class="headerlink" href="#Exercise---separate_ip" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---separate_ip">
+<h3>Exercise - separate_ip<a class="headerlink" href="#Exercise---separate_ip" title="Permalink to this headline"></a></h3>
 <p>✪ An IP address is a string with four sequences of numbers (of max length 3), separated by a dot <code class="docutils literal notranslate"><span class="pre">.</span></code>. For example, <code class="docutils literal notranslate"><span class="pre">192.168.19.34</span></code> and <code class="docutils literal notranslate"><span class="pre">255.31.1.0</span></code> are IP addresses.</p>
 <p>Write a function that given an IP address as input, PRINTS the numbers inside the IP address</p>
 <ul class="simple">
@@ -2959,9 +2882,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">separate_ip</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="n">separated</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
@@ -2988,17 +2909,13 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---average">
-<h3>Exercise - average<a class="headerlink" href="#Exercise---average" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---average">
+<h3>Exercise - average<a class="headerlink" href="#Exercise---average" title="Permalink to this headline"></a></h3>
 <p>✪ Given a list of integer numbers, write a function <code class="docutils literal notranslate"><span class="pre">average(xs)</span></code> that RETURNS the arithmetic average of the numbers it contains. If the given list is empty, RETURN zero.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">average</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># ( 10/4 =&gt; 2.5)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>
@@ -3017,9 +2934,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">average</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
 
@@ -3059,17 +2974,13 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Fake-news-generator">
-<h3>Exercise - Fake news generator<a class="headerlink" href="#Exercise---Fake-news-generator" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Fake-news-generator">
+<h3>Exercise - Fake news generator<a class="headerlink" href="#Exercise---Fake-news-generator" title="Permalink to this headline"></a></h3>
 <blockquote>
 <div><p><a class="reference external" href="https://en.wikipedia.org/wiki/Functional_illiteracy">Functional illiteracy</a> is reading and writing skills that are inadequate “to manage daily living and employment tasks that require reading skills beyond a basic level”</p>
 </div></blockquote>
@@ -3118,10 +3029,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="n">db_subjects</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="n">db_subjects</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">&#39;Government&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Party X&#39;</span><span class="p">,</span>
 <span class="p">]</span>
@@ -3204,10 +3112,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="n">db_subjects</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="n">db_subjects</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">&#39;Government&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Party X&#39;</span><span class="p">,</span>
 <span class="p">]</span>
@@ -3240,19 +3145,19 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Functions-with-assert">
-<h2>Functions with assert<a class="headerlink" href="#Functions-with-assert" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Functions-with-assert">
+<h2>Functions with assert<a class="headerlink" href="#Functions-with-assert" title="Permalink to this headline"></a></h2>
 <p>We will discuss differences between <em>modifying</em> a list and <em>returning a new one</em>, and look into basic operations like transform, filter, mapping.</p>
 <div class="alert alert-warning"><p><strong>ATTENTION</strong>: Following exercises contain require to know tests with asserts, do understand how to carry them out, you can read first <a class="reference external" href="https://en.softpython.org/functions/fun2-errors-and-testing-sol.html#Testing-with-asserts">Error handling and testing</a></p>
-<div class="section" id="Mapping">
-<h3>Mapping<a class="headerlink" href="#Mapping" title="Permalink to this headline">¶</a></h3>
+<section id="Mapping">
+<h3>Mapping<a class="headerlink" href="#Mapping" title="Permalink to this headline"></a></h3>
 <p>Generally speaking, mapping (or transform) operations take something in input and gives back the same type of thing with elements somehow changed.</p>
 <p>In these cases, pay attention if it is required to give back a NEW list or MODIFY the existing list.</p>
-</div>
-<div class="section" id="Exercise---newdoublef">
-<h3>Exercise - newdoublef<a class="headerlink" href="#Exercise---newdoublef" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---newdoublef">
+<h3>Exercise - newdoublef<a class="headerlink" href="#Exercise---newdoublef" title="Permalink to this headline"></a></h3>
 <p>✪ Takes a list of integers in input and RETURN a NEW one with all the numbers of lst doubled.</p>
 <ul class="simple">
 <li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
@@ -3263,8 +3168,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">newdoublef</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">newdoublef</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3307,8 +3211,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">newdoublef</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">newdoublef</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="c1"># TEST START - DO NOT TOUCH!</span>
@@ -3341,9 +3244,9 @@ not good
 <span class="ansi-red-fg">NameError</span>: name &#39;newdoublefor&#39; is not defined
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---doublemod">
-<h3>Exercise - doublemod<a class="headerlink" href="#Exercise---doublemod" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---doublemod">
+<h3>Exercise - doublemod<a class="headerlink" href="#Exercise---doublemod" title="Permalink to this headline"></a></h3>
 <p>✪✪ Takes a list of integers in input and MODIFIES it by doubling all the numbers.</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3351,8 +3254,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">doublemod</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">doublemod</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
 
 
@@ -3381,8 +3283,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">doublemod</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">doublemod</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
@@ -3403,9 +3304,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---newdoublec">
-<h3>Exercise - newdoublec<a class="headerlink" href="#Exercise---newdoublec" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---newdoublec">
+<h3>Exercise - newdoublec<a class="headerlink" href="#Exercise---newdoublec" title="Permalink to this headline"></a></h3>
 <p>✪ Takes a list of integers in input and RETURN a NEW one with all the numbers of lst doubled.</p>
 <ul class="simple">
 <li><p><strong>USE</strong> a list comprehension</p></li>
@@ -3416,8 +3317,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">newdoublec</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">newdoublec</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
     <span class="k">return</span> <span class="p">[</span><span class="n">x</span><span class="o">*</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">]</span>
 
@@ -3439,8 +3339,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">newdoublec</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">newdoublec</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="c1"># TEST START - DO NOT TOUCH!</span>
@@ -3456,9 +3355,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---up">
-<h3>Exercise - up<a class="headerlink" href="#Exercise---up" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---up">
+<h3>Exercise - up<a class="headerlink" href="#Exercise---up" title="Permalink to this headline"></a></h3>
 <p>✪ Takes a list of strings and RETURN a NEW list having all the strings in lst in capital</p>
 <ul class="simple">
 <li><p><strong>USE</strong> a list comprehension</p></li>
@@ -3469,8 +3368,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">up</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">up</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
 
     <span class="k">return</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">]</span>
@@ -3494,8 +3392,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">up</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">up</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">up</span><span class="p">([])</span> <span class="o">==</span> <span class="p">[]</span>
@@ -3512,14 +3409,14 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Filtering">
-<h3>Filtering<a class="headerlink" href="#Filtering" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Filtering">
+<h3>Filtering<a class="headerlink" href="#Filtering" title="Permalink to this headline"></a></h3>
 <p>Generally speaking, filter operations take something in input and give back the same type of thing with elements somehow filtered out.</p>
 <p>In these cases, pay attention if it is required to RETURN a NEW list or MODIFY the existing list.</p>
-</div>
-<div class="section" id="Exercise---remall">
-<h3>Exercise - remall<a class="headerlink" href="#Exercise---remall" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---remall">
+<h3>Exercise - remall<a class="headerlink" href="#Exercise---remall" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN a NEW list which has the elements from <code class="docutils literal notranslate"><span class="pre">list2</span></code> except the elements in <code class="docutils literal notranslate"><span class="pre">list1</span></code></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3527,8 +3424,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">remall</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remall</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
 
 
     <span class="n">list3</span> <span class="o">=</span> <span class="n">list2</span><span class="p">[:]</span>
@@ -3557,8 +3453,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">remall</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remall</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">remall</span><span class="p">([],[])</span> <span class="o">==</span> <span class="p">[]</span>
@@ -3575,9 +3470,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---only_capital_for">
-<h3>Exercise - only_capital_for<a class="headerlink" href="#Exercise---only_capital_for" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---only_capital_for">
+<h3>Exercise - only_capital_for<a class="headerlink" href="#Exercise---only_capital_for" title="Permalink to this headline"></a></h3>
 <p>✪ Takes a list of strings lst and RETURN a NEW list which only contains the strings of <code class="docutils literal notranslate"><span class="pre">lst</span></code> which are all in capital letters (so keeps <code class="docutils literal notranslate"><span class="pre">'AB'</span></code> but not <code class="docutils literal notranslate"><span class="pre">'aB'</span></code>)</p>
 <ul class="simple">
 <li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
@@ -3588,8 +3483,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">only_capital_for</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">only_capital_for</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
@@ -3613,8 +3507,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">only_capital_for</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">only_capital_for</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">only_capital_for</span><span class="p">([</span><span class="s2">&quot;CD&quot;</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span> <span class="s2">&quot;CD&quot;</span><span class="p">]</span>
@@ -3628,9 +3521,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---only_capital_comp">
-<h3>Exercise - only_capital_comp<a class="headerlink" href="#Exercise---only_capital_comp" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---only_capital_comp">
+<h3>Exercise - only_capital_comp<a class="headerlink" href="#Exercise---only_capital_comp" title="Permalink to this headline"></a></h3>
 <p>✪ Takes a list of strings <code class="docutils literal notranslate"><span class="pre">lst</span></code> and RETURN a NEW list which only contains the strings of <code class="docutils literal notranslate"><span class="pre">lst</span></code> which are all in capital letters (so keeps <code class="docutils literal notranslate"><span class="pre">'AB'</span></code> but not <code class="docutils literal notranslate"><span class="pre">'aB'</span></code>)</p>
 <ul class="simple">
 <li><p><strong>USE</strong> a list comprehension</p></li>
@@ -3641,8 +3534,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">only_capital_comp</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">only_capital_comp</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
     <span class="k">return</span> <span class="p">[</span><span class="n">el</span> <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">el</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span> <span class="p">]</span>
 
@@ -3662,8 +3554,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">only_capital_comp</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">only_capital_comp</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">only_capital_comp</span><span class="p">([</span><span class="s2">&quot;CD&quot;</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span> <span class="s2">&quot;CD&quot;</span><span class="p">]</span>
@@ -3677,14 +3568,14 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Reducing">
-<h3>Reducing<a class="headerlink" href="#Reducing" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Reducing">
+<h3>Reducing<a class="headerlink" href="#Reducing" title="Permalink to this headline"></a></h3>
 <p>Generally speaking, <em>reduce</em> operations involve operating on sets of elements and giving back an often smaller result.</p>
 <p>In these cases, we operate on lists. Pay attention if it is required to RETURN a NEW list or MODIFY the existing list.</p>
-</div>
-<div class="section" id="Exercise---sum_all">
-<h3>Exercise - sum_all<a class="headerlink" href="#Exercise---sum_all" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---sum_all">
+<h3>Exercise - sum_all<a class="headerlink" href="#Exercise---sum_all" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN the sum of all elements in <code class="docutils literal notranslate"><span class="pre">lst</span></code></p>
 <ul class="simple">
 <li><p>Implement it as you like.</p></li>
@@ -3695,8 +3586,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">sum_all</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_all</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
 
     <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
@@ -3712,8 +3602,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">sum_all</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_all</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">sum_all</span><span class="p">([])</span> <span class="o">==</span> <span class="mi">0</span>
@@ -3722,9 +3611,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---sumevenf">
-<h3>Exercise - sumevenf<a class="headerlink" href="#Exercise---sumevenf" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---sumevenf">
+<h3>Exercise - sumevenf<a class="headerlink" href="#Exercise---sumevenf" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN the sum of all even elements in <code class="docutils literal notranslate"><span class="pre">lst</span></code></p>
 <ul class="simple">
 <li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop</p></li>
@@ -3735,8 +3624,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">sumevenf</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sumevenf</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
@@ -3756,8 +3644,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">sumevenf</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sumevenf</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">sumevenf</span><span class="p">([])</span> <span class="o">==</span> <span class="mi">0</span>
@@ -3767,9 +3654,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---sumevenc">
-<h3>Exercise - sumevenc<a class="headerlink" href="#Exercise---sumevenc" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---sumevenc">
+<h3>Exercise - sumevenc<a class="headerlink" href="#Exercise---sumevenc" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN the sum of all even elements in <code class="docutils literal notranslate"><span class="pre">lst</span></code></p>
 <ul class="simple">
 <li><p><strong>USE</strong> a list comprehension</p></li>
@@ -3781,8 +3668,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">sumevenc</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sumevenc</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
 
     <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">el</span> <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">el</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">])</span>
@@ -3799,8 +3685,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">sumevenc</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sumevenc</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">sumevenc</span><span class="p">([])</span> <span class="o">==</span> <span class="mi">0</span>
@@ -3810,12 +3695,12 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Other-exercises">
-<h2>Other exercises<a class="headerlink" href="#Other-exercises" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Exercise---contains">
-<h3>Exercise - contains<a class="headerlink" href="#Exercise---contains" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="Other-exercises">
+<h2>Other exercises<a class="headerlink" href="#Other-exercises" title="Permalink to this headline"></a></h2>
+<section id="Exercise---contains">
+<h3>Exercise - contains<a class="headerlink" href="#Exercise---contains" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">elem</span></code> is present in list, otherwise RETURN <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3823,8 +3708,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">contains</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">contains</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
 
     <span class="k">return</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xs</span>
 
@@ -3841,8 +3725,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">contains</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">contains</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -3853,9 +3736,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---firstn">
-<h3>Exercise - firstn<a class="headerlink" href="#Exercise---firstn" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---firstn">
+<h3>Exercise - firstn<a class="headerlink" href="#Exercise---firstn" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN a list with the first numbers from <code class="docutils literal notranslate"><span class="pre">0</span></code> included to <code class="docutils literal notranslate"><span class="pre">n</span></code> excluded</p>
 <ul class="simple">
 <li><p>For example, <code class="docutils literal notranslate"><span class="pre">firstn(3)</span></code> must RETURN <code class="docutils literal notranslate"><span class="pre">[0,1,2]</span></code></p></li>
@@ -3867,9 +3750,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">firstn</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">firstn</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 
     <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
 
@@ -3888,9 +3769,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">firstn</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">firstn</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -3903,9 +3782,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---firstlast">
-<h3>Exercise - firstlast<a class="headerlink" href="#Exercise---firstlast" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---firstlast">
+<h3>Exercise - firstlast<a class="headerlink" href="#Exercise---firstlast" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if the first element of a list is equal to the last one, otherwise RETURN <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
 <p>NOTE: you can assume the list always contains at least one element.</p>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -3914,9 +3793,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">firstlast</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">firstlast</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
 
     <span class="k">return</span> <span class="n">xs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">xs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
@@ -3941,9 +3818,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">firstlast</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">firstlast</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -3957,9 +3832,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---dup">
-<h3>Exercise - dup<a class="headerlink" href="#Exercise---dup" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---dup">
+<h3>Exercise - dup<a class="headerlink" href="#Exercise---dup" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN a NEW list, in which each list element in input is duplicated. Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dup</span><span class="p">([</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span><span class="s1">&#39;world&#39;</span><span class="p">,</span><span class="s1">&#39;python&#39;</span><span class="p">])</span>
 <span class="go">[&#39;hello&#39;,&#39;hello&#39;,&#39;world&#39;,&#39;world&#39;,&#39;python&#39;,&#39;python&#39;]</span>
@@ -3971,8 +3846,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">dup</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dup</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
 
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
@@ -4000,8 +3874,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">dup</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dup</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -4017,9 +3890,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---hasdup">
-<h3>Exercise - hasdup<a class="headerlink" href="#Exercise---hasdup" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---hasdup">
+<h3>Exercise - hasdup<a class="headerlink" href="#Exercise---hasdup" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">xs</span></code> contains element <code class="docutils literal notranslate"><span class="pre">x</span></code> more than once, otherwise RETURN <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> use <code class="docutils literal notranslate"><span class="pre">.count</span></code> method, too easy!</p></li>
@@ -4030,8 +3903,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">hasdup</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hasdup</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xs</span><span class="p">):</span>
 
 
     <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
@@ -4059,8 +3931,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">hasdup</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hasdup</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xs</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">hasdup</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="p">[])</span> <span class="o">==</span> <span class="kc">False</span>
@@ -4074,9 +3945,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---ord3">
-<h3>Exercise - ord3<a class="headerlink" href="#Exercise---ord3" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---ord3">
+<h3>Exercise - ord3<a class="headerlink" href="#Exercise---ord3" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if provided list has first three elements increasingly ordered, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
 <ul class="simple">
 <li><p>if <code class="docutils literal notranslate"><span class="pre">xs</span></code> has less than three elements, RETURN <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
@@ -4087,8 +3958,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">ord3</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ord3</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">xs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">xs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">xs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">xs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
@@ -4110,8 +3980,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">ord3</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ord3</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">ord3</span><span class="p">([</span><span class="mi">5</span><span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>
@@ -4124,9 +3993,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---filterab">
-<h3>Exercise - filterab<a class="headerlink" href="#Exercise---filterab" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---filterab">
+<h3>Exercise - filterab<a class="headerlink" href="#Exercise---filterab" title="Permalink to this headline"></a></h3>
 <p>✪✪ Takes as input a list of characters, and RETURN a NEW list containing only the characters <code class="docutils literal notranslate"><span class="pre">'a'</span></code> and <code class="docutils literal notranslate"><span class="pre">'b'</span></code> found in the input list.</p>
 <p>Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">filterab</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">])</span>
@@ -4139,8 +4008,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">filterab</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">filterab</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xs</span><span class="p">:</span>
@@ -4169,8 +4037,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">filterab</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">filterab</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -4189,9 +4056,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---hill">
-<h3>Exercise - hill<a class="headerlink" href="#Exercise---hill" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---hill">
+<h3>Exercise - hill<a class="headerlink" href="#Exercise---hill" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN a list having as first elements the numbers from <code class="docutils literal notranslate"><span class="pre">1</span></code> to <code class="docutils literal notranslate"><span class="pre">n</span></code> increasing, and after <code class="docutils literal notranslate"><span class="pre">n</span></code> the decrease until <code class="docutils literal notranslate"><span class="pre">1</span></code> included.</p>
 <ul class="simple">
 <li><p>NOTE: <code class="docutils literal notranslate"><span class="pre">n</span></code> is contained only once.</p></li>
@@ -4207,8 +4074,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">hill</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hill</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
@@ -4232,8 +4098,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">hill</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hill</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
@@ -4246,9 +4111,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---peak">
-<h3>Exercise - peak<a class="headerlink" href="#Exercise---peak" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---peak">
+<h3>Exercise - peak<a class="headerlink" href="#Exercise---peak" title="Permalink to this headline"></a></h3>
 <p>✪✪ Suppose in a list are saved the heights of a mountain road taking a measure every 3 km (we assume the road constantly goes upward). At a certain point, you will arrive at the mountain peak where you will measure the height with respect to the sea. Of course, there is also a road to go down hill (constantly downward) and here also the height will be measured every 3 km.</p>
 <p>A measurement example is <code class="docutils literal notranslate"><span class="pre">[100,</span> <span class="pre">400,</span> <span class="pre">800,</span> <span class="pre">1220,</span> <span class="pre">1600,</span> <span class="pre">1400,</span> <span class="pre">1000,</span> <span class="pre">300,</span> <span class="pre">40]</span></code></p>
 <p>Write a function that RETURNS the <em>value</em> from the list which corresponds to the measurement taken at the peak</p>
@@ -4265,9 +4130,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">peak</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">peak</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Empty list !&quot;</span><span class="p">)</span>
@@ -4301,9 +4164,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">peak</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">peak</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -4321,9 +4182,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---even">
-<h3>Exercise - even<a class="headerlink" href="#Exercise---even" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---even">
+<h3>Exercise - even<a class="headerlink" href="#Exercise---even" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN a list containing the elements at even position, starting from zero which is considered even</p>
 <ul class="simple">
 <li><p>assume the input list always contains an even number of elements</p></li>
@@ -4335,8 +4196,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">even</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">even</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">xs</span><span class="p">),</span><span class="mi">2</span><span class="p">):</span>
@@ -4357,8 +4217,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">even</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">even</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -4370,9 +4229,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---mix">
-<h3>Exercise - mix<a class="headerlink" href="#Exercise---mix" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---mix">
+<h3>Exercise - mix<a class="headerlink" href="#Exercise---mix" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN a NEW list in which the elements are taken in alternation from <code class="docutils literal notranslate"><span class="pre">lista</span></code> and <code class="docutils literal notranslate"><span class="pre">listb</span></code></p>
 <ul class="simple">
 <li><p>assume that <code class="docutils literal notranslate"><span class="pre">lista</span></code> and <code class="docutils literal notranslate"><span class="pre">listb</span></code> contain the same number of elements</p></li>
@@ -4388,9 +4247,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">mix</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">listb</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">mix</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">listb</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)):</span>
@@ -4412,9 +4269,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">mix</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">listb</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">mix</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">listb</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -4426,9 +4281,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---fill">
-<h3>Exercise - fill<a class="headerlink" href="#Exercise---fill" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---fill">
+<h3>Exercise - fill<a class="headerlink" href="#Exercise---fill" title="Permalink to this headline"></a></h3>
 <p>✪✪ Takes a list <code class="docutils literal notranslate"><span class="pre">lst1</span></code> of <code class="docutils literal notranslate"><span class="pre">n</span></code> elements and a list <code class="docutils literal notranslate"><span class="pre">lst2</span></code> of <code class="docutils literal notranslate"><span class="pre">m</span></code> elements, and MODIFIES <code class="docutils literal notranslate"><span class="pre">lst2</span></code> by copying all <code class="docutils literal notranslate"><span class="pre">lst1</span></code> elements in the first <code class="docutils literal notranslate"><span class="pre">n</span></code> positions of lst2</p>
 <ul class="simple">
 <li><p>If <code class="docutils literal notranslate"><span class="pre">n</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">m</span></code>, raises a <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
@@ -4439,9 +4294,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">fill</span><span class="p">(</span><span class="n">lst1</span><span class="p">,</span> <span class="n">lst2</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">fill</span><span class="p">(</span><span class="n">lst1</span><span class="p">,</span> <span class="n">lst2</span><span class="p">):</span>
 
 
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst2</span><span class="p">):</span>
@@ -4518,9 +4371,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">fill</span><span class="p">(</span><span class="n">lst1</span><span class="p">,</span> <span class="n">lst2</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">fill</span><span class="p">(</span><span class="n">lst1</span><span class="p">,</span> <span class="n">lst2</span><span class="p">):</span>
 
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
@@ -4586,9 +4437,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---nostop">
-<h3>Exercise - nostop<a class="headerlink" href="#Exercise---nostop" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---nostop">
+<h3>Exercise - nostop<a class="headerlink" href="#Exercise---nostop" title="Permalink to this headline"></a></h3>
 <p>✪✪ When you analyze a phrase, it might be useful processing it to remove very common words, for example articles and prepositions: <code class="docutils literal notranslate"><span class="pre">&quot;a</span> <span class="pre">book</span> <span class="pre">on</span> <span class="pre">Python&quot;</span></code> can be simplified in <code class="docutils literal notranslate"><span class="pre">&quot;book</span> <span class="pre">Python&quot;</span></code></p>
 <p>The ‘not so useful’ words are called <em>stopwords</em>. For example, this process is done by search engines to reduce the complexity of input string provided ny the user.</p>
 <p>Implement a function which takes a string and RETURN the input string without stopwords</p>
@@ -4605,9 +4456,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">nostop</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">stopwords</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">nostop</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">stopwords</span><span class="p">):</span>
 
     <span class="n">words</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">stopwords</span><span class="p">:</span>
@@ -4630,9 +4479,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">nostop</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">stopwords</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">nostop</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">stopwords</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">nostop</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">])</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span>
@@ -4645,9 +4492,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---threez">
-<h3>Exercise - threez<a class="headerlink" href="#Exercise---threez" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---threez">
+<h3>Exercise - threez<a class="headerlink" href="#Exercise---threez" title="Permalink to this headline"></a></h3>
 <p>✪✪ MODIFY the given <code class="docutils literal notranslate"><span class="pre">lst</span></code> by placing the string <code class="docutils literal notranslate"><span class="pre">'z'</span></code> at the indeces divisible by 3.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">trez</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
@@ -4661,8 +4508,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">threez</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">threez</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
 
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
@@ -4697,8 +4543,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">threez</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">threez</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">l1</span> <span class="o">=</span> <span class="p">[]</span>
@@ -4723,12 +4568,12 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Exercises-with-numbers">
-<h2>Exercises with numbers<a class="headerlink" href="#Exercises-with-numbers" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Exercise---listoint">
-<h3>Exercise - listoint<a class="headerlink" href="#Exercise---listoint" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="Exercises-with-numbers">
+<h2>Exercises with numbers<a class="headerlink" href="#Exercises-with-numbers" title="Permalink to this headline"></a></h2>
+<section id="Exercise---listoint">
+<h3>Exercise - listoint<a class="headerlink" href="#Exercise---listoint" title="Permalink to this headline"></a></h3>
 <p>✪✪ Given a non-empty list of digits representing a non-negative integer, return a proper python integer</p>
 <p>The digits are stored such that the most significant digit is at the head of the list, and each element in the list is a single digit.</p>
 <p>You may assume the integer does not contain any leading zero, except the number 0 itself.</p>
@@ -4772,8 +4617,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -4783,8 +4627,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">power</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">power</span> <span class="o">=</span> <span class="mi">1</span>
 
 <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]):</span>
     <span class="nb">print</span> <span class="p">(</span><span class="n">power</span><span class="p">)</span>
@@ -4802,8 +4645,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">listoint</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">listoint</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; RETURN a Python integer which is represented by the provided list of digits, which always</span>
 <span class="sd">        represent a number &gt;= 0 and has no trailing zeroes except for special case of number 0</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -4829,8 +4671,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">listoint</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">listoint</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; RETURN a Python integer which is represented by the provided list of digits, which always</span>
 <span class="sd">        represent a number &gt;= 0 and has no trailing zeroes except for special case of number 0</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -4845,9 +4686,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---intolist">
-<h3>Exercise - intolist<a class="headerlink" href="#Exercise---intolist" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---intolist">
+<h3>Exercise - intolist<a class="headerlink" href="#Exercise---intolist" title="Permalink to this headline"></a></h3>
 <p>✪✪ Let’s now try the inverse operation, that is, going from a proper Python number like <code class="docutils literal notranslate"><span class="pre">574</span></code> to a list <code class="docutils literal notranslate"><span class="pre">[5,7,4]</span></code></p>
 <p>Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">intolist</span><span class="p">(</span><span class="mi">375</span><span class="p">)</span>
@@ -4866,8 +4707,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">574</span> <span class="o">%</span> <span class="mi">10</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">574</span> <span class="o">%</span> <span class="mi">10</span>
 </pre></div>
 </div>
 </div>
@@ -4876,8 +4716,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">574</span> <span class="o">//</span> <span class="mi">10</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">574</span> <span class="o">//</span> <span class="mi">10</span>
 </pre></div>
 </div>
 </div>
@@ -4902,8 +4741,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">intolist</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">intolist</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; Takes an integer number &gt;= 0 and RETURN a list of digits representing the number in base 10.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -4933,8 +4771,7 @@ not good
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">intolist</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">intolist</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; Takes an integer number &gt;= 0 and RETURN a list of digits representing the number in base 10.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -4948,9 +4785,9 @@ not good
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---add-one">
-<h3>Exercise - add one<a class="headerlink" href="#Exercise---add-one" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---add-one">
+<h3>Exercise - add one<a class="headerlink" href="#Exercise---add-one" title="Permalink to this headline"></a></h3>
 <p>Given a non-empty list of digits representing a non-negative integer, adds one to the integer.</p>
 <p>The digits are stored such that the most significant digit is at the head of the list, and each element in the list is a single digit.</p>
 <p>You may assume the integer does not contain any leading zero, except the number 0 itself.</p>
@@ -4966,8 +4803,8 @@ Output: [1,0,0,0,0]
 </pre></div>
 </div>
 <p>There are two ways to solve this exercise: you can convert to a proper integer, add one, and then convert back to list which you will do in <code class="docutils literal notranslate"><span class="pre">add_one_conv</span></code>. The other way is to directly operate on a list, using a carry variable, which you will do in <code class="docutils literal notranslate"><span class="pre">add_one_carry</span></code></p>
-<div class="section" id="Exercise---add_one_conv">
-<h4>Exercise - add_one_conv<a class="headerlink" href="#Exercise---add_one_conv" title="Permalink to this headline">¶</a></h4>
+<section id="Exercise---add_one_conv">
+<h4>Exercise - add_one_conv<a class="headerlink" href="#Exercise---add_one_conv" title="Permalink to this headline"></a></h4>
 <p>✪✪✪ You need to do three steps:</p>
 <ol class="arabic simple">
 <li><p>Convert to a proper python integer</p></li>
@@ -4980,8 +4817,7 @@ Output: [1,0,0,0,0]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">add_one_conv</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_one_conv</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Takes a list of digits representing an integer &gt;= 0 without trailing zeroes except zero itself</span>
 <span class="sd">        and RETURN a NEW a list representing the value of lst plus one.</span>
@@ -5033,8 +4869,7 @@ Output: [1,0,0,0,0]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">add_one_conv</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_one_conv</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Takes a list of digits representing an integer &gt;= 0 without trailing zeroes except zero itself</span>
 <span class="sd">        and RETURN a NEW a list representing the value of lst plus one.</span>
@@ -5077,9 +4912,9 @@ Output: [1,0,0,0,0]
 <span class="ansi-red-fg">NameError</span>: name &#39;listoint&#39; is not defined
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---add_one_carry">
-<h4>Exercise - add_one_carry<a class="headerlink" href="#Exercise---add_one_carry" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="Exercise---add_one_carry">
+<h4>Exercise - add_one_carry<a class="headerlink" href="#Exercise---add_one_carry" title="Permalink to this headline"></a></h4>
 <p>✪✪✪ Given a non-empty array of digits representing a non-negative integer, adds one to the integer.</p>
 <p>The digits are stored such that the most significant digit is at the head of the list, and each element in the array contain a single digit.</p>
 <p>You may assume the integer does not contain any leading zero, except the number 0 itself.</p>
@@ -5146,8 +4981,7 @@ Output: [1,0,0,0,0]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">add_one_carry</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_one_carry</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Takes a list of digits representing a &gt;= 0 integer without trailing zeroes except zero itself</span>
 <span class="sd">        and RETURN a NEW a list representing the value of lst plus one.</span>
@@ -5183,8 +5017,7 @@ Output: [1,0,0,0,0]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">add_one_carry</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_one_carry</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Takes a list of digits representing a &gt;= 0 integer without trailing zeroes except zero itself</span>
 <span class="sd">        and RETURN a NEW a list representing the value of lst plus one.</span>
@@ -5201,10 +5034,10 @@ Output: [1,0,0,0,0]
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Exercise---collatz">
-<h3>Exercise - collatz<a class="headerlink" href="#Exercise---collatz" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="Exercise---collatz">
+<h3>Exercise - collatz<a class="headerlink" href="#Exercise---collatz" title="Permalink to this headline"></a></h3>
 <p>✪✪✪✪ The <a class="reference external" href="https://en.wikipedia.org/wiki/Collatz_conjecture">Collatz conjecture</a> says that starting from any <code class="docutils literal notranslate"><span class="pre">n</span></code>, by performing these calculations recursively you obtain a sequence which finally ends up to <code class="docutils literal notranslate"><span class="pre">1</span></code>:</p>
 <ul class="simple">
 <li><p>if <code class="docutils literal notranslate"><span class="pre">n</span></code> is even, divide <code class="docutils literal notranslate"><span class="pre">n</span></code> by <code class="docutils literal notranslate"><span class="pre">2</span></code></p></li>
@@ -5218,75 +5051,56 @@ Output: [1,0,0,0,0]
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">collatz</span><span class="p">():</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">collatz</span><span class="p">():</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;TODO IMPLEMENT ME!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with exercises about <a class="reference external" href="https://en.softpython.org/functions/fun5-tuples-sol.html">functions and tuples</a></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="fun5-tuples-sol.html" class="btn btn-neutral float-right" title="Functions 5 - exercises with tuples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="fun3-strings-sol.html" class="btn btn-neutral float-left" title="Functions 3 - exercises with strings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fun5-tuples-sol.html" class="btn btn-neutral float-right" title="Functions 5 - exercises with tuples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

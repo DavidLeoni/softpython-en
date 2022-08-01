@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Relational data 1 - introduction &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/relational/relational1-intro-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Relational data 2 - binary relations" href="relational2-binrel-sol.html" />
     <link rel="prev" title="Pandas - 3. The Land of Poets Challenge" href="../pandas/pandas3-chal.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2405,27 +2345,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2526,7 +2480,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2592,6 +2546,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2601,7 +2556,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2661,15 +2616,15 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Relational-data-1---introduction">
-<h1>Relational data 1 - introduction<a class="headerlink" href="#Relational-data-1---introduction" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Relational-data-1---introduction">
+<h1>Relational data 1 - introduction<a class="headerlink" href="#Relational-data-1---introduction" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/relational">Browse files online</a></p>
 <p>We live in a world of <em>relations</em> like John <em>is friend of</em> Paul or Mary <em>works at</em> CodeWizards. We can display them as networks or, as we call them in computer science, <em>graphs</em>. We will see some ways for storing graphs, like matrices, adjacency lists and a also have a quick look at a specialized library called Networkx. Note in this book we limit ourselves to represent and manage relations with relatively simple programs, we won’t deal with path exploration algorithms (no bfs, dfs etc) nor data
 formats specific for graphs (like rdf) which can get quite complex.</p>
-<div class="section" id="Required-libraries">
-<h3>Required libraries<a class="headerlink" href="#Required-libraries" title="Permalink to this headline">¶</a></h3>
+<section id="Required-libraries">
+<h3>Required libraries<a class="headerlink" href="#Required-libraries" title="Permalink to this headline"></a></h3>
 <p>In order for visualizations to work, you need installed the python library <code class="docutils literal notranslate"><span class="pre">networkx</span></code> and <code class="docutils literal notranslate"><span class="pre">pydot</span></code>. Pydot is an interface to the non-pyhon package <a class="reference external" href="http://graphviz.org/">GraphViz</a>.</p>
 <p><strong>Anaconda:</strong></p>
 <p>From Anaconda Prompt:</p>
@@ -2699,10 +2654,10 @@ formats specific for graphs (like rdf) which can get quite complex.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 -m pip install --user pydot networkx
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="What-to-do">
-<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="What-to-do">
+<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p>unzip exercises in a folder, you should get something like this:</p></li>
 </ul>
@@ -2737,23 +2692,23 @@ formats specific for graphs (like rdf) which can get quite complex.</p>
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-<div class="section" id="Graph-definition">
-<h3>Graph definition<a class="headerlink" href="#Graph-definition" title="Permalink to this headline">¶</a></h3>
+<section id="Graph-definition">
+<h3>Graph definition<a class="headerlink" href="#Graph-definition" title="Permalink to this headline"></a></h3>
 <p>In computer science a <em>graph</em> is a set of verteces V (also called <em>nodes)</em> linked by a set of edges E. You can visualize nodes as circles and links as lines. If the graph is <em>undirected,</em> links are just lines, if the graph is <em>directed,</em> links are represented as arrows with a tip to show the direction:</p>
 <p><img alt="graph dir undir jk3234234u" src="../_images/graph-dir-undir.png" /> Credits: slide by Dr Alberto Montresor</p>
 <p><img alt="graph adjacent 8743gh4" src="../_images/graph-adjacent.png" /> Credits: slide by Dr Alberto Montresor</p>
 <p>For our purposes, we will consider directed graphs (also called <em>digraphs).</em></p>
 <p>Usually we will indicate nodes with numbers going from zero included but optionally they can be labelled. Since we are dealing with directed graphs, we can have an arrow going for example from node <code class="docutils literal notranslate"><span class="pre">1</span></code> to node <code class="docutils literal notranslate"><span class="pre">2</span></code>, but also another arrow going from node <code class="docutils literal notranslate"><span class="pre">2</span></code> to node <code class="docutils literal notranslate"><span class="pre">1</span></code>. Furthemore, a node (for example node <code class="docutils literal notranslate"><span class="pre">0</span></code>) can have a <em>cap</em>, that is an edge going to itself:</p>
 <p><img alt="graph dir boolean 34243" src="../_images/graph-dir-boolean.png" /></p>
-</div>
-<div class="section" id="Edge-weights">
-<h3>Edge weights<a class="headerlink" href="#Edge-weights" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Edge-weights">
+<h3>Edge weights<a class="headerlink" href="#Edge-weights" title="Permalink to this headline"></a></h3>
 <p>Optionally, we will sometimes assign a <em>weight</em> to the edges, that is a number to be shown over the edges. So we can modify the previous example. Note we can have an arrow going from node <code class="docutils literal notranslate"><span class="pre">1</span></code> to node <code class="docutils literal notranslate"><span class="pre">2</span></code> with a weight which is different from the weight arrow from <code class="docutils literal notranslate"><span class="pre">2</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code>:</p>
 <p><img alt="graph dir different weights 34343iu4" src="../_images/graph-dir-different-weights.png" /></p>
-</div>
-</div>
-<div class="section" id="Matrices">
-<h2>Matrices<a class="headerlink" href="#Matrices" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Matrices">
+<h2>Matrices<a class="headerlink" href="#Matrices" title="Permalink to this headline"></a></h2>
 <p>Here we will represent graphs as matrices, which performance-wise is particularly good when the matrix is <em>dense,</em> that is, has many entries different from zero. Otherwise, when you have a so-called <em>sparse</em> matrix (few non-zero entries), it is best to represent the graph with <em>adjacency list,</em> but we will deal with them later.</p>
 <p>If you have a directed graph (digraph) with <code class="docutils literal notranslate"><span class="pre">n</span></code> verteces, you can represent it as an <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">x</span> <span class="pre">n</span></code> matrix by considering each row as vertex:</p>
 <ul class="simple">
@@ -2761,16 +2716,15 @@ formats specific for graphs (like rdf) which can get quite complex.</p>
 <li><p>A value of zero means there is no link to a given node.</p></li>
 <li><p>In general, <code class="docutils literal notranslate"><span class="pre">mat[i][j]</span></code> is the weight of the edge between node <code class="docutils literal notranslate"><span class="pre">i</span></code> to node <code class="docutils literal notranslate"><span class="pre">j</span></code></p></li>
 </ul>
-<div class="section" id="Visualization-examples">
-<h3>Visualization examples<a class="headerlink" href="#Visualization-examples" title="Permalink to this headline">¶</a></h3>
+<section id="Visualization-examples">
+<h3>Visualization examples<a class="headerlink" href="#Visualization-examples" title="Permalink to this headline"></a></h3>
 <p>We defined a function <code class="docutils literal notranslate"><span class="pre">soft.draw_mat</span></code>to display matrices as graphs (you don’t need to understand the internals, for now we won’t go into depth about matrix visualizations).</p>
 <p>If it doesn’t work, see above <a class="reference external" href="#Required-libraries">Required libraries paragraph</a></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># PLEASE EXECUTE THIS CELL TO CHECK IF VISUALIZATION IS WORKING</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># PLEASE EXECUTE THIS CELL TO CHECK IF VISUALIZATION IS WORKING</span>
 
 <span class="c1"># notice links with weight zero are not shown)</span>
 <span class="c1"># all weights are set to 1</span>
@@ -2787,8 +2741,7 @@ formats specific for graphs (like rdf) which can get quite complex.</p>
 
 
 <span class="n">draw_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2798,16 +2751,15 @@ formats specific for graphs (like rdf) which can get quite complex.</p>
 <img alt="../_images/relational_relational1-intro-sol_14_0.png" src="../_images/relational_relational1-intro-sol_14_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Saving-a-graph-to-an-image-file">
-<h3>Saving a graph to an image file<a class="headerlink" href="#Saving-a-graph-to-an-image-file" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Saving-a-graph-to-an-image-file">
+<h3>Saving a graph to an image file<a class="headerlink" href="#Saving-a-graph-to-an-image-file" title="Permalink to this headline"></a></h3>
 <p>If you want (or if you are not using Jupyter), optionally you can save the graph to a <code class="docutils literal notranslate"><span class="pre">.png</span></code> file by specifying the <code class="docutils literal notranslate"><span class="pre">save_to</span></code> filepath:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
         <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
       <span class="p">]</span>
@@ -2830,16 +2782,15 @@ Image saved to file:  example.png
 <img alt="../_images/relational_relational1-intro-sol_16_1.png" src="../_images/relational_relational1-intro-sol_16_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Saving-a-graph-to-an-dot-file">
-<h3>Saving a graph to an dot file<a class="headerlink" href="#Saving-a-graph-to-an-dot-file" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Saving-a-graph-to-an-dot-file">
+<h3>Saving a graph to an dot file<a class="headerlink" href="#Saving-a-graph-to-an-dot-file" title="Permalink to this headline"></a></h3>
 <p>You can also save a graph to the original <em>dot</em> language of GraphViz:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
         <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
       <span class="p">]</span>
@@ -2862,8 +2813,7 @@ Dot saved to file:  example.dot
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.dot&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example.dot&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -2887,16 +2837,15 @@ edge [arrowsize=&#34;0.6&#34;, splines=curved, fontcolor=brown];
 
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Minimal-graph">
-<h3>Minimal graph<a class="headerlink" href="#Minimal-graph" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Minimal-graph">
+<h3>Minimal graph<a class="headerlink" href="#Minimal-graph" title="Permalink to this headline"></a></h3>
 <p>With this representation derived from matrices as we intend them (that is with at least one row and one column), the corresponding minimal graph can have only one node:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">minimal</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">minimal</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="p">]</span>
 
@@ -2916,8 +2865,7 @@ edge [arrowsize=&#34;0.6&#34;, splines=curved, fontcolor=brown];
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">minimal</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">minimal</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span><span class="mi">5</span><span class="p">]</span>
 <span class="p">]</span>
 
@@ -2932,15 +2880,14 @@ edge [arrowsize=&#34;0.6&#34;, splines=curved, fontcolor=brown];
 <img alt="../_images/relational_relational1-intro-sol_24_0.png" src="../_images/relational_relational1-intro-sol_24_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Graph-with-two-nodes-example">
-<h3>Graph with two nodes example<a class="headerlink" href="#Graph-with-two-nodes-example" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Graph-with-two-nodes-example">
+<h3>Graph with two nodes example<a class="headerlink" href="#Graph-with-two-nodes-example" title="Permalink to this headline"></a></h3>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span> <span class="c1"># node 0 links to node 0 itself with a weight of 5, and to node 1 with a weight of 9</span>
     <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="c1"># node 1 links to node 1 with a weight of 6</span>
 
@@ -2957,17 +2904,16 @@ edge [arrowsize=&#34;0.6&#34;, splines=curved, fontcolor=brown];
 <img alt="../_images/relational_relational1-intro-sol_26_0.png" src="../_images/relational_relational1-intro-sol_26_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Distance-matrix">
-<h3>Distance matrix<a class="headerlink" href="#Distance-matrix" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Distance-matrix">
+<h3>Distance matrix<a class="headerlink" href="#Distance-matrix" title="Permalink to this headline"></a></h3>
 <p>Depending on the problem at hand, it may be reasonable to change the weights. For example, on a road network the nodes could represent places and the weights could be the distances. If we assume it is possible to travel in both directions on all roads, we get a matrix symmetric along the diagonal, and we can call the matrix a <em>distance matrix</em>. Talking about the diagonal, for the special case of going from a place to itself, we set that street length to 0 (which make sense for street length but
 could give troubles for other purposes, for example if we give the numbers the meaning ‘is connected’ a place should always be connected to itself)</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># distance matrix example</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># distance matrix example</span>
 
 <span class="n">mat</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>  <span class="c1"># place 0 is linked to place 1 and place 2</span>
@@ -2993,9 +2939,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">mat</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>  <span class="c1"># place 0 is linked to place 1 and place 2</span>
         <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>  <span class="c1"># place 1 is linked to place 0, place 2 and place 3</span>
         <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>  <span class="c1"># place 2 is linked to place 0, place 1 and place 3</span>
@@ -3014,16 +2958,15 @@ could give troubles for other purposes, for example if we give the numbers the m
 <img alt="../_images/relational_relational1-intro-sol_30_0.png" src="../_images/relational_relational1-intro-sol_30_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Boolean-matrix-example">
-<h3>Boolean matrix example<a class="headerlink" href="#Boolean-matrix-example" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Boolean-matrix-example">
+<h3>Boolean matrix example<a class="headerlink" href="#Boolean-matrix-example" title="Permalink to this headline"></a></h3>
 <p>If we are not interested at all in the weights, we might use only zeroes and ones as we did before. But this could have implications when doing operations on matrices, so some times it is better to use only <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
     <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
     <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
@@ -3040,13 +2983,13 @@ could give troubles for other purposes, for example if we give the numbers the m
 <img alt="../_images/relational_relational1-intro-sol_32_0.png" src="../_images/relational_relational1-intro-sol_32_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Matrix-exercises">
-<h3>Matrix exercises<a class="headerlink" href="#Matrix-exercises" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Matrix-exercises">
+<h3>Matrix exercises<a class="headerlink" href="#Matrix-exercises" title="Permalink to this headline"></a></h3>
 <p>We are now ready to start implementing the following functions. Before even start implementation, for each try to interpret the matrix as a graph, drawing it on paper. When you’re done implementing try to use <code class="docutils literal notranslate"><span class="pre">draw_mat</span></code> on the results. Notice that since <code class="docutils literal notranslate"><span class="pre">draw_mat</span></code> is a generic display function and knows nothing about the nature of the graph, sometimes it will not show the graph in the optimal way we humans would use.</p>
-</div>
-<div class="section" id="Exercise---line">
-<h3>Exercise - line<a class="headerlink" href="#Exercise---line" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---line">
+<h3>Exercise - line<a class="headerlink" href="#Exercise---line" title="Permalink to this headline"></a></h3>
 <p>✪✪ This function is similar to <code class="docutils literal notranslate"><span class="pre">diag</span></code>. As that one, you can implement it in two ways: you can use a double <code class="docutils literal notranslate"><span class="pre">for</span></code>, or a single one (much more efficient). What would be the graph representation of <code class="docutils literal notranslate"><span class="pre">line</span></code> ?</p>
 <p>RETURN a matrix as lists of lists where node <code class="docutils literal notranslate"><span class="pre">i</span></code> must have an edge to node <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">+</span> <span class="pre">1</span></code> with weight <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 <ul class="simple">
@@ -3059,8 +3002,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">line</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">line</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Invalid n </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
@@ -3097,8 +3039,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">line</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">line</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">line</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
@@ -3124,9 +3065,9 @@ could give troubles for other purposes, for example if we give the numbers the m
 <img alt="../_images/relational_relational1-intro-sol_38_0.png" src="../_images/relational_relational1-intro-sol_38_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---cross">
-<h3>Exercise - cross<a class="headerlink" href="#Exercise---cross" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---cross">
+<h3>Exercise - cross<a class="headerlink" href="#Exercise---cross" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN a nxn matrix filled with zeros except on the crossing lines.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">n</span></code> must be &gt;=1 and odd, otherwise a <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> is thrown</p></li>
@@ -3148,8 +3089,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">cross</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cross</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Invalid n </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
@@ -3179,8 +3119,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">cross</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">cross</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">cross</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span>
@@ -3198,32 +3137,28 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="union">
-<h3>union<a class="headerlink" href="#union" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="union">
+<h3>union<a class="headerlink" href="#union" title="Permalink to this headline"></a></h3>
 <p>When we talk about the <em>union</em> of two graphs, we intend the graph having union of verteces of both graphs and having as edges the union of edges of both graphs. In this exercise, we have two graphs as list of lists with boolean edges. To simplify we suppose they have the same vertices but possibly different edges, and we want to calculate the union as a new graph.</p>
 <p>For example, if we have a graph <code class="docutils literal notranslate"><span class="pre">ma</span></code> like this:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">ma</span> <span class="o">=</span>  <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">ma</span> <span class="o">=</span>  <span class="p">[</span>
             <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
             <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
             <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
       <span class="p">]</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">ma</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">ma</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3239,8 +3174,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mb</span> <span class="o">=</span>  <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mb</span> <span class="o">=</span>  <span class="p">[</span>
             <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
             <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
             <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
@@ -3253,8 +3187,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">mb</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">mb</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3270,11 +3203,8 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">res</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]]</span>
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">res</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]]</span>
+<br/></pre></div>
 </div>
 </div>
 <p>which will be displayed as</p>
@@ -3282,8 +3212,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3295,9 +3224,9 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 <p>So we get same verteces and edges from both <code class="docutils literal notranslate"><span class="pre">ma</span></code> and <code class="docutils literal notranslate"><span class="pre">mb</span></code></p>
-</div>
-<div class="section" id="Exercise---union">
-<h3>Exercise - union<a class="headerlink" href="#Exercise---union" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---union">
+<h3>Exercise - union<a class="headerlink" href="#Exercise---union" title="Permalink to this headline"></a></h3>
 <p>✪✪ Takes two graphs represented as nxn matrices of lists of lists with boolean edges, and RETURN a NEW matrix which is the union of both graphs</p>
 <ul class="simple">
 <li><p>if <code class="docutils literal notranslate"><span class="pre">mata</span></code> row number is different from <code class="docutils literal notranslate"><span class="pre">matb</span></code>, raises <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
@@ -3308,8 +3237,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
 
 
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">mata</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">matb</span><span class="p">):</span>
@@ -3399,8 +3327,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">union</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">try</span><span class="p">:</span>
@@ -3471,13 +3398,13 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Subgraphs">
-<h3>Subgraphs<a class="headerlink" href="#Subgraphs" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Subgraphs">
+<h3>Subgraphs<a class="headerlink" href="#Subgraphs" title="Permalink to this headline"></a></h3>
 <p>If we interpret a matrix as graph, we may wonder when a graph A is a subgraph of another graph B, that is, when A nodes are a subset of B nodes and when A edges are a subset of B edges. For convenience, here we only consider graphs having the same <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes both in A and B. Edges may instead vary. Graphs are represented as boolean matrices.</p>
-</div>
-<div class="section" id="Exercise---is_subgraph">
-<h3>Exercise - is_subgraph<a class="headerlink" href="#Exercise---is_subgraph" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---is_subgraph">
+<h3>Exercise - is_subgraph<a class="headerlink" href="#Exercise---is_subgraph" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN True is A is a subgraph of B, that is, some or all of its edges also belong to B. A and B are boolean matrices of size nxn.</p>
 <ul class="simple">
 <li><p>If sizes don’t match, raises <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
@@ -3488,8 +3415,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">is_subgraph</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_subgraph</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
 
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mata</span><span class="p">)</span>
     <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">matb</span><span class="p">)</span>
@@ -3544,8 +3470,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">is_subgraph</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_subgraph</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="c1"># the set of edges is empty</span>
@@ -3586,9 +3511,9 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---remove_node">
-<h3>Exercise - remove_node<a class="headerlink" href="#Exercise---remove_node" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---remove_node">
+<h3>Exercise - remove_node<a class="headerlink" href="#Exercise---remove_node" title="Permalink to this headline"></a></h3>
 <p>✪✪ Here the function text is not so precise, as it is talking about nodes but you have to operate on a matrix. Can you guess exactly what you have to do ? In your experiments, try to draw the matrix before and after executing <code class="docutils literal notranslate"><span class="pre">remove_node</span></code></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3596,8 +3521,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">remove_node</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_node</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; MODIFIES mat by removing node i.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -3623,8 +3547,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">remove_node</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_node</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; MODIFIES mat by removing node i.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -3642,9 +3565,9 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---utriang">
-<h3>Exercise - utriang<a class="headerlink" href="#Exercise---utriang" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---utriang">
+<h3>Exercise - utriang<a class="headerlink" href="#Exercise---utriang" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ You will try to create an upper triangular matrix of side <code class="docutils literal notranslate"><span class="pre">n</span></code>. What could possibly be the graph interpretation of such a matrix? Since <code class="docutils literal notranslate"><span class="pre">draw_mat</span></code> is a generic drawing function it doesn’t provide the best possible representation, try to draw on paper a more intuitive one.</p>
 <p>RETURN a matrix of size <code class="docutils literal notranslate"><span class="pre">n</span></code>x<code class="docutils literal notranslate"><span class="pre">n</span></code> which is upper triangular, that is, has all nodes below the diagonal <code class="docutils literal notranslate"><span class="pre">0</span></code>, while all the other nodes are set to <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -3653,8 +3576,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">utriang</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">utriang</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -3685,8 +3607,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">utriang</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">utriang</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">utriang</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">]</span>
@@ -3702,17 +3623,16 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Edge-difference">
-<h3>Edge difference<a class="headerlink" href="#Edge-difference" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Edge-difference">
+<h3>Edge difference<a class="headerlink" href="#Edge-difference" title="Permalink to this headline"></a></h3>
 <p>The <em>edge difference</em> of two graphs <code class="docutils literal notranslate"><span class="pre">ediff(da,db)</span></code> is a graph with the edges of the first except the edges of the second. For simplicity, here we consider only graphs having the same verteces but possibly different edges. This time we will try operate on graphs represented as dictionaries of adjacency lists.</p>
 <p>For example, if we have</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">da</span> <span class="o">=</span>  <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">da</span> <span class="o">=</span>  <span class="p">{</span>
           <span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
           <span class="s1">&#39;b&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span>
           <span class="s1">&#39;c&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
@@ -3734,8 +3654,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">db</span> <span class="o">=</span>  <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">db</span> <span class="o">=</span>  <span class="p">{</span>
           <span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
           <span class="s1">&#39;b&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span>
           <span class="s1">&#39;c&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span>
@@ -3757,8 +3676,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">res</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="p">{</span>
          <span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">],</span>
          <span class="s1">&#39;b&#39;</span><span class="p">:[],</span>
          <span class="s1">&#39;c&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">]</span>
@@ -3771,8 +3689,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_adj</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_adj</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3783,9 +3700,9 @@ could give troubles for other purposes, for example if we give the numbers the m
 <img alt="../_images/relational_relational1-intro-sol_83_0.png" src="../_images/relational_relational1-intro-sol_83_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---ediff">
-<h3>Exercise - ediff<a class="headerlink" href="#Exercise---ediff" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---ediff">
+<h3>Exercise - ediff<a class="headerlink" href="#Exercise---ediff" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ Takes two graphs as dictionaries of adjacency lists da and db, and RETURN a NEW graph as dictionary of adjacency lists, containing the same vertices of da, and the edges of da except the edges of db.</p>
 <ul class="simple">
 <li><p>As order of elements within the adjacency lists, use the same order as found in da.</p></li>
@@ -3814,8 +3731,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">ediff</span><span class="p">(</span><span class="n">da</span><span class="p">,</span><span class="n">db</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ediff</span><span class="p">(</span><span class="n">da</span><span class="p">,</span><span class="n">db</span><span class="p">):</span>
 
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
@@ -3889,8 +3805,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">ediff</span><span class="p">(</span><span class="n">da</span><span class="p">,</span><span class="n">db</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ediff</span><span class="p">(</span><span class="n">da</span><span class="p">,</span><span class="n">db</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">da1</span> <span class="o">=</span>  <span class="p">{</span> <span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">[]</span> <span class="p">}</span>
@@ -3949,9 +3864,9 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---pyramid">
-<h3>Exercise - pyramid<a class="headerlink" href="#Exercise---pyramid" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---pyramid">
+<h3>Exercise - pyramid<a class="headerlink" href="#Exercise---pyramid" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ The following function requires to create a matrix filled with non-zero numbers. Even if don’t know exactly the network meaning, with this fact we can conclude that all nodes are linked to all others. A graph where this happens is called a <em>clique</em> (the Italian name is <em>cricca)</em></p>
 <p>Takes an odd number <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">&gt;=</span> <span class="pre">1</span></code> and RETURN a matrix as list of lists containing numbers displaced like this example for a pyramid of square <code class="docutils literal notranslate"><span class="pre">7</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1111111
@@ -3972,8 +3887,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">pyramid</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pyramid</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;n should be odd, found instead </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">n</span><span class="p">)</span>
@@ -4013,8 +3927,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">pyramid</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pyramid</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">try</span><span class="p">:</span>
@@ -4037,18 +3950,17 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Adjacency-lists">
-<h2>Adjacency lists<a class="headerlink" href="#Adjacency-lists" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Adjacency-lists">
+<h2>Adjacency lists<a class="headerlink" href="#Adjacency-lists" title="Permalink to this headline"></a></h2>
 <p>So far, we represented graphs as matrices, saying they are good when the graph is dense, that is any given node is likely to be connected to almost all other nodes - or equivalently, many cell entries in the matrix are different from zero. But if this is not the case, other representations might be needed. For example, we can represent a graph as a <em>adjacency lists</em>.</p>
 <p>Let’s look at this 6x6 boolean matrix:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
         <span class="p">[</span><span class="kc">True</span><span class="p">,</span>  <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span>  <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
@@ -4056,8 +3968,7 @@ could give troubles for other purposes, for example if we give the numbers the m
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span>  <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
 <span class="p">]</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <p>We see just a few <code class="docutils literal notranslate"><span class="pre">True</span></code>, so by drawing it we don’t expect to see many edges:</p>
@@ -4065,8 +3976,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4083,9 +3993,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{</span>
          <span class="mi">0</span><span class="p">:</span> <span class="p">[],</span>     <span class="c1"># node 0 links to nothing</span>
          <span class="mi">1</span><span class="p">:</span> <span class="p">[],</span>     <span class="c1"># node 1 links to nothing</span>
          <span class="mi">2</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>  <span class="c1"># node 2 links to node 0 and 3</span>
@@ -4093,8 +4001,7 @@ could give troubles for other purposes, for example if we give the numbers the m
          <span class="mi">4</span><span class="p">:</span> <span class="p">[],</span>     <span class="c1"># node 4 links to nothing</span>
          <span class="mi">5</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span>     <span class="c1"># node 5 links to node 2</span>
     <span class="p">}</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <p>In <code class="docutils literal notranslate"><span class="pre">soft.py</span></code>, we provide also a function <code class="docutils literal notranslate"><span class="pre">soft.draw_adj</span></code> to quickly inspect such data structure:</p>
@@ -4102,8 +4009,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
 
 <span class="n">draw_adj</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </pre></div>
@@ -4117,8 +4023,8 @@ could give troubles for other purposes, for example if we give the numbers the m
 </div>
 </div>
 <p>As expected, the resulting graph is the same as for the equivalent matrix representation.</p>
-<div class="section" id="Exercise---mat_to_adj">
-<h3>Exercise - mat_to_adj<a class="headerlink" href="#Exercise---mat_to_adj" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---mat_to_adj">
+<h3>Exercise - mat_to_adj<a class="headerlink" href="#Exercise---mat_to_adj" title="Permalink to this headline"></a></h3>
 <p>✪✪ Implement a function that takes a boolean nxn matrix and RETURN the equivalent representation as dictionary of adjacency lists. Remember that to create an empty dict you have to write <code class="docutils literal notranslate"><span class="pre">dict()</span></code></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4126,8 +4032,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">mat_to_adj</span><span class="p">(</span><span class="n">bool_mat</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mat_to_adj</span><span class="p">(</span><span class="n">bool_mat</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">bool_mat</span><span class="p">)</span>
@@ -4181,8 +4086,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">mat_to_adj</span><span class="p">(</span><span class="n">bool_mat</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mat_to_adj</span><span class="p">(</span><span class="n">bool_mat</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">m1</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="p">]</span>
@@ -4223,9 +4127,9 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---mat_ids_to_adj">
-<h3>Exercise - mat_ids_to_adj<a class="headerlink" href="#Exercise---mat_ids_to_adj" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---mat_ids_to_adj">
+<h3>Exercise - mat_ids_to_adj<a class="headerlink" href="#Exercise---mat_ids_to_adj" title="Permalink to this headline"></a></h3>
 <p>✪✪ Implement a function that takes a boolean nxn matrix and a list of immutable identifiers for the nodes, and RETURN the equivalent representation as dictionary of adjacency lists.</p>
 <ul class="simple">
 <li><p>If matrix is not <code class="docutils literal notranslate"><span class="pre">n</span></code>x<code class="docutils literal notranslate"><span class="pre">n</span></code> or <code class="docutils literal notranslate"><span class="pre">ids</span></code> length does not match <code class="docutils literal notranslate"><span class="pre">n</span></code>, raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
@@ -4236,8 +4140,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">mat_ids_to_adj</span><span class="p">(</span><span class="n">bool_mat</span><span class="p">,</span> <span class="n">ids</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mat_ids_to_adj</span><span class="p">(</span><span class="n">bool_mat</span><span class="p">,</span> <span class="n">ids</span><span class="p">):</span>
 
 
     <span class="n">ret</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
@@ -4313,8 +4216,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">mat_ids_to_adj</span><span class="p">(</span><span class="n">bool_mat</span><span class="p">,</span> <span class="n">ids</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mat_ids_to_adj</span><span class="p">(</span><span class="n">bool_mat</span><span class="p">,</span> <span class="n">ids</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -4371,9 +4273,9 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---adj_to_mat">
-<h3>Exercise - adj_to_mat<a class="headerlink" href="#Exercise---adj_to_mat" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---adj_to_mat">
+<h3>Exercise - adj_to_mat<a class="headerlink" href="#Exercise---adj_to_mat" title="Permalink to this headline"></a></h3>
 <p>Try now conversion from dictionary of adjacency list to matrix (this is a bit hard).</p>
 <p>To solve this, the general idea is that you have to fill an nxn matrix to return. During the filling of a cell at row <code class="docutils literal notranslate"><span class="pre">i</span></code> and column <code class="docutils literal notranslate"><span class="pre">j</span></code>, you have to decide whether to put a <code class="docutils literal notranslate"><span class="pre">True</span></code> or a <code class="docutils literal notranslate"><span class="pre">False</span></code>. You should put <code class="docutils literal notranslate"><span class="pre">True</span></code> if in the <code class="docutils literal notranslate"><span class="pre">d</span></code> list value corresponding to the <code class="docutils literal notranslate"><span class="pre">i-th</span></code> key, there is contained a number equal to <code class="docutils literal notranslate"><span class="pre">j</span></code>. Otherwise, you should put <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <p>If you look at the tests, as inputs we are passing <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code>. The reason is that when we check the output matrix of your function, we want to be sure the matrix rows are ordered in a certain way.</p>
@@ -4396,8 +4298,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">adj_to_mat</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">adj_to_mat</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
@@ -4462,8 +4363,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">adj_to_mat</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">adj_to_mat</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
@@ -4507,16 +4407,15 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---table_to_adj">
-<h3>Exercise - table_to_adj<a class="headerlink" href="#Exercise---table_to_adj" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---table_to_adj">
+<h3>Exercise - table_to_adj<a class="headerlink" href="#Exercise---table_to_adj" title="Permalink to this headline"></a></h3>
 <p>Suppose you have a table expressed as a list of lists with headers like this:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">m0</span> <span class="o">=</span>    <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m0</span> <span class="o">=</span>    <span class="p">[</span>
           <span class="p">[</span><span class="s1">&#39;Identifier&#39;</span><span class="p">,</span><span class="s1">&#39;Price&#39;</span><span class="p">,</span><span class="s1">&#39;Quantity&#39;</span><span class="p">],</span>
           <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
           <span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
@@ -4533,8 +4432,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">res0</span> <span class="o">=</span>  <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">res0</span> <span class="o">=</span>  <span class="p">{</span>
             <span class="s1">&#39;a&#39;</span><span class="p">:[(</span><span class="s1">&#39;Price&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="s1">&#39;Quantity&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">)],</span>
             <span class="s1">&#39;b&#39;</span><span class="p">:[(</span><span class="s1">&#39;Price&#39;</span><span class="p">,</span><span class="mi">5</span><span class="p">),(</span><span class="s1">&#39;Quantity&#39;</span><span class="p">,</span><span class="mi">8</span><span class="p">)],</span>
             <span class="s1">&#39;c&#39;</span><span class="p">:[(</span><span class="s1">&#39;Price&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="s1">&#39;Quantity&#39;</span><span class="p">,</span><span class="mi">6</span><span class="p">)],</span>
@@ -4550,8 +4448,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">table_to_adj</span><span class="p">(</span><span class="n">table</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">table_to_adj</span><span class="p">(</span><span class="n">table</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">headers</span> <span class="o">=</span> <span class="n">table</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -4623,8 +4520,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">table_to_adj</span><span class="p">(</span><span class="n">table</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">table_to_adj</span><span class="p">(</span><span class="n">table</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">m0</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;I&#39;</span><span class="p">,</span><span class="s1">&#39;P&#39;</span><span class="p">,</span><span class="s1">&#39;Q&#39;</span><span class="p">]</span> <span class="p">]</span>
@@ -4682,10 +4578,10 @@ could give troubles for other purposes, for example if we give the numbers the m
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Networkx">
-<h2>Networkx<a class="headerlink" href="#Networkx" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Networkx">
+<h2>Networkx<a class="headerlink" href="#Networkx" title="Permalink to this headline"></a></h2>
 <p><strong>Before continuing, make sure to have installed the</strong> <a class="reference external" href="#Required-libraries">required libraries</a></p>
 <p>Networkx is a library to perform statistics on networks. For now, it will offer us a richer data structure where we can store the properties we want in nodes and also edges.</p>
 <p>You can initialize networkx objects with the dictionary of adjacency lists we’ve alredy seen:</p>
@@ -4693,9 +4589,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 
 <span class="c1"># notice with networkx if nodes are already referenced to in an adjacency list</span>
 <span class="c1"># you do not need to put them as keys:</span>
@@ -4704,8 +4598,7 @@ could give troubles for other purposes, for example if we give the numbers the m
     <span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>        <span class="c1"># node a links to b and c</span>
     <span class="s1">&#39;b&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">]</span>    <span class="c1"># node b links to b itself, c and d</span>
 <span class="p">})</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <p>The resulting object is not a simple dict, but something more complex:</p>
@@ -4713,8 +4606,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span>
 </pre></div>
 </div>
 </div>
@@ -4732,8 +4624,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_nx</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_nx</span>
 </pre></div>
 </div>
 </div>
@@ -4741,8 +4632,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4759,8 +4649,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4778,8 +4667,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;b&#39;</span><span class="p">][</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">123</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;b&#39;</span><span class="p">][</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">123</span>
 </pre></div>
 </div>
 </div>
@@ -4787,8 +4675,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4806,8 +4693,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4823,8 +4709,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;b&#39;</span><span class="p">][</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">123</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;b&#39;</span><span class="p">][</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">123</span>
 </pre></div>
 </div>
 </div>
@@ -4832,8 +4717,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4844,16 +4728,14 @@ could give troubles for other purposes, for example if we give the numbers the m
 <img alt="../_images/relational_relational1-intro-sol_142_0.png" src="../_images/relational_relational1-intro-sol_142_0.png" />
 </div>
 </div>
-<div class="section" id="Fancy-networkx-graphs">
-<h3>Fancy networkx graphs<a class="headerlink" href="#Fancy-networkx-graphs" title="Permalink to this headline">¶</a></h3>
+<section id="Fancy-networkx-graphs">
+<h3>Fancy networkx graphs<a class="headerlink" href="#Fancy-networkx-graphs" title="Permalink to this headline"></a></h3>
 <p>With networkx we can set additional attributes to embellish the resulting graph, here we show a bus network example.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
 
 <span class="c1"># we can force horizontal layout like this:</span>
 
@@ -4908,16 +4790,15 @@ could give troubles for other purposes, for example if we give the numbers the m
 <img alt="../_images/relational_relational1-intro-sol_144_0.png" src="../_images/relational_relational1-intro-sol_144_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Converting-networkx-graphs">
-<h3>Converting networkx graphs<a class="headerlink" href="#Converting-networkx-graphs" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Converting-networkx-graphs">
+<h3>Converting networkx graphs<a class="headerlink" href="#Converting-networkx-graphs" title="Permalink to this headline"></a></h3>
 <p>If you try to just output the string representation of the graph, networkx will give the empty string:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4933,8 +4814,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">str</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">str</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4951,8 +4831,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">repr</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">repr</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4970,8 +4849,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">nx</span><span class="o">.</span><span class="n">to_dict_of_lists</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">to_dict_of_lists</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4989,8 +4867,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">nx</span><span class="o">.</span><span class="n">to_dict_of_dicts</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nx</span><span class="o">.</span><span class="n">to_dict_of_dicts</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5010,9 +4887,9 @@ could give troubles for other purposes, for example if we give the numbers the m
  &#39;1180&#39;: {}}
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---mat_to_nx">
-<h3>Exercise - mat_to_nx<a class="headerlink" href="#Exercise---mat_to_nx" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---mat_to_nx">
+<h3>Exercise - mat_to_nx<a class="headerlink" href="#Exercise---mat_to_nx" title="Permalink to this headline"></a></h3>
 <p>✪✪ Now try by yourself to convert a matrix as list of lists along with node ids (like <a class="reference external" href="#Exercise---mat_ids_to_adj">you did before</a>) into a networkx object.</p>
 <p>This time, don’t create a dictionary to pass it to <code class="docutils literal notranslate"><span class="pre">nx.DiGraph</span></code> constructor: instead, use networkx methods like <code class="docutils literal notranslate"><span class="pre">.add_edge</span></code> and <code class="docutils literal notranslate"><span class="pre">add_node</span></code>. For usage example, check the <a class="reference external" href="https://networkx.github.io/documentation/stable/tutorial.html">networkx tutorial</a>.</p>
 <p><strong>QUESTION</strong>: Do you need to explicitly call <code class="docutils literal notranslate"><span class="pre">add_node</span></code> before referring to some node with <code class="docutils literal notranslate"><span class="pre">add_edge</span></code> ?</p>
@@ -5028,8 +4905,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">mat_to_nx</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">ids</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mat_to_nx</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">ids</span><span class="p">):</span>
 
 
     <span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
@@ -5135,8 +5011,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">mat_to_nx</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">ids</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mat_to_nx</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">ids</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">try</span><span class="p">:</span>
@@ -5225,8 +5100,7 @@ could give troubles for other purposes, for example if we give the numbers the m
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">mat_to_nx</span><span class="p">([</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">mat_to_nx</span><span class="p">([</span>
         <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
         <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
         <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
@@ -5241,60 +5115,43 @@ could give troubles for other purposes, for example if we give the numbers the m
 <img alt="../_images/relational_relational1-intro-sol_159_0.png" src="../_images/relational_relational1-intro-sol_159_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/relational/relational2-binrel-sol.html">binary relations</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="relational2-binrel-sol.html" class="btn btn-neutral float-right" title="Relational data 2 - binary relations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../pandas/pandas3-chal.html" class="btn btn-neutral float-left" title="Pandas - 3. The Land of Poets Challenge" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="relational2-binrel-sol.html" class="btn btn-neutral float-right" title="Relational data 2 - binary relations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Functions 3 - exercises with strings &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/functions/fun3-strings-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Functions 4 - exercises with lists" href="fun4-lists-sol.html" />
     <link rel="prev" title="Error handling and testing solutions" href="fun2-errors-and-testing-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,16 +2614,16 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Functions-3---exercises-with-strings">
-<h1>Functions 3 - exercises with strings<a class="headerlink" href="#Functions-3---exercises-with-strings" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/functions.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Functions-3---exercises-with-strings">
+<h1>Functions 3 - exercises with strings<a class="headerlink" href="#Functions-3---exercises-with-strings" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/functions.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/functions">Browse files online</a></p>
-</div>
-<div class="section" id="First-functions">
-<h2>First functions<a class="headerlink" href="#First-functions" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="length">
-<h3>length<a class="headerlink" href="#length" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="First-functions">
+<h2>First functions<a class="headerlink" href="#First-functions" title="Permalink to this headline"></a></h2>
+<section id="length">
+<h3>length<a class="headerlink" href="#length" title="Permalink to this headline"></a></h3>
 <p>✪ a. Write a function <code class="docutils literal notranslate"><span class="pre">length1(s)</span></code> in which, given a string, RETURN the length of the string. Use <code class="docutils literal notranslate"><span class="pre">len</span></code> function. For example, with <code class="docutils literal notranslate"><span class="pre">&quot;ciao&quot;</span></code> string your function should return <code class="docutils literal notranslate"><span class="pre">4</span></code> while with <code class="docutils literal notranslate"><span class="pre">&quot;hi&quot;</span></code> it should return <code class="docutils literal notranslate"><span class="pre">2</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">length1</span><span class="p">(</span><span class="s2">&quot;ciao&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>
@@ -2687,8 +2642,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="c1"># version with len, faster because python with a string always mantains in memory</span>
 <span class="c1"># the number of length immediately available</span>
@@ -2702,24 +2656,20 @@ div.rendered_html tbody tr:hover {
     <span class="k">for</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
         <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
     <span class="k">return</span> <span class="n">counter</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="contains">
-<h3>contains<a class="headerlink" href="#contains" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="contains">
+<h3>contains<a class="headerlink" href="#contains" title="Permalink to this headline"></a></h3>
 <p>✪ Write the function <code class="docutils literal notranslate"><span class="pre">contains(word,</span> <span class="pre">character)</span></code>, which RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> is the string contains the given character, otherwise RETURN <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
 <ul class="simple">
 <li><p>Use <code class="docutils literal notranslate"><span class="pre">in</span></code> operator</p></li>
@@ -2738,29 +2688,24 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">contains</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">character</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">word</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="invertlet">
-<h3>invertlet<a class="headerlink" href="#invertlet" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="invertlet">
+<h3>invertlet<a class="headerlink" href="#invertlet" title="Permalink to this headline"></a></h3>
 <p>✪ Write the function <code class="docutils literal notranslate"><span class="pre">invertlet(first,</span> <span class="pre">second)</span></code> which takes in input two strings of length greater than 3, and RETURN a new string in which the words are concataned and separated by a space, the last two characters in the words are inverted. For example, if you pass in input <code class="docutils literal notranslate"><span class="pre">'twist'</span></code> and <code class="docutils literal notranslate"><span class="pre">'space'</span></code>, the function should RETURN <code class="docutils literal notranslate"><span class="pre">'twise</span> <span class="pre">spact'</span></code></p>
 <ul class="simple">
 <li><p>If the two strings are not of adequate length, the program PRINTS <em>error!</em></p></li>
@@ -2787,9 +2732,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">invertlet</span><span class="p">(</span><span class="n">first</span><span class="p">,</span><span class="n">second</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">first</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">3</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">second</span><span class="p">)</span> <span class="o">&lt;=</span><span class="mi">3</span><span class="p">:</span>
@@ -2819,17 +2762,13 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="nspace">
-<h3>nspace<a class="headerlink" href="#nspace" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="nspace">
+<h3>nspace<a class="headerlink" href="#nspace" title="Permalink to this headline"></a></h3>
 <p>✪ Write a function <code class="docutils literal notranslate"><span class="pre">nspace</span></code> that given a string <code class="docutils literal notranslate"><span class="pre">s</span></code> in input, RETURN a new string in which the <code class="docutils literal notranslate"><span class="pre">n</span></code>-character is a space.</p>
 <ul class="simple">
 <li><p>if the number is too big, raise the exception <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> - in the exception message state clearly what the problem was and the input.</p></li>
@@ -2860,10 +2799,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">nspace</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
@@ -2890,18 +2826,13 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="startend">
-<h3>startend<a class="headerlink" href="#startend" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="startend">
+<h3>startend<a class="headerlink" href="#startend" title="Permalink to this headline"></a></h3>
 <p>✪ Write a function which takes a string <code class="docutils literal notranslate"><span class="pre">s</span></code> and RETURN the first and last two characters</p>
 <ul class="simple">
 <li><p>if length is less than 4, raises <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> - in the exception message state clearly what the problem was and the input</p></li>
@@ -2924,9 +2855,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">startend</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
@@ -2951,17 +2880,13 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="swap">
-<h3>swap<a class="headerlink" href="#swap" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="swap">
+<h3>swap<a class="headerlink" href="#swap" title="Permalink to this headline"></a></h3>
 <p>Write a function that given a string, swaps the first and last character and RETURN the result.</p>
 <ul class="simple">
 <li><p>if the string is empty, raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> - in the exception message state clearly the cause of the problem</p></li>
@@ -2984,9 +2909,7 @@ None
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="k">def</span> <span class="nf">swap</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">s</span> <span class="o">==</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
@@ -3012,24 +2935,20 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Verify-comprehension">
-<h2>Verify comprehension<a class="headerlink" href="#Verify-comprehension" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Verify-comprehension">
+<h2>Verify comprehension<a class="headerlink" href="#Verify-comprehension" title="Permalink to this headline"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>ATTENTION</strong></p>
 <p>The following exercises contain tests with asserts. To understand how to solve them, read first <a class="reference external" href="https://en.softpython.org/functions/fun2-errors-and-testing-sol.html">Error handling and testing</a></p>
 </div>
-</div><div class="section" id="has_char">
-<h3>has_char<a class="headerlink" href="#has_char" title="Permalink to this headline">¶</a></h3>
+</div><section id="has_char">
+<h3>has_char<a class="headerlink" href="#has_char" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">word</span></code> contains <code class="docutils literal notranslate"><span class="pre">char</span></code>, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
 <ul class="simple">
 <li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">while</span></code> cycle</p></li>
@@ -3041,8 +2960,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">has_char</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">has_char</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
 
     <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>     <span class="c1"># initialize index</span>
     <span class="k">while</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
@@ -3072,8 +2990,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">has_char</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">has_char</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -3090,9 +3007,9 @@ cc
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="count">
-<h3>count<a class="headerlink" href="#count" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="count">
+<h3>count<a class="headerlink" href="#count" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN the number of occurrences of <code class="docutils literal notranslate"><span class="pre">char</span></code> in <code class="docutils literal notranslate"><span class="pre">word</span></code></p>
 <ul class="simple">
 <li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">in</span></code> cycle</p></li>
@@ -3105,9 +3022,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
 
     <span class="n">occurrences</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
@@ -3134,9 +3049,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">count</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">char</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="c1"># TEST START - DO NOT TOUCH!</span>
@@ -3151,9 +3064,9 @@ cc
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="has_lower">
-<h3>has_lower<a class="headerlink" href="#has_lower" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="has_lower">
+<h3>has_lower<a class="headerlink" href="#has_lower" title="Permalink to this headline"></a></h3>
 <p>✪ RITORNA <code class="docutils literal notranslate"><span class="pre">True</span></code> if the word contains <em>at least</em> one lowercase character, otherwise return <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
 <ul class="simple">
 <li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">while</span></code> cycle</p></li>
@@ -3164,9 +3077,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">has_lower</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">has_lower</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
 
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
@@ -3193,9 +3104,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">has_lower</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">has_lower</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -3211,9 +3120,9 @@ cc
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="dialect">
-<h3>dialect<a class="headerlink" href="#dialect" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="dialect">
+<h3>dialect<a class="headerlink" href="#dialect" title="Permalink to this headline"></a></h3>
 <p>✪✪ There exist a dialect in which all the <code class="docutils literal notranslate"><span class="pre">&quot;a&quot;</span></code> must be always preceded by a <code class="docutils literal notranslate"><span class="pre">&quot;g&quot;</span></code>. In case a word contains an <code class="docutils literal notranslate"><span class="pre">&quot;a&quot;</span></code> <em>not</em> preceded by a <code class="docutils literal notranslate"><span class="pre">&quot;g&quot;</span></code>, we can say with certainty that this word <em>does not</em> belong to the dialect. Write a function that given a word, RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if the word respects the rules of the dialect, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dialect</span><span class="p">(</span><span class="s2">&quot;ammot&quot;</span><span class="p">)</span>
 <span class="go">False</span>
@@ -3237,10 +3146,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="k">def</span> <span class="nf">dialect</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="k">def</span> <span class="nf">dialect</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
 
     <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)):</span>
@@ -3274,10 +3180,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="k">def</span> <span class="nf">dialect</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="k">def</span> <span class="nf">dialect</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="c1"># TEST START - DO NOT TOUCH!</span>
@@ -3300,9 +3203,9 @@ cc
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="countvoc">
-<h3>countvoc<a class="headerlink" href="#countvoc" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="countvoc">
+<h3>countvoc<a class="headerlink" href="#countvoc" title="Permalink to this headline"></a></h3>
 <p>✪✪ Given a string, write a function that counts the number of vocals. If the vocals number is even, RETURN the number of vocals, otherwise raises exception <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">countvoc</span><span class="p">(</span><span class="s2">&quot;arco&quot;</span><span class="p">)</span>
 <span class="go">2</span>
@@ -3322,9 +3225,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">countvoc</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">countvoc</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
 
     <span class="n">n_vocals</span> <span class="o">=</span> <span class="mi">0</span>
 
@@ -3357,18 +3258,14 @@ cc
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;I shouldn&#39;t arrive until here  !&quot;</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>      <span class="c1"># if it raises the exception ValueError, it is behaving as expected and we do nothing</span>
     <span class="k">pass</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">countvoc</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">countvoc</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="c1"># TEST START - DO NOT TOUCH!</span>
@@ -3388,22 +3285,19 @@ cc
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;I shouldn&#39;t arrive until here  !&quot;</span><span class="p">)</span>
 <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>      <span class="c1"># if it raises the exception ValueError, it is behaving as expected and we do nothing</span>
     <span class="k">pass</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="extract_email">
-<h3>extract_email<a class="headerlink" href="#extract_email" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="extract_email">
+<h3>extract_email<a class="headerlink" href="#extract_email" title="Permalink to this headline"></a></h3>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">extract_email</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_email</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; Takes a string s formatted like</span>
 
 <span class="sd">        &quot;lun 5 nov 2018, 02:09 John Doe &lt;john.doe@some-website.com&gt;&quot;</span>
@@ -3430,8 +3324,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">extract_email</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_email</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; Takes a string s formatted like</span>
 
 <span class="sd">        &quot;lun 5 nov 2018, 02:09 John Doe &lt;john.doe@some-website.com&gt;&quot;</span>
@@ -3450,9 +3343,9 @@ cc
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="canon_phone">
-<h3>canon_phone<a class="headerlink" href="#canon_phone" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="canon_phone">
+<h3>canon_phone<a class="headerlink" href="#canon_phone" title="Permalink to this headline"></a></h3>
 <p>✪ Implement a function that canonicalize canonicalize a phone number as a string. It must RETURN the canonical version of phone as a string.</p>
 <p>For us, a canonical phone number:</p>
 <ul class="simple">
@@ -3479,8 +3372,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">phone_canon</span><span class="p">(</span><span class="n">phone</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">phone_canon</span><span class="p">(</span><span class="n">phone</span><span class="p">):</span>
 
     <span class="n">p</span> <span class="o">=</span> <span class="n">phone</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">p</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;0039&#39;</span><span class="p">):</span>
@@ -3497,16 +3389,14 @@ cc
 <span class="k">assert</span> <span class="n">phone_canon</span><span class="p">(</span><span class="s1">&#39;003902123456&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;02123456&#39;</span>
 <span class="k">assert</span> <span class="n">phone_canon</span><span class="p">(</span><span class="s1">&#39;003902120039&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;02120039&#39;</span>
 <span class="k">assert</span> <span class="n">phone_canon</span><span class="p">(</span><span class="s1">&#39;0039021239&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;021239&#39;</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">phone_canon</span><span class="p">(</span><span class="n">phone</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">phone_canon</span><span class="p">(</span><span class="n">phone</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">phone_canon</span><span class="p">(</span><span class="s1">&#39;+39 0461 123456&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;0461123456&#39;</span>
@@ -3516,13 +3406,12 @@ cc
 <span class="k">assert</span> <span class="n">phone_canon</span><span class="p">(</span><span class="s1">&#39;003902123456&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;02123456&#39;</span>
 <span class="k">assert</span> <span class="n">phone_canon</span><span class="p">(</span><span class="s1">&#39;003902120039&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;02120039&#39;</span>
 <span class="k">assert</span> <span class="n">phone_canon</span><span class="p">(</span><span class="s1">&#39;0039021239&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;021239&#39;</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="phone_prefix">
-<h3>phone_prefix<a class="headerlink" href="#phone_prefix" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="phone_prefix">
+<h3>phone_prefix<a class="headerlink" href="#phone_prefix" title="Permalink to this headline"></a></h3>
 <p>✪✪ We now want to extract the province prefix from phone numbers (see previous exercise) - the ones we consider as valid are in <code class="docutils literal notranslate"><span class="pre">province_prefixes</span></code> list.</p>
 <p>Note some numbers are from mobile operators and you can distinguish them by prefixes like <code class="docutils literal notranslate"><span class="pre">328</span></code> - the ones we consider are in <code class="docutils literal notranslate"><span class="pre">mobile_prefixes</span></code> list.</p>
 <p>Implement a function that RETURN the prefix of the phone as a string. Remember first to make it canonical !!</p>
@@ -3537,8 +3426,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">province_prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;0461&#39;</span><span class="p">,</span> <span class="s1">&#39;02&#39;</span><span class="p">,</span> <span class="s1">&#39;011&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">province_prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;0461&#39;</span><span class="p">,</span> <span class="s1">&#39;02&#39;</span><span class="p">,</span> <span class="s1">&#39;011&#39;</span><span class="p">]</span>
 <span class="n">mobile_prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;330&#39;</span><span class="p">,</span> <span class="s1">&#39;340&#39;</span><span class="p">,</span> <span class="s1">&#39;328&#39;</span><span class="p">,</span> <span class="s1">&#39;390&#39;</span><span class="p">,</span> <span class="s1">&#39;3771&#39;</span><span class="p">]</span>
 
 
@@ -3562,16 +3450,14 @@ cc
 <span class="k">assert</span> <span class="n">phone_prefix</span><span class="p">(</span><span class="s1">&#39;00666011 432434&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;unrecognized&#39;</span>
 <span class="k">assert</span> <span class="n">phone_prefix</span><span class="p">(</span><span class="s1">&#39;12345&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;unrecognized&#39;</span>
 <span class="k">assert</span> <span class="n">phone_prefix</span><span class="p">(</span><span class="s1">&#39;+39 123 12345&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;unrecognized&#39;</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">province_prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;0461&#39;</span><span class="p">,</span> <span class="s1">&#39;02&#39;</span><span class="p">,</span> <span class="s1">&#39;011&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">province_prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;0461&#39;</span><span class="p">,</span> <span class="s1">&#39;02&#39;</span><span class="p">,</span> <span class="s1">&#39;011&#39;</span><span class="p">]</span>
 <span class="n">mobile_prefixes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;330&#39;</span><span class="p">,</span> <span class="s1">&#39;340&#39;</span><span class="p">,</span> <span class="s1">&#39;328&#39;</span><span class="p">,</span> <span class="s1">&#39;390&#39;</span><span class="p">,</span> <span class="s1">&#39;3771&#39;</span><span class="p">]</span>
 
 
@@ -3586,13 +3472,12 @@ cc
 <span class="k">assert</span> <span class="n">phone_prefix</span><span class="p">(</span><span class="s1">&#39;00666011 432434&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;unrecognized&#39;</span>
 <span class="k">assert</span> <span class="n">phone_prefix</span><span class="p">(</span><span class="s1">&#39;12345&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;unrecognized&#39;</span>
 <span class="k">assert</span> <span class="n">phone_prefix</span><span class="p">(</span><span class="s1">&#39;+39 123 12345&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;unrecognized&#39;</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="palindrome">
-<h3>palindrome<a class="headerlink" href="#palindrome" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="palindrome">
+<h3>palindrome<a class="headerlink" href="#palindrome" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ A word is palindrome if it exactly the same when you read it in reverse</p>
 <p>Write a function the RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if the given word is palindrome, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
 <ul class="simple">
@@ -3614,9 +3499,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">palindrome</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">palindrome</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">word</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">word</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span><span class="o">-</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]:</span>
@@ -3650,9 +3533,7 @@ cc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">palindrome</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">palindrome</span><span class="p">(</span><span class="n">word</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="c1"># TEST START - DO NOT TOUCH!</span>
@@ -3675,60 +3556,43 @@ cc
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with exercises about <a class="reference external" href="https://en.softpython.org/functions/fun4-lists-sol.html">functions and lists</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="fun4-lists-sol.html" class="btn btn-neutral float-right" title="Functions 4 - exercises with lists" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="fun2-errors-and-testing-sol.html" class="btn btn-neutral float-left" title="Error handling and testing solutions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fun4-lists-sol.html" class="btn btn-neutral float-right" title="Functions 4 - exercises with lists" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

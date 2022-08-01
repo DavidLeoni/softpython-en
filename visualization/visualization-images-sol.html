@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Visualization - Numpy images &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/visualization/visualization-images-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Analytics with Pandas : 1. introduction" href="../pandas/pandas1-sol.html" />
     <link rel="prev" title="The AlgoRythm Opera Challenge" href="visualization2-chal.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2405,27 +2345,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2526,7 +2480,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2592,6 +2546,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2601,7 +2556,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2661,15 +2616,15 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Visualization---Numpy-images">
-<h1>Visualization - Numpy images<a class="headerlink" href="#Visualization---Numpy-images" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/visualization.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Visualization---Numpy-images">
+<h1>Visualization - Numpy images<a class="headerlink" href="#Visualization---Numpy-images" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/visualization.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/visualization">Browse files online</a></p>
 <p>Images are a direct application of matrices, and show we can nicely translate a numpy matrix cell into a pixel on the screen.</p>
 <p>Typically, images are divided into color channels: a common scheme is the RGB model, which stands for Red Green and Blue. In this tutorial we will load an image where each pixel is made of three integer values ranging from 0 to 255 included. Each integer indicates how much of a color component is present in the pixel, with zero meaning absence and 255 bright colors.</p>
-<div class="section" id="What-to-do">
-<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h3>
+<section id="What-to-do">
+<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h3>
 <ul class="simple">
 <li><p>unzip exercises in a folder, you should get something like this:</p></li>
 </ul>
@@ -2696,17 +2651,16 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="Introduction">
-<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Introduction">
+<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
 <p>Let’s load the image:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># this is *not* a python command, it is a Jupyter-specific magic command,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is *not* a python command, it is a Jupyter-specific magic command,</span>
 <span class="c1"># to tell jupyter we want the graphs displayed in the cell outputs</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="nn">mpimg</span>
@@ -2724,8 +2678,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2745,15 +2698,14 @@ div.rendered_html tbody tr:hover {
 <img alt="../_images/visualization_visualization-images-sol_4_1.png" src="../_images/visualization_visualization-images-sol_4_1.png" />
 </div>
 </div>
-<div class="section" id="Monochrome">
-<h3>Monochrome<a class="headerlink" href="#Monochrome" title="Permalink to this headline">¶</a></h3>
+<section id="Monochrome">
+<h3>Monochrome<a class="headerlink" href="#Monochrome" title="Permalink to this headline"></a></h3>
 <p>For an easy start, we first get a monochromatic view of the image we call <code class="docutils literal notranslate"><span class="pre">gimg</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gimg</span> <span class="o">=</span> <span class="n">img</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">]</span>   <span class="c1"># this trick selects only one channel (the red one)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gimg</span> <span class="o">=</span> <span class="n">img</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">]</span>   <span class="c1"># this trick selects only one channel (the red one)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">gimg</span><span class="p">)</span>
 </pre></div>
@@ -2780,8 +2732,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">gimg</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">gimg</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2803,8 +2754,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">gimg</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">gimg</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2823,8 +2773,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">gimg</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;hot&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">gimg</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;hot&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2849,8 +2798,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">gimg</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">gimg</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2875,8 +2823,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">gs</span><span class="p">(</span><span class="n">some_img</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gs</span><span class="p">(</span><span class="n">some_img</span><span class="p">):</span>
     <span class="c1"># vmin and vmax prevent normalization that occurs only with monochromatic images</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">some_img</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
 </pre></div>
@@ -2886,8 +2833,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2898,17 +2844,16 @@ numpy.ndarray
 <img alt="../_images/visualization_visualization-images-sol_17_0.png" src="../_images/visualization_visualization-images-sol_17_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Focus">
-<h2>Focus<a class="headerlink" href="#Focus" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Focus">
+<h2>Focus<a class="headerlink" href="#Focus" title="Permalink to this headline"></a></h2>
 <p>Let’s try some simple transformation. As with regular Python lists, we can do slicing:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span><span class="p">[</span><span class="mi">350</span><span class="p">:</span><span class="mi">1050</span><span class="p">,</span><span class="mi">500</span><span class="p">:</span><span class="mi">1200</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span><span class="p">[</span><span class="mi">350</span><span class="p">:</span><span class="mi">1050</span><span class="p">,</span><span class="mi">500</span><span class="p">:</span><span class="mi">1200</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -2922,8 +2867,8 @@ numpy.ndarray
 <p><strong>NOTE 1</strong>: differently from regular lists of lists, in Numpy we can write slices for different dimensions <strong>within the same square brackets</strong></p>
 <p><strong>NOTE 2</strong>: We are still talking about matrices, so pictures also follow the very same conventions of regular algebra we’ve also seen with lists of lists: the first index is for rows and starts from 0 in the left upper corner, and second index is for columns.</p>
 <p><strong>NOTE 3</strong>: the indeces shown on the extracted picture are <em>not</em> the indeces of the original matrix!</p>
-<div class="section" id="Exercise---Head-focus">
-<h3>Exercise - Head focus<a class="headerlink" href="#Exercise---Head-focus" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---Head-focus">
+<h3>Exercise - Head focus<a class="headerlink" href="#Exercise---Head-focus" title="Permalink to this headline"></a></h3>
 <p>Try selecting the head:</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -2931,8 +2876,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="n">gs</span><span class="p">(</span><span class="n">gimg</span><span class="p">[</span><span class="mi">470</span><span class="p">:</span><span class="mi">650</span><span class="p">,</span><span class="mi">600</span><span class="p">:</span><span class="mi">860</span><span class="p">])</span>
 </pre></div>
@@ -2949,11 +2893,8 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2963,17 +2904,16 @@ numpy.ndarray
 <img alt="../_images/visualization_visualization-images-sol_26_0.png" src="../_images/visualization_visualization-images-sol_26_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="hstack-and-vstack">
-<h2><code class="docutils literal notranslate"><span class="pre">hstack</span></code> and <code class="docutils literal notranslate"><span class="pre">vstack</span></code><a class="headerlink" href="#hstack-and-vstack" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="hstack-and-vstack">
+<h2><code class="docutils literal notranslate"><span class="pre">hstack</span></code> and <code class="docutils literal notranslate"><span class="pre">vstack</span></code><a class="headerlink" href="#hstack-and-vstack" title="Permalink to this headline"></a></h2>
 <p>We can stitch together pictures with <code class="docutils literal notranslate"><span class="pre">hstack</span></code> and <code class="docutils literal notranslate"><span class="pre">vstack</span></code>. Note they produce a NEW matrix:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">gimg</span><span class="p">,</span> <span class="n">gimg</span><span class="p">)))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">gimg</span><span class="p">,</span> <span class="n">gimg</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
@@ -2988,8 +2928,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">gimg</span><span class="p">,</span> <span class="n">gimg</span><span class="p">)))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">gimg</span><span class="p">,</span> <span class="n">gimg</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
@@ -3000,8 +2939,8 @@ numpy.ndarray
 <img alt="../_images/visualization_visualization-images-sol_29_0.png" src="../_images/visualization_visualization-images-sol_29_0.png" />
 </div>
 </div>
-<div class="section" id="Exercise---Passport">
-<h3>Exercise - Passport<a class="headerlink" href="#Exercise---Passport" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---Passport">
+<h3>Exercise - Passport<a class="headerlink" href="#Exercise---Passport" title="Permalink to this headline"></a></h3>
 <p>Try to replicate somehow the head</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3009,8 +2948,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">head</span> <span class="o">=</span> <span class="n">gimg</span><span class="p">[</span><span class="mi">470</span><span class="p">:</span><span class="mi">650</span><span class="p">,</span><span class="mi">600</span><span class="p">:</span><span class="mi">860</span><span class="p">]</span>
 <span class="n">col</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">head</span><span class="p">,</span> <span class="n">head</span><span class="p">))</span>
 <span class="n">gs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">col</span><span class="p">,</span> <span class="n">col</span><span class="p">)))</span>
@@ -3028,11 +2966,8 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3042,17 +2977,16 @@ numpy.ndarray
 <img alt="../_images/visualization_visualization-images-sol_34_0.png" src="../_images/visualization_visualization-images-sol_34_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="flip">
-<h2><code class="docutils literal notranslate"><span class="pre">flip</span></code><a class="headerlink" href="#flip" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="flip">
+<h2><code class="docutils literal notranslate"><span class="pre">flip</span></code><a class="headerlink" href="#flip" title="Permalink to this headline"></a></h2>
 <p>A handy method for mirroring is <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.flip.html">flip</a>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">gimg</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">gimg</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -3063,8 +2997,8 @@ numpy.ndarray
 <img alt="../_images/visualization_visualization-images-sol_36_0.png" src="../_images/visualization_visualization-images-sol_36_0.png" />
 </div>
 </div>
-<div class="section" id="Exercise---Hall-of-mirrors">
-<h3>Exercise - Hall of mirrors<a class="headerlink" href="#Exercise---Hall-of-mirrors" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---Hall-of-mirrors">
+<h3>Exercise - Hall of mirrors<a class="headerlink" href="#Exercise---Hall-of-mirrors" title="Permalink to this headline"></a></h3>
 <p>Try to replicate somehow the head, pointing it in different directions as in the example</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3072,8 +3006,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">head</span> <span class="o">=</span> <span class="n">gimg</span><span class="p">[</span><span class="mi">470</span><span class="p">:</span><span class="mi">650</span><span class="p">,</span><span class="mi">600</span><span class="p">:</span><span class="mi">860</span><span class="p">]</span>
 <span class="n">col1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">head</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">head</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)))</span>
 <span class="n">gs</span><span class="p">(</span><span class="n">col1</span><span class="p">)</span>
@@ -3093,11 +3026,8 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3107,9 +3037,9 @@ numpy.ndarray
 <img alt="../_images/visualization_visualization-images-sol_41_0.png" src="../_images/visualization_visualization-images-sol_41_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---The-nose-from-above">
-<h3>Exercise - The nose from above<a class="headerlink" href="#Exercise---The-nose-from-above" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---The-nose-from-above">
+<h3>Exercise - The nose from above<a class="headerlink" href="#Exercise---The-nose-from-above" title="Permalink to this headline"></a></h3>
 <p>Do some googling and find an appropriate method for obtaining this:</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3117,8 +3047,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="n">gs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">rot90</span><span class="p">(</span><span class="n">gimg</span><span class="p">[:,:</span><span class="n">gimg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">]))</span>
 </pre></div>
@@ -3135,11 +3064,8 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3149,17 +3075,16 @@ numpy.ndarray
 <img alt="../_images/visualization_visualization-images-sol_46_0.png" src="../_images/visualization_visualization-images-sol_46_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Writing-arrays">
-<h2>Writing arrays<a class="headerlink" href="#Writing-arrays" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Writing-arrays">
+<h2>Writing arrays<a class="headerlink" href="#Writing-arrays" title="Permalink to this headline"></a></h2>
 <p>We can write into an array using square brackets:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -3167,8 +3092,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
 </pre></div>
 </div>
 </div>
@@ -3176,8 +3100,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span>
 </pre></div>
 </div>
 </div>
@@ -3195,8 +3118,7 @@ array([7, 9, 4, 8, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>                <span class="c1">#0 1 2 3 4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>                <span class="c1">#0 1 2 3 4</span>
 <span class="n">arr1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
 <span class="n">arr2</span> <span class="o">=</span> <span class="n">arr1</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">arr2</span>
@@ -3216,8 +3138,7 @@ array([9, 4])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
 </pre></div>
 </div>
 </div>
@@ -3225,8 +3146,7 @@ array([9, 4])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr2</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr2</span>
 </pre></div>
 </div>
 </div>
@@ -3243,8 +3163,7 @@ array([7, 4])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr1</span>  <span class="c1"># the original was modified !!!</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr1</span>  <span class="c1"># the original was modified !!!</span>
 </pre></div>
 </div>
 </div>
@@ -3265,8 +3184,7 @@ array([5, 7, 4, 8, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>                <span class="c1">#0 1 2 3 4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>                <span class="c1">#0 1 2 3 4</span>
 <span class="n">arr1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
 <span class="n">arr2</span> <span class="o">=</span> <span class="n">arr1</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">arr2</span>
@@ -3286,8 +3204,7 @@ array([9, 4])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
 </pre></div>
 </div>
 </div>
@@ -3295,8 +3212,7 @@ array([9, 4])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr2</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr2</span>
 </pre></div>
 </div>
 </div>
@@ -3313,8 +3229,7 @@ array([7, 4])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr1</span>  <span class="c1"># remained the same</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr1</span>  <span class="c1"># remained the same</span>
 </pre></div>
 </div>
 </div>
@@ -3327,9 +3242,9 @@ array([7, 4])
 array([5, 9, 4, 8, 6])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Writing-into-images">
-<h2>Writing into images<a class="headerlink" href="#Writing-into-images" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Writing-into-images">
+<h2>Writing into images<a class="headerlink" href="#Writing-into-images" title="Permalink to this headline"></a></h2>
 <p>Let’s go back to images. First note that <code class="docutils literal notranslate"><span class="pre">gimg</span></code> was generated by calling <code class="docutils literal notranslate"><span class="pre">pt.imshow</span></code>, which set it as READ-ONLY:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>  <span class="c1"># NOT POSSIBLE WITH LOADED IMAGES!</span>
 <span class="o">---------------------------------------------------------------------------</span>
@@ -3345,8 +3260,7 @@ array([5, 9, 4, 8, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mimg</span> <span class="o">=</span> <span class="n">gimg</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># *DEEP* COPY</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mimg</span> <span class="o">=</span> <span class="n">gimg</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># *DEEP* COPY</span>
 <span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>  <span class="c1"># the copy is writable</span>
 <span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
@@ -3366,8 +3280,7 @@ array([5, 9, 4, 8, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mimg</span><span class="p">[:,</span> <span class="mi">300</span><span class="p">:</span><span class="mi">400</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mimg</span><span class="p">[:,</span> <span class="mi">300</span><span class="p">:</span><span class="mi">400</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
 </pre></div>
 </div>
 </div>
@@ -3375,8 +3288,7 @@ array([5, 9, 4, 8, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">mimg</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">mimg</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3387,8 +3299,8 @@ array([5, 9, 4, 8, 6])
 <img alt="../_images/visualization_visualization-images-sol_69_0.png" src="../_images/visualization_visualization-images-sol_69_0.png" />
 </div>
 </div>
-<div class="section" id="Exercise---Stripes">
-<h3>Exercise - Stripes<a class="headerlink" href="#Exercise---Stripes" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---Stripes">
+<h3>Exercise - Stripes<a class="headerlink" href="#Exercise---Stripes" title="Permalink to this headline"></a></h3>
 <p>Write a program that given top-left coordinates <code class="docutils literal notranslate"><span class="pre">tl</span></code> and bottom-right coordinates <code class="docutils literal notranslate"><span class="pre">br</span></code> creates a NEW image <code class="docutils literal notranslate"><span class="pre">nimg</span></code> with lines drawn like in the example:</p>
 <ul class="simple">
 <li><p>use a width of 5 pixels</p></li>
@@ -3399,9 +3311,7 @@ array([5, 9, 4, 8, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">tl</span> <span class="o">=</span> <span class="p">(</span><span class="mi">450</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">tl</span> <span class="o">=</span> <span class="p">(</span><span class="mi">450</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span>
 <span class="n">br</span> <span class="o">=</span> <span class="p">(</span><span class="mi">650</span><span class="p">,</span><span class="mi">830</span><span class="p">)</span>
 
 <span class="c1"># write here</span>
@@ -3427,15 +3337,11 @@ array([5, 9, 4, 8, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">tl</span> <span class="o">=</span> <span class="p">(</span><span class="mi">450</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">tl</span> <span class="o">=</span> <span class="p">(</span><span class="mi">450</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span>
 <span class="n">br</span> <span class="o">=</span> <span class="p">(</span><span class="mi">650</span><span class="p">,</span><span class="mi">830</span><span class="p">)</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3449,8 +3355,7 @@ array([5, 9, 4, 8, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span><span class="p">)</span> <span class="c1"># original must NOT change!</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span><span class="p">)</span> <span class="c1"># original must NOT change!</span>
 </pre></div>
 </div>
 </div>
@@ -3461,17 +3366,16 @@ array([5, 9, 4, 8, 6])
 <img alt="../_images/visualization_visualization-images-sol_75_0.png" src="../_images/visualization_visualization-images-sol_75_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="In-a-dark-integer-night">
-<h2>In a dark integer night<a class="headerlink" href="#In-a-dark-integer-night" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="In-a-dark-integer-night">
+<h2>In a dark integer night<a class="headerlink" href="#In-a-dark-integer-night" title="Permalink to this headline"></a></h2>
 <p>Let’s say we want to darken the scene. One simple approach would be to divide all the numbers by two:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3486,8 +3390,7 @@ array([5, 9, 4, 8, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gimg</span> <span class="o">//</span> <span class="mi">2</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gimg</span> <span class="o">//</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
@@ -3511,8 +3414,7 @@ array([[104, 104, 105, ...,  58,  59,  58],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gimg</span> <span class="o">/</span> <span class="mf">3.14</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gimg</span> <span class="o">/</span> <span class="mf">3.14</span>
 </pre></div>
 </div>
 </div>
@@ -3542,8 +3444,7 @@ array([[66.56050955, 66.56050955, 66.87898089, ..., 37.2611465 ,
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">(</span><span class="n">gimg</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">gimg</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3563,15 +3464,14 @@ array([[69, 69, 70, ..., 39, 39, 39],
 </pre></div></div>
 </div>
 <p>We used division because it guarantees we will never go below zero, which is important when working with unsigned bytes as we’re doing here. Let’s see what happens when we violate the datatype bounds.</p>
-<div class="section" id="The-Integer-Shining">
-<h3>The Integer Shining<a class="headerlink" href="#The-Integer-Shining" title="Permalink to this headline">¶</a></h3>
+<section id="The-Integer-Shining">
+<h3>The Integer Shining<a class="headerlink" href="#The-Integer-Shining" title="Permalink to this headline"></a></h3>
 <p>Intuitevely, if we want more light we can try increasing the matrices values but something terrible hides in the shadows….</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">+</span> <span class="mi">30</span><span class="p">)</span>  <span class="c1"># mmm something looks wrong ...</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">+</span> <span class="mi">30</span><span class="p">)</span>  <span class="c1"># mmm something looks wrong ...</span>
 </pre></div>
 </div>
 </div>
@@ -3586,8 +3486,7 @@ array([[69, 69, 70, ..., 39, 39, 39],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">+</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># even worse!</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">+</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># even worse!</span>
 </pre></div>
 </div>
 </div>
@@ -3603,8 +3502,7 @@ array([[69, 69, 70, ..., 39, 39, 39],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gimg</span> <span class="o">+</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gimg</span> <span class="o">+</span> <span class="mi">100</span>
 </pre></div>
 </div>
 </div>
@@ -3630,8 +3528,7 @@ array([[ 53,  53,  54, ..., 217, 218, 217],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>  <span class="c1"># unsigned 8 bit byte, values from 0 to 255 included</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>  <span class="c1"># unsigned 8 bit byte, values from 0 to 255 included</span>
 </pre></div>
 </div>
 </div>
@@ -3639,8 +3536,7 @@ array([[ 53,  53,  54, ..., 217, 218, 217],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span>
 </pre></div>
 </div>
 </div>
@@ -3657,8 +3553,7 @@ array([0, 0, 0], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>
 </pre></div>
 </div>
 </div>
@@ -3666,8 +3561,7 @@ array([0, 0, 0], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span>
 </pre></div>
 </div>
 </div>
@@ -3684,8 +3578,7 @@ array([255,   0,   0], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># cycles back to zero</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># cycles back to zero</span>
 </pre></div>
 </div>
 </div>
@@ -3693,8 +3586,7 @@ array([255,   0,   0], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span>
 </pre></div>
 </div>
 </div>
@@ -3711,8 +3603,7 @@ array([0, 0, 0], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>  <span class="c1"># cycles forward to 255</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>  <span class="c1"># cycles forward to 255</span>
 </pre></div>
 </div>
 </div>
@@ -3720,8 +3611,7 @@ array([0, 0, 0], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">arr</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span>
 </pre></div>
 </div>
 </div>
@@ -3740,8 +3630,7 @@ array([255,   0,   0], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">]))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">]))</span>
 </pre></div>
 </div>
 </div>
@@ -3759,9 +3648,7 @@ array([5, 4, 2])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">m1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">m1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
                <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
 <span class="n">m2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
                <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
@@ -3784,8 +3671,7 @@ array([[5, 4, 2],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3799,9 +3685,9 @@ array([[2, 2, 2],
        [2, 2, 1]])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---Be-bright">
-<h3>Exercise - Be bright<a class="headerlink" href="#Exercise---Be-bright" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Be-bright">
+<h3>Exercise - Be bright<a class="headerlink" href="#Exercise---Be-bright" title="Permalink to this headline"></a></h3>
 <p>Now try writing some code which enhances scene luminosity by adding <code class="docutils literal notranslate"><span class="pre">light=125</span></code> without distortions (you may still see some pixellation due to the fact we have taken just one color channel from the original image)</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> exceed 255 value for cells - if you see dark spots in your image where before there was white (i.e. background sky), it means color cycled back to small values!</p></li>
@@ -3816,8 +3702,7 @@ array([[2, 2, 2],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">light</span><span class="o">=</span><span class="mi">125</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">light</span><span class="o">=</span><span class="mi">125</span>
 <span class="c1"># write here</span>
 <span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="mi">255</span> <span class="o">-</span> <span class="n">gimg</span><span class="p">,</span> <span class="n">light</span><span class="p">))</span>
 </pre></div>
@@ -3834,12 +3719,9 @@ array([[2, 2, 2],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">light</span><span class="o">=</span><span class="mi">125</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">light</span><span class="o">=</span><span class="mi">125</span>
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3849,10 +3731,10 @@ array([[2, 2, 2],
 <img alt="../_images/visualization_visualization-images-sol_108_0.png" src="../_images/visualization_visualization-images-sol_108_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="RGB---Get-colorful">
-<h2>RGB - Get colorful<a class="headerlink" href="#RGB---Get-colorful" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="RGB---Get-colorful">
+<h2>RGB - Get colorful<a class="headerlink" href="#RGB---Get-colorful" title="Permalink to this headline"></a></h2>
 <p>Let’s get a third dimension for representing colors. Our new third dimension will have three planes of integers, in this order:</p>
 <p>0: <strong>R</strong>ed</p>
 <p>1: <strong>G</strong>reen</p>
@@ -3861,8 +3743,7 @@ array([[2, 2, 2],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3886,8 +3767,7 @@ array([[2, 2, 2],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3904,8 +3784,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">img</span><span class="o">.</span><span class="n">shape</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 </div>
 </div>
@@ -3923,8 +3802,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3989,8 +3867,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># red</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># red</span>
 </pre></div>
 </div>
 </div>
@@ -4007,8 +3884,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># green</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># green</span>
 </pre></div>
 </div>
 </div>
@@ -4025,8 +3901,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># blue</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># blue</span>
 </pre></div>
 </div>
 </div>
@@ -4043,8 +3918,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>   <span class="c1"># result is an array with three RGB colors</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>   <span class="c1"># result is an array with three RGB colors</span>
 </pre></div>
 </div>
 </div>
@@ -4057,15 +3931,14 @@ numpy.ndarray
 array([209, 223, 236], dtype=uint8)
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---Focus---top-left">
-<h2>Exercise - Focus - top left<a class="headerlink" href="#Exercise---Focus---top-left" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Focus---top-left">
+<h2>Exercise - Focus - top left<a class="headerlink" href="#Exercise---Focus---top-left" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[:</span><span class="mi">100</span><span class="p">,:</span><span class="mi">100</span><span class="p">,:])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[:</span><span class="mi">100</span><span class="p">,:</span><span class="mi">100</span><span class="p">,:])</span>
 </pre></div>
 </div>
 </div>
@@ -4085,17 +3958,16 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_121_1.png" src="../_images/visualization_visualization-images-sol_121_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Focus---bottom---left">
-<h2>Exercise - Focus - bottom - left<a class="headerlink" href="#Exercise---Focus---bottom---left" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Focus---bottom---left">
+<h2>Exercise - Focus - bottom - left<a class="headerlink" href="#Exercise---Focus---bottom---left" title="Permalink to this headline"></a></h2>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[</span><span class="o">-</span><span class="mi">100</span><span class="p">:,:</span><span class="mi">100</span><span class="p">,:])</span>
 </pre></div>
 </div>
@@ -4120,11 +3992,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4143,17 +4012,16 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_126_1.png" src="../_images/visualization_visualization-images-sol_126_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Focus---bottom---right">
-<h2>Exercise - Focus - bottom - right<a class="headerlink" href="#Exercise---Focus---bottom---right" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Focus---bottom---right">
+<h2>Exercise - Focus - bottom - right<a class="headerlink" href="#Exercise---Focus---bottom---right" title="Permalink to this headline"></a></h2>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[</span><span class="o">-</span><span class="mi">100</span><span class="p">:,</span><span class="o">-</span><span class="mi">100</span><span class="p">:,:])</span>
 </pre></div>
 </div>
@@ -4178,11 +4046,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4201,17 +4066,16 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_131_1.png" src="../_images/visualization_visualization-images-sol_131_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Focus---top---right">
-<h2>Exercise - Focus - top - right<a class="headerlink" href="#Exercise---Focus---top---right" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Focus---top---right">
+<h2>Exercise - Focus - top - right<a class="headerlink" href="#Exercise---Focus---top---right" title="Permalink to this headline"></a></h2>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[:</span><span class="mi">100</span><span class="p">,</span><span class="o">-</span><span class="mi">100</span><span class="p">:,:])</span>
 </pre></div>
 </div>
@@ -4236,11 +4100,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4259,17 +4120,16 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_136_1.png" src="../_images/visualization_visualization-images-sol_136_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Look-the-other-way">
-<h2>Exercise - Look the other way<a class="headerlink" href="#Exercise---Look-the-other-way" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Look-the-other-way">
+<h2>Exercise - Look the other way<a class="headerlink" href="#Exercise---Look-the-other-way" title="Permalink to this headline"></a></h2>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fliplr</span><span class="p">(</span><span class="n">img</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -4294,11 +4154,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4317,17 +4174,16 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_141_1.png" src="../_images/visualization_visualization-images-sol_141_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Upside-down-world">
-<h2>Exercise - Upside down world<a class="headerlink" href="#Exercise---Upside-down-world" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Upside-down-world">
+<h2>Exercise - Upside down world<a class="headerlink" href="#Exercise---Upside-down-world" title="Permalink to this headline"></a></h2>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">fliplr</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">flipud</span><span class="p">(</span><span class="n">img</span><span class="p">)))</span>
 </pre></div>
 </div>
@@ -4352,11 +4208,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4375,17 +4228,16 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_146_1.png" src="../_images/visualization_visualization-images-sol_146_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Shrinking-Walls---X">
-<h2>Exercise - Shrinking Walls - X<a class="headerlink" href="#Exercise---Shrinking-Walls---X" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Shrinking-Walls---X">
+<h2>Exercise - Shrinking Walls - X<a class="headerlink" href="#Exercise---Shrinking-Walls---X" title="Permalink to this headline"></a></h2>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[:,::</span><span class="mi">2</span><span class="p">,:])</span>
 </pre></div>
 </div>
@@ -4410,11 +4262,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4433,17 +4282,16 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_151_1.png" src="../_images/visualization_visualization-images-sol_151_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Shrinking-Walls---Y">
-<h2>Exercise - Shrinking Walls - Y<a class="headerlink" href="#Exercise---Shrinking-Walls---Y" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Shrinking-Walls---Y">
+<h2>Exercise - Shrinking Walls - Y<a class="headerlink" href="#Exercise---Shrinking-Walls---Y" title="Permalink to this headline"></a></h2>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[::</span><span class="mi">2</span><span class="p">,:,:])</span>
 </pre></div>
 </div>
@@ -4468,11 +4316,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4491,17 +4336,16 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_156_1.png" src="../_images/visualization_visualization-images-sol_156_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Shrinking-World">
-<h2>Exercise - Shrinking World<a class="headerlink" href="#Exercise---Shrinking-World" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Shrinking-World">
+<h2>Exercise - Shrinking World<a class="headerlink" href="#Exercise---Shrinking-World" title="Permalink to this headline"></a></h2>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[::</span><span class="mi">2</span><span class="p">,::</span><span class="mi">2</span><span class="p">,:])</span>
 </pre></div>
 </div>
@@ -4526,11 +4370,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4549,17 +4390,16 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_161_1.png" src="../_images/visualization_visualization-images-sol_161_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Pixellate">
-<h2>Exercise - Pixellate<a class="headerlink" href="#Exercise---Pixellate" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Pixellate">
+<h2>Exercise - Pixellate<a class="headerlink" href="#Exercise---Pixellate" title="Permalink to this headline"></a></h2>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[::</span><span class="mi">15</span><span class="p">,::</span><span class="mi">15</span><span class="p">,:])</span>
 </pre></div>
 </div>
@@ -4584,11 +4424,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4607,9 +4444,9 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_166_1.png" src="../_images/visualization_visualization-images-sol_166_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Feeling-Red">
-<h2>Exercise - Feeling Red<a class="headerlink" href="#Exercise---Feeling-Red" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Feeling-Red">
+<h2>Exercise - Feeling Red<a class="headerlink" href="#Exercise---Feeling-Red" title="Permalink to this headline"></a></h2>
 <p>Create a NEW image where you only see red</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4617,8 +4454,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">mimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -4646,11 +4482,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4669,9 +4502,9 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_171_1.png" src="../_images/visualization_visualization-images-sol_171_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Feeling-Green">
-<h2>Exercise - Feeling Green<a class="headerlink" href="#Exercise---Feeling-Green" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Feeling-Green">
+<h2>Exercise - Feeling Green<a class="headerlink" href="#Exercise---Feeling-Green" title="Permalink to this headline"></a></h2>
 <p>Create a NEW image where you only see green</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4679,8 +4512,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">mimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -4708,11 +4540,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4731,9 +4560,9 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_176_1.png" src="../_images/visualization_visualization-images-sol_176_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Feeling-Blue">
-<h2>Exercise - Feeling Blue<a class="headerlink" href="#Exercise---Feeling-Blue" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Feeling-Blue">
+<h2>Exercise - Feeling Blue<a class="headerlink" href="#Exercise---Feeling-Blue" title="Permalink to this headline"></a></h2>
 <p>Create a NEW image where you only see blue</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4741,8 +4570,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">mimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -4770,11 +4598,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4793,9 +4618,9 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_181_1.png" src="../_images/visualization_visualization-images-sol_181_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---No-Red">
-<h2>Exercise - No Red<a class="headerlink" href="#Exercise---No-Red" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---No-Red">
+<h2>Exercise - No Red<a class="headerlink" href="#Exercise---No-Red" title="Permalink to this headline"></a></h2>
 <p>Create a NEW image without red</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4803,8 +4628,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">mimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mimg</span><span class="p">)</span>
@@ -4831,11 +4655,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4854,9 +4675,9 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_186_1.png" src="../_images/visualization_visualization-images-sol_186_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---No-Green">
-<h2>Exercise - No Green<a class="headerlink" href="#Exercise---No-Green" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---No-Green">
+<h2>Exercise - No Green<a class="headerlink" href="#Exercise---No-Green" title="Permalink to this headline"></a></h2>
 <p>Create a NEW image without green</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4864,8 +4685,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">mimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mimg</span><span class="p">)</span>
@@ -4892,11 +4712,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4915,9 +4732,9 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_191_1.png" src="../_images/visualization_visualization-images-sol_191_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---No-Blue">
-<h2>Exercise - No Blue<a class="headerlink" href="#Exercise---No-Blue" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---No-Blue">
+<h2>Exercise - No Blue<a class="headerlink" href="#Exercise---No-Blue" title="Permalink to this headline"></a></h2>
 <p>Create a NEW image without blue</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4925,8 +4742,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">mimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">mimg</span><span class="p">)</span>
@@ -4953,11 +4769,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4976,9 +4789,9 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_196_1.png" src="../_images/visualization_visualization-images-sol_196_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Feeling-Gray-again">
-<h2>Exercise - Feeling Gray again<a class="headerlink" href="#Exercise---Feeling-Gray-again" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Feeling-Gray-again">
+<h2>Exercise - Feeling Gray again<a class="headerlink" href="#Exercise---Feeling-Gray-again" title="Permalink to this headline"></a></h2>
 <p>Given an RGB image, set all the values equal to red channel</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4986,8 +4799,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">mimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">mimg</span><span class="p">[:,:,</span><span class="mi">0</span><span class="p">]</span>
@@ -5063,11 +4875,8 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -5133,16 +4942,15 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_201_1.png" src="../_images/visualization_visualization-images-sol_201_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Beyond-the-limit">
-<h2>Exercise - Beyond the limit<a class="headerlink" href="#Exercise---Beyond-the-limit" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Beyond-the-limit">
+<h2>Exercise - Beyond the limit<a class="headerlink" href="#Exercise---Beyond-the-limit" title="Permalink to this headline"></a></h2>
 <p>… weird things happen:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5166,8 +4974,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">255</span>  <span class="c1"># limit !!</span>
 <span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
@@ -5186,8 +4993,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>   <span class="c1"># integer overflow, cycles back - note it does not happen in regular Python !</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>   <span class="c1"># integer overflow, cycles back - note it does not happen in regular Python !</span>
 </pre></div>
 </div>
 </div>
@@ -5195,8 +5001,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -5215,8 +5020,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>     <span class="c1"># limit !!</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>     <span class="c1"># limit !!</span>
 <span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>    <span class="c1"># integer overflow , cycles forward</span>
 <span class="n">mimg</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
@@ -5235,8 +5039,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span> <span class="o">+</span> <span class="n">img</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span> <span class="o">+</span> <span class="n">img</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5260,8 +5063,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>  <span class="c1"># + operator didn&#39;t change original image</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>  <span class="c1"># + operator didn&#39;t change original image</span>
 </pre></div>
 </div>
 </div>
@@ -5281,9 +5083,9 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_210_1.png" src="../_images/visualization_visualization-images-sol_210_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Gimme-light">
-<h2>Exercise - Gimme light<a class="headerlink" href="#Exercise---Gimme-light" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Gimme-light">
+<h2>Exercise - Gimme light<a class="headerlink" href="#Exercise---Gimme-light" title="Permalink to this headline"></a></h2>
 <p>Increment all the RGB values of <code class="docutils literal notranslate"><span class="pre">light</span></code>, <strong>without overflowing</strong></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -5291,8 +5093,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">light</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">light</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="mi">255</span> <span class="o">-</span> <span class="n">img</span><span class="p">,</span> <span class="n">light</span><span class="p">))</span>
@@ -5319,13 +5120,10 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">light</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">light</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -5344,9 +5142,9 @@ array([209, 223, 236], dtype=uint8)
 <img alt="../_images/visualization_visualization-images-sol_215_1.png" src="../_images/visualization_visualization-images-sol_215_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---When-the-darkness-comes---with-a-warning">
-<h2>Exercise - When the darkness comes - with a warning<a class="headerlink" href="#Exercise---When-the-darkness-comes---with-a-warning" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---When-the-darkness-comes---with-a-warning">
+<h2>Exercise - When the darkness comes - with a warning<a class="headerlink" href="#Exercise---When-the-darkness-comes---with-a-warning" title="Permalink to this headline"></a></h2>
 <p>Decrement all values by <code class="docutils literal notranslate"><span class="pre">light</span></code>. As a first attempt, a result with a warning might be considered acceptable.</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -5354,8 +5152,7 @@ array([209, 223, 236], dtype=uint8)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">light</span> <span class="o">=</span> <span class="o">-</span><span class="mi">50</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">light</span> <span class="o">=</span> <span class="o">-</span><span class="mi">50</span>
 <span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="mi">255</span> <span class="o">-</span> <span class="n">img</span><span class="p">,</span> <span class="n">light</span><span class="p">))</span>
 </pre></div>
@@ -5389,12 +5186,9 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">light</span> <span class="o">=</span> <span class="o">-</span><span class="mi">50</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">light</span> <span class="o">=</span> <span class="o">-</span><span class="mi">50</span>
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -5421,9 +5215,9 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <img alt="../_images/visualization_visualization-images-sol_220_2.png" src="../_images/visualization_visualization-images-sol_220_2.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---When-the-darkness-comes---without-a-warning">
-<h2>Exercise - When the darkness comes - without a warning<a class="headerlink" href="#Exercise---When-the-darkness-comes---without-a-warning" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---When-the-darkness-comes---without-a-warning">
+<h2>Exercise - When the darkness comes - without a warning<a class="headerlink" href="#Exercise---When-the-darkness-comes---without-a-warning" title="Permalink to this headline"></a></h2>
 <p>Decrement all RGB values by <code class="docutils literal notranslate"><span class="pre">light</span></code>, <strong>without overflowing nor warnings</strong></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -5431,8 +5225,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">light</span><span class="o">=</span><span class="mi">50</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">light</span><span class="o">=</span><span class="mi">50</span>
 <span class="c1"># write here</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">light</span><span class="p">))</span>
 </pre></div>
@@ -5458,12 +5251,9 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">light</span><span class="o">=</span><span class="mi">50</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">light</span><span class="o">=</span><span class="mi">50</span>
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -5482,9 +5272,9 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <img alt="../_images/visualization_visualization-images-sol_225_1.png" src="../_images/visualization_visualization-images-sol_225_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Fade-to-black">
-<h2>Exercise - Fade to black<a class="headerlink" href="#Exercise---Fade-to-black" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---Fade-to-black">
+<h2>Exercise - Fade to black<a class="headerlink" href="#Exercise---Fade-to-black" title="Permalink to this headline"></a></h2>
 <p>Fade the gray picture to black from left to right. Try using <code class="docutils literal notranslate"><span class="pre">np.linspace</span></code> and <code class="docutils literal notranslate"><span class="pre">np.tile</span></code></p>
 <p>First create the <code class="docutils literal notranslate"><span class="pre">horiz_fade</span></code>:</p>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -5493,8 +5283,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">ls</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">gimg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">horiz_fade</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">tile</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="p">(</span><span class="n">gimg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">1</span><span class="p">))</span>
 </pre></div>
@@ -5504,19 +5293,15 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">horiz_fade</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">horiz_fade</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5534,8 +5319,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">gimg</span><span class="p">,</span> <span class="n">horiz_fade</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -5551,11 +5335,8 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -5565,9 +5346,9 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <img alt="../_images/visualization_visualization-images-sol_237_0.png" src="../_images/visualization_visualization-images-sol_237_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---vertical-fade">
-<h2>Exercise - vertical fade<a class="headerlink" href="#Exercise---vertical-fade" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---vertical-fade">
+<h2>Exercise - vertical fade<a class="headerlink" href="#Exercise---vertical-fade" title="Permalink to this headline"></a></h2>
 <p>(harder) First create a <code class="docutils literal notranslate"><span class="pre">vertical_fade</span></code>:</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -5575,8 +5356,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="n">ls</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="n">gimg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">vertical_fade</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">ls</span><span class="p">,</span> <span class="n">gimg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">gimg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">gimg</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
@@ -5587,19 +5367,15 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[92]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">gs</span><span class="p">(</span><span class="n">vertical_fade</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gs</span><span class="p">(</span><span class="n">vertical_fade</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5617,8 +5393,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[93]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="n">gs</span><span class="p">(</span><span class="n">gimg</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">gimg</span><span class="p">,</span> <span class="n">vertical_fade</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -5634,11 +5409,8 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[93]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -5648,55 +5420,38 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 <img alt="../_images/visualization_visualization-images-sol_248_0.png" src="../_images/visualization_visualization-images-sol_248_0.png" />
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../pandas/pandas1-sol.html" class="btn btn-neutral float-right" title="Analytics with Pandas : 1. introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="visualization2-chal.html" class="btn btn-neutral float-left" title="The AlgoRythm Opera Challenge" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../pandas/pandas1-sol.html" class="btn btn-neutral float-right" title="Analytics with Pandas : 1. introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

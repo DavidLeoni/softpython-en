@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Analytics with Pandas : 1. introduction &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/pandas/pandas1-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Analytics with Pandas - 2. EURES case study" href="pandas2-sol.html" />
     <link rel="prev" title="Visualization - Numpy images" href="../visualization/visualization-images-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2405,27 +2345,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2526,7 +2480,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2592,6 +2546,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2601,7 +2556,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2661,10 +2616,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Analytics-with-Pandas-:-1.-introduction">
-<h1>Analytics with Pandas : 1. introduction<a class="headerlink" href="#Analytics-with-Pandas-:-1.-introduction" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/pandas.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Analytics-with-Pandas-:-1.-introduction">
+<h1>Analytics with Pandas : 1. introduction<a class="headerlink" href="#Analytics-with-Pandas-:-1.-introduction" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/pandas.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/pandas">Browse files online</a></p>
 <p>Python gives powerful tools for data analysis - among the main ones we find <a class="reference external" href="https://pandas.pydata.org/">Pandas</a>, which gives fast and flexible data structures, especially for interactive data analysis.</p>
 <p>Pandas reuses existing libraries we’ve already seen, such as Numpy:</p>
@@ -2676,9 +2631,9 @@ div.rendered_html tbody tr:hover {
 <li><p>Examples with AstroPi dataset</p></li>
 <li><p>Exercises with meteotrentino dataset</p></li>
 </ul>
-</div>
-<div class="section" id="1.-What-to-do">
-<h2>1. What to do<a class="headerlink" href="#1.-What-to-do" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="1.-What-to-do">
+<h2>1. What to do<a class="headerlink" href="#1.-What-to-do" title="Permalink to this headline"></a></h2>
 <ol class="arabic simple">
 <li><p>unzip exercises in a folder, you should get something like this:</p></li>
 </ol>
@@ -2711,15 +2666,14 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-<div class="section" id="Check-installation">
-<h3>Check installation<a class="headerlink" href="#Check-installation" title="Permalink to this headline">¶</a></h3>
+<section id="Check-installation">
+<h3>Check installation<a class="headerlink" href="#Check-installation" title="Permalink to this headline"></a></h3>
 <p>First let’s see if you have already installed pandas on your system, try executing this cell with Ctrl-Enter:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
 </div>
@@ -2732,10 +2686,10 @@ div.rendered_html tbody tr:hover {
 <li><p>Without Anaconda (<code class="docutils literal notranslate"><span class="pre">--user</span></code> installs in your home):</p></li>
 </ul>
 <p><code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span> <span class="pre">pandas</span></code></p>
-</div>
-</div>
-<div class="section" id="2.-Data-analysis-of-Astro-Pi">
-<h2>2. Data analysis of Astro Pi<a class="headerlink" href="#2.-Data-analysis-of-Astro-Pi" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="2.-Data-analysis-of-Astro-Pi">
+<h2>2. Data analysis of Astro Pi<a class="headerlink" href="#2.-Data-analysis-of-Astro-Pi" title="Permalink to this headline"></a></h2>
 <p>Let’s try analyzing data recorded on a RaspberryPi present on the International Space Station, downloaded from here:</p>
 <p><a class="reference external" href="https://projects.raspberrypi.org/en/projects/astro-pi-flight-data-analysis">https://projects.raspberrypi.org/en/projects/astro-pi-flight-data-analysis</a></p>
 <p>in which it is possible to find the detailed description of data gathered by sensors, in the month of February 2016 (one record each 10 seconds).</p>
@@ -2746,8 +2700,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>   <span class="c1"># we import pandas and for ease we rename it to &#39;pd&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>   <span class="c1"># we import pandas and for ease we rename it to &#39;pd&#39;</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>    <span class="c1"># we import numpy and for ease we rename it to &#39;np&#39;</span>
 
 <span class="c1"># remember the encoding !</span>
@@ -2796,8 +2749,7 @@ memory usage: 16.9+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 </div>
 </div>
@@ -2822,8 +2774,7 @@ memory usage: 16.9+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3058,8 +3009,7 @@ memory usage: 16.9+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3085,8 +3035,7 @@ Name: humidity, dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">humidity</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">humidity</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3116,8 +3065,7 @@ Name: humidity, dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3291,8 +3239,7 @@ Name: humidity, dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3466,8 +3413,7 @@ Name: humidity, dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 </div>
 </div>
@@ -3488,8 +3434,7 @@ Index([&#39;ROW_ID&#39;, &#39;temp_cpu&#39;, &#39;temp_h&#39;, &#39;temp_p&#39;,
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3507,8 +3452,7 @@ pandas.core.indexes.base.Index
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -3525,8 +3469,7 @@ pandas.core.indexes.base.Index
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -3544,8 +3487,7 @@ pandas.core.indexes.base.Index
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -4016,8 +3958,8 @@ pandas.core.indexes.base.Index
 </table>
 </div></div>
 </div>
-<div class="section" id="2.1-Exercise---meteo-info">
-<h3>2.1 Exercise - meteo info<a class="headerlink" href="#2.1-Exercise---meteo-info" title="Permalink to this headline">¶</a></h3>
+<section id="2.1-Exercise---meteo-info">
+<h3>2.1 Exercise - meteo info<a class="headerlink" href="#2.1-Exercise---meteo-info" title="Permalink to this headline"></a></h3>
 <p>✪ a) Create a new dataframe called <code class="docutils literal notranslate"><span class="pre">meteo</span></code> by importing the data from file <a class="reference external" href="meteo.csv">meteo.csv</a>, which contains the meteo data of Trento from November 2017 (source: <a class="reference external" href="https://www.meteotrentino.it">https://www.meteotrentino.it</a>). <strong>IMPORTANT</strong>: assign the dataframe to a variable called <code class="docutils literal notranslate"><span class="pre">meteo</span></code> (so we avoid confusion whith AstroPi dataframe)</p>
 <ol class="loweralpha simple" start="2">
 <li><p>Visualize info about this dataframe</p></li>
@@ -4028,8 +3970,7 @@ pandas.core.indexes.base.Index
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here - create dataframe</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here - create dataframe</span>
 
 <span class="n">meteo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;meteo.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;COLUMNS:&quot;</span><span class="p">)</span>
@@ -4042,8 +3983,7 @@ pandas.core.indexes.base.Index
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;HEAD():&quot;</span><span class="p">)</span>
 
 <span class="n">meteo</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4145,11 +4085,8 @@ HEAD():
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here - create dataframe</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here - create dataframe</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4247,20 +4184,19 @@ HEAD():
 </table>
 </div></div>
 </div>
-</div>
-</div>
-<div class="section" id="3.-MatPlotLib-review">
-<h2>3. MatPlotLib review<a class="headerlink" href="#3.-MatPlotLib-review" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="3.-MatPlotLib-review">
+<h2>3. MatPlotLib review<a class="headerlink" href="#3.-MatPlotLib-review" title="Permalink to this headline"></a></h2>
 <p>We’ve already seen MatplotLib in the part on <a class="reference external" href="https://en.softpython.org/visualization/visualization1-sol.html">visualization</a>, and today we use <a class="reference external" href="http://matplotlib.org">Matplotlib</a> to display data.</p>
-<div class="section" id="3.1-An-example">
-<h3>3.1 An example<a class="headerlink" href="#3.1-An-example" title="Permalink to this headline">¶</a></h3>
+<section id="3.1-An-example">
+<h3>3.1 An example<a class="headerlink" href="#3.1-An-example" title="Permalink to this headline"></a></h3>
 <p>Let’s take again an example, with the <em>Matlab approach</em>. We will plot a line passing two lists of coordinates, one for xs and one for ys:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
@@ -4270,15 +4206,12 @@ HEAD():
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
 <span class="n">ys</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">ys</span><span class="p">)</span> <span class="c1"># we can directly pass xs and ys lists</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Some number&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4293,8 +4226,7 @@ HEAD():
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">xs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="mf">5.</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
 <span class="c1">#  &#39;**&#39; is the power operator in  Python, NOT &#39;^&#39;</span>
 <span class="n">ys</span> <span class="o">=</span> <span class="n">xs</span><span class="o">**</span><span class="mi">2</span>
@@ -4306,8 +4238,7 @@ HEAD():
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4324,8 +4255,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">ys</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">ys</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4344,8 +4274,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;The parabola&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;The parabola&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span><span class="n">ys</span><span class="p">);</span>
 </pre></div>
 </div>
@@ -4363,8 +4292,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;The parabola&#39;</span><span class="p">)</span>
 
@@ -4380,17 +4308,16 @@ numpy.ndarray
 <img alt="../_images/pandas_pandas1-sol_48_0.png" src="../_images/pandas_pandas1-sol_48_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="3.2-Matplotlib-plots-from-pandas-datastructures">
-<h3>3.2 Matplotlib plots from pandas datastructures<a class="headerlink" href="#3.2-Matplotlib-plots-from-pandas-datastructures" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="3.2-Matplotlib-plots-from-pandas-datastructures">
+<h3>3.2 Matplotlib plots from pandas datastructures<a class="headerlink" href="#3.2-Matplotlib-plots-from-pandas-datastructures" title="Permalink to this headline"></a></h3>
 <p>We can get plots directly from pandas data structures, always using the <em>matlab style</em>. Let’s make a simple example, for more complex cases we refer to <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html">DataFrame.plot documentation</a>.</p>
 <p>In case of big quantity of data, it may be useful to have a qualitative idea of data by putting them in a plot:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">humidity</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Humidity&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">humidity</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Humidity&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="c1"># with secondary_y=True we display number on y axis</span>
 <span class="c1"># of graph on the right</span>
 <span class="n">df</span><span class="o">.</span><span class="n">pressure</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">secondary_y</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Pressure&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
@@ -4409,8 +4336,7 @@ numpy.ndarray
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;pressure&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;pressure&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -4430,21 +4356,20 @@ numpy.ndarray
 <img alt="../_images/pandas_pandas1-sol_52_1.png" src="../_images/pandas_pandas1-sol_52_1.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="4.-Operations-on-rows">
-<h2>4. Operations on rows<a class="headerlink" href="#4.-Operations-on-rows" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="4.-Operations-on-rows">
+<h2>4. Operations on rows<a class="headerlink" href="#4.-Operations-on-rows" title="Permalink to this headline"></a></h2>
 <p>If we consider the rows of a dataset, typically we will want to index, filter and order them.</p>
-<div class="section" id="4.1-Indexing-integers">
-<h3>4.1 Indexing integers<a class="headerlink" href="#4.1-Indexing-integers" title="Permalink to this headline">¶</a></h3>
+<section id="4.1-Indexing-integers">
+<h3>4.1 Indexing integers<a class="headerlink" href="#4.1-Indexing-integers" title="Permalink to this headline"></a></h3>
 <p>We report here the simplest indexing with row numbers.</p>
 <p>To obtain the i-th series you can use the method <code class="docutils literal notranslate"><span class="pre">iloc[i]</span></code> (here we reuse AstroPi dataset) :</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4483,8 +4408,7 @@ Name: 6, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4589,8 +4513,7 @@ Name: 6, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df2</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">12500</span><span class="p">:</span><span class="mi">15000</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df2</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">12500</span><span class="p">:</span><span class="mi">15000</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4598,8 +4521,7 @@ Name: 6, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;pressure&#39;</span><span class="p">],</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;pressure&#39;</span><span class="p">],</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -4623,8 +4545,7 @@ Name: 6, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df2</span><span class="o">.</span><span class="n">humidity</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Humidity&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">humidity</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Humidity&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">df2</span><span class="o">.</span><span class="n">pressure</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">secondary_y</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Pressure&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -4645,16 +4566,15 @@ Name: 6, dtype: object
 <img alt="../_images/pandas_pandas1-sol_62_1.png" src="../_images/pandas_pandas1-sol_62_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="4.2-Filtering">
-<h3>4.2 Filtering<a class="headerlink" href="#4.2-Filtering" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="4.2-Filtering">
+<h3>4.2 Filtering<a class="headerlink" href="#4.2-Filtering" title="Permalink to this headline"></a></h3>
 <p>It’s possible to filter data by according to a condition data should satisfy, which can be expressed by indicating a column and a comparison operator. For example:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span>
 </pre></div>
 </div>
 </div>
@@ -4683,8 +4603,7 @@ Name: ROW_ID, Length: 110869, dtype: bool
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4702,8 +4621,7 @@ pandas.core.series.Series
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span>
 </pre></div>
 </div>
 </div>
@@ -4727,16 +4645,15 @@ pandas.core.series.Series
 Name: ROW_ID, Length: 110869, dtype: bool
 </pre></div></div>
 </div>
-<div class="section" id="Combining-filters">
-<h4>Combining filters<a class="headerlink" href="#Combining-filters" title="Permalink to this headline">¶</a></h4>
+<section id="Combining-filters">
+<h4>Combining filters<a class="headerlink" href="#Combining-filters" title="Permalink to this headline"></a></h4>
 <p>It’s possible to combine conditions like we already did in <a class="reference external" href="https://en.softpython.org/matrices-numpy/matrices-numpy1-sol.html#Filtering">Numpy filtering</a>: for example by using the special operator conjunction <code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p>
 <p>If we write <code class="docutils literal notranslate"><span class="pre">(df.ROW_ID</span> <span class="pre">&gt;=</span> <span class="pre">6)</span> <span class="pre">&amp;</span> <span class="pre">(df.ROW_ID</span> <span class="pre">&lt;=</span> <span class="pre">10)</span></code> we obtain a series of values <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>, if <code class="docutils literal notranslate"><span class="pre">ROW_ID</span></code> is at the same time greater or equal than 6 and less or equal of 10</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">((</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">((</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -4757,8 +4674,7 @@ pandas.core.series.Series
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span>  <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">)</span>  <span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span>  <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">ROW_ID</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">)</span>  <span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4932,8 +4848,7 @@ pandas.core.series.Series
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span>  <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">pressure</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">pressure</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>  <span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span>  <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">pressure</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">pressure</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>  <span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -5010,17 +4925,16 @@ pandas.core.series.Series
 </table>
 </div></div>
 </div>
-</div>
-</div>
-<div class="section" id="4.3-Sorting">
-<h3>4.3 Sorting<a class="headerlink" href="#4.3-Sorting" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="4.3-Sorting">
+<h3>4.3 Sorting<a class="headerlink" href="#4.3-Sorting" title="Permalink to this headline"></a></h3>
 <p>To obtain a NEW dataframe sorted according to one or more columns, we can use the <code class="docutils literal notranslate"><span class="pre">sort_values</span></code> method:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;pressure&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;pressure&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -5189,9 +5103,9 @@ pandas.core.series.Series
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="4.4-Exercise---Meteo-stats">
-<h3>4.4 Exercise - Meteo stats<a class="headerlink" href="#4.4-Exercise---Meteo-stats" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="4.4-Exercise---Meteo-stats">
+<h3>4.4 Exercise - Meteo stats<a class="headerlink" href="#4.4-Exercise---Meteo-stats" title="Permalink to this headline"></a></h3>
 <p>✪ Analyze data from Dataframe <code class="docutils literal notranslate"><span class="pre">meteo</span></code> to find:</p>
 <ul class="simple">
 <li><p>values of average pression, minimal and maximal</p></li>
@@ -5204,8 +5118,7 @@ pandas.core.series.Series
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Average pressure : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">meteo</span><span class="o">.</span><span class="n">Pressure</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Minimal pressure : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">meteo</span><span class="o">.</span><span class="n">Pressure</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Maximal pressure : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">meteo</span><span class="o">.</span><span class="n">Pressure</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
@@ -5341,11 +5254,8 @@ Average temperature : 6.410701876302988
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -5471,21 +5381,20 @@ Average temperature : 6.410701876302988
 <p>107 rows × 4 columns</p>
 </div></div>
 </div>
-</div>
-</div>
-<div class="section" id="5.-Object-values-and-strings">
-<h2>5. Object values and strings<a class="headerlink" href="#5.-Object-values-and-strings" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="5.-Object-values-and-strings">
+<h2>5. Object values and strings<a class="headerlink" href="#5.-Object-values-and-strings" title="Permalink to this headline"></a></h2>
 <p>In general, when we want to manipulate objects of a known type, say strings which have type <code class="docutils literal notranslate"><span class="pre">str</span></code>, we can write <code class="docutils literal notranslate"><span class="pre">.str</span></code> after a series and then treat the result like it were a single string, using any operator (es: slicing) or method that particular class allows us, plus others provided by pandas</p>
 <p>Text in particular can be manipulated in many ways, for more details <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/text.html">see pandas documentation</a>)</p>
-<div class="section" id="5.1-Filter-by-textual-values">
-<h3>5.1 Filter by textual values<a class="headerlink" href="#5.1-Filter-by-textual-values" title="Permalink to this headline">¶</a></h3>
+<section id="5.1-Filter-by-textual-values">
+<h3>5.1 Filter by textual values<a class="headerlink" href="#5.1-Filter-by-textual-values" title="Permalink to this headline"></a></h3>
 <p>When we want to filter by text values, we can use <code class="docutils literal notranslate"><span class="pre">.str.contains</span></code>, here for example we select all the samples in the last days of february (which have timestamp containing <code class="docutils literal notranslate"><span class="pre">2016-02-2</span></code>) :</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span>  <span class="n">df</span><span class="p">[</span><span class="s1">&#39;time_stamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;2016-02-2&#39;</span><span class="p">)</span>  <span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span>  <span class="n">df</span><span class="p">[</span><span class="s1">&#39;time_stamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;2016-02-2&#39;</span><span class="p">)</span>  <span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -5793,16 +5702,15 @@ Average temperature : 6.410701876302988
 <p>80427 rows × 20 columns</p>
 </div></div>
 </div>
-</div>
-<div class="section" id="5.2-Extracting-strings">
-<h3>5.2 Extracting strings<a class="headerlink" href="#5.2-Extracting-strings" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="5.2-Extracting-strings">
+<h3>5.2 Extracting strings<a class="headerlink" href="#5.2-Extracting-strings" title="Permalink to this headline"></a></h3>
 <p>To extract only the day from <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> column, we can use <code class="docutils literal notranslate"><span class="pre">str</span></code> and slice operator with square brackets:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time_stamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">8</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time_stamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">8</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -5826,21 +5734,20 @@ Average temperature : 6.410701876302988
 Name: time_stamp, Length: 110869, dtype: object
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="6.-Operations-on-columns">
-<h2>6. Operations on columns<a class="headerlink" href="#6.-Operations-on-columns" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="6.-Operations-on-columns">
+<h2>6. Operations on columns<a class="headerlink" href="#6.-Operations-on-columns" title="Permalink to this headline"></a></h2>
 <p>Let’s see now how to select, add and trasform columns.</p>
-<div class="section" id="6.1---Selecting-columns">
-<h3>6.1 - Selecting columns<a class="headerlink" href="#6.1---Selecting-columns" title="Permalink to this headline">¶</a></h3>
+<section id="6.1---Selecting-columns">
+<h3>6.1 - Selecting columns<a class="headerlink" href="#6.1---Selecting-columns" title="Permalink to this headline"></a></h3>
 <p>If we want a subset of columns, we can express the names in a list like this:</p>
 <p><strong>NOTE</strong>: inside the external square brackets ther is a simple list without <code class="docutils literal notranslate"><span class="pre">df</span></code>!</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span>  <span class="p">[</span><span class="s1">&#39;temp_h&#39;</span><span class="p">,</span> <span class="s1">&#39;temp_p&#39;</span><span class="p">,</span> <span class="s1">&#39;time_stamp&#39;</span><span class="p">]</span>  <span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span>  <span class="p">[</span><span class="s1">&#39;temp_h&#39;</span><span class="p">,</span> <span class="s1">&#39;temp_p&#39;</span><span class="p">,</span> <span class="s1">&#39;time_stamp&#39;</span><span class="p">]</span>  <span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -5949,8 +5856,7 @@ Name: time_stamp, Length: 110869, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -6119,16 +6025,15 @@ Name: time_stamp, Length: 110869, dtype: object
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="6.2---Adding-columns">
-<h3>6.2 - Adding columns<a class="headerlink" href="#6.2---Adding-columns" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="6.2---Adding-columns">
+<h3>6.2 - Adding columns<a class="headerlink" href="#6.2---Adding-columns" title="Permalink to this headline"></a></h3>
 <p>It’s possible to obtain new columns by calculating them from other columns in a very natural way. For example, we get new column <code class="docutils literal notranslate"><span class="pre">mag_tot</span></code>, that is the absolute magnetic field taken from space station by <code class="docutils literal notranslate"><span class="pre">mag_x</span></code>, <code class="docutils literal notranslate"><span class="pre">mag_y</span></code>, e <code class="docutils literal notranslate"><span class="pre">mag_z</span></code>, and then plot it:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_tot&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_x&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_y&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_z&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_tot&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_x&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_y&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;mag_z&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span>
 <span class="n">df</span><span class="o">.</span><span class="n">mag_tot</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -6154,8 +6059,7 @@ Name: time_stamp, Length: 110869, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time_stamp&#39;</span><span class="p">][(</span><span class="n">df</span><span class="o">.</span><span class="n">mag_tot</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">mag_tot</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span><span class="p">())]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;time_stamp&#39;</span><span class="p">][(</span><span class="n">df</span><span class="o">.</span><span class="n">mag_tot</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">mag_tot</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">max</span><span class="p">())]</span>
 </pre></div>
 </div>
 </div>
@@ -6170,15 +6074,14 @@ Name: time_stamp, dtype: object
 </pre></div></div>
 </div>
 <p>By filling in the value found on the website <a class="reference external" href="http://www.isstracker.com/historical">isstracker.com/historical</a>, we can find the positions where the magnetic field is at the highest.</p>
-<div class="section" id="Writing-only-in-some-rows">
-<h4>Writing only in some rows<a class="headerlink" href="#Writing-only-in-some-rows" title="Permalink to this headline">¶</a></h4>
+<section id="Writing-only-in-some-rows">
+<h4>Writing only in some rows<a class="headerlink" href="#Writing-only-in-some-rows" title="Permalink to this headline"></a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">loc</span></code> property allows to filter rows according to a property and select a column, which can be new. In this case, for rows where cpu temperature is too high, we write <code class="docutils literal notranslate"><span class="pre">True</span></code> value in the fields of the column with header<code class="docutils literal notranslate"><span class="pre">'Too</span> <span class="pre">hot'</span></code>:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">temp_cpu</span> <span class="o">&gt;</span> <span class="mf">31.68</span><span class="p">),</span><span class="s1">&#39;Too hot&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">temp_cpu</span> <span class="o">&gt;</span> <span class="mf">31.68</span><span class="p">),</span><span class="s1">&#39;Too hot&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
 </div>
@@ -6187,8 +6090,7 @@ Name: time_stamp, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -6369,16 +6271,15 @@ Name: time_stamp, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">avg_pressure</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pressure</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">avg_pressure</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pressure</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;check_p&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">pressure</span> <span class="o">&lt;=</span> <span class="n">avg_pressure</span><span class="p">,</span> <span class="s1">&#39;below&#39;</span><span class="p">,</span> <span class="s1">&#39;over&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">
-<h3>6.2.1 Exercise: Meteo temperature in Fahrenheit<a class="headerlink" href="#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">
+<h3>6.2.1 Exercise: Meteo temperature in Fahrenheit<a class="headerlink" href="#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit" title="Permalink to this headline"></a></h3>
 <p>In <code class="docutils literal notranslate"><span class="pre">meteo</span></code> dataframe, create a column <code class="docutils literal notranslate"><span class="pre">Temp</span> <span class="pre">(Fahrenheit)</span></code> with the temperature measured in Fahrenheit degrees.</p>
 <p>Formula to calculate conversion from Celsius degrees (C):</p>
 <p><span class="math notranslate nohighlight">\(Fahrenheit = \frac{9}{5}C + 32\)</span></p>
@@ -6386,11 +6287,8 @@ Name: time_stamp, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -6399,8 +6297,7 @@ Name: time_stamp, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 <span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;       **************  SOLUTION OUTPUT  **************&quot;</span><span class="p">)</span>
 <span class="n">meteo</span><span class="p">[</span><span class="s1">&#39;Temp (Fahrenheit)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">meteo</span><span class="p">[</span><span class="s1">&#39;Temp&#39;</span><span class="p">]</span><span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
@@ -6496,8 +6393,7 @@ Name: time_stamp, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -6585,9 +6481,9 @@ Name: time_stamp, dtype: object
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="6.2.2-Exercise---Pressure-vs-Temperature">
-<h3>6.2.2 Exercise - Pressure vs Temperature<a class="headerlink" href="#6.2.2-Exercise---Pressure-vs-Temperature" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="6.2.2-Exercise---Pressure-vs-Temperature">
+<h3>6.2.2 Exercise - Pressure vs Temperature<a class="headerlink" href="#6.2.2-Exercise---Pressure-vs-Temperature" title="Permalink to this headline"></a></h3>
 <p>Pressure should be directly proportional to temperature in a closed environment <a class="reference external" href="https://en.wikipedia.org/wiki/Gay-Lussac%27s_law">Gay-Lussac’s law</a>:</p>
 <p><span class="math notranslate nohighlight">\(\frac{P}{T} = k\)</span></p>
 <p>Does this holds true for <code class="docutils literal notranslate"><span class="pre">meteo</span></code> dataset? Try to find out by direct calculation of the formula and compare with <code class="docutils literal notranslate"><span class="pre">corr()</span></code> method results.</p>
@@ -6597,8 +6493,7 @@ Name: time_stamp, dtype: object
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 
 
 <span class="c1"># as expected, in an open environment there is not much linear correlation</span>
@@ -6643,22 +6538,20 @@ Length: 2878, dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="6.3-Transforming-columns">
-<h3>6.3 Transforming columns<a class="headerlink" href="#6.3-Transforming-columns" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="6.3-Transforming-columns">
+<h3>6.3 Transforming columns<a class="headerlink" href="#6.3-Transforming-columns" title="Permalink to this headline"></a></h3>
 <p>Suppose we want to convert all values of column temperature which are floats to integers.</p>
 <p>We know that to convert a float to an integer there the predefined python function <code class="docutils literal notranslate"><span class="pre">int</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">int</span><span class="p">(</span><span class="mf">23.7</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="mf">23.7</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -6678,8 +6571,7 @@ Length: 2878, dtype: float64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -6709,8 +6601,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">myf</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">myf</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">myf</span><span class="p">)</span>
@@ -6742,8 +6633,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -6772,8 +6662,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -6819,8 +6708,7 @@ memory usage: 19.5+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity_int&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity_int&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -6829,8 +6717,7 @@ memory usage: 19.5+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -6872,10 +6759,10 @@ dtypes: float64(18), int64(3), object(3)
 memory usage: 20.3+ MB
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="7.-Grouping">
-<h2>7. Grouping<a class="headerlink" href="#7.-Grouping" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="7.-Grouping">
+<h2>7. Grouping<a class="headerlink" href="#7.-Grouping" title="Permalink to this headline"></a></h2>
 <p><strong>Reference</strong>:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/03.08-aggregation-and-grouping.html">PythonDataScienceHandbook: Aggregation and Grouping</a></p></li>
@@ -6886,8 +6773,7 @@ memory usage: 20.3+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;humidity_int&#39;</span><span class="p">])[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;humidity_int&#39;</span><span class="p">])[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -6925,8 +6811,7 @@ Name: humidity, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;humidity_int&#39;</span><span class="p">])[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;humidity_int&#39;</span><span class="p">])[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -6955,8 +6840,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Humidity counts&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;humidity_int&#39;</span><span class="p">])[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Humidity counts&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;humidity_int&#39;</span><span class="p">])[</span><span class="s1">&#39;humidity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s1">&#39;count&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -6964,8 +6848,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
 </pre></div>
 </div>
 </div>
@@ -7285,25 +7168,22 @@ Name: humidity, Length: 110869, dtype: int64
 <p>110869 rows × 25 columns</p>
 </div></div>
 </div>
-</div>
-<div class="section" id="8.-Exercise---meteo-average-temperatures">
-<h2>8. Exercise - meteo average temperatures<a class="headerlink" href="#8.-Exercise---meteo-average-temperatures" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="8.1-meteo-plot">
-<h3>8.1 meteo plot<a class="headerlink" href="#8.1-meteo-plot" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="8.-Exercise---meteo-average-temperatures">
+<h2>8. Exercise - meteo average temperatures<a class="headerlink" href="#8.-Exercise---meteo-average-temperatures" title="Permalink to this headline"></a></h2>
+<section id="8.1-meteo-plot">
+<h3>8.1 meteo plot<a class="headerlink" href="#8.1-meteo-plot" title="Permalink to this headline"></a></h3>
 <p>✪ Put in a plot the temperature from dataframe <em>meteo:</em></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -7312,8 +7192,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
@@ -7342,8 +7221,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -7363,18 +7241,16 @@ Name: humidity, Length: 110869, dtype: int64
 <img alt="../_images/pandas_pandas1-sol_140_1.png" src="../_images/pandas_pandas1-sol_140_1.png" />
 </div>
 </div>
-</div>
-<div class="section" id="8.2-meteo-pressure-and-raining">
-<h3>8.2 meteo pressure and raining<a class="headerlink" href="#8.2-meteo-pressure-and-raining" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="8.2-meteo-pressure-and-raining">
+<h3>8.2 meteo pressure and raining<a class="headerlink" href="#8.2-meteo-pressure-and-raining" title="Permalink to this headline"></a></h3>
 <p>✪ In the same plot as above show the pressure and amount of raining.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/></pre></div>
 </div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -7383,8 +7259,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 
 <span class="n">meteo</span><span class="o">.</span><span class="n">Temp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Temperature&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">meteo</span><span class="o">.</span><span class="n">Rain</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Rain&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -7403,8 +7278,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -7415,9 +7289,9 @@ Name: humidity, Length: 110869, dtype: int64
 <img alt="../_images/pandas_pandas1-sol_146_0.png" src="../_images/pandas_pandas1-sol_146_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="8.3-meteo-average-temperature">
-<h3>8.3 meteo average temperature<a class="headerlink" href="#8.3-meteo-average-temperature" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="8.3-meteo-average-temperature">
+<h3>8.3 meteo average temperature<a class="headerlink" href="#8.3-meteo-average-temperature" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ Calculate the average temperature for each day, and show it in the plot, so to have a couple new columns like these:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    Day       Avg_day_temp
 01/11/2017      7.983333
@@ -7442,10 +7316,8 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/></pre></div>
 </div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -7454,8 +7326,7 @@ Name: humidity, Length: 110869, dtype: int64
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 <span class="n">meteo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;meteo.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 <span class="n">meteo</span><span class="p">[</span><span class="s1">&#39;Day&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">meteo</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
 
@@ -7512,8 +7383,7 @@ WITH AVERAGE TEMPERATURE
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -7556,8 +7426,7 @@ WITH AVERAGE TEMPERATURE
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 
 <span class="n">meteo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;meteo.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 <span class="n">meteo</span><span class="p">[</span><span class="s1">&#39;Day&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">meteo</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
@@ -7619,8 +7488,7 @@ WITH AVERAGE TEMPERATURE
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -7663,8 +7531,7 @@ WITH AVERAGE TEMPERATURE
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 
 <span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;****************  SOLUTION 3 - OUTPUT  -  best solution with groupby and transform &#39;</span><span class="p">)</span>
@@ -7720,8 +7587,7 @@ WITH AVERAGE TEMPERATURE
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -7758,14 +7624,14 @@ WITH AVERAGE TEMPERATURE
 <img alt="../_images/pandas_pandas1-sol_160_2.png" src="../_images/pandas_pandas1-sol_160_2.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="9-Exercise---Air-pollutants">
-<h2>9 Exercise - Air pollutants<a class="headerlink" href="#9-Exercise---Air-pollutants" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="9-Exercise---Air-pollutants">
+<h2>9 Exercise - Air pollutants<a class="headerlink" href="#9-Exercise---Air-pollutants" title="Permalink to this headline"></a></h2>
 <p>Let’s try analzying the hourly data from air quality monitoring stations from Autonomous Province of Trento.</p>
 <p>Source: <a class="reference external" href="https://dati.trentino.it/dataset/qualita-dell-aria-rilevazioni-delle-stazioni-monitoraggio">dati.trentino.it</a></p>
-<div class="section" id="9.1---load-the-file">
-<h3>9.1 - load the file<a class="headerlink" href="#9.1---load-the-file" title="Permalink to this headline">¶</a></h3>
+<section id="9.1---load-the-file">
+<h3>9.1 - load the file<a class="headerlink" href="#9.1---load-the-file" title="Permalink to this headline"></a></h3>
 <p>✪ Load the file <a class="reference external" href="aria.csv">aria.csv</a> in pandas</p>
 <p><strong>IMPORTANT</strong>: put the dataframe into the variable <code class="docutils literal notranslate"><span class="pre">aria</span></code>, so not to confuse it with the previous datasets.</p>
 <p><strong>IMPORTANT</strong>: use encoding <code class="docutils literal notranslate"><span class="pre">'latin-1'</span></code> (otherwise you might get weird load errors according to your operating system)</p>
@@ -7776,9 +7642,7 @@ WITH AVERAGE TEMPERATURE
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -7813,12 +7677,8 @@ memory usage: 970.1+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -7841,9 +7701,9 @@ dtypes: float64(1), int64(1), object(4)
 memory usage: 970.1+ KB
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="9.2---pollutants-average">
-<h3>9.2 - pollutants average<a class="headerlink" href="#9.2---pollutants-average" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="9.2---pollutants-average">
+<h3>9.2 - pollutants average<a class="headerlink" href="#9.2---pollutants-average" title="Permalink to this headline"></a></h3>
 <p>✪ find the average of <code class="docutils literal notranslate"><span class="pre">PM10</span></code> pollutants at <code class="docutils literal notranslate"><span class="pre">Parco</span> <span class="pre">S.</span> <span class="pre">Chiara</span></code> (average on all days). You should obtain the value <code class="docutils literal notranslate"><span class="pre">11.385752688172044</span></code></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -7851,8 +7711,7 @@ memory usage: 970.1+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="n">aria</span><span class="p">[(</span><span class="n">aria</span><span class="o">.</span><span class="n">Stazione</span> <span class="o">==</span> <span class="s1">&#39;Parco S. Chiara&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">aria</span><span class="o">.</span><span class="n">Inquinante</span> <span class="o">==</span> <span class="s1">&#39;PM10&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">Valore</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
@@ -7871,11 +7730,8 @@ memory usage: 970.1+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -7887,19 +7743,16 @@ memory usage: 970.1+ KB
 11.385752688172044
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="9.3---PM10-chart">
-<h3>9.3 - PM10 chart<a class="headerlink" href="#9.3---PM10-chart" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="9.3---PM10-chart">
+<h3>9.3 - PM10 chart<a class="headerlink" href="#9.3---PM10-chart" title="Permalink to this headline"></a></h3>
 <p>✪ Use <code class="docutils literal notranslate"><span class="pre">plt.plot</span></code> as seen in a <a class="reference external" href="#Matplotlib-plots-from-pandas-datastructures">previous example</a> (so by directly passing the relevant Pandas series), show in a chart the values of <code class="docutils literal notranslate"><span class="pre">PM10</span></code> during May 7h, 2019.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -7908,8 +7761,7 @@ memory usage: 970.1+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -7935,8 +7787,7 @@ memory usage: 970.1+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -7947,17 +7798,16 @@ memory usage: 970.1+ KB
 <img alt="../_images/pandas_pandas1-sol_179_0.png" src="../_images/pandas_pandas1-sol_179_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="10.-Merging-tables">
-<h2>10. Merging tables<a class="headerlink" href="#10.-Merging-tables" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="10.-Merging-tables">
+<h2>10. Merging tables<a class="headerlink" href="#10.-Merging-tables" title="Permalink to this headline"></a></h2>
 <p>Suppose we want to add a column with geographical position of the ISS. To do so, we would need to join our dataset with another one containing such information. Let’s take for example the dataset <a class="reference external" href="iss-coords.csv">iss-coords.csv</a></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">iss_coords</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;iss-coords.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iss_coords</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;iss-coords.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;UTF-8&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7965,8 +7815,7 @@ memory usage: 970.1+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">iss_coords</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iss_coords</span>
 </pre></div>
 </div>
 </div>
@@ -8075,8 +7924,7 @@ memory usage: 970.1+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -8124,8 +7972,7 @@ memory usage: 21.1+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># remember merge produces a NEW dataframe</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># remember merge produces a NEW dataframe</span>
 
 <span class="n">geo_astropi</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">iss_coords</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;time_stamp&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">)</span>
 
@@ -8139,8 +7986,7 @@ memory usage: 21.1+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">geo_astropi</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">geo_astropi</span>
 </pre></div>
 </div>
 </div>
@@ -8436,8 +8282,8 @@ memory usage: 21.1+ MB
 <p>10 rows × 27 columns</p>
 </div></div>
 </div>
-<div class="section" id="Exercise-10.1---better-merge">
-<h3>Exercise 10.1 - better merge<a class="headerlink" href="#Exercise-10.1---better-merge" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise-10.1---better-merge">
+<h3>Exercise 10.1 - better merge<a class="headerlink" href="#Exercise-10.1---better-merge" title="Permalink to this headline"></a></h3>
 <p>If you notice, above table does have <code class="docutils literal notranslate"><span class="pre">lat</span></code> and <code class="docutils literal notranslate"><span class="pre">lon</span></code> columns, but has very few rows. Why ? Try to merge the tables in some meaningful way so to have all the original rows and all cells of <code class="docutils literal notranslate"><span class="pre">lat</span></code> and <code class="docutils literal notranslate"><span class="pre">lon</span></code> filled.</p>
 <ul class="simple">
 <li><p>For other merging stategies, read about attribute <code class="docutils literal notranslate"><span class="pre">how</span></code> in <a class="reference external" href="https://towardsdatascience.com/why-and-how-to-use-merge-with-pandas-in-python-548600f7e738">Why And How To Use Merge With Pandas in Python</a></p></li>
@@ -8449,8 +8295,7 @@ memory usage: 21.1+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="n">geo_astropi</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">iss_coords</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s1">&#39;time_stamp&#39;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
 
@@ -8779,11 +8624,8 @@ memory usage: 21.1+ MB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -9102,64 +8944,47 @@ memory usage: 21.1+ MB
 <p>110871 rows × 28 columns</p>
 </div></div>
 </div>
-</div>
-</div>
-<div class="section" id="11.-GeoPandas">
-<h2>11. GeoPandas<a class="headerlink" href="#11.-GeoPandas" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="11.-GeoPandas">
+<h2>11. GeoPandas<a class="headerlink" href="#11.-GeoPandas" title="Permalink to this headline"></a></h2>
 <p>You can easily manipulate geographical data with <a class="reference external" href="https://geopandas.org/">GeoPandas</a> library. For some nice online tutorial, we refer to <a class="reference external" href="https://napo.github.io/geospatial_course_unitn/">Geospatial Analysis and Representation for Data Science</a> course website &#64; master in Data Science University of Trento, by Maurizio Napolitano (FBK)</p>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/pandas/pandas2-sol.html">more exercises</a> worksheet</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="pandas2-sol.html" class="btn btn-neutral float-right" title="Analytics with Pandas - 2. EURES case study" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../visualization/visualization-images-sol.html" class="btn btn-neutral float-left" title="Visualization - Numpy images" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pandas2-sol.html" class="btn btn-neutral float-right" title="Analytics with Pandas - 2. EURES case study" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

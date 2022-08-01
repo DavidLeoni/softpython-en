@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Data formats 2 - CSV files &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/formats/formats2-csv-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Data formats 3 - JSON" href="formats3-json-sol.html" />
     <link rel="prev" title="Data formats 1 - introduction" href="formats1-lines-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2405,27 +2345,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2526,7 +2480,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2592,6 +2546,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2601,7 +2556,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2661,10 +2616,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Data-formats-2---CSV-files">
-<h1>Data formats 2 - CSV files<a class="headerlink" href="#Data-formats-2---CSV-files" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/formats.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Data-formats-2---CSV-files">
+<h1>Data formats 2 - CSV files<a class="headerlink" href="#Data-formats-2---CSV-files" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/formats.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/formats">Browse files online</a></p>
 <p>There can be various formats for tabular data, among which you surely know Excel (<code class="docutils literal notranslate"><span class="pre">.xls</span></code> or <code class="docutils literal notranslate"><span class="pre">.xslx</span></code>). Unfortunately, if you want to programmatically process data, you should better avoid them and prefer if possible the CSV format, literally ‘Comma Separated Value’. Why? Excel format is very complex and may hide several things which have nothing to do with the raw data:</p>
 <ul class="simple">
@@ -2676,8 +2631,8 @@ div.rendered_html tbody tr:hover {
 </ul>
 <p>Correctly parsing complex files may become a nightmare. Instead, CSVs are far simpler, so much so you can even open them witha simple text editor.</p>
 <p>We will try to open some CSV, taking into consideration the possible problems we might get. CSVs are not necessarily the perfect solution for everything, but they offer more control over reading and typically if there are conversion problems is because we made a mistake, and not because the reader module decided on its own to exchange days with months in dates.</p>
-<div class="section" id="Why-parsing-a-CSV-?">
-<h3>Why parsing a CSV ?<a class="headerlink" href="#Why-parsing-a-CSV-?" title="Permalink to this headline">¶</a></h3>
+<section id="Why-parsing-a-CSV-?">
+<h3>Why parsing a CSV ?<a class="headerlink" href="#Why-parsing-a-CSV-?" title="Permalink to this headline"></a></h3>
 <p>To load and process CSVs there exist many powerful and intuitive modules such as Pandas in Python or R dataframes. Yet, in this notebook we will load CSVs using the most simple method possible, that is reading row by row, mimicking the method already seen in the previous part of the tutorial. Don’t think this method is primitive or stupid, according to the situation it may save the day. How? Some files may potentially occupy huge amounts of memory, and in moder laptops as of 2019 we only have 4
 gigabytes of RAM, the memory where Python stores variables. Given this, Python base functions to read files try their best to avoid loading everything in RAM. Tyipcally a file is read sequentially one piece at a time, putting in RAM only one row at a time.</p>
 <p><strong>QUESTION 2.1</strong>: if we want to know if a given file of 1000 terabytes contains only 3 million rows in which the word ‘ciao’ is present, are we obliged to put in RAM <em>all</em> of the rows ?</p>
@@ -2688,9 +2643,9 @@ gigabytes of RAM, the memory where Python stores variables. Given this, Python b
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: No, it is enough to keep in RAM one row at a time, which is first read from the first file and then written right away in the second file.</p>
-</div></div>
-<div class="section" id="Reading-a-CSV">
-<h3>Reading a CSV<a class="headerlink" href="#Reading-a-CSV" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Reading-a-CSV">
+<h3>Reading a CSV<a class="headerlink" href="#Reading-a-CSV" title="Permalink to this headline"></a></h3>
 <p>We will start with artifical example CSV. Let’s look at <a class="reference external" href="example-1.csv">example-1.csv</a> which you can find in the same folder as this Jupyter notebook. It contains animals with their expected lifespan:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>animal, lifespan
 dog, 12
@@ -2710,8 +2665,7 @@ eagle, 25
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 
     <span class="c1"># we create an object &#39;my_reader&#39; which will take rows from the file</span>
@@ -2787,9 +2741,7 @@ We just read a row !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">csv</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -2805,8 +2757,7 @@ We just read a row !
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We just read a row !&quot;</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>  <span class="c1"># prints variable &#39;row&#39;, which is a list of strings</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>   <span class="c1"># prints an empty string, to separate in vertical</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2838,12 +2789,8 @@ We just read a row !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <p><strong>✪✪ EXERCISE 2.4</strong>: try to put into <code class="docutils literal notranslate"><span class="pre">big_list</span></code> a list containing all the rows extracted from the file, which will be a list of lists like so:</p>
@@ -2862,9 +2809,7 @@ We just read a row !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">csv</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -2880,8 +2825,7 @@ We just read a row !
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">my_reader</span><span class="p">:</span>
         <span class="n">big_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">big_list</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2896,12 +2840,8 @@ We just read a row !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <p><strong>✪✪ EXERCISE 2.5</strong>: You may have noticed that numbers in lists are represented as strings like <code class="docutils literal notranslate"><span class="pre">'12'</span></code> (note apeces), instead that like Python integer numbers (represented without apeces), <code class="docutils literal notranslate"><span class="pre">12</span></code>:</p>
@@ -2929,9 +2869,7 @@ We just read a row !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">csv</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -2956,24 +2894,19 @@ We just read a row !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="What's-a-reader-?">
-<h3>What’s a reader ?<a class="headerlink" href="#What's-a-reader-?" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="What's-a-reader-?">
+<h3>What’s a reader ?<a class="headerlink" href="#What's-a-reader-?" title="Permalink to this headline"></a></h3>
 <p>We said that <code class="docutils literal notranslate"><span class="pre">my_reader</span></code> generates a sequence of rows, and it is <em>iterable</em>. In <code class="docutils literal notranslate"><span class="pre">for</span></code> cycle, at every cycle we ask to read a new line, which is put into variable <code class="docutils literal notranslate"><span class="pre">row</span></code>. We might then ask ourselves, what happens if we directly print <code class="docutils literal notranslate"><span class="pre">my_reader</span></code>, without any <code class="docutils literal notranslate"><span class="pre">for</span></code>? Will we see a nice list or something else? Let’s try:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">my_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">my_reader</span><span class="p">)</span>
@@ -2996,8 +2929,7 @@ We just read a row !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">csv</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -3018,11 +2950,8 @@ We just read a row !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3033,9 +2962,9 @@ We just read a row !
 [[&#39;animal&#39;, &#39; lifespan&#39;], [&#39;dog&#39;, &#39;12&#39;], [&#39;cat&#39;, &#39;14&#39;], [&#39;pelican&#39;, &#39;30&#39;], [&#39;squirrel&#39;, &#39;6&#39;], [&#39;eagle&#39;, &#39;25&#39;]]
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Consuming-a-file">
-<h3>Consuming a file<a class="headerlink" href="#Consuming-a-file" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Consuming-a-file">
+<h3>Consuming a file<a class="headerlink" href="#Consuming-a-file" title="Permalink to this headline"></a></h3>
 <p>Not all sequences are the same. From what you’ve seen so far, going through a file in Python looks a lot like iterating a list. Which is very handy, but you need to pay attention to some things. Given that files potentially might occupy terabytes, basic Python functions to load them avoid loading everything into memory and typically a file is read one piece at a time. But if the whole file is loaded into Python environment in one shot, what happens if we try to go through it twice inside the
 same <code class="docutils literal notranslate"><span class="pre">with</span></code> ? What happens if we try using it outside <code class="docutils literal notranslate"><span class="pre">with</span></code>? To find out look at next exercises.</p>
 <p><strong>✪ EXERCISE 2.7</strong>: taking the solution to previous exercise, try to call <code class="docutils literal notranslate"><span class="pre">print(list(my_reader))</span></code> twice, in sequence. Do you get the same output in both occasions?</p>
@@ -3045,17 +2974,14 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">csv</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">my_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">my_reader</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">my_reader</span><span class="p">))</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3071,12 +2997,8 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <p><strong>✪ EXERCISE 2.8</strong>: Taking the solution from previous exercise (using only one print), try down here to move the print to the left (removing any spaces). Does it still work ?</p>
@@ -3086,8 +3008,7 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">csv</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -3101,11 +3022,8 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <p><strong>✪✪ EXERCISE 2.9</strong>: Now that we understood which kind of beast <code class="docutils literal notranslate"><span class="pre">my_reader</span></code> is, try to produce this result as done before, but using a <em>list comprehension</em> instead of the <code class="docutils literal notranslate"><span class="pre">for</span></code>:</p>
@@ -3125,9 +3043,7 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">import</span> <span class="nn">csv</span>
 <span class="kn">import</span> <span class="nn">itertools</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">my_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
@@ -3149,16 +3065,12 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">import</span> <span class="nn">csv</span>
 <span class="kn">import</span> <span class="nn">itertools</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">my_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
     <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <p><strong>✪ EXERCISE 2.10</strong>: Create a file <code class="docutils literal notranslate"><span class="pre">my-example.csv</span></code> in the same folder where this Jupyter notebook is, and copy inside the content of the file <code class="docutils literal notranslate"><span class="pre">example-1.csv</span></code>. Then add a column <code class="docutils literal notranslate"><span class="pre">description</span></code>, remembering to separate the column name from the preceding one with a comma. As column values, put into successive rows strings like <code class="docutils literal notranslate"><span class="pre">dogs</span> <span class="pre">walk</span></code>, <code class="docutils literal notranslate"><span class="pre">pelicans</span> <span class="pre">fly</span></code>, etc according to the animal, remembering to separate them from lifespan using a comma, like this:</p>
@@ -3168,11 +3080,8 @@ same <code class="docutils literal notranslate"><span class="pre">with</span></c
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -3209,9 +3118,9 @@ eagle,25,eagles fly
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: yes</p>
-</div></div>
-<div class="section" id="Reading-as-dictionaries">
-<h3>Reading as dictionaries<a class="headerlink" href="#Reading-as-dictionaries" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Reading-as-dictionaries">
+<h3>Reading as dictionaries<a class="headerlink" href="#Reading-as-dictionaries" title="Permalink to this headline"></a></h3>
 <p>To read a CSV, instead of getting lists, you may more conveniently get dictionaries in the form of <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code>s</p>
 <p>See <a class="reference external" href="https://docs.python.org/3/library/csv.html#csv.DictReader">Python documentation</a></p>
 <p><strong>NOTE</strong>: different Python versions give different dictionaries:</p>
@@ -3225,8 +3134,7 @@ eagle,25,eagles fly
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">my_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>   <span class="c1"># Notice we now used DictReader</span>
     <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">my_reader</span><span class="p">:</span>
@@ -3246,10 +3154,10 @@ OrderedDict([(&#39;animal&#39;, &#39;squirrel&#39;), (&#39; lifespan&#39;, &#39;
 OrderedDict([(&#39;animal&#39;, &#39;eagle&#39;), (&#39; lifespan&#39;, &#39;25&#39;)])
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Writing-a-CSV">
-<h2>Writing a CSV<a class="headerlink" href="#Writing-a-CSV" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Writing-a-CSV">
+<h2>Writing a CSV<a class="headerlink" href="#Writing-a-CSV" title="Permalink to this headline"></a></h2>
 <p>You can easily create a CSV by instantiating a <code class="docutils literal notranslate"><span class="pre">writer</span></code> object:</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>ATTENTION: BE SURE TO WRITE IN THE CORRECT FILE!</strong></p>
@@ -3259,8 +3167,7 @@ OrderedDict([(&#39;animal&#39;, &#39;eagle&#39;), (&#39; lifespan&#39;, &#39;25&
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="c1"># To write, REMEMBER to specify the `w` option.</span>
 <span class="c1"># WARNING: &#39;w&#39; *completely* replaces existing files !!</span>
@@ -3274,9 +3181,9 @@ OrderedDict([(&#39;animal&#39;, &#39;eagle&#39;), (&#39; lifespan&#39;, &#39;25&
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Reading-and-writing-a-CSV">
-<h2>Reading and writing a CSV<a class="headerlink" href="#Reading-and-writing-a-CSV" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Reading-and-writing-a-CSV">
+<h2>Reading and writing a CSV<a class="headerlink" href="#Reading-and-writing-a-CSV" title="Permalink to this headline"></a></h2>
 <p>To create a copy of an existing CSV, you may nest a <code class="docutils literal notranslate"><span class="pre">with</span></code> for writing inside another for reading:</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>ATTENTION: CAREFUL NOT TO SWAP FILE NAMES!</strong></p>
@@ -3292,8 +3199,7 @@ OrderedDict([(&#39;animal&#39;, &#39;eagle&#39;), (&#39; lifespan&#39;, &#39;25&
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="c1"># To write, REMEMBER to specify the `w` option.</span>
 <span class="c1"># WARNING: &#39;w&#39; *completely* replaces existing files !!</span>
@@ -3319,8 +3225,7 @@ OrderedDict([(&#39;animal&#39;, &#39;eagle&#39;), (&#39; lifespan&#39;, &#39;25&
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1-enriched.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile_in</span><span class="p">:</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;example-1-enriched.csv&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile_in</span><span class="p">:</span>
     <span class="n">my_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csvfile_in</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">my_reader</span><span class="p">:</span>
@@ -3353,9 +3258,9 @@ OrderedDict([(&#39;animal&#39;, &#39;eagle&#39;), (&#39; lifespan&#39;, &#39;25&
 [&#39;eagle&#39;, &#39;25&#39;, &#39;something else&#39;]
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="CSV-Botteghe-storiche">
-<h2>CSV Botteghe storiche<a class="headerlink" href="#CSV-Botteghe-storiche" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="CSV-Botteghe-storiche">
+<h2>CSV Botteghe storiche<a class="headerlink" href="#CSV-Botteghe-storiche" title="Permalink to this headline"></a></h2>
 <p>Usually in open data catalogs like the popular CKAN platform (for example <a class="reference external" href="http://dati.trentino.it/">dati.trentino.it</a>, <a class="reference external" href="https://data.gov.uk/">data.gov.uk</a>, <a class="reference external" href="https://www.europeandataportal.eu/">European data portal</a> run instances of CKAN) files are organized in <em>datasets</em>, which are collections of <em>resources</em>: each resource directly contains a file inside the catalog (typically CSV, JSON or XML) or a link to the real file located in a server belonging to the organizazion which created
 the data.</p>
 <p>The first dataset we wil look at will be ‘Botteghe storiche del Trentino’:</p>
@@ -3379,8 +3284,8 @@ the data.</p>
 </pre></div>
 </div>
 <p>As expected, values are separated with commas.</p>
-<div class="section" id="Problem:-wrong-characters-??">
-<h3>Problem: wrong characters ??<a class="headerlink" href="#Problem:-wrong-characters-??" title="Permalink to this headline">¶</a></h3>
+<section id="Problem:-wrong-characters-??">
+<h3>Problem: wrong characters ??<a class="headerlink" href="#Problem:-wrong-characters-??" title="Permalink to this headline"></a></h3>
 <p>You can suddenly discover a problem in the first row of headers, in the column <code class="docutils literal notranslate"><span class="pre">Frazione/LocalitÃ</span></code>. It seems last character is wrong, in italian it should show accented like <code class="docutils literal notranslate"><span class="pre">à</span></code>. Is it truly a problem of the file ? Not really. Probably, the server is not telling Firefox which encoding is the correct one for the file. Firefox is not magical, and tries its best to show the CSV on the base of the info it has, which may be limited and / or even wrong. World is never like we would like it to be
 …</p>
 <p><strong>✪ 2.12 EXERCISE</strong>: download the CSV, and try opening it in Excel and / or LibreOffice Calc. Do you see a correct accented character? If not, try to set the encoding to ‘Unicode (UTF-8)’ (in Calc is called ‘Character set’).</p>
@@ -3398,9 +3303,9 @@ the data.</p>
 <p><img alt="import example in LibreOffice Calc" src="../_images/botteghe-import.png" /></p>
 <p>We should get a table like this. Notice how the <code class="docutils literal notranslate"><span class="pre">Frazione/Località</span></code> header displays with the right accent because we selected Character set: Unicode (UTF-8) which is the appropriate one for this dataset:</p>
 <p><img alt="botteghe storiche table" src="../_images/botteghe-table.png" /></p>
-</div>
-<div class="section" id="Botteghe-storiche-in-Python">
-<h3>Botteghe storiche in Python<a class="headerlink" href="#Botteghe-storiche-in-Python" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Botteghe-storiche-in-Python">
+<h3>Botteghe storiche in Python<a class="headerlink" href="#Botteghe-storiche-in-Python" title="Permalink to this headline"></a></h3>
 <p>Now that we understood a couple of things about encoding, let’s try to import the file in Python.</p>
 <p>If we load in Python the first 5 entries with a csv DictReader and print them we should see something like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">OrderedDict</span><span class="p">([(</span><span class="s1">&#39;Numero&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">),</span>
@@ -3474,9 +3379,9 @@ the data.</p>
 </ul>
 <p><strong>NOTE</strong>: the rules above do not actually extract all the categories, for the sake of the exercise we only keep the most frequent ones.</p>
 <p>To know how to proceed, read the following.</p>
-</div>
-<div class="section" id="Botteghe-storiche---rank_categories">
-<h3>Botteghe storiche - rank_categories<a class="headerlink" href="#Botteghe-storiche---rank_categories" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Botteghe-storiche---rank_categories">
+<h3>Botteghe storiche - rank_categories<a class="headerlink" href="#Botteghe-storiche---rank_categories" title="Permalink to this headline"></a></h3>
 <p>Load the file with <code class="docutils literal notranslate"><span class="pre">csv.DictReader</span></code> and while you are loading it, calculate the words as described above. Afterwards, return a list of words with their frequencies.</p>
 <p>Do <strong>not</strong> load the whole file into memory, just process one dictionary at a time and update statistics accordingly.</p>
 <p>Expected output:</p>
@@ -3502,8 +3407,7 @@ the data.</p>
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="kn">import</span> <span class="nn">csv</span>
@@ -3555,8 +3459,7 @@ the data.</p>
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">stopwords</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
@@ -3591,9 +3494,9 @@ the data.</p>
  (&#39;BAZAR&#39;, 11)]
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Botteghe-storiche---enrich">
-<h3>Botteghe storiche - enrich<a class="headerlink" href="#Botteghe-storiche---enrich" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Botteghe-storiche---enrich">
+<h3>Botteghe storiche - enrich<a class="headerlink" href="#Botteghe-storiche---enrich" title="Permalink to this headline"></a></h3>
 <p>Once you found the categories, implement function <code class="docutils literal notranslate"><span class="pre">enrich</span></code>, which takes the db and previously computed categories, and WRITES a NEW file <code class="docutils literal notranslate"><span class="pre">botteghe-enriched.csv</span></code> where the rows are enriched with a new field <code class="docutils literal notranslate"><span class="pre">Categorie</span></code>, which holds a list of the categories a particular <em>bottega</em> belongs to.</p>
 <ul class="simple">
 <li><p>Write the new file with a <code class="docutils literal notranslate"><span class="pre">DictWriter</span></code>, see <a class="reference external" href="https://docs.python.org/3/library/csv.html#csv.DictWriter">documentation</a></p></li>
@@ -3652,8 +3555,7 @@ OrderedDict<span class="o">([</span>   <span class="o">(</span><span class="s1">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">enrich</span><span class="p">(</span><span class="n">categories</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">enrich</span><span class="p">(</span><span class="n">categories</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -3686,31 +3588,25 @@ OrderedDict<span class="o">([</span>   <span class="o">(</span><span class="s1">
 
 
 <span class="n">enrich</span><span class="p">(</span><span class="n">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">))</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">enrich</span><span class="p">(</span><span class="n">categories</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">enrich</span><span class="p">(</span><span class="n">categories</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">enrich</span><span class="p">(</span><span class="n">rank_categories</span><span class="p">(</span><span class="n">stopwords</span><span class="p">))</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># let&#39;s see if we created the file we wanted</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let&#39;s see if we created the file we wanted</span>
 <span class="c1"># (using botteghe-enriched-solution.csv to avoid polluting your file)</span>
 
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;botteghe-enriched-solution.csv&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>  <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,)</span> <span class="k">as</span> <span class="n">csvfile_in</span><span class="p">:</span>
@@ -3722,8 +3618,7 @@ OrderedDict<span class="o">([</span>   <span class="o">(</span><span class="s1">
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
         <span class="n">d</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">reader</span><span class="p">)</span>
         <span class="n">pp</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3778,14 +3673,14 @@ OrderedDict([   (&#39;Numero&#39;, &#39;6&#39;),
                 (&#39;Categorie&#39;, &#39;[]&#39;)])
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="CSV-Air-quality">
-<h2>CSV Air quality<a class="headerlink" href="#CSV-Air-quality" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="CSV-Air-quality">
+<h2>CSV Air quality<a class="headerlink" href="#CSV-Air-quality" title="Permalink to this headline"></a></h2>
 <p>You will now analyze air_quality in Trentino. You are given a dataset which records various pollutants (‘Inquinante’) at various stations (<code class="docutils literal notranslate"><span class="pre">'Stazione'</span></code>) in Trentino. Pollutants values can be <code class="docutils literal notranslate"><span class="pre">'PM10'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Biossido</span> <span class="pre">Zolfo'</span></code>, and a few others. Each station records some set of pollutants. For each pollutant values are recorded (<code class="docutils literal notranslate"><span class="pre">'Valore'</span></code>) 24 times per day.</p>
 <p>Data provider: <a class="reference external" href="https://dati.trentino.it/dataset/qualita-dell-aria-rilevazioni-delle-stazioni-monitoraggio">dati.trentino.it</a></p>
-<div class="section" id="load_air_quality">
-<h3>load_air_quality<a class="headerlink" href="#load_air_quality" title="Permalink to this headline">¶</a></h3>
+<section id="load_air_quality">
+<h3>load_air_quality<a class="headerlink" href="#load_air_quality" title="Permalink to this headline"></a></h3>
 <p>Implement a function to load the dataset <a class="reference external" href="air-quality.csv">air-quality.csv</a></p>
 <ul class="simple">
 <li><p><strong>USE encoding</strong> <code class="docutils literal notranslate"><span class="pre">latin-1</span></code></p></li>
@@ -3824,9 +3719,7 @@ OrderedDict([   (&#39;Numero&#39;, &#39;6&#39;),
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="k">def</span> <span class="nf">load_air_quality</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Loads file data and RETURN a list of dictionaries</span>
@@ -3841,8 +3734,7 @@ OrderedDict([   (&#39;Numero&#39;, &#39;6&#39;),
 
 
 <span class="n">air_quality</span> <span class="o">=</span> <span class="n">load_air_quality</span><span class="p">(</span><span class="s1">&#39;air-quality.csv&#39;</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3887,9 +3779,7 @@ OrderedDict([   (&#39;Numero&#39;, &#39;6&#39;),
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">import</span> <span class="nn">csv</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">import</span> <span class="nn">csv</span>
 
 <span class="k">def</span> <span class="nf">load_air_quality</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Loads file data and RETURN a list of dictionaries</span>
@@ -3897,13 +3787,12 @@ OrderedDict([   (&#39;Numero&#39;, &#39;6&#39;),
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">air_quality</span> <span class="o">=</span> <span class="n">load_air_quality</span><span class="p">(</span><span class="s1">&#39;air-quality.csv&#39;</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="calc_avg_pollution">
-<h3>calc_avg_pollution<a class="headerlink" href="#calc_avg_pollution" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="calc_avg_pollution">
+<h3>calc_avg_pollution<a class="headerlink" href="#calc_avg_pollution" title="Permalink to this headline"></a></h3>
 <p>Implement a function to RETURN a dictionary containing two elements tuples as keys:</p>
 <ul class="simple">
 <li><p>first tuple element is the station (‘Stazione’),</p></li>
@@ -3948,10 +3837,7 @@ OrderedDict([   (&#39;Numero&#39;, &#39;6&#39;),
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="k">def</span> <span class="nf">calc_avg_pollution</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="k">def</span> <span class="nf">calc_avg_pollution</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
@@ -4014,70 +3900,50 @@ OrderedDict([   (&#39;Numero&#39;, &#39;6&#39;),
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="k">def</span> <span class="nf">calc_avg_pollution</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="k">def</span> <span class="nf">calc_avg_pollution</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">calc_avg_pollution</span><span class="p">(</span><span class="n">air_quality</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/formats/formats3-json-sol.html">JSON format</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="formats3-json-sol.html" class="btn btn-neutral float-right" title="Data formats 3 - JSON" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="formats1-lines-sol.html" class="btn btn-neutral float-left" title="Data formats 1 - introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="formats3-json-sol.html" class="btn btn-neutral float-right" title="Data formats 3 - JSON" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

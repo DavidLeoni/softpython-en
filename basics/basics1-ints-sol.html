@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Python basics &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/basics/basics1-ints-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Basics 2 - booleans" href="basics2-bools-sol.html" />
     <link rel="prev" title="Tools and scripts" href="../tools/tools-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,10 +2614,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Python-basics">
-<h1>Python basics<a class="headerlink" href="#Python-basics" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/basics.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Python-basics">
+<h1>Python basics<a class="headerlink" href="#Python-basics" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/basics.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/basics">Browse online files</a></p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>PREREQUISITES:</strong></p>
@@ -2671,9 +2626,9 @@ div.rendered_html tbody tr:hover {
 <li><p><strong>Having read</strong> <a class="reference external" href="https://en.softpython.org/tools/tools-sol.html">Tools and scripts</a></p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="Jupyter">
-<h2>Jupyter<a class="headerlink" href="#Jupyter" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Jupyter">
+<h2>Jupyter<a class="headerlink" href="#Jupyter" title="Permalink to this headline"></a></h2>
 <p>Jupyter is an editor that allows working on so called <em>notebooks,</em> which are files ending with the extension <code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>. They are documents divided in cells where for each cell you can insert commands and immediately see the respective output. Let’s try to open this.</p>
 <ol class="arabic simple">
 <li><p>Unzip <a class="reference external" href="../_static/generated/basics.zip">exercises zip</a> in a folder, you should obtain something like this:</p></li>
@@ -2713,9 +2668,9 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="Objects">
-<h2>Objects<a class="headerlink" href="#Objects" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Objects">
+<h2>Objects<a class="headerlink" href="#Objects" title="Permalink to this headline"></a></h2>
 <p>In Python everything is an object. Objects have <strong>properties</strong> (fields where to save values) and <strong>methods</strong> (things they can do). For example, an object <strong>car</strong> has the <em>properties</em> model, brand, color, numer of doors, etc … and the <em>methods</em> turn right, turn left, accelerate, brake, shift gear …</p>
 <p>According to Python official documentation:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&quot;Objects are Python’s abstraction for data. All data in a Python program is represented by objects or by relations between objects.&quot;
@@ -2786,9 +2741,9 @@ div.rendered_html tbody tr:hover {
 </tbody>
 </table>
 <p>For now we will consider only the simplest ones, later in the book we will deep dive in each of them.</p>
-</div>
-<div class="section" id="Variables">
-<h2>Variables<a class="headerlink" href="#Variables" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Variables">
+<h2>Variables<a class="headerlink" href="#Variables" title="Permalink to this headline"></a></h2>
 <p>Variables are associations among names and objects (we can call them values).</p>
 <p>Variables can be associated, or in a more technical term, <em>assigned</em> to objects by using the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code>.</p>
 <p>The instruction</p>
@@ -2796,8 +2751,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
@@ -2808,15 +2762,14 @@ div.rendered_html tbody tr:hover {
 <li><p>its value is set to <code class="docutils literal notranslate"><span class="pre">4</span></code></p></li>
 <li><p>a name <code class="docutils literal notranslate"><span class="pre">diamonds</span></code> is create in the environment and assigned to that object</p></li>
 </ul>
-<div class="section" id="Detect-the-type-of-a-variable">
-<h3>Detect the type of a variable<a class="headerlink" href="#Detect-the-type-of-a-variable" title="Permalink to this headline">¶</a></h3>
+<section id="Detect-the-type-of-a-variable">
+<h3>Detect the type of a variable<a class="headerlink" href="#Detect-the-type-of-a-variable" title="Permalink to this headline"></a></h3>
 <p>When you see a variable or costant and you wonder what type it could have, you can use the predefined function <code class="docutils literal notranslate"><span class="pre">type</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">diamonds</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">diamonds</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2833,8 +2786,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2851,8 +2803,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="mf">4.0</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mf">4.0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2869,8 +2820,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2883,16 +2833,15 @@ float
 str
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Reassign-a-variable">
-<h3>Reassign a variable<a class="headerlink" href="#Reassign-a-variable" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Reassign-a-variable">
+<h3>Reassign a variable<a class="headerlink" href="#Reassign-a-variable" title="Permalink to this headline"></a></h3>
 <p>Consider now the following code:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="mi">4</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">diamonds</span><span class="p">)</span>
 </pre></div>
@@ -2910,8 +2859,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">diamonds</span><span class="p">)</span>
 </pre></div>
@@ -2926,16 +2874,15 @@ str
 </pre></div></div>
 </div>
 <p>The value of <code class="docutils literal notranslate"><span class="pre">diamonds</span></code> variable has been changed from <code class="docutils literal notranslate"><span class="pre">4</span></code> to <code class="docutils literal notranslate"><span class="pre">5</span></code>, but as reported in the previous table, the <code class="docutils literal notranslate"><span class="pre">int</span></code> type is <strong>immutable</strong>. Luckily, this didn’t prevent us from changing the value <code class="docutils literal notranslate"><span class="pre">diamonds</span></code> from <code class="docutils literal notranslate"><span class="pre">4</span></code> to <code class="docutils literal notranslate"><span class="pre">5</span></code>. What happend behind the scenes? When we executed the instructions <code class="docutils literal notranslate"><span class="pre">diamonds</span> <span class="pre">=</span> <span class="pre">5</span></code>, a new object of type <code class="docutils literal notranslate"><span class="pre">int</span></code> was created (the integer <code class="docutils literal notranslate"><span class="pre">5</span></code>) and made available with the same name <code class="docutils literal notranslate"><span class="pre">diamonds</span></code></p>
-</div>
-<div class="section" id="Reusing-a-variable">
-<h3>Reusing a variable<a class="headerlink" href="#Reusing-a-variable" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Reusing-a-variable">
+<h3>Reusing a variable<a class="headerlink" href="#Reusing-a-variable" title="Permalink to this headline"></a></h3>
 <p>When you reassign a variable to another value, to calculate the new value you can freely reuse the old value of the variable you want to change. For example, suppose to have the variable</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">flowers</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flowers</span> <span class="o">=</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
@@ -2944,8 +2891,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">flowers</span> <span class="o">=</span> <span class="n">flowers</span> <span class="o">+</span> <span class="mi">1</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flowers</span> <span class="o">=</span> <span class="n">flowers</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
 </div>
 </div>
@@ -2955,8 +2901,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">flowers</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flowers</span>
 </pre></div>
 </div>
 </div>
@@ -2974,8 +2919,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># WARNING: to use the following jupman.pytut() function,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># WARNING: to use the following jupman.pytut() function,</span>
 <span class="c1"># it is necessary first execute  this cell with Shift+Enter</span>
 
 <span class="c1"># it&#39;s enough to execute once, you can also find in all notebooks in the first cell.</span>
@@ -2988,9 +2932,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">flowers</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">flowers</span> <span class="o">=</span> <span class="mi">4</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">flowers</span> <span class="o">+</span> <span class="mi">1</span>
 
@@ -3056,8 +2998,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">flowers</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flowers</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">flowers</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">flowers</span><span class="p">)</span>
 </pre></div>
@@ -3076,8 +3017,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">flowers</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flowers</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">flowers</span> <span class="o">-=</span> <span class="mi">1</span>     <span class="c1"># subtraction</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">flowers</span><span class="p">)</span>
 </pre></div>
@@ -3095,8 +3035,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">flowers</span> <span class="o">*=</span> <span class="mi">3</span>     <span class="c1"># multiplication</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flowers</span> <span class="o">*=</span> <span class="mi">3</span>     <span class="c1"># multiplication</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">flowers</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3113,8 +3052,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">flowers</span> <span class="o">/=</span> <span class="mi">2</span>     <span class="c1"># division</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flowers</span> <span class="o">/=</span> <span class="mi">2</span>     <span class="c1"># division</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">flowers</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3127,9 +3065,9 @@ str
 6.0
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Assignments---questions">
-<h3>Assignments - questions<a class="headerlink" href="#Assignments---questions" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Assignments---questions">
+<h3>Assignments - questions<a class="headerlink" href="#Assignments---questions" title="Permalink to this headline"></a></h3>
 <p><strong>QUESTION</strong>: Look at the following questions, and for each try to guess the result it produces (or if it gives an error). Try to verify your guess both in Jupyter and in another editor of <code class="docutils literal notranslate"><span class="pre">.py</span></code> files like Spyder:</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
@@ -3220,9 +3158,9 @@ str
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Exercise---exchange">
-<h3>Exercise - exchange<a class="headerlink" href="#Exercise---exchange" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---exchange">
+<h3>Exercise - exchange<a class="headerlink" href="#Exercise---exchange" title="Permalink to this headline"></a></h3>
 <p>✪ Given two variables <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
@@ -3244,9 +3182,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
 
 <span class="c1"># write here</span>
@@ -3271,20 +3207,16 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---cycling">
-<h3>Exercise - cycling<a class="headerlink" href="#Exercise---cycling" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---cycling">
+<h3>Exercise - cycling<a class="headerlink" href="#Exercise---cycling" title="Permalink to this headline"></a></h3>
 <p>✪ Write a program that given three variables with numebers <code class="docutils literal notranslate"><span class="pre">a</span></code>,<code class="docutils literal notranslate"><span class="pre">b</span></code>,<code class="docutils literal notranslate"><span class="pre">c</span></code>, cycles the values, that is, puts the value of <code class="docutils literal notranslate"><span class="pre">a</span></code> in <code class="docutils literal notranslate"><span class="pre">b</span></code>, the value of <code class="docutils literal notranslate"><span class="pre">b</span></code> in <code class="docutils literal notranslate"><span class="pre">c</span></code>, and the value of <code class="docutils literal notranslate"><span class="pre">c</span></code> in <code class="docutils literal notranslate"><span class="pre">a</span></code> .</p>
 <p>So if you begin like this:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
@@ -3318,8 +3250,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">9</span>
 
@@ -3347,8 +3278,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 
 <span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
@@ -3388,8 +3318,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -3403,16 +3332,15 @@ str
 7
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Changing-type-during-execution">
-<h3>Changing type during execution<a class="headerlink" href="#Changing-type-during-execution" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Changing-type-during-execution">
+<h3>Changing type during execution<a class="headerlink" href="#Changing-type-during-execution" title="Permalink to this headline"></a></h3>
 <p>You can also change the type of a variable duting the program execution but normally it is a <strong>bad habit</strong> because it makes harder to understand the code, and increases the probability to commit errors. Let’s make an example:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="mi">4</span>          <span class="c1"># integer</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="mi">4</span>          <span class="c1"># integer</span>
 </pre></div>
 </div>
 </div>
@@ -3420,8 +3348,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">diamonds</span> <span class="o">+</span> <span class="mi">2</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diamonds</span> <span class="o">+</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
@@ -3438,8 +3365,7 @@ str
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="s2">&quot;four&quot;</span>  <span class="c1"># text</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">diamonds</span> <span class="o">=</span> <span class="s2">&quot;four&quot;</span>  <span class="c1"># text</span>
 </pre></div>
 </div>
 </div>
@@ -3454,16 +3380,15 @@ str
 <span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span> <span class="n">only</span> <span class="n">concatenate</span> <span class="nb">str</span> <span class="p">(</span><span class="ow">not</span> <span class="s2">&quot;int&quot;</span><span class="p">)</span> <span class="n">to</span> <span class="nb">str</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Multiple-commands-on-the-same-line">
-<h3>Multiple commands on the same line<a class="headerlink" href="#Multiple-commands-on-the-same-line" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Multiple-commands-on-the-same-line">
+<h3>Multiple commands on the same line<a class="headerlink" href="#Multiple-commands-on-the-same-line" title="Permalink to this headline"></a></h3>
 <p>It is possible to put many commands on the same line (non only assignments) by separating them with a semi-colon <code class="docutils literal notranslate"><span class="pre">;</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;So many!&#39;</span><span class="p">);</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;So many!&#39;</span><span class="p">);</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -3479,8 +3404,7 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3496,16 +3420,15 @@ So many!
 <p class="admonition-title fa fa-exclamation-circle"><strong>NOTE: multiple commands on the same line are ‘not much pythonic’</strong></p>
 <p>Even if sometimes they may be useful and less verbose of explicit definitions, they are a style frowned upon by true Python ninjas.</p>
 </div>
-</div>
-<div class="section" id="Multiple-initializations">
-<h3>Multiple initializations<a class="headerlink" href="#Multiple-initializations" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Multiple-initializations">
+<h3>Multiple initializations<a class="headerlink" href="#Multiple-initializations" title="Permalink to this headline"></a></h3>
 <p>Another thing are multiple initializations, separated by a comma <code class="docutils literal notranslate"><span class="pre">,</span></code> like:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">7</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">7</span>
 </pre></div>
 </div>
 </div>
@@ -3513,8 +3436,7 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3530,8 +3452,7 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3544,9 +3465,9 @@ So many!
 </pre></div></div>
 </div>
 <p>Differently from multiple commands, multiple assignments are a more acceptable style.</p>
-</div>
-<div class="section" id="Exercise---exchange-like-a-ninja">
-<h3>Exercise - exchange like a ninja<a class="headerlink" href="#Exercise---exchange-like-a-ninja" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---exchange-like-a-ninja">
+<h3>Exercise - exchange like a ninja<a class="headerlink" href="#Exercise---exchange-like-a-ninja" title="Permalink to this headline"></a></h3>
 <p>✪ Try now to exchange the value of the two variables <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> in one row with multiple initialization</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
 </pre></div>
@@ -3564,8 +3485,7 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
 
 <span class="c1"># write here</span>
 <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span><span class="n">a</span>
@@ -3578,18 +3498,15 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">3</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Names-of-variables">
-<h3>Names of variables<a class="headerlink" href="#Names-of-variables" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Names-of-variables">
+<h3>Names of variables<a class="headerlink" href="#Names-of-variables" title="Permalink to this headline"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>IMPORTANT NOTE:</strong></p>
 <p>You can chose the name that you like for your variables (we advise to pick something reminding their meaning), but you need to adhere to some simple rules:</p>
@@ -3667,9 +3584,9 @@ So many!
 <p class="admonition-title fa fa-exclamation-circle"><a class="reference external" href="https://en.softpython.org/commandments.html#V-COMMANDMENT">V COMMANDMENT</a><strong>: You shall never ever redefine system functions</strong></p>
 <p>Never declare variables with such names !</p>
 </div>
-</div>
-<div class="section" id="Names-of-variables---questions">
-<h3>Names of variables - questions<a class="headerlink" href="#Names-of-variables---questions" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Names-of-variables---questions">
+<h3>Names of variables - questions<a class="headerlink" href="#Names-of-variables---questions" title="Permalink to this headline"></a></h3>
 <p>For each of the following names, try to guess if it is a valid <em>variable name</em> or not, then try to assign it in following cell</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">my-variable</span></code></p></li>
@@ -3705,16 +3622,14 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write the names here</span>
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write the names here</span>
+<br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Numerical-types">
-<h2>Numerical types<a class="headerlink" href="#Numerical-types" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Numerical-types">
+<h2>Numerical types<a class="headerlink" href="#Numerical-types" title="Permalink to this headline"></a></h2>
 <p>We already mentioned that numbers are <strong>immutable objects</strong>. Python provides different numerical types:</p>
 <p>integers (<code class="docutils literal notranslate"><span class="pre">int</span></code>), reals (<code class="docutils literal notranslate"><span class="pre">float</span></code>), booleans, fractions and complex numbers.</p>
 <p>It is possible to make arithmetic operations with the following operators, in precedence order:</p>
@@ -3796,16 +3711,15 @@ So many!
 </tbody>
 </table>
 <p>… plus many others we don’t report here.</p>
-</div>
-<div class="section" id="Integer-numbers">
-<h2>Integer numbers<a class="headerlink" href="#Integer-numbers" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Integer-numbers">
+<h2>Integer numbers<a class="headerlink" href="#Integer-numbers" title="Permalink to this headline"></a></h2>
 <p>The range of values that integer can have is only limited by available memory. To work with numbers, Python also provides these operators:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">7</span> <span class="o">+</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="o">+</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
@@ -3822,8 +3736,7 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">7</span> <span class="o">-</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="o">-</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
@@ -3840,8 +3753,7 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">7</span> <span class="o">//</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="o">//</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
@@ -3859,8 +3771,7 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">7</span> <span class="o">/</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="o">/</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
@@ -3877,8 +3788,7 @@ So many!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="mi">7</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mi">7</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3895,8 +3805,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">7</span> <span class="o">*</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="o">*</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
@@ -3914,8 +3823,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">7</span> <span class="o">**</span> <span class="mi">4</span>   <span class="c1"># power</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="o">**</span> <span class="mi">4</span>   <span class="c1"># power</span>
 </pre></div>
 </div>
 </div>
@@ -3928,15 +3836,14 @@ float
 2401
 </pre></div></div>
 </div>
-<div class="section" id="Exercise---deadline-1">
-<h3>Exercise - deadline 1<a class="headerlink" href="#Exercise---deadline-1" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---deadline-1">
+<h3>Exercise - deadline 1<a class="headerlink" href="#Exercise---deadline-1" title="Permalink to this headline"></a></h3>
 <p>✪ You are given a very important deadline in:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">days</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">days</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">hours</span> <span class="o">=</span> <span class="mi">13</span>
 <span class="n">minutes</span> <span class="o">=</span> <span class="mi">52</span>
 </pre></div>
@@ -3952,9 +3859,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">days</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">days</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">hours</span> <span class="o">=</span> <span class="mi">13</span>
 <span class="n">minutes</span> <span class="o">=</span> <span class="mi">52</span>
 
@@ -3975,28 +3880,23 @@ In total there are 6592 minutes left
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">days</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">days</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">hours</span> <span class="o">=</span> <span class="mi">13</span>
 <span class="n">minutes</span> <span class="o">=</span> <span class="mi">52</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Modulo-operator">
-<h3>Modulo operator<a class="headerlink" href="#Modulo-operator" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Modulo-operator">
+<h3>Modulo operator<a class="headerlink" href="#Modulo-operator" title="Permalink to this headline"></a></h3>
 <p>To find the reminder of a division among integers, we can use the modulo operator which is denoted with <code class="docutils literal notranslate"><span class="pre">%</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span>  <span class="c1"># 5 divided by 3 gives 2 as reminder</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span>  <span class="c1"># 5 divided by 3 gives 2 as reminder</span>
 </pre></div>
 </div>
 </div>
@@ -4013,8 +3913,7 @@ In total there are 6592 minutes left
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
@@ -4031,8 +3930,7 @@ In total there are 6592 minutes left
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -4049,8 +3947,7 @@ In total there are 6592 minutes left
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">6</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">6</span>
 </pre></div>
 </div>
 </div>
@@ -4067,8 +3964,7 @@ In total there are 6592 minutes left
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">7</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">%</span> <span class="mi">7</span>
 </pre></div>
 </div>
 </div>
@@ -4081,9 +3977,9 @@ In total there are 6592 minutes left
 5
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---deadline-2">
-<h3>Exercise - deadline 2<a class="headerlink" href="#Exercise---deadline-2" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---deadline-2">
+<h3>Exercise - deadline 2<a class="headerlink" href="#Exercise---deadline-2" title="Permalink to this headline"></a></h3>
 <p>✪ For another super important deadline there are left:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tot_minutes</span> <span class="o">=</span> <span class="mi">5000</span>
 </pre></div>
@@ -4101,9 +3997,7 @@ In total there are 6592 minutes left
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">tot_minutes</span> <span class="o">=</span> <span class="mi">5000</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">tot_minutes</span> <span class="o">=</span> <span class="mi">5000</span>
 
 <span class="c1"># write here</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are left:&#39;</span><span class="p">)</span>
@@ -4128,26 +4022,21 @@ There are left:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">tot_minutes</span> <span class="o">=</span> <span class="mi">5000</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">tot_minutes</span> <span class="o">=</span> <span class="mi">5000</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="min-and-max">
-<h3>min and max<a class="headerlink" href="#min-and-max" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="min-and-max">
+<h3>min and max<a class="headerlink" href="#min-and-max" title="Permalink to this headline"></a></h3>
 <p>The minimum among two numbers can be calculated with the function <code class="docutils literal notranslate"><span class="pre">min</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">min</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">min</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4165,8 +4054,7 @@ There are left:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">max</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">max</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4184,8 +4072,7 @@ There are left:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">min</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">min</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4202,8 +4089,7 @@ There are left:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">max</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">max</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4234,9 +4120,9 @@ There are left:
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: 1. and 3. are equivalent</p>
-</div></div>
-<div class="section" id="Exercise---transportation">
-<h3>Exercise - transportation<a class="headerlink" href="#Exercise---transportation" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Exercise---transportation">
+<h3>Exercise - transportation<a class="headerlink" href="#Exercise---transportation" title="Permalink to this headline"></a></h3>
 <p>✪✪ A company has a truck that every day delivers products to its best client. The truck can at most transport 10 tons of material. Unfortunately, the roads it can drive through have bridges that limit the maximum weight a vehicle can have to pass. These limits are provided in 5 variables:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span>
 </pre></div>
@@ -4263,8 +4149,7 @@ There are left:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span>   <span class="c1"># 4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span>   <span class="c1"># 4</span>
 <span class="c1">#b1,b2,b3,b4,b5 = 2,6,2,4,5  # 2</span>
 <span class="c1">#b1,b2,b3,b4,b5 = 8,6,2,9,5  # 6</span>
 <span class="c1">#b1,b2,b3,b4,b5 = 8,9,9,4,7  # 8</span>
@@ -4290,17 +4175,14 @@ In a single journey we can transport at most 4 tons
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span>   <span class="c1"># 4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b1</span><span class="p">,</span><span class="n">b2</span><span class="p">,</span><span class="n">b3</span><span class="p">,</span><span class="n">b4</span><span class="p">,</span><span class="n">b5</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span>   <span class="c1"># 4</span>
 <span class="c1">#b1,b2,b3,b4,b5 = 2,6,2,4,5  # 2</span>
 <span class="c1">#b1,b2,b3,b4,b5 = 8,6,2,9,5  # 6</span>
 <span class="c1">#b1,b2,b3,b4,b5 = 8,9,9,4,7  # 8</span>
 
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4311,16 +4193,15 @@ In a single journey we can transport at most 4 tons
 In a single journey we can transport at most 4 tons
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---armchairs">
-<h3>Exercise - armchairs<a class="headerlink" href="#Exercise---armchairs" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---armchairs">
+<h3>Exercise - armchairs<a class="headerlink" href="#Exercise---armchairs" title="Permalink to this headline"></a></h3>
 <p>✪✪ The tycoon De Industrionis owns two factories of armchairs, one in Belluno city and one in Rovigo. To make an armchair three main components are needed: a mattress, a seatback and a cover. Each factory produces all required components, taking a certain time to produce each component:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">b_mat</span><span class="p">,</span> <span class="n">b_bac</span><span class="p">,</span> <span class="n">b_cov</span><span class="p">,</span> <span class="n">r_mat</span><span class="p">,</span> <span class="n">r_bac</span><span class="p">,</span> <span class="n">r_cov</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span><span class="mi">54</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="mi">24</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b_mat</span><span class="p">,</span> <span class="n">b_bac</span><span class="p">,</span> <span class="n">b_cov</span><span class="p">,</span> <span class="n">r_mat</span><span class="p">,</span> <span class="n">r_bac</span><span class="p">,</span> <span class="n">r_cov</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span><span class="mi">54</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="mi">24</span>
 </pre></div>
 </div>
 </div>
@@ -4354,9 +4235,7 @@ In a single journey we can transport at most 4 tons
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">b_mat</span><span class="p">,</span> <span class="n">b_bac</span><span class="p">,</span> <span class="n">b_cov</span><span class="p">,</span> <span class="n">r_mat</span><span class="p">,</span> <span class="n">r_bac</span><span class="p">,</span> <span class="n">r_cov</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span><span class="mi">54</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="mi">24</span>   <span class="c1"># 38</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">b_mat</span><span class="p">,</span> <span class="n">b_bac</span><span class="p">,</span> <span class="n">b_cov</span><span class="p">,</span> <span class="n">r_mat</span><span class="p">,</span> <span class="n">r_bac</span><span class="p">,</span> <span class="n">r_cov</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span><span class="mi">54</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="mi">24</span>   <span class="c1"># 38</span>
 <span class="c1">#b_mat, b_bac, b_cov, r_mat, r_bac, r_cov = 81,37,32,54,36,91  # 82</span>
 <span class="c1">#b_mat, b_bac, b_cov, r_mat, r_bac, r_cov = 21,39,47,54,36,91  # 48</span>
 
@@ -4380,16 +4259,12 @@ The first armchair will be produced in 38 hours.
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">b_mat</span><span class="p">,</span> <span class="n">b_bac</span><span class="p">,</span> <span class="n">b_cov</span><span class="p">,</span> <span class="n">r_mat</span><span class="p">,</span> <span class="n">r_bac</span><span class="p">,</span> <span class="n">r_cov</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span><span class="mi">54</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="mi">24</span>   <span class="c1"># 38</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">b_mat</span><span class="p">,</span> <span class="n">b_bac</span><span class="p">,</span> <span class="n">b_cov</span><span class="p">,</span> <span class="n">r_mat</span><span class="p">,</span> <span class="n">r_bac</span><span class="p">,</span> <span class="n">r_cov</span> <span class="o">=</span> <span class="mi">23</span><span class="p">,</span><span class="mi">54</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">37</span><span class="p">,</span><span class="mi">24</span>   <span class="c1"># 38</span>
 <span class="c1">#b_mat, b_bac, b_cov, r_mat, r_bac, r_cov = 81,37,32,54,36,91  # 82</span>
 <span class="c1">#b_mat, b_bac, b_cov, r_mat, r_bac, r_cov = 21,39,47,54,36,91  # 48</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4400,60 +4275,43 @@ The first armchair will be produced in 38 hours.
 The first armchair will be produced in 38 hours.
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/basics/basics2-bools-sol.html">Basics 2: Booleans</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="basics2-bools-sol.html" class="btn btn-neutral float-right" title="Basics 2 - booleans" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../tools/tools-sol.html" class="btn btn-neutral float-left" title="Tools and scripts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="basics2-bools-sol.html" class="btn btn-neutral float-right" title="Basics 2 - booleans" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

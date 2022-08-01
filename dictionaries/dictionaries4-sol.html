@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Dictionaries 4 - special classes &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/dictionaries/dictionaries4-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Dictionaries 5 - First challenges" href="dictionaries5-chal.html" />
     <link rel="prev" title="Dictionaries 3 - Methods" href="dictionaries3-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,10 +2614,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Dictionaries-4---special-classes">
-<h1>Dictionaries 4 - special classes<a class="headerlink" href="#Dictionaries-4---special-classes" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercise-zip">
-<h2><a class="reference external" href="../_static/generated/dictionaries.zip">Download exercise zip</a><a class="headerlink" href="#Download-exercise-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Dictionaries-4---special-classes">
+<h1>Dictionaries 4 - special classes<a class="headerlink" href="#Dictionaries-4---special-classes" title="Permalink to this headline"></a></h1>
+<section id="Download-exercise-zip">
+<h2><a class="reference external" href="../_static/generated/dictionaries.zip">Download exercise zip</a><a class="headerlink" href="#Download-exercise-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/dictionaries">Browse online files</a></p>
 <p>There are special classes we can use:</p>
 <table class="docutils align-default">
@@ -2684,9 +2639,9 @@ div.rendered_html tbody tr:hover {
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="What-to-do">
-<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="What-to-do">
+<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h2>
 <ol class="arabic simple">
 <li><p>Unzip <a class="reference external" href="../_static/generated/dictionaries.zip">exercises zip</a> in a folder, you should obtain something like this:</p></li>
 </ol>
@@ -2717,17 +2672,16 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="OrderedDict">
-<h2>OrderedDict<a class="headerlink" href="#OrderedDict" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="OrderedDict">
+<h2>OrderedDict<a class="headerlink" href="#OrderedDict" title="Permalink to this headline"></a></h2>
 <p>As we said before, when we print a dictionary with <code class="docutils literal notranslate"><span class="pre">print</span></code> or we leave the visualization to Jupyter, most of the times couples are not in insertion order. For the order to be predictable, you must use an <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code></p>
 <p>First you need to import it from the <code class="docutils literal notranslate"><span class="pre">collections</span></code> module:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
 </pre></div>
 </div>
 </div>
@@ -2735,8 +2689,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">od</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">od</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -2745,8 +2698,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">od</span><span class="p">[</span><span class="s1">&#39;some key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">od</span><span class="p">[</span><span class="s1">&#39;some key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">od</span><span class="p">[</span><span class="s1">&#39;some other key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">od</span><span class="p">[(</span><span class="s1">&#39;an&#39;</span><span class="p">,</span> <span class="s1">&#39;immutable&#39;</span><span class="p">,</span><span class="s1">&#39;tuple&#39;</span><span class="p">,</span> <span class="s1">&#39;as key&#39;</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">od</span><span class="p">[</span><span class="s1">&#39;Another key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;now a string!&#39;</span>
@@ -2759,8 +2711,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">od</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">od</span>
 </pre></div>
 </div>
 </div>
@@ -2782,8 +2733,7 @@ OrderedDict([(&#39;some key&#39;, 5),
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2800,8 +2750,7 @@ OrderedDict([(&#39;some key&#39;, 5), (&#39;some other key&#39;, 7), ((&#39;an&#
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
 <span class="n">od</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
 <span class="n">od</span><span class="p">[</span><span class="s1">&#39;some key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">od</span><span class="p">[</span><span class="s1">&#39;some other key&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
@@ -2864,8 +2813,8 @@ OrderedDict([(&#39;some key&#39;, 5), (&#39;some other key&#39;, 7), ((&#39;an&#
 })()
 </script></div>
 </div>
-<div class="section" id="Exercise---phonebook">
-<h3>Exercise - phonebook<a class="headerlink" href="#Exercise---phonebook" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---phonebook">
+<h3>Exercise - phonebook<a class="headerlink" href="#Exercise---phonebook" title="Permalink to this headline"></a></h3>
 <p>Write some code which given three tuples with names and phone numbers, PRINTS an <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code> which associates names to phone numbers, in the order in which are proposed</p>
 <ul class="simple">
 <li><p>Your code must work with <em>any</em> tuple</p></li>
@@ -2887,9 +2836,7 @@ OrderedDict([(&#39;some key&#39;, 5), (&#39;some other key&#39;, 7), ((&#39;an&#
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;143242903&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;143242903&#39;</span><span class="p">)</span>
 <span class="n">t2</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;417483437&#39;</span><span class="p">)</span>
 <span class="n">t3</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Charles&#39;</span><span class="p">,</span> <span class="s1">&#39;423413213&#39;</span><span class="p">)</span>
 
@@ -2915,21 +2862,17 @@ OrderedDict([(&#39;Alice&#39;, &#39;143242903&#39;), (&#39;Bob&#39;, &#39;417483
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;143242903&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Alice&#39;</span><span class="p">,</span> <span class="s1">&#39;143242903&#39;</span><span class="p">)</span>
 <span class="n">t2</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="s1">&#39;417483437&#39;</span><span class="p">)</span>
 <span class="n">t3</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Charles&#39;</span><span class="p">,</span> <span class="s1">&#39;423413213&#39;</span><span class="p">)</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---OrderedDict-copy">
-<h3>Exercise - OrderedDict copy<a class="headerlink" href="#Exercise---OrderedDict-copy" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---OrderedDict-copy">
+<h3>Exercise - OrderedDict copy<a class="headerlink" href="#Exercise---OrderedDict-copy" title="Permalink to this headline"></a></h3>
 <p>Given an <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code> <code class="docutils literal notranslate"><span class="pre">od1</span></code> containing English to Italian translations, create a NEW <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code> called <code class="docutils literal notranslate"><span class="pre">od2</span></code> which contains the same translations as input PLUS the translation <code class="docutils literal notranslate"><span class="pre">'water'</span> <span class="pre">:</span> <span class="pre">'acqua'</span></code></p>
 <ul class="simple">
 <li><p>NOTE 1: your code should work with any ordered dict as input</p></li>
@@ -2955,9 +2898,7 @@ OrderedDict([(&#39;Alice&#39;, &#39;143242903&#39;), (&#39;Bob&#39;, &#39;417483
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
 
 <span class="n">od1</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
 <span class="n">od1</span><span class="p">[</span><span class="s1">&#39;dog&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;cane&#39;</span>
@@ -2986,9 +2927,7 @@ od2= OrderedDict([(&#39;dog&#39;, &#39;cane&#39;), (&#39;home&#39;, &#39;casa&#3
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
 
 <span class="n">od1</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
 <span class="n">od1</span><span class="p">[</span><span class="s1">&#39;dog&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;cane&#39;</span>
@@ -2996,22 +2935,19 @@ od2= OrderedDict([(&#39;dog&#39;, &#39;cane&#39;), (&#39;home&#39;, &#39;casa&#3
 <span class="n">od1</span><span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;tavolo&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Counter">
-<h2>Counter<a class="headerlink" href="#Counter" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Counter">
+<h2>Counter<a class="headerlink" href="#Counter" title="Permalink to this headline"></a></h2>
 <p>If we need to know how many different elements there are in a sequence (in other words, if we need to calculate a frequence histogram), the class <code class="docutils literal notranslate"><span class="pre">Counter</span></code> from <code class="docutils literal notranslate"><span class="pre">collections</span></code> module comes useful. <code class="docutils literal notranslate"><span class="pre">Counter</span></code> is a special type of dictionary, and first of all, we must declare to Python our intention to use it:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
 </pre></div>
 </div>
 </div>
@@ -3020,8 +2956,7 @@ od2= OrderedDict([(&#39;dog&#39;, &#39;cane&#39;), (&#39;home&#39;, &#39;casa&#3
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">my_seq</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_seq</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -3030,8 +2965,7 @@ od2= OrderedDict([(&#39;dog&#39;, &#39;cane&#39;), (&#39;home&#39;, &#39;casa&#3
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">histogram</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">my_seq</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">histogram</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">my_seq</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3040,8 +2974,7 @@ od2= OrderedDict([(&#39;dog&#39;, &#39;cane&#39;), (&#39;home&#39;, &#39;casa&#3
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">histogram</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">histogram</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3060,8 +2993,7 @@ Counter({&#39;e&#39;: 3, &#39;t&#39;: 2, &#39;m&#39;: 2, &#39;p&#39;: 1, &#39;r&
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">histogram</span>    <span class="c1"># careful !</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">histogram</span>    <span class="c1"># careful !</span>
 </pre></div>
 </div>
 </div>
@@ -3079,8 +3011,7 @@ Counter({&#39;t&#39;: 2, &#39;e&#39;: 3, &#39;m&#39;: 2, &#39;p&#39;: 1, &#39;r&
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">histogram</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">histogram</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3098,8 +3029,7 @@ Counter({&#39;t&#39;: 2, &#39;e&#39;: 3, &#39;m&#39;: 2, &#39;p&#39;: 1, &#39;r&
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">ct</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ct</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">70</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ct</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3117,8 +3047,7 @@ Counter({50: 8, 40: 4, 70: 3, 60: 3, 30: 2})
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">cs</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="s1">&#39;condonation&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cs</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="s1">&#39;condonation&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3126,8 +3055,7 @@ Counter({50: 8, 40: 4, 70: 3, 60: 3, 30: 2})
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">cs</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">cs</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3140,8 +3068,8 @@ Counter({&#39;o&#39;: 3, &#39;n&#39;: 3, &#39;c&#39;: 1, &#39;d&#39;: 1, &#39;a&
 </pre></div></div>
 </div>
 <p>For other methods we refer to <a class="reference external" href="https://docs.python.org/3/library/collections.html#collections.Counter">Python documentation</a></p>
-<div class="section" id="Exercise---saddened">
-<h3>Exercise - saddened<a class="headerlink" href="#Exercise---saddened" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---saddened">
+<h3>Exercise - saddened<a class="headerlink" href="#Exercise---saddened" title="Permalink to this headline"></a></h3>
 <p>Given a string <code class="docutils literal notranslate"><span class="pre">s</span></code>, write some code which prints:</p>
 <ul class="simple">
 <li><p>the most frequent character</p></li>
@@ -3167,9 +3095,7 @@ There are 3 different frequencies: {1, 2, 3}
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;saddened&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;saddened&#39;</span>
 
 <span class="c1"># write here</span>
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
@@ -3196,79 +3122,57 @@ There are 3 different frequencies: {1, 2, 3}
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;saddened&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;saddened&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/dictionaries/dictionaries5-chal.html">first challenges</a></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="dictionaries5-chal.html" class="btn btn-neutral float-right" title="Dictionaries 5 - First challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="dictionaries3-sol.html" class="btn btn-neutral float-left" title="Dictionaries 3 - Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dictionaries5-chal.html" class="btn btn-neutral float-right" title="Dictionaries 5 - First challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

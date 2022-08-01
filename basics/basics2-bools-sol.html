@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Basics 2 - booleans &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/basics/basics2-bools-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Python basics 3 - floats" href="basics3-floats-sol.html" />
     <link rel="prev" title="Python basics" href="basics1-ints-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,10 +2614,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Basics-2---booleans">
-<h1>Basics 2 - booleans<a class="headerlink" href="#Basics-2---booleans" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/basics.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Basics-2---booleans">
+<h1>Basics 2 - booleans<a class="headerlink" href="#Basics-2---booleans" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/basics.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/basics">Browse online files</a></p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>PREREQUISITES:</strong></p>
@@ -2676,8 +2631,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="kc">True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
 </div>
@@ -2685,8 +2639,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
 </pre></div>
 </div>
 </div>
@@ -2703,8 +2656,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2721,8 +2673,7 @@ bool
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span> <span class="o">=</span> <span class="kc">False</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="kc">False</span>
 </pre></div>
 </div>
 </div>
@@ -2730,8 +2681,7 @@ bool
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2744,12 +2694,12 @@ bool
 bool
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Boolean-operators">
-<h2>Boolean operators<a class="headerlink" href="#Boolean-operators" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Boolean-operators">
+<h2>Boolean operators<a class="headerlink" href="#Boolean-operators" title="Permalink to this headline"></a></h2>
 <p>We can operate on boolean values with the operators <code class="docutils literal notranslate"><span class="pre">not</span></code>, <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>:</p>
-<div class="section" id="and">
-<h3>and<a class="headerlink" href="#and" title="Permalink to this headline">¶</a></h3>
+<section id="and">
+<h3>and<a class="headerlink" href="#and" title="Permalink to this headline"></a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -2781,9 +2731,9 @@ bool
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="or">
-<h3>or<a class="headerlink" href="#or" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="or">
+<h3>or<a class="headerlink" href="#or" title="Permalink to this headline"></a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -2815,9 +2765,9 @@ bool
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="not">
-<h3>not<a class="headerlink" href="#not" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="not">
+<h3>not<a class="headerlink" href="#not" title="Permalink to this headline"></a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%" />
@@ -2837,10 +2787,10 @@ bool
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="section" id="Questions-with-costants">
-<h2>Questions with costants<a class="headerlink" href="#Questions-with-costants" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Questions-with-costants">
+<h2>Questions with costants<a class="headerlink" href="#Questions-with-costants" title="Permalink to this headline"></a></h2>
 <p><strong>QUESTION</strong>: For each of the following boolean expressions, try guessing the result (<em>before</em> guess, and <em>then</em> try them !):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ow">not</span> <span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span><span class="p">)</span>
@@ -2872,9 +2822,9 @@ bool
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Questions-with-variables">
-<h2>Questions with variables<a class="headerlink" href="#Questions-with-variables" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Questions-with-variables">
+<h2>Questions with variables<a class="headerlink" href="#Questions-with-variables" title="Permalink to this headline"></a></h2>
 <p><strong>QUESTION</strong>: For each of these expressions, for which values of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> they give <code class="docutils literal notranslate"><span class="pre">True</span></code>? Try to think an answer before trying!</p>
 <p><strong>NOTE</strong>: there can be many combinations that produce <code class="docutils literal notranslate"><span class="pre">True</span></code>, find them all</p>
 <ol class="arabic">
@@ -2939,9 +2889,9 @@ bool
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="De-Morgan">
-<h2>De Morgan<a class="headerlink" href="#De-Morgan" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="De-Morgan">
+<h2>De Morgan<a class="headerlink" href="#De-Morgan" title="Permalink to this headline"></a></h2>
 <p>There are a couple of laws that sometimes are useful:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2993,23 +2943,19 @@ bool
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># verify here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># verify here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Conversion">
-<h2>Conversion<a class="headerlink" href="#Conversion" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Conversion">
+<h2>Conversion<a class="headerlink" href="#Conversion" title="Permalink to this headline"></a></h2>
 <p>We can convert booleans into intergers with the predefined function <code class="docutils literal notranslate"><span class="pre">int</span></code>. Each integer can be converted into a boolean (and vice versa) with <code class="docutils literal notranslate"><span class="pre">bool</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3026,8 +2972,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3044,8 +2989,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">bool</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">bool</span><span class="p">(</span><span class="mi">72</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3062,8 +3006,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">bool</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">bool</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3080,8 +3023,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">int</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3098,8 +3040,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">int</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3113,9 +3054,9 @@ True
 </pre></div></div>
 </div>
 <p>Each integer is valued to <code class="docutils literal notranslate"><span class="pre">True</span></code> except <code class="docutils literal notranslate"><span class="pre">0</span></code>. Note that truth values <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code> behave respectively like integers <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
-</div>
-<div class="section" id="Questions---what-is-a-boolean?">
-<h2>Questions - what is a boolean?<a class="headerlink" href="#Questions---what-is-a-boolean?" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Questions---what-is-a-boolean?">
+<h2>Questions - what is a boolean?<a class="headerlink" href="#Questions---what-is-a-boolean?" title="Permalink to this headline"></a></h2>
 <p><strong>QUESTION</strong>: For each of these expressions, which results it produces?</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">bool</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
@@ -3155,9 +3096,9 @@ True
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Evaluation-order">
-<h2>Evaluation order<a class="headerlink" href="#Evaluation-order" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Evaluation-order">
+<h2>Evaluation order<a class="headerlink" href="#Evaluation-order" title="Permalink to this headline"></a></h2>
 <p>For efficiency reasons, during the evaluation of a boolean expression if Python discovers the possible result can only be one, it then avoids to calculate further expressions. For example, in this expression:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span> <span class="ow">and</span> <span class="n">x</span>
 </pre></div>
@@ -3168,8 +3109,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kc">True</span> <span class="ow">and</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span> <span class="ow">and</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3186,8 +3126,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="ow">and</span> <span class="kc">True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="ow">and</span> <span class="kc">True</span>
 </pre></div>
 </div>
 </div>
@@ -3204,8 +3143,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kc">False</span> <span class="ow">and</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span> <span class="ow">and</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3222,8 +3160,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="ow">and</span> <span class="kc">False</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="ow">and</span> <span class="kc">False</span>
 </pre></div>
 </div>
 </div>
@@ -3246,8 +3183,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kc">False</span> <span class="ow">or</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span> <span class="ow">or</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3264,8 +3200,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">7</span> <span class="ow">or</span> <span class="kc">False</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span> <span class="ow">or</span> <span class="kc">False</span>
 </pre></div>
 </div>
 </div>
@@ -3282,8 +3217,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">3</span> <span class="ow">or</span> <span class="kc">True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="ow">or</span> <span class="kc">True</span>
 </pre></div>
 </div>
 </div>
@@ -3332,9 +3266,9 @@ False
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Evaluation-errors">
-<h2>Evaluation errors<a class="headerlink" href="#Evaluation-errors" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Evaluation-errors">
+<h2>Evaluation errors<a class="headerlink" href="#Evaluation-errors" title="Permalink to this headline"></a></h2>
 <p>What happens if a boolean expression contains some code that would generate an error? According to intuition, the program should terminate, but it’s not always like this.</p>
 <p>Let’s try to generate an error on purpose. During math lessons they surely told you many times that dividing a number by zero is an error because the result is not defined. So if we try to ask Python what the result of <code class="docutils literal notranslate"><span class="pre">1/0</span></code> is we will (predictably) get complaints:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">0</span><span class="p">)</span>
@@ -3354,8 +3288,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kc">False</span> <span class="ow">and</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span> <span class="ow">and</span> <span class="mi">1</span><span class="o">/</span><span class="mi">0</span>
 </pre></div>
 </div>
 </div>
@@ -3416,9 +3349,9 @@ False
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Comparison-operators">
-<h2>Comparison operators<a class="headerlink" href="#Comparison-operators" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Comparison-operators">
+<h2>Comparison operators<a class="headerlink" href="#Comparison-operators" title="Permalink to this headline"></a></h2>
 <p>Comparison operators allow to build <em>expressions</em> which return a boolean value:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -3455,8 +3388,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">3</span> <span class="o">==</span> <span class="mi">3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">==</span> <span class="mi">3</span>
 </pre></div>
 </div>
 </div>
@@ -3473,8 +3405,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">3</span> <span class="o">==</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">==</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3491,8 +3422,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span><span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span><span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3500,8 +3430,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">a</span> <span class="o">==</span> <span class="n">a</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">==</span> <span class="n">a</span>
 </pre></div>
 </div>
 </div>
@@ -3518,8 +3447,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span>
 </pre></div>
 </div>
 </div>
@@ -3536,8 +3464,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">-</span> <span class="mi">2</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">-</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
@@ -3554,8 +3481,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">3</span> <span class="o">!=</span> <span class="mi">5</span>  <span class="c1"># 3 is different from 5 ?</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">!=</span> <span class="mi">5</span>  <span class="c1"># 3 is different from 5 ?</span>
 </pre></div>
 </div>
 </div>
@@ -3572,8 +3498,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">3</span> <span class="o">!=</span> <span class="mi">3</span>  <span class="c1"># 3 is different from 3 ?</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">!=</span> <span class="mi">3</span>  <span class="c1"># 3 is different from 3 ?</span>
 </pre></div>
 </div>
 </div>
@@ -3590,8 +3515,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3608,8 +3532,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">&lt;</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3626,8 +3549,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="o">&lt;=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">&lt;=</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3644,8 +3566,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3662,8 +3583,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">8</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">8</span> <span class="o">&gt;</span> <span class="mi">8</span>
 </pre></div>
 </div>
 </div>
@@ -3680,8 +3600,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">8</span> <span class="o">&gt;=</span> <span class="mi">8</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">8</span> <span class="o">&gt;=</span> <span class="mi">8</span>
 </pre></div>
 </div>
 </div>
@@ -3699,8 +3618,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">&gt;</span> <span class="mi">3</span>
 </pre></div>
 </div>
 </div>
@@ -3708,8 +3626,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3721,16 +3638,15 @@ True
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Joining-comparisons">
-<h2>Joining comparisons<a class="headerlink" href="#Joining-comparisons" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Joining-comparisons">
+<h2>Joining comparisons<a class="headerlink" href="#Joining-comparisons" title="Permalink to this headline"></a></h2>
 <p>Given a couple of quantities:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3740,8 +3656,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </div>
@@ -3765,8 +3680,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span>
 <span class="n">x</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span>  <span class="c1"># WARNING!</span>
 </pre></div>
 </div>
@@ -3784,8 +3698,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span>
 <span class="n">x</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span>  <span class="c1"># WARNING!</span>
 </pre></div>
 </div>
@@ -3804,8 +3717,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span>
 <span class="n">x</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span>   <span class="c1"># WARNING!</span>
 </pre></div>
 </div>
@@ -3824,8 +3736,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span>
 <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">y</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># WARNING!</span>
 </pre></div>
 </div>
@@ -3905,9 +3816,9 @@ True
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Exercise---The-Lawnmower-1">
-<h2>Exercise - The Lawnmower 1<a class="headerlink" href="#Exercise---The-Lawnmower-1" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---The-Lawnmower-1">
+<h2>Exercise - The Lawnmower 1<a class="headerlink" href="#Exercise---The-Lawnmower-1" title="Permalink to this headline"></a></h2>
 <p>Dr Angelo owns a squared lawn with a side of 100 meters, which every week is mowed by Jobe the gardener. Jobe always meticolously mowes all the field area, but one day the doctor decides to add some variety to the garden and asks Jobe to mow only some zones. Alas, Jobe is not very good in geometry and so Dr Angelo invents a sensor to detect the position, linked to a led which only lights up when the lawnmower must be turned on. Write an expression which given two coordinates <code class="docutils literal notranslate"><span class="pre">x,y</span></code>, produces
 <code class="docutils literal notranslate"><span class="pre">True</span></code> whnever the lawnmower is in a greenlight grass, and <code class="docutils literal notranslate"><span class="pre">False</span></code> in dark zones.</p>
 <ul class="simple">
@@ -3922,8 +3833,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span>      <span class="c1"># False</span>
 <span class="c1">#x,y = 25, 25    # False</span>
@@ -3953,8 +3863,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span>      <span class="c1"># False</span>
 <span class="c1">#x,y = 25, 25    # False</span>
@@ -3966,9 +3875,7 @@ False
 <span class="c1">#x,y = 60, 60    # False</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3980,9 +3887,9 @@ False
 False
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---The-Lawnmower-2">
-<h2>Exercise - The Lawnmower 2<a class="headerlink" href="#Exercise---The-Lawnmower-2" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---The-Lawnmower-2">
+<h2>Exercise - The Lawnmower 2<a class="headerlink" href="#Exercise---The-Lawnmower-2" title="Permalink to this headline"></a></h2>
 <p>Doctor Angelo now asks Jobe to mow more zones…</p>
 <ul class="simple">
 <li><p><strong>DO NOT use</strong> <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>commands</strong></p></li>
@@ -3994,8 +3901,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span>      <span class="c1"># True</span>
 <span class="c1">#x,y = 25, 25    # True</span>
@@ -4025,8 +3931,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span>      <span class="c1"># True</span>
 <span class="c1">#x,y = 25, 25    # True</span>
@@ -4038,9 +3943,7 @@ True
 <span class="c1">#x,y = 60, 60    # True</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4052,9 +3955,9 @@ True
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---The-Lawnmower-3">
-<h2>Exercise - The Lawnmower 3<a class="headerlink" href="#Exercise---The-Lawnmower-3" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---The-Lawnmower-3">
+<h2>Exercise - The Lawnmower 3<a class="headerlink" href="#Exercise---The-Lawnmower-3" title="Permalink to this headline"></a></h2>
 <p>Dr Angelo got tired of squared gardens, and now wants to split the garden witha a diagonal.</p>
 <ul class="simple">
 <li><p><strong>DO NOT use</strong> <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>commands</strong></p></li>
@@ -4066,8 +3969,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span>  <span class="c1"># True</span>
 <span class="c1">#x,y = 100,0   # True</span>
@@ -4095,8 +3997,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span>  <span class="c1"># True</span>
 <span class="c1">#x,y = 100,0   # True</span>
@@ -4107,9 +4008,7 @@ True
 <span class="c1">#x,y = 60, 70  # False</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4121,9 +4020,9 @@ True
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---The-Lawnmower-4">
-<h2>Exercise - The Lawnmower 4<a class="headerlink" href="#Exercise---The-Lawnmower-4" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---The-Lawnmower-4">
+<h2>Exercise - The Lawnmower 4<a class="headerlink" href="#Exercise---The-Lawnmower-4" title="Permalink to this headline"></a></h2>
 <p>Another day, another diagonal for Jobe..</p>
 <ul class="simple">
 <li><p><strong>DO NOT use</strong> <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>commands</strong></p></li>
@@ -4136,8 +4035,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span>   <span class="c1"># True</span>
 <span class="c1">#x,y = 0,0     # True</span>
@@ -4165,8 +4063,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">10</span>   <span class="c1"># True</span>
 <span class="c1">#x,y = 0,0     # True</span>
@@ -4177,9 +4074,7 @@ True
 <span class="c1">#x,y = 25, 25  # True</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4191,9 +4086,9 @@ True
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---The-Lava-Temple">
-<h2>Exercise - The Lava Temple<a class="headerlink" href="#Exercise---The-Lava-Temple" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---The-Lava-Temple">
+<h2>Exercise - The Lava Temple<a class="headerlink" href="#Exercise---The-Lava-Temple" title="Permalink to this headline"></a></h2>
 <p>During your studies you discover a map of an ancient temple, which hides marvelous treasures.</p>
 <p>The temple measures <code class="docutils literal notranslate"><span class="pre">d=80</span></code> meters each side, and is a labyrinth of corridors. You know for sure that some areas shown in red contain a fragile floor under which rivers of boiling lava are flowing: to warn about the danger while you’re walking, you build a detector which will emit a sound whenever you enter red zones.</p>
 <p>Write a boolean expression which gives back <code class="docutils literal notranslate"><span class="pre">True</span></code> if you are in a danger zone, and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
@@ -4207,9 +4102,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">80</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">80</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>     <span class="c1"># False</span>
 <span class="c1">#x,y = 20, 20  # False</span>
@@ -4240,9 +4133,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">80</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">d</span> <span class="o">=</span> <span class="mi">80</span>
 
 <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>     <span class="c1"># False</span>
 <span class="c1">#x,y = 20, 20  # False</span>
@@ -4255,9 +4146,7 @@ False
 <span class="c1">#x,y = 60,0    # True</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4269,9 +4158,9 @@ False
 False
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---The-Tower-of-Gradius-I">
-<h2>Exercise - The Tower of Gradius I<a class="headerlink" href="#Exercise---The-Tower-of-Gradius-I" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---The-Tower-of-Gradius-I">
+<h2>Exercise - The Tower of Gradius I<a class="headerlink" href="#Exercise---The-Tower-of-Gradius-I" title="Permalink to this headline"></a></h2>
 <p>The hands of the clock on the first Gradius Tower has rotated so far of <code class="docutils literal notranslate"><span class="pre">n</span></code> degrees. Write some code which shows <code class="docutils literal notranslate"><span class="pre">True</span></code> if the hand is in the zones in evidence, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <ul class="simple">
 <li><p><strong>DO NOT use</strong> <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>instructions</strong></p></li>
@@ -4289,8 +4178,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>    <span class="c1"># False</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>    <span class="c1"># False</span>
 <span class="c1">#n = 405  # False</span>
 <span class="c1">#n = 70   # False</span>
 <span class="c1">#n = 100  # True</span>
@@ -4347,8 +4235,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>    <span class="c1"># False</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">20</span>    <span class="c1"># False</span>
 <span class="c1">#n = 405  # False</span>
 <span class="c1">#n = 70   # False</span>
 <span class="c1">#n = 100  # True</span>
@@ -4364,9 +4251,7 @@ False
 <span class="c1">#n = 92   # True</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4378,9 +4263,9 @@ False
 False
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---The-Pipe-Jump">
-<h2>Exercise - The Pipe Jump<a class="headerlink" href="#Exercise---The-Pipe-Jump" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---The-Pipe-Jump">
+<h2>Exercise - The Pipe Jump<a class="headerlink" href="#Exercise---The-Pipe-Jump" title="Permalink to this headline"></a></h2>
 <p>An Italian plumber is looking at 3 pipes of height <code class="docutils literal notranslate"><span class="pre">t1</span></code>, <code class="docutils literal notranslate"><span class="pre">t2</span></code> and <code class="docutils literal notranslate"><span class="pre">t3</span></code> , each having respectively <code class="docutils literal notranslate"><span class="pre">10</span></code>, <code class="docutils literal notranslate"><span class="pre">20</span></code> and <code class="docutils literal notranslate"><span class="pre">30</span></code> coins above. Enthusiast, he makes a jump and reaches a height of <code class="docutils literal notranslate"><span class="pre">h</span></code>. Write some code which prints the number of coins taken (<code class="docutils literal notranslate"><span class="pre">10</span></code>,<code class="docutils literal notranslate"><span class="pre">20</span></code> or <code class="docutils literal notranslate"><span class="pre">30</span></code>).</p>
 <ul class="simple">
 <li><p><strong>DO NOT use</strong> <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>instructions</strong></p></li>
@@ -4393,9 +4278,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">,</span><span class="n">t3</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">600</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">,</span><span class="n">t3</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">600</span>
 
 <span class="n">h</span><span class="o">=</span><span class="mi">450</span>   <span class="c1"># 10</span>
 <span class="c1">#h=570  # 20</span>
@@ -4421,9 +4304,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">,</span><span class="n">t3</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">600</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">t1</span><span class="p">,</span><span class="n">t2</span><span class="p">,</span><span class="n">t3</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">600</span>
 
 <span class="n">h</span><span class="o">=</span><span class="mi">450</span>   <span class="c1"># 10</span>
 <span class="c1">#h=570  # 20</span>
@@ -4431,9 +4312,7 @@ False
 <span class="c1">#h=50   # 0</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4445,9 +4324,9 @@ False
 10
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---The-Tower-of-Gradius-II">
-<h2>Exercise - The Tower of Gradius II<a class="headerlink" href="#Exercise---The-Tower-of-Gradius-II" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exercise---The-Tower-of-Gradius-II">
+<h2>Exercise - The Tower of Gradius II<a class="headerlink" href="#Exercise---The-Tower-of-Gradius-II" title="Permalink to this headline"></a></h2>
 <p>The hands of the clock on the second Gradius Tower have rotated so far of <code class="docutils literal notranslate"><span class="pre">n</span></code> and <code class="docutils literal notranslate"><span class="pre">m</span></code> degrees. Write some code which shows <code class="docutils literal notranslate"><span class="pre">True</span></code> if both hands are in the <strong>same</strong> zone among the highlighted ones, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <ul class="simple">
 <li><p><strong>DO NOT use</strong> <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>instructions</strong></p></li>
@@ -4460,9 +4339,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">n</span><span class="p">,</span><span class="n">m</span> <span class="o">=</span> <span class="mi">160</span><span class="p">,</span><span class="mi">170</span>   <span class="c1"># True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">n</span><span class="p">,</span><span class="n">m</span> <span class="o">=</span> <span class="mi">160</span><span class="p">,</span><span class="mi">170</span>   <span class="c1"># True</span>
 <span class="c1">#n,m = 135, 140 # False</span>
 <span class="c1">#n,m = 160,190  # False</span>
 <span class="c1">#n,m = 70,170   # False</span>
@@ -4491,9 +4368,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">n</span><span class="p">,</span><span class="n">m</span> <span class="o">=</span> <span class="mi">160</span><span class="p">,</span><span class="mi">170</span>   <span class="c1"># True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">n</span><span class="p">,</span><span class="n">m</span> <span class="o">=</span> <span class="mi">160</span><span class="p">,</span><span class="mi">170</span>   <span class="c1"># True</span>
 <span class="c1">#n,m = 135, 140 # False</span>
 <span class="c1">#n,m = 160,190  # False</span>
 <span class="c1">#n,m = 70,170   # False</span>
@@ -4505,9 +4380,7 @@ True
 <span class="c1">#n,m = 730,740  # False</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4519,59 +4392,42 @@ True
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/basics/basics3-floats-sol.html">Basics 3 - float numbers</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="basics3-floats-sol.html" class="btn btn-neutral float-right" title="Python basics 3 - floats" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="basics1-ints-sol.html" class="btn btn-neutral float-left" title="Python basics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="basics3-floats-sol.html" class="btn btn-neutral float-right" title="Python basics 3 - floats" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Matrices: Numpy 1 &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/matrices-numpy/matrices-numpy1-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Matrices: Numpy 2 - Exercises" href="matrices-numpy2-sol.html" />
     <link rel="prev" title="Mixed structures 2 - Challenges" href="../mixed-structures/mixed-structures2-chal.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,14 +2614,14 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Matrices:-Numpy-1">
-<h1>Matrices: Numpy 1<a class="headerlink" href="#Matrices:-Numpy-1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/matrices-numpy.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Matrices:-Numpy-1">
+<h1>Matrices: Numpy 1<a class="headerlink" href="#Matrices:-Numpy-1" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/matrices-numpy.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/matrices-numpy">Browse files online</a></p>
-</div>
-<div class="section" id="Introduction">
-<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Introduction">
+<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
 <p>Previously we’ve seen <a class="reference external" href="https://en.softpython.org/matrices-lists/matrices-lists-sol.html">Matrices as lists of lists</a>, here we focus on matrices using Numpy library</p>
 <p>There are substantially two ways to represent matrices in Python: as list of lists, or with the external library <a class="reference external" href="https://www.numpy.org">numpy</a>. The most used is surely Numpy, let’s see the reason the principal differences:</p>
 <p>List of lists - <a class="reference external" href="https://en.softpython.org/matrices-lists/matrices-lists1-sol.html">see separate notebook</a></p>
@@ -2690,8 +2645,8 @@ div.rendered_html tbody tr:hover {
 <div class="admonition warning">
 <p><strong>ATTENTION</strong>: Numpy does not work in <a class="reference external" href="http://www.pythontutor.com/visualize.html#mode=edit">Python Tutor</a></p>
 </div>
-<div class="section" id="What-to-do">
-<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h3>
+<section id="What-to-do">
+<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h3>
 <ul class="simple">
 <li><p>unzip exercises in a folder, you should get something like this:</p></li>
 </ul>
@@ -2720,17 +2675,16 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="np.array">
-<h2>np.array<a class="headerlink" href="#np.array" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="np.array">
+<h2>np.array<a class="headerlink" href="#np.array" title="Permalink to this headline"></a></h2>
 <p>First of all, we import the library, and for convenience we rename it to <code class="docutils literal notranslate"><span class="pre">np</span></code></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -2740,8 +2694,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>  <span class="p">)</span>   <span class="c1"># 2 rows, 3 columns</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>  <span class="p">)</span>   <span class="c1"># 2 rows, 3 columns</span>
 </pre></div>
 </div>
 </div>
@@ -2749,8 +2702,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span>
 </pre></div>
 </div>
 </div>
@@ -2770,8 +2722,7 @@ array([[0., 0., 0.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">8.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">8.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
                   <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span><span class="mf">3.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">]])</span>
 </pre></div>
 </div>
@@ -2780,8 +2731,7 @@ array([[0., 0., 0.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span>
 </pre></div>
 </div>
 </div>
@@ -2799,8 +2749,7 @@ array([[5., 8., 1.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2813,15 +2762,14 @@ array([[5., 8., 1.],
 numpy.ndarray
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Creating-a-matrix-filled-with-ones">
-<h2>Creating a matrix filled with ones<a class="headerlink" href="#Creating-a-matrix-filled-with-ones" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Creating-a-matrix-filled-with-ones">
+<h2>Creating a matrix filled with ones<a class="headerlink" href="#Creating-a-matrix-filled-with-ones" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># 3 rows, 5 columns</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># 3 rows, 5 columns</span>
 </pre></div>
 </div>
 </div>
@@ -2836,15 +2784,14 @@ array([[1., 1., 1., 1., 1.],
        [1., 1., 1., 1., 1.]])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Creating-a-matrix-filled-with-a-number-k">
-<h2>Creating a matrix filled with a number <code class="docutils literal notranslate"><span class="pre">k</span></code><a class="headerlink" href="#Creating-a-matrix-filled-with-a-number-k" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Creating-a-matrix-filled-with-a-number-k">
+<h2>Creating a matrix filled with a number <code class="docutils literal notranslate"><span class="pre">k</span></code><a class="headerlink" href="#Creating-a-matrix-filled-with-a-number-k" title="Permalink to this headline"></a></h2>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">7</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="mi">7</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2859,9 +2806,9 @@ array([[7, 7, 7, 7, 7],
        [7, 7, 7, 7, 7]])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Dimensions-of-a-matrix">
-<h2>Dimensions of a matrix<a class="headerlink" href="#Dimensions-of-a-matrix" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Dimensions-of-a-matrix">
+<h2>Dimensions of a matrix<a class="headerlink" href="#Dimensions-of-a-matrix" title="Permalink to this headline"></a></h2>
 <p>To obtain the dimension, we write like the following:</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>ATTENTION</strong>: after <code class="docutils literal notranslate"><span class="pre">shape</span></code> there are <strong>no</strong> round parenthesis !</p>
@@ -2871,8 +2818,7 @@ array([[7, 7, 7, 7, 7],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">8.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">8.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
                   <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span><span class="mf">3.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">]])</span>
 
 <span class="n">mat</span><span class="o">.</span><span class="n">shape</span>
@@ -2893,8 +2839,7 @@ array([[7, 7, 7, 7, 7],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">num_rows</span><span class="p">,</span> <span class="n">num_cols</span> <span class="o">=</span> <span class="n">mat</span><span class="o">.</span><span class="n">shape</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_rows</span><span class="p">,</span> <span class="n">num_cols</span> <span class="o">=</span> <span class="n">mat</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 </div>
 </div>
@@ -2902,8 +2847,7 @@ array([[7, 7, 7, 7, 7],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">num_rows</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_rows</span>
 </pre></div>
 </div>
 </div>
@@ -2920,8 +2864,7 @@ array([[7, 7, 7, 7, 7],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">num_cols</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_cols</span>
 </pre></div>
 </div>
 </div>
@@ -2934,9 +2877,9 @@ array([[7, 7, 7, 7, 7],
 3
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Reading-and-writing">
-<h2>Reading and writing<a class="headerlink" href="#Reading-and-writing" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Reading-and-writing">
+<h2>Reading and writing<a class="headerlink" href="#Reading-and-writing" title="Permalink to this headline"></a></h2>
 <p>To access data or overwrite square bracket notation is used, with the important difference that in Numpy you can write <em>both</em> the indeces <em>inside</em> the same brackets, separated by a comma:</p>
 <div class="admonition warning">
 <p><strong>ATTENTION</strong>: notation <code class="docutils literal notranslate"><span class="pre">mat[i,j]</span></code> is only for Numpy, with list of lists <strong>does not</strong> work!</p>
@@ -2945,8 +2888,7 @@ array([[7, 7, 7, 7, 7],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">8.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mf">5.0</span><span class="p">,</span><span class="mf">8.0</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
                   <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span><span class="mf">3.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">]])</span>
 
 <span class="c1"># Let&#39;s put number `9` in cell at row `0` and column `1`</span>
@@ -2959,8 +2901,7 @@ array([[7, 7, 7, 7, 7],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span>
 </pre></div>
 </div>
 </div>
@@ -2979,8 +2920,7 @@ array([[5., 9., 1.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -2998,8 +2938,7 @@ array([[5., 9., 1.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">7</span>
 </pre></div>
 </div>
 </div>
@@ -3007,8 +2946,7 @@ array([[5., 9., 1.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span>
 </pre></div>
 </div>
 </div>
@@ -3030,11 +2968,8 @@ array([[5., 9., 1.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <p><strong>✪ EXERCISE</strong>: Try writing like this, what happens?</p>
@@ -3045,22 +2980,18 @@ array([[5., 9., 1.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-<div class="section" id="Filling-the-whole-matrix">
-<h3>Filling the whole matrix<a class="headerlink" href="#Filling-the-whole-matrix" title="Permalink to this headline">¶</a></h3>
+<section id="Filling-the-whole-matrix">
+<h3>Filling the whole matrix<a class="headerlink" href="#Filling-the-whole-matrix" title="Permalink to this headline"></a></h3>
 <p>We can MODIFY the matrix by writing inside a number with <code class="docutils literal notranslate"><span class="pre">fill()</span></code></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">],</span>
                 <span class="p">[</span><span class="mf">6.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">9.0</span><span class="p">]])</span>
 
 <span class="n">mat</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>  <span class="c1"># NOTE: returns nothings !!</span>
@@ -3071,8 +3002,7 @@ array([[5., 9., 1.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span>
 </pre></div>
 </div>
 </div>
@@ -3086,17 +3016,16 @@ array([[7., 7., 7.],
        [7., 7., 7.]])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Slices">
-<h3>Slices<a class="headerlink" href="#Slices" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Slices">
+<h3>Slices<a class="headerlink" href="#Slices" title="Permalink to this headline"></a></h3>
 <p>To extract data from an <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> we can use slices, with the notation we already used for regular lists. There are important difference, though. Let’s see them.</p>
 <p>The first difference is that we can extract sub-matrices by specifying two ranges among the same squared brackets:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
@@ -3108,8 +3037,7 @@ array([[7., 7., 7.],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># rows from 0 *included* to 4 *excluded*</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># rows from 0 *included* to 4 *excluded*</span>
                <span class="c1"># and columns from 1 *included* to 3 *excluded*</span>
 </pre></div>
 </div>
@@ -3130,8 +3058,7 @@ array([[8, 1],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># the whole first row</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># the whole first row</span>
 </pre></div>
 </div>
 </div>
@@ -3148,8 +3075,7 @@ array([[5, 8, 1]])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,:]</span>  <span class="c1"># another way to extract the whole first row</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,:]</span>  <span class="c1"># another way to extract the whole first row</span>
 </pre></div>
 </div>
 </div>
@@ -3166,8 +3092,7 @@ array([[5, 8, 1]])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># the whole first column</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># the whole first column</span>
 </pre></div>
 </div>
 </div>
@@ -3188,8 +3113,7 @@ array([[5],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># another way to extract the whole first column</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># another way to extract the whole first column</span>
 </pre></div>
 </div>
 </div>
@@ -3211,8 +3135,7 @@ array([[5],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span>
 </pre></div>
 </div>
 </div>
@@ -3235,8 +3158,7 @@ array([[5, 8, 1],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
@@ -3248,8 +3170,7 @@ array([[5, 8, 1],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sub_mat</span> <span class="o">=</span> <span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sub_mat</span> <span class="o">=</span> <span class="n">mat</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">sub_mat</span>
 </pre></div>
 </div>
@@ -3270,8 +3191,7 @@ array([[8, 1],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sub_mat</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">999</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sub_mat</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">999</span>
 </pre></div>
 </div>
 </div>
@@ -3279,8 +3199,7 @@ array([[8, 1],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span>
 </pre></div>
 </div>
 </div>
@@ -3297,16 +3216,15 @@ array([[  5, 999,   1],
        [  8,   2,   7]])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Writing-a-constant-in-a-slice">
-<h3>Writing a constant in a slice<a class="headerlink" href="#Writing-a-constant-in-a-slice" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Writing-a-constant-in-a-slice">
+<h3>Writing a constant in a slice<a class="headerlink" href="#Writing-a-constant-in-a-slice" title="Permalink to this headline"></a></h3>
 <p>We can also write a constant in all the cells of a region by identifying the region with a slice, and assigning a constant to it:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
@@ -3331,17 +3249,16 @@ array([[5, 7, 7],
        [8, 2, 5]])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Writing-a-matrix-into-a-slice">
-<h3>Writing a matrix into a slice<a class="headerlink" href="#Writing-a-matrix-into-a-slice" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Writing-a-matrix-into-a-slice">
+<h3>Writing a matrix into a slice<a class="headerlink" href="#Writing-a-matrix-into-a-slice" title="Permalink to this headline"></a></h3>
 <p>We can also write into all the cells in a region by identifying the region with a slice, and then assigning to it a matrix from which we want to read the cells.</p>
 <p><strong>WARNING</strong>: To avoid problems, <strong>double check</strong> you’re using the same dimensions in both left and right slices!</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
                   <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
@@ -3371,17 +3288,16 @@ array([[ 5, 10, 50],
        [ 8,  2,  5]])
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Assignment-and-copy">
-<h2>Assignment and copy<a class="headerlink" href="#Assignment-and-copy" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Assignment-and-copy">
+<h2>Assignment and copy<a class="headerlink" href="#Assignment-and-copy" title="Permalink to this headline"></a></h2>
 <p>With Numpy we must take particular care when using the assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code>: as with regular lists, if we perform an assignment into the new variable, it will only contain a pointer to the original region of memory.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">va</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">va</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -3389,8 +3305,7 @@ array([[ 5, 10, 50],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">va</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">va</span>
 </pre></div>
 </div>
 </div>
@@ -3407,8 +3322,7 @@ array([1, 2, 3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vb</span> <span class="o">=</span> <span class="n">va</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vb</span> <span class="o">=</span> <span class="n">va</span>
 </pre></div>
 </div>
 </div>
@@ -3416,8 +3330,7 @@ array([1, 2, 3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
 </pre></div>
 </div>
 </div>
@@ -3425,8 +3338,7 @@ array([1, 2, 3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vb</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vb</span>
 </pre></div>
 </div>
 </div>
@@ -3443,8 +3355,7 @@ array([100,   2,   3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">va</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">va</span>
 </pre></div>
 </div>
 </div>
@@ -3462,8 +3373,7 @@ array([100,   2,   3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">va</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">va</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -3471,8 +3381,7 @@ array([100,   2,   3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vc</span> <span class="o">=</span> <span class="n">va</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vc</span> <span class="o">=</span> <span class="n">va</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3480,8 +3389,7 @@ array([100,   2,   3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vc</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vc</span>
 </pre></div>
 </div>
 </div>
@@ -3498,8 +3406,7 @@ array([1, 2, 3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
 </pre></div>
 </div>
 </div>
@@ -3507,8 +3414,7 @@ array([1, 2, 3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vc</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vc</span>
 </pre></div>
 </div>
 </div>
@@ -3525,8 +3431,7 @@ array([100,   2,   3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">va</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">va</span>
 </pre></div>
 </div>
 </div>
@@ -3539,16 +3444,15 @@ array([100,   2,   3])
 array([1, 2, 3])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Calculations">
-<h2>Calculations<a class="headerlink" href="#Calculations" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Calculations">
+<h2>Calculations<a class="headerlink" href="#Calculations" title="Permalink to this headline"></a></h2>
 <p>Numpy is extremely flexible, and allows us to perform on arrays almost the same operations from classical vector and matrix algebra:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">va</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">va</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
 <span class="n">va</span>
 </pre></div>
 </div>
@@ -3566,8 +3470,7 @@ array([5, 9, 7])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">vb</span>
 </pre></div>
 </div>
@@ -3586,8 +3489,7 @@ array([6, 8, 0])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vc</span> <span class="o">=</span> <span class="n">va</span> <span class="o">+</span> <span class="n">vb</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vc</span> <span class="o">=</span> <span class="n">va</span> <span class="o">+</span> <span class="n">vb</span>
 <span class="n">vc</span>
 </pre></div>
 </div>
@@ -3606,8 +3508,7 @@ array([11, 17,  7])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">va</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">va</span>
 </pre></div>
 </div>
 </div>
@@ -3624,8 +3525,7 @@ array([5, 9, 7])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">vb</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vb</span>
 </pre></div>
 </div>
 </div>
@@ -3638,14 +3538,13 @@ array([5, 9, 7])
 array([6, 8, 0])
 </pre></div></div>
 </div>
-<div class="section" id="Scalar-multiplication">
-<h3>Scalar multiplication<a class="headerlink" href="#Scalar-multiplication" title="Permalink to this headline">¶</a></h3>
+<section id="Scalar-multiplication">
+<h3>Scalar multiplication<a class="headerlink" href="#Scalar-multiplication" title="Permalink to this headline"></a></h3>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span>
               <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
 </pre></div>
 </div>
@@ -3654,8 +3553,7 @@ array([6, 8, 0])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">3</span> <span class="o">*</span> <span class="n">m</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">*</span> <span class="n">m</span>
 </pre></div>
 </div>
 </div>
@@ -3669,15 +3567,14 @@ array([[15, 27, 21],
        [18, 24,  0]])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Scalar-sum">
-<h3>Scalar sum<a class="headerlink" href="#Scalar-sum" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Scalar-sum">
+<h3>Scalar sum<a class="headerlink" href="#Scalar-sum" title="Permalink to this headline"></a></h3>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">3</span> <span class="o">+</span> <span class="n">m</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span> <span class="o">+</span> <span class="n">m</span>
 </pre></div>
 </div>
 </div>
@@ -3691,16 +3588,15 @@ array([[ 8, 12, 10],
        [ 9, 11,  3]])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Multiplication">
-<h3>Multiplication<a class="headerlink" href="#Multiplication" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Multiplication">
+<h3>Multiplication<a class="headerlink" href="#Multiplication" title="Permalink to this headline"></a></h3>
 <p>Be careful about multiplying with <code class="docutils literal notranslate"><span class="pre">*</span></code>: differently from classical matrix multiplication, it multiplies <em>element by element</em> and so requires matrices of identical dimensions:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">ma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">],</span>
                <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]])</span>
 
 <span class="n">mb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">1</span><span class="p">],</span>
@@ -3725,8 +3621,7 @@ array([[  1,   0,   3],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">],</span>
                <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]])</span>
 <span class="n">md</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
                <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
@@ -3746,15 +3641,14 @@ array([[  4,  32],
        [ 40, 320]])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Dividing-by-a-scalar">
-<h3>Dividing by a scalar<a class="headerlink" href="#Dividing-by-a-scalar" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Dividing-by-a-scalar">
+<h3>Dividing by a scalar<a class="headerlink" href="#Dividing-by-a-scalar" title="Permalink to this headline"></a></h3>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">ma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mf">0.0</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mf">0.0</span><span class="p">],</span>
                <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mi">30</span><span class="p">]])</span>
 
 <span class="n">ma</span> <span class="o">/</span> <span class="mi">4</span>
@@ -3776,8 +3670,7 @@ array([[0.25, 0.5 , 0.  ],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">ma</span> <span class="o">/</span> <span class="mf">0.0</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">ma</span> <span class="o">/</span> <span class="mf">0.0</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AFTER&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3803,17 +3696,16 @@ AFTER
   &#34;&#34;&#34;Entry point for launching an IPython kernel.
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Aggregation">
-<h2>Aggregation<a class="headerlink" href="#Aggregation" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Aggregation">
+<h2>Aggregation<a class="headerlink" href="#Aggregation" title="Permalink to this headline"></a></h2>
 <p>Numpy provides several functions to calculate statistics, we only show some:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
               <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
 <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 </pre></div>
@@ -3832,8 +3724,7 @@ AFTER
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3850,8 +3741,7 @@ AFTER
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[62]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3864,15 +3754,14 @@ AFTER
 1
 </pre></div></div>
 </div>
-<div class="section" id="Aggregating-by-row-or-column">
-<h3>Aggregating by row or column<a class="headerlink" href="#Aggregating-by-row-or-column" title="Permalink to this headline">¶</a></h3>
+<section id="Aggregating-by-row-or-column">
+<h3>Aggregating by row or column<a class="headerlink" href="#Aggregating-by-row-or-column" title="Permalink to this headline"></a></h3>
 <p>By adding the <code class="docutils literal notranslate"><span class="pre">axis</span></code> parameter we can tell numpy to perform the affrefation on each column (<code class="docutils literal notranslate"><span class="pre">axis=0</span></code>) or row (<code class="docutils literal notranslate"><span class="pre">axis=1</span></code>):</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># the maximum of each column</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># the maximum of each column</span>
 </pre></div>
 </div>
 </div>
@@ -3889,8 +3778,7 @@ array([5, 7, 6])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>   <span class="c1"># sum each column</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>   <span class="c1"># sum each column</span>
 </pre></div>
 </div>
 </div>
@@ -3907,8 +3795,7 @@ array([ 8, 11,  7])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[65]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># the maximum of each row</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># the maximum of each row</span>
 </pre></div>
 </div>
 </div>
@@ -3925,8 +3812,7 @@ array([6, 7])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># sum each row</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># sum each row</span>
 </pre></div>
 </div>
 </div>
@@ -3939,17 +3825,16 @@ array([6, 7])
 array([15, 11])
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Filtering">
-<h2>Filtering<a class="headerlink" href="#Filtering" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Filtering">
+<h2>Filtering<a class="headerlink" href="#Filtering" title="Permalink to this headline"></a></h2>
 <p>Numpy offers a mini-language to filter the numbers in an array, by specifying the selection criteria. Let’s see an example:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
                 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
 <span class="n">mat</span>
 </pre></div>
@@ -3971,8 +3856,7 @@ array([[5, 2, 6],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[68]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[</span> <span class="n">mat</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[</span> <span class="n">mat</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -3990,8 +3874,7 @@ array([5, 6, 4, 3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">&gt;</span> <span class="mi">2</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">&gt;</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
@@ -4011,8 +3894,7 @@ array([[ True, False,  True],
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span><span class="p">[</span> <span class="n">mat</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">[</span> <span class="n">mat</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4034,8 +3916,7 @@ array([5, 6, 4, 3])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
                 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
 <span class="n">mat</span><span class="p">[(</span><span class="n">mat</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">mat</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">)]</span>
 </pre></div>
@@ -4054,8 +3935,7 @@ array([5, 4])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
                 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
 <span class="n">mat</span><span class="p">[(</span><span class="n">mat</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">mat</span> <span class="o">&gt;</span> <span class="mi">4</span><span class="p">)]</span>
 </pre></div>
@@ -4080,9 +3960,7 @@ array([5, 6, 1])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
                 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
 
 <span class="c1"># write here</span>
@@ -4114,15 +3992,11 @@ array([5, 6, 1])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
                 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="admonition warning">
@@ -4135,9 +4009,7 @@ array([5, 6, 1])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
                 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
 
 <span class="c1"># write here</span>
@@ -4167,27 +4039,22 @@ array([5, 6, 1])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
                 <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-<div class="section" id="Finding-indexes-with-np.where">
-<h3>Finding indexes with <code class="docutils literal notranslate"><span class="pre">np.where</span></code><a class="headerlink" href="#Finding-indexes-with-np.where" title="Permalink to this headline">¶</a></h3>
+<section id="Finding-indexes-with-np.where">
+<h3>Finding indexes with <code class="docutils literal notranslate"><span class="pre">np.where</span></code><a class="headerlink" href="#Finding-indexes-with-np.where" title="Permalink to this headline"></a></h3>
 <p>We’ve seen how to find the content of cells which satisfy a certain criteria. What if we wanted to find the <em>indeces</em> of those cells? In that case we would use the function <code class="docutils literal notranslate"><span class="pre">np.where</span></code>, passing as parameter the condition expressed in the same language used before.</p>
 <p>For example, if we wanted to find the <em>indexes</em> of cells containing numbers less than 40 or greater than 60 we would write like so:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>             <span class="c1">#0  1  2  3  4  5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>             <span class="c1">#0  1  2  3  4  5</span>
 <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">30</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">70</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">80</span><span class="p">])</span>
 
 <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">((</span><span class="n">v</span> <span class="o">&lt;</span> <span class="mi">40</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">v</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">))</span>
@@ -4203,16 +4070,15 @@ array([5, 6, 1])
 (array([0, 2, 3, 5]),)
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Writing-into-cells-which-satisfy-a-criteria">
-<h3>Writing into cells which satisfy a criteria<a class="headerlink" href="#Writing-into-cells-which-satisfy-a-criteria" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Writing-into-cells-which-satisfy-a-criteria">
+<h3>Writing into cells which satisfy a criteria<a class="headerlink" href="#Writing-into-cells-which-satisfy-a-criteria" title="Permalink to this headline"></a></h3>
 <p>We can use <code class="docutils literal notranslate"><span class="pre">np.where</span></code> to substitute values in the cells which satisfy a criteria with other values which we’ll be expressed in two extra matrices <code class="docutils literal notranslate"><span class="pre">ma</span></code> and <code class="docutils literal notranslate"><span class="pre">mb</span></code>. In case the criteria is satisfied, numpy will take the corresponding values from <code class="docutils literal notranslate"><span class="pre">ma</span></code>, otherwise from <code class="docutils literal notranslate"><span class="pre">mb</span></code>.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">ma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ma</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
     <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
     <span class="p">[</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
     <span class="p">[</span> <span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">]</span>
@@ -4246,17 +4112,16 @@ array([[  1,  -2,   3,  -4],
        [  9, -10, -11, -12]])
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="arange-and-linspace-sequences">
-<h2>arange and linspace sequences<a class="headerlink" href="#arange-and-linspace-sequences" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="arange-and-linspace-sequences">
+<h2>arange and linspace sequences<a class="headerlink" href="#arange-and-linspace-sequences" title="Permalink to this headline"></a></h2>
 <p>The standard function <code class="docutils literal notranslate"><span class="pre">range</span></code> of Python does not allow for float increments, which we can instead obtain by building sequences of float numbers with <code class="docutils literal notranslate"><span class="pre">np.arange</span></code>, by specifying left limit (<strong>included</strong>), right limit (<strong>excluded</strong>) and the increment:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[77]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4274,8 +4139,7 @@ array([0. , 0.2, 0.4, 0.6, 0.8])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4292,8 +4156,7 @@ array([0. , 0.2, 0.4, 0.6, 0.8])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[79]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4307,13 +4170,13 @@ array([0.        , 0.08888889, 0.17777778, 0.26666667, 0.35555556,
        0.44444444, 0.53333333, 0.62222222, 0.71111111, 0.8       ])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="NaNs-and-infinities">
-<h2>NaNs and infinities<a class="headerlink" href="#NaNs-and-infinities" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="NaNs-and-infinities">
+<h2>NaNs and infinities<a class="headerlink" href="#NaNs-and-infinities" title="Permalink to this headline"></a></h2>
 <p>Float numbers can be numbers and…. not numbers, and infinities. Sometimes during calculations extremal conditions may arise, like when dividing a small number by a huge number. In such cases, you might end up having a float which is a dreaded <em>Not a Number</em>, <em>NaN</em> for short, or you might get an infinity. This can lead to very awful unexpected behaviours, so you must be well aware of it.</p>
 <p>Following behaviours are dictated by IEEE Standard for Binary Floating-Point for Arithmetic (IEEE 754) which Numpy uses and is implemented in all CPUs, so they actually regard all programming languages.</p>
-<div class="section" id="NaNs">
-<h3>NaNs<a class="headerlink" href="#NaNs" title="Permalink to this headline">¶</a></h3>
+<section id="NaNs">
+<h3>NaNs<a class="headerlink" href="#NaNs" title="Permalink to this headline"></a></h3>
 <p>A NaN is <em>Not a Number</em>. Which is already a silly name, since a NaN is actually a very special member of floats, with this astonishing property:</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: NaN IS NOT EQUAL TO ITSELF</strong> !!!!</p>
@@ -4325,8 +4188,7 @@ array([0.        , 0.08888889, 0.17777778, 0.26666667, 0.35555556,
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">math</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
 <span class="n">math</span><span class="o">.</span><span class="n">nan</span>    <span class="c1"># notice it prints as &#39;nan&#39; with lowercase n</span>
 </pre></div>
 </div>
@@ -4345,8 +4207,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">type</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4364,8 +4225,7 @@ float
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">math</span><span class="o">.</span><span class="n">nan</span> <span class="o">==</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>   <span class="c1"># what the F... alse</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">nan</span> <span class="o">==</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>   <span class="c1"># what the F... alse</span>
 </pre></div>
 </div>
 </div>
@@ -4378,16 +4238,15 @@ float
 False
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Detecting-NaN">
-<h3>Detecting NaN<a class="headerlink" href="#Detecting-NaN" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Detecting-NaN">
+<h3>Detecting NaN<a class="headerlink" href="#Detecting-NaN" title="Permalink to this headline"></a></h3>
 <p>Given the above, if you want to check if a variable <code class="docutils literal notranslate"><span class="pre">x</span></code> is a NaN, you <em>cannot</em> write this:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">:</span>  <span class="c1"># WRONG</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m NaN &quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -4408,8 +4267,7 @@ x is something else ??
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>  <span class="c1"># CORRECT</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is NaN &quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -4430,8 +4288,7 @@ x is NaN
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>  <span class="c1"># CORRECT</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y is NaN &quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
@@ -4447,16 +4304,15 @@ x is NaN
 y is NaN
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Sequences-with-NaNs">
-<h3>Sequences with NaNs<a class="headerlink" href="#Sequences-with-NaNs" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Sequences-with-NaNs">
+<h3>Sequences with NaNs<a class="headerlink" href="#Sequences-with-NaNs" title="Permalink to this headline"></a></h3>
 <p>Still, not everything is completely crazy. If you compare a sequence holding NaNs to another one, you will get reasonable results:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -4469,9 +4325,9 @@ y is NaN
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise-NaN:-two-vars">
-<h3>Exercise NaN: two vars<a class="headerlink" href="#Exercise-NaN:-two-vars" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise-NaN:-two-vars">
+<h3>Exercise NaN: two vars<a class="headerlink" href="#Exercise-NaN:-two-vars" title="Permalink to this headline"></a></h3>
 <p>Given two number variables <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>, write some code that prints <code class="docutils literal notranslate"><span class="pre">&quot;same&quot;</span></code> when they are the same, <em>even</em> when they are NaN. Otherwise, prints `”not the same”</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4479,8 +4335,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># expected output: same</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># expected output: same</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 
@@ -4522,8 +4377,7 @@ same
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># expected output: same</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># expected output: same</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 
@@ -4544,9 +4398,7 @@ same
 <span class="c1">#y = 4</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4557,16 +4409,15 @@ same
 same
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Operations-on-NaNs">
-<h3>Operations on NaNs<a class="headerlink" href="#Operations-on-NaNs" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Operations-on-NaNs">
+<h3>Operations on NaNs<a class="headerlink" href="#Operations-on-NaNs" title="Permalink to this headline"></a></h3>
 <p>Any operation on a NaN will generate another NaN:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mi">5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 </pre></div>
 </div>
 </div>
@@ -4583,8 +4434,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">math</span><span class="o">.</span><span class="n">nan</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">nan</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 </pre></div>
 </div>
 </div>
@@ -4601,8 +4451,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">math</span><span class="o">.</span><span class="n">nan</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">nan</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
 </pre></div>
 </div>
 </div>
@@ -4632,8 +4481,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">:</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;That&#39;s True&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -4646,16 +4494,15 @@ nan
 That&#39;s True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="NaN-and-Numpy">
-<h3>NaN and Numpy<a class="headerlink" href="#NaN-and-Numpy" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="NaN-and-Numpy">
+<h3>NaN and Numpy<a class="headerlink" href="#NaN-and-Numpy" title="Permalink to this headline"></a></h3>
 <p>When using Numpy you are quite likely to encounter NaNs, so much so they get redefined inside Numpy, but they are exactly the same as in <code class="docutils literal notranslate"><span class="pre">math</span></code> module:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[92]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">nan</span>
 </pre></div>
 </div>
 </div>
@@ -4672,8 +4519,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[93]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4690,8 +4536,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[94]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4709,8 +4554,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[95]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.9</span><span class="p">,</span><span class="kc">None</span><span class="p">,</span><span class="mf">3.2</span><span class="p">,</span><span class="mf">5.1</span><span class="p">])</span>
 </pre></div>
 </div>
@@ -4730,8 +4574,7 @@ array([4.9, None, 3.2, 5.1], dtype=object)
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.9</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span><span class="mf">3.2</span><span class="p">,</span><span class="mf">5.1</span><span class="p">])</span>   <span class="c1"># Notice how the `dtype=object` has disappeared</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.9</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span><span class="mf">3.2</span><span class="p">,</span><span class="mf">5.1</span><span class="p">])</span>   <span class="c1"># Notice how the `dtype=object` has disappeared</span>
 </pre></div>
 </div>
 </div>
@@ -4744,9 +4587,9 @@ array([4.9, None, 3.2, 5.1], dtype=object)
 array([4.9, nan, 3.2, 5.1])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Where-are-the-NaNs-?">
-<h3>Where are the NaNs ?<a class="headerlink" href="#Where-are-the-NaNs-?" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Where-are-the-NaNs-?">
+<h3>Where are the NaNs ?<a class="headerlink" href="#Where-are-the-NaNs-?" title="Permalink to this headline"></a></h3>
 <p>Let’s try to see where we can spot NaNs and other weird things such infinities in the wild</p>
 <p>First, let check what happens when we call function <code class="docutils literal notranslate"><span class="pre">log</span></code> of standard module <code class="docutils literal notranslate"><span class="pre">math</span></code>. As we know, log function behaves like this:</p>
 <ul class="simple">
@@ -4772,8 +4615,7 @@ array([4.9, nan, 3.2, 5.1])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[97]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4801,8 +4643,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[98]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">]))</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">]))</span>
 </pre></div>
 </div>
 </div>
@@ -4824,19 +4665,18 @@ nan
 array([1.09861229, 1.94591015,        nan, 2.19722458])
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Infinities">
-<h3>Infinities<a class="headerlink" href="#Infinities" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Infinities">
+<h3>Infinities<a class="headerlink" href="#Infinities" title="Permalink to this headline"></a></h3>
 <p>As we said previously, NumPy uses the IEEE Standard for Binary Floating-Point for Arithmetic (IEEE 754). Since somebody at IEEE decided to capture the misteries of infinity into floating numbers, we have yet another citizen to take into account when performing calculations (for more info see <a class="reference external" href="https://numpy.org/devdocs/reference/constants.html">Numpy documentation on constants</a>):</p>
-</div>
-<div class="section" id="Positive-infinity-np.inf">
-<h3>Positive infinity <code class="docutils literal notranslate"><span class="pre">np.inf</span></code><a class="headerlink" href="#Positive-infinity-np.inf" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Positive-infinity-np.inf">
+<h3>Positive infinity <code class="docutils literal notranslate"><span class="pre">np.inf</span></code><a class="headerlink" href="#Positive-infinity-np.inf" title="Permalink to this headline"></a></h3>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[99]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mi">5</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="mi">0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mi">5</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="mi">0</span>
 </pre></div>
 </div>
 </div>
@@ -4862,8 +4702,7 @@ array([inf])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span> <span class="p">]</span> <span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span> <span class="p">]</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4896,8 +4735,7 @@ array([3.  ,  inf,  inf, 1.75])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
 </pre></div>
 </div>
 </div>
@@ -4915,8 +4753,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[102]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
 
 <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x is infinite&quot;</span><span class="p">)</span>
@@ -4938,8 +4775,7 @@ x is infinite
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">isinf</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isinf</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4952,16 +4788,15 @@ x is infinite
 True
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Negative-infinity">
-<h3>Negative infinity<a class="headerlink" href="#Negative-infinity" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Negative-infinity">
+<h3>Negative infinity<a class="headerlink" href="#Negative-infinity" title="Permalink to this headline"></a></h3>
 <p>We can also have negative infinity, which is different from positive infinity:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
 </pre></div>
 </div>
 </div>
@@ -4979,8 +4814,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[105]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">isinf</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isinf</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4998,8 +4832,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">isneginf</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isneginf</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5016,8 +4849,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[107]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">isneginf</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isneginf</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5035,8 +4867,7 @@ False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[108]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5058,16 +4889,15 @@ False
 -inf
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Combining-infinities-and-NaNs">
-<h3>Combining infinities and NaNs<a class="headerlink" href="#Combining-infinities-and-NaNs" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Combining-infinities-and-NaNs">
+<h3>Combining infinities and NaNs<a class="headerlink" href="#Combining-infinities-and-NaNs" title="Permalink to this headline"></a></h3>
 <p>When performing operations involving infinities and NaNs, IEEE arithmetics tries to mimic classical analysis, sometimes including NaN as a result:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
 </pre></div>
 </div>
 </div>
@@ -5084,8 +4914,7 @@ inf
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[110]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
 </pre></div>
 </div>
 </div>
@@ -5102,8 +4931,7 @@ inf
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[111]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">*</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">*</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span>
 </pre></div>
 </div>
 </div>
@@ -5121,8 +4949,7 @@ inf
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[112]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
 </pre></div>
 </div>
 </div>
@@ -5139,8 +4966,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[113]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
 </pre></div>
 </div>
 </div>
@@ -5158,8 +4984,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[114]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
 </pre></div>
 </div>
 </div>
@@ -5176,8 +5001,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[115]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
 </pre></div>
 </div>
 </div>
@@ -5190,16 +5014,15 @@ nan
 nan
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Negative-zero">
-<h3>Negative zero<a class="headerlink" href="#Negative-zero" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Negative-zero">
+<h3>Negative zero<a class="headerlink" href="#Negative-zero" title="Permalink to this headline"></a></h3>
 <p>We can even have a <em>negative</em> zero - who would have thought?</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[116]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">NZERO</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">NZERO</span>
 </pre></div>
 </div>
 </div>
@@ -5217,8 +5040,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[117]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">PZERO</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">PZERO</span>
 </pre></div>
 </div>
 </div>
@@ -5237,8 +5059,7 @@ nan
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[118]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="mf">0.0</span> <span class="o">==</span> <span class="o">-</span><span class="mf">0.0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">0.0</span> <span class="o">==</span> <span class="o">-</span><span class="mf">0.0</span>
 </pre></div>
 </div>
 </div>
@@ -5260,8 +5081,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[119]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mf">5.0</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mf">0.0</span> <span class="p">]</span> <span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mf">5.0</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mf">0.0</span> <span class="p">]</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5290,8 +5110,7 @@ array([inf])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[120]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mf">5.0</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="o">-</span><span class="mf">0.0</span> <span class="p">]</span> <span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mf">5.0</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="o">-</span><span class="mf">0.0</span> <span class="p">]</span> <span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -5316,9 +5135,9 @@ array([-inf])
 <p>Oh gosh. This time we got an array holding a <em>negative</em> infinity <code class="docutils literal notranslate"><span class="pre">-np.inf</span></code></p>
 <p>If all of this seems odd to you, do not bash at Numpy. This is the way pretty much any CPUs does floating point calculations so you will find it in almost ALL computer languages.</p>
 <p>What programming languages can do is add further controls to protect you from paradoxical situations, for example when you directly write <code class="docutils literal notranslate"><span class="pre">1.0/0.0</span></code> Python raises <code class="docutils literal notranslate"><span class="pre">ZeroDivisionError</span></code> (blocking thus execution), and when you operate on arrays Numpy emits a warning (but doesn’t block execution).</p>
-</div>
-<div class="section" id="Exercise:-detect-proper-numbers">
-<h3>Exercise: detect proper numbers<a class="headerlink" href="#Exercise:-detect-proper-numbers" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise:-detect-proper-numbers">
+<h3>Exercise: detect proper numbers<a class="headerlink" href="#Exercise:-detect-proper-numbers" title="Permalink to this headline"></a></h3>
 <p>Write some code that PRINTS <code class="docutils literal notranslate"><span class="pre">equal</span> <span class="pre">numbers</span></code> if two numbers <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> passed are equal and actual numbers, and PRINTS <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">equal</span> <span class="pre">numbers</span></code> otherwise.</p>
 <p><strong>NOTE</strong>: <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">equal</span> <span class="pre">numbers</span></code> must be printed if any of the numbers is infinite or NaN.</p>
 <p>To solve it, feel free to call functions indicated in <a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/constants.html">Numpy documentation about costants</a></p>
@@ -5328,8 +5147,7 @@ array([-inf])
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[121]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># expected: equal numbers</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># expected: equal numbers</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
 
@@ -5391,8 +5209,7 @@ equal numbers
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[121]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># expected: equal numbers</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># expected: equal numbers</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
 
@@ -5426,9 +5243,7 @@ equal numbers
 
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -5440,9 +5255,9 @@ equal numbers
 equal numbers
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise:-guess-expressions">
-<h3>Exercise: guess expressions<a class="headerlink" href="#Exercise:-guess-expressions" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise:-guess-expressions">
+<h3>Exercise: guess expressions<a class="headerlink" href="#Exercise:-guess-expressions" title="Permalink to this headline"></a></h3>
 <p>For each of the following expressions, try to guess the result</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: the following may cause severe convulsions and nausea.</strong></p>
@@ -5467,60 +5282,43 @@ equal numbers
 <span class="n">s</span><span class="o">.</span>  <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/matrices-numpy/matrices-numpy2-sol.html">numpy exercises</a>.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="matrices-numpy2-sol.html" class="btn btn-neutral float-right" title="Matrices: Numpy 2 - Exercises" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../mixed-structures/mixed-structures2-chal.html" class="btn btn-neutral float-left" title="Mixed structures 2 - Challenges" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="matrices-numpy2-sol.html" class="btn btn-neutral float-right" title="Matrices: Numpy 2 - Exercises" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

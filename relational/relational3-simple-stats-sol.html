@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Relational data 3 - simple statistics &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/relational/relational3-simple-stats-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Relational data 4 - Challenges" href="relational4-chal.html" />
     <link rel="prev" title="Relational data 2 - binary relations" href="relational2-binrel-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2405,27 +2345,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2526,7 +2480,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2592,6 +2546,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2601,7 +2556,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2661,15 +2616,15 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Relational-data-3---simple-statistics">
-<h1>Relational data 3 - simple statistics<a class="headerlink" href="#Relational-data-3---simple-statistics" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Relational-data-3---simple-statistics">
+<h1>Relational data 3 - simple statistics<a class="headerlink" href="#Relational-data-3---simple-statistics" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/relational">Browse files online</a></p>
 <p>We will now compute simple statistics about graphs (they don’t require node discovery algorithms).</p>
-</div>
-<div class="section" id="What-to-do">
-<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="What-to-do">
+<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p>unzip exercises in a folder, you should get something like this:</p></li>
 </ul>
@@ -2704,9 +2659,9 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="Outdegrees-and-indegrees">
-<h2>Outdegrees and indegrees<a class="headerlink" href="#Outdegrees-and-indegrees" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Outdegrees-and-indegrees">
+<h2>Outdegrees and indegrees<a class="headerlink" href="#Outdegrees-and-indegrees" title="Permalink to this headline"></a></h2>
 <p>The <em>out-degree</em> <span class="math notranslate nohighlight">\(\deg^+(v)\)</span> of a node <span class="math notranslate nohighlight">\(v\)</span> is the number of edges going out from it, while the <em>in-degree</em> <span class="math notranslate nohighlight">\(\deg^-(v)\)</span> is the number of edges going into it.</p>
 <p><em>NOTE:</em> the out-degree and in-degree are <em>not</em> the sum of weights ! They just count presence or absence of edges.</p>
 <p>For example, consider this graph:</p>
@@ -2714,8 +2669,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
 
 <span class="n">d</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;a&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
@@ -2737,8 +2691,8 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <p>The out-degree of <code class="docutils literal notranslate"><span class="pre">d</span></code> is 2, because it has one outgoing edge to <code class="docutils literal notranslate"><span class="pre">b</span></code> but also an outgoing edge to itself. The indegree of <code class="docutils literal notranslate"><span class="pre">d</span></code> is 3, because it has an edge coming from <code class="docutils literal notranslate"><span class="pre">b</span></code>, one from <code class="docutils literal notranslate"><span class="pre">c</span></code> and one self-loop from <code class="docutils literal notranslate"><span class="pre">d</span></code> itself.</p>
-<div class="section" id="Exercise---outdegree_adj">
-<h3>Exercise - outdegree_adj<a class="headerlink" href="#Exercise---outdegree_adj" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---outdegree_adj">
+<h3>Exercise - outdegree_adj<a class="headerlink" href="#Exercise---outdegree_adj" title="Permalink to this headline"></a></h3>
 <p>✪ RETURN the outdegree of a node from graph <code class="docutils literal notranslate"><span class="pre">d</span></code> represented as a dictionary of adjacency lists</p>
 <ul class="simple">
 <li><p>If <code class="docutils literal notranslate"><span class="pre">v</span></code> is not a vertex of <code class="docutils literal notranslate"><span class="pre">d</span></code>, raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
@@ -2749,8 +2703,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">outdegree_adj</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">outdegree_adj</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="n">v</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Vertex </span><span class="si">%s</span><span class="s2"> is not in </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">d</span><span class="p">))</span>
@@ -2785,8 +2738,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">outdegree_adj</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">outdegree_adj</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">try</span><span class="p">:</span>
@@ -2812,9 +2764,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---outdegree_mat">
-<h3>Exercise - outdegree_mat<a class="headerlink" href="#Exercise---outdegree_mat" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---outdegree_mat">
+<h3>Exercise - outdegree_mat<a class="headerlink" href="#Exercise---outdegree_mat" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN the outdegree of a node <code class="docutils literal notranslate"><span class="pre">i</span></code> from a graph boolean matrix <span class="math notranslate nohighlight">\(n\)</span> x <span class="math notranslate nohighlight">\(n\)</span> represented as a list of lists</p>
 <ul class="simple">
 <li><p>If <code class="docutils literal notranslate"><span class="pre">i</span></code> is not a node of the graph, raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
@@ -2825,8 +2777,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">outdegree_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">outdegree_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
 
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
@@ -2871,8 +2822,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">outdegree_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">outdegree_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">try</span><span class="p">:</span>
@@ -2904,9 +2854,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---outdegree_avg">
-<h3>Exercise - outdegree_avg<a class="headerlink" href="#Exercise---outdegree_avg" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---outdegree_avg">
+<h3>Exercise - outdegree_avg<a class="headerlink" href="#Exercise---outdegree_avg" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN the average outdegree of nodes in graph <code class="docutils literal notranslate"><span class="pre">d</span></code>, represented as dictionary of adjacency lists.</p>
 <ul class="simple">
 <li><p>Assume all nodes are in the keys.</p></li>
@@ -2917,8 +2867,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">outdegree_avg</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">outdegree_avg</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
 
     <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
@@ -2947,8 +2896,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">outdegree_avg</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">outdegree_avg</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">d1</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;a&#39;</span><span class="p">:[]</span> <span class="p">}</span>
@@ -2968,9 +2916,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---indegree_adj">
-<h3>Exercise - indegree_adj<a class="headerlink" href="#Exercise---indegree_adj" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---indegree_adj">
+<h3>Exercise - indegree_adj<a class="headerlink" href="#Exercise---indegree_adj" title="Permalink to this headline"></a></h3>
 <p>The indegree of a node <code class="docutils literal notranslate"><span class="pre">v</span></code> is the number of edges going into it.</p>
 <p>✪✪ RETURN the indegree of node <code class="docutils literal notranslate"><span class="pre">v</span></code> in graph <code class="docutils literal notranslate"><span class="pre">d</span></code>, represented as a dictionary of adjacency lists</p>
 <ul class="simple">
@@ -2982,8 +2930,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">indegree_adj</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">indegree_adj</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="n">v</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Vertex </span><span class="si">%s</span><span class="s2"> is not in </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">d</span><span class="p">))</span>
@@ -3021,8 +2968,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">indegree_adj</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">indegree_adj</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">try</span><span class="p">:</span>
@@ -3048,9 +2994,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---indegree_mat">
-<h3>Exercise - indegree_mat<a class="headerlink" href="#Exercise---indegree_mat" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---indegree_mat">
+<h3>Exercise - indegree_mat<a class="headerlink" href="#Exercise---indegree_mat" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN the indegree of a node <code class="docutils literal notranslate"><span class="pre">i</span></code> from a graph boolean matrix nxn represented as a list of lists</p>
 <ul class="simple">
 <li><p>If <code class="docutils literal notranslate"><span class="pre">i</span></code> is not a node of the graph, raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
@@ -3061,8 +3007,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">indegree_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">indegree_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
 
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
@@ -3104,8 +3049,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">indegree_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">indegree_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">try</span><span class="p">:</span>
@@ -3134,9 +3078,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---indegree_avg">
-<h3>Exercise - indegree_avg<a class="headerlink" href="#Exercise---indegree_avg" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---indegree_avg">
+<h3>Exercise - indegree_avg<a class="headerlink" href="#Exercise---indegree_avg" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN the average indegree of nodes in graph <code class="docutils literal notranslate"><span class="pre">d</span></code>, represented as dictionary of adjacency lists.</p>
 <ul class="simple">
 <li><p>Assume all nodes are in the keys</p></li>
@@ -3147,8 +3091,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">indegree_avg</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">indegree_avg</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
 
     <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
@@ -3177,8 +3120,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">indegree_avg</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">indegree_avg</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="n">d1</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;a&#39;</span><span class="p">:[]</span> <span class="p">}</span>
@@ -3198,26 +3140,24 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Was-it-worth-it?">
-<h3>Was it worth it?<a class="headerlink" href="#Was-it-worth-it?" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Was-it-worth-it?">
+<h3>Was it worth it?<a class="headerlink" href="#Was-it-worth-it?" title="Permalink to this headline"></a></h3>
 <p><strong>QUESTION</strong>: Is there any difference between the results of <code class="docutils literal notranslate"><span class="pre">indegree_avg</span></code> and <code class="docutils literal notranslate"><span class="pre">outdegree_avg</span></code> ?</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: They give the same result. Think about what you did: for <code class="docutils literal notranslate"><span class="pre">outdegree_avg</span></code> you summed over all rows and then divided by <code class="docutils literal notranslate"><span class="pre">n</span></code>. For <code class="docutils literal notranslate"><span class="pre">indegree_avg</span></code> you summed over all columns, and then divided by <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 <p>More formally, we have that the so-called <em>degree sum formula</em> holds (see <a class="reference external" href="https://en.wikipedia.org/wiki/Directed_graph#Indegree_and_outdegree">Wikipedia</a> for more info):</p>
 <p><span class="math notranslate nohighlight">\(\sum_{v \in V} \deg^-(v) = \sum_{v \in V} \deg^+(v) = |A|\)</span></p>
-</div></div>
-<div class="section" id="networkx-Indegrees-and-outdegrees">
-<h3>networkx Indegrees and outdegrees<a class="headerlink" href="#networkx-Indegrees-and-outdegrees" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="networkx-Indegrees-and-outdegrees">
+<h3>networkx Indegrees and outdegrees<a class="headerlink" href="#networkx-Indegrees-and-outdegrees" title="Permalink to this headline"></a></h3>
 <p>With Networkx we can easily calculate indegrees and outdegrees of a node:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 
 <span class="c1"># notice with networkx if nodes are already referenced to in an adjacency list</span>
 <span class="c1"># you do not need to put them as keys:</span>
@@ -3242,8 +3182,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G</span><span class="o">.</span><span class="n">out_degree</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span><span class="o">.</span><span class="n">out_degree</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3263,8 +3202,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="c1">#print(&quot;indegree  b:  %s&quot; % G.in_degree(&#39;b&#39;))</span>
 <span class="c1">#print(&quot;outdegree b:  %s&quot; % G.out_degree(&#39;b&#39;))</span>
 </pre></div>
@@ -3274,11 +3212,8 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <p><strong>QUESTION</strong>: We defined <em>indegree</em> and <em>outdegree</em>. Can you guess what the <em>degree</em> might be ? In particular, for a self pointing node like <code class="docutils literal notranslate"><span class="pre">'b'</span></code>, what could it be? Try to use <code class="docutils literal notranslate"><span class="pre">G.degree('b')</span></code> methods to validate your thoughts.</p>
@@ -3288,8 +3223,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="c1">#print(&quot;degree  b:  %s&quot; % G.degree(&#39;b&#39;))</span>
 </pre></div>
 </div>
@@ -3298,11 +3232,8 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -3314,8 +3245,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 <span class="c1">#G.degree(&#39;b&#39;)</span>
 </pre></div>
 </div>
@@ -3324,24 +3254,20 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Visualizing-distributions">
-<h2>Visualizing distributions<a class="headerlink" href="#Visualizing-distributions" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Visualizing-distributions">
+<h2>Visualizing distributions<a class="headerlink" href="#Visualizing-distributions" title="Permalink to this headline"></a></h2>
 <p>We will try to study the distributions visually. Let’s take an example networkx DiGraph:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 
 <span class="n">G1</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">({</span>
     <span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
@@ -3361,9 +3287,9 @@ div.rendered_html tbody tr:hover {
 <img alt="../_images/relational_relational3-simple-stats-sol_62_0.png" src="../_images/relational_relational3-simple-stats-sol_62_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="indegree-per-node">
-<h2>indegree per node<a class="headerlink" href="#indegree-per-node" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="indegree-per-node">
+<h2>indegree per node<a class="headerlink" href="#indegree-per-node" title="Permalink to this headline"></a></h2>
 <p>✪✪ Display a plot for graph <code class="docutils literal notranslate"><span class="pre">G</span></code> where the xtick labels are the nodes, and the y is the indegree of those nodes.</p>
 <p><strong>Note:</strong> instead of <code class="docutils literal notranslate"><span class="pre">xticks</span></code> you might directly use <a class="reference external" href="https://matplotlib.org/gallery/lines_bars_and_markers/categorical_variables.html">categorical variables</a> IF you have matplotlib &gt;= 2.1.0</p>
 <p>Here we use <code class="docutils literal notranslate"><span class="pre">xticks</span></code> as sometimes you might need to fiddle with them anyway</p>
@@ -3374,8 +3300,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3393,8 +3318,7 @@ NodeView((&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;))
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G1</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3415,8 +3339,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G1</span><span class="o">.</span><span class="n">in_degree</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G1</span><span class="o">.</span><span class="n">in_degree</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3435,9 +3358,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -3474,16 +3395,12 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-<div class="section" id="indegree-per-node-bar-plot">
-<h3>indegree per node bar plot<a class="headerlink" href="#indegree-per-node-bar-plot" title="Permalink to this headline">¶</a></h3>
+<section id="indegree-per-node-bar-plot">
+<h3>indegree per node bar plot<a class="headerlink" href="#indegree-per-node-bar-plot" title="Permalink to this headline"></a></h3>
 <p>The previous plot with dots doesn’t look so good - we might try to use instead a bar plot. First look at <a class="reference external" href="https://en.softpython.org/visualization/visualization1-sol.html#Bar-plots">this example</a>, then proceed with the exercise</p>
 <p>✪✪ Display a <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.bar.html">bar plot</a> for graph <code class="docutils literal notranslate"><span class="pre">G1</span></code> where the xtick labels are the nodes, and the y is the indegree of those nodes.</p>
 <p>Expected result:</p>
@@ -3494,9 +3411,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -3528,26 +3443,21 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="indegree-per-node-sorted-alphabetically">
-<h3>indegree per node sorted alphabetically<a class="headerlink" href="#indegree-per-node-sorted-alphabetically" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="indegree-per-node-sorted-alphabetically">
+<h3>indegree per node sorted alphabetically<a class="headerlink" href="#indegree-per-node-sorted-alphabetically" title="Permalink to this headline"></a></h3>
 <p>✪✪ Display the same bar plot as before, but now sort nodes alphabetically.</p>
 <p><strong>NOTE</strong>: you cannot run <code class="docutils literal notranslate"><span class="pre">.sort()</span></code> method on the result given by <code class="docutils literal notranslate"><span class="pre">G1.nodes()</span></code>, because nodes in network by default have no inherent order. To use <code class="docutils literal notranslate"><span class="pre">.sort()</span></code> you need first to convert the result to a <code class="docutils literal notranslate"><span class="pre">list</span></code> object.</p>
 <p>You should get something like this:</p>
@@ -3558,9 +3468,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -3597,27 +3505,21 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="indegree-per-node-sorted">
-<h3>indegree per node sorted<a class="headerlink" href="#indegree-per-node-sorted" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="indegree-per-node-sorted">
+<h3>indegree per node sorted<a class="headerlink" href="#indegree-per-node-sorted" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ Display the same bar plot as before, but now sort nodes according to their indegree. This is more challenging, to do it you need to use some sort trick.</p>
 <ul class="simple">
 <li><p><strong>HINT</strong>: first read the <a class="reference external" href="https://docs.python.org/3/howto/sorting.html#key-functions">Python documentation</a></p></li>
@@ -3630,9 +3532,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -3669,17 +3569,13 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="out-degrees-per-node-sorted">
-<h3>out degrees per node sorted<a class="headerlink" href="#out-degrees-per-node-sorted" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="out-degrees-per-node-sorted">
+<h3>out degrees per node sorted<a class="headerlink" href="#out-degrees-per-node-sorted" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ Do the same graph as before for the outdegrees.</p>
 <p>Expected result:</p>
 <p><img alt="expected-outdegrees-per-node-sorted.png" src="../_images/expected-outdegrees-per-node-sorted.png" /></p>
@@ -3688,8 +3584,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G1</span><span class="o">.</span><span class="n">out_degree</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G1</span><span class="o">.</span><span class="n">out_degree</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3708,9 +3603,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
@@ -3747,17 +3640,13 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="degrees-per-node">
-<h3>degrees per node<a class="headerlink" href="#degrees-per-node" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="degrees-per-node">
+<h3>degrees per node<a class="headerlink" href="#degrees-per-node" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ We might check as well the sorted degrees per node, intended as the sum of in_degree and out_degree. To get the sum, use <code class="docutils literal notranslate"><span class="pre">G1.degree(node)</span></code> function.</p>
 <p>Expected result:</p>
 <p><img alt="expected-degrees-per-node.png" src="../_images/expected-degrees-per-node.png" /></p>
@@ -3767,9 +3656,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -3806,17 +3693,13 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="In-out-degrees-per-node">
-<h3>In out degrees per node<a class="headerlink" href="#In-out-degrees-per-node" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="In-out-degrees-per-node">
+<h3>In out degrees per node<a class="headerlink" href="#In-out-degrees-per-node" title="Permalink to this headline"></a></h3>
 <p>✪✪✪✪ Look at <a class="reference external" href="https://matplotlib.org/gallery/lines_bars_and_markers/barchart.html#sphx-glr-gallery-lines-bars-and-markers-barchart-py">this example</a>, and make a double bar chart sorting nodes by their <em>total</em> degree. To do so, in the tuples you will need <code class="docutils literal notranslate"><span class="pre">vertex</span></code>, <code class="docutils literal notranslate"><span class="pre">in_degree</span></code>, <code class="docutils literal notranslate"><span class="pre">out_degree</span></code> and also <code class="docutils literal notranslate"><span class="pre">degree</span></code>.</p>
 <p><img alt="expected-inout-per-node.png" src="../_images/expected-inout-per-node.png" /></p>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -3825,9 +3708,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -3873,18 +3754,14 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Frequency-histogram">
-<h2>Frequency histogram<a class="headerlink" href="#Frequency-histogram" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Frequency-histogram">
+<h2>Frequency histogram<a class="headerlink" href="#Frequency-histogram" title="Permalink to this headline"></a></h2>
 <p>Now let’s try to draw degree frequencies, that is, for each degree present in the graph we want to display a bar as high as the number of times that particular degree appears.</p>
 <p>For doing so, we will need a matplot histogram, see <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html">documentation</a></p>
 <p>We will need to tell matplotlib how many columns we want, which in histogram terms are called <em>bins</em>. We also need to give the histogram a series of numbers so it can count how many times each number occurs. Let’s consider this graph <code class="docutils literal notranslate"><span class="pre">G2</span></code>:</p>
@@ -3892,8 +3769,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 
 <span class="n">G2</span><span class="o">=</span><span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">({</span>
     <span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
@@ -3907,8 +3783,7 @@ d
 
 
 <span class="n">draw_nx</span><span class="p">(</span><span class="n">G2</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3923,8 +3798,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">degrees_G2</span> <span class="o">=</span> <span class="p">[</span><span class="n">G2</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G2</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">degrees_G2</span> <span class="o">=</span> <span class="p">[</span><span class="n">G2</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G2</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
 
 <span class="n">degrees_G2</span>
 </pre></div>
@@ -3945,8 +3819,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">min</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">min</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3963,8 +3836,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">max</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">max</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3983,9 +3855,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="n">degrees</span> <span class="o">=</span> <span class="p">[</span><span class="n">G2</span><span class="o">.</span><span class="n">degree</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G2</span><span class="o">.</span><span class="n">nodes</span><span class="p">()]</span>
@@ -4014,8 +3884,8 @@ d
 </div>
 </div>
 <p>As expected we see 3 is counted four times, 6 once, and seven twice.</p>
-<div class="section" id="Exercise---better-histogram-display">
-<h3>Exercise - better histogram display<a class="headerlink" href="#Exercise---better-histogram-display" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---better-histogram-display">
+<h3>Exercise - better histogram display<a class="headerlink" href="#Exercise---better-histogram-display" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ Still, it would be visually better to align the x ticks to the middle of the bars with <code class="docutils literal notranslate"><span class="pre">xticks</span></code>, and also to make the graph more tight by setting the <code class="docutils literal notranslate"><span class="pre">xlim</span></code> appropriately. This is not always easy to do.</p>
 <p>Read carefully <a class="reference external" href="https://stackoverflow.com/a/27084005">this StackOverflow post</a> and try do it by yourself.</p>
 <p><strong>NOTE</strong>: set <em>one thing at a time</em> and try if it works(i.e. first <code class="docutils literal notranslate"><span class="pre">xticks</span></code> and then <code class="docutils literal notranslate"><span class="pre">xlim</span></code>), doing everything at once might get quite confusing</p>
@@ -4027,8 +3897,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -4065,8 +3934,7 @@ d
 
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4080,11 +3948,8 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4094,20 +3959,19 @@ d
 <img alt="../_images/relational_relational3-simple-stats-sol_122_0.png" src="../_images/relational_relational3-simple-stats-sol_122_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Graph-models">
-<h2>Graph models<a class="headerlink" href="#Graph-models" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Graph-models">
+<h2>Graph models<a class="headerlink" href="#Graph-models" title="Permalink to this headline"></a></h2>
 <p>Let’s study frequencies of some known network types.</p>
-<div class="section" id="Exercise---Erdős–Rényi-model">
-<h3>Exercise - Erdős–Rényi model<a class="headerlink" href="#Exercise---Erdős–Rényi-model" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---Erdős–Rényi-model">
+<h3>Exercise - Erdős–Rényi model<a class="headerlink" href="#Exercise---Erdős–Rényi-model" title="Permalink to this headline"></a></h3>
 <p>✪✪ A simple graph model we can think of is the so-called <a class="reference external" href="https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model">Erdős–Rényi model</a>: is is an <em>undirected</em> graph where have <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes, and each node is connected to each other with probability <code class="docutils literal notranslate"><span class="pre">p</span></code>. In networkx, we can generate a random one by issuing this command:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">erdos_renyi_graph</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">erdos_renyi_graph</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4116,8 +3980,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_nx</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4141,9 +4004,7 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -4201,68 +4062,47 @@ d
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with the <a class="reference external" href="https://en.softpython.org/relational/relational4-chal.html">challenges</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="relational4-chal.html" class="btn btn-neutral float-right" title="Relational data 4 - Challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="relational2-binrel-sol.html" class="btn btn-neutral float-left" title="Relational data 2 - binary relations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="relational4-chal.html" class="btn btn-neutral float-right" title="Relational data 4 - Challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

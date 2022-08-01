@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Analytics with Pandas - 2. EURES case study &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/pandas/pandas2-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Pandas - 3. The Land of Poets Challenge" href="pandas3-chal.html" />
     <link rel="prev" title="Analytics with Pandas : 1. introduction" href="pandas1-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2405,27 +2345,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2526,7 +2480,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2592,6 +2546,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2601,7 +2556,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2661,12 +2616,12 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Analytics-with-Pandas---2.-EURES-case-study">
-<h1>Analytics with Pandas - 2. EURES case study<a class="headerlink" href="#Analytics-with-Pandas---2.-EURES-case-study" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-and-solution">
-<h2><a class="reference external" href="../_static/generated/pandas.zip">Download exercises and solution</a><a class="headerlink" href="#Download-exercises-and-solution" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="What-to-do">
-<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h3>
+<section id="Analytics-with-Pandas---2.-EURES-case-study">
+<h1>Analytics with Pandas - 2. EURES case study<a class="headerlink" href="#Analytics-with-Pandas---2.-EURES-case-study" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-and-solution">
+<h2><a class="reference external" href="../_static/generated/pandas.zip">Download exercises and solution</a><a class="headerlink" href="#Download-exercises-and-solution" title="Permalink to this headline"></a></h2>
+<section id="What-to-do">
+<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h3>
 <ol class="arabic">
 <li><p>If you haven’t already, install Pandas:</p>
 <p>Anaconda:</p>
@@ -2705,10 +2660,10 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="Introduction">
-<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Introduction">
+<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
 <p>After exiting your school prison, when looking for a job in Europe you will be shocked to discover a great variety of languages are spoken. Many job listings are provided by <a class="reference external" href="https://ec.europa.eu/eures/public/homepage">Eures</a> portal, which is easily searchable with many fields on which you can filter. For this exercise we will use a test dataset which was generated just for a hackaton: it is a crude italian version of the job offers data, with many fields expressed in natural language. We
 will try to convert it to a dataset with more columns and translate some terms to English.</p>
 <p>Data provider: <a class="reference external" href="https://dati.trentino.it/dataset/offerte-di-lavoro-eures-test-odhb2019">Autonomous Province of Trento</a></p>
@@ -2717,16 +2672,15 @@ will try to convert it to a dataset with more columns and translate some terms t
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING</strong>: avoid constants in function bodies !!</p>
 <p>In the exercises data you will find many names such as <code class="docutils literal notranslate"><span class="pre">'Austria'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Giugno'</span></code>, etc. <strong>DO NOT</strong> put such constant names inside body of functions !! You have to write generic code which works with any input.</p>
 </div>
-</div>
-<div class="section" id="offerte-dataset">
-<h2>offerte dataset<a class="headerlink" href="#offerte-dataset" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="offerte-dataset">
+<h2>offerte dataset<a class="headerlink" href="#offerte-dataset" title="Permalink to this headline"></a></h2>
 <p>We will load the dataset <a class="reference external" href="offerte-lavoro.csv">offerte-lavoro.csv</a> into Pandas:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>   <span class="c1"># we import pandas and for ease we rename it to &#39;pd&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>   <span class="c1"># we import pandas and for ease we rename it to &#39;pd&#39;</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>    <span class="c1"># we import numpy and for ease we rename it to &#39;np&#39;</span>
 
 <span class="c1"># remember the encoding !</span>
@@ -2762,8 +2716,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">offerte</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">offerte</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -2860,16 +2813,15 @@ memory usage: 3.4+ KB
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="rename-columns">
-<h2>rename columns<a class="headerlink" href="#rename-columns" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="rename-columns">
+<h2>rename columns<a class="headerlink" href="#rename-columns" title="Permalink to this headline"></a></h2>
 <p>As first thing, we create a new dataframe <code class="docutils literal notranslate"><span class="pre">offers</span></code> with columns renamed into English:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">replacements</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Reference&#39;</span><span class="p">,</span><span class="s1">&#39;Workplace&#39;</span><span class="p">,</span><span class="s1">&#39;Positions&#39;</span><span class="p">,</span><span class="s1">&#39;Qualification&#39;</span><span class="p">,</span><span class="s1">&#39;Contract type&#39;</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">replacements</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Reference&#39;</span><span class="p">,</span><span class="s1">&#39;Workplace&#39;</span><span class="p">,</span><span class="s1">&#39;Positions&#39;</span><span class="p">,</span><span class="s1">&#39;Qualification&#39;</span><span class="p">,</span><span class="s1">&#39;Contract type&#39;</span><span class="p">,</span>
                 <span class="s1">&#39;Required languages&#39;</span><span class="p">,</span><span class="s1">&#39;Gross retribution&#39;</span><span class="p">,</span><span class="s1">&#39;Offer description&#39;</span><span class="p">]</span>
 <span class="n">diz</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
@@ -2884,8 +2836,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">offers</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">offers</span>
 </pre></div>
 </div>
 </div>
@@ -3510,18 +3461,16 @@ memory usage: 3.4+ KB
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="1.-Rename-countries">
-<h2>1. Rename countries<a class="headerlink" href="#1.-Rename-countries" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="1.-Rename-countries">
+<h2>1. Rename countries<a class="headerlink" href="#1.-Rename-countries" title="Permalink to this headline"></a></h2>
 <p>We would like to create a new column holding a list of countries where the job is to be done. You will also have to translate countries to their English name.</p>
 <p>To allow for text processing, you are provided with some data as python data structures (you do not need to further edit it):</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">connectives</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;ed&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">connectives</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;ed&#39;</span><span class="p">]</span>
 <span class="n">punctuation</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.&#39;</span><span class="p">,</span><span class="s1">&#39;;&#39;</span><span class="p">,</span><span class="s1">&#39;,&#39;</span><span class="p">]</span>
 
 <span class="n">countries</span> <span class="o">=</span> <span class="p">{</span>
@@ -3556,12 +3505,11 @@ memory usage: 3.4+ KB
     <span class="s1">&#39;Sogn og Fjordane&#39;</span><span class="p">:</span> <span class="s1">&#39;Sogn og Fjordane&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Hesla Gaard&#39;</span><span class="p">:</span><span class="s1">&#39;Hesla Gaard&#39;</span>
 <span class="p">}</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
-<div class="section" id="1.1-countries_to_list">
-<h3>1.1 countries_to_list<a class="headerlink" href="#1.1-countries_to_list" title="Permalink to this headline">¶</a></h3>
+<section id="1.1-countries_to_list">
+<h3>1.1 countries_to_list<a class="headerlink" href="#1.1-countries_to_list" title="Permalink to this headline"></a></h3>
 <p>✪✪ Implement function <code class="docutils literal notranslate"><span class="pre">countries_to_list</span></code> which given a string from <code class="docutils literal notranslate"><span class="pre">Workplace</span></code> column, RETURN a list holding country names in English <strong>in the exact order they appear in the string</strong>. The function will have to remove city names as well as punctuation, connectives and newlines using data define in the previous cell. There are various ways to solve the exercise: if you try the most straightforward one, most probably you will get countries which are not in the same order as in the string.</p>
 <p><strong>NOTE</strong>: this function only takes a single string as input!</p>
 <p>Example:</p>
@@ -3576,9 +3524,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">countries_to_list</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">countries_to_list</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
 
     <span class="n">ret</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
@@ -3618,9 +3564,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">countries_to_list</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">countries_to_list</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="c1"># single country</span>
@@ -3640,20 +3584,17 @@ memory usage: 3.4+ KB
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="1.2-Filling-column-Workplace-Country">
-<h3>1.2 Filling column Workplace Country<a class="headerlink" href="#1.2-Filling-column-Workplace-Country" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="1.2-Filling-column-Workplace-Country">
+<h3>1.2 Filling column Workplace Country<a class="headerlink" href="#1.2-Filling-column-Workplace-Country" title="Permalink to this headline"></a></h3>
 <p>✪ Now create a new column <code class="docutils literal notranslate"><span class="pre">Workplace</span> <span class="pre">Country</span></code> with data calculated using the function you just defined.</p>
 <p>To do it, check method <a class="reference external" href="https://en.softpython.org/pandas/pandas1-sol.html#6.3-Transforming-columns">transform in Pandas worksheet</a></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -3662,8 +3603,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 
 <span class="n">offers</span><span class="p">[</span><span class="s1">&#39;Workplace Country&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">offerte</span><span class="p">[</span><span class="s1">&#39;SEDE LAVORO&#39;</span><span class="p">]</span>
 <span class="n">offers</span><span class="p">[</span><span class="s1">&#39;Workplace Country&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">offers</span><span class="p">[</span><span class="s1">&#39;Workplace Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">countries_to_list</span><span class="p">)</span>
@@ -3674,8 +3614,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -3683,8 +3622,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;            *****************     SOLUTION OUTPUT     ********************&quot;</span><span class="p">)</span>
 <span class="n">offers</span>
 </pre></div>
@@ -4374,13 +4312,13 @@ memory usage: 3.4+ KB
 </table>
 </div></div>
 </div>
-</div>
-</div>
-<div class="section" id="2.-Work-dates">
-<h2>2. Work dates<a class="headerlink" href="#2.-Work-dates" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="2.-Work-dates">
+<h2>2. Work dates<a class="headerlink" href="#2.-Work-dates" title="Permalink to this headline"></a></h2>
 <p>You will add columns holding the dates of when a job start and when a job ends.</p>
-<div class="section" id="2.1-from_to-function">
-<h3>2.1 from_to function<a class="headerlink" href="#2.1-from_to-function" title="Permalink to this headline">¶</a></h3>
+<section id="2.1-from_to-function">
+<h3>2.1 from_to function<a class="headerlink" href="#2.1-from_to-function" title="Permalink to this headline"></a></h3>
 <p>✪✪ First define <code class="docutils literal notranslate"><span class="pre">from_to</span></code> function, which takes some text from column <code class="docutils literal notranslate"><span class="pre">&quot;Contract</span> <span class="pre">type&quot;</span></code> and RETURNS a tuple holding the extracted month numbers (starting from ONE, not zero!)</p>
 <p>Example:</p>
 <p>In this this case result is <code class="docutils literal notranslate"><span class="pre">(5,</span> <span class="pre">8)</span></code> because May is the fifth month and August is the eighth:</p>
@@ -4401,8 +4339,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;gennaio&#39;</span><span class="p">,</span> <span class="s1">&#39;febbraio&#39;</span><span class="p">,</span> <span class="s1">&#39;marzo&#39;</span>    <span class="p">,</span> <span class="s1">&#39;aprile&#39;</span> <span class="p">,</span> <span class="s1">&#39;maggio&#39;</span>  <span class="p">,</span> <span class="s1">&#39;giugno&#39;</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;gennaio&#39;</span><span class="p">,</span> <span class="s1">&#39;febbraio&#39;</span><span class="p">,</span> <span class="s1">&#39;marzo&#39;</span>    <span class="p">,</span> <span class="s1">&#39;aprile&#39;</span> <span class="p">,</span> <span class="s1">&#39;maggio&#39;</span>  <span class="p">,</span> <span class="s1">&#39;giugno&#39;</span><span class="p">,</span>
           <span class="s1">&#39;luglio&#39;</span> <span class="p">,</span> <span class="s1">&#39;agosto&#39;</span>  <span class="p">,</span> <span class="s1">&#39;settembre&#39;</span><span class="p">,</span> <span class="s1">&#39;ottobre&#39;</span><span class="p">,</span> <span class="s1">&#39;novembre&#39;</span><span class="p">,</span> <span class="s1">&#39;dicembre&#39;</span> <span class="p">]</span>
 
 
@@ -4452,8 +4389,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;gennaio&#39;</span><span class="p">,</span> <span class="s1">&#39;febbraio&#39;</span><span class="p">,</span> <span class="s1">&#39;marzo&#39;</span>    <span class="p">,</span> <span class="s1">&#39;aprile&#39;</span> <span class="p">,</span> <span class="s1">&#39;maggio&#39;</span>  <span class="p">,</span> <span class="s1">&#39;giugno&#39;</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">months</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;gennaio&#39;</span><span class="p">,</span> <span class="s1">&#39;febbraio&#39;</span><span class="p">,</span> <span class="s1">&#39;marzo&#39;</span>    <span class="p">,</span> <span class="s1">&#39;aprile&#39;</span> <span class="p">,</span> <span class="s1">&#39;maggio&#39;</span>  <span class="p">,</span> <span class="s1">&#39;giugno&#39;</span><span class="p">,</span>
           <span class="s1">&#39;luglio&#39;</span> <span class="p">,</span> <span class="s1">&#39;agosto&#39;</span>  <span class="p">,</span> <span class="s1">&#39;settembre&#39;</span><span class="p">,</span> <span class="s1">&#39;ottobre&#39;</span><span class="p">,</span> <span class="s1">&#39;novembre&#39;</span><span class="p">,</span> <span class="s1">&#39;dicembre&#39;</span> <span class="p">]</span>
 
 
@@ -4476,9 +4412,9 @@ memory usage: 3.4+ KB
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="2.2.-From-To-columns">
-<h3>2.2. From To columns<a class="headerlink" href="#2.2.-From-To-columns" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="2.2.-From-To-columns">
+<h3>2.2. From To columns<a class="headerlink" href="#2.2.-From-To-columns" title="Permalink to this headline"></a></h3>
 <p>✪ MODIFY <code class="docutils literal notranslate"><span class="pre">offers</span></code> dataframe by adding <code class="docutils literal notranslate"><span class="pre">From</span></code> and <code class="docutils literal notranslate"><span class="pre">To</span></code> columns.</p>
 <ul class="simple">
 <li><p><strong>HINT 1</strong>: You can call transform, see Transforming section in <a class="reference external" href="https://en.softpython.org/pandas/pandas1-sol.html#6.3-Transforming-columns">Pandas worksheet</a></p></li>
@@ -4490,8 +4426,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="n">offers</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">offers</span><span class="p">[</span><span class="s1">&#39;Contract type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">from_to</span><span class="p">(</span><span class="n">t</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
 <span class="n">offers</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="n">offers</span><span class="p">[</span><span class="s1">&#39;Contract type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">from_to</span><span class="p">(</span><span class="n">t</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
@@ -4502,19 +4437,15 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; ****************   SOLUTION OUTPUT  ****************&quot;</span><span class="p">)</span>
 <span class="n">offers</span>
 </pre></div>
@@ -5312,13 +5243,13 @@ memory usage: 3.4+ KB
 </table>
 </div></div>
 </div>
-</div>
-</div>
-<div class="section" id="3.-Required-languages">
-<h2>3. Required languages<a class="headerlink" href="#3.-Required-languages" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="3.-Required-languages">
+<h2>3. Required languages<a class="headerlink" href="#3.-Required-languages" title="Permalink to this headline"></a></h2>
 <p>Now we will try to extract required languages.</p>
-<div class="section" id="3.1-function-reqlan">
-<h3>3.1 function reqlan<a class="headerlink" href="#3.1-function-reqlan" title="Permalink to this headline">¶</a></h3>
+<section id="3.1-function-reqlan">
+<h3>3.1 function reqlan<a class="headerlink" href="#3.1-function-reqlan" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ First implement function <code class="docutils literal notranslate"><span class="pre">reqlan</span></code> that given a string from column <code class="docutils literal notranslate"><span class="pre">'Required</span> <span class="pre">language'</span></code> produces a dictionary with extracted languages and associated level code in CEFR standard (Common European Framework of Reference for Languages).</p>
 <p>Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">reqlan</span><span class="p">(</span><span class="s2">&quot;Italiano; Francese fluente; Spagnolo buono&quot;</span><span class="p">)</span>
@@ -5349,9 +5280,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">languages</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">languages</span> <span class="o">=</span> <span class="p">{</span>
  <span class="s1">&#39;italiano&#39;</span><span class="p">:</span><span class="s1">&#39;italian&#39;</span><span class="p">,</span>
  <span class="s1">&#39;tedesco&#39;</span><span class="p">:</span><span class="s1">&#39;german&#39;</span><span class="p">,</span>
  <span class="s1">&#39;francese&#39;</span><span class="p">:</span><span class="s1">&#39;french&#39;</span><span class="p">,</span>
@@ -5442,9 +5371,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">languages</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">languages</span> <span class="o">=</span> <span class="p">{</span>
  <span class="s1">&#39;italiano&#39;</span><span class="p">:</span><span class="s1">&#39;italian&#39;</span><span class="p">,</span>
  <span class="s1">&#39;tedesco&#39;</span><span class="p">:</span><span class="s1">&#39;german&#39;</span><span class="p">,</span>
  <span class="s1">&#39;francese&#39;</span><span class="p">:</span><span class="s1">&#39;french&#39;</span><span class="p">,</span>
@@ -5505,9 +5432,9 @@ memory usage: 3.4+ KB
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="3.2-Languages-column">
-<h3>3.2 Languages column<a class="headerlink" href="#3.2-Languages-column" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="3.2-Languages-column">
+<h3>3.2 Languages column<a class="headerlink" href="#3.2-Languages-column" title="Permalink to this headline"></a></h3>
 <p>✪ Now add the <code class="docutils literal notranslate"><span class="pre">languages</span></code> column using the previously defined <code class="docutils literal notranslate"><span class="pre">reqlan</span></code> function:</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -5515,8 +5442,7 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
 
 <span class="n">offers</span><span class="p">[</span><span class="s1">&#39;Languages&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">offers</span><span class="p">[</span><span class="s1">&#39;Required languages&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">reqlan</span><span class="p">)</span>
 </pre></div>
@@ -5526,19 +5452,15 @@ memory usage: 3.4+ KB
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;         *******************    SOLUTION OUTPUT   ***********************&quot;</span><span class="p">)</span>
 <span class="n">offers</span>
 </pre></div>
@@ -6390,60 +6312,43 @@ memory usage: 3.4+ KB
 </table>
 </div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with the <a class="reference external" href="https://en.softpython.org/pandas/pandas3-chal.html">challenges</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="pandas3-chal.html" class="btn btn-neutral float-right" title="Pandas - 3. The Land of Poets Challenge" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="pandas1-sol.html" class="btn btn-neutral float-left" title="Analytics with Pandas : 1. introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pandas3-chal.html" class="btn btn-neutral float-right" title="Pandas - 3. The Land of Poets Challenge" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

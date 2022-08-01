@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Strings 4 - search methods &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/strings/strings4-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Strings 5 - First challenges" href="strings5-chal.html" />
     <link rel="prev" title="Strings 3 - methods" href="strings3-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,10 +2614,10 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Strings-4---search-methods">
-<h1>Strings 4 - search methods<a class="headerlink" href="#Strings-4---search-methods" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/strings.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Strings-4---search-methods">
+<h1>Strings 4 - search methods<a class="headerlink" href="#Strings-4---search-methods" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/strings.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/strings">Browse files online</a></p>
 <p>Strings provide methods to search and trasform them into new strings, but beware: the power is nothing without control! Sometimes you will feel the need to use them, and they might even work with some small example, but often they hide traps you will regret falling into. So whenever you write code with one of these methods, <strong>always ask yourself the questions we will stress</strong>.</p>
 <div class="admonition warning">
@@ -2713,9 +2668,9 @@ div.rendered_html tbody tr:hover {
 </tbody>
 </table>
 <p>Note: the list is not exhaustive, here we report only the ones we use in the book. For the full list <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#string-methods">see Python documentation</a></p>
-</div>
-<div class="section" id="What-to-do">
-<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="What-to-do">
+<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h2>
 <ol class="arabic simple">
 <li><p>Unzip <a class="reference external" href="../_static/generated/strings.zip">exercises zip</a> in a folder, you should obtain something like this:</p></li>
 </ol>
@@ -2746,17 +2701,16 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="strip-method">
-<h2><code class="docutils literal notranslate"><span class="pre">strip</span></code> method<a class="headerlink" href="#strip-method" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="strip-method">
+<h2><code class="docutils literal notranslate"><span class="pre">strip</span></code> method<a class="headerlink" href="#strip-method" title="Permalink to this headline"></a></h2>
 <p>Eliminates white spaces, tabs and linefeeds from the <em>sides</em> of the string. In general, this set of characters is called <em>blanks.</em></p>
 <p><strong>NOTE</strong>: it does NOT removes <em>blanks</em> inside string words! It only looks on the sides.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39; </span><span class="se">\t\n\n\t</span><span class="s1"> carpe diem </span><span class="se">\t</span><span class="s1">  &#39;</span>   <span class="c1"># we put white space, tab and line feeds at the sides</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39; </span><span class="se">\t\n\n\t</span><span class="s1"> carpe diem </span><span class="se">\t</span><span class="s1">  &#39;</span>   <span class="c1"># we put white space, tab and line feeds at the sides</span>
 </pre></div>
 </div>
 </div>
@@ -2764,8 +2718,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
 </pre></div>
 </div>
 </div>
@@ -2782,8 +2735,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2801,8 +2753,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>   <span class="c1"># remember that special characters like \t and \n occupy 1 character</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>   <span class="c1"># remember that special characters like \t and \n occupy 1 character</span>
 </pre></div>
 </div>
 </div>
@@ -2819,8 +2770,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -2828,8 +2778,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span>
 </pre></div>
 </div>
 </div>
@@ -2846,8 +2795,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2863,8 +2811,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2881,8 +2828,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span>      <span class="c1"># IMPORTANT: x is still associated to the old string !</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>      <span class="c1"># IMPORTANT: x is still associated to the old string !</span>
 </pre></div>
 </div>
 </div>
@@ -2895,15 +2841,14 @@ carpe diem
 &#39; \t\n\n\t carpe diem \t  &#39;
 </pre></div></div>
 </div>
-<div class="section" id="Specificying-character-to-strip">
-<h3>Specificying character to strip<a class="headerlink" href="#Specificying-character-to-strip" title="Permalink to this headline">¶</a></h3>
+<section id="Specificying-character-to-strip">
+<h3>Specificying character to strip<a class="headerlink" href="#Specificying-character-to-strip" title="Permalink to this headline"></a></h3>
 <p>If you only want Python to remove some specific character, you can specify them in parenthesis. Let’s try to specify only one:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s1">&#39;salsa&#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>    <span class="c1">#  note internal `s` is not stripped</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;salsa&#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>    <span class="c1">#  note internal `s` is not stripped</span>
 </pre></div>
 </div>
 </div>
@@ -2922,8 +2867,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s1">&#39;caustic&#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;aci&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;caustic&#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;aci&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2943,8 +2887,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s1">&#39;bouquet  &#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>    <span class="c1"># it won&#39;t strip right spaces !</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;bouquet  &#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>    <span class="c1"># it won&#39;t strip right spaces !</span>
 </pre></div>
 </div>
 </div>
@@ -2961,8 +2904,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">bouquet  &#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>    <span class="c1"># ... nor strip left blanks such as tab</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">bouquet  &#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>    <span class="c1"># ... nor strip left blanks such as tab</span>
 </pre></div>
 </div>
 </div>
@@ -2980,8 +2922,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s1">&#39;  careful! </span><span class="se">\t</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>   <span class="c1"># strips only on the left!</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;  careful! </span><span class="se">\t</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>   <span class="c1"># strips only on the left!</span>
 </pre></div>
 </div>
 </div>
@@ -3049,9 +2990,9 @@ carpe diem
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Exercise---Biblio-bank">
-<h3>Exercise - Biblio bank<a class="headerlink" href="#Exercise---Biblio-bank" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Biblio-bank">
+<h3>Exercise - Biblio bank<a class="headerlink" href="#Exercise---Biblio-bank" title="Permalink to this headline"></a></h3>
 <p>Your dream just become true: you were hired by the Cyber-Library! Since first enrolling to the Lunar Gymnasiuz in 2365 you’ve been dreaming of keeping and conveying the human knowledge collected through the centuries. You will have to check the work of an AI which reads ands transcribes an interesting chronicle named <strong>White Pages 2021</strong>.</p>
 <p>The Pages have lists of numbers in this format:</p>
 <p>Name Surname Prefix-Suffix</p>
@@ -3069,10 +3010,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="n">row</span> <span class="o">=</span> <span class="s1">&#39;      </span><span class="se">\t</span><span class="s1">   </span><span class="se">\n</span><span class="s1">  Mario Rossi 0323-454345 </span><span class="se">\t</span><span class="s1"> </span><span class="se">\t</span><span class="s1">   &#39;</span>  <span class="c1"># - Mario Rossi 0323-454345.</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="n">row</span> <span class="o">=</span> <span class="s1">&#39;      </span><span class="se">\t</span><span class="s1">   </span><span class="se">\n</span><span class="s1">  Mario Rossi 0323-454345 </span><span class="se">\t</span><span class="s1"> </span><span class="se">\t</span><span class="s1">   &#39;</span>  <span class="c1"># - Mario Rossi 0323-454345.</span>
 <span class="c1">#row = &#39;    Ernesto Spadafesso 0323-454345  \n&#39;          # - Ernesto Spadafesso 0323-454345.</span>
 <span class="c1">#row = &#39;      Gianantonia Marcolina Carla Napoleone 0323-454345 \t&#39;</span>
 <span class="c1">#row = &#39;\nChiara Ermellino 0323-454345  \n \n&#39;</span>
@@ -3096,33 +3034,27 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="n">row</span> <span class="o">=</span> <span class="s1">&#39;      </span><span class="se">\t</span><span class="s1">   </span><span class="se">\n</span><span class="s1">  Mario Rossi 0323-454345 </span><span class="se">\t</span><span class="s1"> </span><span class="se">\t</span><span class="s1">   &#39;</span>  <span class="c1"># - Mario Rossi 0323-454345.</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="n">row</span> <span class="o">=</span> <span class="s1">&#39;      </span><span class="se">\t</span><span class="s1">   </span><span class="se">\n</span><span class="s1">  Mario Rossi 0323-454345 </span><span class="se">\t</span><span class="s1"> </span><span class="se">\t</span><span class="s1">   &#39;</span>  <span class="c1"># - Mario Rossi 0323-454345.</span>
 <span class="c1">#row = &#39;    Ernesto Spadafesso 0323-454345  \n&#39;          # - Ernesto Spadafesso 0323-454345.</span>
 <span class="c1">#row = &#39;      Gianantonia Marcolina Carla Napoleone 0323-454345 \t&#39;</span>
 <span class="c1">#row = &#39;\nChiara Ermellino 0323-454345  \n \n&#39;</span>
 <span class="c1">#row = &#39;  \tGiada Pietraverde 0323-454345\n\t&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="lstrip-method">
-<h2><code class="docutils literal notranslate"><span class="pre">lstrip</span></code> method<a class="headerlink" href="#lstrip-method" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="lstrip-method">
+<h2><code class="docutils literal notranslate"><span class="pre">lstrip</span></code> method<a class="headerlink" href="#lstrip-method" title="Permalink to this headline"></a></h2>
 <p>Eliminates white spaces, tab and line feeds from <em>left side</em> of the string.</p>
 <p><strong>NOTE</strong>: does NOT remove <em>blanks</em> between words of the string! Only those on left side.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> </span><span class="se">\t</span><span class="s1"> the street </span><span class="se">\t</span><span class="s1"> &#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> </span><span class="se">\t</span><span class="s1"> the street </span><span class="se">\t</span><span class="s1"> &#39;</span>
 </pre></div>
 </div>
 </div>
@@ -3130,8 +3062,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
 </pre></div>
 </div>
 </div>
@@ -3148,8 +3079,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3166,8 +3096,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3175,8 +3104,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span>
 </pre></div>
 </div>
 </div>
@@ -3193,8 +3121,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3211,8 +3138,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span>       <span class="c1"># IMPORTANT: x is still associated to the old string !</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>       <span class="c1"># IMPORTANT: x is still associated to the old string !</span>
 </pre></div>
 </div>
 </div>
@@ -3225,17 +3151,16 @@ carpe diem
 &#39;\n \t the street \t &#39;
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="rstrip-method">
-<h2><code class="docutils literal notranslate"><span class="pre">rstrip</span></code> method<a class="headerlink" href="#rstrip-method" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="rstrip-method">
+<h2><code class="docutils literal notranslate"><span class="pre">rstrip</span></code> method<a class="headerlink" href="#rstrip-method" title="Permalink to this headline"></a></h2>
 <p>Eliminates white spaces, tab and line feeds from <em>left side</em> of the string.</p>
 <p><strong>NOTE</strong>: does NOT remove <em>blanks</em> between words of the string! Only those on right side.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> </span><span class="se">\t</span><span class="s1"> the lighthouse </span><span class="se">\t</span><span class="s1"> &#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> </span><span class="se">\t</span><span class="s1"> the lighthouse </span><span class="se">\t</span><span class="s1"> &#39;</span>
 </pre></div>
 </div>
 </div>
@@ -3243,8 +3168,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>
 </pre></div>
 </div>
 </div>
@@ -3261,8 +3185,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3279,8 +3202,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -3288,8 +3210,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span>
 </pre></div>
 </div>
 </div>
@@ -3306,8 +3227,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3324,8 +3244,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span>       <span class="c1"># IMPORTANT: x is still associated to the old string !</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>       <span class="c1"># IMPORTANT: x is still associated to the old string !</span>
 </pre></div>
 </div>
 </div>
@@ -3338,8 +3257,8 @@ carpe diem
 &#39;\n \t the lighthouse \t &#39;
 </pre></div></div>
 </div>
-<div class="section" id="Exercise---Bad-to-the-bone">
-<h3>Exercise - Bad to the bone<a class="headerlink" href="#Exercise---Bad-to-the-bone" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---Bad-to-the-bone">
+<h3>Exercise - Bad to the bone<a class="headerlink" href="#Exercise---Bad-to-the-bone" title="Permalink to this headline"></a></h3>
 <p>You have an uppercase string <code class="docutils literal notranslate"><span class="pre">s</span></code> which contains at the sides some stuff you want to remove: <code class="docutils literal notranslate"><span class="pre">punctuation</span></code> , a lowercase <code class="docutils literal notranslate"><span class="pre">char</span></code> and some blanks. Write some code to perform the removal</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">char</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span>
@@ -3360,8 +3279,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">char</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">char</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span>
 <span class="n">punctuation</span> <span class="o">=</span> <span class="s1">&#39;!?.;,&#39;</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39; </span><span class="se">\t\n</span><span class="s1">...bbbbbBAD TO THE BONE</span><span class="se">\n</span><span class="s1">!&#39;</span>
 
@@ -3383,15 +3301,12 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">char</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">char</span> <span class="o">=</span> <span class="s1">&#39;b&#39;</span>
 <span class="n">punctuation</span> <span class="o">=</span> <span class="s1">&#39;!?.;,&#39;</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39; </span><span class="se">\t\n</span><span class="s1">...bbbbbBAD TO THE BONE</span><span class="se">\n</span><span class="s1">!&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3403,17 +3318,16 @@ carpe diem
 &#39;BAD TO THE BONE&#39;
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="count-method">
-<h2><code class="docutils literal notranslate"><span class="pre">count</span></code> method<a class="headerlink" href="#count-method" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="count-method">
+<h2><code class="docutils literal notranslate"><span class="pre">count</span></code> method<a class="headerlink" href="#count-method" title="Permalink to this headline"></a></h2>
 <p>The method <code class="docutils literal notranslate"><span class="pre">count</span></code> takes a substring and counts how many occurrences are there in the string before the dot.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;astral stars&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;astral stars&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3430,8 +3344,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;astral stars&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>    <span class="c1"># it&#39;s case sensitive</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;astral stars&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>    <span class="c1"># it&#39;s case sensitive</span>
 </pre></div>
 </div>
 </div>
@@ -3448,8 +3361,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;astral stars&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;st&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;astral stars&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;st&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3467,8 +3379,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#012345678901</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#012345678901</span>
 <span class="s2">&quot;astral stars&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3486,8 +3397,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#012345678901</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#012345678901</span>
 <span class="s2">&quot;astral stars&quot;</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3501,8 +3411,8 @@ carpe diem
 1
 </pre></div></div>
 </div>
-<div class="section" id="Do-not-abuse-count">
-<h3>Do not abuse count<a class="headerlink" href="#Do-not-abuse-count" title="Permalink to this headline">¶</a></h3>
+<section id="Do-not-abuse-count">
+<h3>Do not abuse count<a class="headerlink" href="#Do-not-abuse-count" title="Permalink to this headline"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING</strong>: <code class="docutils literal notranslate"><span class="pre">count</span></code> <strong>is often used in a wrong / inefficient ways</strong></p>
 <p>Always ask yourself:</p>
@@ -3512,9 +3422,9 @@ carpe diem
 <li><p><code class="docutils literal notranslate"><span class="pre">count</span></code> performs a search on all the string, which could be inefficient: is it really needed, or do we already know the interval where to search?</p></li>
 </ol>
 </div>
-</div>
-<div class="section" id="Exercise---astro-money">
-<h3>Exercise - astro money<a class="headerlink" href="#Exercise---astro-money" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---astro-money">
+<h3>Exercise - astro money<a class="headerlink" href="#Exercise---astro-money" title="Permalink to this headline"></a></h3>
 <p>During 2020 lockdown, while looking at the stars above you started feeling… waves. After some thinking, you decided <em>THEY</em> wanted to communicate with you so you you set up a dish antenna on your roof to receive messages from aliens. After months of apparent irrelevant noise, one day you finally receive a message you’re able to translate. Aliens are <em>obviously</em> trying to tell you the winning numbers of lottery!</p>
 <p>A message is a sequence of exactly 3 <em>different</em> character repetitions, the number of characters in each repetition is a number you will try at the lottery. You frantically start developing the translator to show these lucky numbers on the terminal.</p>
 <p>Example - given:</p>
@@ -3537,8 +3447,7 @@ carpe diem
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>    <span class="c1">#01234567890      # $ € !</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="c1">#01234567890      # $ € !</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;$$$$€€€€€!!&#39;</span>     <span class="c1"># 4 5 2</span>
 
                       <span class="c1"># I M Q</span>
@@ -3573,8 +3482,7 @@ $ € !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>    <span class="c1">#01234567890      # $ € !</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="c1">#01234567890      # $ € !</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;$$$$€€€€€!!&#39;</span>     <span class="c1"># 4 5 2</span>
 
                       <span class="c1"># I M Q</span>
@@ -3584,9 +3492,7 @@ $ € !
 <span class="c1">#s = &#39;HAL&#39;            # 1 1 1</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3598,17 +3504,16 @@ $ € !
 4 5 2
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="find-method">
-<h2><code class="docutils literal notranslate"><span class="pre">find</span></code> method<a class="headerlink" href="#find-method" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="find-method">
+<h2><code class="docutils literal notranslate"><span class="pre">find</span></code> method<a class="headerlink" href="#find-method" title="Permalink to this headline"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">find</span></code> returns the index of the <em>first</em> occurrence of some given substring:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#0123456789012345</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#0123456789012345</span>
 <span class="s1">&#39;bingo bongo bong&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;ong&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3627,8 +3532,7 @@ $ € !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#0123456789012345</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#0123456789012345</span>
 <span class="s1">&#39;bingo bongo bong&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;bang&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3646,8 +3550,7 @@ $ € !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#0123456789012345</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#0123456789012345</span>
 <span class="s1">&#39;bingo bongo bong&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;Bong&#39;</span><span class="p">)</span>    <span class="c1">#  case-sensitive</span>
 </pre></div>
 </div>
@@ -3666,8 +3569,7 @@ $ € !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#0123456789012345</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#0123456789012345</span>
 <span class="s1">&#39;bingo bongo bong&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;ong&#39;</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3686,8 +3588,7 @@ $ € !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#0123456789012345</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#0123456789012345</span>
 <span class="s1">&#39;bingo bongo bong&#39;</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3701,12 +3602,12 @@ $ € !
 -1
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="rfind-method">
-<h2><code class="docutils literal notranslate"><span class="pre">rfind</span></code> method<a class="headerlink" href="#rfind-method" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="rfind-method">
+<h2><code class="docutils literal notranslate"><span class="pre">rfind</span></code> method<a class="headerlink" href="#rfind-method" title="Permalink to this headline"></a></h2>
 <p>Like <a class="reference external" href="#find-method">find method</a>, but search starts from the right.</p>
-<div class="section" id="Do-not-abuse-find">
-<h3>Do not abuse find<a class="headerlink" href="#Do-not-abuse-find" title="Permalink to this headline">¶</a></h3>
+<section id="Do-not-abuse-find">
+<h3>Do not abuse find<a class="headerlink" href="#Do-not-abuse-find" title="Permalink to this headline"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING</strong>: <code class="docutils literal notranslate"><span class="pre">find</span></code> <strong>is often used in a wrong / inefficient ways</strong></p>
 <p>Always ask yourself:</p>
@@ -3717,9 +3618,9 @@ $ € !
 <li><p>If we want to know if a <code class="docutils literal notranslate"><span class="pre">character</span></code> is in a position we already know, <code class="docutils literal notranslate"><span class="pre">find</span></code> is useless: it’s enough to write <code class="docutils literal notranslate"><span class="pre">my_string[3]</span> <span class="pre">==</span> <span class="pre">character</span></code>. If you used <code class="docutils literal notranslate"><span class="pre">find</span></code>, it could discover duplicate characters which are <em>before</em> or <em>after</em> the one we are interested in!</p></li>
 </ol>
 </div>
-</div>
-<div class="section" id="Exercise---The-port-of-Monkey-Island">
-<h3>Exercise - The port of Monkey Island<a class="headerlink" href="#Exercise---The-port-of-Monkey-Island" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---The-port-of-Monkey-Island">
+<h3>Exercise - The port of Monkey Island<a class="headerlink" href="#Exercise---The-port-of-Monkey-Island" title="Permalink to this headline"></a></h3>
 <p>Monkey Island has a port with 4 piers where ships coming from all the archipelago are docked. The docking point is never precise, and there could arbitrary spaces between the pier borders. The could also be duplicated ships.</p>
 <ol class="arabic simple">
 <li><p>Suppose each pier can only contain one ship, and we want to write some code which shows <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">&quot;The</span> <span class="pre">Jolly</span> <span class="pre">Rasta&quot;</span></code> is docked to the pier <code class="docutils literal notranslate"><span class="pre">2</span></code>, or <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p></li>
@@ -3735,8 +3636,7 @@ $ € !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">21</span>  <span class="c1"># width of a pier,  INCLUDED the right `|`</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">21</span>  <span class="c1"># width of a pier,  INCLUDED the right `|`</span>
 <span class="n">pier</span> <span class="o">=</span> <span class="mi">2</span>
 
 
@@ -3790,8 +3690,7 @@ The Mad Monkey      |  The Jolly Rasta   |  The Sea Cucumber  |LeChuck&#39;s Gho
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">21</span>  <span class="c1"># width of a pier,  INCLUDED the right `|`</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">21</span>  <span class="c1"># width of a pier,  INCLUDED the right `|`</span>
 <span class="n">pier</span> <span class="o">=</span> <span class="mi">2</span>
 
 
@@ -3817,9 +3716,7 @@ The Mad Monkey      |  The Jolly Rasta   |  The Sea Cucumber  |LeChuck&#39;s Gho
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; find since second pier:&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;The Jolly Rasta&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">*</span><span class="p">(</span><span class="n">pier</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3849,8 +3746,7 @@ The Mad Monkey      |  The Jolly Rasta   |  The Sea Cucumber  |LeChuck&#39;s Gho
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">21</span>  <span class="c1"># width of a pier,  INCLUDED the right `|`</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">21</span>  <span class="c1"># width of a pier,  INCLUDED the right `|`</span>
 <span class="n">pier</span> <span class="o">=</span> <span class="mi">2</span>
 
 <span class="c1"># piers    :  1                    2                    3                    4</span>
@@ -3887,8 +3783,7 @@ Solution Grog Ship: False
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">21</span>  <span class="c1"># width of a pier,  INCLUDED the right `|`</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">width</span> <span class="o">=</span> <span class="mi">21</span>  <span class="c1"># width of a pier,  INCLUDED the right `|`</span>
 <span class="n">pier</span> <span class="o">=</span> <span class="mi">2</span>
 
 <span class="c1"># piers    :  1                    2                    3                    4</span>
@@ -3904,9 +3799,7 @@ Solution Grog Ship: False
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3920,9 +3813,9 @@ Is only one Grog Ship docked to pier 2 ?
 Solution Grog Ship: False
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---bananas">
-<h3>Exercise - bananas<a class="headerlink" href="#Exercise---bananas" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---bananas">
+<h3>Exercise - bananas<a class="headerlink" href="#Exercise---bananas" title="Permalink to this headline"></a></h3>
 <p>While exploring a remote tropical region, an ethologist discovers a population of monkeys which appear to have some concept of numbers. They collect bananas in the hundreds which are then traded with coconuts collected by another group. To comunicate the quantities of up to 999 bananas, they use a series of exactly three guttural sounds. The ethologist writes down the sequencies and formulates the following theory: each sound is comprised by a sequence of the same character, repeated a number of
 times. The number of characters in the first sequence is the first digit (the hundreds), the number of characters in the second sequence is the second digit (the decines), while the last sequence represents units.</p>
 <p>Write some code which puts in variable <code class="docutils literal notranslate"><span class="pre">bananas</span></code> <strong>an integer</strong> representing the number.</p>
@@ -3949,9 +3842,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span>    <span class="c1">#0123456789012</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span>    <span class="c1">#0123456789012</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;bb bbbbb aaaa&#39;</span>     <span class="c1"># 254</span>
 <span class="c1">#s = &#39;ccc cc ccc&#39;       # 323</span>
 <span class="c1">#s = &#39;vvv rrrr ww&#39;      # 342</span>
@@ -3991,9 +3882,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span>    <span class="c1">#0123456789012</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span>    <span class="c1">#0123456789012</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;bb bbbbb aaaa&#39;</span>     <span class="c1"># 254</span>
 <span class="c1">#s = &#39;ccc cc ccc&#39;       # 323</span>
 <span class="c1">#s = &#39;vvv rrrr ww&#39;      # 342</span>
@@ -4001,23 +3890,20 @@ int
 <span class="c1">#s = &#39;🌳🌳🌳 🍌🍌🍌🍌🍌🍌 🐵🐵🐵🐵&#39;  # 364  (you could get *any* weird character, also unicode ...)</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="replace-method">
-<h2><code class="docutils literal notranslate"><span class="pre">replace</span></code> method<a class="headerlink" href="#replace-method" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="replace-method">
+<h2><code class="docutils literal notranslate"><span class="pre">replace</span></code> method<a class="headerlink" href="#replace-method" title="Permalink to this headline"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">str.replace</span></code> takes two strings and looks in the string on which the method is called for occurrences of the first string parameter, which are substituted with the second parameter. Note it gives back a NEW string with all substitutions performed.</p>
 <p>Example:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;the train runs off the tracks&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;tra&#39;</span><span class="p">,</span> <span class="s1">&#39;ra&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;the train runs off the tracks&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;tra&#39;</span><span class="p">,</span> <span class="s1">&#39;ra&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4034,8 +3920,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;little beetle&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;tle&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;little beetle&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;tle&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4052,8 +3937,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;talking and joking&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ING&#39;</span><span class="p">,</span> <span class="s1">&#39;ed&#39;</span><span class="p">)</span>  <span class="c1"># it&#39;s case sensitive</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;talking and joking&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ING&#39;</span><span class="p">,</span> <span class="s1">&#39;ed&#39;</span><span class="p">)</span>  <span class="c1"># it&#39;s case sensitive</span>
 </pre></div>
 </div>
 </div>
@@ -4070,8 +3954,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;TALKING AND JOKING&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ING&#39;</span><span class="p">,</span> <span class="s1">&#39;ED&#39;</span><span class="p">)</span>  <span class="c1"># here they are</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;TALKING AND JOKING&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ING&#39;</span><span class="p">,</span> <span class="s1">&#39;ED&#39;</span><span class="p">)</span>  <span class="c1"># here they are</span>
 </pre></div>
 </div>
 </div>
@@ -4089,8 +3972,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;On the bench&quot;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;On the bench&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -4098,8 +3980,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;bench&#39;</span><span class="p">,</span> <span class="s1">&#39;bench the goat is alive&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;bench&#39;</span><span class="p">,</span> <span class="s1">&#39;bench the goat is alive&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -4107,8 +3988,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">y</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span>
 </pre></div>
 </div>
 </div>
@@ -4125,8 +4005,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span>  <span class="c1"># IMPORTANT: x is still associated to the old string !</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span>  <span class="c1"># IMPORTANT: x is still associated to the old string !</span>
 </pre></div>
 </div>
 </div>
@@ -4144,8 +4023,7 @@ int
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="s2">&quot;TALKING AND JOKING AND LAUGHING&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ING&#39;</span><span class="p">,</span> <span class="s1">&#39;ED&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># replaces only first 2 occurrences</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;TALKING AND JOKING AND LAUGHING&quot;</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ING&#39;</span><span class="p">,</span> <span class="s1">&#39;ED&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># replaces only first 2 occurrences</span>
 </pre></div>
 </div>
 </div>
@@ -4169,8 +4047,8 @@ int
 </div>
 </li>
 </ol>
-<div class="section" id="Do-not-abuse-replace">
-<h3>Do not abuse replace<a class="headerlink" href="#Do-not-abuse-replace" title="Permalink to this headline">¶</a></h3>
+<section id="Do-not-abuse-replace">
+<h3>Do not abuse replace<a class="headerlink" href="#Do-not-abuse-replace" title="Permalink to this headline"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING</strong>: <code class="docutils literal notranslate"><span class="pre">replace</span></code> <strong>is often used in a wrong / inefficient ways</strong></p>
 <p>Always ask yourself:</p>
@@ -4179,9 +4057,9 @@ int
 <li><p><code class="docutils literal notranslate"><span class="pre">replace</span></code> performs a search on the whole string, which could be inefficient: is it really needed, or do we already know the interval where the text to substitute is?</p></li>
 </ol>
 </div>
-</div>
-<div class="section" id="Exercise---Do-not-open-that-door">
-<h3>Exercise - Do not open that door<a class="headerlink" href="#Exercise---Do-not-open-that-door" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Do-not-open-that-door">
+<h3>Exercise - Do not open that door<a class="headerlink" href="#Exercise---Do-not-open-that-door" title="Permalink to this headline"></a></h3>
 <p><strong>QUESTION</strong> You have a library of books, with labels like <code class="docutils literal notranslate"><span class="pre">C-The</span> <span class="pre">godfather</span></code>, <code class="docutils literal notranslate"><span class="pre">R-Pride</span> <span class="pre">and</span> <span class="pre">prejudice</span></code> o <code class="docutils literal notranslate"><span class="pre">'H-Do</span> <span class="pre">not</span> <span class="pre">open</span> <span class="pre">that</span> <span class="pre">door'</span></code> composed by a character which identifies the type (<code class="docutils literal notranslate"><span class="pre">C</span></code> crime, <code class="docutils literal notranslate"><span class="pre">R</span></code> romance, <code class="docutils literal notranslate"><span class="pre">H</span></code> horror) followed by a <code class="docutils literal notranslate"><span class="pre">-</span></code> and the title. Given a <code class="docutils literal notranslate"><span class="pre">book</span></code>, you want to print the complete label, a colon and then the title, like <code class="docutils literal notranslate"><span class="pre">'Crime:</span> <span class="pre">The</span> <span class="pre">godfather'</span></code>. Look at the following code fragments, and for each try writing labels among the proposed ones <strong>or create others</strong>
 which would give wrong results (if they exists).</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">book</span> <span class="o">=</span> <span class="s1">&#39;C-The godfather&#39;</span>
@@ -4219,8 +4097,7 @@ which would give wrong results (if they exists).</p>
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># SOLUTION</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># SOLUTION</span>
 
 
 
@@ -4261,22 +4138,21 @@ Crime: T-H-E-Romance: O-B-B-E-R-Y
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---The-Kingdom-of-Stringards">
-<h3>Exercise - The Kingdom of Stringards<a class="headerlink" href="#Exercise---The-Kingdom-of-Stringards" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---The-Kingdom-of-Stringards">
+<h3>Exercise - The Kingdom of Stringards<a class="headerlink" href="#Exercise---The-Kingdom-of-Stringards" title="Permalink to this headline"></a></h3>
 <p>Characters Land is ruled with the iron fist by the Dukes of Stringards. The towns managed by them are monodimensional, and can be represented as a string, hosting dukes <code class="docutils literal notranslate"><span class="pre">d</span></code>, lords <code class="docutils literal notranslate"><span class="pre">s</span></code>, vassals <code class="docutils literal notranslate"><span class="pre">v</span></code> and peasants <code class="docutils literal notranslate"><span class="pre">p</span></code>. To separate the various social circles from improper mingling, some walls <code class="docutils literal notranslate"><span class="pre">|mm|</span></code>have been erected.</p>
 <p>Unfortunately, the Dukes are under siege by the tribe of the hideous Replacerons: with their short-sighted barbarian ways, they are very close to destroy the walls. To defend the town, the Stringards decide to upgrade walls, trasforming them from <code class="docutils literal notranslate"><span class="pre">|mm|</span></code> to <code class="docutils literal notranslate"><span class="pre">|MM|</span></code>.</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> use loops nor list comprehensions</p></li>
 <li><p><strong>DO NOT</strong> use lists (so no split)</p></li>
 </ul>
-<div class="section" id="Stringards-I:-upgrading-all-the-walls">
-<h4>Stringards I: upgrading all the walls<a class="headerlink" href="#Stringards-I:-upgrading-all-the-walls" title="Permalink to this headline">¶</a></h4>
+<section id="Stringards-I:-upgrading-all-the-walls">
+<h4>Stringards I: upgrading all the walls<a class="headerlink" href="#Stringards-I:-upgrading-all-the-walls" title="Permalink to this headline"></a></h4>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">town</span> <span class="o">=</span> <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 </pre></div>
@@ -4292,9 +4168,7 @@ Crime: T-H-E-Romance: O-B-B-E-R-Y
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>     <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>     <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1"># result:  &#39;ppp|MM|vvvvvv|MM|sss|MM|dd|MM|sssss|MM|vvvvvv|MM|pppppp&#39;</span>
 
 <span class="c1"># write here</span>
@@ -4316,20 +4190,16 @@ ppp|MM|vvvvvv|MM|sss|MM|dd|MM|sssss|MM|vvvvvv|MM|pppppp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>     <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>     <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1"># result:  &#39;ppp|MM|vvvvvv|MM|sss|MM|dd|MM|sssss|MM|vvvvvv|MM|pppppp&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Stringards-II:-Outer-walls">
-<h4>Stringards II: Outer walls<a class="headerlink" href="#Stringards-II:-Outer-walls" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="Stringards-II:-Outer-walls">
+<h4>Stringards II: Outer walls<a class="headerlink" href="#Stringards-II:-Outer-walls" title="Permalink to this headline"></a></h4>
 <p>Alas, the paesants don’t work hard enough and there aren’t enough coins to upgrade all the walls: upgrade <strong>only the outer walls</strong></p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> use <code class="docutils literal notranslate"><span class="pre">if</span></code>, loops nor list comprehensions</p></li>
@@ -4350,9 +4220,7 @@ ppp|MM|vvvvvv|MM|sss|MM|dd|MM|sssss|MM|vvvvvv|MM|pppppp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>    <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>    <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1">#result:  &#39;ppp|MM|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|MM|pppppp&#39;</span>
 <span class="c1">#town =   &#39;|mm|vvvvvv|mm||mm|ddddd|mm|ssvvv|mm|pp&#39;</span>
 <span class="c1">#result:  &#39;|MM|vvvvvv|mm||mm|ddddd|mm|ssvvv|MM|pp&#39;</span>
@@ -4381,23 +4249,19 @@ ppp|MM|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|MM|pppppp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>    <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>    <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1">#result:  &#39;ppp|MM|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|MM|pppppp&#39;</span>
 <span class="c1">#town =   &#39;|mm|vvvvvv|mm||mm|ddddd|mm|ssvvv|mm|pp&#39;</span>
 <span class="c1">#result:  &#39;|MM|vvvvvv|mm||mm|ddddd|mm|ssvvv|MM|pp&#39;</span>
 
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Stringards-III:-Power-to-the-People">
-<h4>Stringards III: Power to the People<a class="headerlink" href="#Stringards-III:-Power-to-the-People" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="Stringards-III:-Power-to-the-People">
+<h4>Stringards III: Power to the People<a class="headerlink" href="#Stringards-III:-Power-to-the-People" title="Permalink to this headline"></a></h4>
 <p>An even greater threat plagues the Stringards: <em>democracy</em>.</p>
 <p>Following the spread of this dark evil, some cities developed right and left factions, which tend to privilege only some parts of the city. If the dominant sentiment in a city is lefty, all the houses to the left of the Duke are privileged with big gold coins, otherwise with righty sentiment houses to the right get more privileged. When a house is privileged, the correponding character is upgraded to capital.</p>
 <ul class="simple">
@@ -4420,9 +4284,7 @@ ppp|MM|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|MM|pppppp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>    <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>    <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1"># result: &#39;PPP|mm|VVVVVV|mm|SSS|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1">#town =   &#39;|p|ppp||p|pp|mm|vvv|vvvv|mm|sssss|mm|ddd|mm|ssss|ss|mm|vvvvvv|mm|&#39;</span>
 <span class="c1"># result: &#39;|P|PPP||P|PP|mm|VVV|VVVV|mm|SSSSS|mm|ddd|mm|ssss|ss|mm|vvvvvv|mm|&#39;</span>
@@ -4449,17 +4311,13 @@ ppp|MM|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|MM|pppppp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>    <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>    <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1"># result: &#39;PPP|mm|VVVVVV|mm|SSS|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1">#town =   &#39;|p|ppp||p|pp|mm|vvv|vvvv|mm|sssss|mm|ddd|mm|ssss|ss|mm|vvvvvv|mm|&#39;</span>
 <span class="c1"># result: &#39;|P|PPP||P|PP|mm|VVV|VVVV|mm|SSSSS|mm|ddd|mm|ssss|ss|mm|vvvvvv|mm|&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <p><strong>3.2) privilege only right houses</strong></p>
@@ -4478,9 +4336,7 @@ ppp|MM|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|MM|pppppp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>     <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>     <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1">#result: &#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|SSSSS|mm|VVVVVV|mm|PPPPPP&#39;</span>
 <span class="c1">#town =    &#39;|p|ppp||p|pp|mm|vvv|vvvv|mm|sssss|mm|ddd|mm|ssss|ss|mm|vvvvvv|p|pp|mm|&#39;</span>
 <span class="c1">#result: &#39;|p|ppp||p|pp|mm|vvv|vvvv|mm|sssss|mm|ddd|mm|SSSS|SS|mm|VVVVVV|P|PP|mm|&#39;</span>
@@ -4506,22 +4362,18 @@ ppp|MM|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|MM|pppppp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[59]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>     <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>     <span class="s1">&#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|sssss|mm|vvvvvv|mm|pppppp&#39;</span>
 <span class="c1">#result: &#39;ppp|mm|vvvvvv|mm|sss|mm|dd|mm|SSSSS|mm|VVVVVV|mm|PPPPPP&#39;</span>
 <span class="c1">#town =    &#39;|p|ppp||p|pp|mm|vvv|vvvv|mm|sssss|mm|ddd|mm|ssss|ss|mm|vvvvvv|p|pp|mm|&#39;</span>
 <span class="c1">#result: &#39;|p|ppp||p|pp|mm|vvv|vvvv|mm|sssss|mm|ddd|mm|SSSS|SS|mm|VVVVVV|P|PP|mm|&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Stringards-IV:-Power-struggle">
-<h4>Stringards IV: Power struggle<a class="headerlink" href="#Stringards-IV:-Power-struggle" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="Stringards-IV:-Power-struggle">
+<h4>Stringards IV: Power struggle<a class="headerlink" href="#Stringards-IV:-Power-struggle" title="Permalink to this headline"></a></h4>
 <p>Over time, the Dukes family has expanded and alas ruthless feuds occurred. According to the number of town people to the left/right of the dukes, a corresponding number of royal members to the left/right receives support for playing their power games. A member of the dukes palace who receives support becomes uppercase. Each character <code class="docutils literal notranslate"><span class="pre">'p'</span></code>, <code class="docutils literal notranslate"><span class="pre">'v'</span></code> or <code class="docutils literal notranslate"><span class="pre">'s'</span></code> contributes support (but not the walls). The royal members who are not reached by support are slaughtered by their siblings, and
 substituted with a <a class="reference external" href="https://www.compart.com/en/unicode/U+271D">Latin Cross Unicode</a> ✝</p>
 <ul class="simple">
@@ -4529,7 +4381,7 @@ substituted with a <a class="reference external" href="https://www.compart.com/e
 <li><p>assume that for each left/right house, there is <em>at least</em> a left/right duke</p></li>
 </ul>
 <p>Example - given:</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">town</span> <span class="o">=</span> <span class="s">&quot;ppp|mm|vv|mm|v|s|mm|dddddddddddddddddddddddd|mm|ss|mm|vvvvv|mm|pppp&quot;</span><span class="p">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">town</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;ppp|mm|vv|mm|v|s|mm|dddddddddddddddddddddddd|mm|ss|mm|vvvvv|mm|pppp&quot;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>After your code, it must print:</p>
@@ -4548,9 +4400,7 @@ ppp|mm|vv|mm|v|s|mm|DDDDDDD✝✝✝✝✝✝DDDDDDDDDDD|mm|ss|mm|vvvvv|mm|pppp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>   <span class="s1">&#39;ppp|mm|vv|mm|v|s|mm|dddddddddddddddddddddddd|mm|ss|mm|vvvvv|mm|pppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>   <span class="s1">&#39;ppp|mm|vv|mm|v|s|mm|dddddddddddddddddddddddd|mm|ss|mm|vvvvv|mm|pppp&#39;</span>
 <span class="c1">#result: &#39;ppp|mm|vv|mm|v|s|mm|DDDDDDD✝✝✝✝✝✝DDDDDDDDDDD|mm|ss|mm|vvvvv|mm|pppp&#39;  tot:24 sx:7 dx:11</span>
 <span class="c1">#town =  &#39;ppp|mm|ppp|mm|vv|mm|ss|mm|dddddddddddddddddddd|mm|ss|mm|mm|s|v|mm|p|p|&#39;</span>
 <span class="c1">#result: &#39;ppp|mm|ppp|mm|vv|mm|ss|mm|DDDDDDDDDD✝✝✝✝DDDDDD|mm|ss|mm|mm|s|v|mm|p|p|&#39; tot:20 sx:10 dx:6</span>
@@ -4597,24 +4447,20 @@ ppp|mm|vv|mm|v|s|mm|DDDDDDD✝✝✝✝✝✝DDDDDDDDDDD|mm|ss|mm|vvvvv|mm|pppp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[60]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">town</span> <span class="o">=</span>   <span class="s1">&#39;ppp|mm|vv|mm|v|s|mm|dddddddddddddddddddddddd|mm|ss|mm|vvvvv|mm|pppp&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">town</span> <span class="o">=</span>   <span class="s1">&#39;ppp|mm|vv|mm|v|s|mm|dddddddddddddddddddddddd|mm|ss|mm|vvvvv|mm|pppp&#39;</span>
 <span class="c1">#result: &#39;ppp|mm|vv|mm|v|s|mm|DDDDDDD✝✝✝✝✝✝DDDDDDDDDDD|mm|ss|mm|vvvvv|mm|pppp&#39;  tot:24 sx:7 dx:11</span>
 <span class="c1">#town =  &#39;ppp|mm|ppp|mm|vv|mm|ss|mm|dddddddddddddddddddd|mm|ss|mm|mm|s|v|mm|p|p|&#39;</span>
 <span class="c1">#result: &#39;ppp|mm|ppp|mm|vv|mm|ss|mm|DDDDDDDDDD✝✝✝✝DDDDDD|mm|ss|mm|mm|s|v|mm|p|p|&#39; tot:20 sx:10 dx:6</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="Other-exercises">
-<h2>Other exercises<a class="headerlink" href="#Other-exercises" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="Other-exercises">
+<h2>Other exercises<a class="headerlink" href="#Other-exercises" title="Permalink to this headline"></a></h2>
 <p><strong>QUESTION</strong>: For each following expression, try to find the result</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;gUrP&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;GuRp&#39;</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
@@ -4634,59 +4480,42 @@ ppp|mm|vv|mm|v|s|mm|DDDDDDD✝✝✝✝✝✝DDDDDDDDDDD|mm|ss|mm|vvvvv|mm|pppp
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on reading notebook <a class="reference external" href="https://en.softpython.org/strings/strings5-chal.html">Strings 5 - first challenges</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="strings5-chal.html" class="btn btn-neutral float-right" title="Strings 5 - First challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="strings3-sol.html" class="btn btn-neutral float-left" title="Strings 3 - methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="strings5-chal.html" class="btn btn-neutral float-right" title="Strings 5 - First challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

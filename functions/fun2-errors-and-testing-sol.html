@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Error handling and testing solutions &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/functions/fun2-errors-and-testing-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Functions 3 - exercises with strings" href="fun3-strings-sol.html" />
     <link rel="prev" title="Functions 1 - introduction" href="fun1-intro-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,18 +2614,18 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Error-handling-and-testing-solutions">
-<h1>Error handling and testing solutions<a class="headerlink" href="#Error-handling-and-testing-solutions" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/functions.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Error-handling-and-testing-solutions">
+<h1>Error handling and testing solutions<a class="headerlink" href="#Error-handling-and-testing-solutions" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/functions.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/functions">Browse files online</a></p>
-</div>
-<div class="section" id="Introduction">
-<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Introduction">
+<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
 <p>In this notebook we will try to understand what our program should do when it encounters unforeseen situations, and how to test the code we write.</p>
 <p>For some strange reason, many people believe that computer programs do not need much error handling nor testing. Just to make a simple comparison, would you ever drive a car that did not undergo scrupolous checks? We wouldn’t.</p>
-<div class="section" id="What-to-do">
-<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h3>
+<section id="What-to-do">
+<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h3>
 <ol class="arabic simple">
 <li><p>unzip exercises in a folder, you should get something like this:</p></li>
 </ol>
@@ -2707,10 +2662,10 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="Unforeseen-situations">
-<h2>Unforeseen situations<a class="headerlink" href="#Unforeseen-situations" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Unforeseen-situations">
+<h2>Unforeseen situations<a class="headerlink" href="#Unforeseen-situations" title="Permalink to this headline"></a></h2>
 <p>It is evening, there is to party for a birthday and they asked you to make a pie. You need the following steps:</p>
 <ol class="arabic simple">
 <li><p>take milk</p></li>
@@ -2727,15 +2682,14 @@ div.rendered_html tbody tr:hover {
 <li><p><strong>allow to manage</strong> the problem to whoever called the function</p></li>
 </ol>
 <p>The answer is yes, you can do it with the mechanism of <strong>exceptions</strong> (<code class="docutils literal notranslate"><span class="pre">Exception</span></code>)</p>
-<div class="section" id="make_problematic_pie">
-<h3>make_problematic_pie<a class="headerlink" href="#make_problematic_pie" title="Permalink to this headline">¶</a></h3>
+<section id="make_problematic_pie">
+<h3>make_problematic_pie<a class="headerlink" href="#make_problematic_pie" title="Permalink to this headline"></a></h3>
 <p>Let’s see how we can represent the above problem in Python. A basic version might be the following:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">make_problematic_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_problematic_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; Suppose you need 1.3 kg for the milk, 0.2kg for the sugar and 1.0kg for the flour</span>
 
 <span class="sd">        - takes as parameters the quantities we have in the sideboard</span>
@@ -2785,10 +2739,10 @@ Party
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: the program above is partying even when we do not have enough ingredients !</p>
-</div></div>
-</div>
-<div class="section" id="Check-with-the-return">
-<h2>Check with the return<a class="headerlink" href="#Check-with-the-return" title="Permalink to this headline">¶</a></h2>
+</div></section>
+</section>
+<section id="Check-with-the-return">
+<h2>Check with the return<a class="headerlink" href="#Check-with-the-return" title="Permalink to this headline"></a></h2>
 <p><strong>EXERCISE</strong>: We could correct the problems of the above pie by adding <code class="docutils literal notranslate"><span class="pre">return</span></code> commands. Implement the following function.</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: DO NOT move the</strong> <code class="docutils literal notranslate"><span class="pre">print(&quot;Party&quot;)</span></code> <strong>inside the function</strong></p>
@@ -2801,8 +2755,7 @@ Party
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">make_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;  - suppose we need 1.3 kg for milk, 0.2kg for sugar and 1.0kg for flour</span>
 
 <span class="sd">         - takes as parameters the quantities we have in the sideboard</span>
@@ -2850,8 +2803,7 @@ Party
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Party&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No party !&quot;</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2869,8 +2821,7 @@ No party !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">make_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;  - suppose we need 1.3 kg for milk, 0.2kg for sugar and 1.0kg for flour</span>
 
 <span class="sd">         - takes as parameters the quantities we have in the sideboard</span>
@@ -2886,9 +2837,7 @@ No party !
 
 <span class="c1"># now write here the function call, make_pie(5,1,0.3)</span>
 <span class="c1"># using the result to declare whether it is possible or not to party :-(</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2902,9 +2851,9 @@ Don&#39;t have enough flour !
 No party !
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exceptions">
-<h2>Exceptions<a class="headerlink" href="#Exceptions" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Exceptions">
+<h2>Exceptions<a class="headerlink" href="#Exceptions" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://realpython.com/python-exceptions/">Real Python - Python Exceptions: an Introduction</a></p>
 <p>Using <code class="docutils literal notranslate"><span class="pre">return</span></code> we improved the previous function, but remains a problem: the responsability to understand whether or not the pie is properly made is given to the caller of the function, who has to take the returned value and decide upon that whether to party or not. A careless programmer might forget to do the check and party even with an ill-formed pie.</p>
 <p>So we ask ourselves: is it possible to stop the execution not just of the function, but of the whole program when we find an unforeseen situation?</p>
@@ -2924,8 +2873,7 @@ No party !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">make_exceptional_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_exceptional_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; - suppose we need 1.3 kg for milk, 0.2kg for sugar and 1.0kg for flour</span>
 
 <span class="sd">        - takes as parameters the quantities we have in the sideboard</span>
@@ -2951,16 +2899,14 @@ No party !
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mix&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Heat&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I made the pie !&quot;</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">make_exceptional_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_exceptional_pie</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; - suppose we need 1.3 kg for milk, 0.2kg for sugar and 1.0kg for flour</span>
 
 <span class="sd">        - takes as parameters the quantities we have in the sideboard</span>
@@ -2969,8 +2915,7 @@ No party !
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># implement function</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <p>Once implemented, by writing</p>
@@ -3004,8 +2949,7 @@ Exception: Don&#39;t have enough flour !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">make_exceptional_pie</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">make_exceptional_pie</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Party&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -3024,15 +2968,14 @@ I made the pie !
 Party
 </pre></div></div>
 </div>
-<div class="section" id="Manage-exceptions">
-<h3>Manage exceptions<a class="headerlink" href="#Manage-exceptions" title="Permalink to this headline">¶</a></h3>
+<section id="Manage-exceptions">
+<h3>Manage exceptions<a class="headerlink" href="#Manage-exceptions" title="Permalink to this headline"></a></h3>
 <p>Instead of brutally interrupting the program when problems are spotted, we might want to try some alternative (like go buying some ice cream). We could use some <code class="docutils literal notranslate"><span class="pre">try</span></code> <code class="docutils literal notranslate"><span class="pre">except</span></code> blocks like this:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">try</span><span class="p">:</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
     <span class="n">make_exceptional_pie</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.3</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Party&quot;</span><span class="p">)</span>
 <span class="k">except</span><span class="p">:</span>
@@ -3051,18 +2994,16 @@ Can&#39;t make the pie, what about going out for an ice cream?
 </pre></div></div>
 </div>
 <p>If you note, the execution jumped the <code class="docutils literal notranslate"><span class="pre">print(&quot;Party&quot;</span></code> but no exception has been printed, and the execution passed to the row right after the <code class="docutils literal notranslate"><span class="pre">except</span></code></p>
-</div>
-<div class="section" id="Particular-exceptions">
-<h3>Particular exceptions<a class="headerlink" href="#Particular-exceptions" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Particular-exceptions">
+<h3>Particular exceptions<a class="headerlink" href="#Particular-exceptions" title="Permalink to this headline"></a></h3>
 <p>Until know we used a generic <code class="docutils literal notranslate"><span class="pre">Exception</span></code>, but, if you will, you can use more specific exceptions to better signal the nature of the error. For example, when you implement a function, since checking the input values for correctness is very frequent, Python gives you an exception called <code class="docutils literal notranslate"><span class="pre">ValueError</span></code>. If you use it instead of <code class="docutils literal notranslate"><span class="pre">Exception</span></code>, you allow the function caller to intercept only that particular error type.</p>
 <p>If the function raises an error which is not intercepted in the catch, the program will halt.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">make_exceptional_pie_2</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">make_exceptional_pie_2</span><span class="p">(</span><span class="n">milk</span><span class="p">,</span> <span class="n">sugar</span><span class="p">,</span> <span class="n">flour</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; - suppose we need 1.3 kg for milk, 0.2kg for sugar and 1.0kg for flour</span>
 
 <span class="sd">        - takes as parameters the quantities we have in the sideboard</span>
@@ -3099,8 +3040,7 @@ Can&#39;t make the pie, what about going out for an ice cream?
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Party&quot;</span><span class="p">)</span>
 <span class="k">except</span><span class="p">:</span>  <span class="c1"># manages all exceptions</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Guys, something bad happened, don&#39;t know what to do. Better to go out and take an ice-cream !&quot;</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3125,10 +3065,10 @@ Party
 </pre></div></div>
 </div>
 <p>For more explanations about <code class="docutils literal notranslate"><span class="pre">try</span> <span class="pre">catch</span></code>, you can see <a class="reference external" href="https://realpython.com/python-exceptions/">Real Python - Python Exceptions: an Introduction</a></p>
-</div>
-</div>
-<div class="section" id="assert">
-<h2>assert<a class="headerlink" href="#assert" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="assert">
+<h2>assert<a class="headerlink" href="#assert" title="Permalink to this headline"></a></h2>
 <p>They asked you to develop a program to control a nuclear reactor. The reactor produces a lot of energy, but requires at least 20 meters of water to cool down, and your program needs to regulate the water level. Without enough water, you risk a meltdown. You do not feel exactly up to the job, and start sweating.</p>
 <p>Nervously, you write the code. You check and recheck the code - everything looks fine.</p>
 <p>On inauguration day, the reactor is turned on. Unexpectedly, the water level goes down to 5 meters, and an uncontrolled chain reaction occurs. Plutoniom fireworks follow.</p>
@@ -3137,8 +3077,7 @@ Party
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># we need water to cool our reactor</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we need water to cool our reactor</span>
 
 <span class="n">water_level</span> <span class="o">=</span> <span class="mi">40</span> <span class="c1">#  seems ok</span>
 
@@ -3187,8 +3126,7 @@ turn on nuclear reactor
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;before&quot;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;before&quot;</span><span class="p">)</span>
 <span class="k">assert</span> <span class="kc">True</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;after&quot;</span><span class="p">)</span>
 </pre></div>
@@ -3212,7 +3150,7 @@ after
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>before
 ---------------------------------------------------------------------------
 AssertionError                            Traceback <span class="o">(</span>most recent call last<span class="o">)</span>
-&lt;ipython-input-7-a871fdc9ebee&gt; in &lt;module&gt;<span class="o">()</span>
+&lt;ipython-input-7-a871fdc9ebee&gt; <span class="k">in</span> &lt;module&gt;<span class="o">()</span>
 ----&gt; <span class="m">1</span> assert False
 
 AssertionError:
@@ -3271,8 +3209,8 @@ AssertionError                            Traceback (most recent call last)
 AssertionError:
 </pre></div>
 </div>
-<div class="section" id="When-to-use-assert?">
-<h3>When to use assert?<a class="headerlink" href="#When-to-use-assert?" title="Permalink to this headline">¶</a></h3>
+<section id="When-to-use-assert?">
+<h3>When to use assert?<a class="headerlink" href="#When-to-use-assert?" title="Permalink to this headline"></a></h3>
 <p>The case above is willingly exagerated, but shows how a check more sometimes prevents disasters.</p>
 <p>Asserts are a quick way to do checks, so much so that Python even allows to ignore them during execution to improve the performance (calling <code class="docutils literal notranslate"><span class="pre">python</span></code> with the <code class="docutils literal notranslate"><span class="pre">-O</span></code> parameter like in <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-O</span> <span class="pre">my_file.py</span></code>).</p>
 <p>But if performance are not a problem (like in the reactor above), it’s more convenient to rewrite the program using an <code class="docutils literal notranslate"><span class="pre">if</span></code> and explicitly raising an <code class="docutils literal notranslate"><span class="pre">Exception</span></code>:</p>
@@ -3329,10 +3267,10 @@ Exception: Water level too low !
 </pre></div>
 </div>
 <p>Note how the reactor was <em>not</em> turned on.</p>
-</div>
-</div>
-<div class="section" id="Testing">
-<h2>Testing<a class="headerlink" href="#Testing" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Testing">
+<h2>Testing<a class="headerlink" href="#Testing" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p>If it seems to work, then it actually works? <em>Probably not</em>.</p></li>
 <li><p>The devil is in the details, especially for complex algorithms.</p></li>
@@ -3341,13 +3279,13 @@ Exception: Water level too low !
 <div class="admonition warning">
 <p><strong>WARNING</strong>: Bad software can cause losses of million $/€ or even harm people. Suggested reading: <a class="reference external" href="https://www.cs.tau.ac.il/~nachumd/horror.html">Software Horror Stories</a></p>
 </div>
-<div class="section" id="Where-Is-Your-Software?">
-<h3>Where Is Your Software?<a class="headerlink" href="#Where-Is-Your-Software?" title="Permalink to this headline">¶</a></h3>
+<section id="Where-Is-Your-Software?">
+<h3>Where Is Your Software?<a class="headerlink" href="#Where-Is-Your-Software?" title="Permalink to this headline"></a></h3>
 <p>As a data scientist, you might likely end up with code which is moderately complex from an algorithmic point of view, but maybe not too big in size. Either way, when red line is crossed you should start testing properly:</p>
 <p><img alt="where is your software" src="../_images/where-is-your-software.png" /></p>
-</div>
-<div class="section" id="Testing-with-asserts">
-<h3>Testing with asserts<a class="headerlink" href="#Testing-with-asserts" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Testing-with-asserts">
+<h3>Testing with asserts<a class="headerlink" href="#Testing-with-asserts" title="Permalink to this headline"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>NOTE: in this book we test with</strong> <code class="docutils literal notranslate"><span class="pre">assert</span></code>, <strong>but there are much better frameworks for testing!</strong></p>
 <p>If you get serious about software development, please consider using something like <a class="reference external" href="https://docs.pytest.org/en/stable/">PyTest</a> (recent and clean) or <a class="reference external" href="https://docs.python.org/3/library/unittest.html">Unittest</a> (Python default testing suite, has more traditional approach)</p>
@@ -3358,8 +3296,7 @@ Exception: Water level too low !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
     <span class="k">return</span> <span class="n">s</span>
 </pre></div>
@@ -3370,8 +3307,7 @@ Exception: Water level too low !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">assert</span> <span class="n">my_sum</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">my_sum</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
 </pre></div>
 </div>
 </div>
@@ -3391,9 +3327,9 @@ Exception: Water level too low !
 <li><p>the boolean expression <code class="docutils literal notranslate"><span class="pre">my_sum(2,3)</span> <span class="pre">==</span> <span class="pre">5</span></code> will give<code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">assert</span> <span class="pre">False</span></code> will interrupt the program execution, raising an exception of type <code class="docutils literal notranslate"><span class="pre">AssertionError</span></code></p></li>
 </ol>
-</div>
-<div class="section" id="Exercise-structure">
-<h3>Exercise structure<a class="headerlink" href="#Exercise-structure" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise-structure">
+<h3>Exercise structure<a class="headerlink" href="#Exercise-structure" title="Permalink to this headline"></a></h3>
 <p>Exercises in the <a class="reference external" href="https://en.softpython.org/index.html#basic-algorithms">Foundations - A.3 Basic Algorithms</a> are often structured in the following format:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; RETURN the sum of numbers x and y</span>
@@ -3409,14 +3345,14 @@ Exception: Water level too low !
 <p>If you attempt to execute the cell, you will see this error:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>---------------------------------------------------------------------------
 Exception                                 Traceback <span class="o">(</span>most recent call last<span class="o">)</span>
-&lt;ipython-input-16-5f5c8512d42a&gt; in &lt;module&gt;<span class="o">()</span>
+&lt;ipython-input-16-5f5c8512d42a&gt; <span class="k">in</span> &lt;module&gt;<span class="o">()</span>
       <span class="m">6</span>
       <span class="m">7</span>
 ----&gt; <span class="m">8</span> assert my_sum<span class="o">(</span><span class="m">2</span>,3<span class="o">)</span> <span class="o">==</span> <span class="m">5</span>
       <span class="m">9</span> assert my_sum<span class="o">(</span><span class="m">3</span>,1<span class="o">)</span> <span class="o">==</span> <span class="m">4</span>
      <span class="m">10</span> assert my_sum<span class="o">(</span>-2,5<span class="o">)</span> <span class="o">==</span> <span class="m">3</span>
 
-&lt;ipython-input-16-5f5c8512d42a&gt; in somma<span class="o">(</span>x, y<span class="o">)</span>
+&lt;ipython-input-16-5f5c8512d42a&gt; <span class="k">in</span> somma<span class="o">(</span>x, y<span class="o">)</span>
       <span class="m">3</span>     <span class="s2">&quot;&quot;&quot; RETURN the sum of numbers x and y</span>
 <span class="s2">      4     &quot;&quot;&quot;</span>
 ----&gt; <span class="m">5</span>     raise Exception<span class="o">(</span><span class="s2">&quot;TODO IMPLEMENT ME!&quot;</span><span class="o">)</span>
@@ -3449,7 +3385,7 @@ execution is suddenly stopped and the user is signalled with the nature and posi
 <p>In this case the first assertion succeeds and so the execution simply passes to the next row, which contains another <code class="docutils literal notranslate"><span class="pre">assert</span></code>. We expect that <code class="docutils literal notranslate"><span class="pre">my_sum(3,1)</span></code> gives 4, but our ill-written function returns <code class="docutils literal notranslate"><span class="pre">5</span></code> so this <code class="docutils literal notranslate"><span class="pre">assert</span></code> fails. Note how the execution is interrupted at the <em>second</em> <code class="docutils literal notranslate"><span class="pre">assert</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>---------------------------------------------------------------------------
 AssertionError                            Traceback <span class="o">(</span>most recent call last<span class="o">)</span>
-&lt;ipython-input-19-e5091c194d3c&gt; in &lt;module&gt;<span class="o">()</span>
+&lt;ipython-input-19-e5091c194d3c&gt; <span class="k">in</span> &lt;module&gt;<span class="o">()</span>
       <span class="m">6</span>
       <span class="m">7</span> assert my_sum<span class="o">(</span><span class="m">2</span>,3<span class="o">)</span> <span class="o">==</span> <span class="m">5</span>
 ----&gt; <span class="m">8</span> assert my_sum<span class="o">(</span><span class="m">3</span>,1<span class="o">)</span> <span class="o">==</span> <span class="m">4</span>
@@ -3466,9 +3402,7 @@ AssertionError:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; RETURN the sum of numbers x and y</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
@@ -3490,8 +3424,7 @@ AssertionError:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">my_mul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_mul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; RETURN the multiplication of numbers x and y</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -3509,8 +3442,7 @@ AssertionError:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">my_mul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_mul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; RETURN the multiplication of numbers x and y</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -3522,9 +3454,9 @@ AssertionError:
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---gre3">
-<h3>Exercise - gre3<a class="headerlink" href="#Exercise---gre3" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---gre3">
+<h3>Exercise - gre3<a class="headerlink" href="#Exercise---gre3" title="Permalink to this headline"></a></h3>
 <p>✪✪ Write a function <code class="docutils literal notranslate"><span class="pre">gre3</span></code> which takes three numbers and RETURN the greatest among them</p>
 <p>Examples:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">gre3</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
@@ -3543,9 +3475,7 @@ AssertionError:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">gre3</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">gre3</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">a</span><span class="o">&gt;</span><span class="n">c</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">a</span>
@@ -3568,18 +3498,15 @@ AssertionError:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="k">assert</span> <span class="n">gre3</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="k">assert</span> <span class="n">gre3</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
 <span class="k">assert</span> <span class="n">gre3</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">7</span>
 <span class="k">assert</span> <span class="n">gre3</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---final_price">
-<h3>Exercise - final_price<a class="headerlink" href="#Exercise---final_price" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---final_price">
+<h3>Exercise - final_price<a class="headerlink" href="#Exercise---final_price" title="Permalink to this headline"></a></h3>
 <p>✪✪ The cover price of a book is € 24,95, but a library obtains 40% of discount. Shipping costs are € 3 for first copy and 75 cents for each additional copy. How much <code class="docutils literal notranslate"><span class="pre">n</span></code> copies cost ?</p>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">final_price(n)</span></code> which RETURN the price.</p>
 <p><strong>ATTENTION 1</strong>: For numbers Python wants a dot, NOT the comma !</p>
@@ -3602,8 +3529,7 @@ AssertionError:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">final_price</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">final_price</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">0</span>
@@ -3620,8 +3546,7 @@ AssertionError:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">final_price</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">final_price</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">final_price</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mf">159.45</span>
@@ -3629,9 +3554,9 @@ AssertionError:
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---arrival_time">
-<h3>Exercise - arrival_time<a class="headerlink" href="#Exercise---arrival_time" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---arrival_time">
+<h3>Exercise - arrival_time<a class="headerlink" href="#Exercise---arrival_time" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ By running slowly you take 8 minutes and 15 seconds per mile, and by running with moderate rhythm you take 7 minutes and 12 seconds per mile.</p>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">arrival_time(n,m)</span></code> which, supposing you start at 6:52, given <code class="docutils literal notranslate"><span class="pre">n</span></code> miles run with slow rhythm and <code class="docutils literal notranslate"><span class="pre">m</span></code> with moderate rhythm, PRINTs arrival time.</p>
 <ul class="simple">
@@ -3648,8 +3573,7 @@ AssertionError:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">arrival_time</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">arrival_time</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
 
     <span class="n">start_hour</span> <span class="o">=</span> <span class="mi">6</span>
     <span class="n">start_minutes</span> <span class="o">=</span> <span class="mi">52</span>
@@ -3682,8 +3606,7 @@ AssertionError:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">arrival_time</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">arrival_time</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -3698,69 +3621,51 @@ AssertionError:
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with exercises about <a class="reference external" href="https://en.softpython.org/functions/fun3-strings-sol.html">functions and strings</a></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="fun3-strings-sol.html" class="btn btn-neutral float-right" title="Functions 3 - exercises with strings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="fun1-intro-sol.html" class="btn btn-neutral float-left" title="Functions 1 - introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="fun3-strings-sol.html" class="btn btn-neutral float-right" title="Functions 3 - exercises with strings" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

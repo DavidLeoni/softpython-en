@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Relational data 4 - Challenges &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/relational/relational4-chal.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Text data" href="../toc-worked-projects.html" />
     <link rel="prev" title="Relational data 3 - simple statistics" href="relational3-simple-stats-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2405,27 +2345,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2526,7 +2480,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2592,6 +2546,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2601,7 +2556,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2661,27 +2616,26 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Relational-data-4---Challenges">
-<h1>Relational data 4 - Challenges<a class="headerlink" href="#Relational-data-4---Challenges" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Relational-data-4---Challenges">
+<h1>Relational data 4 - Challenges<a class="headerlink" href="#Relational-data-4---Challenges" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/relational">Browse online files</a></p>
-</div>
-<div class="section" id="Matrices">
-<h2>Matrices<a class="headerlink" href="#Matrices" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Matrices">
+<h2>Matrices<a class="headerlink" href="#Matrices" title="Permalink to this headline"></a></h2>
 <p><strong>HOW TO DISPLAY</strong>: In these exercises you never need to display the chain exactly as in the examples, the important thing is having correct node numbers and links among them. Still, for optimal display we will sometimes suggest some <code class="docutils literal notranslate"><span class="pre">options</span></code> parameters.</p>
 <p>First off, import <code class="docutils literal notranslate"><span class="pre">draw_mat</span></code>:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="Challenge---trichain">
-<h3>Challenge - trichain<a class="headerlink" href="#Challenge---trichain" title="Permalink to this headline">¶</a></h3>
+<section id="Challenge---trichain">
+<h3>Challenge - trichain<a class="headerlink" href="#Challenge---trichain" title="Permalink to this headline"></a></h3>
 <p>Write a function which given an odd number <code class="docutils literal notranslate"><span class="pre">n</span></code>, displays a graph represented as matrix of lists of lists of booleans as in the examples.</p>
 <ul>
 <li><p>if <code class="docutils literal notranslate"><span class="pre">n</span></code> is negative or even, raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
@@ -2706,10 +2660,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 
 <span class="k">def</span> <span class="nf">trichain</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -2718,13 +2669,12 @@ div.rendered_html tbody tr:hover {
 <span class="n">trichain</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">trichain</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">trichain</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Challenge---Bipartite">
-<h3>Challenge - Bipartite<a class="headerlink" href="#Challenge---Bipartite" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Challenge---Bipartite">
+<h3>Challenge - Bipartite<a class="headerlink" href="#Challenge---Bipartite" title="Permalink to this headline"></a></h3>
 <p>✪✪ Write a function which given two numbers <code class="docutils literal notranslate"><span class="pre">n</span></code> and <code class="docutils literal notranslate"><span class="pre">m</span></code>, displays a boolean matrix as list of lists, representing a graph in which first <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes are linked to all successive <code class="docutils literal notranslate"><span class="pre">m</span></code> nodes.</p>
 <ul>
 <li><p>for optimal drawing, add <code class="docutils literal notranslate"><span class="pre">options</span></code> parameter like this:</p>
@@ -2744,9 +2694,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 
 <span class="k">def</span> <span class="nf">bipartite</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -2761,9 +2709,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Challenge---Luna-park">
-<h3>Challenge - Luna park<a class="headerlink" href="#Challenge---Luna-park" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Challenge---Luna-park">
+<h3>Challenge - Luna park<a class="headerlink" href="#Challenge---Luna-park" title="Permalink to this headline"></a></h3>
 <p>✪✪ A luna park receives hordes of <code class="docutils literal notranslate"><span class="pre">tourists</span></code> who all want to have a ride on <em>The Spinning Head</em>. The attraction has many queues to get tickets, and each queue holds tourists identified by an id. The attraction operators take <code class="docutils literal notranslate"><span class="pre">5</span></code> minutes to service each tourist.</p>
 <p>Implement a function <code class="docutils literal notranslate"><span class="pre">lunapark</span></code> which takes a list of queues (each queue is a list of ids), and displays a graph represented as matrix as a list of lists of integers, with the times tourists have to wait until they get served.</p>
 <ul class="simple">
@@ -2783,9 +2731,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 
 <span class="k">def</span> <span class="nf">lunapark</span><span class="p">(</span><span class="n">queues</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -2805,12 +2751,12 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Challenge---Factory">
-<h3>Challenge - Factory<a class="headerlink" href="#Challenge---Factory" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Challenge---Factory">
+<h3>Challenge - Factory<a class="headerlink" href="#Challenge---Factory" title="Permalink to this headline"></a></h3>
 <p>A factory has several conveyor belts to process raw materials. Each conveyor has a number of machines which refine the material. Each machine takes a different time to work, except the last one of each line which is just a collector.</p>
-<div class="section" id="Factory-process">
-<h4>Factory process<a class="headerlink" href="#Factory-process" title="Permalink to this headline">¶</a></h4>
+<section id="Factory-process">
+<h4>Factory process<a class="headerlink" href="#Factory-process" title="Permalink to this headline"></a></h4>
 <p>✪✪ Write a function <code class="docutils literal notranslate"><span class="pre">process</span></code> which takes a list of machine lines and displays a graph as a matrix of list of lists of integers holding the timings between each machine. A machine line is a list with the timings of each machine.</p>
 <ul class="simple">
 <li><p>this time <strong>also RETURN</strong> the matrix (we will reuse it later)</p></li>
@@ -2831,9 +2777,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 
 <span class="k">def</span> <span class="nf">process</span><span class="p">(</span><span class="n">lines</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -2858,9 +2802,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Factory-assemble">
-<h4>Factory assemble<a class="headerlink" href="#Factory-assemble" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="Factory-assemble">
+<h4>Factory assemble<a class="headerlink" href="#Factory-assemble" title="Permalink to this headline"></a></h4>
 <p>✪✪✪ After processing, each material part is assembled into intermediate products until the final product is made. Multiple conveyor lines can join into another ones for assembly. The joining time is always fixed to <code class="docutils literal notranslate"><span class="pre">5</span></code> minutes. Write a function <code class="docutils literal notranslate"><span class="pre">assemble</span></code> which given conveyor <code class="docutils literal notranslate"><span class="pre">lines</span></code> as before and a <code class="docutils literal notranslate"><span class="pre">joins</span></code> list displays a graph matrix as a list of lists of integers</p>
 <ul class="simple">
 <li><p><strong>HINT 1</strong>: you can call previous <code class="docutils literal notranslate"><span class="pre">process(lines)</span></code> function and then connect the joins</p></li>
@@ -2887,9 +2831,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 
 <span class="k">def</span> <span class="nf">assemble</span><span class="p">(</span><span class="n">lines</span><span class="p">,</span> <span class="n">joins</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -2917,10 +2859,10 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Challenge---Sharing-is-caring">
-<h3>Challenge - Sharing is caring<a class="headerlink" href="#Challenge---Sharing-is-caring" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="Challenge---Sharing-is-caring">
+<h3>Challenge - Sharing is caring<a class="headerlink" href="#Challenge---Sharing-is-caring" title="Permalink to this headline"></a></h3>
 <p>✪✪ Given a number <code class="docutils literal notranslate"><span class="pre">n</span></code> of couples husband / wife, write a function sharing which displays a graph which models the relation <em>can access property of</em>. As output format use a matrix list of lists of booleans.</p>
 <ul class="simple">
 <li><p>if <code class="docutils literal notranslate"><span class="pre">n</span></code> is zero or negative, raise <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
@@ -2938,9 +2880,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 
 <span class="k">def</span> <span class="nf">sharing</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -2951,14 +2891,12 @@ div.rendered_html tbody tr:hover {
 
 <span class="c1">#sharing(1)</span>
 <span class="c1">#sharing(0) # ValueError</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Challenge---Hexagons">
-<h3>Challenge - Hexagons<a class="headerlink" href="#Challenge---Hexagons" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Challenge---Hexagons">
+<h3>Challenge - Hexagons<a class="headerlink" href="#Challenge---Hexagons" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ Write a function <code class="docutils literal notranslate"><span class="pre">hexagons(h)</span></code> which displays a graph with <code class="docutils literal notranslate"><span class="pre">h</span></code> hexagons as in the example. As output format, use a matrix as list of lists of booleans.</p>
 <ul>
 <li><p><strong>WARNING:</strong> node <code class="docutils literal notranslate"><span class="pre">1</span></code> is special, it doesn’t obey any pattern so treat it separately</p></li>
@@ -2976,9 +2914,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 
 <span class="k">def</span> <span class="nf">hexagons</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -2991,9 +2927,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Challenge---Trust-your-tribe">
-<h3>Challenge - Trust your tribe<a class="headerlink" href="#Challenge---Trust-your-tribe" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Challenge---Trust-your-tribe">
+<h3>Challenge - Trust your tribe<a class="headerlink" href="#Challenge---Trust-your-tribe" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ There are <code class="docutils literal notranslate"><span class="pre">n</span></code> people subdivided in <code class="docutils literal notranslate"><span class="pre">m</span></code> political parties they vote for. It’s a well known fact that each voter trusts only people who vote for their same party, and of course everybody also trusts him/herself. Given a list <code class="docutils literal notranslate"><span class="pre">groups</span></code> containing the number of people each group contains, write a function <code class="docutils literal notranslate"><span class="pre">trust(groups)</span></code> which displays a graph as a list of lists of booleans which shows the trust network among people. For example, <code class="docutils literal notranslate"><span class="pre">trust([2,4,1,3])</span></code> must generate a graph where the first
 party has two voters, the second party four voters, etc.</p>
 <ul>
@@ -3009,9 +2945,7 @@ party has two voters, the second party four voters, etc.</p>
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 
 <span class="k">def</span> <span class="nf">trust</span><span class="p">(</span><span class="n">groups</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -3027,25 +2961,24 @@ party has two voters, the second party four voters, etc.</p>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Adjacency-lists">
-<h2>Adjacency lists<a class="headerlink" href="#Adjacency-lists" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Challenge---From-matrices-to-adjacency-lists">
-<h3>Challenge - From matrices to adjacency lists<a class="headerlink" href="#Challenge---From-matrices-to-adjacency-lists" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="Adjacency-lists">
+<h2>Adjacency lists<a class="headerlink" href="#Adjacency-lists" title="Permalink to this headline"></a></h2>
+<section id="Challenge---From-matrices-to-adjacency-lists">
+<h3>Challenge - From matrices to adjacency lists<a class="headerlink" href="#Challenge---From-matrices-to-adjacency-lists" title="Permalink to this headline"></a></h3>
 <p>Redo the previous exercises this time using adjacency lists. To draw them, use:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Challenge---Friends">
-<h3>Challenge - Friends<a class="headerlink" href="#Challenge---Friends" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Challenge---Friends">
+<h3>Challenge - Friends<a class="headerlink" href="#Challenge---Friends" title="Permalink to this headline"></a></h3>
 <p>✪✪ In groups of friends, everybody is friend with each other, and often somebody from each group is friend with somebody from another group, forming thus a connection among different communities. Write a function friends which given a list of groups and connections among them, creates a NEW graph and displays it as a dictionary of adjacency lists where each person in a group is linked to all other persons in the group except itself, and groups are connected according to the couple of names
 specified in connections</p>
 <ul>
@@ -3069,9 +3002,7 @@ specified in connections</p>
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
 
 <span class="k">def</span> <span class="nf">friends</span><span class="p">(</span><span class="n">groups</span><span class="p">,</span> <span class="n">connections</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -3086,9 +3017,9 @@ specified in connections</p>
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Challenge---Counter-Intelligence">
-<h3>Challenge - Counter Intelligence<a class="headerlink" href="#Challenge---Counter-Intelligence" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Challenge---Counter-Intelligence">
+<h3>Challenge - Counter Intelligence<a class="headerlink" href="#Challenge---Counter-Intelligence" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ The secret service has just raided the house of a suspected spy. The foreign agent had left the building few hours before, but while searching the house a microfilm is found with instructions for the spy about the next moves he should do. On the paper, locations are anonymized with words like ‘Alpha’, ‘Bravo’, etc. Supposing names in the text follow a temporal order, the secret service wants you to derive a map of the performed trips, so to show the connections among the various locations.
 Write a function decode which given the text and a list of locations names, displays a graph as a dictionary of adjacency lists</p>
 <ul class="simple">
@@ -3111,9 +3042,7 @@ Write a function decode which given the text and a list of locations names, disp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
 
 <span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">locations</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
@@ -3135,23 +3064,22 @@ Write a function decode which given the text and a list of locations names, disp
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Networkx">
-<h2>Networkx<a class="headerlink" href="#Networkx" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Networkx">
+<h2>Networkx<a class="headerlink" href="#Networkx" title="Permalink to this headline"></a></h2>
 <p>We will now see some exercises with NetworkX. To do them, you will need to import the library and relative drawing function:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 <span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_nx</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="Challenge---Offshore">
-<h3>Challenge - Offshore<a class="headerlink" href="#Challenge---Offshore" title="Permalink to this headline">¶</a></h3>
+<section id="Challenge---Offshore">
+<h3>Challenge - Offshore<a class="headerlink" href="#Challenge---Offshore" title="Permalink to this headline"></a></h3>
 <p>✪✪ Your government’s Revenue Service has launched an investigation into big tech firms: there is clear evidence they manage to pay almost zero taxes by having a complex network of transactions between a myriad of accounts in offshore tax havens. In order to get a clear picture of what is going on, the Revenue Service asks you to draw a graph showing suspect transactions occurred in a fiscal year among accounts of different countries.</p>
 <p>A transaction is a list with four values: the date, the origin and the destination country, and the amount of the transaction (we assume billion dollars as units).</p>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">offshore</span></code> which takes a list of transactions and displays a Networkx graph showing each of the occurred transactions for a given fiscal year.</p>
@@ -3194,9 +3122,7 @@ Write a function decode which given the text and a list of locations names, disp
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 <span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_nx</span>
 
 <span class="k">def</span> <span class="nf">offshore</span><span class="p">(</span><span class="n">transactions</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
@@ -3238,9 +3164,9 @@ Write a function decode which given the text and a list of locations names, disp
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Challenge---Cashflow">
-<h3>Challenge - Cashflow<a class="headerlink" href="#Challenge---Cashflow" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Challenge---Cashflow">
+<h3>Challenge - Cashflow<a class="headerlink" href="#Challenge---Cashflow" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ The Revenue Service is interested in knowing the total positive cash flow which went from a country to another country. For example, if there is a transaction of <code class="docutils literal notranslate"><span class="pre">7</span></code> from Cyprus to Macao and another of <code class="docutils literal notranslate"><span class="pre">5</span></code> from Macao to Cyprus, in the resulting graph you should only show one arrow from Cyprus to Macao with the positive difference <code class="docutils literal notranslate"><span class="pre">2</span></code>. The order in which you find transactions in the table is not important, the only important thing is to show at most one arrow. For example, if you first
 encounter Cayman-&gt;Taiwan with <code class="docutils literal notranslate"><span class="pre">1</span></code> and then the reverse Taiwan-&gt;Cayman with <code class="docutils literal notranslate"><span class="pre">8</span></code>, you will show one arrow Taiwan-&gt;Cayman with label ‘+7 B$’</p>
 <p>Write a function <code class="docutils literal notranslate"><span class="pre">cash_flow</span></code> to display a NetworkX graph</p>
@@ -3273,9 +3199,7 @@ encounter Cayman-&gt;Taiwan with <code class="docutils literal notranslate"><spa
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 <span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_nx</span>
 
 <span class="k">def</span> <span class="nf">cash_flow</span><span class="p">(</span><span class="n">transactions</span><span class="p">):</span>
@@ -3310,56 +3234,39 @@ encounter Cayman-&gt;Taiwan with <code class="docutils literal notranslate"><spa
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../toc-worked-projects.html" class="btn btn-neutral float-right" title="Text data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="relational3-simple-stats-sol.html" class="btn btn-neutral float-left" title="Relational data 3 - simple statistics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../toc-worked-projects.html" class="btn btn-neutral float-right" title="Text data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

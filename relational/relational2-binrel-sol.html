@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Relational data 2 - binary relations &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/relational/relational2-binrel-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Relational data 3 - simple statistics" href="relational3-simple-stats-sol.html" />
     <link rel="prev" title="Relational data 1 - introduction" href="relational1-intro-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2405,27 +2345,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2526,7 +2480,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2592,6 +2546,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2601,7 +2556,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2661,16 +2616,16 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Relational-data-2---binary-relations">
-<h1>Relational data 2 - binary relations<a class="headerlink" href="#Relational-data-2---binary-relations" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="Relational-data-2---binary-relations">
+<h1>Relational data 2 - binary relations<a class="headerlink" href="#Relational-data-2---binary-relations" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/relational">Browse files online</a></p>
 <p>We can use graphs to model relations of many kinds, like <em>isCloseTo,</em> <em>isFriendOf,</em> <em>loves,</em> etc. Here we review some of them and their properties.</p>
 <p><strong>Before going on, make sure to have read the first tutorial</strong> <a class="reference external" href="https://en.softpython.org/relational/relational1-intro-sol.html">Relational data</a></p>
-</div>
-<div class="section" id="What-to-do">
-<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="What-to-do">
+<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p>unzip exercises in a folder, you should get something like this:</p></li>
 </ul>
@@ -2705,17 +2660,16 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="Reflexive-relations">
-<h2>Reflexive relations<a class="headerlink" href="#Reflexive-relations" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Reflexive-relations">
+<h2>Reflexive relations<a class="headerlink" href="#Reflexive-relations" title="Permalink to this headline"></a></h2>
 <p>A graph is reflexive when each node links to itself.</p>
 <p>In real life, the typical reflexive relation could be “is close to” , supposing “close to” means being within a 100 meters distance. Obviously, any place is always close to itself, let’s see an example (Povo is a small town around Trento):</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
 
 <span class="n">draw_adj</span><span class="p">({</span>
     <span class="s1">&#39;Trento Cathedral&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Trento Cathedral&#39;</span><span class="p">,</span> <span class="s1">&#39;Trento Neptune Statue&#39;</span><span class="p">],</span>
@@ -2737,8 +2691,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_mat</span>
 
 <span class="n">draw_mat</span><span class="p">(</span>
     <span class="p">[</span>
@@ -2760,8 +2713,8 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <p>From the graph above, we see student 0 and student 2 both did their own homeworks. Student 3 did no homerworks at all. Alarmingly, we notice student 2 did the homeworks for student 1. Resulting conspiration shall be severely punished with a one year ban from having spritz at Emma’s bar.</p>
-<div class="section" id="Exercise---is_reflexive_mat">
-<h3>Exercise - is_reflexive_mat<a class="headerlink" href="#Exercise---is_reflexive_mat" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---is_reflexive_mat">
+<h3>Exercise - is_reflexive_mat<a class="headerlink" href="#Exercise---is_reflexive_mat" title="Permalink to this headline"></a></h3>
 <p>✪✪ Implement a function that RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if <span class="math notranslate nohighlight">\(n\)</span> x <span class="math notranslate nohighlight">\(n\)</span> boolean matrix mat as list of lists is reflexive, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <p>A graph is <em>reflexive</em> when all nodes point to themselves.</p>
 <ul class="simple">
@@ -2773,8 +2726,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">is_reflexive_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_reflexive_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
 
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -2824,8 +2776,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">is_reflexive_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_reflexive_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">is_reflexive_mat</span><span class="p">([</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>   <span class="c1"># m1</span>
@@ -2865,9 +2816,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---is_reflexive_adj">
-<h3>Exercise - is_reflexive_adj<a class="headerlink" href="#Exercise---is_reflexive_adj" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---is_reflexive_adj">
+<h3>Exercise - is_reflexive_adj<a class="headerlink" href="#Exercise---is_reflexive_adj" title="Permalink to this headline"></a></h3>
 <p>✪✪ Implement now the same function for dictionaries of adjacency lists:</p>
 <p>RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if provided graph as dictionary of adjacency lists is reflexive, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <ul class="simple">
@@ -2880,8 +2831,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">is_reflexive_adj</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_reflexive_adj</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
 
 
     <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
@@ -2942,8 +2892,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">is_reflexive_adj</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_reflexive_adj</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">is_reflexive_adj</span><span class="p">({</span> <span class="s1">&#39;a&#39;</span><span class="p">:[]</span> <span class="p">})</span> <span class="o">==</span> <span class="kc">False</span>   <span class="c1"># d1</span>
@@ -2994,10 +2943,10 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Symmetric-relations">
-<h2>Symmetric relations<a class="headerlink" href="#Symmetric-relations" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Symmetric-relations">
+<h2>Symmetric relations<a class="headerlink" href="#Symmetric-relations" title="Permalink to this headline"></a></h2>
 <p>A graph is symmetric when for all nodes, if a node A links to another node B, there is a also a link from node B to A.</p>
 <p>In real life, the typical symmetric relation is “is friend of”. If you are friend to somene, that someone should be also be your friend.</p>
 <p>For example, since Scrooge typically is not so friendly with his lazy nephew Donald Duck, but certainly both Scrooge and Donald Duck enjoy visiting the farm of Grandma Duck, we can model their friendship relation like this:</p>
@@ -3005,8 +2954,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
 
 <span class="n">draw_adj</span><span class="p">({</span>
     <span class="s1">&#39;Donald Duck&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Grandma Duck&#39;</span><span class="p">],</span>
@@ -3041,8 +2989,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
 
 <span class="n">draw_adj</span><span class="p">({</span>
     <span class="s1">&#39;Donald Duck&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Daisy Duck&#39;</span><span class="p">],</span>
@@ -3066,8 +3013,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
 
 <span class="n">draw_adj</span><span class="p">({</span>
     <span class="s1">&#39;Donald Duck&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Daisy Duck&#39;</span><span class="p">],</span>
@@ -3087,8 +3033,8 @@ div.rendered_html tbody tr:hover {
 <img alt="../_images/relational_relational2-binrel-sol_36_0.png" src="../_images/relational_relational2-binrel-sol_36_0.png" />
 </div>
 </div>
-<div class="section" id="Exercise---is_symmetric_mat">
-<h3>Exercise - is_symmetric_mat<a class="headerlink" href="#Exercise---is_symmetric_mat" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---is_symmetric_mat">
+<h3>Exercise - is_symmetric_mat<a class="headerlink" href="#Exercise---is_symmetric_mat" title="Permalink to this headline"></a></h3>
 <p>✪✪ Implement an automated procedure to check whether or not a graph is symmetrical, which given a matrix as a list of lists that RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">n</span></code>x<code class="docutils literal notranslate"><span class="pre">n</span></code> boolean matrix mat as list of lists is symmetric, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <ul class="simple">
 <li><p>A graph is symmetric when for all nodes, if a node A links to another node B, there is a also a link from node B to A.</p></li>
@@ -3099,9 +3045,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">is_symmetric_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">is_symmetric_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
 
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -3152,9 +3096,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">is_symmetric_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">is_symmetric_mat</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">is_symmetric_mat</span><span class="p">([</span> <span class="p">[</span><span class="kc">False</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">True</span>   <span class="c1"># m1</span>
@@ -3194,9 +3136,9 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---is_symmetric_adj">
-<h3>Exercise - is_symmetric_adj<a class="headerlink" href="#Exercise---is_symmetric_adj" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---is_symmetric_adj">
+<h3>Exercise - is_symmetric_adj<a class="headerlink" href="#Exercise---is_symmetric_adj" title="Permalink to this headline"></a></h3>
 <p>✪✪ Now implement the same as before but for a dictionary of adjacency lists:</p>
 <p>RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if given dictionary of adjacency lists is symmetric, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <ul class="simple">
@@ -3209,9 +3151,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">is_symmetric_adj</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">is_symmetric_adj</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
 
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">]:</span>
@@ -3271,9 +3211,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="k">def</span> <span class="nf">is_symmetric_adj</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">is_symmetric_adj</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 <span class="k">assert</span> <span class="n">is_symmetric_adj</span><span class="p">({</span> <span class="s1">&#39;a&#39;</span><span class="p">:[]</span> <span class="p">})</span> <span class="o">==</span> <span class="kc">True</span>   <span class="c1"># d1</span>
@@ -3323,34 +3261,31 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Surjective-relations">
-<h2>Surjective relations<a class="headerlink" href="#Surjective-relations" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Surjective-relations">
+<h2>Surjective relations<a class="headerlink" href="#Surjective-relations" title="Permalink to this headline"></a></h2>
 <p>If we consider a graph as a nxn binary relation where the domain is the same as the codomain, such relation is called <em>surjective</em> if every node is reached by <em>at least</em> one edge.</p>
 <p>For example, <code class="docutils literal notranslate"><span class="pre">G1</span></code> here is surjective, because there is at least one edge reaching into each node (self-loops as in 0 node also count as incoming edges)</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G1</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G1</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span>  <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
 
      <span class="p">]</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">G1</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">G1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3366,24 +3301,21 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">G2</span> <span class="o">=</span> <span class="p">[</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">G2</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span>  <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">],</span>
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
         <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
 
      <span class="p">]</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">G2</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">draw_mat</span><span class="p">(</span><span class="n">G2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3394,8 +3326,8 @@ div.rendered_html tbody tr:hover {
 <img alt="../_images/relational_relational2-binrel-sol_52_0.png" src="../_images/relational_relational2-binrel-sol_52_0.png" />
 </div>
 </div>
-<div class="section" id="Exercise---surjective">
-<h3>Exercise - surjective<a class="headerlink" href="#Exercise---surjective" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---surjective">
+<h3>Exercise - surjective<a class="headerlink" href="#Exercise---surjective" title="Permalink to this headline"></a></h3>
 <p>✪✪ RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if provided graph <code class="docutils literal notranslate"><span class="pre">mat</span></code> as list of boolean lists is an <code class="docutils literal notranslate"><span class="pre">n</span></code>x<code class="docutils literal notranslate"><span class="pre">n</span></code> surjective binary relation, otherwise return <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -3403,8 +3335,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">surjective</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">surjective</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
 
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span>
     <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># number of incoming edges found</span>
@@ -3475,8 +3406,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">def</span> <span class="nf">surjective</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">surjective</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
 
@@ -3534,67 +3464,50 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Further-resources">
-<h2>Further resources<a class="headerlink" href="#Further-resources" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Further-resources">
+<h2>Further resources<a class="headerlink" href="#Further-resources" title="Permalink to this headline"></a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.researchgate.net/profile/Stef_Joosten/publication/327022933_Rule_Based_Design/links/5b7321be45851546c903234a/Rule-Based-Design.pdf">Rule based design</a> by Lex Wedemeijer, Stef Joosten, Jaap van der woude: a very readable text on how to represent information using only binary relations with boolean matrices. This a theorical book with no python exercise so it is not a mandatory read, it only gives context and practical applications for some of the material on graphs presented
 during the course</p></li>
 </ul>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/relational/relational3-simple-stats-sol.html">simple statistics</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="relational3-simple-stats-sol.html" class="btn btn-neutral float-right" title="Relational data 3 - simple statistics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="relational1-intro-sol.html" class="btn btn-neutral float-left" title="Relational data 1 - introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="relational3-simple-stats-sol.html" class="btn btn-neutral float-right" title="Relational data 3 - simple statistics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>While loops 1 - introduction &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/while/while1-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="while loops 8 - Challenges" href="while2-chal.html" />
     <link rel="prev" title="for loops 8 - Challenge" href="../for/for8-chal.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,16 +2614,16 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="While-loops-1---introduction">
-<h1>While loops 1 - introduction<a class="headerlink" href="#While-loops-1---introduction" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/while.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="While-loops-1---introduction">
+<h1>While loops 1 - introduction<a class="headerlink" href="#While-loops-1---introduction" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/while.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/while">Browse online files</a></p>
 <p>Let’s see how to repeat instructions by executing them inside <code class="docutils literal notranslate"><span class="pre">while</span></code> loops.</p>
 <p>The main feature of <code class="docutils literal notranslate"><span class="pre">while</span></code> loop is to allow explicit control when the loop should end. Typically, such loops are used when we must <em>iterate</em> on a sequence we don’t know the dimension of in advance, or the dimension can vary over time, or when several conditions might determine the cycle stop.</p>
-</div>
-<div class="section" id="What-to-do">
-<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="What-to-do">
+<h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h2>
 <ol class="arabic simple">
 <li><p>Unzip <a class="reference external" href="../_static/generated/while.zip">exercises zip</a> in a folder, you should obtain something like this:</p></li>
 </ol>
@@ -2693,17 +2648,16 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="Counting-with-a-while">
-<h2>Counting with a while<a class="headerlink" href="#Counting-with-a-while" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Counting-with-a-while">
+<h2>Counting with a while<a class="headerlink" href="#Counting-with-a-while" title="Permalink to this headline"></a></h2>
 <p>A <code class="docutils literal notranslate"><span class="pre">while</span></code> cycle is a code block which is executed when a certain boolean condition is verified. The code block is repeatedly executed as long as the condition is true.</p>
 <p>Let’s see an example:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
 
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Counted&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
@@ -2739,8 +2693,7 @@ Loop is over!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># WARNING: FOR PYTHON TUTOR TO WORK, REMEMBER TO EXECUTE THIS CELL with Shift+Enter</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># WARNING: FOR PYTHON TUTOR TO WORK, REMEMBER TO EXECUTE THIS CELL with Shift+Enter</span>
 <span class="c1">#          (it&#39;s sufficient to execute it only once)</span>
 
 <span class="kn">import</span> <span class="nn">jupman</span>
@@ -2751,8 +2704,7 @@ Loop is over!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Counted&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -2829,8 +2781,8 @@ Loop is over !
 <p>At the beginning of the cycle <code class="docutils literal notranslate"><span class="pre">i</span></code> is valued <code class="docutils literal notranslate"><span class="pre">1</span></code>, so the boolean expression <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> is evaluated as <code class="docutils literal notranslate"><span class="pre">True</span></code>. Since it’s <code class="docutils literal notranslate"><span class="pre">True</span></code>, execution continues inside the block with the <code class="docutils literal notranslate"><span class="pre">print</span></code> and finally MODIFIES <code class="docutils literal notranslate"><span class="pre">i</span></code> by incrementing <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">+=</span> <span class="pre">1</span></code>.</p>
 <p>Now the execution goes to <code class="docutils literal notranslate"><span class="pre">while</span></code> row, and condition <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> is evaluated again. At this second iteration <code class="docutils literal notranslate"><span class="pre">i</span></code> is valued <code class="docutils literal notranslate"><span class="pre">2</span></code>, so the boolean expression <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> is again evaluated to <code class="docutils literal notranslate"><span class="pre">True</span></code> and the execution remains inside the block. A new print is done and <code class="docutils literal notranslate"><span class="pre">i</span></code> gets incremented.</p>
 <p>Another loop is done until <code class="docutils literal notranslate"><span class="pre">i</span></code> is valued <code class="docutils literal notranslate"><span class="pre">4</span></code>. A that point <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> produces <code class="docutils literal notranslate"><span class="pre">False</span></code> so in that moment execution <em>exits</em> the <code class="docutils literal notranslate"><span class="pre">while</span></code> block and goes on with the commands at the same indentation level as the <code class="docutils literal notranslate"><span class="pre">while</span></code></p>
-<div class="section" id="Terminating-while">
-<h3>Terminating <code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#Terminating-while" title="Permalink to this headline">¶</a></h3>
+<section id="Terminating-while">
+<h3>Terminating <code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#Terminating-while" title="Permalink to this headline"></a></h3>
 <p>When we have a <code class="docutils literal notranslate"><span class="pre">while</span></code> cycle, typically sooner or later we want it to terminate (programs which hang aren’t users’ favourites …). To guarantee termination, we need:</p>
 <ol class="arabic simple">
 <li><p>initializing a variable outside the cycle</p></li>
@@ -2901,18 +2853,18 @@ Counted 1
 .
 </pre></div>
 </div>
-</div>
-<div class="section" id="Non-terminating-while">
-<h3>Non-terminating <code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#Non-terminating-while" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Non-terminating-while">
+<h3>Non-terminating <code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#Non-terminating-while" title="Permalink to this headline"></a></h3>
 <p><strong>QUESTION</strong>: Can you imagine a program which <em>never</em> terminates?</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: if you live nearby a hydropower or nuclear plant, what happens if the program regulating the water stops?</p>
 <p>Or: suppose you are inside an airplane and the program which checks the fuel flux to the engine suddenly stops. Could this be a problem?</p>
 <p>All programs if well written must foresee termination, but some software are executed for such a long time that termination is to be considered an exceptional event.</p>
-</div></div>
-<div class="section" id="Questions">
-<h3>Questions<a class="headerlink" href="#Questions" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Questions">
+<h3>Questions<a class="headerlink" href="#Questions" title="Permalink to this headline"></a></h3>
 <p><strong>QUESTION</strong>: Look at the following code fragments , and for each try guessing the result it produces (or if it gives an error):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
@@ -3037,12 +2989,12 @@ Counted 1
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Esercises">
-<h3>Esercises<a class="headerlink" href="#Esercises" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="Exercise---printeven">
-<h3>Exercise - printeven<a class="headerlink" href="#Exercise---printeven" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Esercises">
+<h3>Esercises<a class="headerlink" href="#Esercises" title="Permalink to this headline"></a></h3>
+</section>
+<section id="Exercise---printeven">
+<h3>Exercise - printeven<a class="headerlink" href="#Exercise---printeven" title="Permalink to this headline"></a></h3>
 <p>✪ Write some code to print all the odd numbers from <code class="docutils literal notranslate"><span class="pre">1</span></code> to <code class="docutils literal notranslate"><span class="pre">k</span></code> in a <code class="docutils literal notranslate"><span class="pre">while</span></code> cycle</p>
 <ul class="simple">
 <li><p>for <code class="docutils literal notranslate"><span class="pre">k&lt;1</span></code> prints nothing</p></li>
@@ -3063,9 +3015,7 @@ Counted 1
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>   <span class="c1"># 1 3 5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>   <span class="c1"># 1 3 5</span>
 <span class="c1">#k = 1  # 1</span>
 <span class="c1">#k = 0  # no print</span>
 
@@ -3092,21 +3042,17 @@ Counted 1
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>   <span class="c1"># 1 3 5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span>   <span class="c1"># 1 3 5</span>
 <span class="c1">#k = 1  # 1</span>
 <span class="c1">#k = 0  # no print</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---average">
-<h3>Exercise - average<a class="headerlink" href="#Exercise---average" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---average">
+<h3>Exercise - average<a class="headerlink" href="#Exercise---average" title="Permalink to this headline"></a></h3>
 <p>✪ Write some code that given a list <code class="docutils literal notranslate"><span class="pre">numbers</span></code>, calculates the average of values using a <code class="docutils literal notranslate"><span class="pre">while</span></code> and then prints it.</p>
 <ul class="simple">
 <li><p>if the list is not empty, the average is supposed to be <code class="docutils literal notranslate"><span class="pre">0.0</span></code></p></li>
@@ -3127,9 +3073,7 @@ Counted 1
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span> <span class="c1"># 7.0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span> <span class="c1"># 7.0</span>
 <span class="c1">#numbers = [3,1,2]  # 2.0</span>
 <span class="c1">#numbers = []       # 0</span>
 
@@ -3159,36 +3103,31 @@ Counted 1
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span> <span class="c1"># 7.0</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span> <span class="c1"># 7.0</span>
 <span class="c1">#numbers = [3,1,2]  # 2.0</span>
 <span class="c1">#numbers = []       # 0</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="break-and-continue-commands">
-<h2><code class="docutils literal notranslate"><span class="pre">break</span></code> and <code class="docutils literal notranslate"><span class="pre">continue</span></code> commands<a class="headerlink" href="#break-and-continue-commands" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="break-and-continue-commands">
+<h2><code class="docutils literal notranslate"><span class="pre">break</span></code> and <code class="docutils literal notranslate"><span class="pre">continue</span></code> commands<a class="headerlink" href="#break-and-continue-commands" title="Permalink to this headline"></a></h2>
 <p>For getting even more control on cycle execution we can use the commands <code class="docutils literal notranslate"><span class="pre">break</span></code> and <code class="docutils literal notranslate"><span class="pre">continue</span></code></p>
 <div class="admonition note">
 <p class="admonition-title fa fa-exclamation-circle"><strong>NOTE: Use them sparingly!</strong></p>
 <p>When there is a lot of code in the cycle it’s easy to ‘forget’ about their presence and introduce hard-to-discover bugs. On the other hand, in some selected cases these commands may increase code readability, so as everything use your judgement.</p>
 </div>
-<div class="section" id="Terminate-with-a-break">
-<h3>Terminate with a <code class="docutils literal notranslate"><span class="pre">break</span></code><a class="headerlink" href="#Terminate-with-a-break" title="Permalink to this headline">¶</a></h3>
+<section id="Terminate-with-a-break">
+<h3>Terminate with a <code class="docutils literal notranslate"><span class="pre">break</span></code><a class="headerlink" href="#Terminate-with-a-break" title="Permalink to this headline"></a></h3>
 <p>The scheme we’ve just seen is the recommended one to properly terminate a <code class="docutils literal notranslate"><span class="pre">while</span></code>, but if we have a condition which does NOT evaluate the variable we are incrementing (like for example the constant expression <code class="docutils literal notranslate"><span class="pre">True</span></code>), as an alternative we can use the command <code class="docutils literal notranslate"><span class="pre">break</span></code> to immediatly exit the cycle:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Counted&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
@@ -3218,9 +3157,9 @@ Loop is over !
 </pre></div></div>
 </div>
 <p>Note <code class="docutils literal notranslate"><span class="pre">After</span> <span class="pre">the</span> <span class="pre">break</span></code> is <em>not</em> shown.</p>
-</div>
-<div class="section" id="Jumping-with-continue">
-<h3>Jumping with <code class="docutils literal notranslate"><span class="pre">continue</span></code><a class="headerlink" href="#Jumping-with-continue" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Jumping-with-continue">
+<h3>Jumping with <code class="docutils literal notranslate"><span class="pre">continue</span></code><a class="headerlink" href="#Jumping-with-continue" title="Permalink to this headline"></a></h3>
 <p>We can bring the execution immediately to the next iteration by calling <code class="docutils literal notranslate"><span class="pre">continue</span></code>, which directly jumps to the condition check without executing the instructions after the <code class="docutils literal notranslate"><span class="pre">continue</span></code>.</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING:</strong> <code class="docutils literal notranslate"><span class="pre">continue</span></code> <strong>instructions can cause infinite loops if used carelessly!</strong></p>
@@ -3231,8 +3170,7 @@ Loop is over !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Counted&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
 
@@ -3270,8 +3208,7 @@ Loop is over !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Counted&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
@@ -3358,9 +3295,9 @@ Loop is over !
 })()
 </script></div>
 </div>
-</div>
-<div class="section" id="Questions-about-break-and-continue">
-<h3>Questions about <code class="docutils literal notranslate"><span class="pre">break</span></code> and <code class="docutils literal notranslate"><span class="pre">continue</span></code><a class="headerlink" href="#Questions-about-break-and-continue" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Questions-about-break-and-continue">
+<h3>Questions about <code class="docutils literal notranslate"><span class="pre">break</span></code> and <code class="docutils literal notranslate"><span class="pre">continue</span></code><a class="headerlink" href="#Questions-about-break-and-continue" title="Permalink to this headline"></a></h3>
 <p><strong>QUESTION</strong>: Look at the following code fragments , and try guessing for each the result it produces (or if it gives an error):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
@@ -3432,17 +3369,17 @@ Loop is over !
 </div>
 </li>
 </ol>
-</div>
-</div>
-<div class="section" id="Questions---Are-they-equivalent?">
-<h2>Questions - Are they equivalent?<a class="headerlink" href="#Questions---Are-they-equivalent?" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Questions---Are-they-equivalent?">
+<h2>Questions - Are they equivalent?<a class="headerlink" href="#Questions---Are-they-equivalent?" title="Permalink to this headline"></a></h2>
 <p>Look at the following code fragments: each contains two parts, A and B. For each value of the variables they depend on, try guessing whether part A will print exactly the same result printed by code in part B</p>
 <ul class="simple">
 <li><p><strong>FIRST</strong> think about the answer and <strong>write down the expected output</strong></p></li>
 <li><p><strong>THEN</strong> try executing with each of the values of suggested variables</p></li>
 </ul>
-<div class="section" id="Are-they-equivalent?---BORG">
-<h3>Are they equivalent? - BORG<a class="headerlink" href="#Are-they-equivalent?---BORG" title="Permalink to this headline">¶</a></h3>
+<section id="Are-they-equivalent?---BORG">
+<h3>Are they equivalent? - BORG<a class="headerlink" href="#Are-they-equivalent?---BORG" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;BORG&#39;</span><span class="p">)</span>
@@ -3454,9 +3391,9 @@ Loop is over !
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;BORG&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---until-3">
-<h3>Are they equivalent? - until 3<a class="headerlink" href="#Are-they-equivalent?---until-3" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---until-3">
+<h3>Are they equivalent? - until 3<a class="headerlink" href="#Are-they-equivalent?---until-3" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
@@ -3470,9 +3407,9 @@ Loop is over !
     <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---by-chance">
-<h3>Are they equivalent? - by chance<a class="headerlink" href="#Are-they-equivalent?---by-chance" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---by-chance">
+<h3>Are they equivalent? - by chance<a class="headerlink" href="#Are-they-equivalent?---by-chance" title="Permalink to this headline"></a></h3>
 <p>Remember <code class="docutils literal notranslate"><span class="pre">randint(a,</span> <span class="pre">b)</span></code> gives back a random integer <code class="docutils literal notranslate"><span class="pre">N</span></code> such that <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&lt;=</span> <span class="pre">N</span> <span class="pre">&lt;=</span> <span class="pre">b</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
@@ -3488,9 +3425,9 @@ Loop is over !
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---until-six">
-<h3>Are they equivalent? - until six<a class="headerlink" href="#Are-they-equivalent?---until-six" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---until-six">
+<h3>Are they equivalent? - until six<a class="headerlink" href="#Are-they-equivalent?---until-six" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
@@ -3507,9 +3444,9 @@ Loop is over !
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---countdown-1">
-<h3>Are they equivalent? - countdown 1<a class="headerlink" href="#Are-they-equivalent?---countdown-1" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---countdown-1">
+<h3>Are they equivalent? - countdown 1<a class="headerlink" href="#Are-they-equivalent?---countdown-1" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
@@ -3524,9 +3461,9 @@ Loop is over !
     <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---countdown-2">
-<h3>Are they equivalent? - countdown 2<a class="headerlink" href="#Are-they-equivalent?---countdown-2" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---countdown-2">
+<h3>Are they equivalent? - countdown 2<a class="headerlink" href="#Are-they-equivalent?---countdown-2" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
@@ -3546,8 +3483,7 @@ Loop is over !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -3579,9 +3515,9 @@ B:
 0
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---sorcery">
-<h3>Are they equivalent? - sorcery<a class="headerlink" href="#Are-they-equivalent?---sorcery" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---sorcery">
+<h3>Are they equivalent? - sorcery<a class="headerlink" href="#Are-they-equivalent?---sorcery" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;sorcery&#39;</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
@@ -3597,9 +3533,9 @@ B:
 <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">:])</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---ping-pong">
-<h3>Are they equivalent? - ping pong<a class="headerlink" href="#Are-they-equivalent?---ping-pong" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---ping-pong">
+<h3>Are they equivalent? - ping pong<a class="headerlink" href="#Are-they-equivalent?---ping-pong" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">ping</span><span class="p">,</span><span class="n">pong</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">3</span>
 <span class="k">while</span> <span class="n">ping</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="ow">or</span> <span class="n">pong</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -3615,9 +3551,9 @@ B:
     <span class="n">pong</span> <span class="o">-=</span> <span class="mi">1</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---zanna">
-<h3>Are they equivalent? - zanna<a class="headerlink" href="#Are-they-equivalent?---zanna" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---zanna">
+<h3>Are they equivalent? - zanna<a class="headerlink" href="#Are-they-equivalent?---zanna" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">n</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;zanna&#39;</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
@@ -3635,9 +3571,9 @@ B:
 <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---pasticcio">
-<h3>Are they equivalent? - pasticcio<a class="headerlink" href="#Are-they-equivalent?---pasticcio" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---pasticcio">
+<h3>Are they equivalent? - pasticcio<a class="headerlink" href="#Are-they-equivalent?---pasticcio" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">c</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;pasticcio&#39;</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
@@ -3656,19 +3592,18 @@ B:
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">-</span> <span class="n">no</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="Exercises---counters">
-<h2>Exercises - counters<a class="headerlink" href="#Exercises---counters" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Exercise---don't-break-1">
-<h3>Exercise - don’t break 1<a class="headerlink" href="#Exercise---don't-break-1" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="Exercises---counters">
+<h2>Exercises - counters<a class="headerlink" href="#Exercises---counters" title="Permalink to this headline"></a></h2>
+<section id="Exercise---don't-break-1">
+<h3>Exercise - don’t break 1<a class="headerlink" href="#Exercise---don't-break-1" title="Permalink to this headline"></a></h3>
 <p>✪ Look at the following code, and write in the following cell some code which produces the same result with a <code class="docutils literal notranslate"><span class="pre">while</span></code> and <strong>without using</strong> <code class="docutils literal notranslate"><span class="pre">break</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -3694,9 +3629,7 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
 
 <span class="c1"># write here</span>
 
@@ -3721,26 +3654,21 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---don't-break-2">
-<h3>Exercise - don’t break 2<a class="headerlink" href="#Exercise---don't-break-2" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---don't-break-2">
+<h3>Exercise - don’t break 2<a class="headerlink" href="#Exercise---don't-break-2" title="Permalink to this headline"></a></h3>
 <p>✪ Look at the following code, and write in the following cell some code which produces the same result with a <code class="docutils literal notranslate"><span class="pre">while</span></code> and <strong>without using</strong> <code class="docutils literal notranslate"><span class="pre">break</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
 <span class="n">k</span> <span class="o">=</span> <span class="mi">7</span>   <span class="c1"># 2 3 7</span>
 <span class="c1">#k = 5  # 2 3 7 5 6</span>
 <span class="c1">#k = 13 # 2 3 7 5 6</span>
@@ -3771,9 +3699,7 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
 <span class="n">k</span> <span class="o">=</span> <span class="mi">7</span>   <span class="c1"># 2 3 7</span>
 <span class="c1">#k = 6  # 2 3 7 5 6</span>
 <span class="c1">#k = 13 # 2 3 7 5 6</span>
@@ -3804,9 +3730,7 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
 <span class="n">k</span> <span class="o">=</span> <span class="mi">7</span>   <span class="c1"># 2 3 7</span>
 <span class="c1">#k = 6  # 2 3 7 5 6</span>
 <span class="c1">#k = 13 # 2 3 7 5 6</span>
@@ -3814,22 +3738,18 @@ B:
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Give-me-a-break">
-<h3>Exercise - Give me a break<a class="headerlink" href="#Exercise---Give-me-a-break" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Give-me-a-break">
+<h3>Exercise - Give me a break<a class="headerlink" href="#Exercise---Give-me-a-break" title="Permalink to this headline"></a></h3>
 <p>✪ Look at the following code, and write in the next cell some code which produces the same result with a <code class="docutils literal notranslate"><span class="pre">while</span></code> <strong>this time using a</strong> <code class="docutils literal notranslate"><span class="pre">break</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># (1,5)  (2,4)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># (1,5)  (2,4)</span>
 <span class="c1">#x,y = 2,8   # (2, 8) (3, 7) (4, 6)</span>
 
 <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
@@ -3854,9 +3774,7 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># (1,5)  (2,4)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># (1,5)  (2,4)</span>
 <span class="c1">#x,y = 2,8   # (2, 8) (3, 7) (4, 6)</span>
 
 <span class="c1"># write here</span>
@@ -3887,20 +3805,16 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># (1,5)  (2,4)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># (1,5)  (2,4)</span>
 <span class="c1">#x,y = 2,8   # (2, 8) (3, 7) (4, 6)</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---paperboard">
-<h3>Exercise - paperboard<a class="headerlink" href="#Exercise---paperboard" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---paperboard">
+<h3>Exercise - paperboard<a class="headerlink" href="#Exercise---paperboard" title="Permalink to this headline"></a></h3>
 <p>✪ Prints integer numbers from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">k</span></code> INCLUDED using a <code class="docutils literal notranslate"><span class="pre">while</span></code>, and for each number prints to its side one among the strings <code class="docutils literal notranslate"><span class="pre">'PA'</span></code>, <code class="docutils literal notranslate"><span class="pre">'PER'</span></code> and <code class="docutils literal notranslate"><span class="pre">'BOARD'</span></code> alternating them</p>
 <p>Ex - for <code class="docutils literal notranslate"><span class="pre">k=8</span></code> prints</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0 PA
@@ -3920,9 +3834,7 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">8</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">8</span>
 
 <span class="c1"># write here</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
@@ -3957,19 +3869,15 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">8</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">8</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---until-ten">
-<h3>Exercise - until ten<a class="headerlink" href="#Exercise---until-ten" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---until-ten">
+<h3>Exercise - until ten<a class="headerlink" href="#Exercise---until-ten" title="Permalink to this headline"></a></h3>
 <p>✪ Given two numbers <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>, write some code with a <code class="docutils literal notranslate"><span class="pre">while</span></code> which prints and increments the numbers, stopping as soon as one of them reaches ten.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">7</span>
 </pre></div>
@@ -3987,9 +3895,7 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">7</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">7</span>
 <span class="c1">#x,y = 8,4</span>
 
 <span class="c1"># write here</span>
@@ -4015,20 +3921,16 @@ B:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">7</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="mi">7</span>
 <span class="c1">#x,y = 8,4</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---cccc">
-<h3>Exercise - cccc<a class="headerlink" href="#Exercise---cccc" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---cccc">
+<h3>Exercise - cccc<a class="headerlink" href="#Exercise---cccc" title="Permalink to this headline"></a></h3>
 <p>✪ Write some code using a <code class="docutils literal notranslate"><span class="pre">while</span></code> which given a number <code class="docutils literal notranslate"><span class="pre">y</span></code>, prints <code class="docutils literal notranslate"><span class="pre">y</span></code> rows containing the character <code class="docutils literal notranslate"><span class="pre">c</span></code> as many times as the row number.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">4</span>
@@ -4047,9 +3949,7 @@ cccc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">4</span>
 
 <span class="c1"># write here</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
@@ -4075,19 +3975,15 @@ cccc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">4</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">4</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---converge">
-<h3>Exercise - converge<a class="headerlink" href="#Exercise---converge" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---converge">
+<h3>Exercise - converge<a class="headerlink" href="#Exercise---converge" title="Permalink to this headline"></a></h3>
 <p>✪ Given two numbers <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">k</span></code>, using a <code class="docutils literal notranslate"><span class="pre">while</span></code> modify and print <code class="docutils literal notranslate"><span class="pre">x</span></code> until it reaches <code class="docutils literal notranslate"><span class="pre">k</span></code> included</p>
 <ul class="simple">
 <li><p><strong>NOTE</strong>: <code class="docutils literal notranslate"><span class="pre">k</span></code> can either be greater or lesser than <code class="docutils literal notranslate"><span class="pre">x</span></code>, you must handle both cases</p></li>
@@ -4120,9 +4016,7 @@ cccc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">k</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># 3 4 5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">x</span><span class="p">,</span><span class="n">k</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># 3 4 5</span>
 <span class="c1">#x,k = 6,2   # 6 5 4 3 2</span>
 <span class="c1">#x,k = 4,4   # 4</span>
 
@@ -4152,22 +4046,18 @@ cccc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">x</span><span class="p">,</span><span class="n">k</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># 3 4 5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">x</span><span class="p">,</span><span class="n">k</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span><span class="mi">5</span>    <span class="c1"># 3 4 5</span>
 <span class="c1">#x,k = 6,2   # 6 5 4 3 2</span>
 <span class="c1">#x,k = 4,4   # 4</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Searching-a-sequence">
-<h2>Searching a sequence<a class="headerlink" href="#Searching-a-sequence" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Searching-a-sequence">
+<h2>Searching a sequence<a class="headerlink" href="#Searching-a-sequence" title="Permalink to this headline"></a></h2>
 <p>We are at the airport, and we’ve been told to reach the gate of our trusted airline company <em>Turbulenz</em>. We don’t remember exactly the gate, but we know we have to stop at the first <em>Turbulenz</em> sign we find. If by mistake we went further, we might encounter other gates for international flights, and who knows where we would end up.</p>
 <p>If we have to perform searches in potentially long sequences, and we don’t always need a complete visit, using a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop is more convenient and efficient than a <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
 <p>We could represent the example above as a list:</p>
@@ -4175,8 +4065,7 @@ cccc
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>          <span class="c1">#    0         1            2            3           4           5         6           7</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>          <span class="c1">#    0         1            2            3           4           5         6           7</span>
 <span class="n">airport</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Flyall&#39;</span><span class="p">,</span><span class="s1">&#39;PiercedWings&#39;</span><span class="p">,</span><span class="s1">&#39;PigeonJet&#39;</span><span class="p">,</span><span class="s1">&#39;Turbolenz&#39;</span><span class="p">,</span> <span class="s1">&#39;BoingBoing&#39;</span><span class="p">,</span><span class="s1">&#39;Jettons&#39;</span><span class="p">,</span><span class="s1">&#39;Turbulenz&#39;</span><span class="p">,</span><span class="s1">&#39;BoingBoing&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -4187,8 +4076,8 @@ cccc
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: if the list does <em>not</em> contain what we’re looking for, calling <code class="docutils literal notranslate"><span class="pre">index</span></code> will raise an exception thus stopping the program.</p>
-</div><div class="section" id="What-we-need">
-<h3>What we need<a class="headerlink" href="#What-we-need" title="Permalink to this headline">¶</a></h3>
+</div><section id="What-we-need">
+<h3>What we need<a class="headerlink" href="#What-we-need" title="Permalink to this headline"></a></h3>
 <p>To build our search, we will need:</p>
 <ol class="arabic simple">
 <li><p>control variable</p></li>
@@ -4197,18 +4086,18 @@ cccc
 </ol>
 <p>The control variable in this case could be an index <code class="docutils literal notranslate"><span class="pre">i</span></code>, the stop condition could evaluate whether we reached the end of the airport, and inside the cycle we will update the index to keep searching. But where should we evaluate whether or not we have found the gate? Furthermore, since we are expert programmers we believe in misfortune, and know horror scenarios could happen indeed, like Turbulenz company going bankrupt the very same day of our arrival! Thus, we also need to foresee the case
 our search may give no result, and decide what should happen in such situation.</p>
-</div>
-<div class="section" id="How-to-check">
-<h3>How to check<a class="headerlink" href="#How-to-check" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="How-to-check">
+<h3>How to check<a class="headerlink" href="#How-to-check" title="Permalink to this headline"></a></h3>
 <p>There are two ways to check a discovery:</p>
 <ol class="loweralpha simple">
 <li><p>most direct way is to place an exit check inside the body of <code class="docutils literal notranslate"><span class="pre">while</span></code> itself: we could put an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement which controls when the element is found, and in such case performs the execution of a <code class="docutils literal notranslate"><span class="pre">break</span></code> command. It’s by no means elegant, yet it could be a first approach.</p></li>
 <li><p>a better option would be performing the check in the boolean condition of the <code class="docutils literal notranslate"><span class="pre">while</span></code>, but devising a program which works in all cases could be slightly trickier.</p></li>
 </ol>
 <p>Let’s try them both in the following exercises.</p>
-</div>
-<div class="section" id="Exercise---Turbolenz-with-a-break">
-<h3>Exercise - Turbolenz with a break<a class="headerlink" href="#Exercise---Turbolenz-with-a-break" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Turbolenz-with-a-break">
+<h3>Exercise - Turbolenz with a break<a class="headerlink" href="#Exercise---Turbolenz-with-a-break" title="Permalink to this headline"></a></h3>
 <p>✪✪ Write some code which uses a <code class="docutils literal notranslate"><span class="pre">while</span></code> to search the list <code class="docutils literal notranslate"><span class="pre">airport</span></code> for the FIRST occurrence of <code class="docutils literal notranslate"><span class="pre">company</span></code>: as soon as it is found, stops searching and PRINTS the index where it was found.</p>
 <ul class="simple">
 <li><p>If the company is not found, PRINTS ‘Not found’</p></li>
@@ -4239,11 +4128,7 @@ our search may give no result, and decide what should happen in such situation.<
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-
-<span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><br/><span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
 <span class="n">airport</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Flyall&#39;</span><span class="p">,</span><span class="s1">&#39;PiercedWings&#39;</span><span class="p">,</span><span class="s1">&#39;PigeonJet&#39;</span><span class="p">,</span><span class="s1">&#39;Turbolenz&#39;</span><span class="p">,</span> <span class="s1">&#39;BoingBoing&#39;</span><span class="p">,</span><span class="s1">&#39;Jettons&#39;</span><span class="p">,</span><span class="s1">&#39;Turbulenz&#39;</span><span class="p">,</span><span class="s1">&#39;BoingBoing&#39;</span><span class="p">]</span>
 
 <span class="c1">#company = &#39;FlapFlap&#39;</span>
@@ -4276,11 +4161,7 @@ Found the first Turbolenz at index 3
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-
-<span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><br/><span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
 <span class="n">airport</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Flyall&#39;</span><span class="p">,</span><span class="s1">&#39;PiercedWings&#39;</span><span class="p">,</span><span class="s1">&#39;PigeonJet&#39;</span><span class="p">,</span><span class="s1">&#39;Turbolenz&#39;</span><span class="p">,</span> <span class="s1">&#39;BoingBoing&#39;</span><span class="p">,</span><span class="s1">&#39;Jettons&#39;</span><span class="p">,</span><span class="s1">&#39;Turbulenz&#39;</span><span class="p">,</span><span class="s1">&#39;BoingBoing&#39;</span><span class="p">]</span>
 
 <span class="c1">#company = &#39;FlapFlap&#39;</span>
@@ -4290,14 +4171,12 @@ Found the first Turbolenz at index 3
 <span class="c1">#airport = [&#39;Turbolenz&#39;, &#39;FlapFlap&#39;]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Turbulenz-without-break">
-<h3>Exercise - Turbulenz without break<a class="headerlink" href="#Exercise---Turbulenz-without-break" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Turbulenz-without-break">
+<h3>Exercise - Turbulenz without break<a class="headerlink" href="#Exercise---Turbulenz-without-break" title="Permalink to this headline"></a></h3>
 <p>✪✪ Try now to rewrite the previous program <strong>without</strong> using <code class="docutils literal notranslate"><span class="pre">break</span></code> nor <code class="docutils literal notranslate"><span class="pre">continue</span></code>: to verify the finding, you will need to enrich the termination condition.</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
@@ -4305,10 +4184,7 @@ Found the first Turbolenz at index 3
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
 <span class="n">airport</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Flyall&#39;</span><span class="p">,</span><span class="s1">&#39;PiercedWings&#39;</span><span class="p">,</span><span class="s1">&#39;PigeonJet&#39;</span><span class="p">,</span><span class="s1">&#39;Turbolenz&#39;</span><span class="p">,</span> <span class="s1">&#39;BoingBoing&#39;</span><span class="p">,</span><span class="s1">&#39;Jettons&#39;</span><span class="p">,</span><span class="s1">&#39;Turbulenz&#39;</span><span class="p">,</span><span class="s1">&#39;BoingBoing&#39;</span><span class="p">]</span>
 
 <span class="c1">#company = &#39;FlapFlap&#39;</span>
@@ -4342,10 +4218,7 @@ Found the first Turbolenz at index 2
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="n">company</span> <span class="o">=</span> <span class="s1">&#39;Turbolenz&#39;</span>
 <span class="n">airport</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Flyall&#39;</span><span class="p">,</span><span class="s1">&#39;PiercedWings&#39;</span><span class="p">,</span><span class="s1">&#39;PigeonJet&#39;</span><span class="p">,</span><span class="s1">&#39;Turbolenz&#39;</span><span class="p">,</span> <span class="s1">&#39;BoingBoing&#39;</span><span class="p">,</span><span class="s1">&#39;Jettons&#39;</span><span class="p">,</span><span class="s1">&#39;Turbulenz&#39;</span><span class="p">,</span><span class="s1">&#39;BoingBoing&#39;</span><span class="p">]</span>
 
 <span class="c1">#company = &#39;FlapFlap&#39;</span>
@@ -4355,9 +4228,7 @@ Found the first Turbolenz at index 2
 <span class="c1">#airport = [&#39;Turbolenz&#39;, &#39;FlapFlap&#39;]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <p><strong>QUESTION</strong>: you probably used two conditions in the <code class="docutils literal notranslate"><span class="pre">while</span></code>. By exchanging the order of the conditions in the proposed solution, would the program work fine? If not, in which cases could it fail?</p>
@@ -4383,9 +4254,9 @@ Found the first Turbolenz at index 2
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found the first&quot;</span><span class="p">,</span> <span class="n">company</span><span class="p">,</span> <span class="s2">&quot;at index&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
-</div></div>
-<div class="section" id="Exercise---hangar">
-<h3>Exercise - hangar<a class="headerlink" href="#Exercise---hangar" title="Permalink to this headline">¶</a></h3>
+</div></section>
+<section id="Exercise---hangar">
+<h3>Exercise - hangar<a class="headerlink" href="#Exercise---hangar" title="Permalink to this headline"></a></h3>
 <p>✪✪ Our plane just landed but now it must reach the hangar, dodging all the extraneous objects on the track!</p>
 <p>Write some code which given a string <code class="docutils literal notranslate"><span class="pre">track</span></code> with a certain number of non-alphanumeric characters at the beginning, PRINTS the word which follows these characters.</p>
 <p>Example - given:</p>
@@ -4405,9 +4276,7 @@ Found the first Turbolenz at index 2
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">track</span> <span class="o">=</span> <span class="s1">&#39;★★🏳🏳♦🏳♦🏳🏳hangar★★★&#39;</span>   <span class="c1"># hangar★★★</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">track</span> <span class="o">=</span> <span class="s1">&#39;★★🏳🏳♦🏳♦🏳🏳hangar★★★&#39;</span>   <span class="c1"># hangar★★★</span>
 <span class="c1">#track = &#39;🏳🏳twinengine&#39;         # twinengine</span>
 <span class="c1">#track = &#39;-★♦--♦--747-🏳&#39;        # 747-🏳</span>
 <span class="c1">#track = &#39;glider&#39;               # glider</span>
@@ -4434,23 +4303,19 @@ hangar★★★
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">track</span> <span class="o">=</span> <span class="s1">&#39;★★🏳🏳♦🏳♦🏳🏳hangar★★★&#39;</span>   <span class="c1"># hangar★★★</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">track</span> <span class="o">=</span> <span class="s1">&#39;★★🏳🏳♦🏳♦🏳🏳hangar★★★&#39;</span>   <span class="c1"># hangar★★★</span>
 <span class="c1">#track = &#39;🏳🏳twinengine&#39;         # twinengine</span>
 <span class="c1">#track = &#39;-★♦--♦--747-🏳&#39;        # 747-🏳</span>
 <span class="c1">#track = &#39;glider&#39;               # glider</span>
 <span class="c1">#track = &#39;__♦__🏳__♦_&#39;           # prints nothing</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Wild-West">
-<h3>Exercise - Wild West<a class="headerlink" href="#Exercise---Wild-West" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Wild-West">
+<h3>Exercise - Wild West<a class="headerlink" href="#Exercise---Wild-West" title="Permalink to this headline"></a></h3>
 <p>✪✪ The two outlaws Carson and Butch agreed to bury a treasure in the jolly town of Tombstone, ma now each of them wants to take back the treasure without sharing anything with the partner.</p>
 <ul class="simple">
 <li><p>there is a <code class="docutils literal notranslate"><span class="pre">road</span></code> from <code class="docutils literal notranslate"><span class="pre">Santa</span> <span class="pre">Fe</span></code> until <code class="docutils literal notranslate"><span class="pre">Tombstone</span></code> to arrive to the treasure, which we represent as a list of strings</p></li>
@@ -4504,9 +4369,7 @@ Final duel in  Tombstone !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1">#           0          1         2              3              4              5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1">#           0          1         2              3              4              5</span>
 <span class="n">road</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Santa Fe&#39;</span><span class="p">,</span><span class="s1">&#39;Denver&#39;</span><span class="p">,</span><span class="s1">&#39;Dodge City&#39;</span><span class="p">,</span> <span class="s1">&#39;Silverton&#39;</span><span class="p">,</span> <span class="s1">&#39;Agua Caliente&#39;</span><span class="p">,</span> <span class="s1">&#39;Tombstone&#39;</span><span class="p">]</span>
 
 <span class="n">carson</span><span class="p">,</span><span class="n">butch</span>  <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span>    <span class="c1">#  Carson takes the treasure in Tombstone !</span>
@@ -4554,9 +4417,7 @@ Carson takes the treasure in  Tombstone !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="c1">#           0          1         2              3              4              5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1">#           0          1         2              3              4              5</span>
 <span class="n">road</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Santa Fe&#39;</span><span class="p">,</span><span class="s1">&#39;Denver&#39;</span><span class="p">,</span><span class="s1">&#39;Dodge City&#39;</span><span class="p">,</span> <span class="s1">&#39;Silverton&#39;</span><span class="p">,</span> <span class="s1">&#39;Agua Caliente&#39;</span><span class="p">,</span> <span class="s1">&#39;Tombstone&#39;</span><span class="p">]</span>
 
 <span class="n">carson</span><span class="p">,</span><span class="n">butch</span>  <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span>    <span class="c1">#  Carson takes the treasure in Tombstone !</span>
@@ -4564,14 +4425,12 @@ Carson takes the treasure in  Tombstone !
 <span class="c1">#carson,butch  = 3, 2   #  Final duel in Tombstone !</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---The-Balance-of-Language">
-<h3>Exercise - The Balance of Language<a class="headerlink" href="#Exercise---The-Balance-of-Language" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---The-Balance-of-Language">
+<h3>Exercise - The Balance of Language<a class="headerlink" href="#Exercise---The-Balance-of-Language" title="Permalink to this headline"></a></h3>
 <p>✪✪ In the sacred writings of Zamfir the Prophet, it is predicted that when all Earth inhabitants speak a language with all the words of same length, universal harmony will be reached among human people. This event is probably far in time and by that epoch the vocabulary of humans will be so wide and varied that checking all the words will certainly require powerful calculations: you are asked to program the underwater servers of Atlantis to perform a check in the centuries to come.</p>
 <p>Given a string of words <code class="docutils literal notranslate"><span class="pre">language</span></code>, write some code which prints <code class="docutils literal notranslate"><span class="pre">True</span></code> if all the words have the same length, <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise.</p>
 <p>To have an efficient algorithm, you must use a <code class="docutils literal notranslate"><span class="pre">while</span></code>:</p>
@@ -4585,10 +4444,7 @@ Carson takes the treasure in  Tombstone !
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="n">language</span> <span class="o">=</span>  <span class="s2">&quot;eternal harmony forever&quot;</span>  <span class="c1"># True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="n">language</span> <span class="o">=</span>  <span class="s2">&quot;eternal harmony forever&quot;</span>  <span class="c1"># True</span>
 <span class="c1">#language = &quot;war and violence&quot;      # False</span>
 <span class="c1">#language = &quot;vi rt uo si ty&quot;        # True</span>
 <span class="c1">#language = &quot;deceit bullying&quot;       # False</span>
@@ -4624,10 +4480,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-
-<span></span><span class="n">language</span> <span class="o">=</span>  <span class="s2">&quot;eternal harmony forever&quot;</span>  <span class="c1"># True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="n">language</span> <span class="o">=</span>  <span class="s2">&quot;eternal harmony forever&quot;</span>  <span class="c1"># True</span>
 <span class="c1">#language = &quot;war and violence&quot;      # False</span>
 <span class="c1">#language = &quot;vi rt uo si ty&quot;        # True</span>
 <span class="c1">#language = &quot;deceit bullying&quot;       # False</span>
@@ -4636,14 +4489,12 @@ True
 <span class="c1">#language = &quot;&quot;                      # True</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---the-tree-shaker">
-<h3>Exercise - the tree shaker<a class="headerlink" href="#Exercise---the-tree-shaker" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---the-tree-shaker">
+<h3>Exercise - the tree shaker<a class="headerlink" href="#Exercise---the-tree-shaker" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ Giustino the farmer decides to radically improve his farm productivity with high-tech devices, and asks you to develop a ‘tree shaker’ (so he calls it..) to perturbate the trees and harvest the exotic fruits he planted in his highlands (thanks to climate change…)</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">plantation</span></code> is a sequence of fruit trees, elements of the landscape (stones, gravel, etc) and signs <code class="docutils literal notranslate"><span class="pre">S</span></code>. The beginning and end of a subsequence of trees is always marked by a sign.</p>
 <p>The vehicle to design has a <code class="docutils literal notranslate"><span class="pre">cargo_bed</span></code> of <strong>capacity 7</strong> where it can store the harvest.</p>
@@ -4658,8 +4509,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">plantation</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;rocks&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;bananas&#39;</span><span class="p">,</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span><span class="s1">&#39;mangos&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;sand&#39;</span><span class="p">,</span>    <span class="s1">&#39;stones&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plantation</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;rocks&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;bananas&#39;</span><span class="p">,</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span><span class="s1">&#39;mangos&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;sand&#39;</span><span class="p">,</span>    <span class="s1">&#39;stones&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>
             <span class="s1">&#39;S&#39;</span><span class="p">,</span>    <span class="s1">&#39;avocados&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;weeds&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;kiwi&#39;</span><span class="p">,</span>  <span class="s1">&#39;mangos&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span>       <span class="s1">&#39;S&#39;</span><span class="p">,</span>     <span class="s1">&#39;S&#39;</span><span class="p">,</span>
             <span class="s1">&#39;rocks&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>       <span class="s1">&#39;lime&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;pebbles&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>     <span class="s1">&#39;oranges&#39;</span><span class="p">,</span><span class="s1">&#39;coconuts&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>     <span class="s1">&#39;gravel&#39;</span><span class="p">]</span>
 </pre></div>
@@ -4676,8 +4526,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>          <span class="c1">#  0       1          2      3          4        5        6         7         8        9</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>          <span class="c1">#  0       1          2      3          4        5        6         7         8        9</span>
 <span class="n">plantation</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;rocks&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;bananas&#39;</span><span class="p">,</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span><span class="s1">&#39;mangos&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;sand&#39;</span><span class="p">,</span>   <span class="s1">&#39;stones&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>
            <span class="c1"># 10      11         12     13        14        15       16        17        18       19</span>
             <span class="s1">&#39;S&#39;</span><span class="p">,</span>    <span class="s1">&#39;avocados&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;weeds&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;kiwi&#39;</span><span class="p">,</span>  <span class="s1">&#39;mangos&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;S&#39;</span><span class="p">,</span>     <span class="s1">&#39;S&#39;</span><span class="p">,</span>
@@ -4721,8 +4570,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>          <span class="c1">#  0       1          2      3          4        5        6         7         8        9</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>          <span class="c1">#  0       1          2      3          4        5        6         7         8        9</span>
 <span class="n">plantation</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;rocks&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;bananas&#39;</span><span class="p">,</span><span class="s1">&#39;oranges&#39;</span><span class="p">,</span><span class="s1">&#39;mangos&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;sand&#39;</span><span class="p">,</span>   <span class="s1">&#39;stones&#39;</span><span class="p">,</span><span class="s1">&#39;stones&#39;</span><span class="p">,</span>
            <span class="c1"># 10      11         12     13        14        15       16        17        18       19</span>
             <span class="s1">&#39;S&#39;</span><span class="p">,</span>    <span class="s1">&#39;avocados&#39;</span><span class="p">,</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>   <span class="s1">&#39;weeds&#39;</span><span class="p">,</span>  <span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;kiwi&#39;</span><span class="p">,</span>  <span class="s1">&#39;mangos&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span>      <span class="s1">&#39;S&#39;</span><span class="p">,</span>     <span class="s1">&#39;S&#39;</span><span class="p">,</span>
@@ -4740,9 +4588,7 @@ True
 <span class="n">cargo_bed</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4753,9 +4599,9 @@ True
 [&#39;bananas&#39;, &#39;oranges&#39;, &#39;mangos&#39;, &#39;avocados&#39;, &#39;kiwi&#39;, &#39;mangos&#39;, &#39;lime&#39;]
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---the-ghost-castle">
-<h3>Exercise - the ghost castle<a class="headerlink" href="#Exercise---the-ghost-castle" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---the-ghost-castle">
+<h3>Exercise - the ghost castle<a class="headerlink" href="#Exercise---the-ghost-castle" title="Permalink to this headline"></a></h3>
 <p>✪✪✪ Given a <code class="docutils literal notranslate"><span class="pre">string</span></code> and two characters <code class="docutils literal notranslate"><span class="pre">char1</span></code> and <code class="docutils literal notranslate"><span class="pre">char2</span></code>, write some code which PRINTS <code class="docutils literal notranslate"><span class="pre">True</span></code> if all occurrences of <code class="docutils literal notranslate"><span class="pre">char1</span></code> in <code class="docutils literal notranslate"><span class="pre">string</span></code> are <strong>always</strong> followed by <code class="docutils literal notranslate"><span class="pre">char2</span></code></p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">string</span><span class="p">,</span><span class="n">char1</span><span class="p">,</span><span class="n">char2</span> <span class="o">=</span> <span class="s1">&#39;fantastic story of the ghost castle&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span>
@@ -4777,9 +4623,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">string</span><span class="p">,</span><span class="n">char1</span><span class="p">,</span><span class="n">char2</span> <span class="o">=</span> <span class="s1">&#39;fantastic story of the ghost castle&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span> <span class="c1"># True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">string</span><span class="p">,</span><span class="n">char1</span><span class="p">,</span><span class="n">char2</span> <span class="o">=</span> <span class="s1">&#39;fantastic story of the ghost castle&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span> <span class="c1"># True</span>
 <span class="c1">#string,char1,char2 = &quot;enthusiastic dadaist&quot;, &#39;s&#39;,&#39;t&#39;    # False</span>
 <span class="c1">#string,char1,char2 = &quot;beetroots&quot;, &#39;r&#39;,&#39;o&#39;           # True</span>
 <span class="c1">#string,char1,char2 = &quot;beetroots&quot;, &#39;e&#39;,&#39;o&#39;           # False</span>
@@ -4818,9 +4662,7 @@ True
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">string</span><span class="p">,</span><span class="n">char1</span><span class="p">,</span><span class="n">char2</span> <span class="o">=</span> <span class="s1">&#39;fantastic story of the ghost castle&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span> <span class="c1"># True</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">string</span><span class="p">,</span><span class="n">char1</span><span class="p">,</span><span class="n">char2</span> <span class="o">=</span> <span class="s1">&#39;fantastic story of the ghost castle&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span> <span class="c1"># True</span>
 <span class="c1">#string,char1,char2 = &quot;enthusiastic dadaist&quot;, &#39;s&#39;,&#39;t&#39;    # False</span>
 <span class="c1">#string,char1,char2 = &quot;beetroots&quot;, &#39;r&#39;,&#39;o&#39;           # True</span>
 <span class="c1">#string,char1,char2 = &quot;beetroots&quot;, &#39;e&#39;,&#39;o&#39;           # False</span>
@@ -4830,15 +4672,13 @@ True
 
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Modifying-sequences">
-<h2>Modifying sequences<a class="headerlink" href="#Modifying-sequences" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Modifying-sequences">
+<h2>Modifying sequences<a class="headerlink" href="#Modifying-sequences" title="Permalink to this headline"></a></h2>
 <p>In the tutorial on <code class="docutils literal notranslate"><span class="pre">for</span></code> loops we’ve seen an important warning we repeat here:</p>
 <div class="admonition note">
 <p class="admonition-title fa fa-exclamation-circle"><a class="reference external" href="https://en.softpython.org/commandments.html#X-COMMANDMENT">X COMMANDMENT</a>: <strong>You shall never ever add or remove elements from a sequence you are iterating with a</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> <strong>!</strong></p>
@@ -4846,16 +4686,15 @@ True
 <p><strong>If you really need to remove elements from a sequence you are iterating</strong>, use a while cycle or duplicate first a copy of the original sequence.</p>
 </div>
 <p><strong>Note the advice is only about</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> <strong>cycles</strong>. In case of necessity, at the end suggests to adopt <code class="docutils literal notranslate"><span class="pre">while</span></code> loops. Let’s see when and how ot use them.</p>
-<div class="section" id="Stack---Drawing-from-a-card-deck">
-<h3>Stack - Drawing from a card deck<a class="headerlink" href="#Stack---Drawing-from-a-card-deck" title="Permalink to this headline">¶</a></h3>
+<section id="Stack---Drawing-from-a-card-deck">
+<h3>Stack - Drawing from a card deck<a class="headerlink" href="#Stack---Drawing-from-a-card-deck" title="Permalink to this headline"></a></h3>
 <p>Suppose having a deck of cards which we represent as a list of strings, and we want to draw all the cards, reading them one by one.</p>
 <p>We can write a <code class="docutils literal notranslate"><span class="pre">while</span></code> that as long as the deck contains cards, keeps removing cards from the top with the <a class="reference external" href="https://en.softpython.org/lists/lists3-sol.html#pop-method">pop method</a> and prints their name. Remember <code class="docutils literal notranslate"><span class="pre">pop</span></code> MODIFIES the list by removing the last element AND gives back the element as call result, which we can save in a variable we will call <code class="docutils literal notranslate"><span class="pre">card</span></code>:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">deck</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;3 hearts&#39;</span><span class="p">,</span>   <span class="c1"># &lt;---- bottom</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deck</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;3 hearts&#39;</span><span class="p">,</span>   <span class="c1"># &lt;---- bottom</span>
         <span class="s1">&#39;2 spades&#39;</span><span class="p">,</span>
         <span class="s1">&#39;9 hearts&#39;</span><span class="p">,</span>
         <span class="s1">&#39;5 diamonds&#39;</span><span class="p">,</span>
@@ -4943,9 +4782,9 @@ No more cards!
 <li><p>it returns to step 2</p></li>
 </ol>
 <p>The first three points are the conditions which guarantee the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop will sooner or later actually terminate.</p>
-</div>
-<div class="section" id="Stack---Drawing-until-condition">
-<h3>Stack - Drawing until condition<a class="headerlink" href="#Stack---Drawing-until-condition" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Stack---Drawing-until-condition">
+<h3>Stack - Drawing until condition<a class="headerlink" href="#Stack---Drawing-until-condition" title="Permalink to this headline"></a></h3>
 <p>Suppose now to continue drawing cards until we find a heart suit. The situation is more complicated, because now the cycle can terminate in two ways:</p>
 <ol class="arabic simple">
 <li><p>we find hearts, and interrupt the search</p></li>
@@ -4960,8 +4799,7 @@ No more cards!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">deck</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;3 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;2 spades&#39;</span><span class="p">,</span><span class="s1">&#39;9 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;5 diamonds&#39;</span><span class="p">,</span><span class="s1">&#39;8 clubs&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">deck</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;3 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;2 spades&#39;</span><span class="p">,</span><span class="s1">&#39;9 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;5 diamonds&#39;</span><span class="p">,</span><span class="s1">&#39;8 clubs&#39;</span><span class="p">]</span>
 <span class="c1">#deck = [&#39;8 spades&#39;,&#39;2 spades&#39;,&#39;5 diamonds&#39;,&#39;4 clubs&#39;]   # no hearts!</span>
 
 <span class="n">card</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
@@ -5042,9 +4880,9 @@ Found hearts!
 })()
 </script></div>
 </div>
-</div>
-<div class="section" id="Exercise---Don't-break-my-heart">
-<h3>Exercise - Don’t break my heart<a class="headerlink" href="#Exercise---Don't-break-my-heart" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Don't-break-my-heart">
+<h3>Exercise - Don’t break my heart<a class="headerlink" href="#Exercise---Don't-break-my-heart" title="Permalink to this headline"></a></h3>
 <p>✪ Write some code which solves the same previous problem:</p>
 <ul class="simple">
 <li><p>this time <strong>DO NOT</strong> use <code class="docutils literal notranslate"><span class="pre">break</span></code></p></li>
@@ -5057,9 +4895,7 @@ Found hearts!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">deck</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;3 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;2 spades&#39;</span><span class="p">,</span><span class="s1">&#39;9 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;5 diamonds&#39;</span><span class="p">,</span><span class="s1">&#39;8 clubs&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">deck</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;3 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;2 spades&#39;</span><span class="p">,</span><span class="s1">&#39;9 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;5 diamonds&#39;</span><span class="p">,</span><span class="s1">&#39;8 clubs&#39;</span><span class="p">]</span>
 <span class="c1">#deck = [&#39;8 spades&#39;,&#39;2 spades&#39;,&#39;5 diamonds&#39;,&#39;4 clubs&#39;]   # no hearts!</span>
 <span class="c1">#deck = []  #  no hearts !</span>
 
@@ -5075,8 +4911,7 @@ Found hearts!
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found hearts!&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Didn&#39;t find hearts!&quot;</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -5094,23 +4929,19 @@ Found hearts!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">deck</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;3 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;2 spades&#39;</span><span class="p">,</span><span class="s1">&#39;9 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;5 diamonds&#39;</span><span class="p">,</span><span class="s1">&#39;8 clubs&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">deck</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;3 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;2 spades&#39;</span><span class="p">,</span><span class="s1">&#39;9 hearts&#39;</span><span class="p">,</span><span class="s1">&#39;5 diamonds&#39;</span><span class="p">,</span><span class="s1">&#39;8 clubs&#39;</span><span class="p">]</span>
 <span class="c1">#deck = [&#39;8 spades&#39;,&#39;2 spades&#39;,&#39;5 diamonds&#39;,&#39;4 clubs&#39;]   # no hearts!</span>
 <span class="c1">#deck = []  #  no hearts !</span>
 
 <span class="n">card</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Questions---what-happens?">
-<h3>Questions - what happens?<a class="headerlink" href="#Questions---what-happens?" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Questions---what-happens?">
+<h3>Questions - what happens?<a class="headerlink" href="#Questions---what-happens?" title="Permalink to this headline"></a></h3>
 <p><strong>QUESTION</strong>: Look at the following code fragments , and for each try guessing the result it produces (or if it gives an error):</p>
 <ol class="arabic">
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="p">[]:</span>
@@ -5151,17 +4982,17 @@ Found hearts!
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Questions---are-they-equivalent?">
-<h3>Questions - are they equivalent?<a class="headerlink" href="#Questions---are-they-equivalent?" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Questions---are-they-equivalent?">
+<h3>Questions - are they equivalent?<a class="headerlink" href="#Questions---are-they-equivalent?" title="Permalink to this headline"></a></h3>
 <p>Look at the following code fragments: each contains two parts, A and B. For each value of the variables they depend on, try guessing whether part A will print exactly the same result printed by code in part B</p>
 <ul class="simple">
 <li><p><strong>FIRST</strong> think about the answer</p></li>
 <li><p><strong>THEN</strong> try executing with each of the values of suggested variables</p></li>
 </ul>
-</div>
-<div class="section" id="Are-they-equivalent?---train">
-<h3>Are they equivalent? - train<a class="headerlink" href="#Are-they-equivalent?---train" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---train">
+<h3>Are they equivalent? - train<a class="headerlink" href="#Are-they-equivalent?---train" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">]</span>
 <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">la</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -5174,9 +5005,9 @@ Found hearts!
     <span class="nb">print</span><span class="p">(</span><span class="n">la</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---append-nx">
-<h3>Are they equivalent? - append nx<a class="headerlink" href="#Are-they-equivalent?---append-nx" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---append-nx">
+<h3>Are they equivalent? - append nx<a class="headerlink" href="#Are-they-equivalent?---append-nx" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;A:&#39;</span><span class="p">)</span>
 <span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">la</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,[]</span>
 <span class="k">while</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">la</span><span class="p">:</span>
@@ -5192,12 +5023,12 @@ Found hearts!
 <span class="nb">print</span><span class="p">(</span><span class="n">la</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="Exercises---stack">
-<h2>Exercises - stack<a class="headerlink" href="#Exercises---stack" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Exercise---break-sum">
-<h3>Exercise - break sum<a class="headerlink" href="#Exercise---break-sum" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="Exercises---stack">
+<h2>Exercises - stack<a class="headerlink" href="#Exercises---stack" title="Permalink to this headline"></a></h2>
+<section id="Exercise---break-sum">
+<h3>Exercise - break sum<a class="headerlink" href="#Exercise---break-sum" title="Permalink to this headline"></a></h3>
 <p>✪ Look at the following code, and rewrite it in the following cell as <code class="docutils literal notranslate"><span class="pre">while</span></code></p>
 <ul class="simple">
 <li><p>this time <strong>use command</strong> <code class="docutils literal notranslate"><span class="pre">break</span></code></p></li>
@@ -5206,8 +5037,7 @@ Found hearts!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">k</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">while</span> <span class="nb">sum</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">k</span><span class="p">:</span>
@@ -5235,9 +5065,7 @@ Found hearts!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1"># write here</span>
@@ -5268,20 +5096,16 @@ Found hearts!
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---travelbook">
-<h3>Exercise - travelbook<a class="headerlink" href="#Exercise---travelbook" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---travelbook">
+<h3>Exercise - travelbook<a class="headerlink" href="#Exercise---travelbook" title="Permalink to this headline"></a></h3>
 <p>✪✪ Suppose you visited the attic and found a stack of books, which we represent as a list of strings. Each string is prefixed by a label of one character indicating the category (<code class="docutils literal notranslate"><span class="pre">D</span></code> for Detective story, <code class="docutils literal notranslate"><span class="pre">T</span></code> for Travel, <code class="docutils literal notranslate"><span class="pre">H</span></code> for History)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;H-Middle Ages&#39;</span><span class="p">,</span>   <span class="c1"># &lt;---- bottom</span>
          <span class="s1">&#39;T-Australia&#39;</span><span class="p">,</span>
@@ -5325,9 +5149,7 @@ Discarded H-Middle Ages
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;H-Middle Ages&#39;</span><span class="p">,</span>   <span class="c1"># &lt;---- bottom</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;H-Middle Ages&#39;</span><span class="p">,</span>   <span class="c1"># &lt;---- bottom</span>
          <span class="s1">&#39;T-Australia&#39;</span><span class="p">,</span>
          <span class="s1">&#39;T-Scotland&#39;</span><span class="p">,</span>
          <span class="s1">&#39;D-Suspects&#39;</span><span class="p">,</span>
@@ -5382,9 +5204,7 @@ Discarded H-Middle Ages
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;H-Middle Ages&#39;</span><span class="p">,</span>   <span class="c1"># &lt;---- bottom</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;H-Middle Ages&#39;</span><span class="p">,</span>   <span class="c1"># &lt;---- bottom</span>
          <span class="s1">&#39;T-Australia&#39;</span><span class="p">,</span>
          <span class="s1">&#39;T-Scotland&#39;</span><span class="p">,</span>
          <span class="s1">&#39;D-Suspects&#39;</span><span class="p">,</span>
@@ -5394,14 +5214,12 @@ Discarded H-Middle Ages
 <span class="n">travel</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---BANG-!">
-<h3>Exercise - BANG !<a class="headerlink" href="#Exercise---BANG-!" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---BANG-!">
+<h3>Exercise - BANG !<a class="headerlink" href="#Exercise---BANG-!" title="Permalink to this headline"></a></h3>
 <p>✪✪ There are two stacks of objects <code class="docutils literal notranslate"><span class="pre">right_stack</span></code> and <code class="docutils literal notranslate"><span class="pre">left_stack</span></code> which we represent as lists of strings. As a pastime, a cowboy decides to shoot the objects at the top of the stacks, alternating the stack at each shoot. The cowboy is skilled and always hits the target, so each shot decreases a stack.</p>
 <ul class="simple">
 <li><p>Suppose the objects on top are the ones at the end of the list</p></li>
@@ -5451,9 +5269,7 @@ BANG! left:   box
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">left_stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;box&#39;</span><span class="p">,</span><span class="s1">&#39;boot&#39;</span><span class="p">,</span><span class="s1">&#39;horseshoe&#39;</span><span class="p">,</span><span class="s1">&#39;bucket&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">left_stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;box&#39;</span><span class="p">,</span><span class="s1">&#39;boot&#39;</span><span class="p">,</span><span class="s1">&#39;horseshoe&#39;</span><span class="p">,</span><span class="s1">&#39;bucket&#39;</span><span class="p">]</span>
 <span class="n">right_stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bin&#39;</span><span class="p">,</span><span class="s1">&#39;saddle&#39;</span><span class="p">,</span><span class="s1">&#39;tin can&#39;</span><span class="p">]</span>
 <span class="n">shoot</span> <span class="o">=</span> <span class="s1">&#39;R&#39;</span>
 <span class="c1">#shoot = &#39;L&#39;</span>
@@ -5521,23 +5337,19 @@ BANG! left:   box
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">left_stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;box&#39;</span><span class="p">,</span><span class="s1">&#39;boot&#39;</span><span class="p">,</span><span class="s1">&#39;horseshoe&#39;</span><span class="p">,</span><span class="s1">&#39;bucket&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">left_stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;box&#39;</span><span class="p">,</span><span class="s1">&#39;boot&#39;</span><span class="p">,</span><span class="s1">&#39;horseshoe&#39;</span><span class="p">,</span><span class="s1">&#39;bucket&#39;</span><span class="p">]</span>
 <span class="n">right_stack</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bin&#39;</span><span class="p">,</span><span class="s1">&#39;saddle&#39;</span><span class="p">,</span><span class="s1">&#39;tin can&#39;</span><span class="p">]</span>
 <span class="n">shoot</span> <span class="o">=</span> <span class="s1">&#39;R&#39;</span>
 <span class="c1">#shoot = &#39;L&#39;</span>
 <span class="c1">#left_stack = [&#39;bucket&#39;, &#39;box&#39;]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---Growing-or-degrowing?">
-<h3>Exercise - Growing or degrowing?<a class="headerlink" href="#Exercise---Growing-or-degrowing?" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---Growing-or-degrowing?">
+<h3>Exercise - Growing or degrowing?<a class="headerlink" href="#Exercise---Growing-or-degrowing?" title="Permalink to this headline"></a></h3>
 <p>✪✪ Write some code which given a list <code class="docutils literal notranslate"><span class="pre">la</span></code>, keeps MODIFYING the list according to this procedure:</p>
 <ul class="simple">
 <li><p>if the last element is odd (i.e. <code class="docutils literal notranslate"><span class="pre">7</span></code>), attaches a new number at the end of the list obtained by multiplying by two the last element (i.e. attaches <code class="docutils literal notranslate"><span class="pre">14</span></code>)</p></li>
@@ -5573,9 +5385,7 @@ Done! la is []
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
 
@@ -5591,8 +5401,7 @@ Done! la is []
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;      la becomes&#39;</span><span class="p">,</span> <span class="n">la</span><span class="p">)</span>
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Done! la is&#39;</span><span class="p">,</span> <span class="n">la</span><span class="p">)</span>
-
-</pre></div>
+<br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -5620,79 +5429,57 @@ Done! la is []
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">la</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with the <a class="reference external" href="https://en.softpython.org/while2/while2-chal.html">challenges</a></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="while2-chal.html" class="btn btn-neutral float-right" title="while loops 8 - Challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../for/for8-chal.html" class="btn btn-neutral float-left" title="for loops 8 - Challenge" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="while2-chal.html" class="btn btn-neutral float-right" title="while loops 8 - Challenges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

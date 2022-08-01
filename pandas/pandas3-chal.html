@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Pandas - 3. The Land of Poets Challenge &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/pandas/pandas3-chal.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Relational data 1 - introduction" href="../relational/relational1-intro-sol.html" />
     <link rel="prev" title="Analytics with Pandas - 2. EURES case study" href="pandas2-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2405,27 +2345,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2526,7 +2480,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2592,6 +2546,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2601,7 +2556,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2661,17 +2616,17 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="Pandas---3.-The-Land-of-Poets-Challenge">
-<h1>Pandas - 3. The Land of Poets Challenge<a class="headerlink" href="#Pandas---3.-The-Land-of-Poets-Challenge" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises">
-<h2><a class="reference external" href="../_static/generated/pandas.zip">Download exercises</a><a class="headerlink" href="#Download-exercises" title="Permalink to this headline">¶</a></h2>
+<section id="Pandas---3.-The-Land-of-Poets-Challenge">
+<h1>Pandas - 3. The Land of Poets Challenge<a class="headerlink" href="#Pandas---3.-The-Land-of-Poets-Challenge" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises">
+<h2><a class="reference external" href="../_static/generated/pandas.zip">Download exercises</a><a class="headerlink" href="#Download-exercises" title="Permalink to this headline"></a></h2>
 <p>For a digital humanities project you need to display Italian poets by filtering a csv table according to various criteria. This challenge will be only about querying with pandas, which is something you might find convenient to do during exams for quickly understanding datasets content (using pandas will always be optional, you will never be asked to perform complex modifications with it)</p>
 <p>You are given a dataset taken from <a class="reference external" href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a>, a project by the Wikimedia foundation which aims to store only machine-readable data, like numbers, strings, and so on interlinked with many references. Each entity in Wikidata has an identifier, for example Dante Alighieri is the entity <a class="reference external" href="https://www.wikidata.org/wiki/Q1067">Q1067</a> and Florence is <a class="reference external" href="https://www.wikidata.org/wiki/2044">Q2044</a></p>
 <p>Wikidata can be queried using the SPARQL language: the data was obtained with <a class="reference external" href="https://query.wikidata.org/#%23defaultView%3AMap%7B%22hide%22%3A%20%5B%22%3Fcoord%22%5D%7D%0ASELECT%20%3Fsubj%20%3FsubjLabel%20%3Fplace%20%3FplaceLabel%20%3Fcoord%20%3Fbirthyear%0AWHERE%20%7B%0A%20%20%20%3Fsubj%20wdt%3AP106%20wd%3AQ49757%20.%0A%20%20%20%3Fsubj%20wdt%3AP19%20%3Fplace%20.%0A%20%20%20%3Fplace%20wdt%3AP17%20wd%3AQ38%20.%0A%20%20%20%3Fplace%20wdt%3AP625%20%3Fcoord%20.%0A%20%20%20OPTIONAL%20%7B%20%3Fsubj%20wdt%3AP569%20%3Fdob%20%7D%0A%20%20%20BIND%28YEAR%28%3Fdob%29%20as%20%3Fbirthyear%29%0ASERVICE%20wikibase%3Alabel%20%7B%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22%20%7D%0A%7D">this
 query</a>
 and downloaded in CSV format (among the many which can be chosen). Even if not necessary for the purposes of the exercise, you are invited to play a bit with the interface, like trying different visualizations (i.e. try select map in the middle-left corner) - or see <a class="reference external" href="https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples">other examples</a></p>
-<div class="section" id="What-to-do">
-<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline">¶</a></h3>
+<section id="What-to-do">
+<h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h3>
 <ol class="arabic">
 <li><p>If you haven’t already, install Pandas:</p>
 <p>Anaconda:</p>
@@ -2710,10 +2665,10 @@ and downloaded in CSV format (among the many which can be chosen). Even if not n
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="Load-the-dataset">
-<h2>Load the dataset<a class="headerlink" href="#Load-the-dataset" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Load-the-dataset">
+<h2>Load the dataset<a class="headerlink" href="#Load-the-dataset" title="Permalink to this headline"></a></h2>
 <p>First load the dataset <a class="reference external" href="italian-poets.csv">italian-poets.csv</a> in pandas dataframe <code class="docutils literal notranslate"><span class="pre">df</span></code></p>
 <ul class="simple">
 <li><p><strong>USE</strong> <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> as <code class="docutils literal notranslate"><span class="pre">encoding</span></code></p></li>
@@ -2722,26 +2677,20 @@ and downloaded in CSV format (among the many which can be chosen). Even if not n
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Tell-me-more">
-<h2>Tell me more<a class="headerlink" href="#Tell-me-more" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Tell-me-more">
+<h2>Tell me more<a class="headerlink" href="#Tell-me-more" title="Permalink to this headline"></a></h2>
 <p>Show some info about the dataset</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2764,19 +2713,16 @@ dtypes: float64(1), object(5)
 memory usage: 150.0+ KB
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Getting-in-shape">
-<h2>Getting in shape<a class="headerlink" href="#Getting-in-shape" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Getting-in-shape">
+<h2>Getting in shape<a class="headerlink" href="#Getting-in-shape" title="Permalink to this headline"></a></h2>
 <p>Show the rows and the columns counts:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2788,19 +2734,16 @@ rows: 3198
 columns: 6
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="10-rows">
-<h2>10 rows<a class="headerlink" href="#10-rows" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="10-rows">
+<h2>10 rows<a class="headerlink" href="#10-rows" title="Permalink to this headline"></a></h2>
 <p>Display first 10 rows</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -2929,19 +2872,16 @@ columns: 6
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="Born-in-Verona">
-<h2>Born in Verona<a class="headerlink" href="#Born-in-Verona" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Born-in-Verona">
+<h2>Born in Verona<a class="headerlink" href="#Born-in-Verona" title="Permalink to this headline"></a></h2>
 <p>Display all people born in Verona</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3313,19 +3253,16 @@ columns: 6
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="How-many-people-in-Verona">
-<h2>How many people in Verona<a class="headerlink" href="#How-many-people-in-Verona" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="How-many-people-in-Verona">
+<h2>How many people in Verona<a class="headerlink" href="#How-many-people-in-Verona" title="Permalink to this headline"></a></h2>
 <p>Display how many people were born in Verona</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3337,9 +3274,9 @@ columns: 6
 37
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Python-is-everywhere">
-<h2>Python is everywhere<a class="headerlink" href="#Python-is-everywhere" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Python-is-everywhere">
+<h2>Python is everywhere<a class="headerlink" href="#Python-is-everywhere" title="Permalink to this headline"></a></h2>
 <p>Show poets born in Catania in the year -500</p>
 <ul class="simple">
 <li><p>mind the minus</p></li>
@@ -3349,11 +3286,8 @@ columns: 6
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3401,19 +3335,16 @@ columns: 6
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="Verona-after-1500">
-<h2>Verona after 1500<a class="headerlink" href="#Verona-after-1500" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Verona-after-1500">
+<h2>Verona after 1500<a class="headerlink" href="#Verona-after-1500" title="Permalink to this headline"></a></h2>
 <p>Display all people born in Verona after the year 1500</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3713,19 +3644,16 @@ columns: 6
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="First-Antonio">
-<h2>First Antonio<a class="headerlink" href="#First-Antonio" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="First-Antonio">
+<h2>First Antonio<a class="headerlink" href="#First-Antonio" title="Permalink to this headline"></a></h2>
 <p>Display all people with Antonio as first name</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3864,19 +3792,16 @@ columns: 6
 <p>85 rows × 6 columns</p>
 </div></div>
 </div>
-</div>
-<div class="section" id="Some-Antonio">
-<h2>Some Antonio<a class="headerlink" href="#Some-Antonio" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Some-Antonio">
+<h2>Some Antonio<a class="headerlink" href="#Some-Antonio" title="Permalink to this headline"></a></h2>
 <p>Display all people with Antonio as one of the names (so also include <code class="docutils literal notranslate"><span class="pre">'Paolo</span> <span class="pre">Antonio</span> <span class="pre">Rolli'</span></code>)</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4015,19 +3940,16 @@ columns: 6
 <p>110 rows × 6 columns</p>
 </div></div>
 </div>
-</div>
-<div class="section" id="Cesares-during-1800">
-<h2>Cesares during 1800<a class="headerlink" href="#Cesares-during-1800" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Cesares-during-1800">
+<h2>Cesares during 1800<a class="headerlink" href="#Cesares-during-1800" title="Permalink to this headline"></a></h2>
 <p>Display all people named Cesare who were born in 1800 century</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4102,9 +4024,9 @@ columns: 6
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="The-old-ones">
-<h2>The old ones<a class="headerlink" href="#The-old-ones" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="The-old-ones">
+<h2>The old ones<a class="headerlink" href="#The-old-ones" title="Permalink to this headline"></a></h2>
 <p>Show poets in year of birth order</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> include in the result NaN values</p></li>
@@ -4114,11 +4036,8 @@ columns: 6
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4257,9 +4176,9 @@ columns: 6
 <p>3070 rows × 6 columns</p>
 </div></div>
 </div>
-</div>
-<div class="section" id="Cities-of-poets">
-<h2>Cities of poets<a class="headerlink" href="#Cities-of-poets" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Cities-of-poets">
+<h2>Cities of poets<a class="headerlink" href="#Cities-of-poets" title="Permalink to this headline"></a></h2>
 <p>Find the 5 cities with most poets, sorted from most to least.</p>
 <ul class="simple">
 <li><p>use <code class="docutils literal notranslate"><span class="pre">groupby</span></code> and <code class="docutils literal notranslate"><span class="pre">sort_values</span></code> methods</p></li>
@@ -4268,11 +4187,8 @@ columns: 6
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4290,19 +4206,16 @@ Venice       94
 Name: subj, dtype: int64
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Most-duplicated-poets">
-<h2>Most duplicated poets<a class="headerlink" href="#Most-duplicated-poets" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Most-duplicated-poets">
+<h2>Most duplicated poets<a class="headerlink" href="#Most-duplicated-poets" title="Permalink to this headline"></a></h2>
 <p>Find first 8 duplicated poets</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4323,20 +4236,17 @@ Aulus Gellius            3
 Name: subj, dtype: int64
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="All-duplicated-poets">
-<h2>All duplicated poets<a class="headerlink" href="#All-duplicated-poets" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="All-duplicated-poets">
+<h2>All duplicated poets<a class="headerlink" href="#All-duplicated-poets" title="Permalink to this headline"></a></h2>
 <p>Print the number of all duplicated poets</p>
 <p><strong>NOTE</strong>: a Series object has <strong>only one</strong> column, even if they look two (the apparent other is the index) - so if you have a Series object you don’t need to specify a column</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4347,9 +4257,9 @@ Name: subj, dtype: int64
 There are 118 duplicated poets
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Northern-poets">
-<h2>Northern poets<a class="headerlink" href="#Northern-poets" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Northern-poets">
+<h2>Northern poets<a class="headerlink" href="#Northern-poets" title="Permalink to this headline"></a></h2>
 <p>Find all the poets born north of a given <code class="docutils literal notranslate"><span class="pre">town</span></code>. In other words, look for town latitude (the second coordinate in <code class="docutils literal notranslate"><span class="pre">coords</span></code>), print it, and then filter the table.</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> put constants like <code class="docutils literal notranslate"><span class="pre">46.5</span></code> in your code!</p></li>
@@ -4361,8 +4271,7 @@ There are 118 duplicated poets
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -4370,14 +4279,11 @@ There are 118 duplicated poets
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">town</span> <span class="o">=</span> <span class="s1">&#39;Bolzano&#39;</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">town</span> <span class="o">=</span> <span class="s1">&#39;Bolzano&#39;</span>
 <span class="c1">#town = &#39;Trento&#39;</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4550,19 +4456,16 @@ Latitude of Bolzano : 46.5
 </table>
 </div></div>
 </div>
-</div>
-<div class="section" id="Papers-please">
-<h2>Papers please<a class="headerlink" href="#Papers-please" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Papers-please">
+<h2>Papers please<a class="headerlink" href="#Papers-please" title="Permalink to this headline"></a></h2>
 <p>Extract subject id (i.e. <code class="docutils literal notranslate"><span class="pre">Q8797</span></code>) and place id (i.e. <code class="docutils literal notranslate"><span class="pre">Q2028</span></code>) and MODIFY <code class="docutils literal notranslate"><span class="pre">df</span></code> by putting them into two new columns <code class="docutils literal notranslate"><span class="pre">subj_id</span></code> and <code class="docutils literal notranslate"><span class="pre">place_id</span></code></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4725,9 +4628,9 @@ Latitude of Bolzano : 46.5
 <p>3198 rows × 8 columns</p>
 </div></div>
 </div>
-</div>
-<div class="section" id="Unknown-poets">
-<h2>Unknown poets<a class="headerlink" href="#Unknown-poets" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Unknown-poets">
+<h2>Unknown poets<a class="headerlink" href="#Unknown-poets" title="Permalink to this headline"></a></h2>
 <p>Find all the ids of nameless poets and put them in <strong>a python list</strong>.</p>
 <ul class="simple">
 <li><p><strong>DO NOT</strong> use loops</p></li>
@@ -4737,11 +4640,8 @@ Latitude of Bolzano : 46.5
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -4818,9 +4718,9 @@ Latitude of Bolzano : 46.5
  &#39;Q99196947&#39;]
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Better-unknown-poets">
-<h2>Better unknown poets<a class="headerlink" href="#Better-unknown-poets" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Better-unknown-poets">
+<h2>Better unknown poets<a class="headerlink" href="#Better-unknown-poets" title="Permalink to this headline"></a></h2>
 <p>Find all the ids, the birthplace and birthdate of nameless poets born after year 0, and put them in <strong>a python list of tuples</strong>.</p>
 <ul class="simple">
 <li><p>birthplaces must be integers - if not specified, put <code class="docutils literal notranslate"><span class="pre">-1</span></code></p></li>
@@ -4831,11 +4731,8 @@ Latitude of Bolzano : 46.5
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1"># write here</span>
-
-
-</pre></div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput docutils container">
@@ -4920,55 +4817,38 @@ Found 66 results
  (&#39;Q99196947&#39;, &#39;Tivoli&#39;, 1973)]
 </pre></div></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../relational/relational1-intro-sol.html" class="btn btn-neutral float-right" title="Relational data 1 - introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="pandas2-sol.html" class="btn btn-neutral float-left" title="Analytics with Pandas - 2. EURES case study" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../relational/relational1-intro-sol.html" class="btn btn-neutral float-right" title="Relational data 1 - introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

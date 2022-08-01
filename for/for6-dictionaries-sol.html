@@ -1,85 +1,47 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>For loops 2 - iterating dictionaries &mdash; SoftPython</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/jupman-web.3.4.4.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/softpython-theme.3.4.5.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/for/for6-dictionaries-sol.html" />
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script type="text/javascript" src="../_static/language_data.js"></script>
-        <script type="text/javascript" src="../_static/js/jupman.js"></script>
-        <script type="text/javascript" src="../_static/js/pytutor-embed.bundle.min.js"></script>
-        <script type="text/javascript" src="../_static/js/softpython.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/require.min.js"></script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
+        <script src="../_static/js/jupman.js"></script>
+        <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
+        <script src="../_static/js/softpython.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="For loops 7 - nested loops" href="for7-nested-sol.html" />
     <link rel="prev" title="For loops 5 - set iteration" href="for5-sets-sol.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../toc-page.html" class="icon icon-home"> SoftPython
-          
-
-          
           </a>
-
-          
-            
-            
               <div class="version">
                 dev
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -87,18 +49,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../index.html#News">News</a></li>
@@ -2349,28 +2300,17 @@
 <li class="toctree-l1"><a class="reference external" href="toc.html#http://">Index</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../toc-page.html">SoftPython</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -2403,27 +2343,41 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS for nbsphinx extension */
 
 /* remove conflicting styling from Sphinx themes */
-div.nbinput.container,
-div.nbinput.container div.prompt,
-div.nbinput.container div.input_area,
-div.nbinput.container div[class*=highlight],
-div.nbinput.container div[class*=highlight] pre,
-div.nboutput.container,
-div.nboutput.container div.prompt,
-div.nboutput.container div.output_area,
-div.nboutput.container div[class*=highlight],
-div.nboutput.container div[class*=highlight] pre {
-    background: none;
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt *,
+div.nbinput.container div.input_area pre,
+div.nboutput.container div.output_area pre,
+div.nbinput.container div.input_area .highlight,
+div.nboutput.container div.output_area .highlight {
     border: none;
-    padding: 0 0;
+    padding: 0;
     margin: 0;
     box-shadow: none;
+}
+
+div.nbinput.container > div[class*=highlight],
+div.nboutput.container > div[class*=highlight] {
+    margin: 0;
+}
+
+div.nbinput.container div.prompt *,
+div.nboutput.container div.prompt * {
+    background: none;
+}
+
+div.nboutput.container div.output_area .highlight,
+div.nboutput.container div.output_area pre {
+    background: unset;
+}
+
+div.nboutput.container div.output_area div.highlight {
+    color: unset;  /* override Pygments text color */
 }
 
 /* avoid gaps between output lines */
@@ -2524,7 +2478,7 @@ div.nboutput.container div.output_area {
 div.nbinput.container div.input_area {
     border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
 }
 
 /* override MathJax center alignment in output cells */
@@ -2590,6 +2544,7 @@ div.nboutput.container div.output_area.rendered_html,
 div.nboutput.container div.output_area > div.output_javascript,
 div.nboutput.container div.output_area:not(.rendered_html) > img{
     padding: 5px;
+    margin: 0;
 }
 
 /* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
@@ -2599,7 +2554,7 @@ div.nboutput.container div.output_area > div[class^='highlight']{
 }
 
 /* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
-.prompt a.copybtn {
+.prompt .copybtn {
     display: none;
 }
 
@@ -2659,15 +2614,15 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<div class="section" id="For-loops-2---iterating-dictionaries">
-<h1>For loops 2 - iterating dictionaries<a class="headerlink" href="#For-loops-2---iterating-dictionaries" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="Download-exercises-zip">
-<h2><a class="reference external" href="../_static/generated/for.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline">¶</a></h2>
+<section id="For-loops-2---iterating-dictionaries">
+<h1>For loops 2 - iterating dictionaries<a class="headerlink" href="#For-loops-2---iterating-dictionaries" title="Permalink to this headline"></a></h1>
+<section id="Download-exercises-zip">
+<h2><a class="reference external" href="../_static/generated/for.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/for">Browse file online</a></p>
 <p>Given a dictionary, we can examinate the sequence of its keys, values or both with a <code class="docutils literal notranslate"><span class="pre">for</span></code> cycle.</p>
-</div>
-<div class="section" id="Iterating-keys">
-<h2>Iterating keys<a class="headerlink" href="#Iterating-keys" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Iterating-keys">
+<h2>Iterating keys<a class="headerlink" href="#Iterating-keys" title="Permalink to this headline"></a></h2>
 <p>To iterate <strong>only the keys</strong> it is sufficient to use the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator:</p>
 <div class="admonition warning">
 <p><strong>WARNING</strong>: keys iteration order is <strong>not</strong> predictable !</p>
@@ -2676,8 +2631,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">pastries</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pastries</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;cream puff&#39;</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
     <span class="s1">&#39;brioche&#39;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>
     <span class="s1">&#39;donut&#39;</span><span class="p">:</span><span class="mi">2</span>
@@ -2689,8 +2643,7 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">pastries</span><span class="p">:</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">pastries</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Found key   :&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  with value:&#39;</span><span class="p">,</span> <span class="n">pastries</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
 </pre></div>
@@ -2710,16 +2663,15 @@ Found key   : donut
 </pre></div></div>
 </div>
 <p>At each iteration, the declared variable <code class="docutils literal notranslate"><span class="pre">key</span></code> is assigned to a key taken from the dictionary, in an order we cannot predict.</p>
-</div>
-<div class="section" id="Iterating-key-value-pairs">
-<h2>Iterating key-value pairs<a class="headerlink" href="#Iterating-key-value-pairs" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Iterating-key-value-pairs">
+<h2>Iterating key-value pairs<a class="headerlink" href="#Iterating-key-value-pairs" title="Permalink to this headline"></a></h2>
 <p>We can also directly obtain both the key and the associated value with this notation:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">pastries</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">pastries</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Found key  :&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; with value:&#39;</span><span class="p">,</span> <span class="n">pastries</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
 </pre></div>
@@ -2739,9 +2691,9 @@ Found key  : donut
 </pre></div></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">.items()</span></code> return a list of key/value couples, and during each iteration a couple is assigned to the variable <code class="docutils literal notranslate"><span class="pre">key</span></code> and <code class="docutils literal notranslate"><span class="pre">value</span></code>.</p>
-</div>
-<div class="section" id="Iterating-values">
-<h2>Iterating values<a class="headerlink" href="#Iterating-values" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Iterating-values">
+<h2>Iterating values<a class="headerlink" href="#Iterating-values" title="Permalink to this headline"></a></h2>
 <p>We can iterate the values calling the method <code class="docutils literal notranslate"><span class="pre">values()</span></code></p>
 <div class="admonition warning">
 <p><strong>WARNING</strong>: values iteration order is also <strong>not</strong> predictable !</p>
@@ -2750,8 +2702,7 @@ Found key  : donut
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">pastries</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">pastries</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Found value&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2766,9 +2717,9 @@ Found value 8
 Found value 2
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Questions---iteration">
-<h2>Questions - iteration<a class="headerlink" href="#Questions---iteration" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Questions---iteration">
+<h2>Questions - iteration<a class="headerlink" href="#Questions---iteration" title="Permalink to this headline"></a></h2>
 <p>Look at the following code fragments , and for each try guessing the result it produces (or if it gives an error):</p>
 <div class="admonition warning">
 <p><strong>WARNING</strong>: Remember the order is IMPOSSIBLE to foresee, so the important bit is to guess all the printed stuff</p>
@@ -2829,16 +2780,16 @@ Found value 2
 </div>
 </li>
 </ol>
-</div>
-<div class="section" id="Questions---Are-they-equivalent?">
-<h2>Questions - Are they equivalent?<a class="headerlink" href="#Questions---Are-they-equivalent?" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="Questions---Are-they-equivalent?">
+<h2>Questions - Are they equivalent?<a class="headerlink" href="#Questions---Are-they-equivalent?" title="Permalink to this headline"></a></h2>
 <p>Look at the following code fragments: each contains two parts, A and B. For each fragment, try guessing whether part A will print exactly the same result printed by code in part B</p>
 <ul class="simple">
 <li><p><strong>FIRST</strong> think about the answer</p></li>
 <li><p><strong>THEN</strong> try executing</p></li>
 </ul>
-<div class="section" id="Are-they-equivalent-?-postin">
-<h3>Are they equivalent ? postin<a class="headerlink" href="#Are-they-equivalent-?-postin" title="Permalink to this headline">¶</a></h3>
+<section id="Are-they-equivalent-?-postin">
+<h3>Are they equivalent ? postin<a class="headerlink" href="#Are-they-equivalent-?-postin" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">diz</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;t&#39;</span><span class="p">,</span>
     <span class="s1">&#39;o&#39;</span><span class="p">:</span><span class="s1">&#39;i&#39;</span><span class="p">,</span>
@@ -2854,9 +2805,9 @@ Found value 2
     <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent-?-cortel">
-<h3>Are they equivalent ? cortel<a class="headerlink" href="#Are-they-equivalent-?-cortel" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent-?-cortel">
+<h3>Are they equivalent ? cortel<a class="headerlink" href="#Are-they-equivalent-?-cortel" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">diz</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="s1">&#39;t&#39;</span><span class="p">,</span>
     <span class="s1">&#39;o&#39;</span><span class="p">:</span><span class="s1">&#39;e&#39;</span><span class="p">,</span>
@@ -2872,9 +2823,9 @@ Found value 2
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent-?---gel">
-<h3>Are they equivalent ? - gel<a class="headerlink" href="#Are-they-equivalent-?---gel" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent-?---gel">
+<h3>Are they equivalent ? - gel<a class="headerlink" href="#Are-they-equivalent-?---gel" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">diz</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;g&#39;</span><span class="p">:</span><span class="s1">&#39;l&#39;</span><span class="p">,</span>
     <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;e&#39;</span><span class="p">,</span>
@@ -2890,9 +2841,9 @@ Found value 2
     <span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent-?---giri">
-<h3>Are they equivalent ? - giri<a class="headerlink" href="#Are-they-equivalent-?---giri" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent-?---giri">
+<h3>Are they equivalent ? - giri<a class="headerlink" href="#Are-they-equivalent-?---giri" title="Permalink to this headline"></a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">diz</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;p&#39;</span><span class="p">:</span><span class="s1">&#39;g&#39;</span><span class="p">,</span>
     <span class="s1">&#39;e&#39;</span><span class="p">:</span><span class="s1">&#39;i&#39;</span><span class="p">,</span>
@@ -2911,9 +2862,9 @@ Found value 2
         <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="Are-they-equivalent?---Found">
-<h3>Are they equivalent? - Found<a class="headerlink" href="#Are-they-equivalent?---Found" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Are-they-equivalent?---Found">
+<h3>Are they equivalent? - Found<a class="headerlink" href="#Are-they-equivalent?---Found" title="Permalink to this headline"></a></h3>
 <p>First think if they are equivalent, then check with all the proposed values of <code class="docutils literal notranslate"><span class="pre">k</span></code>.</p>
 <div class="admonition warning">
 <p class="admonition-title fa fa-exclamation-circle"><strong>Be very careful about this exercise !</strong></p>
@@ -2947,12 +2898,12 @@ Found value 2
 <p class="admonition-title fa fa-exclamation-circle"><strong>WARNING: be sure to fully understand this point!</strong></p>
 <p>So many people write code as in part A, losing the main feature of dictionaries which is fast access. As long as data is small you may not notice, but when we have several megabytes of key/value couples you start feeling the time lost in pointless loops! For more you can read (or review) the <a class="reference external" href="https://en.softpython.org/dictionaries/dictionaries2-sol.html#Fast-disorder">section Fast disorder</a> in the dictionaries tutorial.</p>
 </div>
-</div></div>
-</div>
-<div class="section" id="Iteration-exercises">
-<h2>Iteration exercises<a class="headerlink" href="#Iteration-exercises" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Exercise---color-of-hearts">
-<h3>Exercise - color of hearts<a class="headerlink" href="#Exercise---color-of-hearts" title="Permalink to this headline">¶</a></h3>
+</div></section>
+</section>
+<section id="Iteration-exercises">
+<h2>Iteration exercises<a class="headerlink" href="#Iteration-exercises" title="Permalink to this headline"></a></h2>
+<section id="Exercise---color-of-hearts">
+<h3>Exercise - color of hearts<a class="headerlink" href="#Exercise---color-of-hearts" title="Permalink to this headline"></a></h3>
 <p>✪ Write some code which given a dictionary <code class="docutils literal notranslate"><span class="pre">suits</span></code>, for each suits prints its color.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">suits</span> <span class="o">=</span> <span class="p">{</span>
@@ -2980,9 +2931,7 @@ The color of clubs is black
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">suits</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">suits</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;hearts&#39;</span><span class="p">:</span><span class="s1">&#39;red&#39;</span><span class="p">,</span>
     <span class="s1">&#39;spades&#39;</span><span class="p">:</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
     <span class="s1">&#39;diamonds&#39;</span><span class="p">:</span><span class="s1">&#39;red&#39;</span><span class="p">,</span>
@@ -3011,9 +2960,7 @@ The color of clubs is black
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">suits</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">suits</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;hearts&#39;</span><span class="p">:</span><span class="s1">&#39;red&#39;</span><span class="p">,</span>
     <span class="s1">&#39;spades&#39;</span><span class="p">:</span><span class="s1">&#39;black&#39;</span><span class="p">,</span>
     <span class="s1">&#39;diamonds&#39;</span><span class="p">:</span><span class="s1">&#39;red&#39;</span><span class="p">,</span>
@@ -3021,14 +2968,12 @@ The color of clubs is black
 <span class="p">}</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---jewels">
-<h3>Exercise - jewels<a class="headerlink" href="#Exercise---jewels" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---jewels">
+<h3>Exercise - jewels<a class="headerlink" href="#Exercise---jewels" title="Permalink to this headline"></a></h3>
 <p>✪ In the dictionary <code class="docutils literal notranslate"><span class="pre">jewels</span></code> some keys are equal to the respective values. Write some code which find such keys and prints them all.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">jewels</span> <span class="o">=</span> <span class="p">{</span>
@@ -3051,9 +2996,7 @@ couple of equal elements: rubies and rubies
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">jewels</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">jewels</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;rubies&#39;</span><span class="p">:</span> <span class="s1">&#39;jade&#39;</span><span class="p">,</span>
     <span class="s1">&#39;opals&#39;</span><span class="p">:</span><span class="s1">&#39;topazes&#39;</span><span class="p">,</span>
     <span class="s1">&#39;gems&#39;</span><span class="p">:</span><span class="s1">&#39;gems&#39;</span><span class="p">,</span>
@@ -3081,9 +3024,7 @@ couple of equal elements: gems and gems
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">jewels</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">jewels</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;rubies&#39;</span><span class="p">:</span> <span class="s1">&#39;jade&#39;</span><span class="p">,</span>
     <span class="s1">&#39;opals&#39;</span><span class="p">:</span><span class="s1">&#39;topazes&#39;</span><span class="p">,</span>
     <span class="s1">&#39;gems&#39;</span><span class="p">:</span><span class="s1">&#39;gems&#39;</span><span class="p">,</span>
@@ -3092,14 +3033,12 @@ couple of equal elements: gems and gems
 <span class="p">}</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---powers">
-<h3>Exercise - powers<a class="headerlink" href="#Exercise---powers" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---powers">
+<h3>Exercise - powers<a class="headerlink" href="#Exercise---powers" title="Permalink to this headline"></a></h3>
 <p>✪ Given a number <code class="docutils literal notranslate"><span class="pre">n</span></code>, write some code which creates a NEW dictionary <code class="docutils literal notranslate"><span class="pre">d</span></code> containing as keys the numbers from 1 a <code class="docutils literal notranslate"><span class="pre">n</span></code> INCLUDED, by associating keys to their squares.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
@@ -3116,9 +3055,7 @@ couple of equal elements: gems and gems
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="c1"># write here</span>
 <span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
@@ -3141,19 +3078,15 @@ couple of equal elements: gems and gems
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---flowers">
-<h3>Exercise - flowers<a class="headerlink" href="#Exercise---flowers" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---flowers">
+<h3>Exercise - flowers<a class="headerlink" href="#Exercise---flowers" title="Permalink to this headline"></a></h3>
 <p>✪ Given a list <code class="docutils literal notranslate"><span class="pre">flowers</span></code>, write some code which creates a NEW dictionary <code class="docutils literal notranslate"><span class="pre">is_cap</span></code> which associates to each flower <code class="docutils literal notranslate"><span class="pre">True</span></code> if the flower name is written all uppercase, and <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise</p>
 <ul class="simple">
 <li><p><strong>HINT</strong>: to verify whether a string is all uppercase, use <code class="docutils literal notranslate"><span class="pre">.isupper()</span></code> method</p></li>
@@ -3178,9 +3111,7 @@ couple of equal elements: gems and gems
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">flowers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sunflower&#39;</span><span class="p">,</span><span class="s1">&#39;GILLYFLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;tulip&#39;</span><span class="p">,</span> <span class="s1">&#39;PASSION FLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;ROSE&#39;</span><span class="p">,</span> <span class="s1">&#39;violet&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">flowers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sunflower&#39;</span><span class="p">,</span><span class="s1">&#39;GILLYFLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;tulip&#39;</span><span class="p">,</span> <span class="s1">&#39;PASSION FLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;ROSE&#39;</span><span class="p">,</span> <span class="s1">&#39;violet&#39;</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
 
@@ -3210,19 +3141,15 @@ couple of equal elements: gems and gems
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">flowers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sunflower&#39;</span><span class="p">,</span><span class="s1">&#39;GILLYFLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;tulip&#39;</span><span class="p">,</span> <span class="s1">&#39;PASSION FLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;ROSE&#39;</span><span class="p">,</span> <span class="s1">&#39;violet&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">flowers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sunflower&#39;</span><span class="p">,</span><span class="s1">&#39;GILLYFLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;tulip&#39;</span><span class="p">,</span> <span class="s1">&#39;PASSION FLOWER&#39;</span><span class="p">,</span> <span class="s1">&#39;ROSE&#39;</span><span class="p">,</span> <span class="s1">&#39;violet&#39;</span><span class="p">]</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---art">
-<h3>Exercise - art<a class="headerlink" href="#Exercise---art" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---art">
+<h3>Exercise - art<a class="headerlink" href="#Exercise---art" title="Permalink to this headline"></a></h3>
 <p>✪ An artist painted a series of works with different techiques. In the dictionary <code class="docutils literal notranslate"><span class="pre">prices</span></code> he writes the price of each technique. The artist intend to promote a series of exhibitions, and in each of them he will present a particular technique. Supposing for each technique he produced <code class="docutils literal notranslate"><span class="pre">q</span></code> paintings, show how much he will learn in each exhibition (suppose he sells everything).</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">q</span> <span class="o">=</span> <span class="mi">20</span>
@@ -3254,9 +3181,7 @@ couple of equal elements: gems and gems
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">q</span> <span class="o">=</span> <span class="mi">20</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">q</span> <span class="o">=</span> <span class="mi">20</span>
 
 <span class="n">exhibitions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;watercolor&#39;</span><span class="p">,</span> <span class="s1">&#39;oil&#39;</span><span class="p">,</span> <span class="s1">&#39;mural&#39;</span><span class="p">,</span> <span class="s1">&#39;tempera&#39;</span><span class="p">,</span> <span class="s1">&#39;charcoal&#39;</span><span class="p">,</span><span class="s1">&#39;ink&#39;</span><span class="p">]</span>
 
@@ -3295,9 +3220,7 @@ Expected Income:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">q</span> <span class="o">=</span> <span class="mi">20</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">q</span> <span class="o">=</span> <span class="mi">20</span>
 
 <span class="n">exhibitions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;watercolor&#39;</span><span class="p">,</span> <span class="s1">&#39;oil&#39;</span><span class="p">,</span> <span class="s1">&#39;mural&#39;</span><span class="p">,</span> <span class="s1">&#39;tempera&#39;</span><span class="p">,</span> <span class="s1">&#39;charcoal&#39;</span><span class="p">,</span><span class="s1">&#39;ink&#39;</span><span class="p">]</span>
 
@@ -3310,14 +3233,12 @@ Expected Income:
 <span class="p">}</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---stationery-stores">
-<h3>Exercise - stationery stores<a class="headerlink" href="#Exercise---stationery-stores" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---stationery-stores">
+<h3>Exercise - stationery stores<a class="headerlink" href="#Exercise---stationery-stores" title="Permalink to this headline"></a></h3>
 <p>✪ An owner of two stationery shops, in order to reorganize the stores wants to know the materials which are in common among the shops. Given two dictionaries <code class="docutils literal notranslate"><span class="pre">store1</span></code> and <code class="docutils literal notranslate"><span class="pre">store2</span></code> which associates objects to their quantity, write some code which finds all the keys in common and for each prints the sum of the found quantities.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">store1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pens&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span>
@@ -3346,9 +3267,7 @@ Expected Income:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">store1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pens&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">store1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pens&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span>
           <span class="s1">&#39;folders&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span>
           <span class="s1">&#39;papers&#39;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span>
           <span class="s1">&#39;scissors&#39;</span><span class="p">:</span><span class="mi">40</span><span class="p">}</span>
@@ -3383,9 +3302,7 @@ materials in common:
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">store1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pens&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">store1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;pens&#39;</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span>
           <span class="s1">&#39;folders&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span>
           <span class="s1">&#39;papers&#39;</span><span class="p">:</span><span class="mi">30</span><span class="p">,</span>
           <span class="s1">&#39;scissors&#39;</span><span class="p">:</span><span class="mi">40</span><span class="p">}</span>
@@ -3397,14 +3314,12 @@ materials in common:
           <span class="s1">&#39;rulers&#39;</span><span class="p">:</span><span class="mi">120</span><span class="p">,</span>
           <span class="p">}</span>
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---legumes">
-<h3>Exercise - legumes<a class="headerlink" href="#Exercise---legumes" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---legumes">
+<h3>Exercise - legumes<a class="headerlink" href="#Exercise---legumes" title="Permalink to this headline"></a></h3>
 <p>✪ A store has numbered shelves, each containing a number of legumes expressed in kilograms. We represent <code class="docutils literal notranslate"><span class="pre">store</span></code> as a list. There is also a <code class="docutils literal notranslate"><span class="pre">registry</span></code> available as a dictionary which associates to legume names the shelves number in which they are contained.</p>
 <p>Write some code which given a list of legume names, shows the sum of kilograms in the store for those legumes.</p>
 <p>Example - given:</p>
@@ -3435,9 +3350,7 @@ Total: 110 kg
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">legumes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lentils&#39;</span><span class="p">,</span> <span class="s1">&#39;soy&#39;</span><span class="p">]</span>    <span class="c1"># 110</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">legumes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lentils&#39;</span><span class="p">,</span> <span class="s1">&#39;soy&#39;</span><span class="p">]</span>    <span class="c1"># 110</span>
 <span class="c1">#legumes = [&#39;beans&#39;, &#39;broad beans&#39;, &#39;chickpeas&#39;]   # 170</span>
 
 <span class="c1">#        0  1  2  3  4  5</span>
@@ -3476,9 +3389,7 @@ Total: 110 kg
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">legumes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lentils&#39;</span><span class="p">,</span> <span class="s1">&#39;soy&#39;</span><span class="p">]</span>    <span class="c1"># 110</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">legumes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lentils&#39;</span><span class="p">,</span> <span class="s1">&#39;soy&#39;</span><span class="p">]</span>    <span class="c1"># 110</span>
 <span class="c1">#legumes = [&#39;beans&#39;, &#39;broad beans&#39;, &#39;chickpeas&#39;]   # 170</span>
 
 <span class="c1">#        0  1  2  3  4  5</span>
@@ -3492,14 +3403,12 @@ Total: 110 kg
             <span class="s1">&#39;beans&#39;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
 <span class="p">}</span>
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---smog">
-<h3>Exercise - smog<a class="headerlink" href="#Exercise---smog" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---smog">
+<h3>Exercise - smog<a class="headerlink" href="#Exercise---smog" title="Permalink to this headline"></a></h3>
 <p>✪ Write some code which given two dictionaries <code class="docutils literal notranslate"><span class="pre">smog</span></code> and <code class="docutils literal notranslate"><span class="pre">prepositions</span></code> which associate places to respectively values of smog and prepositions, prints all the places telling the smog is excessive if the value is greater than 30, otherwise is tolerable.</p>
 <ul class="simple">
 <li><p><strong>NOTE</strong>: when printing the first preposition character must be capital: to transform the string you can use the method <code class="docutils literal notranslate"><span class="pre">.capitalize()</span></code></p></li>
@@ -3535,9 +3444,7 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">smog</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;streets&#39;</span>        <span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">smog</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;streets&#39;</span>        <span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
         <span class="s1">&#39;cities&#39;</span>         <span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
         <span class="s1">&#39;intersections&#39;</span>  <span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
         <span class="s1">&#39;trains&#39;</span>         <span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
@@ -3577,9 +3484,7 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">smog</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;streets&#39;</span>        <span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">smog</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;streets&#39;</span>        <span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
         <span class="s1">&#39;cities&#39;</span>         <span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
         <span class="s1">&#39;intersections&#39;</span>  <span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
         <span class="s1">&#39;trains&#39;</span>         <span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
@@ -3595,14 +3500,12 @@ At lakes the smog level is tolerable
 <span class="p">}</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---sports">
-<h3>Exercise - sports<a class="headerlink" href="#Exercise---sports" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---sports">
+<h3>Exercise - sports<a class="headerlink" href="#Exercise---sports" title="Permalink to this headline"></a></h3>
 <p>✪✪ Write some code which given a dictionary <code class="docutils literal notranslate"><span class="pre">sports</span></code> in which people are associated to the favourite sport, create a NEW dictionari <code class="docutils literal notranslate"><span class="pre">counts</span></code> in which associates each sport to the number of people that prefer it.</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">{</span>
@@ -3626,8 +3529,7 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;Gianni&#39;</span><span class="p">:</span><span class="s1">&#39;soccer&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Paolo&#39;</span><span class="p">:</span><span class="s1">&#39;tennis&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Sara&#39;</span><span class="p">:</span><span class="s1">&#39;volleyball&#39;</span><span class="p">,</span>
@@ -3662,8 +3564,7 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;Gianni&#39;</span><span class="p">:</span><span class="s1">&#39;soccer&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Paolo&#39;</span><span class="p">:</span><span class="s1">&#39;tennis&#39;</span><span class="p">,</span>
     <span class="s1">&#39;Sara&#39;</span><span class="p">:</span><span class="s1">&#39;volleyball&#39;</span><span class="p">,</span>
@@ -3673,9 +3574,7 @@ At lakes the smog level is tolerable
 <span class="p">}</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3686,17 +3585,16 @@ At lakes the smog level is tolerable
 {&#39;soccer&#39;: 3, &#39;tennis&#39;: 2, &#39;volleyball&#39;: 1}
 </pre></div></div>
 </div>
-</div>
-<div class="section" id="Exercise---green-lizard">
-<h3>Exercise - green lizard<a class="headerlink" href="#Exercise---green-lizard" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---green-lizard">
+<h3>Exercise - green lizard<a class="headerlink" href="#Exercise---green-lizard" title="Permalink to this headline"></a></h3>
 <p>✪✪ Write some code which given a set <code class="docutils literal notranslate"><span class="pre">search</span></code> of characters to find, counts for each how many are present in the string <code class="docutils literal notranslate"><span class="pre">text</span></code> and places the number in the dictionary <code class="docutils literal notranslate"><span class="pre">counts</span></code>.</p>
 <p>Example - given:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="n">search</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">search</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">}</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;A diurnal lizard of green and brown color A pattern may also be present in the form of dark slate grey streaks or spots. When found with a brown coloration, sometimes with lighter stripe down the back.&quot;</span>
 <span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
 </pre></div>
@@ -3713,8 +3611,7 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#jupman-ignore-output</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#jupman-ignore-output</span>
 <span class="n">search</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">}</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;A diurnal lizard of green and brown color.&quot;</span>
 <span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
@@ -3751,16 +3648,13 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="c1">#jupman-ignore-output</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#jupman-ignore-output</span>
 <span class="n">search</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;i&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">}</span>
 <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;A diurnal lizard of green and brown color.&quot;</span>
 <span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
@@ -3772,10 +3666,10 @@ At lakes the smog level is tolerable
 {&#39;i&#39;: 2, &#39;t&#39;: 0, &#39;r&#39;: 5}
 </pre></div></div>
 </div>
-</div>
-</div>
-<div class="section" id="Modifying-a-dictionary-during-iteration">
-<h2>Modifying a dictionary during iteration<a class="headerlink" href="#Modifying-a-dictionary-during-iteration" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Modifying-a-dictionary-during-iteration">
+<h2>Modifying a dictionary during iteration<a class="headerlink" href="#Modifying-a-dictionary-during-iteration" title="Permalink to this headline"></a></h2>
 <p>Suppose you have a dictionary of provinces:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">provinces</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;tn&#39;</span><span class="p">:</span> <span class="s1">&#39;Trento&#39;</span><span class="p">,</span>
@@ -3859,8 +3753,8 @@ At lakes the smog level is tolerable
 </pre></div>
 </div>
 <p><strong>If you really need to remove elements from the sequence in which you are iterating</strong>, use a <a class="reference external" href="https://en.softpython.org/while/while1-sol.html">while cycle</a> or first copy the original sequence.</p>
-<div class="section" id="Exercise---zazb">
-<h3>Exercise - zazb<a class="headerlink" href="#Exercise---zazb" title="Permalink to this headline">¶</a></h3>
+<section id="Exercise---zazb">
+<h3>Exercise - zazb<a class="headerlink" href="#Exercise---zazb" title="Permalink to this headline"></a></h3>
 <p>✪✪ Write some code which given a dictionary <code class="docutils literal notranslate"><span class="pre">chars</span></code> with characters as keys, MODIFY the dictionary so to add keys like the existing ones prefixed with character <code class="docutils literal notranslate"><span class="pre">'z'</span></code> - new keys should be associated with the constant integer <code class="docutils literal notranslate"><span class="pre">10</span></code></p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">chars</span> <span class="o">=</span> <span class="p">{</span>
@@ -3913,9 +3807,7 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">chars</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">chars</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
     <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>
     <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">4</span>
@@ -3943,23 +3835,19 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">chars</span> <span class="o">=</span> <span class="p">{</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">chars</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
     <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span>
     <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">4</span>
 <span class="p">}</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---DIY">
-<h3>Exercise - DIY<a class="headerlink" href="#Exercise---DIY" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---DIY">
+<h3>Exercise - DIY<a class="headerlink" href="#Exercise---DIY" title="Permalink to this headline"></a></h3>
 <p>✪✪ A depot for do-it-yourself hobbists has a <code class="docutils literal notranslate"><span class="pre">catalog</span></code> which associates object types to the shelves where to put them. Each day, a list of <code class="docutils literal notranslate"><span class="pre">entries</span></code> is populated with the newly arrived object types. Such types are placed in the <code class="docutils literal notranslate"><span class="pre">depot</span></code>, a dictionary which associates to each shelf the object type pointed by the catalof. Write some code which given the list <code class="docutils literal notranslate"><span class="pre">entries</span></code> and <code class="docutils literal notranslate"><span class="pre">catalog</span></code>, populates the dictionary <code class="docutils literal notranslate"><span class="pre">depot</span></code></p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">entries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;chairs&#39;</span><span class="p">,</span> <span class="s1">&#39;lamps&#39;</span><span class="p">,</span> <span class="s1">&#39;cables&#39;</span><span class="p">]</span>
@@ -3985,9 +3873,7 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">entries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;chairs&#39;</span><span class="p">,</span> <span class="s1">&#39;lamps&#39;</span><span class="p">,</span> <span class="s1">&#39;cables&#39;</span><span class="p">]</span>  <span class="c1"># depot becomes: {&#39;B&#39;: &#39;chairs&#39;, &#39;C&#39;: &#39;lamps&#39;, &#39;F&#39;: &#39;cables&#39;}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">entries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;chairs&#39;</span><span class="p">,</span> <span class="s1">&#39;lamps&#39;</span><span class="p">,</span> <span class="s1">&#39;cables&#39;</span><span class="p">]</span>  <span class="c1"># depot becomes: {&#39;B&#39;: &#39;chairs&#39;, &#39;C&#39;: &#39;lamps&#39;, &#39;F&#39;: &#39;cables&#39;}</span>
 <span class="c1">#entries = [&#39;carafes&#39;, &#39;gardening&#39;]      # depot becomes: {&#39;D&#39;: &#39;carafes&#39;, &#39;E&#39;: &#39;gardening&#39;}</span>
 <span class="c1">#entries = [&#39;stoves&#39;]                    # depot becomes: {&#39;A&#39;: &#39;stoves&#39;}</span>
 
@@ -4024,9 +3910,7 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">entries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;chairs&#39;</span><span class="p">,</span> <span class="s1">&#39;lamps&#39;</span><span class="p">,</span> <span class="s1">&#39;cables&#39;</span><span class="p">]</span>  <span class="c1"># depot becomes: {&#39;B&#39;: &#39;chairs&#39;, &#39;C&#39;: &#39;lamps&#39;, &#39;F&#39;: &#39;cables&#39;}</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">entries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;chairs&#39;</span><span class="p">,</span> <span class="s1">&#39;lamps&#39;</span><span class="p">,</span> <span class="s1">&#39;cables&#39;</span><span class="p">]</span>  <span class="c1"># depot becomes: {&#39;B&#39;: &#39;chairs&#39;, &#39;C&#39;: &#39;lamps&#39;, &#39;F&#39;: &#39;cables&#39;}</span>
 <span class="c1">#entries = [&#39;carafes&#39;, &#39;gardening&#39;]      # depot becomes: {&#39;D&#39;: &#39;carafes&#39;, &#39;E&#39;: &#39;gardening&#39;}</span>
 <span class="c1">#entries = [&#39;stoves&#39;]                    # depot becomes: {&#39;A&#39;: &#39;stoves&#39;}</span>
 
@@ -4040,14 +3924,12 @@ At lakes the smog level is tolerable
 <span class="n">depot</span> <span class="o">=</span> <span class="p">{}</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-<div class="section" id="Exercise---mine">
-<h3>Exercise - mine<a class="headerlink" href="#Exercise---mine" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="Exercise---mine">
+<h3>Exercise - mine<a class="headerlink" href="#Exercise---mine" title="Permalink to this headline"></a></h3>
 <p>✪✪ Given a dictionary <code class="docutils literal notranslate"><span class="pre">mine</span></code> which associates keys to numbers, MODIFY the dictionary <code class="docutils literal notranslate"><span class="pre">extracted</span></code> associating the same keys of <code class="docutils literal notranslate"><span class="pre">mine</span></code> to lists with keys repeated the given number of times</p>
 <p>Example - given:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mine</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;brass&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
@@ -4069,9 +3951,7 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">mine</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;brass&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">mine</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;brass&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
         <span class="s1">&#39;iron&#39;</span>  <span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
         <span class="s1">&#39;copper&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
 <span class="n">extracted</span> <span class="o">=</span> <span class="p">{}</span>
@@ -4100,73 +3980,52 @@ At lakes the smog level is tolerable
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-
-<span></span><span class="n">mine</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;brass&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="n">mine</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;brass&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
         <span class="s1">&#39;iron&#39;</span>  <span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
         <span class="s1">&#39;copper&#39;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
 <span class="n">extracted</span> <span class="o">=</span> <span class="p">{}</span>
 
 <span class="c1"># write here</span>
-
-
-</pre></div>
+<br/><br/></pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="Continue">
-<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="Continue">
+<h2>Continue<a class="headerlink" href="#Continue" title="Permalink to this headline"></a></h2>
 <p>Go on with <a class="reference external" href="https://en.softpython.org/for/for7-nested-sol.html">nested for loops</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="for7-nested-sol.html" class="btn btn-neutral float-right" title="For loops 7 - nested loops" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="for5-sets-sol.html" class="btn btn-neutral float-left" title="For loops 5 - set iteration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="for7-nested-sol.html" class="btn btn-neutral float-right" title="For loops 7 - nested loops" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.
-
-    </p>
+    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
