@@ -7,9 +7,9 @@
   <title>Functions 4 - exercises with lists &mdash; SoftPython</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.3.5.4.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.4.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.4.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/functions/fun4-lists-sol.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -2029,7 +2029,34 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../toc.html#c-applications">C - Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#c-applications">C - Applications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../database/database-sol.html">Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Downlod-exercises-zip">Downlod exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#A-first-look-to-the-database">A first look to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#SQLStudio-connection">SQLStudio connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Python-connection">Python connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Passing-parameters-to-the-query">Passing parameters to the query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Execute-query-function">Execute query function</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#Table-structure">Table structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#DDL">DDL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#Query-to-metadata">Query to metadata</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#ORDER-BY">ORDER BY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#JOIN">JOIN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Track-Table">Track Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Aggregating-data">Aggregating data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#COUNT">COUNT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#GROUP-BY-and-COUNT">GROUP BY and COUNT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Pandas">Pandas</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../toc.html#d-projects">D - Projects</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../toc-worked-projects.html">Text data</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../projects/phone-calls/phone-calls-sol.html">Phone calls</a><ul>
@@ -3164,7 +3191,7 @@ not good
 </ul>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
@@ -3184,30 +3211,13 @@ not good
 <span class="k">assert</span> <span class="n">newdoublef</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
 
 <span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
-<span class="k">assert</span> <span class="n">newdoublefor</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">newdoublef</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
 <span class="k">assert</span> <span class="n">l</span> <span class="o">==</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
 <span class="c1"># TEST END</span>
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_15271/3187043984.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span>
-<span class="ansi-green-intense-fg ansi-bold">     15</span> l <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">7</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">assert</span> newdoublefor<span class="ansi-blue-fg">(</span>l<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">6</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">14</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">     17</span> <span class="ansi-green-fg">assert</span> l <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">7</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">     18</span> <span class="ansi-red-fg"># TEST END</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;newdoublefor&#39; is not defined
-</pre></div></div>
-</div>
-</div><div class="nbinput docutils container">
+</div><div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
 </pre></div>
 </div>
@@ -3221,28 +3231,11 @@ not good
 <span class="k">assert</span> <span class="n">newdoublef</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
 
 <span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
-<span class="k">assert</span> <span class="n">newdoublefor</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">newdoublef</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
 <span class="k">assert</span> <span class="n">l</span> <span class="o">==</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
 <span class="c1"># TEST END</span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_15271/3187043984.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span>
-<span class="ansi-green-intense-fg ansi-bold">     15</span> l <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">7</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">assert</span> newdoublefor<span class="ansi-blue-fg">(</span>l<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">6</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">14</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">     17</span> <span class="ansi-green-fg">assert</span> l <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">7</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">     18</span> <span class="ansi-red-fg"># TEST END</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;newdoublefor&#39; is not defined
-</pre></div></div>
 </div>
 </section>
 <section id="Exercise---doublemod">
@@ -3251,7 +3244,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">doublemod</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3280,7 +3273,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">doublemod</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3314,7 +3307,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">newdoublec</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3336,7 +3329,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">newdoublec</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3365,7 +3358,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">up</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3389,7 +3382,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">up</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3421,7 +3414,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remall</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
@@ -3450,7 +3443,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remall</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
@@ -3480,7 +3473,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">only_capital_for</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3504,7 +3497,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">only_capital_for</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3531,7 +3524,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">only_capital_comp</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3551,7 +3544,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">only_capital_comp</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3583,7 +3576,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_all</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3599,7 +3592,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_all</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3621,7 +3614,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sumevenf</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3641,7 +3634,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sumevenf</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3665,7 +3658,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sumevenc</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3682,7 +3675,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sumevenc</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -3705,7 +3698,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">contains</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
@@ -3722,7 +3715,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">contains</span><span class="p">(</span><span class="n">xs</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
@@ -3747,7 +3740,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">firstn</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -3766,7 +3759,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">firstn</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -3790,7 +3783,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">firstlast</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -3815,7 +3808,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">firstlast</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -3843,7 +3836,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dup</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -3871,7 +3864,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">dup</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -3900,7 +3893,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hasdup</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xs</span><span class="p">):</span>
@@ -3928,7 +3921,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hasdup</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">xs</span><span class="p">):</span>
@@ -3955,7 +3948,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ord3</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -3977,7 +3970,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ord3</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -4005,7 +3998,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">filterab</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -4034,7 +4027,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">filterab</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -4071,7 +4064,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hill</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -4095,7 +4088,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hill</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
@@ -4116,7 +4109,7 @@ not good
 <h3>Exercise - peak<a class="headerlink" href="#Exercise---peak" title="Permalink to this headline"></a></h3>
 <p>✪✪ Suppose in a list are saved the heights of a mountain road taking a measure every 3 km (we assume the road constantly goes upward). At a certain point, you will arrive at the mountain peak where you will measure the height with respect to the sea. Of course, there is also a road to go down hill (constantly downward) and here also the height will be measured every 3 km.</p>
 <p>A measurement example is <code class="docutils literal notranslate"><span class="pre">[100,</span> <span class="pre">400,</span> <span class="pre">800,</span> <span class="pre">1220,</span> <span class="pre">1600,</span> <span class="pre">1400,</span> <span class="pre">1000,</span> <span class="pre">300,</span> <span class="pre">40]</span></code></p>
-<p>Write a function that RETURNS the <em>value</em> from the list which corresponds to the measurement taken at the peak</p>
+<p>Write a function that RETURNS the <em>value</em> from the list which corresponds to the measurement taken at the peak.</p>
 <ul class="simple">
 <li><p>if the list contains less than three elements, raise exception <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></li>
 </ul>
@@ -4124,25 +4117,28 @@ not good
 <span class="go">1600</span>
 </pre></div>
 </div>
+<ul class="simple">
+<li><p><strong>USE</strong> a <code class="docutils literal notranslate"><span class="pre">while</span></code> cycle and terminate the function as soon as you reach the peak</p></li>
+<li><p><strong>DO NOT</strong> use <code class="docutils literal notranslate"><span class="pre">max</span></code> function (too easy!)</p></li>
+</ul>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">peak</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
 
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Empty list !&quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">xs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">xs</span><span class="p">)):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">xs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">xs</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
             <span class="k">return</span> <span class="n">xs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 
-    <span class="k">return</span> <span class="n">xs</span><span class="p">[</span><span class="o">-</span><span class="n">i</span><span class="p">]</span>  <span class="c1"># road without way down</span>
-
+    <span class="k">return</span> <span class="n">xs</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
 
 
@@ -4161,7 +4157,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">peak</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -4193,7 +4189,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">even</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -4214,7 +4210,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">even</span><span class="p">(</span><span class="n">xs</span><span class="p">):</span>
@@ -4244,7 +4240,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">mix</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">listb</span><span class="p">):</span>
@@ -4266,7 +4262,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">mix</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">listb</span><span class="p">):</span>
@@ -4291,7 +4287,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">fill</span><span class="p">(</span><span class="n">lst1</span><span class="p">,</span> <span class="n">lst2</span><span class="p">):</span>
@@ -4368,7 +4364,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">fill</span><span class="p">(</span><span class="n">lst1</span><span class="p">,</span> <span class="n">lst2</span><span class="p">):</span>
@@ -4453,7 +4449,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">nostop</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">stopwords</span><span class="p">):</span>
@@ -4476,7 +4472,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">nostop</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">stopwords</span><span class="p">):</span>
@@ -4505,7 +4501,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">threez</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -4540,7 +4536,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">threez</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -4613,8 +4609,8 @@ not good
 </pre></div>
 </div>
 <p>So first of all to get the 6,4,7,5 it might help to try scanning the list in reverse order using the function <code class="docutils literal notranslate"><span class="pre">reversed</span></code> (notice the <code class="docutils literal notranslate"><span class="pre">ed</span></code> at the end!)</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]):</span>
@@ -4622,9 +4618,20 @@ not good
 </pre></div>
 </div>
 </div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+6
+4
+7
+5
+</pre></div></div>
+</div>
 <p>Once we have such sequence, we need a way to get a sequence of progressively increasing powers of 10. To do so, we might use a variable <code class="docutils literal notranslate"><span class="pre">power</span></code>:</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">power</span> <span class="o">=</span> <span class="mi">1</span>
@@ -4635,6 +4642,17 @@ not good
 </pre></div>
 </div>
 </div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+1
+10
+100
+1000
+</pre></div></div>
+</div>
 <p>Now you should have the necessary elements to implement the required function by yourself.</p>
 <div class="admonition note">
 <p><strong>PLEASE REMEMBER</strong>: if you can’t find a general solution, keep trying with constants and write down all the passages you do. Then in new cells try substituting the constants with variables and keep experimenting - it’s the best method to spot patterns !</p>
@@ -4642,7 +4660,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">listoint</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -4668,7 +4686,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">listoint</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -4703,17 +4721,26 @@ not good
 </div>
 <p>To do so, we must exploit integer division <code class="docutils literal notranslate"><span class="pre">//</span></code> and reminder operator <code class="docutils literal notranslate"><span class="pre">%</span></code>.</p>
 <p>Let’s say we want to get the final digit <code class="docutils literal notranslate"><span class="pre">4</span></code> out of <code class="docutils literal notranslate"><span class="pre">574</span></code>. To do so, we can notice that <code class="docutils literal notranslate"><span class="pre">4</span></code> is the reminder of integer division between <code class="docutils literal notranslate"><span class="pre">547</span></code> and <code class="docutils literal notranslate"><span class="pre">10</span></code>:</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">574</span> <span class="o">%</span> <span class="mi">10</span>
 </pre></div>
 </div>
 </div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+4
+</pre></div></div>
+</div>
 <p>This extracts the four, but if we want to find an algorithm for our problem, we must also find a way to progressively reduce the problem size. To do so, we can exploit the integer division operator <code class="docutils literal notranslate"><span class="pre">//</span></code>:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">574</span> <span class="o">//</span> <span class="mi">10</span>
@@ -4721,7 +4748,7 @@ not good
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4738,7 +4765,7 @@ not good
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">intolist</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
@@ -4768,7 +4795,7 @@ not good
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">intolist</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
@@ -4813,8 +4840,8 @@ Output: [1,0,0,0,0]
 </ol>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
- data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_one_conv</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -4841,32 +4868,8 @@ Output: [1,0,0,0,0]
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_15271/725919802.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">     13</span>     <span class="ansi-red-fg">#/jupman-raise</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span>
-<span class="ansi-green-fg">---&gt; 15</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">     16</span> <span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">     17</span> <span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/tmp/ipykernel_15271/725919802.py</span> in <span class="ansi-cyan-fg">add_one_conv</span><span class="ansi-blue-fg">(lst)</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span>     <span class="ansi-red-fg">#jupman-raise</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span>     power <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">1</span>
-<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg">     </span>num <span class="ansi-blue-fg">=</span> listoint<span class="ansi-blue-fg">(</span>lst<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span>
-<span class="ansi-green-intense-fg ansi-bold">     12</span>     <span class="ansi-green-fg">return</span> intolist<span class="ansi-blue-fg">(</span>num <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;listoint&#39; is not defined
-</pre></div></div>
-</div>
-</div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_one_conv</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -4887,30 +4890,6 @@ Output: [1,0,0,0,0]
 <span class="k">assert</span> <span class="n">add_one_conv</span><span class="p">([</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">])</span> <span class="o">==</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_15271/725919802.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">     13</span>     <span class="ansi-red-fg">#/jupman-raise</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span>
-<span class="ansi-green-fg">---&gt; 15</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">     16</span> <span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">     17</span> <span class="ansi-green-fg">assert</span> add_one_conv<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">==</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/tmp/ipykernel_15271/725919802.py</span> in <span class="ansi-cyan-fg">add_one_conv</span><span class="ansi-blue-fg">(lst)</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span>     <span class="ansi-red-fg">#jupman-raise</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span>     power <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">1</span>
-<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg">     </span>num <span class="ansi-blue-fg">=</span> listoint<span class="ansi-blue-fg">(</span>lst<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span>
-<span class="ansi-green-intense-fg ansi-bold">     12</span>     <span class="ansi-green-fg">return</span> intolist<span class="ansi-blue-fg">(</span>num <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;listoint&#39; is not defined
-</pre></div></div>
 </div>
 </section>
 <section id="Exercise---add_one_carry">
@@ -4978,7 +4957,7 @@ Output: [1,0,0,0,0]
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_one_carry</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -5014,7 +4993,7 @@ Output: [1,0,0,0,0]
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_one_carry</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
@@ -5048,7 +5027,7 @@ Output: [1,0,0,0,0]
 <p>Write a program that creates a list <code class="docutils literal notranslate"><span class="pre">seq</span></code> , such that for each value <code class="docutils literal notranslate"><span class="pre">n</span></code> between <code class="docutils literal notranslate"><span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">50</span></code> , <code class="docutils literal notranslate"><span class="pre">seq</span> <span class="pre">[</span> <span class="pre">n</span> <span class="pre">]</span></code> contains the length of the sequence so generated. In case of <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">3</span></code> , the length is <code class="docutils literal notranslate"><span class="pre">8</span></code> . In case of <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">27</span></code> , the length is <code class="docutils literal notranslate"><span class="pre">111</span></code>.</p>
 <p>If you need to check your results, you can also try this <a class="reference external" href="https://www.dcode.fr/collatz-conjecture">nice online tool</a></p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">collatz</span><span class="p">():</span>

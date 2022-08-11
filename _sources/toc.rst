@@ -202,7 +202,7 @@ B - Data Analysis
 =======================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
     :glob:
     
     toc-analytics.rst
@@ -211,13 +211,18 @@ B - Data Analysis
 C - Applications
 ========================
 
-TODO
+.. toctree::
+    :maxdepth: 3
+    :glob:
+
+    database/database-sol.ipynb
+
 
 D - Projects
 =======================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
     :glob:
 
     toc-worked-projects.rst

@@ -7,9 +7,9 @@
   <title>Functions 5 - exercises with tuples &mdash; SoftPython</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.1.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.1.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.3.5.4.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.4.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.4.css" type="text/css" />
     <link rel="canonical" href="https://en.softpython.org/functions/fun5-tuples-sol.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
@@ -2029,7 +2029,34 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../toc.html#c-applications">C - Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../toc.html#c-applications">C - Applications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../database/database-sol.html">Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Downlod-exercises-zip">Downlod exercises zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#What-to-do">What to do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#A-first-look-to-the-database">A first look to the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#SQLStudio-connection">SQLStudio connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Python-connection">Python connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Passing-parameters-to-the-query">Passing parameters to the query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Execute-query-function">Execute query function</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#Table-structure">Table structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#DDL">DDL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#Query-to-metadata">Query to metadata</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#ORDER-BY">ORDER BY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#JOIN">JOIN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Track-Table">Track Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Aggregating-data">Aggregating data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#COUNT">COUNT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../database/database-sol.html#GROUP-BY-and-COUNT">GROUP BY and COUNT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../database/database-sol.html#Pandas">Pandas</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../toc.html#d-projects">D - Projects</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../toc-worked-projects.html">Text data</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../projects/phone-calls/phone-calls-sol.html">Phone calls</a><ul>
@@ -2623,12 +2650,12 @@ div.rendered_html tbody tr:hover {
 <h3>Exercise - joined<a class="headerlink" href="#Exercise---joined" title="Permalink to this headline"></a></h3>
 <p>✪✪ Write a function which given two tuples of characters <code class="docutils literal notranslate"><span class="pre">ta</span></code> and <code class="docutils literal notranslate"><span class="pre">tb</span></code> having each different characters (may also be empty), return a tuple made like this:</p>
 <ul class="simple">
-<li><p>if the tuple <code class="docutils literal notranslate"><span class="pre">ta</span></code> terminates with the same character <code class="docutils literal notranslate"><span class="pre">tb</span></code> begins with, RETURN the concatenation of <code class="docutils literal notranslate"><span class="pre">ta</span></code> and <code class="docutils literal notranslate"><span class="pre">tb</span></code> WITHOUT duplicated characters</p></li>
+<li><p>if the tuple <code class="docutils literal notranslate"><span class="pre">ta</span></code> terminates with the same character <code class="docutils literal notranslate"><span class="pre">tb</span></code> begins with, RETURN the concatenation of <code class="docutils literal notranslate"><span class="pre">ta</span></code> and <code class="docutils literal notranslate"><span class="pre">tb</span></code> WITHOUT the join character duplicated.</p></li>
 <li><p>otherwise RETURN an empty tuple</p></li>
 </ul>
 <p>Example:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">))</span>
-<span class="go">(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">))</span>
+<span class="go">(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;,&#39;e&#39;,&#39;f&#39;)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">))</span>
 <span class="go">(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;)</span>
 </pre></div>
@@ -2648,7 +2675,7 @@ div.rendered_html tbody tr:hover {
     <span class="k">return</span> <span class="p">()</span>
 
 
-<span class="k">assert</span> <span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">joined</span><span class="p">((),(</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">()</span>
 <span class="k">assert</span> <span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,),(</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">()</span>
@@ -2664,7 +2691,7 @@ div.rendered_html tbody tr:hover {
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><br/><span></span><span class="k">def</span> <span class="nf">joined</span><span class="p">(</span><span class="n">ta</span><span class="p">,</span><span class="n">tb</span><span class="p">):</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 
-<span class="k">assert</span> <span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">)</span>
 <span class="k">assert</span> <span class="n">joined</span><span class="p">((),(</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">()</span>
 <span class="k">assert</span> <span class="n">joined</span><span class="p">((</span><span class="s1">&#39;a&#39;</span><span class="p">,),(</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="p">()</span>
