@@ -1461,6 +1461,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../matrices-lists/matrices-lists2-sol.html#Exercise---skyscraper">Exercise - skyscraper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../matrices-lists/matrices-lists2-sol.html#Exercise---school-lab">Exercise - school lab</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../matrices-lists/matrices-lists2-sol.html#Exercise---dump">Exercise - dump</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../matrices-lists/matrices-lists2-sol.html#Esercizio---toepliz">Esercizio - toepliz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../matrices-lists/matrices-lists2-sol.html#Exercise---matrix-multiplication">Exercise - matrix multiplication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../matrices-lists/matrices-lists2-sol.html#Exercise---check_nqueen">Exercise - check_nqueen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../matrices-lists/matrices-lists2-sol.html#Continue">Continue</a></li>
@@ -2826,8 +2827,11 @@ div.rendered_html tbody tr:hover {
 </section>
 <section id="2.-divine">
 <h2>2. divine<a class="headerlink" href="#2.-divine" title="Permalink to this headline"></a></h2>
-<p>A divination is done by flipping 3 coins to determine the bottom trigram (<strong>bottom up order</strong>), flipping other three coins for the upper trigram (again <strong>bottom up order</strong>), and then the union gives the resulting hexagram. Write a function that PRINTS the process as in the example and RETURNS a string of bits representing the resulting hexagram</p>
-<p><strong>HINT</strong>: to flip coins use <code class="docutils literal notranslate"><span class="pre">random.randint(0,1)</span></code></p>
+<p>A divination is done by flipping 3 coins to determine the bottom trigram (<strong>bottom up order</strong>), flipping other three coins for the upper trigram (again <strong>bottom up order</strong>), and then the union gives the resulting hexagram. Write a function that PRINTS the process as in the example and RETURNS a string of bits representing the resulting hexagram.</p>
+<ul class="simple">
+<li><p>try to avoid writing duplicated code</p></li>
+<li><p><strong>HINT</strong>: to flip coins use <code class="docutils literal notranslate"><span class="pre">random.randint(0,1)</span></code></p></li>
+</ul>
 <div class="admonition warning">
 <p><strong>WARNING: DOUBLE CHECK THE ORDER IN WHICH LINES ARE VISUALIZED!</strong></p>
 </div>
@@ -2899,12 +2903,13 @@ RETURNED: 101100
     <span class="c1">#random.seed(1)</span>
     <span class="c1">#</span>
     <span class="c1"># Infiltrating 001011</span>
-    <span class="c1"># Mountain ---</span>
-    <span class="c1">#          ---</span>
-    <span class="c1">#          - -</span>
-    <span class="c1"># Air      ---</span>
-    <span class="c1">#          - -</span>
-    <span class="c1">#          - -</span>
+    <span class="c1"># Air       ---</span>
+    <span class="c1">#           ---</span>
+    <span class="c1">#           - -</span>
+    <span class="c1"># Mountain  ---</span>
+    <span class="c1">#           - -</span>
+    <span class="c1">#           - -</span>
+
 
 
     <span class="nb">print</span><span class="p">()</span>
@@ -3024,12 +3029,13 @@ RETURNED: 101100
     <span class="c1">#random.seed(1)</span>
     <span class="c1">#</span>
     <span class="c1"># Infiltrating 001011</span>
-    <span class="c1"># Mountain ---</span>
-    <span class="c1">#          ---</span>
-    <span class="c1">#          - -</span>
-    <span class="c1"># Air      ---</span>
-    <span class="c1">#          - -</span>
-    <span class="c1">#          - -</span>
+    <span class="c1"># Air       ---</span>
+    <span class="c1">#           ---</span>
+    <span class="c1">#           - -</span>
+    <span class="c1"># Mountain  ---</span>
+    <span class="c1">#           - -</span>
+    <span class="c1">#           - -</span>
+
 
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
 

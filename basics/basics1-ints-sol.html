@@ -1461,6 +1461,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---skyscraper">Exercise - skyscraper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---school-lab">Exercise - school lab</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---dump">Exercise - dump</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Esercizio---toepliz">Esercizio - toepliz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---matrix-multiplication">Exercise - matrix multiplication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Exercise---check_nqueen">Exercise - check_nqueen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../matrices-lists/matrices-lists2-sol.html#Continue">Continue</a></li>
@@ -2703,7 +2704,7 @@ div.rendered_html tbody tr:hover {
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&quot;Objects are Python’s abstraction for data. All data in a Python program is represented by objects or by relations between objects.&quot;
 </pre></div>
 </div>
-<p>For now it’s enough to know that Python objects have an <strong>identifier</strong> (like, their name), a <strong>type</strong> (numbers, text, collections, …) and a <strong>value</strong> (the actual value represented by objects). Once the object has been created the <em>identifier</em> and the <em>type</em> never change, while the <em>value</em> may change (<strong>mutable objects</strong>) or remain constant (<strong>immutable objects</strong>).</p>
+<p>For now it’s enough to know that Python objects have an <strong>identifier</strong> (like, their name), a <strong>type</strong> (numbers, text, collections, …) and a <strong>value</strong> (the actual value represented by objects). Once the object has been created the <em>identifier</em> and the <em>type</em> never change, while the <em>value</em> may remain constant (<strong>immutable objects</strong>) or it may change (<strong>mutable objects</strong>).</p>
 <p>Python provides these predefined types ( <em>built-in</em> ):</p>
 <table class="docutils align-default">
 <colgroup>
@@ -2974,51 +2975,41 @@ str
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm65d4bfc5-026f-434d-b158-129fb1f7dc3b" type="application/json" >
-    {"code": " \nflowers = 4   \n\nx = flowers + 1\n\nflowers = x", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"flowers": 4}, "ordered_globals": ["flowers"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"flowers": 4, "x": 5}, "ordered_globals": ["flowers", "x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"flowers": 5, "x": 5}, "ordered_globals": ["flowers", "x"], "stack_to_render": [], "heap": {}, "stdout": ""}]}
-</script>
-<div id="jm65d4bfc5-026f-434d-b158-129fb1f7dc3b" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-33a5b99e68f2cc72af3cdcd33ae3a55b" type="application/json" >
+        {"code": " \nflowers = 4   \n\nx = flowers + 1\n\nflowers = x", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"flowers": 4}, "ordered_globals": ["flowers"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"flowers": 4, "x": 5}, "ordered_globals": ["flowers", "x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"flowers": 5, "x": 5}, "ordered_globals": ["flowers", "x"], "stack_to_render": [], "heap": {}, "stdout": ""}]}
+    </script>
+    <div id="jm-33a5b99e68f2cc72af3cdcd33ae3a55b" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
+    (function(){
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+        var trace = JSON.parse(document.getElementById('json-jm-33a5b99e68f2cc72af3cdcd33ae3a55b').innerHTML);
+        // NOTE 1: id without #
 
-<script>
-(function(){
-
-    var trace = JSON.parse(document.getElementById('json-jm65d4bfc5-026f-434d-b158-129fb1f7dc3b').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm65d4bfc5-026f-434d-b158-129fb1f7dc3b',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-33a5b99e68f2cc72af3cdcd33ae3a55b',{'embeddedMode' : false,
+                                         'visualizerIdOverride':'viz-jm-33a5b99e68f2cc72af3cdcd33ae3a55b'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> Visualization provided by <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> </div></div>
 </div>
 <p>You can execute a sum and do an assignment at the same time with the <code class="docutils literal notranslate"><span class="pre">+=</span></code> notation</p>
 <div class="nbinput docutils container">
@@ -3629,11 +3620,11 @@ So many!
 <li><p><code class="docutils literal notranslate"><span class="pre">maybe3maybe</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">&quot;ciao&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">'hello'</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">as</span></code> PLEASE: DO UNDERSTAND THE <em>VERY IMPORTANT DIFFERENCE</em> BETWEEN THIS AND FOLLOWING TWOs !!!</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">as</span></code> Please understand the difference between with the following two</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">asino</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">As</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">lista</span></code> PLEASE: DO UNDERSTAND THE <em>VERY IMPORTANT DIFFERENCE</em> BETWEEN THIS AND FOLLOWING TWOs !!!</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">list</span></code> DO NOT EVEN TRY TO ASSIGN THIS ONE IN THE INTERPRETER (like <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">=</span> <span class="pre">5</span></code>), IF YOU DO YOU WILL BASICALLY BREAK PYTHON</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lista</span></code> Please understand the difference between with the following two</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">list</span></code> <strong>DO NOT try assigning this one in the interpreter (like</strong> <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">=</span> <span class="pre">5</span></code><strong>), doing so will basically break Python!</strong></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">List</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">black&amp;decker</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">black</span> <span class="pre">&amp;</span> <span class="pre">decker</span></code></p></li>

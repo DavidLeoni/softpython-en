@@ -1461,6 +1461,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---skyscraper">Exercise - skyscraper</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---school-lab">Exercise - school lab</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---dump">Exercise - dump</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Esercizio---toepliz">Esercizio - toepliz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---matrix-multiplication">Exercise - matrix multiplication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Exercise---check_nqueen">Exercise - check_nqueen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Continue">Continue</a></li>
@@ -4904,6 +4905,114 @@ check row at index i=3    ---&gt;  3   [0,7,0,5]   Check until column limit j=2 
 </div>
 </div>
 </section>
+<section id="Esercizio---toepliz">
+<h2>Esercizio - toepliz<a class="headerlink" href="#Esercizio---toepliz" title="Permalink to this headline"></a></h2>
+<p>✪✪✪ RETURN <code class="docutils literal notranslate"><span class="pre">True</span></code> if the matrix as list of lists is Toeplitz, otherwise RETURN <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<ul class="simple">
+<li><p>A matrix is Toeplitz if and only if every diagonal contains all the same elements</p></li>
+<li><p>We assume the matrix always contains at least a row of at least an element</p></li>
+</ul>
+<p><strong>HINT</strong>: use a couple of <code class="docutils literal notranslate"><span class="pre">for</span></code>, in the first one iterate by rows, in the second one by columns.</p>
+<p>Ask yourself:</p>
+<ul class="simple">
+<li><p>from which row should we start scanning? Is the first one useful?</p></li>
+<li><p>from which column should we start scanning? Is the first one useful?</p></li>
+<li><p>if we scan the rows from the first one toward the last one and we are examining a certain number at a certain row, which condition should that number meet for the matrix to be Toeplitz?</p></li>
+</ul>
+<p>Examples:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">m1</span> <span class="o">=</span> <span class="p">[</span>
+<span class="go">            [1,2,3,4],</span>
+<span class="go">            [5,1,2,3],</span>
+<span class="go">            [9,5,1,2]</span>
+<span class="go">        ]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">toepliz</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>On every diagonal there are the same numbers so it returns <code class="docutils literal notranslate"><span class="pre">True</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">m2</span> <span class="o">=</span> <span class="p">[</span>
+<span class="go">            [1, 2, 3, 4],</span>
+<span class="go">            [5, 1, 4, 3],</span>
+<span class="go">            [9, 3, 1, 2]</span>
+<span class="go">         ]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">toepliz</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>There is at least one diagonal with different numbers, in this case we have the diagonals 5,3 and 2,4,2 so it returns <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">toepliz</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="k">if</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">!=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
+
+
+<span class="c1"># TEST START - DO NOT TOUCH !</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">True</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">True</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">True</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>
+
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">True</span>
+
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>
+<span class="c1"># TEST END</span>
+</pre></div>
+</div>
+</div>
+</div><div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">toepliz</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s1">&#39;TODO IMPLEMENT ME !&#39;</span><span class="p">)</span>
+
+<span class="c1"># TEST START - DO NOT TOUCH !</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">True</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">True</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">True</span>
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>
+
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">True</span>
+
+<span class="k">assert</span> <span class="n">toepliz</span><span class="p">([</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="p">])</span> <span class="o">==</span> <span class="kc">False</span>
+<span class="c1"># TEST END</span>
+</pre></div>
+</div>
+</div>
+</section>
 <section id="Exercise---matrix-multiplication">
 <h2>Exercise - matrix multiplication<a class="headerlink" href="#Exercise---matrix-multiplication" title="Permalink to this headline"></a></h2>
 <p>✪✪✪ Have a look at <a class="reference external" href="https://en.wikipedia.org/w/index.php?title=Matrix_multiplication&amp;section=2#Definition">matrix multiplication definition</a> on Wikipedia and try to implement it in the following function.</p>
@@ -4918,7 +5027,7 @@ check row at index i=3    ---&gt;  3   [0,7,0,5]   Check until column limit j=2 
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mul</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
@@ -4986,7 +5095,7 @@ check row at index i=3    ---&gt;  3   [0,7,0,5]   Check until column limit j=2 
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mul</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span> <span class="n">matb</span><span class="p">):</span>
@@ -5135,7 +5244,7 @@ i
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">check_nqueen</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
@@ -5206,7 +5315,7 @@ i
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">check_nqueen</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
