@@ -2650,14 +2650,14 @@ div.rendered_html tbody tr:hover {
 </section>
 <section id="Introduction">
 <h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline"></a></h2>
-<p>Previously we’ve seen <a class="reference external" href="https://en.softpython.org/matrices-lists/matrices-lists-sol.html">Matrices as lists of lists</a>, here we focus on matrices using Numpy library</p>
-<p>There are substantially two ways to represent matrices in Python: as list of lists, or with the external library <a class="reference external" href="https://www.numpy.org">numpy</a>. The most used is surely Numpy, let’s see the reason the principal differences:</p>
+<p>There are substantially two ways to represent matrices in Python: we’ve first encountered <a class="reference external" href="https://en.softpython.org/matrices-lists/matrices-lists-sol.html">matrices as lists of lists</a>, in this tutorial we focus on matrices as provided by the widely used <a class="reference external" href="https://www.numpy.org">Numpy</a> library.</p>
+<p>Let’s see the main differences:</p>
 <p>List of lists - <a class="reference external" href="https://en.softpython.org/matrices-lists/matrices-lists1-sol.html">see separate notebook</a></p>
 <ol class="arabic simple">
 <li><p>native in Python</p></li>
 <li><p>not efficient</p></li>
 <li><p>lists are pervasive in Python, probably you will encounter matrices expressed as list of lists anyway</p></li>
-<li><p>give an idea of how to build a nested data structure</p></li>
+<li><p>gives an idea of how to build a nested data structure</p></li>
 <li><p>may help in understanding important concepts like pointers to memory and copies</p></li>
 </ol>
 <p>Numpy - this notebook</p>
@@ -2665,13 +2665,13 @@ div.rendered_html tbody tr:hover {
 <li><p>not natively available in Python</p></li>
 <li><p>efficient</p></li>
 <li><p>many libraries for scientific calculations are based on Numpy (scipy, pandas)</p></li>
-<li><p>syntax to access elements is slightly different from list of lists</p></li>
+<li><p>easier syntax to access elements (slightly different from list of lists)</p></li>
 <li><p>in rare cases might give problems of installation and/or conflicts (implementation is not pure Python)</p></li>
 </ol>
-<p>Here we will see data types and essential commands of <a class="reference external" href="https://www.numpy.org">Numpy library</a>, but we will not get into the details.</p>
-<p>The idea is to simply pass using the the data format <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> without caring too much about performances: for example, even if <code class="docutils literal notranslate"><span class="pre">for</span></code> cycles in Python are slow because they operate cell by cell, we will use them anyway. In case you actually need to execute calculations fast, you will want to use operators on vectors but for this we invite you to read links below</p>
+<p>We will only see main data types and essential commands of <a class="reference external" href="https://www.numpy.org">Numpy library</a>, without going much into the details. In particular, we will review the new data format <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> and compare slow algorithms with Python <code class="docutils literal notranslate"><span class="pre">for</span></code> cycles to faster ones made possible by idiomatic use of Numpy vector operations.</p>
+<p>For further references, see <a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html">Python Data Science Handbook, Numpy part</a></p>
 <div class="admonition warning">
-<p><strong>ATTENTION</strong>: Numpy does not work in <a class="reference external" href="http://www.pythontutor.com/visualize.html#mode=edit">Python Tutor</a></p>
+<p><strong>WARNING</strong>: Numpy does not work in <a class="reference external" href="http://www.pythontutor.com/visualize.html#mode=edit">Python Tutor</a></p>
 </div>
 <section id="What-to-do">
 <h3>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h3>
