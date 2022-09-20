@@ -147,9 +147,6 @@ exclude_patterns.extend(jm.zip_ignored)
 # Default language for syntax highlighting in reST and Markdown cells
 highlight_language = 'none'
 
-# Don't add .txt suffix to source files (available for Sphinx >= 1.5):
-html_sourcelink_suffix = ''
-
 # Execute notebooks before conversion: 'always', 'never', 'auto' (default)
 nbsphinx_execute = 'never'   
     
@@ -206,6 +203,14 @@ html_title = project # + ' version ' + release
 # since sphinx 1.8
 html_baseurl = 'https://en.softpython.org'
 
+# Don't add .txt suffix to source files (available for Sphinx >= 1.5):
+html_sourcelink_suffix = ''
+
+
+#html_logo = '_static/img/jupman/jupman.svg'
+html_favicon = '_static/img/favicon.ico'
+
+
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
 
@@ -238,16 +243,15 @@ html_static_path = ['_static/']
 
 
 html_js_files = [
-    'js/jupman.js',  # shared among jupyter and ReadTheDocs
+    'js/jupman.3.5.6.js',  # shared among jupyter and ReadTheDocs
     'js/pytutor-embed.bundle.min.js',
     'js/softpython.js'
 ]
 
 html_css_files = [
-    'css/jupman.3.5.5.css',      # shared among jupyter and website
-    'css/jupman-web.3.5.5.css',  # only on website
+    'css/jupman.3.5.6.css',      # shared among jupyter and website
+    'css/jupman-web.3.5.6.css',  # only on website
     'css/softpython-theme.3.5.5.css'
-
 ]
 
 
