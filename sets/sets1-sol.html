@@ -7,9 +7,10 @@
   <title>Sets &mdash; SoftPython</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman.3.5.6.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.6.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.5.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme-textures.3.5.7.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://en.softpython.org/sets/sets1-sol.html" />
   <!--[if lt IE 9]>
@@ -23,7 +24,7 @@
         <script src="../_static/js/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
         <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
-        <script src="../_static/js/jupman.3.5.6.js"></script>
+        <script src="../_static/js/jupman.3.5.7.js"></script>
         <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
         <script src="../_static/js/softpython.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -139,11 +140,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Beyond-True-and-False">Beyond <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Strings---string">Strings - string</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Strings---str">Strings - str</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Using-object-methods">Using object methods</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Liste---list">Liste - list</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Lists---list">Lists - list</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Ordering-lists">Ordering lists</a></li>
 </ul>
 </li>
@@ -337,6 +338,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Conversions---from-number-to-string">Conversions - from number to string</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-strings">Formatting strings</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-%">Formatting with <code class="docutils literal notranslate"><span class="pre">%</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-f-strings">Formatting with f-strings</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Exercise---supercars">Exercise - supercars</a></li>
 </ul>
 </li>
@@ -364,7 +366,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---the-run">Exercise - the run</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Inclusion-operator">Inclusion operator</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-1">Exercise - contained 1</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-2">Exercise - contained 2</a></li>
@@ -526,7 +528,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---Glory-to-Gladiators!">Exercise - Glory to Gladiators!</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Membership">Membership</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#not-in">not in</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---vegetables">Exercise - vegetables</a></li>
@@ -541,7 +543,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---balance">Exercise - balance</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Multiplying-lists">Multiplying lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#List-replication">List replication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Equality">Equality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Continue">Continue</a></li>
 </ul>
@@ -586,6 +588,11 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---dub-dab-dib-dob">Exercise - dub dab dib dob</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---ghirigori">Exercise - ghirigori</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---welldone">Exercise - welldone</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#copy-method"><code class="docutils literal notranslate"><span class="pre">copy</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#copy-is-shallow"><code class="docutils literal notranslate"><span class="pre">copy</span></code> is shallow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#deepcopy-function"><code class="docutils literal notranslate"><span class="pre">deepcopy</span></code> function</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Continue">Continue</a></li>
@@ -647,7 +654,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Slices">Slices</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Concatenation">Concatenation</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Membership">Membership</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Multiplication">Multiplication</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Replication">Replication</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---welcome">Exercise - welcome</a></li>
 </ul>
 </li>
@@ -698,9 +705,9 @@
 <li class="toctree-l5"><a class="reference internal" href="#Intersection">Intersection</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Difference">Difference</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Symmetric-difference">Symmetric difference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Equality">Equality</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#Equality">Equality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Methods-like-operators">Methods like operators</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#union">union</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#update">update</a></li>
@@ -1787,86 +1794,78 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../toc-analytics.html#pandas">Pandas</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas1-sol.html">Intro</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#1.-What-to-do">1. What to do</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Check-installation">Check installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas1-intro-sol.html">Intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#1.-What-to-do">1. What to do</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Check-installation">Check installation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Which-pandas-should-I-use?">Which pandas should I use?</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#2.-Data-analysis-of-Astro-Pi">2. Data analysis of Astro Pi</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#2.1-Exercise---meteo-info">2.1 Exercise - meteo info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.-Data-analysis-of-Astro-Pi">2. Data analysis of Astro Pi</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.1-Let's-import-the-file">2.1 Let’s import the file</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.2-Memory">2.2 Memory</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.3-Dimensions">2.3 Dimensions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.4-Let's-explore!">2.4 Let’s explore!</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.5-Some-stats">2.5 Some stats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.6-Guardiamo-le-colonne">2.6 Guardiamo le colonne</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.7-What-is-a-column?">2.7 What is a column?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.8-Exercise---meteo-info">2.8 Exercise - meteo info</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#3.-MatPlotLib-review">3. MatPlotLib review</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#3.1-An-example">3.1 An example</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#3.2-Matplotlib-plots-from-pandas-datastructures">3.2 Matplotlib plots from pandas datastructures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.-MatPlotLib-review">3. MatPlotLib review</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.1-An-example">3.1 An example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.2-Matplotlib-plots-from-pandas-datastructures">3.2 Matplotlib plots from pandas datastructures</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#4.-Operations-on-rows">4. Operations on rows</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.1-Indexing-integers">4.1 Indexing integers</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.2-Filtering">4.2 Filtering</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.3-Sorting">4.3 Sorting</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.4-Exercise---Meteo-stats">4.4 Exercise - Meteo stats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.-Operations-on-rows">4. Operations on rows</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.1-Indexing-integers">4.1 Indexing integers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Difference-between-iloc-and-loc">Difference between <code class="docutils literal notranslate"><span class="pre">iloc</span></code> and <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.2-Filtering">4.2 Filtering</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.3-Sorting">4.3 Sorting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.4-Exercise---Meteo-stats">4.4 Exercise - Meteo stats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.5-Exercise---meteo-plot">4.5 Exercise - meteo plot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.6-Exercise---Meteo-pressure-and-raining">4.6 Exercise - Meteo pressure and raining</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#5.-Object-values-and-strings">5. Object values and strings</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.1-Filter-by-textual-values">5.1 Filter by textual values</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.2-Extracting-strings">5.2 Extracting strings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.-Object-values-and-strings">5. Object values and strings</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.1-Filter-by-textual-values">5.1 Filter by textual values</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.2-Extracting-strings">5.2 Extracting strings</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#6.-Operations-on-columns">6. Operations on columns</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.1---Selecting-columns">6.1 - Selecting columns</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2---Adding-columns">6.2 - Adding columns</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">6.2.1 Exercise: Meteo temperature in Fahrenheit</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2.2-Exercise---Pressure-vs-Temperature">6.2.2 Exercise - Pressure vs Temperature</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.3-Transforming-columns">6.3 Transforming columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.-Operations-on-columns">6. Operations on columns</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.1---Selecting-columns">6.1 - Selecting columns</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2---Adding-columns">6.2 - Adding columns</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">6.2.1 Exercise: Meteo temperature in Fahrenheit</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2.2-Exercise---Pressure-vs-Temperature">6.2.2 Exercise - Pressure vs Temperature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.3-Scrivere-in-colonne-filtrate-con-loc">6.3 Scrivere in colonne filtrate con <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.3-Transforming-columns">6.3 Transforming columns</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#7.-Grouping">7. Grouping</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#8.-Exercise---meteo-average-temperatures">8. Exercise - meteo average temperatures</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.1-meteo-plot">8.1 meteo plot</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.2-meteo-pressure-and-raining">8.2 meteo pressure and raining</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.3-meteo-average-temperature">8.3 meteo average temperature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.-Other-exercises">7. Other exercises</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.1-Exercise---Air-pollutants">7.1 Exercise - Air pollutants</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.2-Exercise---Game-of-Thrones">7.2 Exercise - Game of Thrones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.3-Exercise---Healthcare-facilities">7.3 Exercise - Healthcare facilities</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#9-Exercise---Air-pollutants">9 Exercise - Air pollutants</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.1---load-the-file">9.1 - load the file</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.2---pollutants-average">9.2 - pollutants average</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.3---PM10-chart">9.3 - PM10 chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#10.-Merging-tables">10. Merging tables</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Exercise-10.1---better-merge">Exercise 10.1 - better merge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html">Advanded operations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.-Grouping">1. Grouping</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.1-Let's-see-a-group">1.1 Let’s see a group</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.2-groupby">1.2 <code class="docutils literal notranslate"><span class="pre">groupby</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.3-Modifying-a-dataframe-by-plugging-in-the-result-of-a-grouping">1.3 Modifying a dataframe by plugging in the result of a grouping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.4-Exercise---meteo-pressure-intervals">1.4 Exercise - meteo pressure intervals</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.5-Exercise---meteo-average-temperature">1.5 Exercise - meteo average temperature</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#11.-GeoPandas">11. GeoPandas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Continue">Continue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#2.-Merging-tables">2. Merging tables</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Exercise-2.1---better-merge">Exercise 2.1 - better merge</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas2-sol.html">Exercises</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Download-exercises-and-solution">Download exercises and solution</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#What-to-do">What to do</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#offerte-dataset">offerte dataset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#rename-columns">rename columns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.1-countries_to_list">1.1 countries_to_list</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.2-Filling-column-Workplace-Country">1.2 Filling column Workplace Country</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#2.-Work-dates">2. Work dates</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.1-from_to-function">2.1 from_to function</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.2.-From-To-columns">2.2. From To columns</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#3.-Required-languages">3. Required languages</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.1-function-reqlan">3.1 function reqlan</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.2-Languages-column">3.2 Languages column</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Continue">Continue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#3.-GeoPandas">3. GeoPandas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../pandas/pandas3-chal.html">Challenges</a><ul>
@@ -2185,6 +2184,32 @@
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A1-extract_bounds">A1 extract_bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A2-extract_product">A2 extract_product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A3-plot_product">A3 plot_product</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../projects/eures/eures-sol.html">EURES job offers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Download-worked-project">Download worked project</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#offerte-dataset">offerte dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#rename-columns">rename columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#1.1-countries_to_list">1.1 countries_to_list</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#1.2-Filling-column-Workplace-Country">1.2 Filling column Workplace Country</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#2.-Work-dates">2. Work dates</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#2.1-from_to-function">2.1 from_to function</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#2.2.-From-To-columns">2.2. From To columns</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#3.-Required-languages">3. Required languages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#3.1-function-reqlan">3.1 function reqlan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#3.2-Languages-column">3.2 Languages column</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
 </ul>
@@ -2724,7 +2749,7 @@ set
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;d&#39;, &#39;c&#39;, &#39;a&#39;, &#39;b&#39;}
+{&#39;a&#39;, &#39;d&#39;, &#39;b&#39;, &#39;c&#39;}
 </pre></div></div>
 </div>
 <p>The output shows the order in which the print was made is different from the order in which we built the set. Also, according to the Python version you’re using, on your computer it might be even different!</p>
@@ -2879,7 +2904,7 @@ set
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
--6776771877508249567
+1137365577994337037
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
@@ -2905,7 +2930,7 @@ set
 <li><p>it is enough long to identify <em>almost uniquely</em> the object…</p></li>
 <li><p>… even if in the world there <em>might</em> be different objects which have associated exactly the same label</p></li>
 </ul>
-<p><strong>What’s the relation with our sets?</strong> The <em>hash</em> has various applications, but typically Python uses it to quickly find an object in collections which are based on hashes, like sets and dictionaries. How much fast? Very: even with homongous sets, we always obtain an answer in a constant very short time! In other words, the answer speed <em>does not</em> depend on the set dimension (except for pathological cases we don’t review here).</p>
+<p><strong>What’s the relation with our sets?</strong> The <em>hash</em> has various applications, but typically Python uses it to quickly find an object in collections which are based on hashes, like sets and dictionaries. How much fast? Very fast: even with homongous sets, we always obtain an answer in a constant very short time! In other words, the answer speed <em>does not</em> depend on the set dimension (except for pathological cases we don’t review here).</p>
 <p>This velocity is permitted by the fact that given some object to search, Python is able to rapidly calculate its <em>hash</em> label: then, with the label in the hand, so to speak, it can manage to quickly find in the memory store whether there are objects which have the same label. If they are found, they will almost surely be very few, so Python will only need to compare them with the searched one.</p>
 <p><strong>*Immutable*</strong> <strong>objects always have the same hash label</strong> from when they are created until the end of the program. Instead, the <em>mutable</em> ones behave differently: each time we change an object, the <em>hash</em> also changes. Imagine a market where employees place food by looking at labels and separating accordingly for example the coffee in the shelves for the breakfast and bleach in the shelves for detergents. If you are a customer and you want some coffee, you look at signs and directly go toward
 the shelves for breakfast stuff. Image what could happen if an evil sorcerer could transform the objects already placed into other objects, like for example the coffee into bleach (let’s assume that at the moment of the transmutation the <em>hash</em> label also changes). Much confusion would certainly follow, and, if we aren’t cautious, also a great stomachache or worse.</p>
@@ -3146,42 +3171,51 @@ lb = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;]
 <h2>Operators<a class="headerlink" href="#Operators" title="Permalink to this headline"></a></h2>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 22%" />
-<col style="width: 14%" />
-<col style="width: 64%" />
+<col style="width: 23%" />
+<col style="width: 18%" />
+<col style="width: 23%" />
+<col style="width: 36%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Syntax</p></th>
 <th class="head"><p>Result</p></th>
 <th class="head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">len</span></code>(set)</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="#len">length</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">len</span></code>(set)</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">int</span></code></p></td>
 <td><p>the number of elements in the set</p></td>
 </tr>
-<tr class="row-odd"><td><p>el <code class="docutils literal notranslate"><span class="pre">in</span></code> set</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="#Membership">membership</a></p></td>
+<td><p>el <code class="docutils literal notranslate"><span class="pre">in</span></code> set</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p></td>
 <td><p>verifies whether an element is contained in the set</p></td>
 </tr>
-<tr class="row-even"><td><p>set | set</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="#Union">union</a></p></td>
+<td><p>set1 | set2</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">set</span></code></p></td>
 <td><p>union, creates a NEW set</p></td>
 </tr>
-<tr class="row-odd"><td><p>set <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> set</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="#Intersection">intersection</a></p></td>
+<td><p>set1 <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> set2</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">set</span></code></p></td>
 <td><p>intersetion, creates a NEW set</p></td>
 </tr>
-<tr class="row-even"><td><p>set <code class="docutils literal notranslate"><span class="pre">-</span></code> set</p></td>
+<tr class="row-even"><td><p><a class="reference external" href="#Difference">difference</a></p></td>
+<td><p>set1 <code class="docutils literal notranslate"><span class="pre">-</span></code> set2</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">set</span></code></p></td>
 <td><p>difference, creates a NEW set</p></td>
 </tr>
-<tr class="row-odd"><td><p>set <code class="docutils literal notranslate"><span class="pre">^</span></code> set</p></td>
+<tr class="row-odd"><td><p><a class="reference external" href="#Symmetric-difference">symmetric difference</a></p></td>
+<td><p>set1 <code class="docutils literal notranslate"><span class="pre">^</span></code> set2</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">set</span></code></p></td>
 <td><p>symmetric difference, creates a NEW set</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">==</span></code>,<code class="docutils literal notranslate"><span class="pre">!=</span></code></p></td>
+<tr class="row-even"><td><p><a class="reference external" href="#Equality">equality</a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">==</span></code>,<code class="docutils literal notranslate"><span class="pre">!=</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">bool</span></code></p></td>
 <td><p>checks whether two sets are equal or different</p></td>
 </tr>
@@ -3340,7 +3374,73 @@ False
 <p class="admonition-title fa fa-exclamation-circle"><code class="docutils literal notranslate"><span class="pre">in</span></code> <strong>IS VERY FAST WHEN USED WITH SETS</strong></p>
 <p>The speed of <code class="docutils literal notranslate"><span class="pre">in</span></code> operator DOES NOT depend on the set dimension</p>
 </div>
-<p>This is a substantial difference with respect to other sequences we’ve already seen: if you try searching for an element with <code class="docutils literal notranslate"><span class="pre">in</span></code> in strings, lists or tuples, and the element to find is toward the end (or there isn’t at all), Python will have to look through the whole sequence.</p>
+<p>This is a substantial difference with respect to other sequences we’ve already seen: if you try searching for an element with <code class="docutils literal notranslate"><span class="pre">in</span></code> through strings, lists or tuples, and the searched element is toward the end (or isn’t there at all), Python will have to look through the whole sequence.</p>
+<section id="What-can-we-search?">
+<h4>What can we search?<a class="headerlink" href="#What-can-we-search?" title="Permalink to this headline"></a></h4>
+<p>The price to pay for having a fast search is that we can only search <em>immutable</em> elements. Before searching, Python tries to calculate the <em>hash</em> label of the object to search: if it succeeds, it goes on searching, otherwise complains and raises an exception. For example, if we try searching a mutabile element like a list, Python will refuse:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s2">&quot;lattuce&quot;</span><span class="p">,</span> <span class="s2">&quot;rucola&quot;</span><span class="p">]</span> <span class="ow">in</span> <span class="p">{</span> <span class="p">(</span><span class="s2">&quot;cabbage&quot;</span><span class="p">,</span> <span class="s2">&quot;potatoes&quot;</span><span class="p">),</span>
+                           <span class="p">(</span><span class="s2">&quot;lattuce&quot;</span><span class="p">,</span> <span class="s2">&quot;rucola&quot;</span><span class="p">),</span>
+                           <span class="p">(</span><span class="s2">&quot;radishes&quot;</span><span class="p">,</span> <span class="s2">&quot;courgette&quot;</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="o">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span>                                 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_23977</span><span class="o">/</span><span class="mf">3154816283.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">----&gt;</span> <span class="mi">1</span> <span class="p">[</span><span class="s2">&quot;lattuce&quot;</span><span class="p">,</span> <span class="s2">&quot;rucola&quot;</span><span class="p">]</span> <span class="ow">in</span> <span class="p">{</span> <span class="p">(</span><span class="s2">&quot;cabbage&quot;</span><span class="p">,</span> <span class="s2">&quot;potatoes&quot;</span><span class="p">),</span>
+                                   <span class="p">(</span><span class="s2">&quot;lattuce&quot;</span><span class="p">,</span> <span class="s2">&quot;rucola&quot;</span><span class="p">),</span>
+                                   <span class="p">(</span><span class="s2">&quot;radishes&quot;</span><span class="p">,</span> <span class="s2">&quot;courgette&quot;</span><span class="p">)</span> <span class="p">}</span>
+
+<span class="ne">TypeError</span><span class="p">:</span> <span class="n">unhashable</span> <span class="nb">type</span><span class="p">:</span> <span class="s1">&#39;list&#39;</span>
+</pre></div>
+</div>
+<p><strong>QUESTION</strong>: What result do you expect from this code?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="s2">&quot;rucola&quot;</span><span class="p">,</span> <span class="s2">&quot;radishes&quot;</span><span class="p">)</span> <span class="ow">in</span> <span class="p">{</span> <span class="p">(</span><span class="s2">&quot;cabbage&quot;</span><span class="p">,</span> <span class="s2">&quot;potatoes&quot;</span><span class="p">),</span>
+                            <span class="p">(</span><span class="s2">&quot;lattuce&quot;</span><span class="p">,</span> <span class="s2">&quot;rucola&quot;</span><span class="p">),</span>
+                            <span class="p">(</span><span class="s2">&quot;radishes&quot;</span><span class="p">,</span> <span class="s2">&quot;courgette&quot;</span><span class="p">)</span> <span class="p">}</span>
+</pre></div>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: the set is created correctly because it only contains tuples as elements, which are immutable. Afterwards, by using the <code class="docutils literal notranslate"><span class="pre">in</span></code> operator we ask Python to verify whether the tuple <code class="docutils literal notranslate"><span class="pre">(&quot;rucola&quot;,</span> <span class="pre">&quot;radishes&quot;)</span></code> is an element of the set. We are looking for a tuple which is an immutable sequence, so Python succeeds in calculating the <em>hash</em> label and the search ends without errors. Since the tuple does not belong to the set, the expression produces the value <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</div><p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing the result (or if it gives an error):</p>
+<ol class="arabic">
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">*</span><span class="mi">10</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;four&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;aa&#39;</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;aa&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">3</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">},</span> <span class="mi">6</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span> <span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="ow">in</span> <span class="p">{</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;3.4&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">}</span> <span class="ow">in</span> <span class="p">{(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">)}</span>
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">}</span> <span class="ow">in</span> <span class="p">[{</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">}]</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
 <section id="not-in">
 <h4>not in<a class="headerlink" href="#not-in" title="Permalink to this headline"></a></h4>
 <p>To check whether something is <strong>not</strong> belonging to a sequence, we can use two forms:</p>
@@ -3416,34 +3516,6 @@ False
 </div>
 <p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing the result (or if it gives an error):</p>
 <ol class="arabic">
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span><span class="o">*</span><span class="mi">10</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;four&#39;</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;f&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;u&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;aa&#39;</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;aa&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;a&#39;</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">3</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">},</span> <span class="mi">6</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span> <span class="p">]</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span> <span class="ow">in</span> <span class="p">{</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;3.4&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))}</span>
-</pre></div>
-</div>
-</li>
 <li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
 </pre></div>
 </div>
@@ -3917,9 +3989,8 @@ False
 </pre></div>
 </div>
 </div></section>
-</section>
 <section id="Equality">
-<h2>Equality<a class="headerlink" href="#Equality" title="Permalink to this headline"></a></h2>
+<h3>Equality<a class="headerlink" href="#Equality" title="Permalink to this headline"></a></h3>
 <p>We can check whether two sets are equal by using the equality operator <code class="docutils literal notranslate"><span class="pre">==</span></code>, which given two sets return <code class="docutils literal notranslate"><span class="pre">True</span></code> if they contain the same elements or <code class="docutils literal notranslate"><span class="pre">False</span></code> otherwise:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
@@ -4128,6 +4199,7 @@ False
 </li>
 </ol>
 </section>
+</section>
 <section id="Methods-like-operators">
 <h2>Methods like operators<a class="headerlink" href="#Methods-like-operators" title="Permalink to this headline"></a></h2>
 <p>There are methods which behave like the operators<code class="docutils literal notranslate"><span class="pre">|</span></code>, <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">^</span></code> by creating a <strong>NEW</strong> set.</p>
@@ -4273,51 +4345,44 @@ False
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmc104d4fd-892d-4bba-b058-b580a4f42b32" type="application/json" >
-    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nsb = sa.union(la)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "sb": ["REF", 3]}, "ordered_globals": ["sa", "la", "sb"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"], "3": ["SET", "o", "i", "r", "a", "g"]}, "stdout": ""}]}
-</script>
-<div id="jmc104d4fd-892d-4bba-b058-b580a4f42b32" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-70cca389e479c626cd06a9fa16aa8d7e-48" type="application/json" >
+        {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nsb = sa.union(la)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "a", "g", "r"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "a", "g", "r"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "sb": ["REF", 3]}, "ordered_globals": ["sa", "la", "sb"], "stack_to_render": [], "heap": {"1": ["SET", "a", "g", "r"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"], "3": ["SET", "a", "r", "i", "g", "o"]}, "stdout": ""}]}
+    </script>
+    <div id="jm-70cca389e479c626cd06a9fa16aa8d7e-48" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-70cca389e479c626cd06a9fa16aa8d7e-48').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jmc104d4fd-892d-4bba-b058-b580a4f42b32').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmc104d4fd-892d-4bba-b058-b580a4f42b32',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-70cca389e479c626cd06a9fa16aa8d7e-48',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-70cca389e479c626cd06a9fa16aa8d7e-48'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 </section>
 <section id="update">
@@ -4360,7 +4425,7 @@ False
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;o&#39;, &#39;i&#39;, &#39;r&#39;, &#39;a&#39;, &#39;g&#39;}
+{&#39;a&#39;, &#39;r&#39;, &#39;i&#39;, &#39;g&#39;, &#39;o&#39;}
 </pre></div></div>
 </div>
 <p><strong>QUESTION</strong>: what did the call to <code class="docutils literal notranslate"><span class="pre">update</span></code> return?</p>
@@ -4387,7 +4452,7 @@ False
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;o&#39;, &#39;i&#39;, &#39;r&#39;, &#39;a&#39;, &#39;g&#39;}
+{&#39;a&#39;, &#39;r&#39;, &#39;i&#39;, &#39;g&#39;, &#39;o&#39;}
 None
 </pre></div></div>
 </div>
@@ -4396,51 +4461,44 @@ None
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jma3ab1240-ff33-411c-9021-d028c1a75aa0" type="application/json" >
-    {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nx = sa.update(la)\nprint(sa)\nprint(x)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "r", "g", "a"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "o", "i", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "o", "i", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'o', 'i', 'r', 'a', 'g'}\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "o", "i", "r", "a", "g"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'o', 'i', 'r', 'a', 'g'}\nNone\n"}]}
-</script>
-<div id="jma3ab1240-ff33-411c-9021-d028c1a75aa0" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-707a2f22c6a156324d969586b3f56170-53" type="application/json" >
+        {"code": " \nsa = {'g','a','r','a'}\nla = ['a','g','r','a','r','i','o']\nx = sa.update(la)\nprint(sa)\nprint(x)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1]}, "ordered_globals": ["sa"], "stack_to_render": [], "heap": {"1": ["SET", "a", "g", "r"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2]}, "ordered_globals": ["sa", "la"], "stack_to_render": [], "heap": {"1": ["SET", "a", "g", "r"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "a", "r", "i", "g", "o"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "a", "r", "i", "g", "o"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'a', 'r', 'i', 'g', 'o'}\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"sa": ["REF", 1], "la": ["REF", 2], "x": null}, "ordered_globals": ["sa", "la", "x"], "stack_to_render": [], "heap": {"1": ["SET", "a", "r", "i", "g", "o"], "2": ["LIST", "a", "g", "r", "a", "r", "i", "o"]}, "stdout": "{'a', 'r', 'i', 'g', 'o'}\nNone\n"}]}
+    </script>
+    <div id="jm-707a2f22c6a156324d969586b3f56170-53" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-707a2f22c6a156324d969586b3f56170-53').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jma3ab1240-ff33-411c-9021-d028c1a75aa0').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jma3ab1240-ff33-411c-9021-d028c1a75aa0',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-707a2f22c6a156324d969586b3f56170-53',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-707a2f22c6a156324d969586b3f56170-53'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p><strong>QUESTION</strong>: Look at the following expressions, and for each try guessing the result (or if it gives an error):</p>
 <ol class="arabic">
@@ -4484,14 +4542,6 @@ None
 </div>
 </li>
 </ol>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div>
 </section>
 <section id="Exercise---everythingbut-2">
 <h3>Exercise - everythingbut 2<a class="headerlink" href="#Exercise---everythingbut-2" title="Permalink to this headline"></a></h3>
@@ -4533,7 +4583,7 @@ None
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;a&#39;, &#39;g&#39;}
+{&#39;a&#39;, &#39;d&#39;, &#39;c&#39;, &#39;g&#39;, &#39;e&#39;}
 </pre></div></div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4553,7 +4603,7 @@ None
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-{&#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;a&#39;, &#39;g&#39;}
+{&#39;a&#39;, &#39;d&#39;, &#39;c&#39;, &#39;g&#39;, &#39;e&#39;}
 </pre></div></div>
 </div>
 </section>
@@ -4723,51 +4773,44 @@ None
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm2a61fe67-e7ba-4eea-a981-63b2128dd760" type="application/json" >
-    {"code": " \nx = {'a','b'}\ny = set(x)\nx.add('c')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1]}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {"1": ["SET", "a", "b"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "a", "b"], "2": ["SET", "a", "b"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "c", "a", "b"], "2": ["SET", "a", "b"]}, "stdout": ""}]}
-</script>
-<div id="jm2a61fe67-e7ba-4eea-a981-63b2128dd760" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-ada3b8aa99a3517eae68e8c5e733896e-60" type="application/json" >
+        {"code": " \nx = {'a','b'}\ny = set(x)\nx.add('c')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1]}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {"1": ["SET", "a", "b"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "a", "b"], "2": ["SET", "a", "b"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"x": ["REF", 1], "y": ["REF", 2]}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {"1": ["SET", "a", "b", "c"], "2": ["SET", "a", "b"]}, "stdout": ""}]}
+    </script>
+    <div id="jm-ada3b8aa99a3517eae68e8c5e733896e-60" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-ada3b8aa99a3517eae68e8c5e733896e-60').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jm2a61fe67-e7ba-4eea-a981-63b2128dd760').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm2a61fe67-e7ba-4eea-a981-63b2128dd760',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-ada3b8aa99a3517eae68e8c5e733896e-60',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-ada3b8aa99a3517eae68e8c5e733896e-60'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 </section>
 <section id="remove-method">
@@ -5065,10 +5108,10 @@ Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-Initial trash: {&#39;mercury&#39;, &#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;}
-Applying filter for cadmium : {&#39;mercury&#39;, &#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;}
-Applying filter for mercury : {&#39;vegetables&#39;, &#39;paper&#39;, &#39;alkenes&#39;}
-Applying filter for alkenes : {&#39;vegetables&#39;, &#39;paper&#39;}
+Initial trash: {&#39;mercury&#39;, &#39;alkenes&#39;, &#39;paper&#39;, &#39;vegetables&#39;}
+Applying filter for cadmium : {&#39;mercury&#39;, &#39;alkenes&#39;, &#39;paper&#39;, &#39;vegetables&#39;}
+Applying filter for mercury : {&#39;alkenes&#39;, &#39;paper&#39;, &#39;vegetables&#39;}
+Applying filter for alkenes : {&#39;paper&#39;, &#39;vegetables&#39;}
 
 Separated contaminants: {&#39;mercury&#39;, &#39;alkenes&#39;}
 </pre></div></div>
@@ -5386,7 +5429,7 @@ Is the sequence a matrioska? True
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
+    <p>&#169; Copyright # CC-BY 2017 - 2023, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -7,9 +7,10 @@
   <title>Matrices: Numpy 1 &mdash; SoftPython</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman.3.5.6.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.6.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.5.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme-textures.3.5.7.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://en.softpython.org/matrices-numpy/matrices-numpy1-sol.html" />
   <!--[if lt IE 9]>
@@ -23,7 +24,7 @@
         <script src="../_static/js/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
         <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
-        <script src="../_static/js/jupman.3.5.6.js"></script>
+        <script src="../_static/js/jupman.3.5.7.js"></script>
         <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
         <script src="../_static/js/softpython.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -139,11 +140,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Beyond-True-and-False">Beyond <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Strings---string">Strings - string</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Strings---str">Strings - str</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Using-object-methods">Using object methods</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Liste---list">Liste - list</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Lists---list">Lists - list</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Ordering-lists">Ordering lists</a></li>
 </ul>
 </li>
@@ -337,6 +338,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Conversions---from-number-to-string">Conversions - from number to string</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-strings">Formatting strings</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-%">Formatting with <code class="docutils literal notranslate"><span class="pre">%</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-f-strings">Formatting with f-strings</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Exercise---supercars">Exercise - supercars</a></li>
 </ul>
 </li>
@@ -364,7 +366,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---the-run">Exercise - the run</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Inclusion-operator">Inclusion operator</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-1">Exercise - contained 1</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-2">Exercise - contained 2</a></li>
@@ -526,7 +528,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---Glory-to-Gladiators!">Exercise - Glory to Gladiators!</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Membership">Membership</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#not-in">not in</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---vegetables">Exercise - vegetables</a></li>
@@ -541,7 +543,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---balance">Exercise - balance</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Multiplying-lists">Multiplying lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#List-replication">List replication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Equality">Equality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Continue">Continue</a></li>
 </ul>
@@ -586,6 +588,11 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---dub-dab-dib-dob">Exercise - dub dab dib dob</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---ghirigori">Exercise - ghirigori</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---welldone">Exercise - welldone</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#copy-method"><code class="docutils literal notranslate"><span class="pre">copy</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#copy-is-shallow"><code class="docutils literal notranslate"><span class="pre">copy</span></code> is shallow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#deepcopy-function"><code class="docutils literal notranslate"><span class="pre">deepcopy</span></code> function</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Continue">Continue</a></li>
@@ -647,7 +654,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Slices">Slices</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Concatenation">Concatenation</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Membership">Membership</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Multiplication">Multiplication</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Replication">Replication</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---welcome">Exercise - welcome</a></li>
 </ul>
 </li>
@@ -698,9 +705,9 @@
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Intersection">Intersection</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Difference">Difference</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Symmetric-difference">Symmetric difference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Equality">Equality</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Equality">Equality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Methods-like-operators">Methods like operators</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#union">union</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#update">update</a></li>
@@ -1787,86 +1794,78 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../toc-analytics.html#pandas">Pandas</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas1-sol.html">Intro</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#1.-What-to-do">1. What to do</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Check-installation">Check installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas1-intro-sol.html">Intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#1.-What-to-do">1. What to do</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Check-installation">Check installation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Which-pandas-should-I-use?">Which pandas should I use?</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#2.-Data-analysis-of-Astro-Pi">2. Data analysis of Astro Pi</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#2.1-Exercise---meteo-info">2.1 Exercise - meteo info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.-Data-analysis-of-Astro-Pi">2. Data analysis of Astro Pi</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.1-Let's-import-the-file">2.1 Let’s import the file</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.2-Memory">2.2 Memory</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.3-Dimensions">2.3 Dimensions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.4-Let's-explore!">2.4 Let’s explore!</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.5-Some-stats">2.5 Some stats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.6-Guardiamo-le-colonne">2.6 Guardiamo le colonne</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.7-What-is-a-column?">2.7 What is a column?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.8-Exercise---meteo-info">2.8 Exercise - meteo info</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#3.-MatPlotLib-review">3. MatPlotLib review</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#3.1-An-example">3.1 An example</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#3.2-Matplotlib-plots-from-pandas-datastructures">3.2 Matplotlib plots from pandas datastructures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.-MatPlotLib-review">3. MatPlotLib review</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.1-An-example">3.1 An example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.2-Matplotlib-plots-from-pandas-datastructures">3.2 Matplotlib plots from pandas datastructures</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#4.-Operations-on-rows">4. Operations on rows</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.1-Indexing-integers">4.1 Indexing integers</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.2-Filtering">4.2 Filtering</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.3-Sorting">4.3 Sorting</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.4-Exercise---Meteo-stats">4.4 Exercise - Meteo stats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.-Operations-on-rows">4. Operations on rows</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.1-Indexing-integers">4.1 Indexing integers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Difference-between-iloc-and-loc">Difference between <code class="docutils literal notranslate"><span class="pre">iloc</span></code> and <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.2-Filtering">4.2 Filtering</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.3-Sorting">4.3 Sorting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.4-Exercise---Meteo-stats">4.4 Exercise - Meteo stats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.5-Exercise---meteo-plot">4.5 Exercise - meteo plot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.6-Exercise---Meteo-pressure-and-raining">4.6 Exercise - Meteo pressure and raining</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#5.-Object-values-and-strings">5. Object values and strings</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.1-Filter-by-textual-values">5.1 Filter by textual values</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.2-Extracting-strings">5.2 Extracting strings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.-Object-values-and-strings">5. Object values and strings</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.1-Filter-by-textual-values">5.1 Filter by textual values</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.2-Extracting-strings">5.2 Extracting strings</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#6.-Operations-on-columns">6. Operations on columns</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.1---Selecting-columns">6.1 - Selecting columns</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2---Adding-columns">6.2 - Adding columns</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">6.2.1 Exercise: Meteo temperature in Fahrenheit</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2.2-Exercise---Pressure-vs-Temperature">6.2.2 Exercise - Pressure vs Temperature</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.3-Transforming-columns">6.3 Transforming columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.-Operations-on-columns">6. Operations on columns</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.1---Selecting-columns">6.1 - Selecting columns</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2---Adding-columns">6.2 - Adding columns</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">6.2.1 Exercise: Meteo temperature in Fahrenheit</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2.2-Exercise---Pressure-vs-Temperature">6.2.2 Exercise - Pressure vs Temperature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.3-Scrivere-in-colonne-filtrate-con-loc">6.3 Scrivere in colonne filtrate con <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.3-Transforming-columns">6.3 Transforming columns</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#7.-Grouping">7. Grouping</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#8.-Exercise---meteo-average-temperatures">8. Exercise - meteo average temperatures</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.1-meteo-plot">8.1 meteo plot</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.2-meteo-pressure-and-raining">8.2 meteo pressure and raining</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.3-meteo-average-temperature">8.3 meteo average temperature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.-Other-exercises">7. Other exercises</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.1-Exercise---Air-pollutants">7.1 Exercise - Air pollutants</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.2-Exercise---Game-of-Thrones">7.2 Exercise - Game of Thrones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.3-Exercise---Healthcare-facilities">7.3 Exercise - Healthcare facilities</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#9-Exercise---Air-pollutants">9 Exercise - Air pollutants</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.1---load-the-file">9.1 - load the file</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.2---pollutants-average">9.2 - pollutants average</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.3---PM10-chart">9.3 - PM10 chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#10.-Merging-tables">10. Merging tables</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Exercise-10.1---better-merge">Exercise 10.1 - better merge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html">Advanded operations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.-Grouping">1. Grouping</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.1-Let's-see-a-group">1.1 Let’s see a group</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.2-groupby">1.2 <code class="docutils literal notranslate"><span class="pre">groupby</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.3-Modifying-a-dataframe-by-plugging-in-the-result-of-a-grouping">1.3 Modifying a dataframe by plugging in the result of a grouping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.4-Exercise---meteo-pressure-intervals">1.4 Exercise - meteo pressure intervals</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.5-Exercise---meteo-average-temperature">1.5 Exercise - meteo average temperature</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#11.-GeoPandas">11. GeoPandas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Continue">Continue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#2.-Merging-tables">2. Merging tables</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Exercise-2.1---better-merge">Exercise 2.1 - better merge</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas2-sol.html">Exercises</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Download-exercises-and-solution">Download exercises and solution</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#What-to-do">What to do</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#offerte-dataset">offerte dataset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#rename-columns">rename columns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.1-countries_to_list">1.1 countries_to_list</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.2-Filling-column-Workplace-Country">1.2 Filling column Workplace Country</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#2.-Work-dates">2. Work dates</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.1-from_to-function">2.1 from_to function</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.2.-From-To-columns">2.2. From To columns</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#3.-Required-languages">3. Required languages</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.1-function-reqlan">3.1 function reqlan</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.2-Languages-column">3.2 Languages column</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Continue">Continue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#3.-GeoPandas">3. GeoPandas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../pandas/pandas3-chal.html">Challenges</a><ul>
@@ -2185,6 +2184,32 @@
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A1-extract_bounds">A1 extract_bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A2-extract_product">A2 extract_product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A3-plot_product">A3 plot_product</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../projects/eures/eures-sol.html">EURES job offers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Download-worked-project">Download worked project</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#offerte-dataset">offerte dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#rename-columns">rename columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#1.1-countries_to_list">1.1 countries_to_list</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#1.2-Filling-column-Workplace-Country">1.2 Filling column Workplace Country</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#2.-Work-dates">2. Work dates</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#2.1-from_to-function">2.1 from_to function</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#2.2.-From-To-columns">2.2. From To columns</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#3.-Required-languages">3. Required languages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#3.1-function-reqlan">3.1 function reqlan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#3.2-Languages-column">3.2 Languages column</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
 </ul>
@@ -4202,7 +4227,41 @@ array([0.        , 0.08888889, 0.17777778, 0.26666667, 0.35555556,
 </section>
 <section id="NaNs-and-infinities">
 <h2>NaNs and infinities<a class="headerlink" href="#NaNs-and-infinities" title="Permalink to this headline"></a></h2>
-<p>Float numbers can be numbers and…. not numbers, and infinities. Sometimes during calculations extremal conditions may arise, like when dividing a small number by a huge number. In such cases, you might end up having a float which is a dreaded <em>Not a Number</em>, <em>NaN</em> for short, or you might get an infinity. This can lead to very awful unexpected behaviours, so you must be well aware of it.</p>
+<p>Float numbers can be numbers and…. not numbers, and infinities. Sometimes during calculations extremal conditions may arise, like when dividing a small number by a huge number. In such cases, you might end up having a float which is a dreaded <em>Not a Number</em>, <em>NaN</em> for short, or you might get an infinity. This can lead to very awful unexpected behaviours, so you must be well aware of it. Examples:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">10e99999999999999999999999</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+inf
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">10e99999999999999999999999</span> <span class="o">/</span> <span class="mf">10e99999999999999999999999</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+nan
+</pre></div></div>
+</div>
 <p>Following behaviours are dictated by IEEE Standard for Binary Floating-Point for Arithmetic (IEEE 754) which Numpy uses and is implemented in all CPUs, so they actually regard all programming languages.</p>
 <section id="NaNs">
 <h3>NaNs<a class="headerlink" href="#NaNs" title="Permalink to this headline"></a></h3>
@@ -4214,7 +4273,7 @@ array([0.        , 0.08888889, 0.17777778, 0.26666667, 0.35555556,
 <p>Even if your mind wants to refuse it, we are going to confirm it.</p>
 <p>To get a NaN, you can use Python module <code class="docutils literal notranslate"><span class="pre">math</span></code> which holds this alien item:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -4223,7 +4282,7 @@ array([0.        , 0.08888889, 0.17777778, 0.26666667, 0.35555556,
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[80]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4233,7 +4292,7 @@ nan
 </div>
 <p>As we said, a NaN is actually considered a float:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
@@ -4241,7 +4300,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4251,7 +4310,7 @@ float
 </div>
 <p>Still, it behaves very differently from its fellow floats, or any other object in the known universe:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">nan</span> <span class="o">==</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>   <span class="c1"># what the F... alse</span>
@@ -4259,7 +4318,7 @@ float
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[82]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4272,7 +4331,7 @@ False
 <h3>Detecting NaN<a class="headerlink" href="#Detecting-NaN" title="Permalink to this headline"></a></h3>
 <p>Given the above, if you want to check if a variable <code class="docutils literal notranslate"><span class="pre">x</span></code> is a NaN, you <em>cannot</em> write this:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[83]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
@@ -4293,7 +4352,7 @@ x is something else ??
 </div>
 <p>To correctly handle this situation, you need to use <code class="docutils literal notranslate"><span class="pre">math.isnan</span></code> function:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[84]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
@@ -4314,7 +4373,7 @@ x is NaN
 </div>
 <p>Notice <code class="docutils literal notranslate"><span class="pre">math.isnan</span></code> also work with <em>negative</em> NaN:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span>
@@ -4338,7 +4397,7 @@ y is NaN
 <h3>Sequences with NaNs<a class="headerlink" href="#Sequences-with-NaNs" title="Permalink to this headline"></a></h3>
 <p>Still, not everything is completely crazy. If you compare a sequence holding NaNs to another one, you will get reasonable results:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">]</span>
@@ -4346,7 +4405,7 @@ y is NaN
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4361,7 +4420,7 @@ True
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># expected output: same</span>
@@ -4403,7 +4462,7 @@ same
 </pre></div></div>
 </div>
 </div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[87]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># expected output: same</span>
@@ -4443,7 +4502,7 @@ same
 <h3>Operations on NaNs<a class="headerlink" href="#Operations-on-NaNs" title="Permalink to this headline"></a></h3>
 <p>Any operation on a NaN will generate another NaN:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
@@ -4451,7 +4510,7 @@ same
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[88]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4460,7 +4519,7 @@ nan
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">nan</span> <span class="o">+</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
@@ -4468,7 +4527,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[89]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4477,7 +4536,7 @@ nan
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[92]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">nan</span> <span class="o">/</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span>
@@ -4485,7 +4544,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[90]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[92]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4507,7 +4566,7 @@ nan
 </div>
 <p>NaN corresponds to boolean value <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[91]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[93]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">:</span>
@@ -4528,7 +4587,7 @@ That&#39;s True
 <h3>NaN and Numpy<a class="headerlink" href="#NaN-and-Numpy" title="Permalink to this headline"></a></h3>
 <p>When using Numpy you are quite likely to encounter NaNs, so much so they get redefined inside Numpy, but they are exactly the same as in <code class="docutils literal notranslate"><span class="pre">math</span></code> module:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[92]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[94]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">nan</span>
@@ -4536,7 +4595,7 @@ That&#39;s True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[92]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[94]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4545,7 +4604,7 @@ nan
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[93]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[95]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
@@ -4553,7 +4612,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[93]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[95]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4562,7 +4621,7 @@ True
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[94]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">nan</span><span class="p">)</span>
@@ -4570,7 +4629,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[94]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4580,7 +4639,7 @@ True
 </div>
 <p>In Numpy when you have unknown numbers you might be tempted to put a <code class="docutils literal notranslate"><span class="pre">None</span></code>. You can actually do it, but look closely at the result:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[95]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[97]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -4589,7 +4648,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[95]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[97]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4600,7 +4659,7 @@ array([4.9, None, 3.2, 5.1], dtype=object)
 <p>The resulting array type is <em>not</em> an array of float64 which allows fast calculations, instead it is an array containing generic <em>objects</em>, as Numpy is assuming the array holds heterogenous data. So what you gain in generality you lose it in performance, which should actually be the whole point of using Numpy.</p>
 <p>Despite being weird, NaNs are actually regular float citizen so they can be stored in the array:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[98]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.9</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span><span class="mf">3.2</span><span class="p">,</span><span class="mf">5.1</span><span class="p">])</span>   <span class="c1"># Notice how the `dtype=object` has disappeared</span>
@@ -4608,7 +4667,7 @@ array([4.9, None, 3.2, 5.1], dtype=object)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[96]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[98]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4641,7 +4700,7 @@ array([4.9, nan, 3.2, 5.1])
 <p>In this case <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> is raised and <strong>the execution gets interrupted.</strong></p>
 <p>Let’s try the equivalent with Numpy:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[97]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[99]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
@@ -4658,7 +4717,7 @@ array([4.9, nan, 3.2, 5.1])
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[97]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[99]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4669,7 +4728,7 @@ nan
 <p>In this case we <strong>actually got as a result</strong> <code class="docutils literal notranslate"><span class="pre">np.nan</span></code>, so execution was not interrupted, Jupyter only informed us with an extra print that something dangerous happened.</p>
 <p>The default behaviour of Numpy regarding dangerous calculations is to perform them anyway and storing the result in as a NaN or other limit objects. This also works for arrays calculations:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[98]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">]))</span>
@@ -4686,7 +4745,7 @@ nan
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[98]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4702,7 +4761,7 @@ array([1.09861229, 1.94591015,        nan, 2.19722458])
 <section id="Positive-infinity-np.inf">
 <h3>Positive infinity <code class="docutils literal notranslate"><span class="pre">np.inf</span></code><a class="headerlink" href="#Positive-infinity-np.inf" title="Permalink to this headline"></a></h3>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[99]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mi">5</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="mi">0</span>
@@ -4719,7 +4778,7 @@ array([1.09861229, 1.94591015,        nan, 2.19722458])
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[99]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4728,7 +4787,7 @@ array([inf])
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[102]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span> <span class="p">]</span> <span class="p">)</span>
@@ -4745,7 +4804,7 @@ array([inf])
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[100]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[102]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4761,7 +4820,7 @@ array([3.  ,  inf,  inf, 1.75])
 </ul>
 <p>This time, infinity is equal to infinity:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
@@ -4769,7 +4828,7 @@ array([3.  ,  inf,  inf, 1.75])
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[101]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4779,7 +4838,7 @@ True
 </div>
 <p>so we can safely detect infinity with <code class="docutils literal notranslate"><span class="pre">==</span></code>:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[102]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
@@ -4801,7 +4860,7 @@ x is infinite
 </div>
 <p>Alternatively, we can use the function <code class="docutils literal notranslate"><span class="pre">np.isinf</span></code>:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[105]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isinf</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
@@ -4809,7 +4868,7 @@ x is infinite
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[105]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4822,7 +4881,7 @@ True
 <h3>Negative infinity<a class="headerlink" href="#Negative-infinity" title="Permalink to this headline"></a></h3>
 <p>We can also have negative infinity, which is different from positive infinity:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
@@ -4830,7 +4889,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4840,7 +4899,7 @@ False
 </div>
 <p>Note that <code class="docutils literal notranslate"><span class="pre">isinf</span></code> detects <em>both</em> positive and negative:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[105]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[107]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isinf</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
@@ -4848,7 +4907,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[105]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[107]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4858,7 +4917,7 @@ True
 </div>
 <p>To actually check for negative infinity you have to use <code class="docutils literal notranslate"><span class="pre">isneginf</span></code>:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[108]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isneginf</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
@@ -4866,7 +4925,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[108]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4875,7 +4934,7 @@ True
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[107]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">isneginf</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">)</span>
@@ -4883,7 +4942,7 @@ True
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[107]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4893,7 +4952,7 @@ False
 </div>
 <p>Where do they appear? As an example, let’s try <code class="docutils literal notranslate"><span class="pre">np.log</span></code> function:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[108]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[110]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -4910,7 +4969,7 @@ False
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[108]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[110]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4923,7 +4982,7 @@ False
 <h3>Combining infinities and NaNs<a class="headerlink" href="#Combining-infinities-and-NaNs" title="Permalink to this headline"></a></h3>
 <p>When performing operations involving infinities and NaNs, IEEE arithmetics tries to mimic classical analysis, sometimes including NaN as a result:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[111]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
@@ -4931,7 +4990,7 @@ False
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[111]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4940,7 +4999,7 @@ inf
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[110]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[112]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
@@ -4948,7 +5007,7 @@ inf
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[110]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[112]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4957,7 +5016,7 @@ inf
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[111]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[113]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">*</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span>
@@ -4965,7 +5024,7 @@ inf
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[111]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[113]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4975,7 +5034,7 @@ inf
 </div>
 <p>What in classical analysis would be undefined, here becomes NaN:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[112]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[114]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
@@ -4983,7 +5042,7 @@ inf
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[112]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[114]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -4992,7 +5051,7 @@ nan
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[113]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[115]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
@@ -5000,7 +5059,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[113]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[115]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -5010,7 +5069,7 @@ nan
 </div>
 <p>As usual, combining with NaN results in NaN:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[114]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[116]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
@@ -5018,7 +5077,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[114]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[116]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -5027,7 +5086,7 @@ nan
 </pre></div></div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[115]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[117]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
@@ -5035,7 +5094,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[115]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[117]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -5048,7 +5107,7 @@ nan
 <h3>Negative zero<a class="headerlink" href="#Negative-zero" title="Permalink to this headline"></a></h3>
 <p>We can even have a <em>negative</em> zero - who would have thought?</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[116]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[118]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">NZERO</span>
@@ -5056,7 +5115,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[116]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[118]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -5066,7 +5125,7 @@ nan
 </div>
 <p>Negative zero of course pairs well with the more known and much appreciated <em>positive</em> zero:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[117]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[119]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">PZERO</span>
@@ -5074,7 +5133,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[117]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[119]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -5085,7 +5144,7 @@ nan
 <p><strong>NOTE</strong>: Writing <code class="docutils literal notranslate"><span class="pre">np.NZERO</span></code> or <code class="docutils literal notranslate"><span class="pre">-0.0</span></code> is <em>exactly</em> the same thing. Same goes for positive zero.</p>
 <p>At this point, you might start wondering with some concern if they are actually <em>equal</em>. Let’s try:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[118]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[120]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mf">0.0</span> <span class="o">==</span> <span class="o">-</span><span class="mf">0.0</span>
@@ -5093,7 +5152,7 @@ nan
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[118]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[120]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -5107,7 +5166,7 @@ True
 <p><span class="math notranslate nohighlight">\(\frac{5.0}{0.0}=???\)</span></p>
 <p>In Numpy terms, we might write like this to box everything in arrays:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[119]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[121]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mf">5.0</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mf">0.0</span> <span class="p">]</span> <span class="p">)</span>
@@ -5124,7 +5183,7 @@ True
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[119]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[121]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -5136,7 +5195,7 @@ array([inf])
 <p>If <code class="docutils literal notranslate"><span class="pre">0.0</span></code> and <code class="docutils literal notranslate"><span class="pre">-0.0</span></code> are actually the same, dividing a number by <code class="docutils literal notranslate"><span class="pre">-0.0</span></code> we should get the very same result, shouldn’t we?</p>
 <p>Let’s try:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[120]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[122]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="mf">5.0</span> <span class="p">]</span> <span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[</span> <span class="o">-</span><span class="mf">0.0</span> <span class="p">]</span> <span class="p">)</span>
@@ -5153,7 +5212,7 @@ array([inf])
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[120]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[122]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -5173,7 +5232,7 @@ array([-inf])
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[121]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[123]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># expected: equal numbers</span>
@@ -5235,7 +5294,7 @@ equal numbers
 </pre></div></div>
 </div>
 </div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[121]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[123]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># expected: equal numbers</span>
@@ -5330,7 +5389,7 @@ equal numbers
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
+    <p>&#169; Copyright # CC-BY 2017 - 2023, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

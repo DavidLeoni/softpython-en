@@ -29,8 +29,8 @@ Pandas
     :maxdepth: 3
     :glob:
     
-    Intro <pandas/pandas1-sol.ipynb>        
-    Exercises <pandas/pandas2-sol.ipynb>    
+    Intro <pandas/pandas1-intro-sol.ipynb>        
+    Advanded operations <pandas/pandas2-advanced-sol.ipynb>    
     Challenges <pandas/pandas3-chal.ipynb>
     
     

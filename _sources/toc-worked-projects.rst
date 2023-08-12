@@ -26,7 +26,8 @@ Tabular data
     projects/galactic-love/galactic-love-sol.ipynb                
     projects/university-staff/university-staff-sol.ipynb
     projects/itea-real-estate/itea-real-estate-sol.ipynb        
-    projects/price-catalog/price-catalog-sol.ipynb            
+    projects/price-catalog/price-catalog-sol.ipynb    
+    projects/eures/eures-sol.ipynb    
 
 Relational data
 ---------------------

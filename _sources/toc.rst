@@ -236,6 +236,5 @@ E - Appendix
     :glob:
 
     commandments.ipynb
-    thanks.ipynb
     changelog.ipynb
     references.ipynb

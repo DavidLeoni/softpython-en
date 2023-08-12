@@ -7,9 +7,10 @@
   <title>Quick introduction to Python &mdash; SoftPython</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman.3.5.6.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.6.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.5.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme-textures.3.5.7.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://en.softpython.org/quick-intro/quick-intro-sol.html" />
   <!--[if lt IE 9]>
@@ -23,7 +24,7 @@
         <script src="../_static/js/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
         <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
-        <script src="../_static/js/jupman.3.5.6.js"></script>
+        <script src="../_static/js/jupman.3.5.7.js"></script>
         <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
         <script src="../_static/js/softpython.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -139,11 +140,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#Beyond-True-and-False">Beyond <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#Strings---string">Strings - string</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Strings---str">Strings - str</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Using-object-methods">Using object methods</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#Liste---list">Liste - list</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Lists---list">Lists - list</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Ordering-lists">Ordering lists</a></li>
 </ul>
 </li>
@@ -337,6 +338,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Conversions---from-number-to-string">Conversions - from number to string</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-strings">Formatting strings</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-%">Formatting with <code class="docutils literal notranslate"><span class="pre">%</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-f-strings">Formatting with f-strings</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Exercise---supercars">Exercise - supercars</a></li>
 </ul>
 </li>
@@ -364,7 +366,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---the-run">Exercise - the run</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Inclusion-operator">Inclusion operator</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-1">Exercise - contained 1</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-2">Exercise - contained 2</a></li>
@@ -526,7 +528,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---Glory-to-Gladiators!">Exercise - Glory to Gladiators!</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Membership">Membership</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#not-in">not in</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---vegetables">Exercise - vegetables</a></li>
@@ -541,7 +543,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---balance">Exercise - balance</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Multiplying-lists">Multiplying lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#List-replication">List replication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Equality">Equality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Continue">Continue</a></li>
 </ul>
@@ -586,6 +588,11 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---dub-dab-dib-dob">Exercise - dub dab dib dob</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---ghirigori">Exercise - ghirigori</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---welldone">Exercise - welldone</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#copy-method"><code class="docutils literal notranslate"><span class="pre">copy</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#copy-is-shallow"><code class="docutils literal notranslate"><span class="pre">copy</span></code> is shallow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#deepcopy-function"><code class="docutils literal notranslate"><span class="pre">deepcopy</span></code> function</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Continue">Continue</a></li>
@@ -647,7 +654,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Slices">Slices</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Concatenation">Concatenation</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Membership">Membership</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Multiplication">Multiplication</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Replication">Replication</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---welcome">Exercise - welcome</a></li>
 </ul>
 </li>
@@ -698,9 +705,9 @@
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Intersection">Intersection</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Difference">Difference</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Symmetric-difference">Symmetric difference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Equality">Equality</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Equality">Equality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Methods-like-operators">Methods like operators</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#union">union</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#update">update</a></li>
@@ -1787,86 +1794,78 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../toc-analytics.html#pandas">Pandas</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas1-sol.html">Intro</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#1.-What-to-do">1. What to do</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Check-installation">Check installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas1-intro-sol.html">Intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#1.-What-to-do">1. What to do</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Check-installation">Check installation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Which-pandas-should-I-use?">Which pandas should I use?</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#2.-Data-analysis-of-Astro-Pi">2. Data analysis of Astro Pi</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#2.1-Exercise---meteo-info">2.1 Exercise - meteo info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.-Data-analysis-of-Astro-Pi">2. Data analysis of Astro Pi</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.1-Let's-import-the-file">2.1 Let’s import the file</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.2-Memory">2.2 Memory</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.3-Dimensions">2.3 Dimensions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.4-Let's-explore!">2.4 Let’s explore!</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.5-Some-stats">2.5 Some stats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.6-Guardiamo-le-colonne">2.6 Guardiamo le colonne</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.7-What-is-a-column?">2.7 What is a column?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.8-Exercise---meteo-info">2.8 Exercise - meteo info</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#3.-MatPlotLib-review">3. MatPlotLib review</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#3.1-An-example">3.1 An example</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#3.2-Matplotlib-plots-from-pandas-datastructures">3.2 Matplotlib plots from pandas datastructures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.-MatPlotLib-review">3. MatPlotLib review</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.1-An-example">3.1 An example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.2-Matplotlib-plots-from-pandas-datastructures">3.2 Matplotlib plots from pandas datastructures</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#4.-Operations-on-rows">4. Operations on rows</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.1-Indexing-integers">4.1 Indexing integers</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.2-Filtering">4.2 Filtering</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.3-Sorting">4.3 Sorting</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.4-Exercise---Meteo-stats">4.4 Exercise - Meteo stats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.-Operations-on-rows">4. Operations on rows</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.1-Indexing-integers">4.1 Indexing integers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Difference-between-iloc-and-loc">Difference between <code class="docutils literal notranslate"><span class="pre">iloc</span></code> and <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.2-Filtering">4.2 Filtering</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.3-Sorting">4.3 Sorting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.4-Exercise---Meteo-stats">4.4 Exercise - Meteo stats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.5-Exercise---meteo-plot">4.5 Exercise - meteo plot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.6-Exercise---Meteo-pressure-and-raining">4.6 Exercise - Meteo pressure and raining</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#5.-Object-values-and-strings">5. Object values and strings</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.1-Filter-by-textual-values">5.1 Filter by textual values</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.2-Extracting-strings">5.2 Extracting strings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.-Object-values-and-strings">5. Object values and strings</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.1-Filter-by-textual-values">5.1 Filter by textual values</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.2-Extracting-strings">5.2 Extracting strings</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#6.-Operations-on-columns">6. Operations on columns</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.1---Selecting-columns">6.1 - Selecting columns</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2---Adding-columns">6.2 - Adding columns</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">6.2.1 Exercise: Meteo temperature in Fahrenheit</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2.2-Exercise---Pressure-vs-Temperature">6.2.2 Exercise - Pressure vs Temperature</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.3-Transforming-columns">6.3 Transforming columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.-Operations-on-columns">6. Operations on columns</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.1---Selecting-columns">6.1 - Selecting columns</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2---Adding-columns">6.2 - Adding columns</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">6.2.1 Exercise: Meteo temperature in Fahrenheit</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2.2-Exercise---Pressure-vs-Temperature">6.2.2 Exercise - Pressure vs Temperature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.3-Scrivere-in-colonne-filtrate-con-loc">6.3 Scrivere in colonne filtrate con <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.3-Transforming-columns">6.3 Transforming columns</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#7.-Grouping">7. Grouping</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#8.-Exercise---meteo-average-temperatures">8. Exercise - meteo average temperatures</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.1-meteo-plot">8.1 meteo plot</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.2-meteo-pressure-and-raining">8.2 meteo pressure and raining</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.3-meteo-average-temperature">8.3 meteo average temperature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.-Other-exercises">7. Other exercises</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.1-Exercise---Air-pollutants">7.1 Exercise - Air pollutants</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.2-Exercise---Game-of-Thrones">7.2 Exercise - Game of Thrones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.3-Exercise---Healthcare-facilities">7.3 Exercise - Healthcare facilities</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#9-Exercise---Air-pollutants">9 Exercise - Air pollutants</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.1---load-the-file">9.1 - load the file</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.2---pollutants-average">9.2 - pollutants average</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.3---PM10-chart">9.3 - PM10 chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#10.-Merging-tables">10. Merging tables</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Exercise-10.1---better-merge">Exercise 10.1 - better merge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html">Advanded operations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.-Grouping">1. Grouping</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.1-Let's-see-a-group">1.1 Let’s see a group</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.2-groupby">1.2 <code class="docutils literal notranslate"><span class="pre">groupby</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.3-Modifying-a-dataframe-by-plugging-in-the-result-of-a-grouping">1.3 Modifying a dataframe by plugging in the result of a grouping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.4-Exercise---meteo-pressure-intervals">1.4 Exercise - meteo pressure intervals</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.5-Exercise---meteo-average-temperature">1.5 Exercise - meteo average temperature</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#11.-GeoPandas">11. GeoPandas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Continue">Continue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#2.-Merging-tables">2. Merging tables</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Exercise-2.1---better-merge">Exercise 2.1 - better merge</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas2-sol.html">Exercises</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Download-exercises-and-solution">Download exercises and solution</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#What-to-do">What to do</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#offerte-dataset">offerte dataset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#rename-columns">rename columns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.1-countries_to_list">1.1 countries_to_list</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.2-Filling-column-Workplace-Country">1.2 Filling column Workplace Country</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#2.-Work-dates">2. Work dates</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.1-from_to-function">2.1 from_to function</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.2.-From-To-columns">2.2. From To columns</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#3.-Required-languages">3. Required languages</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.1-function-reqlan">3.1 function reqlan</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.2-Languages-column">3.2 Languages column</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Continue">Continue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#3.-GeoPandas">3. GeoPandas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../pandas/pandas3-chal.html">Challenges</a><ul>
@@ -2185,6 +2184,32 @@
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A1-extract_bounds">A1 extract_bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A2-extract_product">A2 extract_product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A3-plot_product">A3 plot_product</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../projects/eures/eures-sol.html">EURES job offers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Download-worked-project">Download worked project</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#offerte-dataset">offerte dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#rename-columns">rename columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#1.1-countries_to_list">1.1 countries_to_list</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#1.2-Filling-column-Workplace-Country">1.2 Filling column Workplace Country</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#2.-Work-dates">2. Work dates</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#2.1-from_to-function">2.1 from_to function</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#2.2.-From-To-columns">2.2. From To columns</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#3.-Required-languages">3. Required languages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#3.1-function-reqlan">3.1 function reqlan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#3.2-Languages-column">3.2 Languages column</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
 </ul>
@@ -3455,7 +3480,7 @@ I will
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here the if</span>
@@ -3484,7 +3509,7 @@ I will be printed
 </pre></div></div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># write here the if</span>
@@ -3493,8 +3518,8 @@ I will be printed
 </div>
 </section>
 </section>
-<section id="Strings---string">
-<h2>Strings - string<a class="headerlink" href="#Strings---string" title="Permalink to this headline"></a></h2>
+<section id="Strings---str">
+<h2>Strings - str<a class="headerlink" href="#Strings---str" title="Permalink to this headline"></a></h2>
 <p>Strings are <em>immutable</em> sequences of characters.</p>
 <p><strong>References</strong>:</p>
 <ul class="simple">
@@ -3637,9 +3662,9 @@ TypeError: Can&#39;t convert &#39;int&#39; object to str implicitly
 </div>
 </section>
 </section>
-<section id="Liste---list">
-<h2>Liste - list<a class="headerlink" href="#Liste---list" title="Permalink to this headline"></a></h2>
-<p>A list in Python is a sequence of elements of possibly different types, into which we can place any element we want.</p>
+<section id="Lists---list">
+<h2>Lists - list<a class="headerlink" href="#Lists---list" title="Permalink to this headline"></a></h2>
+<p>A list in Python is a mutable sequence of elements of possibly different types, into which we can place any element we want.</p>
 <p><strong>References:</strong></p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://en.softpython.org/lists/lists1-sol.html">Lists 1 - introduction</a></p></li>
@@ -4096,7 +4121,7 @@ TypeError: Can&#39;t convert &#39;int&#39; object to str implicitly
 </section>
 <section id="Dictionaries---dict">
 <h2>Dictionaries - dict<a class="headerlink" href="#Dictionaries---dict" title="Permalink to this headline"></a></h2>
-<p>Dictionaries are containers which allow us to associate so-called <em>keys</em> to <em>values</em>. We will make a brief example to give the idea.</p>
+<p>Dictionaries are mutable containers which allow us to associate so-called <em>keys</em> to <em>values</em>. We will make a brief example to give the idea.</p>
 <p><strong>References</strong>:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="https://en.softpython.org/dictionaries/dictionaries1-sol.html">Dictionaries 1 - intro</a></p></li>
@@ -4345,51 +4370,44 @@ TypeError: Can&#39;t convert &#39;int&#39; object to str implicitly
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jme6bb8dbb-4c5b-4469-9eda-39a0424c516d" type="application/json" >
-    {"code": " \nx = 5\ny = 7\nz = x + y", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 5}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 5, "y": 7}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"x": 5, "y": 7, "z": 12}, "ordered_globals": ["x", "y", "z"], "stack_to_render": [], "heap": {}, "stdout": ""}]}
-</script>
-<div id="jme6bb8dbb-4c5b-4469-9eda-39a0424c516d" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-53edf3a96998c2e74ada66b83f19c92d-85" type="application/json" >
+        {"code": " \nx = 5\ny = 7\nz = x + y", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"x": 5}, "ordered_globals": ["x"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"x": 5, "y": 7}, "ordered_globals": ["x", "y"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"x": 5, "y": 7, "z": 12}, "ordered_globals": ["x", "y", "z"], "stack_to_render": [], "heap": {}, "stdout": ""}]}
+    </script>
+    <div id="jm-53edf3a96998c2e74ada66b83f19c92d-85" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-53edf3a96998c2e74ada66b83f19c92d-85').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jme6bb8dbb-4c5b-4469-9eda-39a0424c516d').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jme6bb8dbb-4c5b-4469-9eda-39a0424c516d',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-53edf3a96998c2e74ada66b83f19c92d-85',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-53edf3a96998c2e74ada66b83f19c92d-85'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <section id="Python-Tutor-:-Limitation-1">
 <h4>Python Tutor : Limitation 1<a class="headerlink" href="#Python-Tutor-:-Limitation-1" title="Permalink to this headline"></a></h4>
@@ -4431,7 +4449,7 @@ TypeError: Can&#39;t convert &#39;int&#39; object to str implicitly
 <div class="output_area stderr docutils container">
 <div class="highlight"><pre>
 Traceback (most recent call last):
-  File &#34;../jupman.py&#34;, line 2340, in _runscript
+  File &#34;../jupman.py&#34;, line 2453, in _runscript
     self.run(script_str, user_globals, user_globals)
   File &#34;/usr/lib/python3.7/bdb.py&#34;, line 578, in run
     exec(cmd, globals, locals)
@@ -4444,51 +4462,44 @@ NameError: name &#39;w&#39; is not defined
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm0b37b413-3375-46a5-8725-a607db05d32d" type="application/json" >
-    {"code": " \nprint(w)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "exception", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "", "exception_msg": "NameError: name 'w' is not defined"}]}
-</script>
-<div id="jm0b37b413-3375-46a5-8725-a607db05d32d" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-1b3c050e272bfe9ca0560d8384911d2e-87" type="application/json" >
+        {"code": " \nprint(w)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "exception", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": "", "exception_msg": "NameError: name 'w' is not defined"}]}
+    </script>
+    <div id="jm-1b3c050e272bfe9ca0560d8384911d2e-87" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-1b3c050e272bfe9ca0560d8384911d2e-87').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jm0b37b413-3375-46a5-8725-a607db05d32d').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm0b37b413-3375-46a5-8725-a607db05d32d',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-1b3c050e272bfe9ca0560d8384911d2e-87',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-1b3c050e272bfe9ca0560d8384911d2e-87'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p>To have it work in Python Tutor you must put ALL the code in the SAME cell:</p>
 <div class="nbinput docutils container">
@@ -4515,51 +4526,44 @@ NameError: name &#39;w&#39; is not defined
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm57e560db-2572-4c5e-9cde-1f04a1d9b334" type="application/json" >
-    {"code": " \nw = 3\nprint(w)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"w": 3}, "ordered_globals": ["w"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"w": 3}, "ordered_globals": ["w"], "stack_to_render": [], "heap": {}, "stdout": "3\n"}]}
-</script>
-<div id="jm57e560db-2572-4c5e-9cde-1f04a1d9b334" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-1f5ddd57ac87a249ae6f71d1b9bba982-88" type="application/json" >
+        {"code": " \nw = 3\nprint(w)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"w": 3}, "ordered_globals": ["w"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "return", "func_name": "<module>", "globals": {"w": 3}, "ordered_globals": ["w"], "stack_to_render": [], "heap": {}, "stdout": "3\n"}]}
+    </script>
+    <div id="jm-1f5ddd57ac87a249ae6f71d1b9bba982-88" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-1f5ddd57ac87a249ae6f71d1b9bba982-88').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jm57e560db-2572-4c5e-9cde-1f04a1d9b334').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm57e560db-2572-4c5e-9cde-1f04a1d9b334',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-1f5ddd57ac87a249ae6f71d1b9bba982-88',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-1f5ddd57ac87a249ae6f71d1b9bba982-88'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 </section>
 <section id="Python-Tutor-:-Limitation-2">
@@ -4658,51 +4662,44 @@ elks
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm022b674e-0f83-4e98-8036-648d425eace6" type="application/json" >
-    {"code": " \n# Let's see what happens with Python tutor:\n\nanimals = ['dogs', 'cats', 'squirrels', 'elks']\n\nfor animal in animals:\n    print(\"In the list there are:\")\n    print(animal)", "trace": [{"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "dogs"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "dogs"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "dogs"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "cats"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "cats"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "cats"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "squirrels"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "squirrels"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "squirrels"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "elks"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "elks"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\nIn the list there are:\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "elks"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\nIn the list there are:\nelks\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "elks"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\nIn the list there are:\nelks\n"}]}
-</script>
-<div id="jm022b674e-0f83-4e98-8036-648d425eace6" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-e4fb581f5c912baf8d5d0d10ae58e2bc-90" type="application/json" >
+        {"code": " \n# Let's see what happens with Python tutor:\n\nanimals = ['dogs', 'cats', 'squirrels', 'elks']\n\nfor animal in animals:\n    print(\"In the list there are:\")\n    print(animal)", "trace": [{"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "dogs"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "dogs"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "dogs"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "cats"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "cats"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "cats"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "squirrels"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "squirrels"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "squirrels"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "elks"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "elks"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\nIn the list there are:\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "elks"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\nIn the list there are:\nelks\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"animals": ["REF", 1], "animal": "elks"}, "ordered_globals": ["animals", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\nIn the list there are:\nelks\n"}]}
+    </script>
+    <div id="jm-e4fb581f5c912baf8d5d0d10ae58e2bc-90" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-e4fb581f5c912baf8d5d0d10ae58e2bc-90').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jm022b674e-0f83-4e98-8036-648d425eace6').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm022b674e-0f83-4e98-8036-648d425eace6',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-e4fb581f5c912baf8d5d0d10ae58e2bc-90',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-e4fb581f5c912baf8d5d0d10ae58e2bc-90'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p><strong>✪ EXERCISE</strong>: Let’s try to understand all the warnings above a bit better. Write down here the previous <code class="docutils literal notranslate"><span class="pre">for</span></code> with the animals (no copy and paste!), try if it works. Remember to use 4 spaces for the indentation.</p>
 <ul class="simple">
@@ -4792,58 +4789,51 @@ elks
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm9630cbcd-018e-4443-b3d3-8c576d6a0a72" type="application/json" >
-    {"code": " \nfor index in range(6):\n    print(index)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 0}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 0}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 1}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 1}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 2}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 2}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 3}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 3}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 4}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 4}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n4\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 5}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n4\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 5}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n4\n5\n"}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"index": 5}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n4\n5\n"}]}
-</script>
-<div id="jm9630cbcd-018e-4443-b3d3-8c576d6a0a72" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-ab02892de9b315e7d4905e58e71f904b-94" type="application/json" >
+        {"code": " \nfor index in range(6):\n    print(index)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 0}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 0}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 1}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 1}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 2}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 2}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 3}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 3}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 4}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 4}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n4\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"index": 5}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n4\n"}, {"line": 2, "event": "step_line", "func_name": "<module>", "globals": {"index": 5}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n4\n5\n"}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"index": 5}, "ordered_globals": ["index"], "stack_to_render": [], "heap": {}, "stdout": "0\n1\n2\n3\n4\n5\n"}]}
+    </script>
+    <div id="jm-ab02892de9b315e7d4905e58e71f904b-94" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-ab02892de9b315e7d4905e58e71f904b-94').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jm9630cbcd-018e-4443-b3d3-8c576d6a0a72').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm9630cbcd-018e-4443-b3d3-8c576d6a0a72',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-ab02892de9b315e7d4905e58e71f904b-94',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-ab02892de9b315e7d4905e58e71f904b-94'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p>As an alternative to list our animals, we can use this style like so:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[93]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;dogs&#39;</span><span class="p">,</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;squirrels&#39;</span><span class="p">,</span> <span class="s1">&#39;elks&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;dogs&#39;</span><span class="p">,</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;squirrels&#39;</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In the list there are:&quot;</span><span class="p">)</span>
@@ -4869,7 +4859,7 @@ squirrels
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[94]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;dogs&#39;</span><span class="p">,</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;squirrels&#39;</span><span class="p">,</span> <span class="s1">&#39;elks&#39;</span><span class="p">]</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;dogs&#39;</span><span class="p">,</span> <span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;squirrels&#39;</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In the list there are:&quot;</span><span class="p">)</span>
@@ -4897,51 +4887,44 @@ squirrels
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jmcf5c4b7c-8e8b-431f-89e5-5930794f6456" type="application/json" >
-    {"code": " \nanimals = ['dogs', 'cats', 'squirrels', 'elks']\n\nfor index in range(3):\n    print(\"In the list there are:\")\n    print(animals[index])", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 0}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 0}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 0}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 1}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 1}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 1}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 2}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 2}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 2}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\n"}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 2}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\n"}]}
-</script>
-<div id="jmcf5c4b7c-8e8b-431f-89e5-5930794f6456" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-58599986ce64011b6361753b04e4c116-96" type="application/json" >
+        {"code": " \nanimals = ['dogs', 'cats', 'squirrels']\n\nfor index in range(3):\n    print(\"In the list there are:\")\n    print(animals[index])", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 0}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 0}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": "In the list there are:\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 0}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": "In the list there are:\ndogs\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 1}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": "In the list there are:\ndogs\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 1}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 1}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 2}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 2}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 2}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\n"}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"animals": ["REF", 1], "index": 2}, "ordered_globals": ["animals", "index"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels"]}, "stdout": "In the list there are:\ndogs\nIn the list there are:\ncats\nIn the list there are:\nsquirrels\n"}]}
+    </script>
+    <div id="jm-58599986ce64011b6361753b04e4c116-96" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-58599986ce64011b6361753b04e4c116-96').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jmcf5c4b7c-8e8b-431f-89e5-5930794f6456').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jmcf5c4b7c-8e8b-431f-89e5-5930794f6456',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-58599986ce64011b6361753b04e4c116-96',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-58599986ce64011b6361753b04e4c116-96'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 </section>
 </section>
@@ -5010,51 +4993,44 @@ The sum is 8
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm74d4ab4a-e7f3-4bbd-8159-0cb2f720f107" type="application/json" >
-    {"code": " \ndef my_print(x,y):   # REMEMBER THE COLON AT THE END OF THE ROW !!!\n    print('We will now print the sum of two numbers')\n    print('The sum is %s' % (x + y))\n\nmy_print(3,5)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": ""}, {"line": 2, "event": "call", "func_name": "my_print", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [{"func_name": "my_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_print_f1"}], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "my_print", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [{"func_name": "my_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_print_f1"}], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "my_print", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [{"func_name": "my_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_print_f1"}], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": "We will now print the sum of two numbers\n"}, {"line": 4, "event": "return", "func_name": "my_print", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [{"func_name": "my_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5, "__return__": null}, "ordered_varnames": ["x", "y", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_print_f1"}], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": "We will now print the sum of two numbers\nThe sum is 8\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": "We will now print the sum of two numbers\nThe sum is 8\n"}]}
-</script>
-<div id="jm74d4ab4a-e7f3-4bbd-8159-0cb2f720f107" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-d686249d63cf8fd70488b472acb1e4f9-99" type="application/json" >
+        {"code": " \ndef my_print(x,y):   # REMEMBER THE COLON AT THE END OF THE ROW !!!\n    print('We will now print the sum of two numbers')\n    print('The sum is %s' % (x + y))\n\nmy_print(3,5)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": ""}, {"line": 2, "event": "call", "func_name": "my_print", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [{"func_name": "my_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_print_f1"}], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "my_print", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [{"func_name": "my_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_print_f1"}], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "my_print", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [{"func_name": "my_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_print_f1"}], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": "We will now print the sum of two numbers\n"}, {"line": 4, "event": "return", "func_name": "my_print", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [{"func_name": "my_print", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5, "__return__": null}, "ordered_varnames": ["x", "y", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_print_f1"}], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": "We will now print the sum of two numbers\nThe sum is 8\n"}, {"line": 6, "event": "return", "func_name": "<module>", "globals": {"my_print": ["REF", 1]}, "ordered_globals": ["my_print"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "my_print(x, y)", null]}, "stdout": "We will now print the sum of two numbers\nThe sum is 8\n"}]}
+    </script>
+    <div id="jm-d686249d63cf8fd70488b472acb1e4f9-99" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-d686249d63cf8fd70488b472acb1e4f9-99').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jm74d4ab4a-e7f3-4bbd-8159-0cb2f720f107').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm74d4ab4a-e7f3-4bbd-8159-0cb2f720f107',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-d686249d63cf8fd70488b472acb1e4f9-99',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-d686249d63cf8fd70488b472acb1e4f9-99'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p>The function we just declared prints some values, but returns nothing. To have a function which actually retuns a value, we must use the keyword <code class="docutils literal notranslate"><span class="pre">return</span></code>.</p>
 <div class="nbinput nblast docutils container">
@@ -5113,51 +5089,44 @@ The sum is 8
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm8ae121f6-ab2d-45cf-95ca-f1ab3b8d3dda" type="application/json" >
-    {"code": " \n# Let's have a better look with Python Tutor:\n\ndef my_sum(x,y):\n    s = x + y\n    return s\n\nprint(my_sum(3,5))", "trace": [{"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 4, "event": "call", "func_name": "my_sum", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [{"func_name": "my_sum", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_sum_f1"}], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "my_sum", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [{"func_name": "my_sum", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_sum_f1"}], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "my_sum", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [{"func_name": "my_sum", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5, "s": 8}, "ordered_varnames": ["x", "y", "s"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_sum_f1"}], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "my_sum", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [{"func_name": "my_sum", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5, "s": 8, "__return__": 8}, "ordered_varnames": ["x", "y", "s", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_sum_f1"}], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": "8\n"}]}
-</script>
-<div id="jm8ae121f6-ab2d-45cf-95ca-f1ab3b8d3dda" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-5d500d9d1d1dda1794785c32e2baaf73-102" type="application/json" >
+        {"code": " \n# Let's have a better look with Python Tutor:\n\ndef my_sum(x,y):\n    s = x + y\n    return s\n\nprint(my_sum(3,5))", "trace": [{"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 4, "event": "call", "func_name": "my_sum", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [{"func_name": "my_sum", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_sum_f1"}], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "my_sum", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [{"func_name": "my_sum", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5}, "ordered_varnames": ["x", "y"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_sum_f1"}], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "my_sum", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [{"func_name": "my_sum", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5, "s": 8}, "ordered_varnames": ["x", "y", "s"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_sum_f1"}], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 6, "event": "return", "func_name": "my_sum", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [{"func_name": "my_sum", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"x": 3, "y": 5, "s": 8, "__return__": 8}, "ordered_varnames": ["x", "y", "s", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "my_sum_f1"}], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": ""}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"my_sum": ["REF", 1]}, "ordered_globals": ["my_sum"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "my_sum(x, y)", null]}, "stdout": "8\n"}]}
+    </script>
+    <div id="jm-5d500d9d1d1dda1794785c32e2baaf73-102" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-5d500d9d1d1dda1794785c32e2baaf73-102').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jm8ae121f6-ab2d-45cf-95ca-f1ab3b8d3dda').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm8ae121f6-ab2d-45cf-95ca-f1ab3b8d3dda',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-5d500d9d1d1dda1794785c32e2baaf73-102',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-5d500d9d1d1dda1794785c32e2baaf73-102'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p><strong>✪ EXERCISE</strong>: If we try to assign to a variable <code class="docutils literal notranslate"><span class="pre">x</span></code> the return value of the function <code class="docutils literal notranslate"><span class="pre">my_print</span></code> which apparently returns nothing, what value will go into <code class="docutils literal notranslate"><span class="pre">x</span></code>? Try to understand it down here:</p>
 <div class="nbinput nblast docutils container">
@@ -5436,51 +5405,44 @@ volley doesn&#39;t start with b
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm2c7d8276-9ebf-4395-a580-b1854d5c0dbc" type="application/json" >
-    {"code": " \nanimals = ['dogs', 'cats', 'squirrels', 'elks']\n\nnew_list = [] # at every cycle the variable 'animal' contains a name taken from the list 'animals'\nfor animal in animals:  \n    new_list.append(animal.capitalize())   # we add the current animal name to the new list, \n                                           # with the first letter uppercased    \nnew_list\n\n#let's see what happens in Python Tutor", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2]}, "ordered_globals": ["animals", "new_list"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "dogs"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "dogs"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "cats"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "cats"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "squirrels"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "squirrels"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "elks"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "elks"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels", "Elks"]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "elks"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels", "Elks"]}, "stdout": ""}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "elks"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels", "Elks"]}, "stdout": ""}]}
-</script>
-<div id="jm2c7d8276-9ebf-4395-a580-b1854d5c0dbc" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-47999ede491511d50d344840b578b55b-116" type="application/json" >
+        {"code": " \nanimals = ['dogs', 'cats', 'squirrels', 'elks']\n\nnew_list = [] # at every cycle the variable 'animal' contains a name taken from the list 'animals'\nfor animal in animals:  \n    new_list.append(animal.capitalize())   # we add the current animal name to the new list, \n                                           # with the first letter uppercased    \nnew_list\n\n#let's see what happens in Python Tutor", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2]}, "ordered_globals": ["animals", "new_list"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "dogs"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "dogs"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "cats"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "cats"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "squirrels"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "squirrels"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "elks"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels"]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "elks"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels", "Elks"]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "elks"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels", "Elks"]}, "stdout": ""}, {"line": 8, "event": "return", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 2], "animal": "elks"}, "ordered_globals": ["animals", "new_list", "animal"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrels", "elks"], "2": ["LIST", "Dogs", "Cats", "Squirrels", "Elks"]}, "stdout": ""}]}
+    </script>
+    <div id="jm-47999ede491511d50d344840b578b55b-116" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-47999ede491511d50d344840b578b55b-116').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jm2c7d8276-9ebf-4395-a580-b1854d5c0dbc').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm2c7d8276-9ebf-4395-a580-b1854d5c0dbc',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-47999ede491511d50d344840b578b55b-116',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-47999ede491511d50d344840b578b55b-116'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p>Important note: strings methods never modify the original string, they always generate a new string. So the original list <code class="docutils literal notranslate"><span class="pre">animals</span></code> will still contain the original strings without modifications:</p>
 <div class="nbinput docutils container">
@@ -5596,51 +5558,44 @@ volley doesn&#39;t start with b
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
-<script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
+    <script src="../_static/js/pytutor-embed.bundle.min.js" type="application/javascript"></script>
 
-<script id="json-jm28139b39-8d4f-47a0-9d66-db86a50e22a7" type="application/json" >
-    {"code": " \nanimals = ['dogs', 'cats', 'squirrel', 'elks']\n\nnew_list = [animal.capitalize() for animal in animals]", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "call", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2]}, "ordered_varnames": [".0"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2]}, "ordered_varnames": [".0"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "dogs"}, "ordered_varnames": [".0", "animal"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "cats"}, "ordered_varnames": [".0", "animal"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "squirrel"}, "ordered_varnames": [".0", "animal"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "elks"}, "ordered_varnames": [".0", "animal"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "elks", "__return__": ["REF", 3]}, "ordered_varnames": [".0", "animal", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "3": ["LIST", "Dogs", "Cats", "Squirrel", "Elks"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 3]}, "ordered_globals": ["animals", "new_list"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrel", "elks"], "3": ["LIST", "Dogs", "Cats", "Squirrel", "Elks"]}, "stdout": ""}]}
-</script>
-<div id="jm28139b39-8d4f-47a0-9d66-db86a50e22a7" class="pytutorVisualizer"> </div>
+    <style>
+    @import "../_static/css/jupman.css";
+    </style>
 
-<style>
-.vizLayoutTd {
-    background-color: #fff !important;
-}
+    <script id="json-jm-a11a60e838262817bd80f5abafeda3d3-121" type="application/json" >
+        {"code": " \nanimals = ['dogs', 'cats', 'squirrel', 'elks']\n\nnew_list = [animal.capitalize() for animal in animals]", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "call", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2]}, "ordered_varnames": [".0"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2]}, "ordered_varnames": [".0"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "dogs"}, "ordered_varnames": [".0", "animal"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "cats"}, "ordered_varnames": [".0", "animal"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "squirrel"}, "ordered_varnames": [".0", "animal"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "elks"}, "ordered_varnames": [".0", "animal"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<listcomp>", "globals": {"animals": ["REF", 1]}, "ordered_globals": ["animals"], "stack_to_render": [{"func_name": "<listcomp>", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {".0": ["REF", 2], "animal": "elks", "__return__": ["REF", 3]}, "ordered_varnames": [".0", "animal", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "<listcomp>_f1"}], "heap": {"2": ["INSTANCE", "list_iterator"], "3": ["LIST", "Dogs", "Cats", "Squirrel", "Elks"], "1": ["LIST", "dogs", "cats", "squirrel", "elks"]}, "stdout": ""}, {"line": 4, "event": "return", "func_name": "<module>", "globals": {"animals": ["REF", 1], "new_list": ["REF", 3]}, "ordered_globals": ["animals", "new_list"], "stack_to_render": [], "heap": {"1": ["LIST", "dogs", "cats", "squirrel", "elks"], "3": ["LIST", "Dogs", "Cats", "Squirrel", "Elks"]}, "stdout": ""}]}
+    </script>
+    <div id="jm-a11a60e838262817bd80f5abafeda3d3-121" class="pytutorVisualizer"> </div>
 
-#pyStdout {
-    min-height:25px;
-}
+    <script>
 
-/* 'Edit this code' link, hiding because replaces browser tab !!!*/
-#editCodeLinkDiv {
-    display:none;
-}
-</style>
+    (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-<script>
-(function(){
+        var trace = JSON.parse(document.getElementById('json-jm-a11a60e838262817bd80f5abafeda3d3-121').innerHTML);
+        // NOTE: id without #
 
-    var trace = JSON.parse(document.getElementById('json-jm28139b39-8d4f-47a0-9d66-db86a50e22a7').innerHTML);
-    // NOTE 1: id without #
-    // NOTE 2 - maybe there are more predictable ways, but this will work anyway
-    //        - id should be number
-    visualizerIdOverride = Math.trunc(Math.random() * 100000000000)
-    addVisualizerToPage(trace, 'jm28139b39-8d4f-47a0-9d66-db86a50e22a7',{'embeddedMode' : false,
-                                     'visualizerIdOverride':visualizerIdOverride})
+        addVisualizerToPage(trace, 'jm-a11a60e838262817bd80f5abafeda3d3-121',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-a11a60e838262817bd80f5abafeda3d3-121'})
 
 
-    // set overflow for pytuts - need to do in python as css
-    // does not allow parent selection
-    var pytuts = $('.pytutorVisualizer')
-    pytuts.closest('div.output_html.rendered_html.output_result')
-            .css('overflow-x', 'visible')
+        // set overflow for pytuts - need to do in python as css
+        // does not allow parent selection
+        var pytuts = $('.pytutorVisualizer')
+        pytuts.closest('div.output_html.rendered_html.output_result')
+                .css('overflow-x', 'visible')
 
-    //pytuts.closest('div.output_html.rendered_html.output_result')
-    //      .css('background-color','red')
+        //pytuts.closest('div.output_html.rendered_html.output_result')
+        //      .css('background-color','red')
 
-})()
-</script></div>
+    })()
+    </script>
+
+
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p><strong>✪ EXERCISE</strong>: Try using a list comprehension to place all the characters as uppercase</p>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -5718,7 +5673,7 @@ volley doesn&#39;t start with b
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;map at 0x7f0c7813ab50&gt;
+&lt;map at 0x7fa0cc3a46d0&gt;
 </pre></div></div>
 </div>
 <p>Sadly, the result is not yet what we wanted. The problem is Python 3 awaits to return a real list, preferring instead to give us an <em>iterator</em>. How comes? For efficiency reasons, Python 3 hopes we will never actually use any element from the new sequence, which would spare it the need to compute the function on all the elements of the original list.</p>
@@ -6019,7 +5974,7 @@ volley doesn&#39;t start with b
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-&lt;zip at 0x7f0c781579b0&gt;
+&lt;zip at 0x7fa0cc377c30&gt;
 </pre></div></div>
 </div>
 <p><strong>✪✪✪ EXERCISE</strong>: As you see with the <code class="docutils literal notranslate"><span class="pre">zip</span></code> we can obtain a result similar to that of previous exercise, but here we have tuples with round parenthesis instead of square brackets. Can you obtain the same identical result with a <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code> or a <code class="docutils literal notranslate"><span class="pre">map</span></code> (without filtering, for now)?</p>
@@ -6325,7 +6280,7 @@ volley doesn&#39;t start with b
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
+    <p>&#169; Copyright # CC-BY 2017 - 2023, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

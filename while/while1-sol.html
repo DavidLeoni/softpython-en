@@ -7,9 +7,10 @@
   <title>While loops 1 - introduction &mdash; SoftPython</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman.3.5.6.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.6.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.5.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/jupman-web.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme.3.5.7.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/softpython-theme-textures.3.5.7.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://en.softpython.org/while/while1-sol.html" />
   <!--[if lt IE 9]>
@@ -23,7 +24,7 @@
         <script src="../_static/js/require.min.js"></script>
         <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
         <script defer="defer" src="../_static/js/mathjax/tex-mml-chtml.js"></script>
-        <script src="../_static/js/jupman.3.5.6.js"></script>
+        <script src="../_static/js/jupman.3.5.7.js"></script>
         <script src="../_static/js/pytutor-embed.bundle.min.js"></script>
         <script src="../_static/js/softpython.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -139,11 +140,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Beyond-True-and-False">Beyond <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Strings---string">Strings - string</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Strings---str">Strings - str</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Using-object-methods">Using object methods</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Liste---list">Liste - list</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Lists---list">Lists - list</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../quick-intro/quick-intro-sol.html#Ordering-lists">Ordering lists</a></li>
 </ul>
 </li>
@@ -337,6 +338,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Conversions---from-number-to-string">Conversions - from number to string</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-strings">Formatting strings</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-%">Formatting with <code class="docutils literal notranslate"><span class="pre">%</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Formatting-with-f-strings">Formatting with f-strings</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings1-sol.html#Exercise---supercars">Exercise - supercars</a></li>
 </ul>
 </li>
@@ -364,7 +366,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---the-run">Exercise - the run</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../strings/strings2-sol.html#Inclusion-operator">Inclusion operator</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-1">Exercise - contained 1</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../strings/strings2-sol.html#Exercise---contained-2">Exercise - contained 2</a></li>
@@ -526,7 +528,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---Glory-to-Gladiators!">Exercise - Glory to Gladiators!</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#in-operator"><code class="docutils literal notranslate"><span class="pre">in</span></code> operator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Membership">Membership</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Do-not-abuse-in">Do not abuse <code class="docutils literal notranslate"><span class="pre">in</span></code></a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#not-in">not in</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---vegetables">Exercise - vegetables</a></li>
@@ -541,7 +543,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists2-sol.html#Exercise---balance">Exercise - balance</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Multiplying-lists">Multiplying lists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#List-replication">List replication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Equality">Equality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists2-sol.html#Continue">Continue</a></li>
 </ul>
@@ -586,6 +588,11 @@
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---dub-dab-dib-dob">Exercise - dub dab dib dob</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---ghirigori">Exercise - ghirigori</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#Exercise---welldone">Exercise - welldone</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#copy-method"><code class="docutils literal notranslate"><span class="pre">copy</span></code> method</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#copy-is-shallow"><code class="docutils literal notranslate"><span class="pre">copy</span></code> is shallow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../lists/lists3-sol.html#deepcopy-function"><code class="docutils literal notranslate"><span class="pre">deepcopy</span></code> function</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../lists/lists3-sol.html#Continue">Continue</a></li>
@@ -647,7 +654,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Slices">Slices</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Concatenation">Concatenation</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Membership">Membership</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Multiplication">Multiplication</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Replication">Replication</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../tuples/tuples1-sol.html#Exercise---welcome">Exercise - welcome</a></li>
 </ul>
 </li>
@@ -698,9 +705,9 @@
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Intersection">Intersection</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Difference">Difference</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Symmetric-difference">Symmetric difference</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#Equality">Equality</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Equality">Equality</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../sets/sets1-sol.html#Methods-like-operators">Methods like operators</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#union">union</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../sets/sets1-sol.html#update">update</a></li>
@@ -1787,86 +1794,78 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../toc-analytics.html#pandas">Pandas</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas1-sol.html">Intro</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Download-exercises-zip">Download exercises zip</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#1.-What-to-do">1. What to do</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Check-installation">Check installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas1-intro-sol.html">Intro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#1.-What-to-do">1. What to do</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Check-installation">Check installation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Which-pandas-should-I-use?">Which pandas should I use?</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#2.-Data-analysis-of-Astro-Pi">2. Data analysis of Astro Pi</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#2.1-Exercise---meteo-info">2.1 Exercise - meteo info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.-Data-analysis-of-Astro-Pi">2. Data analysis of Astro Pi</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.1-Let's-import-the-file">2.1 Let’s import the file</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.2-Memory">2.2 Memory</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.3-Dimensions">2.3 Dimensions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.4-Let's-explore!">2.4 Let’s explore!</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.5-Some-stats">2.5 Some stats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.6-Guardiamo-le-colonne">2.6 Guardiamo le colonne</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.7-What-is-a-column?">2.7 What is a column?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#2.8-Exercise---meteo-info">2.8 Exercise - meteo info</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#3.-MatPlotLib-review">3. MatPlotLib review</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#3.1-An-example">3.1 An example</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#3.2-Matplotlib-plots-from-pandas-datastructures">3.2 Matplotlib plots from pandas datastructures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.-MatPlotLib-review">3. MatPlotLib review</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.1-An-example">3.1 An example</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#3.2-Matplotlib-plots-from-pandas-datastructures">3.2 Matplotlib plots from pandas datastructures</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#4.-Operations-on-rows">4. Operations on rows</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.1-Indexing-integers">4.1 Indexing integers</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.2-Filtering">4.2 Filtering</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.3-Sorting">4.3 Sorting</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#4.4-Exercise---Meteo-stats">4.4 Exercise - Meteo stats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.-Operations-on-rows">4. Operations on rows</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.1-Indexing-integers">4.1 Indexing integers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Difference-between-iloc-and-loc">Difference between <code class="docutils literal notranslate"><span class="pre">iloc</span></code> and <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.2-Filtering">4.2 Filtering</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.3-Sorting">4.3 Sorting</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.4-Exercise---Meteo-stats">4.4 Exercise - Meteo stats</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.5-Exercise---meteo-plot">4.5 Exercise - meteo plot</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#4.6-Exercise---Meteo-pressure-and-raining">4.6 Exercise - Meteo pressure and raining</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#5.-Object-values-and-strings">5. Object values and strings</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.1-Filter-by-textual-values">5.1 Filter by textual values</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#5.2-Extracting-strings">5.2 Extracting strings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.-Object-values-and-strings">5. Object values and strings</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.1-Filter-by-textual-values">5.1 Filter by textual values</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#5.2-Extracting-strings">5.2 Extracting strings</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#6.-Operations-on-columns">6. Operations on columns</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.1---Selecting-columns">6.1 - Selecting columns</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2---Adding-columns">6.2 - Adding columns</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">6.2.1 Exercise: Meteo temperature in Fahrenheit</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.2.2-Exercise---Pressure-vs-Temperature">6.2.2 Exercise - Pressure vs Temperature</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#6.3-Transforming-columns">6.3 Transforming columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.-Operations-on-columns">6. Operations on columns</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.1---Selecting-columns">6.1 - Selecting columns</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2---Adding-columns">6.2 - Adding columns</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2.1-Exercise:-Meteo-temperature-in-Fahrenheit">6.2.1 Exercise: Meteo temperature in Fahrenheit</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.2.2-Exercise---Pressure-vs-Temperature">6.2.2 Exercise - Pressure vs Temperature</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.3-Scrivere-in-colonne-filtrate-con-loc">6.3 Scrivere in colonne filtrate con <code class="docutils literal notranslate"><span class="pre">loc</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#6.3-Transforming-columns">6.3 Transforming columns</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#7.-Grouping">7. Grouping</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#8.-Exercise---meteo-average-temperatures">8. Exercise - meteo average temperatures</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.1-meteo-plot">8.1 meteo plot</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.2-meteo-pressure-and-raining">8.2 meteo pressure and raining</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#8.3-meteo-average-temperature">8.3 meteo average temperature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.-Other-exercises">7. Other exercises</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.1-Exercise---Air-pollutants">7.1 Exercise - Air pollutants</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.2-Exercise---Game-of-Thrones">7.2 Exercise - Game of Thrones</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#7.3-Exercise---Healthcare-facilities">7.3 Exercise - Healthcare facilities</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#9-Exercise---Air-pollutants">9 Exercise - Air pollutants</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.1---load-the-file">9.1 - load the file</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.2---pollutants-average">9.2 - pollutants average</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#9.3---PM10-chart">9.3 - PM10 chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-intro-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#10.-Merging-tables">10. Merging tables</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas1-sol.html#Exercise-10.1---better-merge">Exercise 10.1 - better merge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html">Advanded operations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Download-exercises-zip">Download exercises zip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.-Grouping">1. Grouping</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.1-Let's-see-a-group">1.1 Let’s see a group</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.2-groupby">1.2 <code class="docutils literal notranslate"><span class="pre">groupby</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.3-Modifying-a-dataframe-by-plugging-in-the-result-of-a-grouping">1.3 Modifying a dataframe by plugging in the result of a grouping</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.4-Exercise---meteo-pressure-intervals">1.4 Exercise - meteo pressure intervals</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#1.5-Exercise---meteo-average-temperature">1.5 Exercise - meteo average temperature</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#11.-GeoPandas">11. GeoPandas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas1-sol.html#Continue">Continue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#2.-Merging-tables">2. Merging tables</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Exercise-2.1---better-merge">Exercise 2.1 - better merge</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../pandas/pandas2-sol.html">Exercises</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Download-exercises-and-solution">Download exercises and solution</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#What-to-do">What to do</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#offerte-dataset">offerte dataset</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#rename-columns">rename columns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.1-countries_to_list">1.1 countries_to_list</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#1.2-Filling-column-Workplace-Country">1.2 Filling column Workplace Country</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#2.-Work-dates">2. Work dates</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.1-from_to-function">2.1 from_to function</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#2.2.-From-To-columns">2.2. From To columns</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#3.-Required-languages">3. Required languages</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.1-function-reqlan">3.1 function reqlan</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../pandas/pandas2-sol.html#3.2-Languages-column">3.2 Languages column</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-sol.html#Continue">Continue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#3.-GeoPandas">3. GeoPandas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pandas/pandas2-advanced-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../pandas/pandas3-chal.html">Challenges</a><ul>
@@ -2185,6 +2184,32 @@
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A1-extract_bounds">A1 extract_bounds</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A2-extract_product">A2 extract_product</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../projects/price-catalog/price-catalog-sol.html#A3-plot_product">A3 plot_product</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../projects/eures/eures-sol.html">EURES job offers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Download-worked-project">Download worked project</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#What-to-do">What to do</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#offerte-dataset">offerte dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#rename-columns">rename columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#1.-Rename-countries">1. Rename countries</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#1.1-countries_to_list">1.1 countries_to_list</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#1.2-Filling-column-Workplace-Country">1.2 Filling column Workplace Country</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#2.-Work-dates">2. Work dates</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#2.1-from_to-function">2.1 from_to function</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#2.2.-From-To-columns">2.2. From To columns</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#3.-Required-languages">3. Required languages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#3.1-function-reqlan">3.1 function reqlan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../projects/eures/eures-sol.html#3.2-Languages-column">3.2 Languages column</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../projects/eures/eures-sol.html#Continue">Continue</a></li>
 </ul>
 </li>
 </ul>
@@ -2766,19 +2791,22 @@ Loop is over !
     @import "../_static/css/jupman.css";
     </style>
 
-    <script id="json-jm-d6a0bed2e30b0bb19817dbbde8bab640" type="application/json" >
+    <script id="json-jm-d6a0bed2e30b0bb19817dbbde8bab640-6" type="application/json" >
         {"code": " \ni = 1\nwhile i < 4:\n    print('Counted', i)\n    i += 1\n    \nprint('Loop is over !')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\nCounted 3\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\nCounted 3\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\nCounted 3\n"}, {"line": 7, "event": "return", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\nCounted 2\nCounted 3\nLoop is over !\n"}]}
     </script>
-    <div id="jm-d6a0bed2e30b0bb19817dbbde8bab640" class="pytutorVisualizer"> </div>
+    <div id="jm-d6a0bed2e30b0bb19817dbbde8bab640-6" class="pytutorVisualizer"> </div>
 
     <script>
+
     (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-        var trace = JSON.parse(document.getElementById('json-jm-d6a0bed2e30b0bb19817dbbde8bab640').innerHTML);
-        // NOTE 1: id without #
+        var trace = JSON.parse(document.getElementById('json-jm-d6a0bed2e30b0bb19817dbbde8bab640-6').innerHTML);
+        // NOTE: id without #
 
-        addVisualizerToPage(trace, 'jm-d6a0bed2e30b0bb19817dbbde8bab640',{'embeddedMode' : false,
-                                         'visualizerIdOverride':'viz-jm-d6a0bed2e30b0bb19817dbbde8bab640'})
+        addVisualizerToPage(trace, 'jm-d6a0bed2e30b0bb19817dbbde8bab640-6',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-d6a0bed2e30b0bb19817dbbde8bab640-6'})
 
 
         // set overflow for pytuts - need to do in python as css
@@ -2794,7 +2822,7 @@ Loop is over !
     </script>
 
 
-<div style="text-align:center; font-size:0.9em"> Visualization provided by <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> </div></div>
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p>In the example we used a variable we called <code class="docutils literal notranslate"><span class="pre">i</span></code> and initialized it to zero.</p>
 <p>At the beginning of the cycle <code class="docutils literal notranslate"><span class="pre">i</span></code> is valued <code class="docutils literal notranslate"><span class="pre">1</span></code>, so the boolean expression <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">4</span></code> is evaluated as <code class="docutils literal notranslate"><span class="pre">True</span></code>. Since it’s <code class="docutils literal notranslate"><span class="pre">True</span></code>, execution continues inside the block with the <code class="docutils literal notranslate"><span class="pre">print</span></code> and finally MODIFIES <code class="docutils literal notranslate"><span class="pre">i</span></code> by incrementing <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">+=</span> <span class="pre">1</span></code>.</p>
@@ -3274,19 +3302,22 @@ Loop is over !
     @import "../_static/css/jupman.css";
     </style>
 
-    <script id="json-jm-130a31b587c0d268a5d85e4d560c7230" type="application/json" >
+    <script id="json-jm-130a31b587c0d268a5d85e4d560c7230-11" type="application/json" >
         {"code": " \ni = 1\nwhile i < 5:     \n    print('Counted', i)\n    if i > 3:        \n        print('break! Exiting the cycle!')\n        break    \n        print('After the break')\n    i += 1    \n    if i % 2 == 1:\n        print('continue, jumping to next condition check')\n        continue\n        print('After the continue')\n    print('arrived till the end')\n    \nprint('Loop is over !')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"i": 1}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"i": 2}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\n"}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\n"}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"i": 3}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\n"}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\n"}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\n"}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\n"}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\nbreak! Exiting the cycle!\n"}, {"line": 16, "event": "step_line", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\nbreak! Exiting the cycle!\n"}, {"line": 16, "event": "return", "func_name": "<module>", "globals": {"i": 4}, "ordered_globals": ["i"], "stack_to_render": [], "heap": {}, "stdout": "Counted 1\narrived till the end\nCounted 2\ncontinue, jumping to next condition check\nCounted 3\narrived till the end\nCounted 4\nbreak! Exiting the cycle!\nLoop is over !\n"}]}
     </script>
-    <div id="jm-130a31b587c0d268a5d85e4d560c7230" class="pytutorVisualizer"> </div>
+    <div id="jm-130a31b587c0d268a5d85e4d560c7230-11" class="pytutorVisualizer"> </div>
 
     <script>
+
     (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-        var trace = JSON.parse(document.getElementById('json-jm-130a31b587c0d268a5d85e4d560c7230').innerHTML);
-        // NOTE 1: id without #
+        var trace = JSON.parse(document.getElementById('json-jm-130a31b587c0d268a5d85e4d560c7230-11').innerHTML);
+        // NOTE: id without #
 
-        addVisualizerToPage(trace, 'jm-130a31b587c0d268a5d85e4d560c7230',{'embeddedMode' : false,
-                                         'visualizerIdOverride':'viz-jm-130a31b587c0d268a5d85e4d560c7230'})
+        addVisualizerToPage(trace, 'jm-130a31b587c0d268a5d85e4d560c7230-11',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-130a31b587c0d268a5d85e4d560c7230-11'})
 
 
         // set overflow for pytuts - need to do in python as css
@@ -3302,7 +3333,7 @@ Loop is over !
     </script>
 
 
-<div style="text-align:center; font-size:0.9em"> Visualization provided by <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> </div></div>
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 </section>
 <section id="Questions-about-break-and-continue">
@@ -4689,7 +4720,7 @@ True
 <section id="Modifying-sequences">
 <h2>Modifying sequences<a class="headerlink" href="#Modifying-sequences" title="Permalink to this headline"></a></h2>
 <p>In the tutorial on <code class="docutils literal notranslate"><span class="pre">for</span></code> loops we’ve seen an important warning we repeat here:</p>
-<div class="admonition note">
+<div class="jupman-alert-principle"></div><div class="admonition note">
 <p class="admonition-title fa fa-exclamation-circle"><a class="reference external" href="https://en.softpython.org/commandments.html#X-COMMANDMENT">X COMMANDMENT</a>: <strong>You shall never ever add or remove elements from a sequence you are iterating with a</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> <strong>!</strong></p>
 <p>Falling into such temptations <strong>would produce totally unpredictable behaviours</strong> (do you know the expression <em>pulling the rug out from under your feet ?</em> )</p>
 <p><strong>If you really need to remove elements from a sequence you are iterating</strong>, use a while cycle or duplicate first a copy of the original sequence.</p>
@@ -4743,19 +4774,22 @@ No more cards!
     @import "../_static/css/jupman.css";
     </style>
 
-    <script id="json-jm-f8ddd359191dc943c7dfe06e429bd8c1" type="application/json" >
+    <script id="json-jm-f8ddd359191dc943c7dfe06e429bd8c1-32" type="application/json" >
         {"code": " \ndeck = ['3 hearts',   # <---- bottom\n        '2 spades',\n        '9 hearts',\n        '5 diamonds',\n        '8 clubs']    # <---- top\n\nwhile len(deck) > 0:\n    card = deck.pop()      \n    print('Drawn', card)\n\nprint('No more cards!')", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1]}, "ordered_globals": ["deck"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1]}, "ordered_globals": ["deck"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "2 spades"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "2 spades"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "2 spades"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "3 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "3 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\nDrawn 3 hearts\n"}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "3 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\nDrawn 3 hearts\n"}, {"line": 12, "event": "return", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "3 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nDrawn 2 spades\nDrawn 3 hearts\nNo more cards!\n"}]}
     </script>
-    <div id="jm-f8ddd359191dc943c7dfe06e429bd8c1" class="pytutorVisualizer"> </div>
+    <div id="jm-f8ddd359191dc943c7dfe06e429bd8c1-32" class="pytutorVisualizer"> </div>
 
     <script>
+
     (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-        var trace = JSON.parse(document.getElementById('json-jm-f8ddd359191dc943c7dfe06e429bd8c1').innerHTML);
-        // NOTE 1: id without #
+        var trace = JSON.parse(document.getElementById('json-jm-f8ddd359191dc943c7dfe06e429bd8c1-32').innerHTML);
+        // NOTE: id without #
 
-        addVisualizerToPage(trace, 'jm-f8ddd359191dc943c7dfe06e429bd8c1',{'embeddedMode' : false,
-                                         'visualizerIdOverride':'viz-jm-f8ddd359191dc943c7dfe06e429bd8c1'})
+        addVisualizerToPage(trace, 'jm-f8ddd359191dc943c7dfe06e429bd8c1-32',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-f8ddd359191dc943c7dfe06e429bd8c1-32'})
 
 
         // set overflow for pytuts - need to do in python as css
@@ -4771,7 +4805,7 @@ No more cards!
     </script>
 
 
-<div style="text-align:center; font-size:0.9em"> Visualization provided by <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> </div></div>
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 <p>Looking at the code, we can notice that:</p>
 <ol class="arabic simple">
@@ -4839,19 +4873,22 @@ Found hearts!
     @import "../_static/css/jupman.css";
     </style>
 
-    <script id="json-jm-6e9d106e764e01770fb21359d167939f" type="application/json" >
+    <script id="json-jm-6e9d106e764e01770fb21359d167939f-33" type="application/json" >
         {"code": " \ndeck = ['3 hearts','2 spades','9 hearts','5 diamonds','8 clubs']\n#deck = ['8 spades','2 spades','5 diamonds','4 clubs']   # no hearts!\n\ncard = ''\nwhile len(deck) > 0:\n    card = deck.pop()      \n    print('Drawn', card)\n    if 'hearts' in card:\n        break\n        \nif 'hearts' in card:\n    print('Found hearts!')\nelse:\n    print(\"Didn't find hearts!\")", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1]}, "ordered_globals": ["deck"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": ""}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": ""}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds", "8 clubs"]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "8 clubs"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts", "5 diamonds"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 6, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 7, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "5 diamonds"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades", "9 hearts"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 8, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\n"}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 13, "event": "step_line", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\n"}, {"line": 13, "event": "return", "func_name": "<module>", "globals": {"deck": ["REF", 1], "card": "9 hearts"}, "ordered_globals": ["deck", "card"], "stack_to_render": [], "heap": {"1": ["LIST", "3 hearts", "2 spades"]}, "stdout": "Drawn 8 clubs\nDrawn 5 diamonds\nDrawn 9 hearts\nFound hearts!\n"}]}
     </script>
-    <div id="jm-6e9d106e764e01770fb21359d167939f" class="pytutorVisualizer"> </div>
+    <div id="jm-6e9d106e764e01770fb21359d167939f-33" class="pytutorVisualizer"> </div>
 
     <script>
+
     (function(){
+        console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-        var trace = JSON.parse(document.getElementById('json-jm-6e9d106e764e01770fb21359d167939f').innerHTML);
-        // NOTE 1: id without #
+        var trace = JSON.parse(document.getElementById('json-jm-6e9d106e764e01770fb21359d167939f-33').innerHTML);
+        // NOTE: id without #
 
-        addVisualizerToPage(trace, 'jm-6e9d106e764e01770fb21359d167939f',{'embeddedMode' : false,
-                                         'visualizerIdOverride':'viz-jm-6e9d106e764e01770fb21359d167939f'})
+        addVisualizerToPage(trace, 'jm-6e9d106e764e01770fb21359d167939f-33',{'embeddedMode' : false,
+                                         'disableHeapNesting': true,
+                                         'visualizerIdOverride':'viz-jm-6e9d106e764e01770fb21359d167939f-33'})
 
 
         // set overflow for pytuts - need to do in python as css
@@ -4867,7 +4904,7 @@ Found hearts!
     </script>
 
 
-<div style="text-align:center; font-size:0.9em"> Visualization provided by <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> </div></div>
+<div style="text-align:center; font-size:0.9em"> <a href="https://pythontutor.com/visualize.html#mode=edit" target="_blank">Python Tutor</a> visualization</div></div>
 </div>
 </section>
 <section id="Exercise---Don't-break-my-heart">
@@ -5451,7 +5488,7 @@ Done! la is []
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright # CC-BY 2017 - 2022, David Leoni, Alessio Zamboni, Marco Caresia.</p>
+    <p>&#169; Copyright # CC-BY 2017 - 2023, David Leoni, Alessio Zamboni, Marco Caresia.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
