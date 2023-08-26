@@ -1406,14 +1406,16 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Intro</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#Download-exercises-zip">Download exercises zip</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#What-to-do">What to do</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#Overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#What-to-do">What to do</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Matrix-dimensions">Matrix dimensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Visiting-with-style">Visiting with style</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#Question---A-matter-of-style-1">Question - A matter of style 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Question---A-matter-of-style-2">Question - A matter of style 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#Question---A-matter-of-style-3">Question - A matter of style 3</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#Exercises">Exercises</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#Matrix-dimensions">Matrix dimensions</a></li>
-</ul>
-</li>
+<li class="toctree-l4"><a class="reference internal" href="#How-to-solve-the-exercises">How to solve the exercises</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#Extracting-rows-and-columns">Extracting rows and columns</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#How-to-extract-a-row">How to extract a row</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#Extracting-row-pointers">Extracting row pointers</a></li>
@@ -2722,8 +2724,9 @@ div.rendered_html tbody tr:hover {
 <li><p>to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press <code class="docutils literal notranslate"><span class="pre">Alt</span> <span class="pre">+</span> <span class="pre">Enter</span></code></p></li>
 <li><p>If the notebooks look stuck, try to select <code class="docutils literal notranslate"><span class="pre">Kernel</span> <span class="pre">-&gt;</span> <span class="pre">Restart</span></code></p></li>
 </ul>
+</section>
 <section id="Overview">
-<h3>Overview<a class="headerlink" href="#Overview" title="Permalink to this headline"></a></h3>
+<h2>Overview<a class="headerlink" href="#Overview" title="Permalink to this headline"></a></h2>
 <p>Let’s see these lists of lists. Consider the following a matrix with 3 rows and 2 columns, or in short 3x2 matrix:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
@@ -2855,21 +2858,8 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 </section>
-</section>
-<section id="Exercises">
-<h2>Exercises<a class="headerlink" href="#Exercises" title="Permalink to this headline"></a></h2>
-<p>Now implement the following functions.</p>
-<div class="admonition note">
-<p><strong>REMEMBER</strong>: if the cell is executed and nothing happens, it is because all the assert tests have worked! In such case you probably wrote correct code but careful, these kind of tests are never exhaustive so you could have still made some error.</p>
-</div>
-<div class="jupman-alert-principle"></div><div class="admonition note">
-<p><a class="reference external" href="https://en.softpython.org/commandments.html#III-COMMANDMENT">III COMMANDMENT</a>: <strong>You shall never reassign function parameters</strong></p>
-</div>
-<div class="jupman-alert-principle"></div><div class="admonition note">
-<p><a class="reference external" href="https://en.softpython.org/commandments.html#VI-COMMANDMENT">VI COMMANDMENT</a> <strong>You shall use</strong> <code class="docutils literal notranslate"><span class="pre">return</span></code> <strong>command only if you see written RETURN in the function description!</strong></p>
-</div>
 <section id="Matrix-dimensions">
-<h3>Matrix dimensions<a class="headerlink" href="#Matrix-dimensions" title="Permalink to this headline"></a></h3>
+<h2>Matrix dimensions<a class="headerlink" href="#Matrix-dimensions" title="Permalink to this headline"></a></h2>
 <p>✪ <strong>EXERCISE</strong>: For getting matrix dimensions, we can use normal list operations. Which ones? You can assume the matrix is well formed (all rows have equal length) and has at least one row and at least one column</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
@@ -2924,6 +2914,223 @@ columns
 </div>
 </div>
 </section>
+<section id="Visiting-with-style">
+<h2>Visiting with style<a class="headerlink" href="#Visiting-with-style" title="Permalink to this headline"></a></h2>
+<p>Suppose we want to visit all the cells of a matrix from left to right, and print them one by one.</p>
+<p>If you want to keep track of the coordinates where you are in the traversal, you can use a nested <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">in</span> <span class="pre">range</span></code> like so:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">],</span>
+    <span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">m</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;i:&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39; j:&#39;</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="s1">&#39; m[i][j]:&#39;</span><span class="p">,</span> <span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ROW END!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+i: 0  j: 0  m[i][j]: a
+i: 0  j: 1  m[i][j]: b
+i: 0  j: 2  m[i][j]: c
+ROW END!
+i: 1  j: 0  m[i][j]: d
+i: 1  j: 1  m[i][j]: e
+i: 1  j: 2  m[i][j]: f
+ROW END!
+i: 2  j: 0  m[i][j]: g
+i: 2  j: 1  m[i][j]: h
+i: 2  j: 2  m[i][j]: i
+ROW END!
+i: 3  j: 0  m[i][j]: m
+i: 3  j: 1  m[i][j]: n
+i: 3  j: 2  m[i][j]: o
+ROW END!
+</pre></div></div>
+</div>
+<p>The algorithm is pretty simple, yet a couple of things are worth noting:</p>
+<ul class="simple">
+<li><p>we used <code class="docutils literal notranslate"><span class="pre">i</span></code> as <em>integer index</em> for the <em>rows</em></p></li>
+<li><p>we used <code class="docutils literal notranslate"><span class="pre">j</span></code> as <em>integer index</em> for the <em>columns</em></p></li>
+</ul>
+<p>Those names and types are important, as they are basically standard in math books.</p>
+<p>You could maybe dismiss name choices as a pure matter of style, yet:</p>
+<div class="jupman-alert-principle"><div class="admonition note">
+<p class="admonition-title fa fa-exclamation-circle"><strong>WHEN DEALING WITH MATRICES, STYLE</strong> <strong>*IS*</strong> <strong>SUBSTANCE</strong></p>
+<p><strong>Please adopt the above naming style</strong>.</p>
+<p>Those who don’t, spend quite a lot of time in <em>Debugging Hell</em>… trust us.</p>
+</div>
+<section id="Question---A-matter-of-style-1">
+<h3>Question - A matter of style 1<a class="headerlink" href="#Question---A-matter-of-style-1" title="Permalink to this headline"></a></h3>
+<p>Look at the following code that prints again all the cells from left to right (suppose we don’t care about printing the coordinates).</p>
+<p>Is this <em>good style</em> or not? Why?</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">],</span>
+    <span class="p">]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">m</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ROW END!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+a
+b
+c
+ROW END!
+d
+e
+f
+ROW END!
+g
+h
+i
+ROW END!
+m
+n
+o
+ROW END!
+</pre></div></div>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: that’s bad style! We said we reserve <code class="docutils literal notranslate"><span class="pre">i</span></code> and <code class="docutils literal notranslate"><span class="pre">j</span></code> for <em>integer indexes</em>, but in the case above, <code class="docutils literal notranslate"><span class="pre">i</span></code> is a pointer to an entire <em>row</em> (thus a list), and <code class="docutils literal notranslate"><span class="pre">j</span></code> is the <em>content</em> of a cell (thus a string).</p>
+</div></section>
+<section id="Question---A-matter-of-style-2">
+<h3>Question - A matter of style 2<a class="headerlink" href="#Question---A-matter-of-style-2" title="Permalink to this headline"></a></h3>
+<p>Look at the following code that prints again alle the cells from left to right (suppose we don’t care about printing the coordinates).</p>
+<p>Is this <em>good style</em> or not? Why?</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">],</span>
+    <span class="p">]</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">m</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">column</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ROW END!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+a
+b
+c
+ROW END!
+d
+e
+f
+ROW END!
+g
+h
+i
+ROW END!
+m
+n
+o
+ROW END!
+</pre></div></div>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: that’s bad style! We said whenever possible we should use <code class="docutils literal notranslate"><span class="pre">i</span></code> and <code class="docutils literal notranslate"><span class="pre">j</span></code> for <em>integer indexes</em>. Instead, in this case we used the variable <code class="docutils literal notranslate"><span class="pre">row</span></code> for an integer index but typically with the name <em>row</em> you would expect to refer to the <em>list</em> holding the data. Same goes for the <code class="docutils literal notranslate"><span class="pre">column</span></code> variable.</p>
+</div></section>
+<section id="Question---A-matter-of-style-3">
+<h3>Question - A matter of style 3<a class="headerlink" href="#Question---A-matter-of-style-3" title="Permalink to this headline"></a></h3>
+<p>Look at the following code that prints again alle the cells from left to right (suppose we don’t care about printing the coordinates).</p>
+<p>Is this <em>good style</em> or not? Why?</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;g&#39;</span><span class="p">,</span><span class="s1">&#39;h&#39;</span><span class="p">,</span><span class="s1">&#39;i&#39;</span><span class="p">],</span>
+        <span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">,</span><span class="s1">&#39;n&#39;</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">],</span>
+    <span class="p">]</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">m</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">cell</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">cell</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ROW END!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+a
+b
+c
+ROW END!
+d
+e
+f
+ROW END!
+g
+h
+i
+ROW END!
+m
+n
+o
+ROW END!
+</pre></div></div>
+</div>
+<a  class="jupman-sol jupman-sol-toggler"
+ onclick="jupman.toggleSolution(this);"
+ data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: The above style is ok. Since we don’t explicitly need the position, if we want we can skip holding integer indeces <code class="docutils literal notranslate"><span class="pre">i</span></code> and <code class="docutils literal notranslate"><span class="pre">j</span></code> and directly obtain pointers to the internal lists, <em>provided we choose proper names for them</em>, like in this case with the <code class="docutils literal notranslate"><span class="pre">row</span></code> variable. Notice we named the internal variable <code class="docutils literal notranslate"><span class="pre">cell</span></code> to mean we are referring to the <em>string content</em> of it.</p>
+</div></section>
+</section>
+<section id="How-to-solve-the-exercises">
+<h2>How to solve the exercises<a class="headerlink" href="#How-to-solve-the-exercises" title="Permalink to this headline"></a></h2>
+<p>All the following exercises are proposed as functions to implement.</p>
+<div class="admonition note">
+<p><strong>REMEMBER</strong>: if the cell is executed and nothing happens, it’s because all the assert tests have worked! In such case you probably wrote correct code but careful, these kind of tests are never exhaustive so you could have still made some error.</p>
+</div>
+<div class="jupman-alert-principle"></div><div class="admonition note">
+<p><a class="reference external" href="https://en.softpython.org/commandments.html#III-COMMANDMENT">III COMMANDMENT</a>: <strong>You shall never reassign function parameters</strong></p>
+</div>
+<div class="jupman-alert-principle"></div><div class="admonition note">
+<p><a class="reference external" href="https://en.softpython.org/commandments.html#VI-COMMANDMENT">VI COMMANDMENT</a> <strong>You shall use</strong> <code class="docutils literal notranslate"><span class="pre">return</span></code> <strong>command only if you see written RETURN in the function description!</strong></p>
+</div>
 </section>
 <section id="Extracting-rows-and-columns">
 <h2>Extracting rows and columns<a class="headerlink" href="#Extracting-rows-and-columns" title="Permalink to this headline"></a></h2>
@@ -2934,15 +3141,15 @@ columns
 <li><p>return a <em>pointer</em> to the <em>original</em> row</p></li>
 <li><p>return a <em>copy</em> of the row.</p></li>
 </ol>
-<p>Since a copy consumes memory, why should you ever want to return a copy? Sometimes you should because you don’t know which use will be done of the data structure. For example, suppose you got a book of exercises which has empty spaces to write exercises in. It’s such a great book everybody in the classroom wants to read it - but you are afraid if the book starts changing hands some careless guy might write on it. To avoid problems, you make a copy of the book and distribute it (let’s leave
-copyright infringment matters aside :-)</p>
+<p>Since a copy consumes memory, why should you ever want to return a copy? Sometimes you just don’t know which use will be done of the data structure. For example, suppose you got a book of exercises which has empty spaces to write exercises in. It’s such a great book everybody in the classroom wants to read it - but you are afraid if the book starts changing hands some careless guy might write on it. To avoid problems, you make a copy of the book and distribute it (let’s leave copyright
+infringment matters aside :-)</p>
 </section>
 <section id="Extracting-row-pointers">
 <h3>Extracting row pointers<a class="headerlink" href="#Extracting-row-pointers" title="Permalink to this headline"></a></h3>
 <p>So first let’s see what happens when you just return a <em>pointer</em> to the <em>original</em> row.</p>
 <p><strong>NOTE</strong>: For convenience, at the end of the cell we put a magic call to <code class="docutils literal notranslate"><span class="pre">jupman.pytut()</span></code> which shows the code execution like in Python tutor (for further info about <code class="docutils literal notranslate"><span class="pre">jupman.pytut()</span></code>, <a class="reference external" href="https://en.softpython.org/tools/tools-sol.html#Visualizing-the-execution-with-Python-Tutor">see here</a>). If you execute all the code in Python tutor, you will see that at the end you have two arrow pointers to the row <code class="docutils literal notranslate"><span class="pre">['a','b']</span></code>, one starting from <code class="docutils literal notranslate"><span class="pre">m</span></code> list and one from <code class="docutils literal notranslate"><span class="pre">row</span></code> variable.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># WARNING: FOR PYTHON TUTOR TO WORK, REMEMBER TO EXECUTE THIS CELL with Shift+Enter</span>
@@ -2952,7 +3159,7 @@ copyright infringment matters aside :-)</p>
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extrowp</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -2974,7 +3181,7 @@ copyright infringment matters aside :-)</p>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -2984,22 +3191,22 @@ copyright infringment matters aside :-)</p>
     @import "../_static/css/jupman.css";
     </style>
 
-    <script id="json-jm-ba33f132141372f74149051d04ee1705-14" type="application/json" >
+    <script id="json-jm-ba33f132141372f74149051d04ee1705-18" type="application/json" >
         {"code": " \ndef extrowp(mat, i):\n    \"\"\" RETURN the ith row from mat        \n    \"\"\"\n    return mat[i]\n\n    \nm = [\n      ['a','b'],\n      ['c','d'],\n      ['a','e'],    \n]\n\nrow = extrowp(m, 0)", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "<module>", "globals": {"extrowp": ["REF", 1]}, "ordered_globals": ["extrowp"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"extrowp": ["REF", 1]}, "ordered_globals": ["extrowp"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"extrowp": ["REF", 1]}, "ordered_globals": ["extrowp"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrowp", "m"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"]}, "stdout": ""}, {"line": 2, "event": "call", "func_name": "extrowp", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrowp", "m"], "stack_to_render": [{"func_name": "extrowp", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrowp_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 5, "event": "step_line", "func_name": "extrowp", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrowp", "m"], "stack_to_render": [{"func_name": "extrowp", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrowp_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 5, "event": "return", "func_name": "extrowp", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrowp", "m"], "stack_to_render": [{"func_name": "extrowp", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "__return__": ["REF", 3]}, "ordered_varnames": ["mat", "i", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrowp_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrowp(mat, i)", null]}, "stdout": ""}, {"line": 14, "event": "return", "func_name": "<module>", "globals": {"extrowp": ["REF", 1], "m": ["REF", 2], "row": ["REF", 3]}, "ordered_globals": ["extrowp", "m", "row"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrowp(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"]}, "stdout": ""}]}
     </script>
-    <div id="jm-ba33f132141372f74149051d04ee1705-14" class="pytutorVisualizer"> </div>
+    <div id="jm-ba33f132141372f74149051d04ee1705-18" class="pytutorVisualizer"> </div>
 
     <script>
 
     (function(){
         console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-        var trace = JSON.parse(document.getElementById('json-jm-ba33f132141372f74149051d04ee1705-14').innerHTML);
+        var trace = JSON.parse(document.getElementById('json-jm-ba33f132141372f74149051d04ee1705-18').innerHTML);
         // NOTE: id without #
 
-        addVisualizerToPage(trace, 'jm-ba33f132141372f74149051d04ee1705-14',{'embeddedMode' : false,
+        addVisualizerToPage(trace, 'jm-ba33f132141372f74149051d04ee1705-18',{'embeddedMode' : false,
                                          'disableHeapNesting': true,
-                                         'visualizerIdOverride':'viz-jm-ba33f132141372f74149051d04ee1705-14'})
+                                         'visualizerIdOverride':'viz-jm-ba33f132141372f74149051d04ee1705-18'})
 
 
         // set overflow for pytuts - need to do in python as css
@@ -3023,7 +3230,7 @@ copyright infringment matters aside :-)</p>
 <p>✪ Now try to implement a version which returns a <strong>copy</strong> of the row.</p>
 <p><strong>QUESTION</strong>: You might be tempted to implement something like this - but it wouldn’t work. Why?</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># WARNING: WRONG CODE!!!!</span>
@@ -3048,7 +3255,7 @@ copyright infringment matters aside :-)</p>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -3058,22 +3265,22 @@ copyright infringment matters aside :-)</p>
     @import "../_static/css/jupman.css";
     </style>
 
-    <script id="json-jm-74aad51bb261c45d051658d2773f2245-15" type="application/json" >
+    <script id="json-jm-74aad51bb261c45d051658d2773f2245-19" type="application/json" >
         {"code": " \n# WARNING: WRONG CODE!!!!\n\ndef extrow_wrong(mat, i):\n    \"\"\" RETURN the ith row from mat, as a NEW list\"\"\"\n    \n    row = []\n    row.append(mat[i])  \n    return row\n\nm = [\n      ['a','b'],\n      ['c','d'],\n      ['a','e'],    \n]\n\nrow = extrow_wrong(m,0)", "trace": [{"line": 4, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 12, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1]}, "ordered_globals": ["extrow_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 13, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1]}, "ordered_globals": ["extrow_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1]}, "ordered_globals": ["extrow_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 17, "event": "step_line", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"]}, "stdout": ""}, {"line": 4, "event": "call", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0}, "ordered_varnames": ["mat", "i"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 8, "event": "step_line", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "row": ["REF", 6]}, "ordered_varnames": ["mat", "i", "row"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST"], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 9, "event": "step_line", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "row": ["REF", 6]}, "ordered_varnames": ["mat", "i", "row"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST", ["REF", 3]], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 9, "event": "return", "func_name": "extrow_wrong", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["extrow_wrong", "m"], "stack_to_render": [{"func_name": "extrow_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "i": 0, "row": ["REF", 6], "__return__": ["REF", 6]}, "ordered_varnames": ["mat", "i", "row", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "extrow_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST", ["REF", 3]], "1": ["FUNCTION", "extrow_wrong(mat, i)", null]}, "stdout": ""}, {"line": 17, "event": "return", "func_name": "<module>", "globals": {"extrow_wrong": ["REF", 1], "m": ["REF", 2], "row": ["REF", 6]}, "ordered_globals": ["extrow_wrong", "m", "row"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "extrow_wrong(mat, i)", null], "2": ["LIST", ["REF", 3], ["REF", 4], ["REF", 5]], "3": ["LIST", "a", "b"], "4": ["LIST", "c", "d"], "5": ["LIST", "a", "e"], "6": ["LIST", ["REF", 3]]}, "stdout": ""}]}
     </script>
-    <div id="jm-74aad51bb261c45d051658d2773f2245-15" class="pytutorVisualizer"> </div>
+    <div id="jm-74aad51bb261c45d051658d2773f2245-19" class="pytutorVisualizer"> </div>
 
     <script>
 
     (function(){
         console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-        var trace = JSON.parse(document.getElementById('json-jm-74aad51bb261c45d051658d2773f2245-15').innerHTML);
+        var trace = JSON.parse(document.getElementById('json-jm-74aad51bb261c45d051658d2773f2245-19').innerHTML);
         // NOTE: id without #
 
-        addVisualizerToPage(trace, 'jm-74aad51bb261c45d051658d2773f2245-15',{'embeddedMode' : false,
+        addVisualizerToPage(trace, 'jm-74aad51bb261c45d051658d2773f2245-19',{'embeddedMode' : false,
                                          'disableHeapNesting': true,
-                                         'visualizerIdOverride':'viz-jm-74aad51bb261c45d051658d2773f2245-15'})
+                                         'visualizerIdOverride':'viz-jm-74aad51bb261c45d051658d2773f2245-19'})
 
 
         // set overflow for pytuts - need to do in python as css
@@ -3103,7 +3310,7 @@ copyright infringment matters aside :-)</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extrowf</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -3135,7 +3342,7 @@ copyright infringment matters aside :-)</p>
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extrowf</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -3166,7 +3373,7 @@ copyright infringment matters aside :-)</p>
 <h3>Extract row with range<a class="headerlink" href="#Extract-row-with-range" title="Permalink to this headline"></a></h3>
 <p>Let’s first rapidly see <code class="docutils literal notranslate"><span class="pre">range(n)</span></code>. Maybe you think it should return a sequence of integers, from zero to <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">-</span> <span class="pre">1</span></code>. Is it really like this?</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -3174,7 +3381,7 @@ copyright infringment matters aside :-)</p>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3186,7 +3393,7 @@ range(0, 5)
 <p>To take a real integer list, we must explicitly ask this iterable object to give us the objects one by one.</p>
 <p>When you write <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">range(s)</span></code> the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop is doing exactly this, at each round it asks the object <code class="docutils literal notranslate"><span class="pre">range</span></code> to generate a number from the sequence. If we want the whole sequence materialized in memory, we can generate it by converting the <code class="docutils literal notranslate"><span class="pre">range</span></code> into a list object:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
@@ -3194,7 +3401,7 @@ range(0, 5)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3211,7 +3418,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extrowr</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -3245,7 +3452,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extrowr</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -3284,7 +3491,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extrows</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -3314,7 +3521,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extrows</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -3348,7 +3555,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extrowc</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -3376,7 +3583,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extrowc</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -3409,7 +3616,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extcolf</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
@@ -3439,7 +3646,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extcolf</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
@@ -3470,7 +3677,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extcolc</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
@@ -3497,7 +3704,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extcolc</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
@@ -3535,7 +3742,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">empty_matrix</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
@@ -3566,7 +3773,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">empty_matrix</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
@@ -3593,7 +3800,7 @@ range(0, 5)
 <h3><code class="docutils literal notranslate"><span class="pre">empty_matrix</span></code> the elegant way<a class="headerlink" href="#empty_matrix-the-elegant-way" title="Permalink to this headline"></a></h3>
 <p>To create a new list of 3 elements filled with zeros, you can write like this:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">3</span>
@@ -3601,7 +3808,7 @@ range(0, 5)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3612,7 +3819,7 @@ range(0, 5)
 <p>The <code class="docutils literal notranslate"><span class="pre">*</span></code> is kind of multiplying the elements in a list</p>
 <p>Given the above, to create a 5x3 matrix filled with zeros, which is a list of seemingly equal lists, you might then be tempted to write like this:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># WRONG</span>
@@ -3621,7 +3828,7 @@ range(0, 5)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3631,7 +3838,7 @@ range(0, 5)
 </div>
 <p>Why is that (possibly) wrong? Let’s try to inspect it in Python Tutor:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bad</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">3</span><span class="p">]</span><span class="o">*</span><span class="mi">5</span>
@@ -3640,7 +3847,7 @@ range(0, 5)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -3650,22 +3857,22 @@ range(0, 5)
     @import "../_static/css/jupman.css";
     </style>
 
-    <script id="json-jm-aef3cd8340f06d04517ffaac41b8dda5-27" type="application/json" >
+    <script id="json-jm-aef3cd8340f06d04517ffaac41b8dda5-31" type="application/json" >
         {"code": " \nbad = [[0]*3]*5", "trace": [{"line": 2, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 2, "event": "return", "func_name": "<module>", "globals": {"bad": ["REF", 1]}, "ordered_globals": ["bad"], "stack_to_render": [], "heap": {"1": ["LIST", ["REF", 2], ["REF", 2], ["REF", 2], ["REF", 2], ["REF", 2]], "2": ["LIST", 0, 0, 0]}, "stdout": ""}]}
     </script>
-    <div id="jm-aef3cd8340f06d04517ffaac41b8dda5-27" class="pytutorVisualizer"> </div>
+    <div id="jm-aef3cd8340f06d04517ffaac41b8dda5-31" class="pytutorVisualizer"> </div>
 
     <script>
 
     (function(){
         console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-        var trace = JSON.parse(document.getElementById('json-jm-aef3cd8340f06d04517ffaac41b8dda5-27').innerHTML);
+        var trace = JSON.parse(document.getElementById('json-jm-aef3cd8340f06d04517ffaac41b8dda5-31').innerHTML);
         // NOTE: id without #
 
-        addVisualizerToPage(trace, 'jm-aef3cd8340f06d04517ffaac41b8dda5-27',{'embeddedMode' : false,
+        addVisualizerToPage(trace, 'jm-aef3cd8340f06d04517ffaac41b8dda5-31',{'embeddedMode' : false,
                                          'disableHeapNesting': true,
-                                         'visualizerIdOverride':'viz-jm-aef3cd8340f06d04517ffaac41b8dda5-27'})
+                                         'visualizerIdOverride':'viz-jm-aef3cd8340f06d04517ffaac41b8dda5-31'})
 
 
         // set overflow for pytuts - need to do in python as css
@@ -3686,7 +3893,7 @@ range(0, 5)
 <p>If you look closely, you will see many arrows pointing to the same list of 3 zeros. This means that if we change one number, we will apparently change 5 of them in the whole column !</p>
 <p>The right way to create a matrix as list of lists with zeroes is the following:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># CORRECT</span>
@@ -3695,7 +3902,7 @@ range(0, 5)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3707,7 +3914,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
@@ -3717,7 +3924,7 @@ range(0, 5)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3732,7 +3939,7 @@ range(0, 5)
 </pre></div></div>
 </div>
 </div><div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># write here</span>
@@ -3740,7 +3947,7 @@ range(0, 5)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -3760,7 +3967,7 @@ range(0, 5)
 <p>✪✪ Let’s try to produce a <em>complete</em> clone of the matrix, also called a <em>deep clone</em>, by creating a copy of the external list <em>and</em> also the internal lists representing the rows.</p>
 <p><strong>QUESTION</strong>: You might be tempted to write code like this, but it will not work. Why?</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="c1"># WARNING: WRONG CODE</span>
@@ -3783,7 +3990,7 @@ range(0, 5)
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -3793,22 +4000,22 @@ range(0, 5)
     @import "../_static/css/jupman.css";
     </style>
 
-    <script id="json-jm-46f4668735de4533a04bec297b4039a6-30" type="application/json" >
+    <script id="json-jm-46f4668735de4533a04bec297b4039a6-34" type="application/json" >
         {"code": " \n# WARNING: WRONG CODE\ndef deep_clone_wrong(mat):\n    \"\"\" RETURN a NEW list of lists which is a COMPLETE DEEP clone\n        of mat (which is a list of lists)\n    \"\"\"\n    return mat[:]\n\nm = [\n        ['a','b'],\n        ['b','d']\n    ]       \n        \nres = deep_clone_wrong(m)\n\n# Notice you will have arrows in res list going to the _original_ mat. We don't want this !", "trace": [{"line": 3, "event": "step_line", "func_name": "<module>", "globals": {}, "ordered_globals": [], "stack_to_render": [], "heap": {}, "stdout": ""}, {"line": 10, "event": "step_line", "func_name": "<module>", "globals": {"deep_clone_wrong": ["REF", 1]}, "ordered_globals": ["deep_clone_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 11, "event": "step_line", "func_name": "<module>", "globals": {"deep_clone_wrong": ["REF", 1]}, "ordered_globals": ["deep_clone_wrong"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 14, "event": "step_line", "func_name": "<module>", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["deep_clone_wrong", "m"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "deep_clone_wrong(mat)", null], "2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"]}, "stdout": ""}, {"line": 3, "event": "call", "func_name": "deep_clone_wrong", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["deep_clone_wrong", "m"], "stack_to_render": [{"func_name": "deep_clone_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2]}, "ordered_varnames": ["mat"], "is_zombie": false, "is_highlighted": true, "unique_hash": "deep_clone_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"], "1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 7, "event": "step_line", "func_name": "deep_clone_wrong", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["deep_clone_wrong", "m"], "stack_to_render": [{"func_name": "deep_clone_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2]}, "ordered_varnames": ["mat"], "is_zombie": false, "is_highlighted": true, "unique_hash": "deep_clone_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"], "1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 7, "event": "return", "func_name": "deep_clone_wrong", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2]}, "ordered_globals": ["deep_clone_wrong", "m"], "stack_to_render": [{"func_name": "deep_clone_wrong", "is_parent": false, "frame_id": 1, "parent_frame_id_list": [], "encoded_locals": {"mat": ["REF", 2], "__return__": ["REF", 5]}, "ordered_varnames": ["mat", "__return__"], "is_zombie": false, "is_highlighted": true, "unique_hash": "deep_clone_wrong_f1"}], "heap": {"2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"], "5": ["LIST", ["REF", 3], ["REF", 4]], "1": ["FUNCTION", "deep_clone_wrong(mat)", null]}, "stdout": ""}, {"line": 14, "event": "return", "func_name": "<module>", "globals": {"deep_clone_wrong": ["REF", 1], "m": ["REF", 2], "res": ["REF", 5]}, "ordered_globals": ["deep_clone_wrong", "m", "res"], "stack_to_render": [], "heap": {"1": ["FUNCTION", "deep_clone_wrong(mat)", null], "2": ["LIST", ["REF", 3], ["REF", 4]], "3": ["LIST", "a", "b"], "4": ["LIST", "b", "d"], "5": ["LIST", ["REF", 3], ["REF", 4]]}, "stdout": ""}]}
     </script>
-    <div id="jm-46f4668735de4533a04bec297b4039a6-30" class="pytutorVisualizer"> </div>
+    <div id="jm-46f4668735de4533a04bec297b4039a6-34" class="pytutorVisualizer"> </div>
 
     <script>
 
     (function(){
         console.log("jupman.py embedded javascript: adding Python tutor visualizer...")
 
-        var trace = JSON.parse(document.getElementById('json-jm-46f4668735de4533a04bec297b4039a6-30').innerHTML);
+        var trace = JSON.parse(document.getElementById('json-jm-46f4668735de4533a04bec297b4039a6-34').innerHTML);
         // NOTE: id without #
 
-        addVisualizerToPage(trace, 'jm-46f4668735de4533a04bec297b4039a6-30',{'embeddedMode' : false,
+        addVisualizerToPage(trace, 'jm-46f4668735de4533a04bec297b4039a6-34',{'embeddedMode' : false,
                                          'disableHeapNesting': true,
-                                         'visualizerIdOverride':'viz-jm-46f4668735de4533a04bec297b4039a6-30'})
+                                         'visualizerIdOverride':'viz-jm-46f4668735de4533a04bec297b4039a6-34'})
 
 
         // set overflow for pytuts - need to do in python as css
@@ -3831,10 +4038,11 @@ range(0, 5)
  data-jupman-show="Show answer" data-jupman-hide="Hide">Show answer</a><div class="jupman-sol jupman-sol-question" style="display:none"><p><strong>ANSWER</strong>: <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">mat[:]</span></code> is not sufficient, because it’s a SHALLOW clone, and only copies the <em>external</em> list and not also the internal ones ! Note you will have rows in the <code class="docutils literal notranslate"><span class="pre">res</span></code> list which goes to the original matrix. We don’t want this!</p>
 </div><p>To fix the above code, you will need to iterate through the rows and <em>for each</em> row create a copy of that row.</p>
 <p>✪✪ <strong>EXERCISE</strong>: Implement <code class="docutils literal notranslate"><span class="pre">deep_clone</span></code>, which RETURNS a NEW list as a complete DEEP CLONE of <code class="docutils literal notranslate"><span class="pre">mat</span></code> (which is a list of lists)</p>
+<p><strong>NOTE</strong>: the exercise can be solved very quickly by using the <a class="reference external" href="https://en.softpython.org/lists/lists3-sol.html#deepcopy-function">function deepcopy</a> but we invite you to solve it without for now.</p>
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">deep_clone</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
@@ -3863,7 +4071,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">deep_clone</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
@@ -3908,7 +4116,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fillc</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
@@ -3960,7 +4168,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fillc</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
@@ -4033,7 +4241,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fillx</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
@@ -4074,7 +4282,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fillx</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
@@ -4142,7 +4350,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fillz</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -4184,7 +4392,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fillz</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
@@ -4232,7 +4440,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">stitch_down</span><span class="p">(</span><span class="n">mat1</span><span class="p">,</span> <span class="n">mat2</span><span class="p">):</span>
@@ -4267,7 +4475,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">stitch_down</span><span class="p">(</span><span class="n">mat1</span><span class="p">,</span> <span class="n">mat2</span><span class="p">):</span>
@@ -4306,7 +4514,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">stitch_up</span><span class="p">(</span><span class="n">mat1</span><span class="p">,</span> <span class="n">mat2</span><span class="p">):</span>
@@ -4338,7 +4546,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">stitch_up</span><span class="p">(</span><span class="n">mat1</span><span class="p">,</span> <span class="n">mat2</span><span class="p">):</span>
@@ -4374,7 +4582,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">stitch_right</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span><span class="n">matb</span><span class="p">):</span>
@@ -4398,7 +4606,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">stitch_right</span><span class="p">(</span><span class="n">mata</span><span class="p">,</span><span class="n">matb</span><span class="p">):</span>
@@ -4420,7 +4628,7 @@ range(0, 5)
 <p>✪✪ Given a matrix <code class="docutils literal notranslate"><span class="pre">mat</span></code> as list of lists, a column index <code class="docutils literal notranslate"><span class="pre">j</span></code> and a list <code class="docutils literal notranslate"><span class="pre">new_col</span></code>, write a function <code class="docutils literal notranslate"><span class="pre">insercol(mat,j,new_col)</span></code> which MODIFIES <code class="docutils literal notranslate"><span class="pre">mat</span></code> inserting the new column at position <code class="docutils literal notranslate"><span class="pre">j</span></code>.</p>
 <p>Example - given:</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>       <span class="c1"># 0 1 2</span>
@@ -4453,7 +4661,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">insercol</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">nuova_col</span><span class="p">):</span>
@@ -4492,7 +4700,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="k">def</span> <span class="nf">insercol</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">nuova_col</span><span class="p">):</span>
@@ -4539,7 +4747,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">threshold</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
@@ -4575,7 +4783,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">threshold</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
@@ -4609,7 +4817,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
@@ -4626,7 +4834,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
@@ -4640,7 +4848,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">swap_rows</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i1</span><span class="p">,</span> <span class="n">i2</span><span class="p">):</span>
@@ -4688,7 +4896,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[44]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">swap_rows</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">i1</span><span class="p">,</span> <span class="n">i2</span><span class="p">):</span>
@@ -4731,7 +4939,7 @@ range(0, 5)
 <a  class="jupman-sol jupman-sol-toggler"
  onclick="jupman.toggleSolution(this);"
  data-jupman-show="Show solution" data-jupman-hide="Hide">Show solution</a><div class="jupman-sol jupman-sol-code" style="display:none"><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">swap_cols</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j1</span><span class="p">,</span> <span class="n">j2</span><span class="p">):</span>
@@ -4759,7 +4967,7 @@ range(0, 5)
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">swap_cols</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span> <span class="n">j1</span><span class="p">,</span> <span class="n">j2</span><span class="p">):</span>
