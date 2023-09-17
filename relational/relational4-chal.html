@@ -3088,14 +3088,15 @@ Write a function decode which given the text and a list of locations names, disp
 <span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="go">Go to Bravo, then take a bus to Alfa. Afterwards, go to Charlie</span>
 <span class="go">and meet your partner in Eagle. Next day go back to Alfa and later</span>
-<span class="go">take a train to Delta. Remain for a day in Delta, then rent a car and reach Charlie.</span>
+<span class="go">take a train to Delta. Remain for a day in Delta, then rent a car</span>
+<span class="go">and reach Charlie.</span>
 <span class="go">&quot;&quot;&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">decode</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">locations</span><span class="p">)</span>
 </pre></div>
 </div>
 <p><img alt="expected-counter-intelligence.png" src="../_images/expected-counter-intelligence.png" /></p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><br/><span></span><span class="kn">from</span> <span class="nn">soft</span> <span class="kn">import</span> <span class="n">draw_adj</span>
@@ -3108,7 +3109,8 @@ Write a function decode which given the text and a list of locations names, disp
 <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">Go to Bravo, then take a bus to Alfa. Afterwards, go to Charlie</span>
 <span class="s2">and meet your partner in Eagle. Next day go back to Alfa and later</span>
-<span class="s2">take a train to Delta. Remain for a day in Delta, then rent a car and reach Charlie.</span>
+<span class="s2">take a train to Delta. Remain for a day in Delta, then rent a car</span>
+<span class="s2">and reach Charlie.</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
 

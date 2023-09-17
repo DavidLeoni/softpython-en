@@ -2677,7 +2677,7 @@ div.rendered_html tbody tr:hover {
 <section id="Download-exercises-zip">
 <h2><a class="reference external" href="../_static/generated/relational.zip">Download exercises zip</a><a class="headerlink" href="#Download-exercises-zip" title="Permalink to this headline"></a></h2>
 <p><a class="reference external" href="https://github.com/DavidLeoni/softpython-en/tree/master/relational">Browse files online</a></p>
-<p>We will now compute simple statistics about graphs (they don’t require node discovery algorithms).</p>
+<p>We will now compute and visualize simple statistics about graphs (they don’t require node discovery algorithms).</p>
 </section>
 <section id="What-to-do">
 <h2>What to do<a class="headerlink" href="#What-to-do" title="Permalink to this headline"></a></h2>
@@ -3503,14 +3503,6 @@ d
 <br/><br/></pre></div>
 </div>
 </div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</div>
 </section>
 <section id="indegree-per-node-sorted-alphabetically">
 <h3>indegree per node sorted alphabetically<a class="headerlink" href="#indegree-per-node-sorted-alphabetically" title="Permalink to this headline"></a></h3>
@@ -3554,7 +3546,7 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_81_0.png" src="../_images/relational_relational3-simple-stats-sol_81_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_80_0.png" src="../_images/relational_relational3-simple-stats-sol_80_0.png" />
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
@@ -3618,7 +3610,7 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_87_0.png" src="../_images/relational_relational3-simple-stats-sol_87_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_86_0.png" src="../_images/relational_relational3-simple-stats-sol_86_0.png" />
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
@@ -3689,7 +3681,7 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_94_0.png" src="../_images/relational_relational3-simple-stats-sol_94_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_93_0.png" src="../_images/relational_relational3-simple-stats-sol_93_0.png" />
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
@@ -3742,7 +3734,7 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_99_0.png" src="../_images/relational_relational3-simple-stats-sol_99_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_98_0.png" src="../_images/relational_relational3-simple-stats-sol_98_0.png" />
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
@@ -3803,7 +3795,7 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_104_0.png" src="../_images/relational_relational3-simple-stats-sol_104_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_103_0.png" src="../_images/relational_relational3-simple-stats-sol_103_0.png" />
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
@@ -3818,7 +3810,7 @@ d
 </section>
 <section id="Frequency-histogram">
 <h2>Frequency histogram<a class="headerlink" href="#Frequency-histogram" title="Permalink to this headline"></a></h2>
-<p>Now let’s try to draw degree frequencies, that is, for each degree present in the graph we want to display a bar as high as the number of times that particular degree appears.</p>
+<p>Now let’s try drawing degree frequencies: for each degree present in the graph we want to display a bar as high as the number of times that particular degree appears.</p>
 <p>For doing so, we will need a matplot histogram, see <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html">documentation</a></p>
 <p>We will need to tell matplotlib how many columns we want, which in histogram terms are called <em>bins</em>. We also need to give the histogram a series of numbers so it can count how many times each number occurs. Let’s consider this graph <code class="docutils literal notranslate"><span class="pre">G2</span></code>:</p>
 <div class="nbinput docutils container">
@@ -3846,10 +3838,10 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_109_0.png" src="../_images/relational_relational3-simple-stats-sol_109_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_108_0.png" src="../_images/relational_relational3-simple-stats-sol_108_0.png" />
 </div>
 </div>
-<p>If we take the the degree sequence of <code class="docutils literal notranslate"><span class="pre">G2</span></code> we get this:</p>
+<p>If we take the degree sequence of <code class="docutils literal notranslate"><span class="pre">G2</span></code> we get this:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
 </pre></div>
@@ -3869,8 +3861,8 @@ d
 [3, 7, 6, 7, 3, 3, 3]
 </pre></div></div>
 </div>
-<p>We see 3 appears four times, 6 once, and seven twice.</p>
-<p>Let’s try to determine a good number for the bins. First we can check the boundaries our x axis should have:</p>
+<p>We see <code class="docutils literal notranslate"><span class="pre">3</span></code> appears four times, <code class="docutils literal notranslate"><span class="pre">6</span></code> once, and <code class="docutils literal notranslate"><span class="pre">7</span></code> twice.</p>
+<p>Let’s find a good number for the bins. First we can check the boundaries our x axis should have:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
 </pre></div>
@@ -3905,7 +3897,8 @@ d
 7
 </pre></div></div>
 </div>
-<p>So our histogram on the x axis must go at least from 3 and at least to 7. If we want integer columns (bins), we will need at least ticks for going from 3 included to 7 included, so at least ticks for 3,4,5,6,7. For getting precise display, wen we have integer x it is best to also manually provide the sequence of bin edges, remembering it should start at least from the minimum <em>included</em> (in our case, 3) and arrive to the maximum + 1 <em>included</em> (in our case, 7 + 1 = 8)</p>
+<p>So on the x axis our histogram must go at least from <code class="docutils literal notranslate"><span class="pre">3</span></code> and at least to <code class="docutils literal notranslate"><span class="pre">7</span></code>. If we want integer columns (bins), we will need at least ticks for going from <code class="docutils literal notranslate"><span class="pre">3</span></code> included to <code class="docutils literal notranslate"><span class="pre">7</span></code> included, that is at least ticks for <code class="docutils literal notranslate"><span class="pre">3,4,5,6,7</span></code>. For precise display, when we have integer x it’s best to also manually provide the sequence of bin edges, remembering it should start at least from the minimum <em>included</em> (in our case, <code class="docutils literal notranslate"><span class="pre">3</span></code>) and arrive to the <code class="docutils literal notranslate"><span class="pre">maximum</span> <span class="pre">+</span> <span class="pre">1</span></code> <em>included</em> (in our case,
+<code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">+</span> <span class="pre">1</span> <span class="pre">=</span> <span class="pre">8</span></code>)</p>
 <p><strong>NOTE</strong>: precise histogram drawing can be quite tricky, please do read <a class="reference external" href="https://stackoverflow.com/a/27084005">this StackOverflow post</a> for more details about it.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
@@ -3921,8 +3914,8 @@ d
 <span class="c1"># in this case hist returns a tuple of three values</span>
 <span class="c1"># we put in three variables</span>
 <span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">,</span>
-                            <span class="n">bins</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span>  <span class="c1">#  3 *included* , 4, 5, 6, 7, 8 *included*</span>
-                            <span class="n">width</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>        <span class="c1">#  graphical width of the bars</span>
+                            <span class="n">bins</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span> <span class="c1"># 3 *included*, 4,5,6,7,8 *included*</span>
+                            <span class="n">width</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>       <span class="c1"># graphical bars width</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Degrees&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency counts&#39;</span><span class="p">)</span>
@@ -3936,15 +3929,15 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_116_0.png" src="../_images/relational_relational3-simple-stats-sol_116_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_115_0.png" src="../_images/relational_relational3-simple-stats-sol_115_0.png" />
 </div>
 </div>
-<p>As expected we see 3 is counted four times, 6 once, and seven twice.</p>
+<p>As expected, we see <code class="docutils literal notranslate"><span class="pre">3</span></code> is counted four times, <code class="docutils literal notranslate"><span class="pre">6</span></code> once, and <code class="docutils literal notranslate"><span class="pre">7</span></code> twice.</p>
 <section id="Exercise---better-histogram-display">
 <h3>Exercise - better histogram display<a class="headerlink" href="#Exercise---better-histogram-display" title="Permalink to this headline"></a></h3>
-<p>✪✪✪ Still, it would be visually better to align the x ticks to the middle of the bars with <code class="docutils literal notranslate"><span class="pre">xticks</span></code>, and also to make the graph more tight by setting the <code class="docutils literal notranslate"><span class="pre">xlim</span></code> appropriately. This is not always easy to do.</p>
-<p>Read carefully <a class="reference external" href="https://stackoverflow.com/a/27084005">this StackOverflow post</a> and try do it by yourself.</p>
-<p><strong>NOTE</strong>: set <em>one thing at a time</em> and try if it works(i.e. first <code class="docutils literal notranslate"><span class="pre">xticks</span></code> and then <code class="docutils literal notranslate"><span class="pre">xlim</span></code>), doing everything at once might get quite confusing</p>
+<p>✪✪✪ Still, it would be visually better to align the x ticks to the middle of the bars with <code class="docutils literal notranslate"><span class="pre">xticks</span></code>, and also to make the graph tighter by setting the <code class="docutils literal notranslate"><span class="pre">xlim</span></code> appropriately. This is not always easy to do.</p>
+<p>Read carefully <a class="reference external" href="https://stackoverflow.com/a/27084005">this StackOverflow post</a> and try doing it by yourself.</p>
+<p><strong>NOTE</strong>: set <em>one thing at a time</em> and try if it works(i.e. first <code class="docutils literal notranslate"><span class="pre">xticks</span></code> and then <code class="docutils literal notranslate"><span class="pre">xlim</span></code>), doing everything at once might get quite confusing.</p>
 <p>Expected result:</p>
 <p><img alt="freq-hist.png" src="../_images/expected-freq-hist.png" /></p>
 <a  class="jupman-sol jupman-sol-toggler"
@@ -3968,12 +3961,13 @@ d
 
 <span class="c1"># in this case hist returns a tuple of three values</span>
 <span class="c1"># we put in three variables</span>
-<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">degrees_G2</span><span class="p">,</span>
-                            <span class="n">bins</span><span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span>  <span class="c1"># 3 *included* to  9 *excluded*</span>
-                                               <span class="c1"># it is like the xs, but with one number more !!</span>
-                                               <span class="c1"># to understand why read this</span>
-                                               <span class="c1"># https://stackoverflow.com/questions/27083051/matplotlib-xticks-not-lining-up-with-histogram/27084005#27084005</span>
-                            <span class="n">width</span><span class="o">=</span><span class="n">bar_width</span><span class="p">)</span>        <span class="c1">#  graphical width of the bars</span>
+<span class="n">n</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span>
+    <span class="n">degrees_G2</span><span class="p">,</span>
+    <span class="n">bins</span><span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span> <span class="c1"># 3 *included* to  9 *excluded*</span>
+                      <span class="c1"># it&#39;s like the xs, but with one number more !!</span>
+                      <span class="c1"># to understand why read this</span>
+                      <span class="c1"># https://stackoverflow.com/questions/27083051/matplotlib-xticks-not-lining-up-with-histogram/27084005#27084005</span>
+    <span class="n">width</span><span class="o">=</span><span class="n">bar_width</span><span class="p">)</span>  <span class="c1">#  graphical width of the bars</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Degrees&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequency counts&#39;</span><span class="p">)</span>
@@ -3990,14 +3984,14 @@ d
 
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-<br/></pre></div>
+</pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_120_0.png" src="../_images/relational_relational3-simple-stats-sol_120_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_119_0.png" src="../_images/relational_relational3-simple-stats-sol_119_0.png" />
 </div>
 </div>
 </div><div class="nbinput docutils container">
@@ -4012,7 +4006,7 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_122_0.png" src="../_images/relational_relational3-simple-stats-sol_122_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_121_0.png" src="../_images/relational_relational3-simple-stats-sol_121_0.png" />
 </div>
 </div>
 </section>
@@ -4022,7 +4016,7 @@ d
 <p>Let’s study frequencies of some known network types.</p>
 <section id="Exercise---Erdős–Rényi-model">
 <h3>Exercise - Erdős–Rényi model<a class="headerlink" href="#Exercise---Erdős–Rényi-model" title="Permalink to this headline"></a></h3>
-<p>✪✪ A simple graph model we can think of is the so-called <a class="reference external" href="https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model">Erdős–Rényi model</a>: is is an <em>undirected</em> graph where have <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes, and each node is connected to each other with probability <code class="docutils literal notranslate"><span class="pre">p</span></code>. In networkx, we can generate a random one by issuing this command:</p>
+<p>✪✪ A simple graph model we can think of is the so-called <a class="reference external" href="https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model">Erdős–Rényi model</a>: it’s an <em>undirected</em> graph where have <code class="docutils literal notranslate"><span class="pre">n</span></code> nodes, and each node is connected to each other with probability <code class="docutils literal notranslate"><span class="pre">p</span></code>. In networkx, we can generate a random one by issuing this command:</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
 </pre></div>
@@ -4031,7 +4025,7 @@ d
 </pre></div>
 </div>
 </div>
-<p>In the drawing, by looking the absence of arrows confirms it is undirected:</p>
+<p>In the drawing, the absence of arrows confirms it’s undirected:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
 </pre></div>
@@ -4044,10 +4038,10 @@ d
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_128_0.png" src="../_images/relational_relational3-simple-stats-sol_128_0.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_126_0.png" src="../_images/relational_relational3-simple-stats-sol_126_0.png" />
 </div>
 </div>
-<p>Try plotting degree distribution for different values of <code class="docutils literal notranslate"><span class="pre">p</span></code> (0.1, 0.5, 0.9) with a fixed <code class="docutils literal notranslate"><span class="pre">n=1000</span></code>, putting them side by side on the same row. What does their distribution look like ? Where are they centered ?</p>
+<p>Try plotting degree distribution for different values of <code class="docutils literal notranslate"><span class="pre">p</span></code> (<code class="docutils literal notranslate"><span class="pre">0.1</span></code>, <code class="docutils literal notranslate"><span class="pre">0.5</span></code>, <code class="docutils literal notranslate"><span class="pre">0.9</span></code>) with a fixed <code class="docutils literal notranslate"><span class="pre">n=1000</span></code>, putting them side by side on the same row. What does their distribution look like ? Where are they centered ?</p>
 <ul class="simple">
 <li><p>to put them side by side, look <a class="reference external" href="https://en.softpython.org/visualization/visualization1-sol.html#Showing-plots-side-by-side">at this example</a></p></li>
 <li><p>to avoid rewriting the same code again and again, define a <code class="docutils literal notranslate"><span class="pre">plot_erdos(n,p,j)</span></code> function to be called three times.</p></li>
@@ -4090,7 +4084,7 @@ d
 <span class="n">plot_erdos</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                                           Erdős–Rényi degree distribution SOLUTION&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;                            Erdős–Rényi degree distribution SOLUTION&quot;</span><span class="p">)</span>
 
 
 
@@ -4104,14 +4098,14 @@ d
 <div class="output_area docutils container">
 <div class="highlight"><pre>
 
-                                           Erdős–Rényi degree distribution SOLUTION
+                            Erdős–Rényi degree distribution SOLUTION
 </pre></div></div>
 </div>
 <div class="nboutput nblast docutils container">
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="../_images/relational_relational3-simple-stats-sol_131_1.png" src="../_images/relational_relational3-simple-stats-sol_131_1.png" />
+<img alt="../_images/relational_relational3-simple-stats-sol_129_1.png" src="../_images/relational_relational3-simple-stats-sol_129_1.png" />
 </div>
 </div>
 </div><div class="nbinput nblast docutils container">
